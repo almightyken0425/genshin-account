@@ -2,7 +2,7 @@ export const teamGuides:Record<string,{steps:string[],notes:string[],sources:{la
   "skirk": {
     "steps": [
       "愛可菲 E A → 芙寧娜 E Q → 沃雅妮莎 E → 絲柯克短 E A2 Q。",
-      "絲柯克 A5 衝刺 → A5 重擊 → A5 衝刺 → A5。",
+      "絲柯克 A5 衝刺 → A5 重擊 → A5。",
       "愛可菲 Q 預設不按；隊伍血低時可在沃雅妮莎交棒前插入 Q 補血。",
       "確認技能與討龍冷卻後再進下一輪。"
     ],
