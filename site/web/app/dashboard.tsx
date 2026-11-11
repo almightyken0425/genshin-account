@@ -1,6 +1,6 @@
 'use client';
 import {useState,useEffect,useRef} from 'react';
-import { BookOpen, Search, RefreshCw, X, AlertTriangle, Sword, Flower2, LoaderCircle, Tags, Shapes, ChevronDown, ArrowLeft, UsersRound } from 'lucide-react';
+import { BookOpen, Search, RefreshCw, X, AlertTriangle, Sword, Flower2, LoaderCircle, Tags, Shapes, ChevronDown, ArrowLeft, UsersRound, Sprout } from 'lucide-react';
 import type {AccountResult,Stat} from '@/lib/types';
 import {characterImage,characterRarity,weaponImage,artifactImage} from '@/lib/game_assets';
 import GameImage from './game_image';
@@ -10,6 +10,7 @@ import {effectiveSubstatCount,effectiveLoadoutCount,substatRoll} from '@/lib/art
 import ArtifactSubstat,{EffectiveBadge} from './artifact_substat';
 import RosterControls from './roster_controls';
 import {selectedTeams} from '@/lib/selected_teams';
+import {teamGuides} from '@/lib/team_guides';
 import {selectRoster} from '@/lib/roster_view.mjs';
 import type {RosterFilters,SortRule} from '@/lib/roster_view.mjs';
 
@@ -21,7 +22,7 @@ function Numeric({label,value}:{label:string,value:number|null}){
  return <div className="field" title={label}><MetricLabel label={label}/><strong>{fmt(value)}{label.endsWith('(%)')?'%':''}</strong></div>
 }
 export default function Dashboard({initialCharacter=''}:{initialCharacter?:string}){
- const [data,setData]=useState<AccountResult|null>(null),[selected,setSelected]=useState(initialCharacter),[query,setQuery]=useState(''),[filters,setFilters]=useState<RosterFilters>({rarities:[],weapons:[],elements:[]}),[sorts,setSorts]=useState<SortRule[]>([]),[fullLabels,setFullLabels]=useState(false),[expanded,setExpanded]=useState<'weapon'|'artifacts'|null>(null),[section,setSection]=useState('roster');
+ const [data,setData]=useState<AccountResult|null>(null),[selected,setSelected]=useState(initialCharacter),[query,setQuery]=useState(''),[filters,setFilters]=useState<RosterFilters>({rarities:[],weapons:[],elements:[]}),[sorts,setSorts]=useState<SortRule[]>([]),[fullLabels,setFullLabels]=useState(false),[expanded,setExpanded]=useState<'weapon'|'artifacts'|null>(null),[section,setSection]=useState('roster'),[selectedTeam,setSelectedTeam]=useState('');
  const [busy,setBusy]=useState(true),[error,setError]=useState<{code:string,message:string}|null>(null);
  const [headerCollapsed,setHeaderCollapsed]=useState(false);
  useEffect(()=>{
@@ -52,7 +53,7 @@ export default function Dashboard({initialCharacter=''}:{initialCharacter?:strin
   const sync=()=>{
    const id=new URL(window.location.href).searchParams.get('character')||'';
    focusTarget.current=id?'detail':'list';
-   setSelected(id);setSection(new URL(window.location.href).searchParams.get('tab')==='teams'?'teams':'roster');setExpanded(null);
+   const url=new URL(window.location.href);setSelected(id);setSelectedTeam(url.searchParams.get('team')||'');setSection(['teams','growth'].includes(url.searchParams.get('tab')||'')?url.searchParams.get('tab')!:'roster');setExpanded(null);
   };
   const initialId=new URL(window.location.href).searchParams.get('character')||'';
   if(initialId){focusTarget.current='detail';setSelected(initialId)}
@@ -71,7 +72,7 @@ export default function Dashboard({initialCharacter=''}:{initialCharacter?:strin
  },[selected,section,busy]);
  function openCharacter(id:string){
   listScroll.current=window.scrollY;lastOpened.current=id;focusTarget.current='detail';
-  const url=new URL(window.location.href);url.searchParams.delete('tab');url.searchParams.set('character',id);
+  const url=new URL(window.location.href);url.searchParams.delete('tab');url.searchParams.delete('team');url.searchParams.set('character',id);
   window.history.pushState({...window.history.state,genshinCharacterFromList:true},'',url);
   setSelected(id);setSection('roster');setExpanded(null);
  }
@@ -83,14 +84,16 @@ export default function Dashboard({initialCharacter=''}:{initialCharacter?:strin
   window.history.replaceState({...window.history.state,genshinCharacterFromList:false},'',url);
   focusTarget.current='list';setSelected('');setSection('roster');
  }
- function switchTab(tab:'teams'|'roster'){
-  const url=new URL(window.location.href);url.searchParams.delete('character');
-  if(tab==='teams')url.searchParams.set('tab','teams');else url.searchParams.delete('tab');
+ function openTeam(id:string){const url=new URL(window.location.href);url.searchParams.set('tab','teams');url.searchParams.set('team',id);url.searchParams.delete('character');window.history.pushState({...window.history.state},'',url);setSelectedTeam(id);setSection('teams');window.scrollTo({top:0})}
+ function switchTab(tab:'teams'|'roster'|'growth'){
+  const url=new URL(window.location.href);url.searchParams.delete('character');url.searchParams.delete('team');
+  if(tab!=='roster')url.searchParams.set('tab',tab);else url.searchParams.delete('tab');
   window.history.pushState({...window.history.state,genshinCharacterFromList:false},'',url);
-  setSelected('');setSection(tab);setExpanded(null);window.scrollTo({top:0});
+  setSelected('');setSelectedTeam('');setSection(tab);setExpanded(null);window.scrollTo({top:0});
  }
  const a=data?.account,c=a?.characters.find(x=>x.id===selected);
- useEffect(()=>{void refresh();if(new URL(window.location.href).searchParams.get('tab')==='teams')setSection('teams')},[]);
+ useEffect(()=>{void refresh();const url=new URL(window.location.href);const tab=url.searchParams.get('tab');if(tab==='teams'||tab==='growth')setSection(tab);setSelectedTeam(url.searchParams.get('team')||'')},[]);
+ const team=selectedTeams.find(t=>t.id===selectedTeam);
  async function refresh(){setBusy(true);setError(null);try{const r=await fetch('/api/account',{cache:'no-store'});const result:any=await r.json();if(!r.ok)throw result;setData(result)}catch(e:any){setError({code:e.error||'network_error',message:e.message||'無法連線，請稍後重試'})}finally{setBusy(false)}}
  const e=c&&a?.equipment[c.id],w=a?.weapons.find(x=>x.id===e?.weapon_id),panel=a?.panel_snapshots.find(x=>x.id===c?.panel_snapshot_id);
  const stale=!!c&&!!data&&data.panels[c.id]==='stale';
@@ -105,7 +108,8 @@ export default function Dashboard({initialCharacter=''}:{initialCharacter?:strin
  return <MetricDisplayContext value={fullLabels}><div className="app-shell">
   <main className="main">
    {feedback}
-   {section==='teams'?<section className="teams-page" aria-labelledby="teams-heading"><div className="teams-heading"><UsersRound size={25}/><h1 id="teams-heading">隊伍</h1><span className="team-count">7 組</span></div><p className="teams-note">已選配隊。部分角色跨隊重複，挑選同時出戰的隊伍時請留意。</p><div className="teams-grid">{selectedTeams.map((team,index)=><article className="team-card" key={team.id}><header><span className="team-number">{String(index+1).padStart(2,'0')}</span><h2>{team.name}</h2></header><div className="team-members">{team.members.map(id=>{const character=a?.characters.find(character=>character.id===id);return <button key={id} disabled={!character} onClick={()=>openCharacter(id)} aria-label={character?'查看'+character.name+'的角色詳情':'等待角色資料'}><GameImage src={characterImage(id,'icon')} alt=""/><span>{character?.name||'讀取中'}</span>{character&&<small>Lv. {fmt(character.level.current)} · C{fmt(character.constellation)}</small>}</button>})}</div></article>)}</div></section>
+   {section==='teams'?<section className="teams-page" aria-label="隊伍">{team?<><header className="detail-header"><div className="character-heading"><button className="icon-button detail-back" onClick={()=>switchTab('teams')} aria-label="返回隊伍列表"><ArrowLeft size={20}/></button><h2>{team.name}</h2></div></header><div className="team-detail-members">{team.members.map(id=>{const character=a?.characters.find(c=>c.id===id);return <button key={id} onClick={()=>openCharacter(id)} aria-label={'查看'+(character?.name||id)+'角色詳情'}><GameImage src={characterImage(id,'icon')} alt=""/><strong>{character?.name||'讀取中'}</strong><small>Lv. {fmt(character?.level.current)} · C{fmt(character?.constellation)}</small></button>})}</div><section className="team-guide"><h3>操作手法</h3><p className="guide-context">依 2026/11/11 帳號資料整理的建議起手與循環，尚非實測最佳秒軸。角色配裝改變後須重新核對。</p><ol>{teamGuides[team.id]?.steps.map((step,i)=><li key={i}>{step}</li>)}</ol><h3>目前配裝注意事項</h3><ul>{teamGuides[team.id]?.notes.map((note,i)=><li key={i}>{note}</li>)}</ul><details className="guide-sources"><summary>查核依據</summary><p>查證日期：2026/11/11。面板為觀測快照，可能含情境增益；充能數值不是需求門檻。</p>{teamGuides[team.id]?.sources.map(source=><a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label}</a>)}</details></section></>:<div className="teams-grid">{selectedTeams.map(team=><button className="team-card team-image-card" key={team.id} onClick={()=>openTeam(team.id)} aria-label={'查看'+team.name+'操作手法：'+team.members.map(id=>a?.characters.find(c=>c.id===id)?.name||id).join('、')}><div className="team-members">{team.members.map(id=><GameImage key={id} src={characterImage(id,'icon')} alt=""/>)}</div></button>)}</div>}</section>
+   :section==='growth'?<section className="teams-page" aria-label="培養重點"><div className="teams-empty"><Sprout size={30}/><h1>培養重點</h1><p>等待根據現有角色與配裝完成分析。</p></div></section>
    :!selected?<section className="roster" aria-label="角色列表"><RosterControls characters={a?.characters||[]} rarities={rarities} filters={filters} onFilters={setFilters} sorts={sorts} onSorts={setSorts}/><div className="roster-search"><label className="search"><Search size={17}/><input ref={searchRef} placeholder="搜尋角色名稱" aria-label="搜尋角色名稱" value={query} onChange={e=>setQuery(e.target.value)}/>{query&&<button aria-label="清除搜尋" onClick={()=>setQuery('')}><X size={13}/></button>}</label></div>
     <div className="character-list">{!a?(busy?<div className="empty small"><LoaderCircle className="spin"/><p>正在讀取角色紀錄…</p></div>:<div className="empty small"><BookOpen/><p>連接 GitHub 後<br/>角色會顯示在這裡</p></div>):visible.length===0?<div className="empty small"><Search/><p>找不到符合條件的角色</p><button className="text-button" onClick={()=>{setQuery('');setFilters({rarities:[],weapons:[],elements:[]})}}>清除篩選</button></div>:visible.map(x=><button className="character-card" key={x.id} ref={el=>{if(el)cardRefs.current.set(x.id,el);else cardRefs.current.delete(x.id)}} onClick={()=>openCharacter(x.id)} aria-label={'查看'+x.name+'的角色詳情，角色等級 '+fmt(x.level.current)+'，命之座 '+fmt(x.constellation)+'，有效詞條總數 '+fmt(effectiveTotals[x.id])}><div className="character-emblem"><GameImage src={characterImage(x.id,'icon')} alt="" eager/></div><span className="character-card-stats" aria-hidden="true"><span title="角色等級">{x.level.current??'—'}</span><span title="命之座">{x.constellation??'—'}</span><span title="有效詞條總數">{effectiveTotals[x.id]??'—'}</span></span></button>)}</div></section>
    :<section className="detail detail-centered" aria-label="角色詳細資料">
@@ -146,7 +150,7 @@ export default function Dashboard({initialCharacter=''}:{initialCharacter?:strin
 
    </>:<div className="welcome">{busy?<LoaderCircle className="spin" size={26}/>:<BookOpen size={28}/>}<h2>{busy?'正在讀取角色資料':data?'找不到這位角色':'開始查看角色'}</h2><p>{busy?'連接你的 GitHub 紀錄中…':data?'請返回列表，選擇已記錄的角色。':'連線後即可查看數值、天賦和配裝。'}</p></div>}</section>}
    <footer className="page-footer"><span>遊戲圖片 © HoYoverse</span><span>圖源 <a href="https://enka.network" target="_blank" rel="noreferrer">Enka Network</a><span className="footer-separator">/</span>資料索引 <a href="https://github.com/theBowja/genshin-db" target="_blank" rel="noreferrer">genshin-db</a></span></footer>
-   <nav className="footer-fab" aria-label="主要分頁"><button className={section==='teams'?'active':''} aria-current={section==='teams'?'page':undefined} onClick={()=>switchTab('teams')}><UsersRound size={21}/><span>隊伍</span></button><button className={section==='roster'?'active':''} aria-current={section==='roster'?'page':undefined} onClick={()=>switchTab('roster')}><BookOpen size={21}/><span>角色列表</span></button></nav>
+   <nav className="footer-fab" aria-label="主要分頁"><button className={section==='teams'?'active':''} aria-current={section==='teams'?'page':undefined} onClick={()=>switchTab('teams')}><UsersRound size={21}/><span>隊伍</span></button><button className={section==='roster'?'active':''} aria-current={section==='roster'?'page':undefined} onClick={()=>switchTab('roster')}><BookOpen size={21}/><span>角色列表</span></button><button className={section==='growth'?'active':''} aria-current={section==='growth'?'page':undefined} onClick={()=>switchTab('growth')}><Sprout size={21}/><span>培養重點</span></button></nav>
   </main>
  </div></MetricDisplayContext>
 }

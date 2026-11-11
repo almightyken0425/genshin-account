@@ -8,10 +8,10 @@ test('account presentation has no edit, draft or save controls',()=>{
  assert.ok(!existsSync(new URL('../app/save_controls.tsx',import.meta.url)));
  for(const token of ['<input','<select','onChange','onRoll']) assert.ok(!substat.includes(token),token);
 });
-test('footer has only the two owner-specified destinations',()=>{
+test('footer has three owner-specified destinations',()=>{
  assert.match(dashboard,/aria-label="主要分頁"/);
  assert.match(dashboard,/switchTab\('teams'\)/);assert.match(dashboard,/switchTab\('roster'\)/);
- assert.match(dashboard,/selectedTeams.map/);
+ assert.match(dashboard,/selectedTeams.map/);assert.match(dashboard,/switchTab\('growth'\)/);assert.match(dashboard,/openTeam\(team.id\)/);assert.ok(!dashboard.includes('teams-heading'));assert.match(dashboard,/返回隊伍列表/);
  assert.match(dashboard,/window\.history\.pushState/);assert.match(dashboard,/popstate/);
 });
 
