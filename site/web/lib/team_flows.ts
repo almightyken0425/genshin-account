@@ -5,8 +5,8 @@ export const teamFlows:Record<string,FlowStep[]>={
   {id:'xilonen',moves:['E → A2','撿火結晶']},{id:'citlali',moves:['E → Q']},
   {id:'mavuika',moves:['掛冰後 Q → 跳躍','圈內持續摩托重擊']}],
  zibai:[
-  {id:'columbina',moves:['E → Q 可用時施放']},{id:'linnea',moves:['A → 單按 E','需治療時 Q']},
-  {id:'illuga',moves:['Q → E']},{id:'zibai',moves:['E','A4 → 強化 E，共 4 組','Q 可用：E 後 A → Q','或 Q 替代一組 A4']}],
+  {id:'columbina',moves:['E → Q']},{id:'linnea',moves:['A → E']},
+  {id:'illuga',moves:['E → Q']},{id:'zibai',moves:['E → Q','A4 → E','A4 → E','A4 → E','A4 → E']}],
  nefer:[
   {id:'nefer',moves:['首輪可先 E']},{id:'columbina',moves:['E → Q']},{id:'nahida',moves:['E → Q']},
   {id:'lauma',moves:['長 E → Q']},{id:'nefer',moves:['E → 重擊 → 衝刺，共 3 組','E → 重擊 → 衝刺，共 3 組','月露不足：Q 或換人補技能']}],

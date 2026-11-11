@@ -14,3 +14,5 @@ export function weaponImage(name:string){
 export function artifactImage(setName:string,slot:string){
  return (catalog.artifacts as Record<string,ArtifactArt>)[setName]?.slots[slot];
 }
+
+export function characterName(id:string){return (catalog.characters as Record<string,CharacterArt>)[id]?.name||id;}

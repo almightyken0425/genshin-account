@@ -30,9 +30,9 @@ test('Skirk flow is image and moves only, preserving full combo',()=>{
 test('Skirk exact four rows and no extra A5 or Escoffier Q',()=>{
  const flow=readFileSync(new URL('../app/skirk_flow.tsx',import.meta.url),'utf8');
  assert.equal((flow.match(/A5/g)||[]).length,3);
- assert.equal((flow.match(/<span>/g)||[]).length,3);
+ assert.match(flow,/RotationCard/);
  assert.match(flow,/id:'escoffier',name:'愛可菲',keys:'E'/);
- assert.match(dashboard,/skirk-centered-header/);
+ assert.match(dashboard,/<CenteredHeader title={team.name}/);
 });
 
 test('team members follow first appearance and detail cards contain images only',()=>{
@@ -79,3 +79,25 @@ test('rotation card copy has no parentheses and move area is centered',()=>{
 });
 
 test('team detail has no redundant rotation title',()=>{assert.ok(!dashboard.includes('<h3>操作手法</h3>'))});
+test('growth page contains exactly the requested Escoffier sands target',()=>{
+ const page=readFileSync(new URL('../app/growth_target.tsx',import.meta.url),'utf8');
+ for(const text of ['愛可菲','黃金劇團','時之沙','攻擊力 %','暴擊率','暴擊傷害','元素充能效率','罪禍的終末','替換生命沙'])assert.ok(page.includes(text));
+ assert.equal((page.match(/<article/g)||[]).length,1);assert.ok(!page.includes('等待根據'));
+});
+
+test('all team headers share a symmetric accessible component',()=>{
+ const header=readFileSync(new URL('../app/centered_header.tsx',import.meta.url),'utf8');
+ const css=readFileSync(new URL('../app/globals.css',import.meta.url),'utf8');
+ assert.ok(header.includes('aria-label={backLabel}'));assert.ok(css.includes('grid-template-columns:44px minmax(0,1fr) 44px'));
+ assert.ok(!dashboard.includes("team.id==='skirk'?'skirk-centered-header'"));
+ for(const name of ['skirk_flow','team_flow'])assert.match(readFileSync(new URL('../app/'+name+'.tsx',import.meta.url),'utf8'),/RotationCard/);
+});
+test('shared rotation cards expose character identity to screen readers',()=>{
+ const card=readFileSync(new URL('../app/rotation_card.tsx',import.meta.url),'utf8');
+ assert.ok(card.includes('alt={characterName||lookupCharacterName(characterId)}'));
+});
+test('Zibai requested exact five rows and simplified support skills',()=>{
+ const flow=readFileSync(new URL('../lib/team_flows.ts',import.meta.url),'utf8').split(' zibai:[')[1].split(' nefer:[')[0];
+ assert.ok(flow.includes("id:'columbina',moves:['E → Q']"));assert.ok(flow.includes("id:'linnea',moves:['A → E']"));
+ assert.ok(flow.includes("moves:['E → Q','A4 → E','A4 → E','A4 → E','A4 → E']"));assert.ok(!flow.includes('治療'));
+});

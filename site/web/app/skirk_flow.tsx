@@ -1,6 +1,5 @@
 import {ArrowDown} from 'lucide-react';
-import {characterImage} from '@/lib/game_assets';
-import GameImage from './game_image';
+import RotationCard from './rotation_card';
 const steps=[
  {id:'escoffier',name:'愛可菲',keys:'E'},
  {id:'furina',name:'芙寧娜',keys:'E → Q'},
@@ -9,5 +8,5 @@ const steps=[
 ];
 export default function SkirkFlow(){return <div className="skirk-minimal-flow skirk-uniform-type" aria-label="絲柯克隊操作流程圖">{steps.map((step,i)=><div key={step.id}>
  {i>0&&<div className="minimal-flow-arrow" aria-hidden="true"><ArrowDown size={19}/></div>}
- <div className="minimal-flow-card"><GameImage src={characterImage(step.id,'icon')} alt={step.name}/><div className="minimal-flow-moves"><strong>{step.keys}</strong>{step.id==='skirk'&&<div className="minimal-flow-combos" aria-label="後續三行連段"><span>A5 → 衝刺</span><span>A5 → 重擊</span><span>A5</span></div>}</div></div>
+ <RotationCard characterId={step.id} characterName={step.name} moves={step.id==='skirk'?[step.keys,'A5 → 衝刺','A5 → 重擊','A5']:[step.keys]}/>
  </div>)}</div>}
