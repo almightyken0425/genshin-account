@@ -1,0 +1,477 @@
+{
+  "schema_version": 2,
+  "id": "video_5680_20261111",
+  "imported_at": "2026-11-11T09:34:03+00:00",
+  "media": {
+    "type": "video",
+    "file_name": "IMG_5680.MP4",
+    "sha256": "67ad8724ce18527e60d68f63ceba2b397ce18b91cadfba5ec5f2ed78929299f8",
+    "resolution": [
+      848,
+      384
+    ],
+    "recorded_at": null,
+    "game_version": null,
+    "stored_in_repo": false,
+    "duration_seconds": 150.4
+  },
+  "extraction": {
+    "path": "imports/video_5680_20261111/extracted.json",
+    "sha256": "c5c69d825ab31caa37a66bdebab584d0b4890f9bebf94bac07ea34c9d707465d"
+  },
+  "screenshots": [
+    {
+      "id": "video_5680_20261111_shot_001",
+      "path": "evidence/video_5680_20261111/screenshots/001.png",
+      "sha256": "b0d45e24c5244a39c095ba677c2be7dfbe506b70973c87aed054d1b8948d86fd",
+      "time_seconds": 2.5,
+      "character_id": "chasca",
+      "kind": "overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_002",
+      "path": "evidence/video_5680_20261111/screenshots/002.png",
+      "sha256": "de52e39ba9f95641f47f3902e261e30a3d280cd3c135143d11203ba67c5012a6",
+      "time_seconds": 27.1,
+      "character_id": "chasca",
+      "kind": "constellation",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_003",
+      "path": "evidence/video_5680_20261111/screenshots/003.png",
+      "sha256": "33f0d30b2d057e1f5b913261a8d0089e6f6f1203e2641aa04e295e547b36728c",
+      "time_seconds": 28.5,
+      "character_id": "chasca",
+      "kind": "talents",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_004",
+      "path": "evidence/video_5680_20261111/screenshots/004.png",
+      "sha256": "b8f7f049a62eb72852bc44b4930122c5f5c359417c9083cd8b491820ae6519fb",
+      "time_seconds": 6.5,
+      "character_id": "chasca",
+      "kind": "weapon",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_005",
+      "path": "evidence/video_5680_20261111/screenshots/005.png",
+      "sha256": "15afaa79d7938a897727bddd1c44570d6bfc57a3cb908116d8d80be640f62bff",
+      "time_seconds": 12.352497225305216,
+      "character_id": "chasca",
+      "kind": "artifact_flower",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_006",
+      "path": "evidence/video_5680_20261111/screenshots/006.png",
+      "sha256": "20ea0d2da86a870ff5e8e70c49f5329b88f835ee6e2fb61f59b6fddf3045313a",
+      "time_seconds": 15.19023307436182,
+      "character_id": "chasca",
+      "kind": "artifact_plume",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_007",
+      "path": "evidence/video_5680_20261111/screenshots/007.png",
+      "sha256": "9baab200f699921b13ed2cfe5a05d2a8560794b61db07cc4e9fc40834fa19945",
+      "time_seconds": 17.694117647058825,
+      "character_id": "chasca",
+      "kind": "artifact_sands",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_008",
+      "path": "evidence/video_5680_20261111/screenshots/008.png",
+      "sha256": "67ef754df4e5d9c0b626ad532c547bd60718be8fb53f7f336f82fd4743e8b762",
+      "time_seconds": 20.19800221975583,
+      "character_id": "chasca",
+      "kind": "artifact_goblet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_009",
+      "path": "evidence/video_5680_20261111/screenshots/009.png",
+      "sha256": "3ae75b92d308e9a2f762ff4bf230f55a8c2c9bdb79e86b82cd57d6d0a33f17f2",
+      "time_seconds": 23.536514983351832,
+      "character_id": "chasca",
+      "kind": "artifact_circlet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_010",
+      "path": "evidence/video_5680_20261111/screenshots/010.png",
+      "sha256": "947d61fa51bd7e0618c4ab8471e12632e339adea7a184f19ccde5f2cbafd79c3",
+      "time_seconds": 3.5,
+      "character_id": "chasca",
+      "kind": "panel",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_011",
+      "path": "evidence/video_5680_20261111/screenshots/011.png",
+      "sha256": "c6f27d289f14a5fc5bd4446df52b00380faa3b07d19fea2a8ae90083bca0587d",
+      "time_seconds": 54.5,
+      "character_id": "linnea",
+      "kind": "overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_012",
+      "path": "evidence/video_5680_20261111/screenshots/012.png",
+      "sha256": "1821508ee1b5b15fd9f5e68a0ec406a751627cdec6370f2b6fe3f580e8a0a3b0",
+      "time_seconds": 32.5,
+      "character_id": "linnea",
+      "kind": "constellation",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_013",
+      "path": "evidence/video_5680_20261111/screenshots/013.png",
+      "sha256": "62eb756a7026cb3abab22b55d4ae1628f1bf7bf8d4446147e41d7e6115f2d736",
+      "time_seconds": 31.5,
+      "character_id": "linnea",
+      "kind": "talents",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_014",
+      "path": "evidence/video_5680_20261111/screenshots/014.png",
+      "sha256": "6ab860fce4ff1a13cd6036e78bc535342e84634bd5a95ae024c7f1f222c3ee44",
+      "time_seconds": 52.5,
+      "character_id": "linnea",
+      "kind": "weapon",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_015",
+      "path": "evidence/video_5680_20261111/screenshots/015.png",
+      "sha256": "68e4825e9db5a82f288220a7d0c4ce5a83e97d2e696531fe599b396314080cc3",
+      "time_seconds": 36.89056603773585,
+      "character_id": "linnea",
+      "kind": "artifact_flower",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_016",
+      "path": "evidence/video_5680_20261111/screenshots/016.png",
+      "sha256": "5609c2e9029d0956b6b65e29715cf9a57bdf523884fe103f34f973e9229728de",
+      "time_seconds": 39.394450610432855,
+      "character_id": "linnea",
+      "kind": "artifact_plume",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_017",
+      "path": "evidence/video_5680_20261111/screenshots/017.png",
+      "sha256": "c1e5e83197c12e9cddf6675a6afe3a325901b3e503ef5bcb172a0a9a4ca8190f",
+      "time_seconds": 41.731409544950054,
+      "character_id": "linnea",
+      "kind": "artifact_sands",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_018",
+      "path": "evidence/video_5680_20261111/screenshots/018.png",
+      "sha256": "f8ec2da5242ac15a0748a2df800fcb449bb36feeaa8ea131c69793113f770d86",
+      "time_seconds": 45.23684794672586,
+      "character_id": "linnea",
+      "kind": "artifact_goblet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_019",
+      "path": "evidence/video_5680_20261111/screenshots/019.png",
+      "sha256": "d9a7abf70d14d3317dabd5be25a24cb20057aec4240c5d717fd62274646baf6d",
+      "time_seconds": 47.74073251942286,
+      "character_id": "linnea",
+      "kind": "artifact_circlet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_020",
+      "path": "evidence/video_5680_20261111/screenshots/020.png",
+      "sha256": "3d8c032d0f0da12f466bc7068d523107936a5f0e0069935e6b825139440b30bf",
+      "time_seconds": 55.5,
+      "character_id": "linnea",
+      "kind": "panel",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_021",
+      "path": "evidence/video_5680_20261111/screenshots/021.png",
+      "sha256": "550cbac54a98aa936d35bc3c9c23baaf20a2a218f1afcd4d01e7c0d0d62eea3a",
+      "time_seconds": 71.5,
+      "character_id": "zibai",
+      "kind": "overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_022",
+      "path": "evidence/video_5680_20261111/screenshots/022.png",
+      "sha256": "ea0f533a88f6e791d8d7aedf5ee865c8c0c7b6eb12ba2c4695aed2d4d4a595df",
+      "time_seconds": 89.5,
+      "character_id": "zibai",
+      "kind": "constellation",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_023",
+      "path": "evidence/video_5680_20261111/screenshots/023.png",
+      "sha256": "bb12623395b53e4f58a984eb4c617b2925077f168239fec57b623b888270a475",
+      "time_seconds": 91.5,
+      "character_id": "zibai",
+      "kind": "talents",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_024",
+      "path": "evidence/video_5680_20261111/screenshots/024.png",
+      "sha256": "59bb36139c64cc82108dee13d5fda9c29139376c9c04aee3e446bf635c853fba",
+      "time_seconds": 72.5,
+      "character_id": "zibai",
+      "kind": "weapon",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_025",
+      "path": "evidence/video_5680_20261111/screenshots/025.png",
+      "sha256": "53786d1e9d6d0497064f126bf70cbacad542760c44d5fff03819fba97fd43b96",
+      "time_seconds": 76.1180910099889,
+      "character_id": "zibai",
+      "kind": "artifact_flower",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_026",
+      "path": "evidence/video_5680_20261111/screenshots/026.png",
+      "sha256": "6c0c7a66559906d95aa4f0fcfe25559993ff35083eb44401468180b77efe0597",
+      "time_seconds": 78.4550499445061,
+      "character_id": "zibai",
+      "kind": "artifact_plume",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_027",
+      "path": "evidence/video_5680_20261111/screenshots/027.png",
+      "sha256": "ba33378da688ffb82247a2e1de48331723a3e1bb6079dbcb46779e9e94465f10",
+      "time_seconds": 80.79200887902331,
+      "character_id": "zibai",
+      "kind": "artifact_sands",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_028",
+      "path": "evidence/video_5680_20261111/screenshots/028.png",
+      "sha256": "da2d83d0818271b5eb7aa77a787b6a07fa6e86bdaa56d5a57cd4be07369e4ee1",
+      "time_seconds": 83.29589345172032,
+      "character_id": "zibai",
+      "kind": "artifact_goblet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_029",
+      "path": "evidence/video_5680_20261111/screenshots/029.png",
+      "sha256": "bf187141fae8d4bd0571db2f8f2508c2b3725fbb5ee288028eb7b7033d1cdc70",
+      "time_seconds": 85.79977802441732,
+      "character_id": "zibai",
+      "kind": "artifact_circlet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_030",
+      "path": "evidence/video_5680_20261111/screenshots/030.png",
+      "sha256": "de77c04e21d81d39cdb378adbff333b270d72560649759594d248b04fbb76955",
+      "time_seconds": 70.5,
+      "character_id": "zibai",
+      "kind": "panel",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_031",
+      "path": "evidence/video_5680_20261111/screenshots/031.png",
+      "sha256": "8698c3534fb4d6545830acc97d12dab13fb1a79640e95d77d2d55e7bae095495",
+      "time_seconds": 118.5,
+      "character_id": "xilonen",
+      "kind": "overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_032",
+      "path": "evidence/video_5680_20261111/screenshots/032.png",
+      "sha256": "1c22d10a6610edd01f780ccdf4e201e8395c73378ed794bebf8c32bad04fa2f2",
+      "time_seconds": 95.5,
+      "character_id": "xilonen",
+      "kind": "constellation",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_033",
+      "path": "evidence/video_5680_20261111/screenshots/033.png",
+      "sha256": "dd33e0df1a40a85e70eb933e91b067052313790fe6df804241b7dd1c7b9f6438",
+      "time_seconds": 93.5,
+      "character_id": "xilonen",
+      "kind": "talents",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_034",
+      "path": "evidence/video_5680_20261111/screenshots/034.png",
+      "sha256": "3178259a24a40764e214f8227d0f9b396e3f764c8d54801ac3dda3728c81ff56",
+      "time_seconds": 116.5,
+      "character_id": "xilonen",
+      "kind": "weapon",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_035",
+      "path": "evidence/video_5680_20261111/screenshots/035.png",
+      "sha256": "c93803db341115f74dd2b66fd49e479b3b06bcc567de0aac5b7eeefcaa744330",
+      "time_seconds": 101.99156492785794,
+      "character_id": "xilonen",
+      "kind": "artifact_flower",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_036",
+      "path": "evidence/video_5680_20261111/screenshots/036.png",
+      "sha256": "38768d6b1ae792a0948270230bd23197c1f2464677b7bb51d3144ed442b785e2",
+      "time_seconds": 104.49544950055494,
+      "character_id": "xilonen",
+      "kind": "artifact_plume",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_037",
+      "path": "evidence/video_5680_20261111/screenshots/037.png",
+      "sha256": "0e253a140a4e53dd1e8d79f60d296c757747acf6841031defa606c44e6949dff",
+      "time_seconds": 106.83240843507214,
+      "character_id": "xilonen",
+      "kind": "artifact_sands",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_038",
+      "path": "evidence/video_5680_20261111/screenshots/038.png",
+      "sha256": "cae26fd0ec214ecd741a53b349fe564c91bbab082bf2a01a5a1a399bb5d8e09c",
+      "time_seconds": 109.83706992230854,
+      "character_id": "xilonen",
+      "kind": "artifact_goblet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_039",
+      "path": "evidence/video_5680_20261111/screenshots/039.png",
+      "sha256": "f437cf418fe8830576be93fafb0b8bf6372540ce59eef43e09fe7c378e8323bd",
+      "time_seconds": 112.17402885682576,
+      "character_id": "xilonen",
+      "kind": "artifact_circlet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_040",
+      "path": "evidence/video_5680_20261111/screenshots/040.png",
+      "sha256": "b7dda019166820467ef2fabb27f3cabc9092bc9f82335a456674bf92ad74c23d",
+      "time_seconds": 119.5,
+      "character_id": "xilonen",
+      "kind": "panel",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_041",
+      "path": "evidence/video_5680_20261111/screenshots/041.png",
+      "sha256": "2b7e9875acf5ec492e8302723a29627ebd58b4f4a2ee4c8cfbbf30af113f28f6",
+      "time_seconds": 124.5,
+      "character_id": "zhongli",
+      "kind": "overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_042",
+      "path": "evidence/video_5680_20261111/screenshots/042.png",
+      "sha256": "0af65d9c5266185277e7163b3b495216f3acefc2aa7fdb8a112a5beb71cb0537",
+      "time_seconds": 147.5,
+      "character_id": "zhongli",
+      "kind": "constellation",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_043",
+      "path": "evidence/video_5680_20261111/screenshots/043.png",
+      "sha256": "4e97c15ec851b95ee4de06e009ad37f72bb155033b9cec5c2e6a7026c7ff5aee",
+      "time_seconds": 149.5,
+      "character_id": "zhongli",
+      "kind": "talents",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_044",
+      "path": "evidence/video_5680_20261111/screenshots/044.png",
+      "sha256": "3a6a2d7d83ed1b5cef7747b8d57a162e797da4bfde4bfde1fd98b3e29b8cf968",
+      "time_seconds": 129.5,
+      "character_id": "zhongli",
+      "kind": "weapon",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_045",
+      "path": "evidence/video_5680_20261111/screenshots/045.png",
+      "sha256": "91c3ddc831ca57a11d379ed2bd2c5aa188698d7e5a72141dce6349b831a68f89",
+      "time_seconds": 133.54051054384018,
+      "character_id": "zhongli",
+      "kind": "artifact_flower",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_046",
+      "path": "evidence/video_5680_20261111/screenshots/046.png",
+      "sha256": "bac3f2aa24845b107a2f0ab3047140a3f47f5662e6aa6a0f865a1c2925628166",
+      "time_seconds": 136.37824639289678,
+      "character_id": "zhongli",
+      "kind": "artifact_plume",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_047",
+      "path": "evidence/video_5680_20261111/screenshots/047.png",
+      "sha256": "acc7b0fd11892de87df5b63fb00105a222138ea1e615e6541687c84e75cbae94",
+      "time_seconds": 138.88213096559377,
+      "character_id": "zhongli",
+      "kind": "artifact_sands",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_048",
+      "path": "evidence/video_5680_20261111/screenshots/048.png",
+      "sha256": "c8c539f27e806d6105a2cfc35b09fd923dc5c5f71f8510240f761919f9076ab7",
+      "time_seconds": 141.7198668146504,
+      "character_id": "zhongli",
+      "kind": "artifact_goblet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_049",
+      "path": "evidence/video_5680_20261111/screenshots/049.png",
+      "sha256": "29f24059ca5751a8c4a9641ed001d3d519642f480e2816d0d0c1c08b421aac0f",
+      "time_seconds": 144.3906770255272,
+      "character_id": "zhongli",
+      "kind": "artifact_circlet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5680_20261111_shot_050",
+      "path": "evidence/video_5680_20261111/screenshots/050.png",
+      "sha256": "d9df16f7f206670291a60746fc3d8f1372b397e830286b32f82125da3c11ba35",
+      "time_seconds": 127.5,
+      "character_id": "zhongli",
+      "kind": "panel",
+      "verification": "agent_reviewed"
+    }
+  ],
+  "notes": [
+    "來源錄影日期與遊戲版本未知。截圖保留完整畫面及原擷取解析度。"
+  ]
+}

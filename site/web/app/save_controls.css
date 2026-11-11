@@ -1,0 +1,29 @@
+.app-shell.is-editing .main{padding-bottom:calc(140px + env(safe-area-inset-bottom))}
+.edit-dock{position:fixed;z-index:35;bottom:20px;left:50%;transform:translateX(-50%);width:calc(100% - 40px);max-width:1000px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 20px;border:1px solid var(--line);border-radius:16px;background:var(--canvas);box-shadow:0 8px 38px #1822311f}
+.edit-dock-status{display:flex;flex-direction:column;gap:3px;min-width:0}
+.edit-dock-status>span{font-size:11px;color:var(--muted)}
+.edit-dock-review{display:flex;align-items:center;gap:5px;min-height:28px;padding:0;background:transparent;color:var(--ink);font-size:13px;text-align:left}
+.edit-dock-actions{display:flex;align-items:center;gap:18px;flex-shrink:0}
+.edit-dock-actions .primary{min-height:44px;white-space:nowrap}
+.save-changes{margin:0 0 20px;padding:0;list-style:none;font-size:13px;line-height:1.7}
+.save-changes li{padding:10px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.save-sheet-body .field{text-align:left;align-items:stretch}
+.save-sheet-body .field textarea{min-height:90px;max-width:none;text-align:left}
+.save-sheet-body .field small{color:var(--muted);margin-left:6px}
+.save-sheet-body .message,.save-sheet-body .conflict{margin:0 0 16px}
+.save-sheet-footer{flex-wrap:wrap;gap:12px}
+.save-sheet-footer .text-button{display:inline-flex;align-items:center;gap:5px;min-height:44px}
+.save-sheet-footer .primary{margin-left:auto;min-height:44px}
+@media(max-width:640px){
+ .edit-dock{bottom:0;width:100%;border-radius:16px 16px 0 0;border-bottom:0;padding:12px 16px max(12px,env(safe-area-inset-bottom));gap:10px}
+ .edit-dock-actions{gap:12px}
+ .edit-dock-status>span{font-size:10px}
+ .edit-dock-review{font-size:12px}
+ .edit-dock-actions .text-button{font-size:12px}
+ .edit-dock-actions .primary{padding:11px 12px;font-size:13px}
+}
+@media(max-width:380px){
+ .edit-dock{flex-wrap:wrap}
+ .edit-dock-status{flex-direction:row;justify-content:space-between;align-items:center;width:100%}
+ .edit-dock-actions{width:100%;justify-content:space-between}
+}

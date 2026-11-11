@@ -1,0 +1,2368 @@
+{
+  "retrieved_at": "2026-11-11T09:43:51.701009+00:00",
+  "artwork_copyright": "Game artwork © HoYoverse. This is an unofficial personal record tool.",
+  "catalog": "https://github.com/theBowja/genshin-db",
+  "image_provider": "https://enka.network",
+  "sources": [
+    {
+      "path": "/assets/characters/escoffier_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Escoffier.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=Escoffier",
+      "game_id": 10000112,
+      "name": "Escoffier",
+      "width": 256,
+      "height": 256,
+      "sha256": "20fd7e43a73dbfa472f36f8a5a9b913efe7e707f0f2acdec25f3264ce28b6921"
+    },
+    {
+      "path": "/assets/characters/escoffier_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Escoffier.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=Escoffier",
+      "game_id": 10000112,
+      "name": "Escoffier",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "1c84bcf5091cd3b1715f44502b29c4eb2a8de308f42abc097cd7609606ed2ebd"
+    },
+    {
+      "path": "/assets/characters/furina_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Furina.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=Furina",
+      "game_id": 10000089,
+      "name": "Furina",
+      "width": 256,
+      "height": 256,
+      "sha256": "e8197798bf03f3eb3bc3a436133751eab5881d314f785d561db5ca2b3e97ff11"
+    },
+    {
+      "path": "/assets/characters/furina_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Furina.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=Furina",
+      "game_id": 10000089,
+      "name": "Furina",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "5ef4b8cba5653c278c2dd05d4a75d07b4e5dc510be5df8be8354cbe44e004510"
+    },
+    {
+      "path": "/assets/characters/vodyanitsa_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Vodyanitsa.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=Vodyanitsa",
+      "game_id": 10000140,
+      "name": "Vodyanitsa",
+      "width": 256,
+      "height": 256,
+      "sha256": "401347f6f5910f638ee998708f615c6cb6b94f774590b3f4be335f37be7610c8"
+    },
+    {
+      "path": "/assets/characters/vodyanitsa_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Vodyanitsa.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=Vodyanitsa",
+      "game_id": 10000140,
+      "name": "Vodyanitsa",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "6c78e4b57935c2466c9bd4b2a9f38ca0adb85377ae637397bdf981822f6d59ca"
+    },
+    {
+      "path": "/assets/characters/skirk_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_SkirkNew.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=Skirk",
+      "game_id": 10000114,
+      "name": "Skirk",
+      "width": 256,
+      "height": 256,
+      "sha256": "d93cbe0bb923cd197a99a582de5728e84abeb17ca306fffadd16fd4fb3f6c828"
+    },
+    {
+      "path": "/assets/characters/skirk_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_SkirkNew.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=Skirk",
+      "game_id": 10000114,
+      "name": "Skirk",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "45a546c850b2460ff38ddb4e9364779252e9af0c628a26188d37681994bdd585"
+    },
+    {
+      "path": "/assets/weapons/primordial_jade_winged_spear.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Pole_Morax_Awaken.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=Primordial%20Jade%20Winged-Spear",
+      "game_id": 13505,
+      "name": "Primordial Jade Winged-Spear",
+      "width": 256,
+      "height": 256,
+      "sha256": "d51830aa200cb9c139ec58308bba5bf5d3e9740624bd26afbff9fb9a9b6fc193"
+    },
+    {
+      "path": "/assets/weapons/favonius_sword.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Sword_Zephyrus_Awaken.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=Favonius%20Sword",
+      "game_id": 11401,
+      "name": "Favonius Sword",
+      "width": 256,
+      "height": 256,
+      "sha256": "754afffb913445fa4bf26b557658767aa5be08f1d5a1920ea2234cd48ebf4e45"
+    },
+    {
+      "path": "/assets/weapons/thrilling_tales_of_dragon_slayers.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Catalyst_Pulpfic_Awaken.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=Thrilling%20Tales%20of%20Dragon%20Slayers",
+      "game_id": 14302,
+      "name": "Thrilling Tales of Dragon Slayers",
+      "width": 256,
+      "height": 256,
+      "sha256": "094f68e18d2e4a924df3290e8fc32a8dc29b6effd8becec321f397eae50acb29"
+    },
+    {
+      "path": "/assets/weapons/azurelight.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Sword_OuterSword_Awaken.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=Azurelight",
+      "game_id": 11517,
+      "name": "Azurelight",
+      "width": 256,
+      "height": 256,
+      "sha256": "039e1f32d9595b32690034de30c460ea3e25524502dba0f184c5784cb39db556"
+    },
+    {
+      "path": "/assets/artifacts/golden_troupe_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15032_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Golden%20Troupe",
+      "game_id": 15032,
+      "name": "Golden Troupe",
+      "width": 256,
+      "height": 256,
+      "sha256": "ad1f84d12ed32f46b29fd517adb597a174920b0e29f57dda92e6fe073d31b7b7"
+    },
+    {
+      "path": "/assets/artifacts/golden_troupe_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15032_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Golden%20Troupe",
+      "game_id": 15032,
+      "name": "Golden Troupe",
+      "width": 256,
+      "height": 256,
+      "sha256": "ace27e48f56587f99af0108a4c2d77fe831250797ad84194f763d63cd2890890"
+    },
+    {
+      "path": "/assets/artifacts/golden_troupe_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15032_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Golden%20Troupe",
+      "game_id": 15032,
+      "name": "Golden Troupe",
+      "width": 256,
+      "height": 256,
+      "sha256": "86d3d60013131d819b5513994f893278bd943c38a6306a800a8a0704b7221e81"
+    },
+    {
+      "path": "/assets/artifacts/golden_troupe_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15032_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Golden%20Troupe",
+      "game_id": 15032,
+      "name": "Golden Troupe",
+      "width": 256,
+      "height": 256,
+      "sha256": "ea0df2b41e61d3621002cb81ab37c0447c1bb0fe141e4253170a92b7ee649700"
+    },
+    {
+      "path": "/assets/artifacts/golden_troupe_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15032_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Golden%20Troupe",
+      "game_id": 15032,
+      "name": "Golden Troupe",
+      "width": 256,
+      "height": 256,
+      "sha256": "3e72af05ba331a83f6eda666fd5239cc760f06b451e580aec4e98f45a56fb247"
+    },
+    {
+      "path": "/assets/artifacts/wanderer_s_troupe_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15003_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Wanderer's%20Troupe",
+      "game_id": 15003,
+      "name": "Wanderer's Troupe",
+      "width": 180,
+      "height": 180,
+      "sha256": "507fb45ce3947a4f9af75755efeba53279a59776896d539233e0e85420a75775"
+    },
+    {
+      "path": "/assets/artifacts/night_of_the_sky_s_unveiling_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15041_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Night%20of%20the%20Sky's%20Unveiling",
+      "game_id": 15041,
+      "name": "Night of the Sky's Unveiling",
+      "width": 256,
+      "height": 256,
+      "sha256": "cf25bba25373f1152285f9a0eee2f34bae5a8a96c4d0437f317814fec9b3d9bf"
+    },
+    {
+      "path": "/assets/artifacts/tenacity_of_the_millelith_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15017_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Tenacity%20of%20the%20Millelith",
+      "game_id": 15017,
+      "name": "Tenacity of the Millelith",
+      "width": 180,
+      "height": 180,
+      "sha256": "e5bb28a069c01146dce38d3586717d017d37df68cb1805ecab2a9969df2886d7"
+    },
+    {
+      "path": "/assets/artifacts/tenacity_of_the_millelith_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15017_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Tenacity%20of%20the%20Millelith",
+      "game_id": 15017,
+      "name": "Tenacity of the Millelith",
+      "width": 180,
+      "height": 180,
+      "sha256": "d22917f0ccf8665dd825b6c2f7b6c1c82f889599d41843889ce648c43c3f3da6"
+    },
+    {
+      "path": "/assets/artifacts/tenacity_of_the_millelith_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15017_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Tenacity%20of%20the%20Millelith",
+      "game_id": 15017,
+      "name": "Tenacity of the Millelith",
+      "width": 180,
+      "height": 180,
+      "sha256": "366ead8194521ae692af66a24bb5401bd50dce6ec8a31d75fdfd4aeaae5df4c9"
+    },
+    {
+      "path": "/assets/artifacts/tenacity_of_the_millelith_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15017_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Tenacity%20of%20the%20Millelith",
+      "game_id": 15017,
+      "name": "Tenacity of the Millelith",
+      "width": 180,
+      "height": 180,
+      "sha256": "34fcf6b18ce5e6906958f80267698ffaaba54aed68697bfcfdde0a1f8e33e335"
+    },
+    {
+      "path": "/assets/artifacts/tenacity_of_the_millelith_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15017_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Tenacity%20of%20the%20Millelith",
+      "game_id": 15017,
+      "name": "Tenacity of the Millelith",
+      "width": 180,
+      "height": 180,
+      "sha256": "815a6936917045023194551e805175d8d5a6272767960008e4eda50994aee90b"
+    },
+    {
+      "path": "/assets/artifacts/finale_of_the_deep_galleries_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15040_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Finale%20of%20the%20Deep%20Galleries",
+      "game_id": 15040,
+      "name": "Finale of the Deep Galleries",
+      "width": 256,
+      "height": 256,
+      "sha256": "39e7d09a1ca00f43682b0f1bf29bd9da545d127e35efd13923f507e5fd1ced6f"
+    },
+    {
+      "path": "/assets/artifacts/finale_of_the_deep_galleries_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15040_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Finale%20of%20the%20Deep%20Galleries",
+      "game_id": 15040,
+      "name": "Finale of the Deep Galleries",
+      "width": 256,
+      "height": 256,
+      "sha256": "a533758f498bef5ac5883cf2e83300884cf6f4c56e531c5e64a58dc7cbb620b4"
+    },
+    {
+      "path": "/assets/artifacts/finale_of_the_deep_galleries_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15040_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Finale%20of%20the%20Deep%20Galleries",
+      "game_id": 15040,
+      "name": "Finale of the Deep Galleries",
+      "width": 256,
+      "height": 256,
+      "sha256": "dd93c87cb348e23a52491a65566b1a757eb7101517aa19b1b7676a21f7b33baa"
+    },
+    {
+      "path": "/assets/artifacts/finale_of_the_deep_galleries_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15040_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Finale%20of%20the%20Deep%20Galleries",
+      "game_id": 15040,
+      "name": "Finale of the Deep Galleries",
+      "width": 256,
+      "height": 256,
+      "sha256": "1c718b69b6b272947346b7a1c03d064469769df11390110307e8a9159de57f09"
+    },
+    {
+      "path": "/assets/artifacts/gladiator_s_finale_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15001_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=Gladiator's%20Finale",
+      "game_id": 15001,
+      "name": "Gladiator's Finale",
+      "width": 180,
+      "height": 180,
+      "sha256": "672789c319e04589c6fcf2cca1f8c83ae36f30b44ccf28ba0fbbcb97cd47ec98"
+    },
+    {
+      "path": "/assets/characters/chasca_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Chasca.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000104&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000104,
+      "name": "恰斯卡",
+      "width": 256,
+      "height": 256,
+      "sha256": "afb2e129a8e7c8abdc493efbc10834e726c2d444fe6b0b970ed4394db6c4aef7"
+    },
+    {
+      "path": "/assets/characters/linnea_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Linnea.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000130&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000130,
+      "name": "莉奈婭",
+      "width": 256,
+      "height": 256,
+      "sha256": "2ecb5af2f4f23e41bb2c3f09da09284a1076569b328d0dd9f6259f4b5edfea16"
+    },
+    {
+      "path": "/assets/characters/zibai_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Zibai.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000126&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000126,
+      "name": "茲白",
+      "width": 256,
+      "height": 256,
+      "sha256": "1247831177f163bee3a1eb06f3fd4600c7694909ea22226cb4042fa6febf55be"
+    },
+    {
+      "path": "/assets/characters/xilonen_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Xilonen.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000103&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000103,
+      "name": "希諾寧",
+      "width": 256,
+      "height": 256,
+      "sha256": "ea81782905055905c4c7c95692dc1ca43a7f3ca976f071d41a530727f5edc9d3"
+    },
+    {
+      "path": "/assets/characters/zhongli_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Zhongli.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000030&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000030,
+      "name": "鍾離",
+      "width": 256,
+      "height": 256,
+      "sha256": "a8d34dc3af28b0404608493908096d38a7db7e8f38fddd072a84ec7c66fa1e51"
+    },
+    {
+      "path": "/assets/characters/linnea_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Linnea.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000130&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000130,
+      "name": "莉奈婭",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "409c4353185222663ce4e7d5d536ed626d110999d1e6576e2bdfecff2d822222"
+    },
+    {
+      "path": "/assets/characters/yumemizukimizuki_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Mizuki.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000109&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000109,
+      "name": "夢見月瑞希",
+      "width": 256,
+      "height": 256,
+      "sha256": "8a704794e461a2dbd8be0300247319ec424a85ece8aeef58867fffbcdb0e94b5"
+    },
+    {
+      "path": "/assets/characters/zibai_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Zibai.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000126&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000126,
+      "name": "茲白",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "24c5c33432854dbbb9b961d3ac1942a86666686ed587e35ac7d527cab6a741b6"
+    },
+    {
+      "path": "/assets/characters/xilonen_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Xilonen.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000103&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000103,
+      "name": "希諾寧",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "76ef20a6f50105c83828dcc9e60176dc9533ae29ff7b7788344ccb0bb53bc52e"
+    },
+    {
+      "path": "/assets/characters/chasca_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Chasca.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000104&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000104,
+      "name": "恰斯卡",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "c9a6b6529b1ad08b2ddb33d6195bec78b476dce8246c8b0377ce291c513df47e"
+    },
+    {
+      "path": "/assets/characters/kaedeharakazuha_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Kazuha.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000047&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000047,
+      "name": "楓原萬葉",
+      "width": 256,
+      "height": 256,
+      "sha256": "a3d6519f6676ee787477d5745eecb17c5fb6d437d4504e09918e7aced74f8268"
+    },
+    {
+      "path": "/assets/characters/zhongli_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Zhongli.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000030&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000030,
+      "name": "鍾離",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "e32a95400a40a05adb65d666a27167a0ec7373ff2abf0f92d55d559f7b7cd946"
+    },
+    {
+      "path": "/assets/characters/jean_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Qin.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000003&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000003,
+      "name": "琴",
+      "width": 256,
+      "height": 256,
+      "sha256": "765b861730f2b354ea1ee20cad8aeb5d00197009608c0b5345db4cb32ac58b9a"
+    },
+    {
+      "path": "/assets/characters/yumemizukimizuki_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Mizuki.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000109&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000109,
+      "name": "夢見月瑞希",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "cec60eb82e424c23786e6b31a0899803b410a500c44071faec81ef4143ea44e5"
+    },
+    {
+      "path": "/assets/characters/odetta_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Odette.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000150&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000150,
+      "name": "奧黛塔",
+      "width": 256,
+      "height": 256,
+      "sha256": "3599641cafa7bb97ae4dcffd635dd2eab4c6f9858828ba366a41024232aefd38"
+    },
+    {
+      "path": "/assets/characters/citlali_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Citlali.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000107&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000107,
+      "name": "茜特菈莉",
+      "width": 256,
+      "height": 256,
+      "sha256": "3addbe6f24985b0078701912bfeb64b16e981661dd0527b1ecd6d7d6e345df26"
+    },
+    {
+      "path": "/assets/characters/kaedeharakazuha_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Kazuha.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000047&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000047,
+      "name": "楓原萬葉",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "152e0fcc7447b5f5e3c6343c5aef617ba501df4d4fa1b635ef6e8acaed8265f3"
+    },
+    {
+      "path": "/assets/characters/jean_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Qin.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000003&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000003,
+      "name": "琴",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "20d98beb7ed154847878ae1f13b2220ce9aafe533e668fecbb7895fdfed4a150"
+    },
+    {
+      "path": "/assets/characters/varesa_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Varesa.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000111&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000111,
+      "name": "瓦雷莎",
+      "width": 256,
+      "height": 256,
+      "sha256": "2fa83fd0d9252f9a18d37cf57e6ad1df72b582ac4aee11a452e154d70ee9cef0"
+    },
+    {
+      "path": "/assets/characters/raidenshogun_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Shougun.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000052&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000052,
+      "name": "雷電將軍",
+      "width": 256,
+      "height": 256,
+      "sha256": "9c70e4979c98989259d44d2717523610cf5cd6c6d1f049341dac1004c4f8981d"
+    },
+    {
+      "path": "/assets/characters/odetta_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Odette.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000150&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000150,
+      "name": "奧黛塔",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "8d132e9d4a54059d63ddad00f5bdbaaa64676427b5c6acbaa0a0b300ecbc6d2a"
+    },
+    {
+      "path": "/assets/characters/keqing_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Keqing.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000042&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000042,
+      "name": "刻晴",
+      "width": 256,
+      "height": 256,
+      "sha256": "40b4a55d6f9497b75c6af95e5d2bca8bcc0ce5328285d2d03bb1cd49487dc5d1"
+    },
+    {
+      "path": "/assets/characters/citlali_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Citlali.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000107&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000107,
+      "name": "茜特菈莉",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "4f15725ee089fa10808c4c04287f0adefc4be20e878c2a2b1fdbcb7a3afc8377"
+    },
+    {
+      "path": "/assets/characters/raidenshogun_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Shougun.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000052&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000052,
+      "name": "雷電將軍",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "d300dbeb385968b26d19cd8721715be24c9a6ebd03231092689883cce4818fef"
+    },
+    {
+      "path": "/assets/characters/varesa_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Varesa.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000111&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000111,
+      "name": "瓦雷莎",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "bb4df14a63901ac5bf21ec55708f8e07d2583d9bed90eb809f18cae5a2178e69"
+    },
+    {
+      "path": "/assets/characters/nefer_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Nefer.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000122&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000122,
+      "name": "奈芙爾",
+      "width": 256,
+      "height": 256,
+      "sha256": "134c9cd3bda3673bd25a084ca226b1118e6139256f39ab2e8f255e530eb66e5d"
+    },
+    {
+      "path": "/assets/characters/keqing_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Keqing.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000042&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000042,
+      "name": "刻晴",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "268ab7a37b63d8da3edcf84972d3cb54b83b6dd2447ffed125469ab01e36c364"
+    },
+    {
+      "path": "/assets/characters/lauma_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Lauma.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000119&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000119,
+      "name": "菈烏瑪",
+      "width": 256,
+      "height": 256,
+      "sha256": "dc59c234af27d6c387f968c06cbd40263bd34f30ac75bc6b2f045d9cad79c4df"
+    },
+    {
+      "path": "/assets/characters/nahida_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Nahida.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000073&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000073,
+      "name": "納西妲",
+      "width": 256,
+      "height": 256,
+      "sha256": "33095c7bab7519d7f76047537658b86182bdc2ab6d90f89f6262bec6d51723b8"
+    },
+    {
+      "path": "/assets/characters/columbina_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Columbina.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000125&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000125,
+      "name": "哥倫比婭",
+      "width": 256,
+      "height": 256,
+      "sha256": "bd22310bde257c57d5e0c311c8494eebc5ffd48b7fdcee10c230fd859e28072e"
+    },
+    {
+      "path": "/assets/characters/neuvillette_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Neuvillette.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000087&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000087,
+      "name": "那維萊特",
+      "width": 256,
+      "height": 256,
+      "sha256": "a790bf334184f695fdcec0da80f517142302667f365cea876bfcc8ad967284ba"
+    },
+    {
+      "path": "/assets/characters/nefer_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Nefer.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000122&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000122,
+      "name": "奈芙爾",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "a78b20dd5c59f63386e4fba2a446932167ffa76d4db47c7d2a4f2bcc6b594628"
+    },
+    {
+      "path": "/assets/characters/lauma_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Lauma.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000119&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000119,
+      "name": "菈烏瑪",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "b0c229d8907365da916a4d433cdd13b2c9c9cc33414417172e2ac8f25b883b74"
+    },
+    {
+      "path": "/assets/characters/yelan_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Yelan.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000060&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000060,
+      "name": "夜蘭",
+      "width": 256,
+      "height": 256,
+      "sha256": "659594db7bd0a39c70b1f2758574296a185f3570b4a495a49fed7be233a46331"
+    },
+    {
+      "path": "/assets/characters/nahida_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Nahida.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000073&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000073,
+      "name": "納西妲",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "5f4b8df0641aa24d0f065f6b8ffb5478d624fc240b3a0d7c973fdd65c4bc1224"
+    },
+    {
+      "path": "/assets/characters/mavuika_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Mavuika.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000106&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000106,
+      "name": "瑪薇卡",
+      "width": 256,
+      "height": 256,
+      "sha256": "1f18e69e7a6ca6f50d68dcaa37fcc13c42d934c0160047bc00bb91308d2399fd"
+    },
+    {
+      "path": "/assets/characters/illuga_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Illuga.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000127&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000127,
+      "name": "葉洛亞",
+      "width": 256,
+      "height": 256,
+      "sha256": "ce9c7715e3dacca078420d3e0420a6bcabd223359b3ecab263d8103119b918a7"
+    },
+    {
+      "path": "/assets/characters/yelan_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Yelan.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000060&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000060,
+      "name": "夜蘭",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "fcead2009bb61998d6027df7223e65018fb62ba06cd2eeb7a6641769d01c5782"
+    },
+    {
+      "path": "/assets/characters/neuvillette_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Neuvillette.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000087&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000087,
+      "name": "那維萊特",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "05665ba4e9f9273fbe52893eaaaa9d9906234f9fb2f2ab609afb5fe407ee5cc4"
+    },
+    {
+      "path": "/assets/characters/columbina_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Columbina.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000125&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000125,
+      "name": "哥倫比婭",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "87c979de7edc812fca30b45b9c0ea1649d1f1067a7265ff837cd61b49ca453b4"
+    },
+    {
+      "path": "/assets/characters/charlotte_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Charlotte.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000088&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000088,
+      "name": "夏洛蒂",
+      "width": 256,
+      "height": 256,
+      "sha256": "fc438a7a84fb1d9673bfab823a1cb7c0a80b1e2a53994a0daf2030b9db63691b"
+    },
+    {
+      "path": "/assets/characters/arosha_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Alyosha.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000148&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000148,
+      "name": "阿羅夏",
+      "width": 256,
+      "height": 256,
+      "sha256": "3168b1f9634fd28fbfd861db960ed099a0e24aadb2a4897035dd1b886059819d"
+    },
+    {
+      "path": "/assets/characters/illuga_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Illuga.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000127&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000127,
+      "name": "葉洛亞",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "c352c6ca36cc199e4b1c454de788476431ee142fba3517c4e6fe4a2cd2f72ddc"
+    },
+    {
+      "path": "/assets/characters/iansan_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Iansan.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000110&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000110,
+      "name": "伊安珊",
+      "width": 256,
+      "height": 256,
+      "sha256": "e58055a399c0f0534b7d9066b1472dc44815a1f85f4adf89c063c7b5f5a4c7c5"
+    },
+    {
+      "path": "/assets/characters/charlotte_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Charlotte.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000088&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000088,
+      "name": "夏洛蒂",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "0304f0f3623b0ae83486082dffab388df63f78fa11e296c7d5a6396c09087c96"
+    },
+    {
+      "path": "/assets/characters/ororon_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Olorun.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000105&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000105,
+      "name": "歐洛倫",
+      "width": 256,
+      "height": 256,
+      "sha256": "d728c237758fc22690beab806228c2f0db79ba94f7cc005c9781b3be8bab65b4"
+    },
+    {
+      "path": "/assets/characters/mavuika_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Mavuika.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000106&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000106,
+      "name": "瑪薇卡",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "f3bf938589837f9a14b9978032fa0c024b875608f8d6408d30ad2af4d576a435"
+    },
+    {
+      "path": "/assets/characters/kukishinobu_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Shinobu.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000065&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000065,
+      "name": "久岐忍",
+      "width": 256,
+      "height": 256,
+      "sha256": "f9d9391c39df9e327dcefa2038463104530627232eca203cf624b1188e70a054"
+    },
+    {
+      "path": "/assets/characters/iansan_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Iansan.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000110&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000110,
+      "name": "伊安珊",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "10755d7999def95e1a657e0091c1dd0973ab1bc603876f38c7976c9d74c343c3"
+    },
+    {
+      "path": "/assets/characters/ororon_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Olorun.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000105&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000105,
+      "name": "歐洛倫",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "e9eb546b5275e8067112b2e38ce12103798e031d119174bbbe388dc0951ac935"
+    },
+    {
+      "path": "/assets/characters/fischl_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Fischl.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000031&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000031,
+      "name": "菲謝爾",
+      "width": 256,
+      "height": 256,
+      "sha256": "ae253a2058e55c9408ce9722b3b7f01d72ec8da8e7f9984841a1132eb797a663"
+    },
+    {
+      "path": "/assets/characters/kukishinobu_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Shinobu.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000065&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000065,
+      "name": "久岐忍",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "1605a225535b32d3ba294a09c44e2ffa83992f3eca80d51af2deec4f52e125ef"
+    },
+    {
+      "path": "/assets/characters/xingqiu_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Xingqiu.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000025&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000025,
+      "name": "行秋",
+      "width": 256,
+      "height": 256,
+      "sha256": "4e976c25669968563c315118b10b41c3ae0ebd6552cb009a5227f14210e5433a"
+    },
+    {
+      "path": "/assets/characters/aino_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Aino.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000121&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000121,
+      "name": "愛諾",
+      "width": 256,
+      "height": 256,
+      "sha256": "6d0d39fcddf05e7d79ab8225c6117369b951290b43b9d29d7049b93f797fd296"
+    },
+    {
+      "path": "/assets/characters/fischl_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Fischl.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000031&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000031,
+      "name": "菲謝爾",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "980c1a8f0145e3b97b7179910055b464ad6dd72e049c1131b9b3d238080f52a0"
+    },
+    {
+      "path": "/assets/characters/aino_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Aino.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000121&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000121,
+      "name": "愛諾",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "b1db0c8b5b344ff7e5028bc3905d8c98d0806c31436ff33bba5087c4550a4d6f"
+    },
+    {
+      "path": "/assets/characters/xingqiu_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Xingqiu.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000025&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000025,
+      "name": "行秋",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "29d3e280d949c6c5b23802deb9684b66f56ae1e160bb3b559d0a66a87f1af5e3"
+    },
+    {
+      "path": "/assets/characters/xiangling_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Xiangling.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000023&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000023,
+      "name": "香菱",
+      "width": 256,
+      "height": 256,
+      "sha256": "fb16231a2f447a71cedfa4644fb837bbd92b500e83106a69cf75de0c7fdb8088"
+    },
+    {
+      "path": "/assets/characters/bennett_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Bennett.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000032&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000032,
+      "name": "班尼特",
+      "width": 256,
+      "height": 256,
+      "sha256": "bcca9c1a8f9beac470a29494c522e5f26670970107c5fe77bbfb399dd651a59b"
+    },
+    {
+      "path": "/assets/characters/bennett_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Bennett.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000032&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000032,
+      "name": "班尼特",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "24b7082a5ae10478f2f273fa8bfdba0864d96cfdfc40ad65739763e00d6b472b"
+    },
+    {
+      "path": "/assets/characters/mona_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Mona.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000041&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000041,
+      "name": "莫娜",
+      "width": 256,
+      "height": 256,
+      "sha256": "3e9c9bd9ae91fbbf910e0b99c9a4cc90d344e4cca960a8f95cbf9e0717fcd9ad"
+    },
+    {
+      "path": "/assets/characters/noelle_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Noel.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000034&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000034,
+      "name": "諾艾爾",
+      "width": 256,
+      "height": 256,
+      "sha256": "950754f73994cf74fabbfd5c7028ec770cf87ea906f07b373d0b8156ae6ec950"
+    },
+    {
+      "path": "/assets/characters/xiangling_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Xiangling.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000023&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000023,
+      "name": "香菱",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "46c28da26b745f39cb7b728a2011285e671a16912c7073fb1da3bae04aebf855"
+    },
+    {
+      "path": "/assets/characters/ningguang_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Ningguang.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000027&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000027,
+      "name": "凝光",
+      "width": 256,
+      "height": 256,
+      "sha256": "5ab56844add42871825872ee294783598e41d5b79b54d291614235be7871cda3"
+    },
+    {
+      "path": "/assets/characters/noelle_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Noel.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000034&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000034,
+      "name": "諾艾爾",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "daac8f0dcaa8575bc61d7d9bf51ab2e093deb344a3718c76220a6472a2f0104f"
+    },
+    {
+      "path": "/assets/characters/faruzan_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Faruzan.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000076&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000076,
+      "name": "琺露珊",
+      "width": 256,
+      "height": 256,
+      "sha256": "610b6a7ea61bf002ee84de2c3ca1c394f397cd72d3cbe03834bf8d88a162bdd1"
+    },
+    {
+      "path": "/assets/characters/mona_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Mona.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000041&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000041,
+      "name": "莫娜",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "c9e1bc34c4df7a33854568b68c415f18782f40f42c1f2b199525319587cca525"
+    },
+    {
+      "path": "/assets/characters/ningguang_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Ningguang.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000027&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000027,
+      "name": "凝光",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "430817ca28045317276b10b474c3656428b0f9392d94f4f62f482bf883224ac9"
+    },
+    {
+      "path": "/assets/characters/sucrose_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Sucrose.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000043&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000043,
+      "name": "砂糖",
+      "width": 256,
+      "height": 256,
+      "sha256": "149af23932b1d963122572a9c27bdfc117fa02592f617607788f5d36cab09e97"
+    },
+    {
+      "path": "/assets/characters/layla_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Layla.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000074&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000074,
+      "name": "萊依拉",
+      "width": 256,
+      "height": 256,
+      "sha256": "9258f3e25e2eb6bc1f8d55f6f37c82fc8d5fda32559ec8f23ed0585526bbbfc2"
+    },
+    {
+      "path": "/assets/characters/sucrose_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Sucrose.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000043&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000043,
+      "name": "砂糖",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "37f4a3ce2bc0da5eb74ff5448a56ca3c446988b691a3fc009ef259ff98a9e522"
+    },
+    {
+      "path": "/assets/characters/faruzan_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Faruzan.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000076&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000076,
+      "name": "琺露珊",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "2c887a3da987c53039200c778de5d93032d52f0bca4bdea33cfc5c6f9b960a65"
+    },
+    {
+      "path": "/assets/characters/diona_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Diona.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000039&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000039,
+      "name": "迪奧娜",
+      "width": 256,
+      "height": 256,
+      "sha256": "d2923b944e1e9ecd7690bfc9bd5bc28cf970012cd9e7cdd98b33ce2887ad1ea7"
+    },
+    {
+      "path": "/assets/characters/diona_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Diona.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000039&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000039,
+      "name": "迪奧娜",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "273ece86a3cfe73417129e68aea4a8b9a794e587f0b6fabfa138999d8dfec099"
+    },
+    {
+      "path": "/assets/characters/kaeya_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Kaeya.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000015&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000015,
+      "name": "凱亞",
+      "width": 256,
+      "height": 256,
+      "sha256": "f205e5268f686d41688d8ec2365af2cafd139250e310a82442b299d3ad36fbc2"
+    },
+    {
+      "path": "/assets/characters/layla_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Layla.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000074&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000074,
+      "name": "萊依拉",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "2b5fdf3e2690fd47b979ff281384314df2a32e72edb38a59077b1797023dc71e"
+    },
+    {
+      "path": "/assets/characters/collei_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Collei.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000067&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000067,
+      "name": "柯萊",
+      "width": 256,
+      "height": 256,
+      "sha256": "4c01ce920105ce0e8b3a4c88ef2f5a2d0b94dfb396d33b3504f03d83cbb83c4d"
+    },
+    {
+      "path": "/assets/characters/barbara_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Barbara.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000014&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000014,
+      "name": "芭芭拉",
+      "width": 256,
+      "height": 256,
+      "sha256": "b6afbd3a6c78b91129acae2207574ddcee8a6b2a58cdae0f579bd870f99c054a"
+    },
+    {
+      "path": "/assets/characters/kaeya_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Kaeya.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000015&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000015,
+      "name": "凱亞",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "023493bb71a4c188fd8bad4f5cc19a9b52ecc09fb336a49b4af426851f5a05f7"
+    },
+    {
+      "path": "/assets/characters/chevreuse_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_Chevreuse.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000090&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000090,
+      "name": "夏沃蕾",
+      "width": 256,
+      "height": 256,
+      "sha256": "8a25fd03b4b7cea8940c046e0bd5ac850f7225190c783e5abb3149de21725da2"
+    },
+    {
+      "path": "/assets/characters/barbara_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Barbara.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000014&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000014,
+      "name": "芭芭拉",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "db76e8e5df29e9479d4f3c2054673d4e116f015d4f8049c3452a0e5d7bdf4f3e"
+    },
+    {
+      "path": "/assets/characters/traveler_cryo_icon.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_PlayerGirl.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000007&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000007,
+      "name": "熒",
+      "width": 256,
+      "height": 256,
+      "sha256": "7883a53bcef4de82e5e4aa4d20b913d115baa73eace8d850f403d86eb4dcb983"
+    },
+    {
+      "path": "/assets/characters/collei_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Collei.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000067&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000067,
+      "name": "柯萊",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "f7d1d2723ecc0555babe4d17320d89dea090b62f7cb4aa1bbf2f1c658d37e1e2"
+    },
+    {
+      "path": "/assets/weapons/15514.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Bow_Qoyllorsnova.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=15514&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15514,
+      "name": "星鷲赤羽",
+      "width": 256,
+      "height": 256,
+      "sha256": "90e92b003eaf9090600ca5f216aca00726df65af1aa18a49ce3b0055fa7ab3a9"
+    },
+    {
+      "path": "/assets/weapons/15304.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Bow_Sling.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=15304&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15304,
+      "name": "彈弓",
+      "width": 256,
+      "height": 256,
+      "sha256": "a6ca8000d79882ea95be9af53c8bd85bbf4dce8a87535955321aa3fbea5719c8"
+    },
+    {
+      "path": "/assets/characters/chevreuse_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Chevreuse.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000090&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000090,
+      "name": "夏沃蕾",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "437d705b2912b06547c5d4ee647026fd2920c6d203a9aadfb770901949969a19"
+    },
+    {
+      "path": "/assets/weapons/11519.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Sword_SilverwareSaw.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=11519&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 11519,
+      "name": "朏魄含光",
+      "width": 256,
+      "height": 256,
+      "sha256": "59c672426cad63d617bf02d8da6f9aa898c03d6198131694a9d8655fd8409b42"
+    },
+    {
+      "path": "/assets/weapons/13303.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Pole_Noire.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=13303&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 13303,
+      "name": "黑纓槍",
+      "width": 256,
+      "height": 256,
+      "sha256": "894b6d6a996c8b4c404c304e6f9d9250b80ed4c42db715f15bdeaa28dadcc122"
+    },
+    {
+      "path": "/assets/weapons/14502.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Catalyst_Fourwinds.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=14502&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 14502,
+      "name": "四風原典",
+      "width": 256,
+      "height": 256,
+      "sha256": "22ddfae34c0e11fe4c8fd39aa569edb9e0e806546c51849eb9bc2076e6144754"
+    },
+    {
+      "path": "/assets/weapons/11407.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Sword_Exotic.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=11407&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 11407,
+      "name": "鐵蜂刺",
+      "width": 256,
+      "height": 256,
+      "sha256": "f517c84920940c7f76ef837cc7eb3f752a5f66f18cc70dce7e0fd6ed01482ddf"
+    },
+    {
+      "path": "/assets/weapons/11306.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Sword_Mitsurugi.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=11306&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 11306,
+      "name": "飛天御劍",
+      "width": 256,
+      "height": 256,
+      "sha256": "5ab2f1a89a501c62babf7d928d1b1c9fe05399060af61c60119b227477f20598"
+    },
+    {
+      "path": "/assets/weapons/14519.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Catalyst_VaresaTransformer.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=14519&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 14519,
+      "name": "溢彩心念",
+      "width": 256,
+      "height": 256,
+      "sha256": "1dd6540d8e6f09e6953b113f9595273513eeca1e67867aea43428008fc77e2e6"
+    },
+    {
+      "path": "/assets/weapons/13415.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Pole_Mori.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=13415&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 13415,
+      "name": "「漁獲」",
+      "width": 256,
+      "height": 256,
+      "sha256": "035c6504b12b8ffeb17bdc9aeccfa65ec3551a4412dfc33989237b493d4c6b09"
+    },
+    {
+      "path": "/assets/weapons/11424.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Sword_Boreas.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=11424&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 11424,
+      "name": "狼牙",
+      "width": 256,
+      "height": 256,
+      "sha256": "abaf7f6451a56dd58b5e5e9e84307883320acb341807d6735427d2611d69253d"
+    },
+    {
+      "path": "/assets/weapons/14432.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Catalyst_SeeliesLute.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=14432&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 14432,
+      "name": "天光的紡琴",
+      "width": 256,
+      "height": 256,
+      "sha256": "d242812bee0e833b99720eb0f27476d414e9fb8f55201c2ce1cbcbece5a7126f"
+    },
+    {
+      "path": "/assets/weapons/14521.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Catalyst_Sistrum.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=14521&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 14521,
+      "name": "真語秘匣",
+      "width": 256,
+      "height": 256,
+      "sha256": "80189f39f041d209eef330120ca8b333df31be0553c30c1071391d77c38d4de5"
+    },
+    {
+      "path": "/assets/weapons/14403.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Catalyst_Fossil.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=14403&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 14403,
+      "name": "祭禮殘章",
+      "width": 256,
+      "height": 256,
+      "sha256": "81ad73e4f84bb7b88cf818a6f03420466649ff7db33fa5099956452b13a17bdb"
+    },
+    {
+      "path": "/assets/weapons/14522.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Catalyst_Brisingamen.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=14522&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 14522,
+      "name": "帷間夜曲",
+      "width": 256,
+      "height": 256,
+      "sha256": "4f2afe0f980860b4774253a6a64e9fbf1044bb5e62ca73d5cabea866af10b133"
+    },
+    {
+      "path": "/assets/weapons/15403.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Bow_Fossil.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=15403&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15403,
+      "name": "祭禮弓",
+      "width": 256,
+      "height": 256,
+      "sha256": "062ddbab49590dba924c36e6b0aafd22061d77b8c399e0eae5bc4cb9408f39d5"
+    },
+    {
+      "path": "/assets/weapons/12514.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Claymore_RadianceSword.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=12514&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 12514,
+      "name": "焚曜千陽",
+      "width": 256,
+      "height": 256,
+      "sha256": "3ece123837f87f57f1723190fbf220192dff14aceb706c725dfd4880e7949289"
+    },
+    {
+      "path": "/assets/weapons/13407.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Pole_Zephyrus.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=13407&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 13407,
+      "name": "西風長槍",
+      "width": 256,
+      "height": 256,
+      "sha256": "f9301252bab8c562e82ba54a4bb53b591d017a7ab4cbbb2b6dfd26e6006de2ed"
+    },
+    {
+      "path": "/assets/weapons/14401.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Catalyst_Zephyrus.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=14401&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 14401,
+      "name": "西風秘典",
+      "width": 256,
+      "height": 256,
+      "sha256": "bea048b389a22d94adc12df8c57755a3bf6b1703a2144955b18b88cb9936cd20"
+    },
+    {
+      "path": "/assets/weapons/13435.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Pole_FaesCrystalle.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=13435&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 13435,
+      "name": "寒息",
+      "width": 256,
+      "height": 256,
+      "sha256": "5e945f6882d0ac16d65863e4d8ec16986fdacf49e7d5877034fbc3c308c84257"
+    },
+    {
+      "path": "/assets/weapons/13432.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Pole_Aoandon.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=13432&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 13432,
+      "name": "且住亭御咄",
+      "width": 256,
+      "height": 256,
+      "sha256": "34645eac4189cc0ae836077432c682b0030b1ef91a92fcfcf030b0f665f23ec3"
+    },
+    {
+      "path": "/assets/weapons/15401.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Bow_Zephyrus.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=15401&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15401,
+      "name": "西風獵弓",
+      "width": 256,
+      "height": 256,
+      "sha256": "f13b0ac5cfea984a68deb0239aac24d03f08cb2692d5f313e38e231cb1dbf58e"
+    },
+    {
+      "path": "/assets/weapons/15402.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Bow_Troupe.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=15402&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15402,
+      "name": "絕弦",
+      "width": 256,
+      "height": 256,
+      "sha256": "d6cba9c0d781c9cabd98299b1a66587a3d7e1ab098ed82607a8d458be0567f16"
+    },
+    {
+      "path": "/assets/weapons/12432.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Claymore_Polilith.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=12432&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 12432,
+      "name": "拾慧鑄熔",
+      "width": 256,
+      "height": 256,
+      "sha256": "b35b320c528dff1502f514c2f3fa01400967812db6fabb5bd01a34698565d54c"
+    },
+    {
+      "path": "/assets/weapons/11403.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Sword_Fossil.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=11403&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 11403,
+      "name": "祭禮劍",
+      "width": 256,
+      "height": 256,
+      "sha256": "3dd3ee5621aa7eaaa451d23a41caa78ae86fcf06a86c1271186306b76091c2c9"
+    },
+    {
+      "path": "/assets/weapons/12409.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Claymore_Kione.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=12409&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 12409,
+      "name": "螭骨劍",
+      "width": 256,
+      "height": 256,
+      "sha256": "fb30bd0289fa5e1e7cb4e8a270f4e95996c7afd2e2366a5fa81632cd9ec85b29"
+    },
+    {
+      "path": "/assets/weapons/11438.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Sword_Fajian.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=11438&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 11438,
+      "name": "銀釭",
+      "width": 256,
+      "height": 256,
+      "sha256": "c06ecfcb2fe4f0c5260ee43c2e094a31ad2792977d9dfa027559a864471564a5"
+    },
+    {
+      "path": "/assets/weapons/11513.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Sword_Regalis.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=11513&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 11513,
+      "name": "靜水流湧之輝",
+      "width": 256,
+      "height": 256,
+      "sha256": "a3af848315fc083e26dae5cb2e576642a15236e9ab06b308a4100329c7cfc6e1"
+    },
+    {
+      "path": "/assets/weapons/14427.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Catalyst_ConchSprayer.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=14427&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 14427,
+      "name": "蒼紋角杯",
+      "width": 256,
+      "height": 256,
+      "sha256": "624319f451673b250900b22968b15631a91c29ddca7cf26c1d6331b083cb4b25"
+    },
+    {
+      "path": "/assets/weapons/11521.png",
+      "url": "https://enka.network/ui/UI_EquipIcon_Sword_WeaponQuestSnezhnaya.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/weapons?query=11521&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 11521,
+      "name": "星鋒劍",
+      "width": 256,
+      "height": 256,
+      "sha256": "26e31e55d6c7ffc8ed83925802d656f87e2bb5deff9aacfac2c873c77701e24e"
+    },
+    {
+      "path": "/assets/artifacts/15003_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15003_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15003&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15003,
+      "name": "流浪大地的樂團",
+      "width": 180,
+      "height": 180,
+      "sha256": "9dfd8d400f9049cc336a92289011aafe61d7db4acdcfdbae576b4e82cf078950"
+    },
+    {
+      "path": "/assets/artifacts/15041_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15041_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15041&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15041,
+      "name": "穹境示現之夜",
+      "width": 256,
+      "height": 256,
+      "sha256": "340dc4dc06c233f058c9bce597201897c75aa9976e7037028189def4c94f3e9f"
+    },
+    {
+      "path": "/assets/artifacts/15001_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15001_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15001&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15001,
+      "name": "角鬥士的終幕禮",
+      "width": 180,
+      "height": 180,
+      "sha256": "1f783bdcb365ec97619c4b8fbe55f16b1f4bddf96d76c5451bd1bbb02f7d6542"
+    },
+    {
+      "path": "/assets/artifacts/15038_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15038_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15038&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15038,
+      "name": "黑曜秘典",
+      "width": 256,
+      "height": 256,
+      "sha256": "2a797f0a5f72e10bde636fdd22bd7cdaabc6e82e7cb20c350f25e2628458f7e1"
+    },
+    {
+      "path": "/assets/artifacts/15038_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15038_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15038&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15038,
+      "name": "黑曜秘典",
+      "width": 256,
+      "height": 256,
+      "sha256": "b8c254087c7805fefdf4e85e49b6bc0977a864b6cd08447dbca6808f6b87e46a"
+    },
+    {
+      "path": "/assets/artifacts/15038_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15038_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15038&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15038,
+      "name": "黑曜秘典",
+      "width": 256,
+      "height": 256,
+      "sha256": "ad48e7fcf975653f5b9d58cb94076069544afc616dab15ee984031c8a01962e9"
+    },
+    {
+      "path": "/assets/artifacts/15038_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15038_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15038&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15038,
+      "name": "黑曜秘典",
+      "width": 256,
+      "height": 256,
+      "sha256": "afb4ca87b40783ce0b07cca1c9fa1abfecad7a2ef0bc10d3dfd99514067c2cf4"
+    },
+    {
+      "path": "/assets/artifacts/15001_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15001_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15001&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15001,
+      "name": "角鬥士的終幕禮",
+      "width": 180,
+      "height": 180,
+      "sha256": "6f3956cc2e0bf621ad46a84e85a91e91abe5571f5835adab070d5954b49862de"
+    },
+    {
+      "path": "/assets/artifacts/15043_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15043_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15043&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15043,
+      "name": "晨星與月的曉歌",
+      "width": 256,
+      "height": 256,
+      "sha256": "fd174b4cf531cfcc1a8ab89cb1c237cddabdf930df6cec46678206353ea2d267"
+    },
+    {
+      "path": "/assets/artifacts/15043_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15043_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15043&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15043,
+      "name": "晨星與月的曉歌",
+      "width": 256,
+      "height": 256,
+      "sha256": "3935c0b2068a7a76c653ea22416f8502881e91952f4a609f76f8e3818ce38cb5"
+    },
+    {
+      "path": "/assets/artifacts/15043_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15043_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15043&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15043,
+      "name": "晨星與月的曉歌",
+      "width": 256,
+      "height": 256,
+      "sha256": "91e4d38b3c23f04f889c506a25d334da1c00951ccd159c32908d0929fbeb8528"
+    },
+    {
+      "path": "/assets/artifacts/15043_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15043_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15043&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15043,
+      "name": "晨星與月的曉歌",
+      "width": 256,
+      "height": 256,
+      "sha256": "0f9ec5464e1db971fe279afa4476111a86d1eed60513c0437cbbaf7a29951243"
+    },
+    {
+      "path": "/assets/artifacts/15041_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15041_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15041&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15041,
+      "name": "穹境示現之夜",
+      "width": 256,
+      "height": 256,
+      "sha256": "4a3d9065a0eaecacfe4624c6f2db0ea09def7df69f94c5072badccdbf373f4a6"
+    },
+    {
+      "path": "/assets/artifacts/15041_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15041_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15041&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15041,
+      "name": "穹境示現之夜",
+      "width": 256,
+      "height": 256,
+      "sha256": "1187cc5ce3013eaa1838db959be519dfe127629480f42d8ff9f738139f887d8d"
+    },
+    {
+      "path": "/assets/artifacts/15042_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15042_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15042&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15042,
+      "name": "紡月的夜歌",
+      "width": 256,
+      "height": 256,
+      "sha256": "8f2ee29a083f60ad0b291d94ac543460c4401dd27caace4825294a7f8ffe7772"
+    },
+    {
+      "path": "/assets/artifacts/15042_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15042_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15042&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15042,
+      "name": "紡月的夜歌",
+      "width": 256,
+      "height": 256,
+      "sha256": "f468abcaac08072ecb64edbaadcee51dbda2981e93fa6182cbc7d717e05864cc"
+    },
+    {
+      "path": "/assets/artifacts/15014_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15014_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15014&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15014,
+      "name": "悠古的磐岩",
+      "width": 180,
+      "height": 180,
+      "sha256": "c6d0423fbde2f39162c541643cfaaa300242c4e1a937157010a827af1d5dfd61"
+    },
+    {
+      "path": "/assets/artifacts/15014_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15014_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15014&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15014,
+      "name": "悠古的磐岩",
+      "width": 180,
+      "height": 180,
+      "sha256": "efa1c14ee2169311bd36f1c91e84b44a4f0bae4f438e863ee34a8a3c3eed7647"
+    },
+    {
+      "path": "/assets/artifacts/15014_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15014_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15014&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15014,
+      "name": "悠古的磐岩",
+      "width": 180,
+      "height": 180,
+      "sha256": "770cd8d6c9b9e325053361fdfb27169f426b5bc031c57c75b6952565839372e2"
+    },
+    {
+      "path": "/assets/artifacts/15014_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15014_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15014&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15014,
+      "name": "悠古的磐岩",
+      "width": 180,
+      "height": 180,
+      "sha256": "38daa111534ec8fa53cc1b6545f9872eb4dc0fdd2bcb3122a6a6bc7f4f2a71ab"
+    },
+    {
+      "path": "/assets/artifacts/15047_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15047_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15047&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15047,
+      "name": "血紅之證",
+      "width": 256,
+      "height": 256,
+      "sha256": "9e4c0f735a3df45829ac6ecea0889c72c6e4113dd5b4b51ffeff71db0392b310"
+    },
+    {
+      "path": "/assets/artifacts/15047_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15047_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15047&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15047,
+      "name": "血紅之證",
+      "width": 256,
+      "height": 256,
+      "sha256": "e764efa6be7da0f2a224b0bdfd89ff6d66716e842e4ddbedf5a22bd0be30889c"
+    },
+    {
+      "path": "/assets/artifacts/15047_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15047_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15047&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15047,
+      "name": "血紅之證",
+      "width": 256,
+      "height": 256,
+      "sha256": "2caa6871586268f72c3d9bd008821ffa3ad0f84169e5d8fa0baf2a8bfa0f9c76"
+    },
+    {
+      "path": "/assets/artifacts/15019_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15019_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15019&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15019,
+      "name": "追憶之注連",
+      "width": 180,
+      "height": 180,
+      "sha256": "bdcbd50edb8b9a5993fbc93ee6be2ddc0a6f4dd153329d717abeaa567d96445d"
+    },
+    {
+      "path": "/assets/artifacts/15019_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15019_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15019&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15019,
+      "name": "追憶之注連",
+      "width": 180,
+      "height": 180,
+      "sha256": "106b572e59d350444ccdd3be13d4ab5ec39cc7e620946f4f4b186014ab73f25a"
+    },
+    {
+      "path": "/assets/artifacts/15047_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15047_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15047&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15047,
+      "name": "血紅之證",
+      "width": 256,
+      "height": 256,
+      "sha256": "c022bc99cd57c45b55ecb29449cb622acffcfddf77679ba01630daecbf1b9aa6"
+    },
+    {
+      "path": "/assets/artifacts/15002_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15002_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15002&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15002,
+      "name": "翠綠之影",
+      "width": 180,
+      "height": 180,
+      "sha256": "6697e130046b1a5bcca512e292f1cc07a993d64db24dd19bf3fe15d54933972a"
+    },
+    {
+      "path": "/assets/artifacts/15002_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15002_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15002&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15002,
+      "name": "翠綠之影",
+      "width": 180,
+      "height": 180,
+      "sha256": "0540be92b8e2e5de38866ae47a3243d5a7bbfa919a5eb617d06273ee75fd0aa8"
+    },
+    {
+      "path": "/assets/artifacts/15002_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15002_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15002&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15002,
+      "name": "翠綠之影",
+      "width": 180,
+      "height": 180,
+      "sha256": "8e1aaf6c0ce1c0a60b1c69422bd6a23f5f60728900eaf104d9e9ca278693676a"
+    },
+    {
+      "path": "/assets/artifacts/15002_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15002_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15002&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15002,
+      "name": "翠綠之影",
+      "width": 180,
+      "height": 180,
+      "sha256": "813cf5c3f6b38ff4acd6e44cc6975d0f52f6f7e8fb58dd13527fe5c32964c25f"
+    },
+    {
+      "path": "/assets/artifacts/15002_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15002_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15002&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15002,
+      "name": "翠綠之影",
+      "width": 180,
+      "height": 180,
+      "sha256": "caec1e4d93053657acd622e9357d691f1c875b0241d19ab45e37e3ebe33d9f10"
+    },
+    {
+      "path": "/assets/artifacts/15006_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15006_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15006&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15006,
+      "name": "熾烈的炎之魔女",
+      "width": 180,
+      "height": 180,
+      "sha256": "530db10ecac2ac94d6d00282b71880555f0d740176c6e2b1b52f0164447080d5"
+    },
+    {
+      "path": "/assets/artifacts/15006_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15006_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15006&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15006,
+      "name": "熾烈的炎之魔女",
+      "width": 180,
+      "height": 180,
+      "sha256": "d50102b8c2cabf93384e19c3caa53c9f83a88c612dec421d0a1e6185c1df1d83"
+    },
+    {
+      "path": "/assets/artifacts/15048_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15048_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15048&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15048,
+      "name": "爐火融煉之心",
+      "width": 256,
+      "height": 256,
+      "sha256": "3b93d424ab5cce639c936efc4a4e2d1ccaf66a5b4bfa0d39ed089d2bd3438b31"
+    },
+    {
+      "path": "/assets/artifacts/15048_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15048_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15048&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15048,
+      "name": "爐火融煉之心",
+      "width": 256,
+      "height": 256,
+      "sha256": "a53a5f09033fe6d4df17c40aff644fec7404908e606df552b0844b1b5b66e905"
+    },
+    {
+      "path": "/assets/artifacts/15048_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15048_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15048&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15048,
+      "name": "爐火融煉之心",
+      "width": 256,
+      "height": 256,
+      "sha256": "ec00921690019616de3a016ff65ad2ff410c3ead37ea6e89c82c2f0486cea4e3"
+    },
+    {
+      "path": "/assets/artifacts/15048_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15048_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15048&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15048,
+      "name": "爐火融煉之心",
+      "width": 256,
+      "height": 256,
+      "sha256": "0b17800da402fcdcdb000833a89dec89cf126503dcc9049c98f20d1c17670499"
+    },
+    {
+      "path": "/assets/artifacts/15047_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15047_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15047&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15047,
+      "name": "血紅之證",
+      "width": 256,
+      "height": 256,
+      "sha256": "2256348763d9aa613b08731ecd7d87a3dc35b9b84df19179f74da68e31496847"
+    },
+    {
+      "path": "/assets/artifacts/15039_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15039_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15039&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15039,
+      "name": "長夜之誓",
+      "width": 256,
+      "height": 256,
+      "sha256": "80da8ae7c153744a38751b8cf45d786d0270a016f879da5085436a38848079a3"
+    },
+    {
+      "path": "/assets/artifacts/15039_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15039_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15039&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15039,
+      "name": "長夜之誓",
+      "width": 256,
+      "height": 256,
+      "sha256": "fc4d0b3776cf6b5fc1b640c6160a80460a22d0aea331ee20ea2d69ee35b44daa"
+    },
+    {
+      "path": "/assets/artifacts/15039_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15039_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15039&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15039,
+      "name": "長夜之誓",
+      "width": 256,
+      "height": 256,
+      "sha256": "29357e565d4694016498a0079336993029db69151c2fef243fe9f1aa374e9e2d"
+    },
+    {
+      "path": "/assets/artifacts/15039_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15039_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15039&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15039,
+      "name": "長夜之誓",
+      "width": 256,
+      "height": 256,
+      "sha256": "0bcfe90ad0ceed2102bae36759106b4b72dd7706246947b213b988aa9953625c"
+    },
+    {
+      "path": "/assets/artifacts/15020_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15020_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15020&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15020,
+      "name": "絕緣之旗印",
+      "width": 180,
+      "height": 180,
+      "sha256": "e4a864419cb42f2d66756c273445dead4d0aed454b57da20353c7bb287a5ca8a"
+    },
+    {
+      "path": "/assets/artifacts/15020_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15020_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15020&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15020,
+      "name": "絕緣之旗印",
+      "width": 180,
+      "height": 180,
+      "sha256": "6e96a90a73aa70ef5cf01069b0a9cd3d6e06d59302c9be3504083c3b5c3119f5"
+    },
+    {
+      "path": "/assets/artifacts/15020_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15020_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15020&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15020,
+      "name": "絕緣之旗印",
+      "width": 180,
+      "height": 180,
+      "sha256": "d95d082156f58e44bb22bf6460d1d2ed6e866e23ec5a0c5d0358dc7ff14bc3ad"
+    },
+    {
+      "path": "/assets/artifacts/15018_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15018_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15018&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15018,
+      "name": "蒼白之火",
+      "width": 180,
+      "height": 180,
+      "sha256": "402f9763c6b2daa4298f50a0b1fe330d05ef184a6000df13ecb318fcbcf859a6"
+    },
+    {
+      "path": "/assets/artifacts/15018_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15018_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15018&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15018,
+      "name": "蒼白之火",
+      "width": 180,
+      "height": 180,
+      "sha256": "150e690d94db363e8c34b5de104d86e8afc9873bd82ecb6555a579dbe058fdf9"
+    },
+    {
+      "path": "/assets/artifacts/15020_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15020_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15020&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15020,
+      "name": "絕緣之旗印",
+      "width": 180,
+      "height": 180,
+      "sha256": "356c8e52bd9efedb686a93418a72be5e20b5623847b2307a6ce4e208bba9cbbe"
+    },
+    {
+      "path": "/assets/artifacts/15005_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15005_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15005&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15005,
+      "name": "如雷的盛怒",
+      "width": 180,
+      "height": 180,
+      "sha256": "ed667aa5dcd67c48fe50a395dafd6e3ab27d92f4b10a22c95a756b77638863f6"
+    },
+    {
+      "path": "/assets/artifacts/15005_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15005_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15005&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15005,
+      "name": "如雷的盛怒",
+      "width": 180,
+      "height": 180,
+      "sha256": "c4da165d6bc263617ee8b2b6a5d0955bc03f4a71c80e1a623e1440f1b77dcfa9"
+    },
+    {
+      "path": "/assets/artifacts/15005_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15005_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15005&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15005,
+      "name": "如雷的盛怒",
+      "width": 180,
+      "height": 180,
+      "sha256": "05ee5bffffe837693c3cf0a7b1fef48db3769ceb9d1e2cc3937b648b361473c7"
+    },
+    {
+      "path": "/assets/artifacts/15005_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15005_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15005&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15005,
+      "name": "如雷的盛怒",
+      "width": 180,
+      "height": 180,
+      "sha256": "a5f08d0e76f9f283bb4e7533005050015202d220369dea24f04b5e64aca4af3a"
+    },
+    {
+      "path": "/assets/artifacts/15044_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15044_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15044&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15044,
+      "name": "風起之日",
+      "width": 256,
+      "height": 256,
+      "sha256": "e7778677ddd2968c5018e5f9878c37d37f5b50f2d2ea98c75eafe009fd804f78"
+    },
+    {
+      "path": "/assets/artifacts/15041_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15041_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15041&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15041,
+      "name": "穹境示現之夜",
+      "width": 256,
+      "height": 256,
+      "sha256": "2928cc6f9258c06e67bb3066cf53e732d28333aff95eed08a15b7480d4647417"
+    },
+    {
+      "path": "/assets/artifacts/15044_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15044_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15044&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15044,
+      "name": "風起之日",
+      "width": 256,
+      "height": 256,
+      "sha256": "d854685863527cd87649443c3a897d27c3c97dad33ef516f67f7604ce982d3fa"
+    },
+    {
+      "path": "/assets/artifacts/15042_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15042_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15042&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15042,
+      "name": "紡月的夜歌",
+      "width": 256,
+      "height": 256,
+      "sha256": "dcc987506444547f95a5dee55cb4c8388f55d78d6d00ac8dcbdf73cae0473e1c"
+    },
+    {
+      "path": "/assets/artifacts/15042_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15042_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15042&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15042,
+      "name": "紡月的夜歌",
+      "width": 256,
+      "height": 256,
+      "sha256": "a69675e851e74d2430c50c93fe8ebdd0ca2da294b94618147b58f211cf052f10"
+    },
+    {
+      "path": "/assets/artifacts/15042_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15042_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15042&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15042,
+      "name": "紡月的夜歌",
+      "width": 256,
+      "height": 256,
+      "sha256": "65d92d122b2de8138f8820d98ad60e68993ee0e28f0fcb07195bd67330487cb3"
+    },
+    {
+      "path": "/assets/artifacts/15025_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15025_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15025&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15025,
+      "name": "深林的記憶",
+      "width": 256,
+      "height": 256,
+      "sha256": "cc6ef13187977c60da963ecc9d223a781397a11a9c5d7ddcc6d08c542b171548"
+    },
+    {
+      "path": "/assets/artifacts/15025_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15025_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15025&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15025,
+      "name": "深林的記憶",
+      "width": 256,
+      "height": 256,
+      "sha256": "20bdd5e2fc6dd9c6e4016e05c506e13a53eba1f8f4321051c9a14bcfef03e1fb"
+    },
+    {
+      "path": "/assets/artifacts/15025_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15025_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15025&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15025,
+      "name": "深林的記憶",
+      "width": 256,
+      "height": 256,
+      "sha256": "4bacaee2bfceac6b0bccdbd07f2ace99d35cea1ad7384bfec877db8374eff882"
+    },
+    {
+      "path": "/assets/artifacts/15025_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15025_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15025&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15025,
+      "name": "深林的記憶",
+      "width": 256,
+      "height": 256,
+      "sha256": "0ea52e808a57d8c835691e41238e23d830fa0e6adb688df31f43454ce225fcc8"
+    },
+    {
+      "path": "/assets/artifacts/15003_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15003_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15003&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15003,
+      "name": "流浪大地的樂團",
+      "width": 180,
+      "height": 180,
+      "sha256": "d9447cf01132a726d2ec6cdc27d960d0130e7f1b8d71caa5314994426d55f6d8"
+    },
+    {
+      "path": "/assets/artifacts/15031_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15031_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15031&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15031,
+      "name": "逐影獵人",
+      "width": 256,
+      "height": 256,
+      "sha256": "8498f8453eddfed228045b16b4ccd564604dad2541fecaffa098a82adc348114"
+    },
+    {
+      "path": "/assets/artifacts/15031_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15031_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15031&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15031,
+      "name": "逐影獵人",
+      "width": 256,
+      "height": 256,
+      "sha256": "daa400dc0b8ed72fafcb491787b67bf2b2c6fd02f317aa4f6440a400ed98431e"
+    },
+    {
+      "path": "/assets/artifacts/15031_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15031_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15031&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15031,
+      "name": "逐影獵人",
+      "width": 256,
+      "height": 256,
+      "sha256": "015028745ad967a2422e27ec524863a3180e840690126134927a53d1a63a405f"
+    },
+    {
+      "path": "/assets/artifacts/15031_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15031_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15031&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15031,
+      "name": "逐影獵人",
+      "width": 256,
+      "height": 256,
+      "sha256": "15ca2d554c24a2eb68234fb11aaadbb904512001677a285487564090b57c8932"
+    },
+    {
+      "path": "/assets/artifacts/15038_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15038_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15038&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15038,
+      "name": "黑曜秘典",
+      "width": 256,
+      "height": 256,
+      "sha256": "daded54d7b233dd870397b3d0398339c8371adee3d62c16309df8bedc84ffd27"
+    },
+    {
+      "path": "/assets/artifacts/15043_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15043_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15043&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15043,
+      "name": "晨星與月的曉歌",
+      "width": 256,
+      "height": 256,
+      "sha256": "6e8aebec35070e1bf05f25bcd8c36d6c10a408a959c5e65333cc5437624bfaa8"
+    },
+    {
+      "path": "/assets/artifacts/15001_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15001_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15001&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15001,
+      "name": "角鬥士的終幕禮",
+      "width": 180,
+      "height": 180,
+      "sha256": "abec7998b2758dcad03ff6d29ea6fbe1d1c652665d59c8f6680698e23e46be8c"
+    },
+    {
+      "path": "/assets/artifacts/15007_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15007_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15007&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15007,
+      "name": "昔日宗室之儀",
+      "width": 180,
+      "height": 180,
+      "sha256": "f1df63782daf70c09800d39c24a8979ed8c26d1547265fba05b8cba68381bc4e"
+    },
+    {
+      "path": "/assets/artifacts/15007_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15007_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15007&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15007,
+      "name": "昔日宗室之儀",
+      "width": 180,
+      "height": 180,
+      "sha256": "646c89d8b65298369cf01742da6bb111623b1e895ee42aed345e4a06d7ac8432"
+    },
+    {
+      "path": "/assets/artifacts/15007_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15007_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15007&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15007,
+      "name": "昔日宗室之儀",
+      "width": 180,
+      "height": 180,
+      "sha256": "436931c61d74d99041b18ecda906bd1ee2f02dc77f2d71f967c7cd3c35ec3a5d"
+    },
+    {
+      "path": "/assets/artifacts/15007_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15007_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15007&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15007,
+      "name": "昔日宗室之儀",
+      "width": 180,
+      "height": 180,
+      "sha256": "b88b844d5a1733031a197f82f9bb35c9002443c48b2941304a40236581d9e7fb"
+    },
+    {
+      "path": "/assets/artifacts/15037_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15037_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15037&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15037,
+      "name": "燼城勇者繪卷",
+      "width": 256,
+      "height": 256,
+      "sha256": "7c08e906fd0125e24224ef72208c6340ede194f09032fed8ca6b92e2620e3cc5"
+    },
+    {
+      "path": "/assets/artifacts/15037_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15037_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15037&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15037,
+      "name": "燼城勇者繪卷",
+      "width": 256,
+      "height": 256,
+      "sha256": "ab55c585d29cb6d00f73bbaeeaded4eedcfac6c16c61655c6fd28b36d7dbde98"
+    },
+    {
+      "path": "/assets/artifacts/15037_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15037_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15037&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15037,
+      "name": "燼城勇者繪卷",
+      "width": 256,
+      "height": 256,
+      "sha256": "984c4600179d1c7b113fc0adfe3ba71c0c4b61a9b1dd0d63d3e307ecfdb10b84"
+    },
+    {
+      "path": "/assets/artifacts/15037_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15037_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15037&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15037,
+      "name": "燼城勇者繪卷",
+      "width": 256,
+      "height": 256,
+      "sha256": "27fa91bde3fbc0e56a6009dc0fd899a489f1c81341d343ad51432741731e823d"
+    },
+    {
+      "path": "/assets/artifacts/15007_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15007_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15007&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15007,
+      "name": "昔日宗室之儀",
+      "width": 180,
+      "height": 180,
+      "sha256": "a5421e52311722e2e1325dfd84c943757df5b12e232f6798711ef60565be8e24"
+    },
+    {
+      "path": "/assets/artifacts/15037_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15037_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15037&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15037,
+      "name": "燼城勇者繪卷",
+      "width": 256,
+      "height": 256,
+      "sha256": "6ac9ff521d8e26102e7075fcbb446442308e7243672b00607e7b07af518a5112"
+    },
+    {
+      "path": "/assets/artifacts/15026_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15026_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15026&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15026,
+      "name": "飾金之夢",
+      "width": 256,
+      "height": 256,
+      "sha256": "b2fe2769fd365d26f59d736379d324dc62da6faa994f0193f437c93b0afb38bf"
+    },
+    {
+      "path": "/assets/artifacts/15026_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15026_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15026&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15026,
+      "name": "飾金之夢",
+      "width": 256,
+      "height": 256,
+      "sha256": "dfac15f7aa74ca02b299a0c8d65979d8c87cb029de4327d9c246176eedcbc0b6"
+    },
+    {
+      "path": "/assets/artifacts/15026_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15026_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15026&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15026,
+      "name": "飾金之夢",
+      "width": 256,
+      "height": 256,
+      "sha256": "b7aba2b6ed1e12001db2a6b43bb94f60398a4b1511b959f50b758a8b2140851e"
+    },
+    {
+      "path": "/assets/artifacts/15026_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15026_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15026&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15026,
+      "name": "飾金之夢",
+      "width": 256,
+      "height": 256,
+      "sha256": "f452e62b447367fd5f89e90ba9a1b0e61f7104d0707f4402f0e9eff3583fe60c"
+    },
+    {
+      "path": "/assets/artifacts/15025_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15025_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15025&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15025,
+      "name": "深林的記憶",
+      "width": 256,
+      "height": 256,
+      "sha256": "9e702c6d36cfb371ecb4b59268ae0a25653fcfe3f662e45e8c73b76636c0d719"
+    },
+    {
+      "path": "/assets/artifacts/15001_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15001_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15001&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15001,
+      "name": "角鬥士的終幕禮",
+      "width": 180,
+      "height": 180,
+      "sha256": "9ef0c724f204edcd3b6a6ac0fcfb9121848b48d3dd4b07fc0c777de2922738a8"
+    },
+    {
+      "path": "/assets/artifacts/15022_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15022_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15022&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15022,
+      "name": "海染硨磲",
+      "width": 180,
+      "height": 180,
+      "sha256": "62c881c1b2b09b81c212659ca1885e30fc40416a499c9db6fad91420fde6c377"
+    },
+    {
+      "path": "/assets/artifacts/15022_plume.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15022_2.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15022&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15022,
+      "name": "海染硨磲",
+      "width": 180,
+      "height": 180,
+      "sha256": "e50abff459f6bef21427149bd34af9a28cac5cffbf792264630e23594d6872eb"
+    },
+    {
+      "path": "/assets/artifacts/15022_sands.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15022_5.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15022&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15022,
+      "name": "海染硨磲",
+      "width": 180,
+      "height": 180,
+      "sha256": "9e40034f76666c5e8a7a29fe2a17f108cd63bc507599eb8659570b89296fd16d"
+    },
+    {
+      "path": "/assets/artifacts/14004_flower.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_14004_4.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=14004&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 14004,
+      "name": "被憐愛的少女",
+      "width": 180,
+      "height": 180,
+      "sha256": "ae3d21e566bc42bcf7e094006d6952b1054528edf3ab809cf051aa7f53e62f3e"
+    },
+    {
+      "path": "/assets/artifacts/14004_goblet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_14004_1.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=14004&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 14004,
+      "name": "被憐愛的少女",
+      "width": 180,
+      "height": 180,
+      "sha256": "0d86dc16e555f603b14ea10b0cddf7d80350c0b7760b00aced471dfc63d84dc2"
+    },
+    {
+      "path": "/assets/artifacts/15022_circlet.png",
+      "url": "https://enka.network/ui/UI_RelicIcon_15022_3.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/artifacts?query=15022&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 15022,
+      "name": "海染硨磲",
+      "width": 180,
+      "height": 180,
+      "sha256": "ac49932a4679900a0d4a0ff8c58d441bd6cd53467c130f6a3a85c5913b356de9"
+    },
+    {
+      "path": "/assets/characters/traveler_cryo_splash.png",
+      "url": "https://enka.network/ui/UI_AvatarIcon_PlayerGirl.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000007&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000007,
+      "name": "熒",
+      "width": 256,
+      "height": 256,
+      "sha256": "7883a53bcef4de82e5e4aa4d20b913d115baa73eace8d850f403d86eb4dcb983"
+    },
+    {
+      "path": "/assets/characters/arosha_splash.png",
+      "url": "https://enka.network/ui/UI_Gacha_AvatarImg_Alyosha.png",
+      "catalog_source": "https://genshin-db-api.vercel.app/api/v5/characters?query=10000148&queryLanguages=ChineseTraditional&resultLanguage=ChineseTraditional",
+      "game_id": 10000148,
+      "name": "阿羅夏",
+      "width": 2048,
+      "height": 1024,
+      "sha256": "aa2b24f8962300f9b706723d6281411d72aa52b6674c1aa1c41fca37f0784335"
+    }
+  ]
+}

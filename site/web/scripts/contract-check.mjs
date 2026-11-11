@@ -1,0 +1,12 @@
+import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
+import {applyCandidate} from '../lib/account.mjs';
+import {renderSummary} from '../lib/report.mjs';
+const a=JSON.parse(readFileSync('tests/fixtures/account.json','utf8')),m=JSON.parse(readFileSync('tests/fixtures/manifest.json','utf8'));
+const candidate=structuredClone(a);candidate.weapons[0].refinement=2;candidate.characters[1].talents.base.skill=8;
+const {account}=applyCandidate(a,candidate,'相容性測試');
+const root='.sites-runtime/contract_check';
+mkdirSync(root+'/data',{recursive:true});mkdirSync(root+'/evidence/video_001',{recursive:true});
+const text=JSON.stringify(account,null,2)+'\n';
+writeFileSync(root+'/data/account.json',text);writeFileSync(root+'/evidence/video_001/manifest.json',JSON.stringify(m));
+writeFileSync(root+'/summary.md',renderSummary(account,text,[m]));
+console.log('Prepared ignored contract comparison');

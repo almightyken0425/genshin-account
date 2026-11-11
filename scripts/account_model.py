@@ -35,7 +35,7 @@ def build_fingerprint(account, character_id):
     weapons = {w["id"]: w for w in account["weapons"]}
     artifacts = {a["id"]: a for a in account["artifacts"]}
     def mechanics(item):
-        return {k: v for k, v in item.items() if k not in ("provenance", "name")}
+        return {k: v for k, v in item.items() if k not in ("provenance", "name", "substat_rolls")}
     payload = {
         "character": {k: character[k] for k in ("id", "element", "weapon_type", "level", "constellation", "talents")},
         "weapon": mechanics(weapons[equipment["weapon_id"]]) if equipment["weapon_id"] else None,
@@ -46,3 +46,15 @@ def build_fingerprint(account, character_id):
 
 def snapshot_status(account, snapshot):
     return "matches_recorded_build" if snapshot["build_fingerprint"] == build_fingerprint(account, snapshot["character_id"]) else "build_changed"
+
+def effective_substat_count(artifact, character_id):
+    """Count observed highlighted rolls, including each substat's initial roll."""
+    observation = artifact.get("substat_rolls")
+    if not observation or observation["character_id"] != character_id:
+        return None
+    values = observation["values"]
+    if {r["key"] for r in values} != {s["key"] for s in artifact["substats"]}:
+        return None
+    if any(r["effective"] is None or (r["effective"] and r["enhancements"] is None) for r in values):
+        return None
+    return sum(r["enhancements"] + 1 for r in values if r["effective"])

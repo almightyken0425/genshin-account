@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "id": "video_5690_20261111",
+  "imported_at": "2026-11-11T10:14:54+00:00",
+  "media": {
+    "type": "video",
+    "file_name": "IMG_5690.MP4",
+    "sha256": "1711c26a4f9c726dcd22d34d6dde16ba278554c4c936aac256038f75a41038f9",
+    "resolution": [
+      848,
+      384
+    ],
+    "duration_seconds": 27.566667,
+    "recorded_at": null,
+    "game_version": null,
+    "stored_in_repo": false
+  },
+  "extraction": {
+    "path": "imports/video_5690_20261111/extracted.json",
+    "sha256": "6bdf85282a0905ef2f88f1ab46fcad6aadc1715095234a867994dfbecf3a012b"
+  },
+  "screenshots": [
+    {
+      "id": "video_5690_20261111_barbara_artifact_flower",
+      "path": "evidence/video_5690_20261111/screenshots/barbara_artifact_flower.png",
+      "sha256": "d1b158dfcadd997830bd4522fc8cee927a49912fc3c86be448804fe8bdfccb1f",
+      "time_seconds": 2,
+      "character_id": "barbara",
+      "kind": "artifact_flower",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5690_20261111_barbara_artifact_plume",
+      "path": "evidence/video_5690_20261111/screenshots/barbara_artifact_plume.png",
+      "sha256": "0533975ef466bfde583ec64a05f42c574670ffb8fde5912ab36ec9a0482de120",
+      "time_seconds": 5.3,
+      "character_id": "barbara",
+      "kind": "artifact_plume",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5690_20261111_barbara_artifact_sands",
+      "path": "evidence/video_5690_20261111/screenshots/barbara_artifact_sands.png",
+      "sha256": "a83220e9e052890482e68c992bc26c2019b00e23216009eb204684ec2b47f3a6",
+      "time_seconds": 8,
+      "character_id": "barbara",
+      "kind": "artifact_sands",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5690_20261111_barbara_artifact_goblet",
+      "path": "evidence/video_5690_20261111/screenshots/barbara_artifact_goblet.png",
+      "sha256": "1fc1f119a0dd07cef77b32dc400ffe71dd4d0e4c23bc810428de51ba2553a5c4",
+      "time_seconds": 11,
+      "character_id": "barbara",
+      "kind": "artifact_goblet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5690_20261111_barbara_artifact_circlet",
+      "path": "evidence/video_5690_20261111/screenshots/barbara_artifact_circlet.png",
+      "sha256": "668db6ac18856e2d6f2d6c61a99163f833b0c34cf9482ae94563fe0f26831ef6",
+      "time_seconds": 13.6,
+      "character_id": "barbara",
+      "kind": "artifact_circlet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5690_20261111_chevreuse_overview",
+      "path": "evidence/video_5690_20261111/screenshots/chevreuse_overview.png",
+      "sha256": "04349f3f50f061a38558a45e4a4566a45fe5edc773f99458d882c5320eee6976",
+      "time_seconds": 21,
+      "character_id": "chevreuse",
+      "kind": "overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5690_20261111_chevreuse_panel",
+      "path": "evidence/video_5690_20261111/screenshots/chevreuse_panel.png",
+      "sha256": "f66a6a62d79f5f5e93b0cb9647f13ff1d503a930a2779e963ff006cf959fbb24",
+      "time_seconds": 22,
+      "character_id": "chevreuse",
+      "kind": "panel",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5690_20261111_chevreuse_panel_elements",
+      "path": "evidence/video_5690_20261111/screenshots/chevreuse_panel_elements.png",
+      "sha256": "7c3cbbfaab5a4402a1e94b312128f3cb0a2c8cb9dd24a6f41cc76c5206b215a3",
+      "time_seconds": 23,
+      "character_id": "chevreuse",
+      "kind": "panel_elements",
+      "verification": "agent_reviewed"
+    }
+  ],
+  "notes": [
+    "使用者為先前缺口提供的補充錄影。截圖保持完整畫面與原解析度。"
+  ]
+}

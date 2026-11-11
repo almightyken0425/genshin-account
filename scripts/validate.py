@@ -25,7 +25,8 @@ def timestamp_error(value, label):
     return []
 
 def validate_account(account):
-    errors = schema_errors(account, "account.schema.json")
+    schema = "account.v1.schema.json" if account.get("schema_version") == 1 else "account.schema.json"
+    errors = schema_errors(account, schema)
     warnings = []
     if errors:
         return errors, warnings
@@ -74,6 +75,16 @@ def validate_account(account):
         expected = {"flower": "hp", "plume": "atk"}.get(artifact["slot"])
         if expected and artifact["main_stat"]["key"] != expected:
             errors.append(f"{artifact['id']}: invalid fixed main stat")
+        rolls = artifact.get("substat_rolls")
+        if rolls:
+            roll_keys = [r["key"] for r in rolls["values"]]
+            if len(roll_keys) != len(set(roll_keys)) or set(roll_keys) != set(keys):
+                errors.append(f"{artifact['id']}: substat rolls must match the active substats")
+            if rolls["character_id"] is not None and rolls["character_id"] not in chars:
+                errors.append(f"{artifact['id']}: unknown roll observation character")
+            known = [r["enhancements"] for r in rolls["values"]]
+            if artifact["level"] is not None and sum(v for v in known if v is not None) > artifact["level"] // 4:
+                errors.append(f"{artifact['id']}: enhancement count exceeds artifact level")
     for character in account["characters"]:
         sid = character["panel_snapshot_id"]
         if sid and (sid not in snapshots or snapshots[sid]["character_id"] != character["id"]):
@@ -113,10 +124,14 @@ def validate_evidence(account, root):
     for source_id in account["source_ids"]:
         try:
             manifest = read_json(root / "evidence" / source_id / "manifest.json")
-            if manifest["id"] != source_id or manifest["schema_version"] != 1:
+            if manifest["id"] != source_id or manifest["schema_version"] not in (1, 2):
                 raise ValueError("manifest identity/version mismatch")
+            media = manifest["video"] if manifest["schema_version"] == 1 else manifest["media"]
+            media_type = "video" if manifest["schema_version"] == 1 else media["type"]
+            if media_type not in ("video", "image"):
+                raise ValueError("unsupported source media type")
             errors.extend(timestamp_error(manifest["imported_at"], source_id + ".imported_at"))
-            errors.extend(timestamp_error(manifest["video"]["recorded_at"], source_id + ".recorded_at"))
+            errors.extend(timestamp_error(media["recorded_at"], source_id + ".recorded_at"))
             records = [manifest["extraction"]] + manifest["screenshots"]
             for record in records:
                 path = contained_path(root, record["path"])
@@ -127,7 +142,9 @@ def validate_evidence(account, root):
             for shot in manifest["screenshots"]:
                 if shot["id"] in evidence:
                     errors.append(f"Duplicate evidence ID: {shot['id']}")
-                if not 0 <= shot["time_seconds"] <= manifest["video"]["duration_seconds"]:
+                if media_type == "image" and shot["time_seconds"] is not None:
+                    errors.append(f"Still image must not have a video timestamp: {shot['id']}")
+                elif media_type == "video" and not (isinstance(shot["time_seconds"], (int, float)) and 0 <= shot["time_seconds"] <= media["duration_seconds"]):
                     errors.append(f"Invalid screenshot time: {shot['id']}")
                 evidence[shot["id"]] = source_id
         except (ValueError, TypeError, KeyError, OSError) as error:
