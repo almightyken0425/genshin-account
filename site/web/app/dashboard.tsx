@@ -9,6 +9,7 @@ import {artifactSummary} from '@/lib/artifact_summary.mjs';
 import {effectiveSubstatCount,effectiveLoadoutCount,substatRoll} from '@/lib/artifact_rolls.mjs';
 import ArtifactSubstat,{EffectiveBadge} from './artifact_substat';
 import RosterControls from './roster_controls';
+import {selectedTeams} from '@/lib/selected_teams';
 import {selectRoster} from '@/lib/roster_view.mjs';
 import type {RosterFilters,SortRule} from '@/lib/roster_view.mjs';
 
@@ -70,7 +71,7 @@ export default function Dashboard({initialCharacter=''}:{initialCharacter?:strin
  },[selected,section,busy]);
  function openCharacter(id:string){
   listScroll.current=window.scrollY;lastOpened.current=id;focusTarget.current='detail';
-  const url=new URL(window.location.href);url.searchParams.set('character',id);
+  const url=new URL(window.location.href);url.searchParams.delete('tab');url.searchParams.set('character',id);
   window.history.pushState({...window.history.state,genshinCharacterFromList:true},'',url);
   setSelected(id);setSection('roster');setExpanded(null);
  }
@@ -104,12 +105,12 @@ export default function Dashboard({initialCharacter=''}:{initialCharacter?:strin
  return <MetricDisplayContext value={fullLabels}><div className="app-shell">
   <main className="main">
    {feedback}
-   {section==='teams'?<section className="teams-page" aria-labelledby="teams-heading"><div className="teams-heading"><UsersRound size={25}/><h1 id="teams-heading">隊伍</h1></div><div className="teams-empty"><UsersRound size={40}/><h2>先挑選你的隊伍</h2><p>配隊建議確認後，選定的隊伍會整理在這裡。</p><button className="secondary" onClick={()=>switchTab('roster')}>查看角色列表</button></div></section>
+   {section==='teams'?<section className="teams-page" aria-labelledby="teams-heading"><div className="teams-heading"><UsersRound size={25}/><h1 id="teams-heading">隊伍</h1><span className="team-count">7 組</span></div><p className="teams-note">已選配隊。部分角色跨隊重複，挑選同時出戰的隊伍時請留意。</p><div className="teams-grid">{selectedTeams.map((team,index)=><article className="team-card" key={team.id}><header><span className="team-number">{String(index+1).padStart(2,'0')}</span><h2>{team.name}</h2></header><div className="team-members">{team.members.map(id=>{const character=a?.characters.find(character=>character.id===id);return <button key={id} disabled={!character} onClick={()=>openCharacter(id)} aria-label={character?'查看'+character.name+'的角色詳情':'等待角色資料'}><GameImage src={characterImage(id,'icon')} alt=""/><span>{character?.name||'讀取中'}</span>{character&&<small>Lv. {fmt(character.level.current)} · C{fmt(character.constellation)}</small>}</button>})}</div></article>)}</div></section>
    :!selected?<section className="roster" aria-label="角色列表"><RosterControls characters={a?.characters||[]} rarities={rarities} filters={filters} onFilters={setFilters} sorts={sorts} onSorts={setSorts}/><div className="roster-search"><label className="search"><Search size={17}/><input ref={searchRef} placeholder="搜尋角色名稱" aria-label="搜尋角色名稱" value={query} onChange={e=>setQuery(e.target.value)}/>{query&&<button aria-label="清除搜尋" onClick={()=>setQuery('')}><X size={13}/></button>}</label></div>
     <div className="character-list">{!a?(busy?<div className="empty small"><LoaderCircle className="spin"/><p>正在讀取角色紀錄…</p></div>:<div className="empty small"><BookOpen/><p>連接 GitHub 後<br/>角色會顯示在這裡</p></div>):visible.length===0?<div className="empty small"><Search/><p>找不到符合條件的角色</p><button className="text-button" onClick={()=>{setQuery('');setFilters({rarities:[],weapons:[],elements:[]})}}>清除篩選</button></div>:visible.map(x=><button className="character-card" key={x.id} ref={el=>{if(el)cardRefs.current.set(x.id,el);else cardRefs.current.delete(x.id)}} onClick={()=>openCharacter(x.id)} aria-label={'查看'+x.name+'的角色詳情，角色等級 '+fmt(x.level.current)+'，命之座 '+fmt(x.constellation)+'，有效詞條總數 '+fmt(effectiveTotals[x.id])}><div className="character-emblem"><GameImage src={characterImage(x.id,'icon')} alt="" eager/></div><span className="character-card-stats" aria-hidden="true"><span title="角色等級">{x.level.current??'—'}</span><span title="命之座">{x.constellation??'—'}</span><span title="有效詞條總數">{effectiveTotals[x.id]??'—'}</span></span></button>)}</div></section>
    :<section className="detail detail-centered" aria-label="角色詳細資料">
     <header className={'detail-header '+(headerCollapsed?'is-collapsed':'')} onFocusCapture={()=>setHeaderCollapsed(false)}>
-     <div className="character-heading"><button className="icon-button detail-back" onClick={returnToList} aria-label="返回角色列表" title="返回角色列表"><ArrowLeft size={20}/></button><h2 ref={headingRef} tabIndex={-1}>{c?.name||(busy?'讀取中':'角色詳情')}</h2></div>
+     <div className="character-heading"><button className="icon-button detail-back" onClick={returnToList} aria-label="返回上一頁" title="返回上一頁"><ArrowLeft size={20}/></button><h2 ref={headingRef} tabIndex={-1}>{c?.name||(busy?'讀取中':'角色詳情')}</h2></div>
      <div className="detail-navigation"><button className="icon-button mode-toggle" onClick={toggleLabels} aria-pressed={fullLabels} aria-label={fullLabels?'切換精簡模式':'切換完整模式'} title={fullLabels?'切換精簡模式':'切換完整模式'}>{fullLabels?<Shapes size={19}/>:<Tags size={19}/>}</button></div>
     </header>
     {c&&a&&data?<>

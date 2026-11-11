@@ -11,6 +11,11 @@ test('account presentation has no edit, draft or save controls',()=>{
 test('footer has only the two owner-specified destinations',()=>{
  assert.match(dashboard,/aria-label="主要分頁"/);
  assert.match(dashboard,/switchTab\('teams'\)/);assert.match(dashboard,/switchTab\('roster'\)/);
- assert.match(dashboard,/配隊建議確認後/);
+ assert.match(dashboard,/selectedTeams.map/);
  assert.match(dashboard,/window\.history\.pushState/);assert.match(dashboard,/popstate/);
+});
+
+test('exactly seven owner-selected teams and no Chasca',()=>{
+ const teams=readFileSync(new URL('../lib/selected_teams.ts',import.meta.url),'utf8');
+ assert.equal((teams.match(/members:/g)||[]).length,7);assert.ok(!teams.includes("'chasca'"));
 });
