@@ -38,13 +38,13 @@ test('Skirk exact four rows and no extra A5 or Escoffier Q',()=>{
 test('team members follow first appearance and detail cards contain images only',()=>{
  const teams=readFileSync(new URL('../lib/selected_teams.ts',import.meta.url),'utf8');
  assert.ok(teams.includes("members:['escoffier','furina','voyanitsa','skirk']"));
- const detail=dashboard.split('className="team-detail-members"')[1].split('<section className="team-guide">')[0];
+ const detail=dashboard.split('className="team-detail-members"')[1].split('<section className="team-guide"')[0];
  assert.ok(!detail.includes('<strong>'));assert.ok(!detail.includes('<small>'));assert.ok(detail.includes('<GameImage'));
 });
 test('all six other teams use minimal flows with conditional actions retained',()=>{
  const flow=readFileSync(new URL('../lib/team_flows.ts',import.meta.url),'utf8');
  for(const id of ['mavuika','zibai','nefer','neuvillette','varesa','mizuki'])assert.ok(flow.includes(' '+id+':['));
- for(const condition of ['可用時','親自撿火結晶','親自撿水結晶','月露不足','首輪','Q 未就緒'])assert.ok(flow.includes(condition));
+ for(const condition of ['可用時','撿火結晶','撿水結晶','月露不足','首輪','Q 未就緒'])assert.ok(flow.includes(condition));
  assert.match(dashboard,/<TeamFlow id={team.id}/);assert.ok(!dashboard.includes('目前配裝注意事項'));
 });
 test('Skirk action rows inherit one shared font size',()=>{
@@ -64,9 +64,18 @@ test('Mavuika keeps Bennett and the original melt rotation',()=>{
  const flow=readFileSync(new URL('../lib/team_flows.ts',import.meta.url),'utf8').split(' zibai:[')[0];
  assert.ok(teams.includes("members:['mavuika','bennett','xilonen','citlali']"));
  assert.ok(flow.includes("id:'bennett'"));assert.ok(!flow.includes("id:'iansan'"));
- for(const text of ['親自撿火結晶','敵人掛冰','班尼特圈內'])assert.ok(flow.includes(text));
+ for(const text of ['撿火結晶','掛冰後','圈內持續摩托重擊'])assert.ok(flow.includes(text));
 });
 test('all team flow cards use equal action typography',()=>{
  const css=readFileSync(new URL('../app/globals.css',import.meta.url),'utf8');
  assert.ok(css.includes('.skirk-minimal-flow .minimal-flow-moves>strong,.skirk-minimal-flow .minimal-flow-combos{font-size:inherit;font-weight:600;color:var(--ink);line-height:1.8;background:transparent;letter-spacing:normal}'));
 });
+
+test('rotation card copy has no parentheses and move area is centered',()=>{
+ const flow=readFileSync(new URL('../lib/team_flows.ts',import.meta.url),'utf8');
+ assert.ok(!/[（）()]/.test(flow));assert.ok(!flow.includes('親自'));
+ const css=readFileSync(new URL('../app/globals.css',import.meta.url),'utf8');
+ assert.ok(css.includes('.skirk-minimal-flow .minimal-flow-moves{text-align:center}'));
+});
+
+test('team detail has no redundant rotation title',()=>{assert.ok(!dashboard.includes('<h3>操作手法</h3>'))});

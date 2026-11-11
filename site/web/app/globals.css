@@ -269,3 +269,6 @@ h3{font-size:14px;font-weight:600}
 .skirk-minimal-flow .minimal-flow-moves{font-size:21px}
 .skirk-minimal-flow .minimal-flow-moves>strong,.skirk-minimal-flow .minimal-flow-combos{font-size:inherit;font-weight:600;color:var(--ink);line-height:1.8;background:transparent;letter-spacing:normal}
 @media(max-width:520px){.skirk-minimal-flow .minimal-flow-moves{font-size:18px}}
+/* Center the move area independently of the character portrait. */
+.skirk-minimal-flow .minimal-flow-moves{text-align:center}
+.skirk-minimal-flow .minimal-flow-combos{align-items:center;text-align:center}
