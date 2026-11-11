@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "id": "image_mavuika_plume_20261111",
+  "imported_at": "2026-11-11T12:00:43+00:00",
+  "media": {
+    "type": "image",
+    "file_name": "IMG_5691.jpeg",
+    "sha256": "e472626b1ff35aac0d0413544ea56e24351f5026a489a4d9ef183818ca5ef445",
+    "resolution": [
+      1536,
+      706
+    ],
+    "recorded_at": null,
+    "game_version": null,
+    "stored_in_repo": true
+  },
+  "extraction": {
+    "path": "imports/image_mavuika_plume_20261111/extracted.json",
+    "sha256": "4ada785ea6f1fc405677ab6aab381df0f8dc14d27bdf0ef1609d5dadd5673baa"
+  },
+  "screenshots": [
+    {
+      "id": "image_mavuika_plume_20261111_shot_001",
+      "path": "evidence/image_mavuika_plume_20261111/screenshots/001.jpeg",
+      "sha256": "e472626b1ff35aac0d0413544ea56e24351f5026a489a4d9ef183818ca5ef445",
+      "time_seconds": null,
+      "character_id": "mavuika",
+      "kind": "artifact_plume",
+      "verification": "agent_reviewed"
+    }
+  ],
+  "notes": [
+    "使用者提供的原始圖片；保留原格式、解析度與完整畫面。",
+    "重塑選擇頁，不代表重塑已執行。"
+  ]
+}

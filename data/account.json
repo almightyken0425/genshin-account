@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T10:14:54+00:00",
+  "updated_at": "2026-11-11T12:03:22+00:00",
   "source_ids": [
     "video_001",
     "video_5680_20261111",
@@ -13,7 +13,8 @@
     "video_5687_20261111",
     "video_5689_20261111",
     "image_chevreuse_flower_20261111",
-    "video_5690_20261111"
+    "video_5690_20261111",
+    "image_mavuika_plume_20261111"
   ],
   "coverage": {
     "roster": "partial",
@@ -19622,6 +19623,82 @@
           }
         ]
       }
+    },
+    {
+      "id": "artifact_image_mavuika_plume_20261111",
+      "name": "靈髓的根脈",
+      "set_name": "黑曜秘典",
+      "slot": "plume",
+      "rarity": null,
+      "level": null,
+      "main_stat": {
+        "key": "atk",
+        "value": 311,
+        "unit": "flat"
+      },
+      "substats": [
+        {
+          "key": "atk_pct",
+          "value": 16.3,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_rate",
+          "value": 3.1,
+          "unit": "percent"
+        },
+        {
+          "key": "hp_pct",
+          "value": 9.9,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_dmg",
+          "value": 22.5,
+          "unit": "percent"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "image_mavuika_plume_20261111"
+        ],
+        "evidence_refs": [
+          "image_mavuika_plume_20261111_shot_001"
+        ],
+        "verification": "agent_reviewed",
+        "notes": [
+          "使用者於 2026-11-11 指示以附圖更新瑪薇卡死之羽；角色關聯依使用者敘述。",
+          "圖片為重塑選擇頁，僅採用畫面當下數值，不宣稱已執行重塑。",
+          "與原穿戴羽毛副詞條種類不同，新增實體並保留原物品；精確名稱對照既有資料中的黑曜秘典。",
+          "畫面未顯示星級與等級，保持未知；有效詞條判定亦未確認。",
+          "使用者於 2026-11-11 明確確認：「已經給瑪薇卡穿上了」。依此更新穿戴引用。"
+        ]
+      },
+      "substat_rolls": {
+        "character_id": "mavuika",
+        "values": [
+          {
+            "key": "atk_pct",
+            "enhancements": 2,
+            "effective": null
+          },
+          {
+            "key": "crit_rate",
+            "enhancements": 0,
+            "effective": null
+          },
+          {
+            "key": "hp_pct",
+            "enhancements": 1,
+            "effective": null
+          },
+          {
+            "key": "crit_dmg",
+            "enhancements": 2,
+            "effective": null
+          }
+        ]
+      }
     }
   ],
   "equipment": {
@@ -19859,7 +19936,7 @@
       "weapon_id": "weapon_video_5683_20261111_mavuika",
       "artifacts": {
         "flower": "artifact_video_5683_20261111_mavuika_flower",
-        "plume": "artifact_video_5683_20261111_mavuika_plume",
+        "plume": "artifact_image_mavuika_plume_20261111",
         "sands": "artifact_video_5683_20261111_mavuika_sands",
         "goblet": "artifact_video_5683_20261111_mavuika_goblet",
         "circlet": "artifact_video_5683_20261111_mavuika_circlet"
