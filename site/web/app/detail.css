@@ -6,8 +6,6 @@
 .detail-centered .character-heading{position:relative;display:flex;justify-content:center;align-items:center;padding:0 96px;min-height:40px}
 .detail-centered .character-heading h2{margin:0;text-align:center;font-size:29px}
 .detail-centered .detail-back{position:absolute;left:0;top:0;width:40px;height:40px}
-.detail-centered .edit-toggle{width:40px;height:40px}
-.detail-centered .edit-toggle.active{background:var(--blue-soft);color:var(--blue)}
 .character-summary{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:24px;margin-bottom:0}
 .portrait-stage{position:relative;isolation:isolate;width:100%;height:100%;min-height:350px;border-radius:16px;display:grid;place-items:center;background:radial-gradient(ellipse at center,#f0f5fb 0,white 70%);overflow:hidden}
 .portrait-stage>img{width:100%;height:100%;object-fit:contain;object-position:center;transform:scale(2.25);transform-origin:center}
@@ -86,12 +84,6 @@
 .talent-extra>.talent-values{padding:18px 0}
 .detail-centered .context-field{margin:10px auto 0}
 .detail-centered .context-field p{font-size:12px;line-height:1.7}
-.detail-centered .save-panel{margin-top:26px;text-align:center}
-.detail-centered .save-panel textarea{text-align:left}
-.detail-centered .save-panel .section-title{justify-content:center}
-.detail-centered .save-panel ul{display:inline-block;text-align:left}
-.detail-centered .save-actions{justify-content:center;flex-wrap:wrap}
-.detail-centered .save-actions .primary{margin-left:0}
 @media(max-width:720px){
  .character-summary{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:16px}
  .portrait-stage{height:100%;min-height:330px}
@@ -154,7 +146,7 @@
 
 
 /* Entry animations do not delay focus, navigation, or editing. */
-.detail-centered .edit-fieldset{animation:character-enter .32s cubic-bezier(.2,.7,.2,1) both}
+.detail-centered .detail-fieldset{animation:character-enter .32s cubic-bezier(.2,.7,.2,1) both}
 .equipment-disclosure{display:grid;grid-template-rows:1fr;animation:equipment-open .32s cubic-bezier(.2,.7,.2,1) both}
 .equipment-clip{min-height:0;overflow:hidden}
 .equipment-tile{transition:background .18s,border-color .18s,transform .18s}
@@ -164,7 +156,7 @@
 @keyframes character-enter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 @keyframes equipment-open{from{grid-template-rows:0fr;opacity:0;transform:translateY(-8px)}to{grid-template-rows:1fr;opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){
- .detail-centered .edit-fieldset,.equipment-disclosure{animation:none}
+ .detail-centered .detail-fieldset,.equipment-disclosure{animation:none}
  .character-card:active,.equipment-tile:active{transform:none}
 }
 
@@ -178,14 +170,9 @@
 .substat-heading .metric-label{min-width:0}
 .roll-count{color:#8392a5;font-size:11px;font-weight:600;font-variant-numeric:tabular-nums}
 .is-effective .roll-count{color:#315e95}
-.detail-centered .substat-heading .roll-input{width:35px;min-width:30px;font-size:12px;padding:3px 0}
-.artifact-details .effective-select{width:100%;margin:0;font-size:10px;padding:5px 1px;text-align:center}
-.artifact-details .substat-property{width:100%;max-width:none;margin:0;font-size:11px;min-height:34px;padding:5px 4px;text-align:center}
-.artifact-details.is-editing .artifact-substats{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:480px){
  .substat-heading{gap:3px}
  .artifact-substats{gap:8px 4px}
  .substat-field{padding:8px 2px}
- .artifact-details.is-editing .artifact-substats{grid-template-columns:minmax(0,1fr)}
  .detail-centered .substat-heading .metric-label{font-size:9px}
 }
