@@ -7,7 +7,7 @@ const steps=[
  {id:'voyanitsa',name:'沃雅妮莎',keys:'E'},
  {id:'skirk',name:'絲柯克',keys:'短 E → A2 → Q'},
 ];
-export default function SkirkFlow(){return <div className="skirk-minimal-flow" aria-label="絲柯克隊操作流程圖">{steps.map((step,i)=><div key={step.id}>
+export default function SkirkFlow(){return <div className="skirk-minimal-flow skirk-uniform-type" aria-label="絲柯克隊操作流程圖">{steps.map((step,i)=><div key={step.id}>
  {i>0&&<div className="minimal-flow-arrow" aria-hidden="true"><ArrowDown size={19}/></div>}
  <div className="minimal-flow-card"><GameImage src={characterImage(step.id,'icon')} alt={step.name}/><div className="minimal-flow-moves"><strong>{step.keys}</strong>{step.id==='skirk'&&<div className="minimal-flow-combos" aria-label="後續三行連段"><span>A5 → 衝刺</span><span>A5 → 重擊</span><span>A5</span></div>}</div></div>
  </div>)}</div>}

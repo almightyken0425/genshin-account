@@ -47,3 +47,9 @@ test('all six other teams use minimal flows with conditional actions retained',(
  for(const condition of ['可用時','親自撿火結晶','親自撿水結晶','月露不足','首輪','Q 未就緒'])assert.ok(flow.includes(condition));
  assert.match(dashboard,/<TeamFlow id={team.id}/);assert.ok(!dashboard.includes('目前配裝注意事項'));
 });
+test('Skirk action rows inherit one shared font size',()=>{
+ const flow=readFileSync(new URL('../app/skirk_flow.tsx',import.meta.url),'utf8');
+ const css=readFileSync(new URL('../app/globals.css',import.meta.url),'utf8');
+ assert.match(flow,/skirk-uniform-type/);
+ assert.ok(css.includes('.skirk-uniform-type .minimal-flow-moves>strong,.skirk-uniform-type .minimal-flow-combos{font-size:inherit}'));
+});
