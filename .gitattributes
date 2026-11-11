@@ -1,4 +1,4 @@
 * text=auto eol=lf
 *.png binary
 *.jpg binary
-imports/** -text
+imports/** -text whitespace=cr-at-eol

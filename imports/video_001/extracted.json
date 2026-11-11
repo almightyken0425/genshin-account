@@ -1,0 +1,583 @@
+{
+  "source_video": "../IMG_5679.MP4",
+  "video_duration_seconds": 93.666667,
+  "video_resolution": [
+    848,
+    384
+  ],
+  "characters": [
+    {
+      "id": "escoffier",
+      "name": "愛可菲",
+      "element": "冰",
+      "weapon_type": "長柄武器",
+      "level": "90/90",
+      "constellation": 2,
+      "friendship": 10,
+      "stats": {
+        "hp": 27894,
+        "atk": 1665,
+        "defense": 909,
+        "elemental_mastery": 82,
+        "stamina": 240,
+        "crit_rate": 72.7,
+        "crit_damage": 170.5,
+        "energy_recharge": 118.8,
+        "element_damage_bonus": 46.6
+      },
+      "weapon": {
+        "name": "和璞鳶",
+        "rarity": 5,
+        "level": "90/90",
+        "refinement": 1,
+        "base_atk": 674,
+        "substat": "暴擊率 22.1%"
+      },
+      "talents_displayed": {
+        "normal": 1,
+        "skill": 11,
+        "burst": 6
+      },
+      "set_summary": "黃金劇團 4 件＋流浪大地的樂團 1 件",
+      "artifact_bonus": {
+        "hp": 11209,
+        "atk": 644,
+        "defense": 178,
+        "elemental_mastery": 82
+      },
+      "sources": {
+        "overview": 0.4,
+        "stats": 3.0,
+        "elements": 2.4,
+        "weapon": 5.4,
+        "artifact_overview": 7.4,
+        "constellation": 15.4,
+        "talents": 17.4
+      },
+      "artifacts": [
+        {
+          "slot": "生之花",
+          "name": "黃金樂曲的變奏",
+          "set": "黃金劇團",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "生命值 4,780",
+          "substats": [
+            "暴擊率 +6.2%",
+            "元素充能效率 +18.8%",
+            "防禦力 +19",
+            "攻擊力 +8.2%"
+          ],
+          "time_seconds": 8.4,
+          "screenshot": "screenshots/escoffier_artifact_1_0084.png"
+        },
+        {
+          "slot": "死之羽",
+          "name": "黃金飛鳥的落羽",
+          "set": "黃金劇團",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "攻擊力 311",
+          "substats": [
+            "元素精通 +63",
+            "暴擊傷害 +12.4%",
+            "生命值 +209",
+            "暴擊率 +10.1%"
+          ],
+          "time_seconds": 9.4,
+          "screenshot": "screenshots/escoffier_artifact_2_0094.png"
+        },
+        {
+          "slot": "時之沙",
+          "name": "黃金時代的先聲",
+          "set": "黃金劇團",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "生命值 46.6%",
+          "substats": [
+            "暴擊率 +3.9%",
+            "暴擊傷害 +19.4%",
+            "攻擊力 +19",
+            "攻擊力 +14.6%"
+          ],
+          "time_seconds": 10.4,
+          "screenshot": "screenshots/escoffier_artifact_3_0104.png"
+        },
+        {
+          "slot": "空之杯",
+          "name": "吟遊者之壺",
+          "set": "流浪大地的樂團",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "冰元素傷害加成 46.6%",
+          "substats": [
+            "防禦力 +16",
+            "暴擊傷害 +26.4%",
+            "元素精通 +19",
+            "攻擊力 +53"
+          ],
+          "time_seconds": 12.4,
+          "screenshot": "screenshots/escoffier_artifact_4_0124.png"
+        },
+        {
+          "slot": "理之冠",
+          "name": "黃金劇團的獎賞",
+          "set": "黃金劇團",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "暴擊傷害 62.2%",
+          "substats": [
+            "攻擊力 +29",
+            "防禦力 +42",
+            "暴擊率 +6.2%",
+            "防禦力 +13.9%"
+          ],
+          "time_seconds": 13.4,
+          "screenshot": "screenshots/escoffier_artifact_5_0134.png"
+        }
+      ],
+      "source_screenshots": {
+        "overview": "screenshots/escoffier_overview_0004.png",
+        "stats": "screenshots/escoffier_stats_0030.png",
+        "elements": "screenshots/escoffier_elements_0024.png",
+        "weapon": "screenshots/escoffier_weapon_0054.png",
+        "artifact_overview": "screenshots/escoffier_artifact_overview_0074.png",
+        "constellation": "screenshots/escoffier_constellation_0154.png",
+        "talents": "screenshots/escoffier_talents_0174.png"
+      }
+    },
+    {
+      "id": "furina",
+      "name": "芙寧娜",
+      "element": "水",
+      "weapon_type": "單手劍",
+      "level": "90/90",
+      "constellation": 2,
+      "friendship": 10,
+      "stats": {
+        "hp": 36197,
+        "atk": 1025,
+        "defense": 760,
+        "elemental_mastery": 16,
+        "stamina": 240,
+        "crit_rate": 77.1,
+        "crit_damage": 130.1,
+        "energy_recharge": 265.5,
+        "element_damage_bonus": 0.0
+      },
+      "weapon": {
+        "name": "西風劍",
+        "rarity": 4,
+        "level": "90/90",
+        "refinement": 5,
+        "base_atk": 454,
+        "substat": "元素充能效率 61.3%"
+      },
+      "talents_displayed": {
+        "normal": 1,
+        "skill": 10,
+        "burst": 10
+      },
+      "set_summary": "黃金劇團 4 件＋穹境示現之夜 1 件",
+      "artifact_bonus": {
+        "hp": 17062,
+        "atk": 327,
+        "defense": 65,
+        "elemental_mastery": 16
+      },
+      "sources": {
+        "overview": 20.4,
+        "stats": 22.4,
+        "elements": 24.4,
+        "weapon": 26.4,
+        "artifact_overview": 28.4,
+        "constellation": 38.4,
+        "talents": 42.4
+      },
+      "artifacts": [
+        {
+          "slot": "生之花",
+          "name": "黃金樂曲的變奏",
+          "set": "黃金劇團",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "生命值 4,780",
+          "substats": [
+            "生命值 +5.3%",
+            "元素充能效率 +16.8%",
+            "暴擊率 +7.0%",
+            "暴擊傷害 +10.9%"
+          ],
+          "time_seconds": 30.4,
+          "screenshot": "screenshots/furina_artifact_1_0304.png"
+        },
+        {
+          "slot": "死之羽",
+          "name": "黃金飛鳥的落羽",
+          "set": "黃金劇團",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "攻擊力 311",
+          "substats": [
+            "暴擊率 +8.9%",
+            "暴擊傷害 +6.2%",
+            "元素充能效率 +17.5%",
+            "防禦力 +23"
+          ],
+          "time_seconds": 31.4,
+          "screenshot": "screenshots/furina_artifact_2_0314.png"
+        },
+        {
+          "slot": "時之沙",
+          "name": "黃金時代的先聲",
+          "set": "黃金劇團",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "元素充能效率 51.8%",
+          "substats": [
+            "暴擊率 +5.8%",
+            "生命值 +10.5%",
+            "攻擊力 +16",
+            "暴擊傷害 +24.1%"
+          ],
+          "time_seconds": 32.4,
+          "screenshot": "screenshots/furina_artifact_3_0324.png"
+        },
+        {
+          "slot": "空之杯",
+          "name": "黃金之夜的喧囂",
+          "set": "黃金劇團",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "生命值 46.6%",
+          "substats": [
+            "暴擊傷害 +26.4%",
+            "元素充能效率 +5.2%",
+            "元素精通 +16",
+            "防禦力 +42"
+          ],
+          "time_seconds": 34.4,
+          "screenshot": "screenshots/furina_artifact_4_0344.png"
+        },
+        {
+          "slot": "理之冠",
+          "name": "永劫之冕",
+          "set": "穹境示現之夜",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "暴擊率 31.1%",
+          "substats": [
+            "生命值 +508",
+            "元素充能效率 +13.0%",
+            "暴擊傷害 +12.4%",
+            "生命值 +14.6%"
+          ],
+          "time_seconds": 36.4,
+          "screenshot": "screenshots/furina_artifact_5_0364.png"
+        }
+      ],
+      "source_screenshots": {
+        "overview": "screenshots/furina_overview_0204.png",
+        "stats": "screenshots/furina_stats_0224.png",
+        "elements": "screenshots/furina_elements_0244.png",
+        "weapon": "screenshots/furina_weapon_0264.png",
+        "artifact_overview": "screenshots/furina_artifact_overview_0284.png",
+        "constellation": "screenshots/furina_constellation_0384.png",
+        "talents": "screenshots/furina_talents_0424.png"
+      }
+    },
+    {
+      "id": "voyanitsa",
+      "name": "沃雅妮莎",
+      "element": "水",
+      "weapon_type": "法器",
+      "level": "90/90",
+      "constellation": 0,
+      "friendship": 2,
+      "stats": {
+        "hp": 62728,
+        "atk": 984,
+        "defense": 685,
+        "elemental_mastery": 44,
+        "stamina": 240,
+        "crit_rate": 5.0,
+        "crit_damage": 71.0,
+        "energy_recharge": 138.2,
+        "element_damage_bonus": 0.0
+      },
+      "weapon": {
+        "name": "討龍英傑譚",
+        "rarity": 3,
+        "level": "90/90",
+        "refinement": 5,
+        "base_atk": 401,
+        "substat": "生命值 35.2%"
+      },
+      "talents_displayed": {
+        "normal": 3,
+        "skill": 11,
+        "burst": 8
+      },
+      "set_summary": "千岩牢固 5 件，啟用 4 件套效果",
+      "artifact_bonus": {
+        "hp": 31761,
+        "atk": 475,
+        "defense": 201,
+        "elemental_mastery": 44
+      },
+      "sources": {
+        "overview": 46.4,
+        "stats": 48.0,
+        "elements": 47.4,
+        "weapon": 50.4,
+        "artifact_overview": 52.4,
+        "constellation": 64.4,
+        "talents": 66.4
+      },
+      "artifacts": [
+        {
+          "slot": "生之花",
+          "name": "勳績之花",
+          "set": "千岩牢固",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "生命值 4,780",
+          "substats": [
+            "元素充能效率 +9.1%",
+            "防禦力 +7.3%",
+            "生命值 +12.8%",
+            "元素精通 +44"
+          ],
+          "time_seconds": 55.4,
+          "screenshot": "screenshots/voyanitsa_artifact_1_0554.png"
+        },
+        {
+          "slot": "死之羽",
+          "name": "昭武翎羽",
+          "set": "千岩牢固",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "攻擊力 311",
+          "substats": [
+            "元素充能效率 +5.8%",
+            "生命值 +9.9%",
+            "暴擊傷害 +21.0%",
+            "生命值 +807"
+          ],
+          "time_seconds": 56.4,
+          "screenshot": "screenshots/voyanitsa_artifact_2_0564.png"
+        },
+        {
+          "slot": "時之沙",
+          "name": "金銅時晷",
+          "set": "千岩牢固",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "生命值 46.6%",
+          "substats": [
+            "防禦力 +12.4%",
+            "防禦力 +39",
+            "生命值 +478",
+            "元素充能效率 +11.7%"
+          ],
+          "time_seconds": 58.4,
+          "screenshot": "screenshots/voyanitsa_artifact_3_0584.png"
+        },
+        {
+          "slot": "空之杯",
+          "name": "盟誓金爵",
+          "set": "千岩牢固",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "生命值 46.6%",
+          "substats": [
+            "防禦力 +5.1%",
+            "生命值 +777",
+            "攻擊力 +21.6%",
+            "防禦力 +19"
+          ],
+          "time_seconds": 60.4,
+          "screenshot": "screenshots/voyanitsa_artifact_4_0604.png"
+        },
+        {
+          "slot": "理之冠",
+          "name": "將帥兜鍪",
+          "set": "千岩牢固",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "生命值 46.6%",
+          "substats": [
+            "攻擊力 +54",
+            "生命值 +837",
+            "元素充能效率 +11.7%",
+            "防禦力 +23"
+          ],
+          "time_seconds": 61.4,
+          "screenshot": "screenshots/voyanitsa_artifact_5_0614.png"
+        }
+      ],
+      "source_screenshots": {
+        "overview": "screenshots/voyanitsa_overview_0464.png",
+        "stats": "screenshots/voyanitsa_stats_0480.png",
+        "elements": "screenshots/voyanitsa_elements_0474.png",
+        "weapon": "screenshots/voyanitsa_weapon_0504.png",
+        "artifact_overview": "screenshots/voyanitsa_artifact_overview_0524.png",
+        "constellation": "screenshots/voyanitsa_constellation_0644.png",
+        "talents": "screenshots/voyanitsa_talents_0664.png"
+      }
+    },
+    {
+      "id": "skirk",
+      "name": "絲柯克",
+      "element": "冰",
+      "weapon_type": "單手劍",
+      "level": "90/90",
+      "constellation": 2,
+      "friendship": 10,
+      "stats": {
+        "hp": 22400,
+        "atk": 2272,
+        "defense": 865,
+        "elemental_mastery": 33,
+        "stamina": 240,
+        "crit_rate": 70.6,
+        "crit_damage": 210.4,
+        "energy_recharge": 105.8,
+        "element_damage_bonus": 61.6
+      },
+      "weapon": {
+        "name": "蒼耀",
+        "rarity": 5,
+        "level": "90/90",
+        "refinement": 1,
+        "base_atk": 674,
+        "substat": "暴擊率 22.1%"
+      },
+      "talents_displayed": {
+        "normal": 1,
+        "skill": 11,
+        "burst": 9
+      },
+      "set_summary": "深廊終曲 4 件＋角鬥士的終幕禮 1 件",
+      "artifact_bonus": {
+        "hp": 6879,
+        "atk": 1239,
+        "defense": 59,
+        "elemental_mastery": 33
+      },
+      "sources": {
+        "overview": 69.4,
+        "stats": 70.4,
+        "elements": 72.4,
+        "weapon": 75.4,
+        "artifact_overview": 77.4,
+        "constellation": 87.4,
+        "talents": 90.4
+      },
+      "artifacts": [
+        {
+          "slot": "生之花",
+          "name": "深廊的回奏之歌",
+          "set": "深廊終曲",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "生命值 4,780",
+          "substats": [
+            "暴擊傷害 +12.4%",
+            "攻擊力 +19",
+            "攻擊力 +9.3%",
+            "暴擊率 +9.3%"
+          ],
+          "time_seconds": 78.4,
+          "screenshot": "screenshots/skirk_artifact_1_0784.png"
+        },
+        {
+          "slot": "死之羽",
+          "name": "深廊的漫遠之約",
+          "set": "深廊終曲",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "攻擊力 311",
+          "substats": [
+            "生命值 +8.2%",
+            "攻擊力 +11.1%",
+            "暴擊傷害 +11.7%",
+            "暴擊率 +7.8%"
+          ],
+          "time_seconds": 80.4,
+          "screenshot": "screenshots/skirk_artifact_2_0804.png"
+        },
+        {
+          "slot": "時之沙",
+          "name": "深廊的湮落之刻",
+          "set": "深廊終曲",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "攻擊力 46.6%",
+          "substats": [
+            "暴擊傷害 +20.2%",
+            "暴擊率 +6.2%",
+            "防禦力 +7.3%",
+            "元素精通 +33"
+          ],
+          "time_seconds": 82.4,
+          "screenshot": "screenshots/skirk_artifact_3_0824.png"
+        },
+        {
+          "slot": "空之杯",
+          "name": "角鬥士的酣醉",
+          "set": "角鬥士的終幕禮",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "冰元素傷害加成 46.6%",
+          "substats": [
+            "暴擊傷害 +15.5%",
+            "攻擊力 +39",
+            "暴擊率 +9.7%",
+            "生命值 +8.7%"
+          ],
+          "time_seconds": 83.4,
+          "screenshot": "screenshots/skirk_artifact_4_0834.png"
+        },
+        {
+          "slot": "理之冠",
+          "name": "深廊的遂失之冕",
+          "set": "深廊終曲",
+          "rarity": 5,
+          "level": 20,
+          "main_stat": "暴擊傷害 62.2%",
+          "substats": [
+            "攻擊力 +14.0%",
+            "暴擊率 +10.5%",
+            "元素充能效率 +5.8%",
+            "攻擊力 +33"
+          ],
+          "time_seconds": 85.4,
+          "screenshot": "screenshots/skirk_artifact_5_0854.png"
+        }
+      ],
+      "source_screenshots": {
+        "overview": "screenshots/skirk_overview_0694.png",
+        "stats": "screenshots/skirk_stats_0704.png",
+        "elements": "screenshots/skirk_elements_0724.png",
+        "weapon": "screenshots/skirk_weapon_0754.png",
+        "artifact_overview": "screenshots/skirk_artifact_overview_0774.png",
+        "constellation": "screenshots/skirk_constellation_0874.png",
+        "talents": "screenshots/skirk_talents_0904.png"
+      }
+    }
+  ],
+  "notes": [
+    "所有配裝與數值均依影片畫面抄錄。這是錄影當時的面板，未推算未顯示的戰鬥狀態。",
+    "天賦依序為普通攻擊、元素戰技、元素爆發。記錄畫面當下顯示等級，未反推基礎等級或加成來源。",
+    "四名角色各五件聖遺物，全部顯示為五星、強化 +20。",
+    "四人的治療加成、受治療加成、冷卻縮減、護盾強效，畫面均顯示 0.0%。",
+    "可見的火、水、草、雷、風、冰元素抗性均為 0.0%。岩元素抗性與物理欄位未完整擷取，未列為已確認。",
+    "可見的七元素傷害加成除愛可菲冰傷 46.6%、絲柯克冰傷 61.6% 外均為 0.0%。",
+    "詳細天賦倍率、命之座效果與實戰傷害未在影片中展開，未推測填入。",
+    "左側角色列表還有其他頭像，但未展開其資料頁，不把頭像視為完整角色資料。",
+    "沃雅妮莎名稱另以 HoYoWiki 交叉確認。其等級、配裝與數值仍以本影片為準。",
+    "逐項數值已人工核對截圖。原始影片解析度 848 × 384，少數裝備名稱的細部字形仍可能受壓縮影響，以附圖為準。"
+  ],
+  "name_reference": "https://wiki.hoyolab.com/m/genshin/entry/11702?lang=zh-cn"
+}

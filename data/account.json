@@ -1,0 +1,1518 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-11T02:35:58+00:00",
+  "source_ids": [
+    "video_001"
+  ],
+  "coverage": {
+    "roster": "partial",
+    "inventory": "equipped_items_only",
+    "notes": [
+      "只涵蓋影片展開資料頁的角色與穿戴裝備，未盤點完整帳號。",
+      "錄影日期及遊戲版本未知。"
+    ]
+  },
+  "characters": [
+    {
+      "id": "escoffier",
+      "name": "愛可菲",
+      "element": "cryo",
+      "weapon_type": "polearm",
+      "level": {
+        "current": 90,
+        "cap": 90
+      },
+      "constellation": 2,
+      "friendship": 10,
+      "talents": {
+        "base": {
+          "normal": null,
+          "skill": null,
+          "burst": null
+        },
+        "displayed": {
+          "normal": 1,
+          "skill": 11,
+          "burst": 6
+        },
+        "bonus_context": null
+      },
+      "panel_snapshot_id": "video_001_escoffier_panel",
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_escoffier_overview_0004",
+          "video_001_escoffier_constellation_0154",
+          "video_001_escoffier_talents_0174"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "furina",
+      "name": "芙寧娜",
+      "element": "hydro",
+      "weapon_type": "sword",
+      "level": {
+        "current": 90,
+        "cap": 90
+      },
+      "constellation": 2,
+      "friendship": 10,
+      "talents": {
+        "base": {
+          "normal": null,
+          "skill": null,
+          "burst": null
+        },
+        "displayed": {
+          "normal": 1,
+          "skill": 10,
+          "burst": 10
+        },
+        "bonus_context": null
+      },
+      "panel_snapshot_id": "video_001_furina_panel",
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_furina_overview_0204",
+          "video_001_furina_constellation_0384",
+          "video_001_furina_talents_0424"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "voyanitsa",
+      "name": "沃雅妮莎",
+      "element": "hydro",
+      "weapon_type": "catalyst",
+      "level": {
+        "current": 90,
+        "cap": 90
+      },
+      "constellation": 0,
+      "friendship": 2,
+      "talents": {
+        "base": {
+          "normal": null,
+          "skill": null,
+          "burst": null
+        },
+        "displayed": {
+          "normal": 3,
+          "skill": 11,
+          "burst": 8
+        },
+        "bonus_context": null
+      },
+      "panel_snapshot_id": "video_001_voyanitsa_panel",
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_voyanitsa_overview_0464",
+          "video_001_voyanitsa_constellation_0644",
+          "video_001_voyanitsa_talents_0664"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "skirk",
+      "name": "絲柯克",
+      "element": "cryo",
+      "weapon_type": "sword",
+      "level": {
+        "current": 90,
+        "cap": 90
+      },
+      "constellation": 2,
+      "friendship": 10,
+      "talents": {
+        "base": {
+          "normal": null,
+          "skill": null,
+          "burst": null
+        },
+        "displayed": {
+          "normal": 1,
+          "skill": 11,
+          "burst": 9
+        },
+        "bonus_context": null
+      },
+      "panel_snapshot_id": "video_001_skirk_panel",
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_skirk_overview_0694",
+          "video_001_skirk_constellation_0874",
+          "video_001_skirk_talents_0904"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    }
+  ],
+  "weapons": [
+    {
+      "id": "weapon_video_001_001",
+      "name": "和璞鳶",
+      "weapon_type": "polearm",
+      "rarity": 5,
+      "level": {
+        "current": 90,
+        "cap": 90
+      },
+      "refinement": 1,
+      "base_atk": 674,
+      "secondary_stat": {
+        "key": "crit_rate",
+        "value": 22.1,
+        "unit": "percent"
+      },
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_escoffier_weapon_0054"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "weapon_video_001_002",
+      "name": "西風劍",
+      "weapon_type": "sword",
+      "rarity": 4,
+      "level": {
+        "current": 90,
+        "cap": 90
+      },
+      "refinement": 5,
+      "base_atk": 454,
+      "secondary_stat": {
+        "key": "energy_recharge",
+        "value": 61.3,
+        "unit": "percent"
+      },
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_furina_weapon_0264"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "weapon_video_001_003",
+      "name": "討龍英傑譚",
+      "weapon_type": "catalyst",
+      "rarity": 3,
+      "level": {
+        "current": 90,
+        "cap": 90
+      },
+      "refinement": 5,
+      "base_atk": 401,
+      "secondary_stat": {
+        "key": "hp_pct",
+        "value": 35.2,
+        "unit": "percent"
+      },
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_voyanitsa_weapon_0504"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "weapon_video_001_004",
+      "name": "蒼耀",
+      "weapon_type": "sword",
+      "rarity": 5,
+      "level": {
+        "current": 90,
+        "cap": 90
+      },
+      "refinement": 1,
+      "base_atk": 674,
+      "secondary_stat": {
+        "key": "crit_rate",
+        "value": 22.1,
+        "unit": "percent"
+      },
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_skirk_weapon_0754"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "artifact_video_001_001",
+      "name": "黃金樂曲的變奏",
+      "set_name": "黃金劇團",
+      "slot": "flower",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "hp",
+        "value": 4780,
+        "unit": "flat"
+      },
+      "substats": [
+        {
+          "key": "crit_rate",
+          "value": 6.2,
+          "unit": "percent"
+        },
+        {
+          "key": "energy_recharge",
+          "value": 18.8,
+          "unit": "percent"
+        },
+        {
+          "key": "def",
+          "value": 19,
+          "unit": "flat"
+        },
+        {
+          "key": "atk_pct",
+          "value": 8.2,
+          "unit": "percent"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_escoffier_artifact_1_0084"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_002",
+      "name": "黃金飛鳥的落羽",
+      "set_name": "黃金劇團",
+      "slot": "plume",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "atk",
+        "value": 311,
+        "unit": "flat"
+      },
+      "substats": [
+        {
+          "key": "em",
+          "value": 63,
+          "unit": "flat"
+        },
+        {
+          "key": "crit_dmg",
+          "value": 12.4,
+          "unit": "percent"
+        },
+        {
+          "key": "hp",
+          "value": 209,
+          "unit": "flat"
+        },
+        {
+          "key": "crit_rate",
+          "value": 10.1,
+          "unit": "percent"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_escoffier_artifact_2_0094"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_003",
+      "name": "黃金時代的先聲",
+      "set_name": "黃金劇團",
+      "slot": "sands",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "hp_pct",
+        "value": 46.6,
+        "unit": "percent"
+      },
+      "substats": [
+        {
+          "key": "crit_rate",
+          "value": 3.9,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_dmg",
+          "value": 19.4,
+          "unit": "percent"
+        },
+        {
+          "key": "atk",
+          "value": 19,
+          "unit": "flat"
+        },
+        {
+          "key": "atk_pct",
+          "value": 14.6,
+          "unit": "percent"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_escoffier_artifact_3_0104"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_004",
+      "name": "吟遊者之壺",
+      "set_name": "流浪大地的樂團",
+      "slot": "goblet",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "cryo_dmg_bonus",
+        "value": 46.6,
+        "unit": "percent"
+      },
+      "substats": [
+        {
+          "key": "def",
+          "value": 16,
+          "unit": "flat"
+        },
+        {
+          "key": "crit_dmg",
+          "value": 26.4,
+          "unit": "percent"
+        },
+        {
+          "key": "em",
+          "value": 19,
+          "unit": "flat"
+        },
+        {
+          "key": "atk",
+          "value": 53,
+          "unit": "flat"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_escoffier_artifact_4_0124"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_005",
+      "name": "黃金劇團的獎賞",
+      "set_name": "黃金劇團",
+      "slot": "circlet",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "crit_dmg",
+        "value": 62.2,
+        "unit": "percent"
+      },
+      "substats": [
+        {
+          "key": "atk",
+          "value": 29,
+          "unit": "flat"
+        },
+        {
+          "key": "def",
+          "value": 42,
+          "unit": "flat"
+        },
+        {
+          "key": "crit_rate",
+          "value": 6.2,
+          "unit": "percent"
+        },
+        {
+          "key": "def_pct",
+          "value": 13.9,
+          "unit": "percent"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_escoffier_artifact_5_0134"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_006",
+      "name": "黃金樂曲的變奏",
+      "set_name": "黃金劇團",
+      "slot": "flower",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "hp",
+        "value": 4780,
+        "unit": "flat"
+      },
+      "substats": [
+        {
+          "key": "hp_pct",
+          "value": 5.3,
+          "unit": "percent"
+        },
+        {
+          "key": "energy_recharge",
+          "value": 16.8,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_rate",
+          "value": 7,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_dmg",
+          "value": 10.9,
+          "unit": "percent"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_furina_artifact_1_0304"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_007",
+      "name": "黃金飛鳥的落羽",
+      "set_name": "黃金劇團",
+      "slot": "plume",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "atk",
+        "value": 311,
+        "unit": "flat"
+      },
+      "substats": [
+        {
+          "key": "crit_rate",
+          "value": 8.9,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_dmg",
+          "value": 6.2,
+          "unit": "percent"
+        },
+        {
+          "key": "energy_recharge",
+          "value": 17.5,
+          "unit": "percent"
+        },
+        {
+          "key": "def",
+          "value": 23,
+          "unit": "flat"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_furina_artifact_2_0314"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_008",
+      "name": "黃金時代的先聲",
+      "set_name": "黃金劇團",
+      "slot": "sands",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "energy_recharge",
+        "value": 51.8,
+        "unit": "percent"
+      },
+      "substats": [
+        {
+          "key": "crit_rate",
+          "value": 5.8,
+          "unit": "percent"
+        },
+        {
+          "key": "hp_pct",
+          "value": 10.5,
+          "unit": "percent"
+        },
+        {
+          "key": "atk",
+          "value": 16,
+          "unit": "flat"
+        },
+        {
+          "key": "crit_dmg",
+          "value": 24.1,
+          "unit": "percent"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_furina_artifact_3_0324"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_009",
+      "name": "黃金之夜的喧囂",
+      "set_name": "黃金劇團",
+      "slot": "goblet",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "hp_pct",
+        "value": 46.6,
+        "unit": "percent"
+      },
+      "substats": [
+        {
+          "key": "crit_dmg",
+          "value": 26.4,
+          "unit": "percent"
+        },
+        {
+          "key": "energy_recharge",
+          "value": 5.2,
+          "unit": "percent"
+        },
+        {
+          "key": "em",
+          "value": 16,
+          "unit": "flat"
+        },
+        {
+          "key": "def",
+          "value": 42,
+          "unit": "flat"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_furina_artifact_4_0344"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_010",
+      "name": "永劫之冕",
+      "set_name": "穹境示現之夜",
+      "slot": "circlet",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "crit_rate",
+        "value": 31.1,
+        "unit": "percent"
+      },
+      "substats": [
+        {
+          "key": "hp",
+          "value": 508,
+          "unit": "flat"
+        },
+        {
+          "key": "energy_recharge",
+          "value": 13,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_dmg",
+          "value": 12.4,
+          "unit": "percent"
+        },
+        {
+          "key": "hp_pct",
+          "value": 14.6,
+          "unit": "percent"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_furina_artifact_5_0364"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_011",
+      "name": "勳績之花",
+      "set_name": "千岩牢固",
+      "slot": "flower",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "hp",
+        "value": 4780,
+        "unit": "flat"
+      },
+      "substats": [
+        {
+          "key": "energy_recharge",
+          "value": 9.1,
+          "unit": "percent"
+        },
+        {
+          "key": "def_pct",
+          "value": 7.3,
+          "unit": "percent"
+        },
+        {
+          "key": "hp_pct",
+          "value": 12.8,
+          "unit": "percent"
+        },
+        {
+          "key": "em",
+          "value": 44,
+          "unit": "flat"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_voyanitsa_artifact_1_0554"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_012",
+      "name": "昭武翎羽",
+      "set_name": "千岩牢固",
+      "slot": "plume",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "atk",
+        "value": 311,
+        "unit": "flat"
+      },
+      "substats": [
+        {
+          "key": "energy_recharge",
+          "value": 5.8,
+          "unit": "percent"
+        },
+        {
+          "key": "hp_pct",
+          "value": 9.9,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_dmg",
+          "value": 21,
+          "unit": "percent"
+        },
+        {
+          "key": "hp",
+          "value": 807,
+          "unit": "flat"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_voyanitsa_artifact_2_0564"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_013",
+      "name": "金銅時晷",
+      "set_name": "千岩牢固",
+      "slot": "sands",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "hp_pct",
+        "value": 46.6,
+        "unit": "percent"
+      },
+      "substats": [
+        {
+          "key": "def_pct",
+          "value": 12.4,
+          "unit": "percent"
+        },
+        {
+          "key": "def",
+          "value": 39,
+          "unit": "flat"
+        },
+        {
+          "key": "hp",
+          "value": 478,
+          "unit": "flat"
+        },
+        {
+          "key": "energy_recharge",
+          "value": 11.7,
+          "unit": "percent"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_voyanitsa_artifact_3_0584"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_014",
+      "name": "盟誓金爵",
+      "set_name": "千岩牢固",
+      "slot": "goblet",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "hp_pct",
+        "value": 46.6,
+        "unit": "percent"
+      },
+      "substats": [
+        {
+          "key": "def_pct",
+          "value": 5.1,
+          "unit": "percent"
+        },
+        {
+          "key": "hp",
+          "value": 777,
+          "unit": "flat"
+        },
+        {
+          "key": "atk_pct",
+          "value": 21.6,
+          "unit": "percent"
+        },
+        {
+          "key": "def",
+          "value": 19,
+          "unit": "flat"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_voyanitsa_artifact_4_0604"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_015",
+      "name": "將帥兜鍪",
+      "set_name": "千岩牢固",
+      "slot": "circlet",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "hp_pct",
+        "value": 46.6,
+        "unit": "percent"
+      },
+      "substats": [
+        {
+          "key": "atk",
+          "value": 54,
+          "unit": "flat"
+        },
+        {
+          "key": "hp",
+          "value": 837,
+          "unit": "flat"
+        },
+        {
+          "key": "energy_recharge",
+          "value": 11.7,
+          "unit": "percent"
+        },
+        {
+          "key": "def",
+          "value": 23,
+          "unit": "flat"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_voyanitsa_artifact_5_0614"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_016",
+      "name": "深廊的回奏之歌",
+      "set_name": "深廊終曲",
+      "slot": "flower",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "hp",
+        "value": 4780,
+        "unit": "flat"
+      },
+      "substats": [
+        {
+          "key": "crit_dmg",
+          "value": 12.4,
+          "unit": "percent"
+        },
+        {
+          "key": "atk",
+          "value": 19,
+          "unit": "flat"
+        },
+        {
+          "key": "atk_pct",
+          "value": 9.3,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_rate",
+          "value": 9.3,
+          "unit": "percent"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_skirk_artifact_1_0784"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_017",
+      "name": "深廊的漫遠之約",
+      "set_name": "深廊終曲",
+      "slot": "plume",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "atk",
+        "value": 311,
+        "unit": "flat"
+      },
+      "substats": [
+        {
+          "key": "hp_pct",
+          "value": 8.2,
+          "unit": "percent"
+        },
+        {
+          "key": "atk_pct",
+          "value": 11.1,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_dmg",
+          "value": 11.7,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_rate",
+          "value": 7.8,
+          "unit": "percent"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_skirk_artifact_2_0804"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_018",
+      "name": "深廊的湮落之刻",
+      "set_name": "深廊終曲",
+      "slot": "sands",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "atk_pct",
+        "value": 46.6,
+        "unit": "percent"
+      },
+      "substats": [
+        {
+          "key": "crit_dmg",
+          "value": 20.2,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_rate",
+          "value": 6.2,
+          "unit": "percent"
+        },
+        {
+          "key": "def_pct",
+          "value": 7.3,
+          "unit": "percent"
+        },
+        {
+          "key": "em",
+          "value": 33,
+          "unit": "flat"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_skirk_artifact_3_0824"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_019",
+      "name": "角鬥士的酣醉",
+      "set_name": "角鬥士的終幕禮",
+      "slot": "goblet",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "cryo_dmg_bonus",
+        "value": 46.6,
+        "unit": "percent"
+      },
+      "substats": [
+        {
+          "key": "crit_dmg",
+          "value": 15.5,
+          "unit": "percent"
+        },
+        {
+          "key": "atk",
+          "value": 39,
+          "unit": "flat"
+        },
+        {
+          "key": "crit_rate",
+          "value": 9.7,
+          "unit": "percent"
+        },
+        {
+          "key": "hp_pct",
+          "value": 8.7,
+          "unit": "percent"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_skirk_artifact_4_0834"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "artifact_video_001_020",
+      "name": "深廊的遂失之冕",
+      "set_name": "深廊終曲",
+      "slot": "circlet",
+      "rarity": 5,
+      "level": 20,
+      "main_stat": {
+        "key": "crit_dmg",
+        "value": 62.2,
+        "unit": "percent"
+      },
+      "substats": [
+        {
+          "key": "atk_pct",
+          "value": 14,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_rate",
+          "value": 10.5,
+          "unit": "percent"
+        },
+        {
+          "key": "energy_recharge",
+          "value": 5.8,
+          "unit": "percent"
+        },
+        {
+          "key": "atk",
+          "value": 33,
+          "unit": "flat"
+        }
+      ],
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_skirk_artifact_5_0854"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    }
+  ],
+  "equipment": {
+    "escoffier": {
+      "weapon_id": "weapon_video_001_001",
+      "artifacts": {
+        "flower": "artifact_video_001_001",
+        "plume": "artifact_video_001_002",
+        "sands": "artifact_video_001_003",
+        "goblet": "artifact_video_001_004",
+        "circlet": "artifact_video_001_005"
+      }
+    },
+    "furina": {
+      "weapon_id": "weapon_video_001_002",
+      "artifacts": {
+        "flower": "artifact_video_001_006",
+        "plume": "artifact_video_001_007",
+        "sands": "artifact_video_001_008",
+        "goblet": "artifact_video_001_009",
+        "circlet": "artifact_video_001_010"
+      }
+    },
+    "voyanitsa": {
+      "weapon_id": "weapon_video_001_003",
+      "artifacts": {
+        "flower": "artifact_video_001_011",
+        "plume": "artifact_video_001_012",
+        "sands": "artifact_video_001_013",
+        "goblet": "artifact_video_001_014",
+        "circlet": "artifact_video_001_015"
+      }
+    },
+    "skirk": {
+      "weapon_id": "weapon_video_001_004",
+      "artifacts": {
+        "flower": "artifact_video_001_016",
+        "plume": "artifact_video_001_017",
+        "sands": "artifact_video_001_018",
+        "goblet": "artifact_video_001_019",
+        "circlet": "artifact_video_001_020"
+      }
+    }
+  },
+  "panel_snapshots": [
+    {
+      "id": "video_001_escoffier_panel",
+      "character_id": "escoffier",
+      "observed_at": null,
+      "imported_at": "2026-11-11T02:35:58+00:00",
+      "build_fingerprint": "5b5c25a2748b5ef04f87eefab34e28f898473acc4015f36104388586a8999f57",
+      "stats": [
+        {
+          "key": "hp",
+          "value": 27894,
+          "unit": "flat"
+        },
+        {
+          "key": "atk",
+          "value": 1665,
+          "unit": "flat"
+        },
+        {
+          "key": "def",
+          "value": 909,
+          "unit": "flat"
+        },
+        {
+          "key": "em",
+          "value": 82,
+          "unit": "flat"
+        },
+        {
+          "key": "stamina",
+          "value": 240,
+          "unit": "flat"
+        },
+        {
+          "key": "crit_rate",
+          "value": 72.7,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_dmg",
+          "value": 170.5,
+          "unit": "percent"
+        },
+        {
+          "key": "energy_recharge",
+          "value": 118.8,
+          "unit": "percent"
+        },
+        {
+          "key": "cryo_dmg_bonus",
+          "value": 46.6,
+          "unit": "percent"
+        }
+      ],
+      "context": {
+        "team_character_ids": null,
+        "buffs": null,
+        "notes": [
+          "錄影當時面板。未確認共鳴、臨時加成及天賦加成來源。"
+        ]
+      },
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_escoffier_overview_0004",
+          "video_001_escoffier_stats_0030",
+          "video_001_escoffier_elements_0024"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "video_001_furina_panel",
+      "character_id": "furina",
+      "observed_at": null,
+      "imported_at": "2026-11-11T02:35:58+00:00",
+      "build_fingerprint": "421bd9229a7d898e77209b404eafe7b0e01e7e0ec13401d658295c737a87b6ec",
+      "stats": [
+        {
+          "key": "hp",
+          "value": 36197,
+          "unit": "flat"
+        },
+        {
+          "key": "atk",
+          "value": 1025,
+          "unit": "flat"
+        },
+        {
+          "key": "def",
+          "value": 760,
+          "unit": "flat"
+        },
+        {
+          "key": "em",
+          "value": 16,
+          "unit": "flat"
+        },
+        {
+          "key": "stamina",
+          "value": 240,
+          "unit": "flat"
+        },
+        {
+          "key": "crit_rate",
+          "value": 77.1,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_dmg",
+          "value": 130.1,
+          "unit": "percent"
+        },
+        {
+          "key": "energy_recharge",
+          "value": 265.5,
+          "unit": "percent"
+        },
+        {
+          "key": "hydro_dmg_bonus",
+          "value": 0.0,
+          "unit": "percent"
+        }
+      ],
+      "context": {
+        "team_character_ids": null,
+        "buffs": null,
+        "notes": [
+          "錄影當時面板。未確認共鳴、臨時加成及天賦加成來源。"
+        ]
+      },
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_furina_overview_0204",
+          "video_001_furina_stats_0224",
+          "video_001_furina_elements_0244"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "video_001_voyanitsa_panel",
+      "character_id": "voyanitsa",
+      "observed_at": null,
+      "imported_at": "2026-11-11T02:35:58+00:00",
+      "build_fingerprint": "9bd5ad330e6fede2c8425e1e564a009377553dde77a846d50bc74e5e7132306a",
+      "stats": [
+        {
+          "key": "hp",
+          "value": 62728,
+          "unit": "flat"
+        },
+        {
+          "key": "atk",
+          "value": 984,
+          "unit": "flat"
+        },
+        {
+          "key": "def",
+          "value": 685,
+          "unit": "flat"
+        },
+        {
+          "key": "em",
+          "value": 44,
+          "unit": "flat"
+        },
+        {
+          "key": "stamina",
+          "value": 240,
+          "unit": "flat"
+        },
+        {
+          "key": "crit_rate",
+          "value": 5.0,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_dmg",
+          "value": 71.0,
+          "unit": "percent"
+        },
+        {
+          "key": "energy_recharge",
+          "value": 138.2,
+          "unit": "percent"
+        },
+        {
+          "key": "hydro_dmg_bonus",
+          "value": 0.0,
+          "unit": "percent"
+        }
+      ],
+      "context": {
+        "team_character_ids": null,
+        "buffs": null,
+        "notes": [
+          "錄影當時面板。未確認共鳴、臨時加成及天賦加成來源。"
+        ]
+      },
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_voyanitsa_overview_0464",
+          "video_001_voyanitsa_stats_0480",
+          "video_001_voyanitsa_elements_0474"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    },
+    {
+      "id": "video_001_skirk_panel",
+      "character_id": "skirk",
+      "observed_at": null,
+      "imported_at": "2026-11-11T02:35:58+00:00",
+      "build_fingerprint": "e4a3c2630a9b33a48bce99f1b46f0e6f159680c0999d3584fa0d8258ade5abb0",
+      "stats": [
+        {
+          "key": "hp",
+          "value": 22400,
+          "unit": "flat"
+        },
+        {
+          "key": "atk",
+          "value": 2272,
+          "unit": "flat"
+        },
+        {
+          "key": "def",
+          "value": 865,
+          "unit": "flat"
+        },
+        {
+          "key": "em",
+          "value": 33,
+          "unit": "flat"
+        },
+        {
+          "key": "stamina",
+          "value": 240,
+          "unit": "flat"
+        },
+        {
+          "key": "crit_rate",
+          "value": 70.6,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_dmg",
+          "value": 210.4,
+          "unit": "percent"
+        },
+        {
+          "key": "energy_recharge",
+          "value": 105.8,
+          "unit": "percent"
+        },
+        {
+          "key": "cryo_dmg_bonus",
+          "value": 61.6,
+          "unit": "percent"
+        }
+      ],
+      "context": {
+        "team_character_ids": null,
+        "buffs": null,
+        "notes": [
+          "錄影當時面板。未確認共鳴、臨時加成及天賦加成來源。"
+        ]
+      },
+      "provenance": {
+        "source_ids": [
+          "video_001"
+        ],
+        "evidence_refs": [
+          "video_001_skirk_overview_0694",
+          "video_001_skirk_stats_0704",
+          "video_001_skirk_elements_0724"
+        ],
+        "verification": "agent_reviewed",
+        "notes": []
+      }
+    }
+  ],
+  "teams": []
+}

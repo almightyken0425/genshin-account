@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-11T02:35:58+00:00",
+  "goals": [],
+  "favorite_character_ids": [],
+  "constraints": {
+    "allow_new_pulls": null,
+    "resin_budget_per_day": null,
+    "notes": [
+      "尚未提供培養目標、抽卡偏好或樹脂預算。"
+    ]
+  }
+}
