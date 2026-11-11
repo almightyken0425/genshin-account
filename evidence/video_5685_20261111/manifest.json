@@ -1,0 +1,414 @@
+{
+  "schema_version": 2,
+  "id": "video_5685_20261111",
+  "imported_at": "2026-11-11T09:34:03+00:00",
+  "media": {
+    "type": "video",
+    "file_name": "IMG_5685.MP4",
+    "sha256": "20a06bfafbb25ec69305223223ba1da9a676682f00762874346614159f184a5f",
+    "resolution": [
+      848,
+      384
+    ],
+    "recorded_at": null,
+    "game_version": null,
+    "stored_in_repo": false,
+    "duration_seconds": 104.866667
+  },
+  "extraction": {
+    "path": "imports/video_5685_20261111/extracted.json",
+    "sha256": "66bff3c273e249ce23a24b83a0ae660b70113368226e8582854826438c10c7ac"
+  },
+  "screenshots": [
+    {
+      "id": "video_5685_20261111_shot_001",
+      "path": "evidence/video_5685_20261111/screenshots/001.png",
+      "sha256": "181ad199eff2b207e744034277040581ffefc2d215da568d4fd25dfdb0158afd",
+      "time_seconds": 23.5,
+      "character_id": "kukishinobu",
+      "kind": "overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_002",
+      "path": "evidence/video_5685_20261111/screenshots/002.png",
+      "sha256": "6bd1262f45b7a666c5f61df5679aa1201fdd28c81b1514d1ee72494530172d68",
+      "time_seconds": 28.5,
+      "character_id": "kukishinobu",
+      "kind": "constellation",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_003",
+      "path": "evidence/video_5685_20261111/screenshots/003.png",
+      "sha256": "5afaad5565f16df125e100db53834b09f25f654d6bd86ec21e04128ec9e588e2",
+      "time_seconds": 0.5,
+      "character_id": "kukishinobu",
+      "kind": "talents",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_004",
+      "path": "evidence/video_5685_20261111/screenshots/004.png",
+      "sha256": "0c96584aec7ca4313b5ab4d9e41e3773fc273d02bf80b119bac2a00cafca4cfb",
+      "time_seconds": 20.5,
+      "character_id": "kukishinobu",
+      "kind": "weapon",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_005",
+      "path": "evidence/video_5685_20261111/screenshots/005.png",
+      "sha256": "6b0fc0fa4c827183b7b348a6ec203775bf164cb965fc80e78346b425379741a6",
+      "time_seconds": 7.345006898015494,
+      "character_id": "kukishinobu",
+      "kind": "artifact_flower",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_006",
+      "path": "evidence/video_5685_20261111/screenshots/006.png",
+      "sha256": "6eb39e5acea3b97d226275ccccc4e92b5aa5db86cade145abee41f0589d1c45a",
+      "time_seconds": 9.68205454738406,
+      "character_id": "kukishinobu",
+      "kind": "artifact_plume",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_007",
+      "path": "evidence/video_5685_20261111/screenshots/007.png",
+      "sha256": "15ad9a247382c01f0448018ad7039b618d81ef72e9f08d04902c5bf03bd536e7",
+      "time_seconds": 12.019102196752627,
+      "character_id": "kukishinobu",
+      "kind": "artifact_sands",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_008",
+      "path": "evidence/video_5685_20261111/screenshots/008.png",
+      "sha256": "033c7d761765f39cb01e0720928de843815ca55ae47ed04206274974a6f7f5e1",
+      "time_seconds": 14.52308182107609,
+      "character_id": "kukishinobu",
+      "kind": "artifact_goblet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_009",
+      "path": "evidence/video_5685_20261111/screenshots/009.png",
+      "sha256": "538da42a4ce078709a3ef6355f807fb13d16e737a3bdde01efd87c3f8c30fc83",
+      "time_seconds": 17.027061445399553,
+      "character_id": "kukishinobu",
+      "kind": "artifact_circlet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_010",
+      "path": "evidence/video_5685_20261111/screenshots/010.png",
+      "sha256": "a7eea819a4806028c91c8c516cbb27c189cdd995548013864df6c26906fd3a28",
+      "time_seconds": 25.5,
+      "character_id": "kukishinobu",
+      "kind": "panel",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_011",
+      "path": "evidence/video_5685_20261111/screenshots/011.png",
+      "sha256": "b9cba213be56a664af3ec697afd11e4e9a70b89146ea691a5e633c261f5009e4",
+      "time_seconds": 24.5,
+      "character_id": "kukishinobu",
+      "kind": "panel_elements",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_012",
+      "path": "evidence/video_5685_20261111/screenshots/012.png",
+      "sha256": "c51ed5c96fb5ffd4a40e5cdf8ff360fcfb57f4fa976cc41745f4e414477197b6",
+      "time_seconds": 50.5,
+      "character_id": "fischl",
+      "kind": "overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_013",
+      "path": "evidence/video_5685_20261111/screenshots/013.png",
+      "sha256": "312dfb7d9db7f0c98c3129a0369f4ad77069bd419a644bceafc3ae42c4d03a93",
+      "time_seconds": 33.5,
+      "character_id": "fischl",
+      "kind": "constellation",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_014",
+      "path": "evidence/video_5685_20261111/screenshots/014.png",
+      "sha256": "a7443591cc71b0f8e376a81e1d43db77745eeaa34b7881297342f3791ab53151",
+      "time_seconds": 32.5,
+      "character_id": "fischl",
+      "kind": "talents",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_015",
+      "path": "evidence/video_5685_20261111/screenshots/015.png",
+      "sha256": "286a6a7e5dd2c23a5fc418bfb4a5e0052ffb0bdbb3684798a2debfee9b5cc45b",
+      "time_seconds": 49.5,
+      "character_id": "fischl",
+      "kind": "weapon",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_016",
+      "path": "evidence/video_5685_20261111/screenshots/016.png",
+      "sha256": "67a860e1153cd86d20556a6bb89ba4e44703e7f48efb9bc17f353b7071915fe7",
+      "time_seconds": 36.72503449007747,
+      "character_id": "fischl",
+      "kind": "artifact_flower",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_017",
+      "path": "evidence/video_5685_20261111/screenshots/017.png",
+      "sha256": "a076223753c3882ecd7d73b07d85450b8cd5b8dd80bf79ec0569dc59ebdfa1ec",
+      "time_seconds": 39.062082139446034,
+      "character_id": "fischl",
+      "kind": "artifact_plume",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_018",
+      "path": "evidence/video_5685_20261111/screenshots/018.png",
+      "sha256": "69b2960ce7dad9a73cf7a646f678158964d5c9acb748f7dbcce51f4b1623ee9f",
+      "time_seconds": 41.06526583890481,
+      "character_id": "fischl",
+      "kind": "artifact_sands",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_019",
+      "path": "evidence/video_5685_20261111/screenshots/019.png",
+      "sha256": "e36449c9f628c8553766362cade7b8dcf510b44a75c17ddb84c3e3925886babb",
+      "time_seconds": 43.56924546322827,
+      "character_id": "fischl",
+      "kind": "artifact_goblet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_020",
+      "path": "evidence/video_5685_20261111/screenshots/020.png",
+      "sha256": "0e8c6033e0c38ef0418fc52664dde786c89d6df3af0d8fe2ad7f96249c76c2ed",
+      "time_seconds": 46.40708903746153,
+      "character_id": "fischl",
+      "kind": "artifact_circlet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_021",
+      "path": "evidence/video_5685_20261111/screenshots/021.png",
+      "sha256": "9e2d269c7fb48f9f2e3dbdbf607217bf465eb5ca852c2cf55241c7718a856475",
+      "time_seconds": 51.5,
+      "character_id": "fischl",
+      "kind": "panel",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_022",
+      "path": "evidence/video_5685_20261111/screenshots/022.png",
+      "sha256": "175dcbb14c489b8b906f1cb40d8477e8e3730781f44a616a90807b76f12cb371",
+      "time_seconds": 57.5,
+      "character_id": "aino",
+      "kind": "overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_023",
+      "path": "evidence/video_5685_20261111/screenshots/023.png",
+      "sha256": "b393fb8bf1d50b487eb96d5155776c16d6ff1e104417675d348a01fe9a846e6b",
+      "time_seconds": 77.5,
+      "character_id": "aino",
+      "kind": "constellation",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_024",
+      "path": "evidence/video_5685_20261111/screenshots/024.png",
+      "sha256": "4e3a44ce1a51de1fe2847211139d2ee8f4de260aa144feb901b1fd3dba3cd731",
+      "time_seconds": 78.5,
+      "character_id": "aino",
+      "kind": "talents",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_025",
+      "path": "evidence/video_5685_20261111/screenshots/025.png",
+      "sha256": "0218add467c9fbb8b131ba994412fafafe83064e6792c9e8fbcd26dd91fcc57c",
+      "time_seconds": 61.5,
+      "character_id": "aino",
+      "kind": "weapon",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_026",
+      "path": "evidence/video_5685_20261111/screenshots/026.png",
+      "sha256": "0506ab8647b372ad7a1763b83c44bf325393cdcc41b238e789edee73ebc18a34",
+      "time_seconds": 64.43574233259046,
+      "character_id": "aino",
+      "kind": "artifact_flower",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_027",
+      "path": "evidence/video_5685_20261111/screenshots/027.png",
+      "sha256": "0be249dbdc95524886ed45c5308068785fca285f69b737fb1edc73e5178f24ab",
+      "time_seconds": 67.44051788177863,
+      "character_id": "aino",
+      "kind": "artifact_plume",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_028",
+      "path": "evidence/video_5685_20261111/screenshots/028.png",
+      "sha256": "e3b2117692cdf7f8956325c9a3602331c94c3b0866058898321c1dc87c5eed2e",
+      "time_seconds": 69.77756553114719,
+      "character_id": "aino",
+      "kind": "artifact_sands",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_029",
+      "path": "evidence/video_5685_20261111/screenshots/029.png",
+      "sha256": "b7c5ec5ec1e461f3ef3b1f7fa6d9d43bb96ce01431d33149135525322771eaf1",
+      "time_seconds": 71.94768120556085,
+      "character_id": "aino",
+      "kind": "artifact_goblet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_030",
+      "path": "evidence/video_5685_20261111/screenshots/030.png",
+      "sha256": "992d9e5f02b814d14a854e50b133354ac5d9fbdc2528260783ce4d84280b46ac",
+      "time_seconds": 74.11779687997453,
+      "character_id": "aino",
+      "kind": "artifact_circlet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_031",
+      "path": "evidence/video_5685_20261111/screenshots/031.png",
+      "sha256": "e12479dbecd85bd58e3905a6c432c76659269717976629ca43aa895b857486c2",
+      "time_seconds": 59.5,
+      "character_id": "aino",
+      "kind": "panel",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_032",
+      "path": "evidence/video_5685_20261111/screenshots/032.png",
+      "sha256": "efe7bf0bae8e8bf934ba0d33d94f4c520740d351cd3367e3676309bfe175a66a",
+      "time_seconds": 58.1,
+      "character_id": "aino",
+      "kind": "panel_elements",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_033",
+      "path": "evidence/video_5685_20261111/screenshots/033.png",
+      "sha256": "e6415b86a6d2314ed4fa8822d116632f07a3bbda8356877b5fea9d53880e95d0",
+      "time_seconds": 99.5,
+      "character_id": "xingqiu",
+      "kind": "overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_034",
+      "path": "evidence/video_5685_20261111/screenshots/034.png",
+      "sha256": "66c55e38b71387430ce2aab29092b28ee456da5da1608f8c336974c4be9d592b",
+      "time_seconds": 81.5,
+      "character_id": "xingqiu",
+      "kind": "constellation",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_035",
+      "path": "evidence/video_5685_20261111/screenshots/035.png",
+      "sha256": "9c4b28e0c97380a9bcab9a0d2b4bacd352eab1f712c127d69471dfc4c9feeab9",
+      "time_seconds": 80.5,
+      "character_id": "xingqiu",
+      "kind": "talents",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_036",
+      "path": "evidence/video_5685_20261111/screenshots/036.png",
+      "sha256": "971d8b11bd202660e2385b4dba3ce1d1ee450321ebbd854260a495dc57a67617",
+      "time_seconds": 97.5,
+      "character_id": "xingqiu",
+      "kind": "weapon",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_037",
+      "path": "evidence/video_5685_20261111/screenshots/037.png",
+      "sha256": "38f6403edb292e7089ff29aac91ed5b23a7e5de388e0ebef3d3e4eb73f940cc1",
+      "time_seconds": 84.63451130213308,
+      "character_id": "xingqiu",
+      "kind": "artifact_flower",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_038",
+      "path": "evidence/video_5685_20261111/screenshots/038.png",
+      "sha256": "39aa01f84169bcf1ba1dac3c25202ce886ecabf987ec0913ea8e9f06d95dff83",
+      "time_seconds": 87.13849092645654,
+      "character_id": "xingqiu",
+      "kind": "artifact_plume",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_039",
+      "path": "evidence/video_5685_20261111/screenshots/039.png",
+      "sha256": "ea0f18f3b21652d53ecfb6e6b28706c604ec119a8a689dac69656deea33dea0d",
+      "time_seconds": 89.9763345006898,
+      "character_id": "xingqiu",
+      "kind": "artifact_sands",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_040",
+      "path": "evidence/video_5685_20261111/screenshots/040.png",
+      "sha256": "54f04f5288bae77bdaee43d44060e81139d6ddca4c1f4cf27934eb3a685330df",
+      "time_seconds": 92.48031412501327,
+      "character_id": "xingqiu",
+      "kind": "artifact_goblet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_041",
+      "path": "evidence/video_5685_20261111/screenshots/041.png",
+      "sha256": "404ecd86fa58ec7a0bd470fd6e74a0865c932e61fa948812120423d1228db4f3",
+      "time_seconds": 94.48349782447204,
+      "character_id": "xingqiu",
+      "kind": "artifact_circlet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_042",
+      "path": "evidence/video_5685_20261111/screenshots/042.png",
+      "sha256": "acea60dfeb08ad63992b5981a808c500f98a9270d5a23fb0d1425461d4456331",
+      "time_seconds": 100.5,
+      "character_id": "xingqiu",
+      "kind": "panel",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_5685_20261111_shot_043",
+      "path": "evidence/video_5685_20261111/screenshots/043.png",
+      "sha256": "475aa9b35eb6fee5753fd2768075853dc6e15e3446a5f3b8e191927db88b69e0",
+      "time_seconds": 102.5,
+      "character_id": "xingqiu",
+      "kind": "panel_elements",
+      "verification": "agent_reviewed"
+    }
+  ],
+  "notes": [
+    "來源錄影日期與遊戲版本未知。截圖保留完整畫面及原擷取解析度。"
+  ]
+}

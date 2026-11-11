@@ -1,41 +1,29 @@
-# Sites 開發交接
+# 原神手帳網站
 
-目前只有資料基礎。尚無網站程式、Site ID、部署網址或可用的線上保存功能。
+[開啟原神手帳](https://ken-genshin-archive.almightyken0425.chatgpt.site)。沿用既有私人 Sites 網站，僅擁有者可見。
 
-## 已確認方向
+## 來源與正式資料
 
-GitHub 的 data/account.json 保存唯一正式現況。Sites 提供帳號總覽、角色詳情、現況編輯、隊伍目標及分析歷史。
-網站必須從服務端存取私有 repo，讀取時帶回版本，保存時驗證版本及資料。瀏覽器不得持有 GitHub 憑證。
+網站來源由 Sites 託管庫保存。[web](web) 是對應部署來源的副本，完整來源版本記錄在 [source.json](source.json)。修改網站時先接回既有 Site，不另建網站或變更可見範圍。
 
-Sites 自己的託管來源庫與這個 GitHub repo 是不同概念。不得假定 source push 就會同步個人帳號資料，也不將建置時的資料副本冒充即時讀取。
+GitHub main 分支的 [data/account.json](../data/account.json) 是唯一正式角色現況。Sites 的來源推送只更新網站程式，並不合併此資料 repo。feat/roster-import 中的 47 位角色需合併 main 後才會在線上出現。
 
-## 第一項驗證
+既有 Site ID 為 `appgprj_6af3d7df0f3481919cbe1b4416108ff6`，在 [hosting.json](web/.openai/hosting.json) 保留。部署操作依 Sites skill，先建置與推送精確來源，再發布對應版本。
 
-依當時可用的 Sites 能力查詢 GitHub 整合資格，確認受支援的讀取與寫回方式。本次工具未提供 Sites 整合資格查詢，因此此項尚未完成。
+## 讀取與保存
 
-驗證需涵蓋指定私有 repo 的讀取、使用者登入、明確按下保存、讀回新版本及重新開啟後仍可讀取。
-若無法取得支援的寫入能力，回報此缺口。不要以另一份可修改資料庫冒充 GitHub 已同步。
+伺服器使用 Sites 秘密設定中的 GITHUB_TOKEN 連接 almightyken0425/genshin-account，只讀寫指定 repo。憑證不進入程式碼、瀏覽器或此副本。
 
-## 預定介面契約
+正式網站進入編輯後，底部固定顯示「保存修改」。核對變更並填寫備註後，透過 GraphQL createCommitOnBranch 同時寫入 account.json 與衍生摘要，以 expectedHeadOid 檢查版本衝突，完成後讀回確認。衝突保留草稿，寫入結果不確定時先核對 requestId，不直接重送。
 
-| 操作 | 輸入 | 成功結果 | 錯誤處理 |
-| --- | --- | --- | --- |
-| readAccount | 固定的已授權 repo | account、版本 revision | 顯示讀取失敗，舊資料標示過期 |
-| saveAccount | candidate、expectedRevision、requestId | 已保存資料及新 revision | 版本衝突保留草稿，不覆蓋遠端 |
-| readEvidence | 已知 evidence ID | 授權的截圖內容 | 找不到來源時顯示缺失 |
+本機預覽只讀取指定資料 checkout，可編輯及下載 JSON 草稿，不寫入正式資料。草稿不是已保存版本，也不會在重新整理後自動載入。
 
-GitHub Contents API 更新檔案需提供原檔 blob SHA，可作為 expectedRevision。多檔更新必須在同一個 Git commit 中完成，避免半套現況。保存超時時先讀回核對 requestId 或內容，不盲目重送。
+網站支援資料格式 v1 與 v2，先部署支援兩版的網站，再合併 v2 資料。實際配裝變更會使舊面板標示待更新，觀測保留不重算。強化次數與有效判定不參與配裝 fingerprint。
 
-每次保存都要執行相同的 schema 與裝備引用驗證。編輯介面需要明確區分未知值、零、草稿與已保存值。
-網址受限不等於每個操作都已授權。服務端仍需驗證身分、來源、固定 repo 範圍及寫入權限。
+## 驗證範圍
 
-## 驗收
+網站已通過 40 項自動測試與 TypeScript 檢查。資料已通過 25 項 Python 測試、schema、裝備歸屬、證據 SHA-256 及摘要檢查。
 
-- 網站與 repo 顯示同一資料版本。
-- 重新開啟或換裝置後可以讀到已保存資料。
-- 兩個頁面同時編輯不互相覆蓋。
-- 換裝後舊面板提示待更新，未推算成確定數值。
-- 每筆匯入資料能打開對應截圖。
-- 未授權訪客無法讀取私有資料或執行修改。
+測試涵蓋版本衝突、原子保存、重複請求、未知值、舊觀測保留與寫入結果不確定。這些自動測試不代表已執行真正的線上角色修改。瀏覽器驗證工具啟動失敗，視覺與真實登入保存流程尚未完成本次驗證。
 
-GitHub API 參考：[repository contents](https://docs.github.com/en/rest/repos/contents)、[Git database](https://docs.github.com/en/rest/guides/using-the-rest-api-to-interact-with-your-git-database)。
+網站功能與本機命令見 [網站 README](web/README.md)。

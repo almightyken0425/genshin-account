@@ -1,0 +1,959 @@
+{
+  "format": "reviewed_capture_v1",
+  "characters": [
+    {
+      "id": "citlali",
+      "name": "茜特菈莉",
+      "video": "5682",
+      "overview": [
+        4,
+        90,
+        90,
+        10,
+        25856,
+        931,
+        842,
+        824
+      ],
+      "panel": [
+        6,
+        13.6,
+        100.5,
+        137.6,
+        0
+      ],
+      "weapon": [
+        10,
+        "討龍英傑譚",
+        3,
+        90,
+        90,
+        5,
+        401,
+        "hp_pct",
+        35.2
+      ],
+      "talents": [
+        28,
+        1,
+        10,
+        6
+      ],
+      "constellation": [
+        26,
+        0
+      ],
+      "artifacts": [
+        [
+          "r4",
+          15017,
+          "hp",
+          4780,
+          "em=96,crit_dmg=5.4,hp_pct=5.8,atk=16",
+          20,
+          5,
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          "r5",
+          15017,
+          "atk",
+          311,
+          "em=54,crit_dmg=7,energy_recharge=16.2,hp=209",
+          20,
+          5,
+          [
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        [
+          "r6",
+          15017,
+          "em",
+          187,
+          "hp=508,atk=49,crit_dmg=11.7,energy_recharge=11",
+          20,
+          5,
+          [
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          "r7",
+          15017,
+          "em",
+          187,
+          "crit_rate=8.6,crit_dmg=13.2,hp_pct=9.3,atk_pct=5.3",
+          20,
+          5,
+          [
+            2,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          "r8",
+          15001,
+          "em",
+          187,
+          "energy_recharge=10.4,crit_dmg=13.2,def=79,hp_pct=4.7",
+          20,
+          5,
+          [
+            1,
+            1,
+            3,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "notes": [],
+      "original_artifact_frames": [
+        12,
+        16,
+        18,
+        20,
+        24
+      ]
+    },
+    {
+      "id": "varesa",
+      "name": "瓦雷莎",
+      "video": "5682",
+      "overview": [
+        55,
+        90,
+        90,
+        10,
+        20181,
+        2414,
+        782,
+        19
+      ],
+      "panel": [
+        56,
+        72,
+        207.6,
+        115.5,
+        46.6
+      ],
+      "weapon": [
+        59,
+        "溢彩心念",
+        5,
+        90,
+        90,
+        1,
+        674,
+        "crit_dmg",
+        44.1
+      ],
+      "talents": [
+        78,
+        10,
+        10,
+        10
+      ],
+      "constellation": [
+        77,
+        1
+      ],
+      "artifacts": [
+        [
+          "r17",
+          15039,
+          "hp",
+          4780,
+          "crit_dmg=20.2,atk_pct=10.5,crit_rate=7,energy_recharge=5.8",
+          20,
+          5,
+          [
+            2,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        [
+          "r18",
+          15039,
+          "atk",
+          311,
+          "atk_pct=5.3,crit_rate=14,crit_dmg=5.4,hp_pct=9.9",
+          20,
+          5,
+          [
+            0,
+            3,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        [
+          "r19",
+          15039,
+          "atk_pct",
+          46.6,
+          "em=19,crit_rate=9.7,energy_recharge=9.7,crit_dmg=13.2",
+          20,
+          5,
+          [
+            0,
+            2,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        [
+          "r20",
+          15003,
+          "electro_dmg_bonus",
+          46.6,
+          "hp_pct=5.3,crit_dmg=12.4,crit_rate=9.7,atk=29",
+          20,
+          5,
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          "r21",
+          15039,
+          "crit_dmg",
+          62.2,
+          "atk_pct=9.3,hp=777,atk=16,crit_rate=7.4",
+          20,
+          5,
+          [
+            1,
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      ],
+      "notes": [],
+      "original_artifact_frames": [
+        62,
+        66,
+        68,
+        70,
+        73
+      ]
+    },
+    {
+      "id": "raidenshogun",
+      "name": "雷電將軍",
+      "video": "5682",
+      "overview": [
+        101,
+        90,
+        90,
+        10,
+        19624,
+        1428,
+        865,
+        0
+      ],
+      "panel": [
+        105,
+        62.5,
+        134.7,
+        295.7,
+        46.6
+      ],
+      "weapon": [
+        100,
+        "「漁獲」",
+        4,
+        90,
+        90,
+        5,
+        510,
+        "energy_recharge",
+        45.9
+      ],
+      "talents": [
+        80,
+        7,
+        8,
+        9
+      ],
+      "constellation": [
+        82,
+        0
+      ],
+      "artifacts": [
+        [
+          "r22",
+          15020,
+          "hp",
+          4780,
+          "energy_recharge=12.3,atk_pct=4.7,crit_rate=9.7,crit_dmg=21",
+          20,
+          5,
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        [
+          "r23",
+          15020,
+          "atk",
+          311,
+          "crit_dmg=21.8,hp=448,energy_recharge=10.4,crit_rate=6.2",
+          20,
+          5,
+          [
+            2,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        [
+          "r24",
+          15020,
+          "energy_recharge",
+          51.8,
+          "crit_dmg=21,atk_pct=9.9,hp=209,atk=33",
+          20,
+          5,
+          [
+            2,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          "r25",
+          15018,
+          "electro_dmg_bonus",
+          46.6,
+          "hp_pct=9.9,crit_dmg=7.8,atk_pct=13.4,crit_rate=10.5",
+          20,
+          5,
+          [
+            1,
+            0,
+            2,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        [
+          "r26",
+          15020,
+          "crit_rate",
+          31.1,
+          "crit_dmg=13.2,energy_recharge=23.3,def=19,def_pct=7.3",
+          20,
+          5,
+          [
+            1,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "notes": [],
+      "original_artifact_frames": [
+        85,
+        89,
+        92,
+        94,
+        97
+      ]
+    },
+    {
+      "id": "keqing",
+      "name": "刻晴",
+      "video": "5682",
+      "overview": [
+        112,
+        90,
+        90,
+        10,
+        19347,
+        1679,
+        1052,
+        128
+      ],
+      "panel": [
+        109,
+        69.9,
+        177.8,
+        105.2,
+        61.6
+      ],
+      "weapon": [
+        113,
+        "狼牙",
+        4,
+        90,
+        90,
+        5,
+        510,
+        "crit_rate",
+        27.6
+      ],
+      "talents": [
+        "5683:1",
+        8,
+        9,
+        9
+      ],
+      "constellation": [
+        "t128.8",
+        2
+      ],
+      "artifacts": [
+        [
+          "r30",
+          15005,
+          "hp",
+          4780,
+          "crit_rate=3.1,def=37,crit_dmg=5.4,em=86",
+          20,
+          5,
+          [
+            0,
+            1,
+            0,
+            3
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        [
+          "r31",
+          15005,
+          "atk",
+          311,
+          "crit_dmg=14,crit_rate=15.2,def=23,energy_recharge=5.2",
+          20,
+          5,
+          [
+            1,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          "r32",
+          15005,
+          "atk_pct",
+          46.6,
+          "em=42,crit_rate=9.7,hp=239,atk=33",
+          20,
+          5,
+          [
+            1,
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          "r33",
+          15042,
+          "electro_dmg_bonus",
+          46.6,
+          "crit_dmg=7.8,def=23,crit_rate=9.3,hp=807",
+          20,
+          5,
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        [
+          "r34",
+          15005,
+          "crit_dmg",
+          62.2,
+          "atk_pct=9.3,def_pct=21.1,hp=418,atk=37",
+          20,
+          5,
+          [
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            0
+          ]
+        ]
+      ],
+      "notes": [],
+      "original_artifact_frames": [
+        115,
+        118,
+        121,
+        124,
+        127
+      ]
+    },
+    {
+      "id": "traveler_cryo",
+      "name": "旅行者・冰",
+      "video": "5682",
+      "overview": [
+        50,
+        90,
+        90,
+        null,
+        16752,
+        1496,
+        809,
+        83
+      ],
+      "panel": [
+        53,
+        95.2,
+        123.1,
+        187.4,
+        0
+      ],
+      "weapon": [
+        49,
+        "星鋒劍",
+        5,
+        90,
+        90,
+        3,
+        608,
+        "crit_rate",
+        33.1
+      ],
+      "talents": [
+        29,
+        1,
+        4,
+        4
+      ],
+      "constellation": [
+        32,
+        5
+      ],
+      "artifacts": [
+        [
+          "r9",
+          15025,
+          "hp",
+          4780,
+          "atk=33,crit_dmg=14.8,crit_rate=6.2,energy_recharge=12.3",
+          20,
+          5,
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          "r10",
+          15025,
+          "atk",
+          311,
+          "crit_dmg=26.4,crit_rate=2.7,energy_recharge=10.4,hp_pct=4.7",
+          20,
+          5,
+          [
+            3,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          "r11",
+          15025,
+          "energy_recharge",
+          51.8,
+          "def_pct=13.9,def=16,crit_dmg=13.2,crit_rate=13.2",
+          20,
+          5,
+          [
+            1,
+            0,
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          "r12",
+          15003,
+          "dendro_dmg_bonus",
+          46.6,
+          "atk=35,crit_dmg=18.7,energy_recharge=13,crit_rate=3.9",
+          20,
+          5,
+          [
+            1,
+            2,
+            1,
+            0
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        [
+          "r13",
+          15025,
+          "crit_rate",
+          31.1,
+          "hp=538,em=68,def=16,atk_pct=10.5",
+          20,
+          5,
+          [
+            1,
+            2,
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      ],
+      "notes": [
+        "畫面暱稱白鈴姐姐。冰元素，穿深林四件；草傷面板61.6%。",
+        "畫面為女性旅行者，遊戲內暱稱白鈴姐姐。旅行者無好感度欄位。"
+      ],
+      "original_artifact_frames": [
+        34,
+        40,
+        41,
+        "r12",
+        46
+      ]
+    }
+  ],
+  "artifact_updates": [],
+  "notes": [
+    "整數 frame 代表一秒擷取的第 n 張，時間為 n-0.5 秒。r 前綴對應本來源精選畫面，t 前綴為秒數。數值與強化次數由畫面核對，亮起狀態依畫面背景辨識及人工核對。"
+  ],
+  "frames": {
+    "video_5682_20261111_shot_001": {
+      "path": "evidence/video_5682_20261111/screenshots/001.png",
+      "time_seconds": 3.5
+    },
+    "video_5682_20261111_shot_002": {
+      "path": "evidence/video_5682_20261111/screenshots/002.png",
+      "time_seconds": 25.5
+    },
+    "video_5682_20261111_shot_003": {
+      "path": "evidence/video_5682_20261111/screenshots/003.png",
+      "time_seconds": 27.5
+    },
+    "video_5682_20261111_shot_004": {
+      "path": "evidence/video_5682_20261111/screenshots/004.png",
+      "time_seconds": 9.5
+    },
+    "video_5682_20261111_shot_005": {
+      "path": "evidence/video_5682_20261111/screenshots/005.png",
+      "time_seconds": 13.009868421052632
+    },
+    "video_5682_20261111_shot_006": {
+      "path": "evidence/video_5682_20261111/screenshots/006.png",
+      "time_seconds": 15.178179824561404
+    },
+    "video_5682_20261111_shot_007": {
+      "path": "evidence/video_5682_20261111/screenshots/007.png",
+      "time_seconds": 17.513284412955468
+    },
+    "video_5682_20261111_shot_008": {
+      "path": "evidence/video_5682_20261111/screenshots/008.png",
+      "time_seconds": 20.015182186234817
+    },
+    "video_5682_20261111_shot_009": {
+      "path": "evidence/video_5682_20261111/screenshots/009.png",
+      "time_seconds": 22.18349358974359
+    },
+    "video_5682_20261111_shot_010": {
+      "path": "evidence/video_5682_20261111/screenshots/010.png",
+      "time_seconds": 5.5
+    },
+    "video_5682_20261111_shot_011": {
+      "path": "evidence/video_5682_20261111/screenshots/011.png",
+      "time_seconds": 54.5
+    },
+    "video_5682_20261111_shot_012": {
+      "path": "evidence/video_5682_20261111/screenshots/012.png",
+      "time_seconds": 76.5
+    },
+    "video_5682_20261111_shot_013": {
+      "path": "evidence/video_5682_20261111/screenshots/013.png",
+      "time_seconds": 77.5
+    },
+    "video_5682_20261111_shot_014": {
+      "path": "evidence/video_5682_20261111/screenshots/014.png",
+      "time_seconds": 58.5
+    },
+    "video_5682_20261111_shot_015": {
+      "path": "evidence/video_5682_20261111/screenshots/015.png",
+      "time_seconds": 63.04782388663968
+    },
+    "video_5682_20261111_shot_016": {
+      "path": "evidence/video_5682_20261111/screenshots/016.png",
+      "time_seconds": 65.21613529014844
+    },
+    "video_5682_20261111_shot_017": {
+      "path": "evidence/video_5682_20261111/screenshots/017.png",
+      "time_seconds": 68.05161943319838
+    },
+    "video_5682_20261111_shot_018": {
+      "path": "evidence/video_5682_20261111/screenshots/018.png",
+      "time_seconds": 70.55351720647774
+    },
+    "video_5682_20261111_shot_019": {
+      "path": "evidence/video_5682_20261111/screenshots/019.png",
+      "time_seconds": 72.8886217948718
+    },
+    "video_5682_20261111_shot_020": {
+      "path": "evidence/video_5682_20261111/screenshots/020.png",
+      "time_seconds": 55.5
+    },
+    "video_5682_20261111_shot_021": {
+      "path": "evidence/video_5682_20261111/screenshots/021.png",
+      "time_seconds": 100.5
+    },
+    "video_5682_20261111_shot_022": {
+      "path": "evidence/video_5682_20261111/screenshots/022.png",
+      "time_seconds": 81.5
+    },
+    "video_5682_20261111_shot_023": {
+      "path": "evidence/video_5682_20261111/screenshots/023.png",
+      "time_seconds": 79.5
+    },
+    "video_5682_20261111_shot_024": {
+      "path": "evidence/video_5682_20261111/screenshots/024.png",
+      "time_seconds": 99.5
+    },
+    "video_5682_20261111_shot_025": {
+      "path": "evidence/video_5682_20261111/screenshots/025.png",
+      "time_seconds": 85.89849021592443
+    },
+    "video_5682_20261111_shot_026": {
+      "path": "evidence/video_5682_20261111/screenshots/026.png",
+      "time_seconds": 88.40038798920378
+    },
+    "video_5682_20261111_shot_027": {
+      "path": "evidence/video_5682_20261111/screenshots/027.png",
+      "time_seconds": 91.23587213225372
+    },
+    "video_5682_20261111_shot_028": {
+      "path": "evidence/video_5682_20261111/screenshots/028.png",
+      "time_seconds": 94.07135627530364
+    },
+    "video_5682_20261111_shot_029": {
+      "path": "evidence/video_5682_20261111/screenshots/029.png",
+      "time_seconds": 96.4064608636977
+    },
+    "video_5682_20261111_shot_030": {
+      "path": "evidence/video_5682_20261111/screenshots/030.png",
+      "time_seconds": 104.5
+    },
+    "video_5682_20261111_shot_031": {
+      "path": "evidence/video_5682_20261111/screenshots/031.png",
+      "time_seconds": 111.5
+    },
+    "video_5682_20261111_shot_032": {
+      "path": "evidence/video_5682_20261111/screenshots/032.png",
+      "time_seconds": 128.8
+    },
+    "video_5682_20261111_shot_033": {
+      "path": "evidence/video_5682_20261111/screenshots/033.png",
+      "time_seconds": 112.5
+    },
+    "video_5682_20261111_shot_034": {
+      "path": "evidence/video_5682_20261111/screenshots/034.png",
+      "time_seconds": 116.25484986504723
+    },
+    "video_5682_20261111_shot_035": {
+      "path": "evidence/video_5682_20261111/screenshots/035.png",
+      "time_seconds": 118.5899544534413
+    },
+    "video_5682_20261111_shot_036": {
+      "path": "evidence/video_5682_20261111/screenshots/036.png",
+      "time_seconds": 121.09185222672065
+    },
+    "video_5682_20261111_shot_037": {
+      "path": "evidence/video_5682_20261111/screenshots/037.png",
+      "time_seconds": 123.59375
+    },
+    "video_5682_20261111_shot_038": {
+      "path": "evidence/video_5682_20261111/screenshots/038.png",
+      "time_seconds": 125.92885458839406
+    },
+    "video_5682_20261111_shot_039": {
+      "path": "evidence/video_5682_20261111/screenshots/039.png",
+      "time_seconds": 108.5
+    },
+    "video_5682_20261111_shot_040": {
+      "path": "evidence/video_5682_20261111/screenshots/040.png",
+      "time_seconds": 49.5
+    },
+    "video_5682_20261111_shot_041": {
+      "path": "evidence/video_5682_20261111/screenshots/041.png",
+      "time_seconds": 31.5
+    },
+    "video_5682_20261111_shot_042": {
+      "path": "evidence/video_5682_20261111/screenshots/042.png",
+      "time_seconds": 28.5
+    },
+    "video_5682_20261111_shot_043": {
+      "path": "evidence/video_5682_20261111/screenshots/043.png",
+      "time_seconds": 48.5
+    },
+    "video_5682_20261111_shot_044": {
+      "path": "evidence/video_5682_20261111/screenshots/044.png",
+      "time_seconds": 36.194121120107965
+    },
+    "video_5682_20261111_shot_045": {
+      "path": "evidence/video_5682_20261111/screenshots/045.png",
+      "time_seconds": 38.529225708502025
+    },
+    "video_5682_20261111_shot_046": {
+      "path": "evidence/video_5682_20261111/screenshots/046.png",
+      "time_seconds": 40.864330296896085
+    },
+    "video_5682_20261111_shot_047": {
+      "path": "evidence/video_5682_20261111/screenshots/047.png",
+      "time_seconds": 43.03264170040486
+    },
+    "video_5682_20261111_shot_048": {
+      "path": "evidence/video_5682_20261111/screenshots/048.png",
+      "time_seconds": 45.36774628879892
+    },
+    "video_5682_20261111_shot_049": {
+      "path": "evidence/video_5682_20261111/screenshots/049.png",
+      "time_seconds": 52.5
+    }
+  }
+}

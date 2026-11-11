@@ -1,0 +1,34 @@
+{
+  "format": "reviewed_capture_v1",
+  "characters": [],
+  "artifact_updates": [],
+  "notes": [
+    "整數 frame 代表一秒擷取的第 n 張，時間為 n-0.5 秒。r 前綴對應本來源精選畫面，t 前綴為秒數。數值與強化次數由畫面核對，亮起狀態依畫面背景辨識及人工核對。"
+  ],
+  "frames": {
+    "image_chevreuse_flower_20261111_shot_001": {
+      "path": "evidence/image_chevreuse_flower_20261111/screenshots/001.jpg",
+      "time_seconds": null
+    }
+  },
+  "flower_update": [
+    "jpeg",
+    15007,
+    "hp",
+    4780,
+    "crit_rate=6.6,atk_percent=17.5,hp_percent=8.7,energy_recharge=5.2",
+    20,
+    5,
+    [
+      1,
+      2,
+      1,
+      0
+    ],
+    [
+      0,
+      2,
+      3
+    ]
+  ]
+}

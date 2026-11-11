@@ -1,0 +1,713 @@
+{
+  "characters": {
+    "escoffier": {
+      "name": "愛可菲",
+      "gameId": 10000112,
+      "icon": "/assets/characters/escoffier_icon.png",
+      "splash": "/assets/characters/escoffier_splash.png",
+      "rarity": 5
+    },
+    "furina": {
+      "name": "芙寧娜",
+      "gameId": 10000089,
+      "icon": "/assets/characters/furina_icon.png",
+      "splash": "/assets/characters/furina_splash.png",
+      "rarity": 5
+    },
+    "voyanitsa": {
+      "name": "沃雅妮莎",
+      "gameId": 10000140,
+      "icon": "/assets/characters/vodyanitsa_icon.png",
+      "splash": "/assets/characters/vodyanitsa_splash.png",
+      "rarity": 5
+    },
+    "skirk": {
+      "name": "絲柯克",
+      "gameId": 10000114,
+      "icon": "/assets/characters/skirk_icon.png",
+      "splash": "/assets/characters/skirk_splash.png",
+      "rarity": 5
+    },
+    "chasca": {
+      "name": "恰斯卡",
+      "gameId": 10000104,
+      "icon": "/assets/characters/chasca_icon.png",
+      "splash": "/assets/characters/chasca_splash.png",
+      "rarity": 5
+    },
+    "linnea": {
+      "name": "莉奈婭",
+      "gameId": 10000130,
+      "icon": "/assets/characters/linnea_icon.png",
+      "splash": "/assets/characters/linnea_splash.png",
+      "rarity": 5
+    },
+    "zibai": {
+      "name": "茲白",
+      "gameId": 10000126,
+      "icon": "/assets/characters/zibai_icon.png",
+      "splash": "/assets/characters/zibai_splash.png",
+      "rarity": 5
+    },
+    "xilonen": {
+      "name": "希諾寧",
+      "gameId": 10000103,
+      "icon": "/assets/characters/xilonen_icon.png",
+      "splash": "/assets/characters/xilonen_splash.png",
+      "rarity": 5
+    },
+    "zhongli": {
+      "name": "鍾離",
+      "gameId": 10000030,
+      "icon": "/assets/characters/zhongli_icon.png",
+      "splash": "/assets/characters/zhongli_splash.png",
+      "rarity": 5
+    },
+    "yumemizukimizuki": {
+      "name": "夢見月瑞希",
+      "gameId": 10000109,
+      "icon": "/assets/characters/yumemizukimizuki_icon.png",
+      "splash": "/assets/characters/yumemizukimizuki_splash.png",
+      "rarity": 5
+    },
+    "kaedeharakazuha": {
+      "name": "楓原萬葉",
+      "gameId": 10000047,
+      "icon": "/assets/characters/kaedeharakazuha_icon.png",
+      "splash": "/assets/characters/kaedeharakazuha_splash.png",
+      "rarity": 5
+    },
+    "jean": {
+      "name": "琴",
+      "gameId": 10000003,
+      "icon": "/assets/characters/jean_icon.png",
+      "splash": "/assets/characters/jean_splash.png",
+      "rarity": 5
+    },
+    "odetta": {
+      "name": "奧黛塔",
+      "gameId": 10000150,
+      "icon": "/assets/characters/odetta_icon.png",
+      "splash": "/assets/characters/odetta_splash.png",
+      "rarity": 5
+    },
+    "citlali": {
+      "name": "茜特菈莉",
+      "gameId": 10000107,
+      "icon": "/assets/characters/citlali_icon.png",
+      "splash": "/assets/characters/citlali_splash.png",
+      "rarity": 5
+    },
+    "varesa": {
+      "name": "瓦雷莎",
+      "gameId": 10000111,
+      "icon": "/assets/characters/varesa_icon.png",
+      "splash": "/assets/characters/varesa_splash.png",
+      "rarity": 5
+    },
+    "raidenshogun": {
+      "name": "雷電將軍",
+      "gameId": 10000052,
+      "icon": "/assets/characters/raidenshogun_icon.png",
+      "splash": "/assets/characters/raidenshogun_splash.png",
+      "rarity": 5
+    },
+    "keqing": {
+      "name": "刻晴",
+      "gameId": 10000042,
+      "icon": "/assets/characters/keqing_icon.png",
+      "splash": "/assets/characters/keqing_splash.png",
+      "rarity": 5
+    },
+    "nefer": {
+      "name": "奈芙爾",
+      "gameId": 10000122,
+      "icon": "/assets/characters/nefer_icon.png",
+      "splash": "/assets/characters/nefer_splash.png",
+      "rarity": 5
+    },
+    "lauma": {
+      "name": "菈烏瑪",
+      "gameId": 10000119,
+      "icon": "/assets/characters/lauma_icon.png",
+      "splash": "/assets/characters/lauma_splash.png",
+      "rarity": 5
+    },
+    "nahida": {
+      "name": "納西妲",
+      "gameId": 10000073,
+      "icon": "/assets/characters/nahida_icon.png",
+      "splash": "/assets/characters/nahida_splash.png",
+      "rarity": 5
+    },
+    "columbina": {
+      "name": "哥倫比婭",
+      "gameId": 10000125,
+      "icon": "/assets/characters/columbina_icon.png",
+      "splash": "/assets/characters/columbina_splash.png",
+      "rarity": 5
+    },
+    "neuvillette": {
+      "name": "那維萊特",
+      "gameId": 10000087,
+      "icon": "/assets/characters/neuvillette_icon.png",
+      "splash": "/assets/characters/neuvillette_splash.png",
+      "rarity": 5
+    },
+    "yelan": {
+      "name": "夜蘭",
+      "gameId": 10000060,
+      "icon": "/assets/characters/yelan_icon.png",
+      "splash": "/assets/characters/yelan_splash.png",
+      "rarity": 5
+    },
+    "mavuika": {
+      "name": "瑪薇卡",
+      "gameId": 10000106,
+      "icon": "/assets/characters/mavuika_icon.png",
+      "splash": "/assets/characters/mavuika_splash.png",
+      "rarity": 5
+    },
+    "illuga": {
+      "name": "葉洛亞",
+      "gameId": 10000127,
+      "icon": "/assets/characters/illuga_icon.png",
+      "splash": "/assets/characters/illuga_splash.png",
+      "rarity": 4
+    },
+    "charlotte": {
+      "name": "夏洛蒂",
+      "gameId": 10000088,
+      "icon": "/assets/characters/charlotte_icon.png",
+      "splash": "/assets/characters/charlotte_splash.png",
+      "rarity": 4
+    },
+    "arosha": {
+      "name": "阿羅夏",
+      "gameId": 10000148,
+      "icon": "/assets/characters/arosha_icon.png",
+      "splash": "/assets/characters/arosha_splash.png",
+      "rarity": 4
+    },
+    "iansan": {
+      "name": "伊安珊",
+      "gameId": 10000110,
+      "icon": "/assets/characters/iansan_icon.png",
+      "splash": "/assets/characters/iansan_splash.png",
+      "rarity": 4
+    },
+    "ororon": {
+      "name": "歐洛倫",
+      "gameId": 10000105,
+      "icon": "/assets/characters/ororon_icon.png",
+      "splash": "/assets/characters/ororon_splash.png",
+      "rarity": 4
+    },
+    "kukishinobu": {
+      "name": "久岐忍",
+      "gameId": 10000065,
+      "icon": "/assets/characters/kukishinobu_icon.png",
+      "splash": "/assets/characters/kukishinobu_splash.png",
+      "rarity": 4
+    },
+    "fischl": {
+      "name": "菲謝爾",
+      "gameId": 10000031,
+      "icon": "/assets/characters/fischl_icon.png",
+      "splash": "/assets/characters/fischl_splash.png",
+      "rarity": 4
+    },
+    "aino": {
+      "name": "愛諾",
+      "gameId": 10000121,
+      "icon": "/assets/characters/aino_icon.png",
+      "splash": "/assets/characters/aino_splash.png",
+      "rarity": 4
+    },
+    "xingqiu": {
+      "name": "行秋",
+      "gameId": 10000025,
+      "icon": "/assets/characters/xingqiu_icon.png",
+      "splash": "/assets/characters/xingqiu_splash.png",
+      "rarity": 4
+    },
+    "bennett": {
+      "name": "班尼特",
+      "gameId": 10000032,
+      "icon": "/assets/characters/bennett_icon.png",
+      "splash": "/assets/characters/bennett_splash.png",
+      "rarity": 4
+    },
+    "xiangling": {
+      "name": "香菱",
+      "gameId": 10000023,
+      "icon": "/assets/characters/xiangling_icon.png",
+      "splash": "/assets/characters/xiangling_splash.png",
+      "rarity": 4
+    },
+    "mona": {
+      "name": "莫娜",
+      "gameId": 10000041,
+      "icon": "/assets/characters/mona_icon.png",
+      "splash": "/assets/characters/mona_splash.png",
+      "rarity": 5
+    },
+    "noelle": {
+      "name": "諾艾爾",
+      "gameId": 10000034,
+      "icon": "/assets/characters/noelle_icon.png",
+      "splash": "/assets/characters/noelle_splash.png",
+      "rarity": 4
+    },
+    "ningguang": {
+      "name": "凝光",
+      "gameId": 10000027,
+      "icon": "/assets/characters/ningguang_icon.png",
+      "splash": "/assets/characters/ningguang_splash.png",
+      "rarity": 4
+    },
+    "faruzan": {
+      "name": "琺露珊",
+      "gameId": 10000076,
+      "icon": "/assets/characters/faruzan_icon.png",
+      "splash": "/assets/characters/faruzan_splash.png",
+      "rarity": 4
+    },
+    "sucrose": {
+      "name": "砂糖",
+      "gameId": 10000043,
+      "icon": "/assets/characters/sucrose_icon.png",
+      "splash": "/assets/characters/sucrose_splash.png",
+      "rarity": 4
+    },
+    "layla": {
+      "name": "萊依拉",
+      "gameId": 10000074,
+      "icon": "/assets/characters/layla_icon.png",
+      "splash": "/assets/characters/layla_splash.png",
+      "rarity": 4
+    },
+    "diona": {
+      "name": "迪奧娜",
+      "gameId": 10000039,
+      "icon": "/assets/characters/diona_icon.png",
+      "splash": "/assets/characters/diona_splash.png",
+      "rarity": 4
+    },
+    "kaeya": {
+      "name": "凱亞",
+      "gameId": 10000015,
+      "icon": "/assets/characters/kaeya_icon.png",
+      "splash": "/assets/characters/kaeya_splash.png",
+      "rarity": 4
+    },
+    "collei": {
+      "name": "柯萊",
+      "gameId": 10000067,
+      "icon": "/assets/characters/collei_icon.png",
+      "splash": "/assets/characters/collei_splash.png",
+      "rarity": 4
+    },
+    "barbara": {
+      "name": "芭芭拉",
+      "gameId": 10000014,
+      "icon": "/assets/characters/barbara_icon.png",
+      "splash": "/assets/characters/barbara_splash.png",
+      "rarity": 4
+    },
+    "chevreuse": {
+      "name": "夏沃蕾",
+      "gameId": 10000090,
+      "icon": "/assets/characters/chevreuse_icon.png",
+      "splash": "/assets/characters/chevreuse_splash.png",
+      "rarity": 4
+    },
+    "traveler_cryo": {
+      "name": "旅行者・冰",
+      "gameId": 10000007,
+      "icon": "/assets/characters/traveler_cryo_icon.png",
+      "splash": "/assets/characters/traveler_cryo_splash.png",
+      "rarity": 5
+    }
+  },
+  "weapons": {
+    "和璞鳶": {
+      "gameId": 13505,
+      "icon": "/assets/weapons/primordial_jade_winged_spear.png"
+    },
+    "西風劍": {
+      "gameId": 11401,
+      "icon": "/assets/weapons/favonius_sword.png"
+    },
+    "討龍英傑譚": {
+      "gameId": 14302,
+      "icon": "/assets/weapons/thrilling_tales_of_dragon_slayers.png"
+    },
+    "蒼耀": {
+      "gameId": 11517,
+      "icon": "/assets/weapons/azurelight.png"
+    },
+    "星鷲赤羽": {
+      "gameId": 15514,
+      "icon": "/assets/weapons/15514.png"
+    },
+    "彈弓": {
+      "gameId": 15304,
+      "icon": "/assets/weapons/15304.png"
+    },
+    "朏魄含光": {
+      "gameId": 11519,
+      "icon": "/assets/weapons/11519.png"
+    },
+    "黑纓槍": {
+      "gameId": 13303,
+      "icon": "/assets/weapons/13303.png"
+    },
+    "四風原典": {
+      "gameId": 14502,
+      "icon": "/assets/weapons/14502.png"
+    },
+    "鐵蜂刺": {
+      "gameId": 11407,
+      "icon": "/assets/weapons/11407.png"
+    },
+    "飛天御劍": {
+      "gameId": 11306,
+      "icon": "/assets/weapons/11306.png"
+    },
+    "溢彩心念": {
+      "gameId": 14519,
+      "icon": "/assets/weapons/14519.png"
+    },
+    "「漁獲」": {
+      "gameId": 13415,
+      "icon": "/assets/weapons/13415.png"
+    },
+    "狼牙": {
+      "gameId": 11424,
+      "icon": "/assets/weapons/11424.png"
+    },
+    "真語秘匣": {
+      "gameId": 14521,
+      "icon": "/assets/weapons/14521.png"
+    },
+    "天光的紡琴": {
+      "gameId": 14432,
+      "icon": "/assets/weapons/14432.png"
+    },
+    "祭禮殘章": {
+      "gameId": 14403,
+      "icon": "/assets/weapons/14403.png"
+    },
+    "帷間夜曲": {
+      "gameId": 14522,
+      "icon": "/assets/weapons/14522.png"
+    },
+    "祭禮弓": {
+      "gameId": 15403,
+      "icon": "/assets/weapons/15403.png"
+    },
+    "焚曜千陽": {
+      "gameId": 12514,
+      "icon": "/assets/weapons/12514.png"
+    },
+    "西風長槍": {
+      "gameId": 13407,
+      "icon": "/assets/weapons/13407.png"
+    },
+    "西風秘典": {
+      "gameId": 14401,
+      "icon": "/assets/weapons/14401.png"
+    },
+    "寒息": {
+      "gameId": 13435,
+      "icon": "/assets/weapons/13435.png"
+    },
+    "且住亭御咄": {
+      "gameId": 13432,
+      "icon": "/assets/weapons/13432.png"
+    },
+    "西風獵弓": {
+      "gameId": 15401,
+      "icon": "/assets/weapons/15401.png"
+    },
+    "絕弦": {
+      "gameId": 15402,
+      "icon": "/assets/weapons/15402.png"
+    },
+    "拾慧鑄熔": {
+      "gameId": 12432,
+      "icon": "/assets/weapons/12432.png"
+    },
+    "祭禮劍": {
+      "gameId": 11403,
+      "icon": "/assets/weapons/11403.png"
+    },
+    "螭骨劍": {
+      "gameId": 12409,
+      "icon": "/assets/weapons/12409.png"
+    },
+    "銀釭": {
+      "gameId": 11438,
+      "icon": "/assets/weapons/11438.png"
+    },
+    "靜水流湧之輝": {
+      "gameId": 11513,
+      "icon": "/assets/weapons/11513.png"
+    },
+    "蒼紋角杯": {
+      "gameId": 14427,
+      "icon": "/assets/weapons/14427.png"
+    },
+    "星鋒劍": {
+      "gameId": 11521,
+      "icon": "/assets/weapons/11521.png"
+    }
+  },
+  "artifacts": {
+    "黃金劇團": {
+      "gameId": 15032,
+      "slots": {
+        "flower": "/assets/artifacts/golden_troupe_flower.png",
+        "plume": "/assets/artifacts/golden_troupe_plume.png",
+        "sands": "/assets/artifacts/golden_troupe_sands.png",
+        "goblet": "/assets/artifacts/golden_troupe_goblet.png",
+        "circlet": "/assets/artifacts/golden_troupe_circlet.png"
+      }
+    },
+    "流浪大地的樂團": {
+      "gameId": 15003,
+      "slots": {
+        "goblet": "/assets/artifacts/wanderer_s_troupe_goblet.png",
+        "flower": "/assets/artifacts/15003_flower.png",
+        "circlet": "/assets/artifacts/15003_circlet.png"
+      }
+    },
+    "穹境示現之夜": {
+      "gameId": 15041,
+      "slots": {
+        "circlet": "/assets/artifacts/night_of_the_sky_s_unveiling_circlet.png",
+        "flower": "/assets/artifacts/15041_flower.png",
+        "plume": "/assets/artifacts/15041_plume.png",
+        "sands": "/assets/artifacts/15041_sands.png",
+        "goblet": "/assets/artifacts/15041_goblet.png"
+      }
+    },
+    "千岩牢固": {
+      "gameId": 15017,
+      "slots": {
+        "flower": "/assets/artifacts/tenacity_of_the_millelith_flower.png",
+        "plume": "/assets/artifacts/tenacity_of_the_millelith_plume.png",
+        "sands": "/assets/artifacts/tenacity_of_the_millelith_sands.png",
+        "goblet": "/assets/artifacts/tenacity_of_the_millelith_goblet.png",
+        "circlet": "/assets/artifacts/tenacity_of_the_millelith_circlet.png"
+      }
+    },
+    "深廊終曲": {
+      "gameId": 15040,
+      "slots": {
+        "flower": "/assets/artifacts/finale_of_the_deep_galleries_flower.png",
+        "plume": "/assets/artifacts/finale_of_the_deep_galleries_plume.png",
+        "sands": "/assets/artifacts/finale_of_the_deep_galleries_sands.png",
+        "circlet": "/assets/artifacts/finale_of_the_deep_galleries_circlet.png"
+      }
+    },
+    "角鬥士的終幕禮": {
+      "gameId": 15001,
+      "slots": {
+        "goblet": "/assets/artifacts/gladiator_s_finale_goblet.png",
+        "flower": "/assets/artifacts/15001_flower.png",
+        "circlet": "/assets/artifacts/15001_circlet.png",
+        "sands": "/assets/artifacts/15001_sands.png",
+        "plume": "/assets/artifacts/15001_plume.png"
+      }
+    },
+    "黑曜秘典": {
+      "gameId": 15038,
+      "slots": {
+        "flower": "/assets/artifacts/15038_flower.png",
+        "plume": "/assets/artifacts/15038_plume.png",
+        "sands": "/assets/artifacts/15038_sands.png",
+        "goblet": "/assets/artifacts/15038_goblet.png",
+        "circlet": "/assets/artifacts/15038_circlet.png"
+      }
+    },
+    "晨星與月的曉歌": {
+      "gameId": 15043,
+      "slots": {
+        "flower": "/assets/artifacts/15043_flower.png",
+        "plume": "/assets/artifacts/15043_plume.png",
+        "sands": "/assets/artifacts/15043_sands.png",
+        "circlet": "/assets/artifacts/15043_circlet.png",
+        "goblet": "/assets/artifacts/15043_goblet.png"
+      }
+    },
+    "紡月的夜歌": {
+      "gameId": 15042,
+      "slots": {
+        "goblet": "/assets/artifacts/15042_goblet.png",
+        "flower": "/assets/artifacts/15042_flower.png",
+        "plume": "/assets/artifacts/15042_plume.png",
+        "sands": "/assets/artifacts/15042_sands.png",
+        "circlet": "/assets/artifacts/15042_circlet.png"
+      }
+    },
+    "悠古的磐岩": {
+      "gameId": 15014,
+      "slots": {
+        "flower": "/assets/artifacts/15014_flower.png",
+        "plume": "/assets/artifacts/15014_plume.png",
+        "sands": "/assets/artifacts/15014_sands.png",
+        "goblet": "/assets/artifacts/15014_goblet.png"
+      }
+    },
+    "血紅之證": {
+      "gameId": 15047,
+      "slots": {
+        "flower": "/assets/artifacts/15047_flower.png",
+        "plume": "/assets/artifacts/15047_plume.png",
+        "sands": "/assets/artifacts/15047_sands.png",
+        "circlet": "/assets/artifacts/15047_circlet.png",
+        "goblet": "/assets/artifacts/15047_goblet.png"
+      }
+    },
+    "追憶之注連": {
+      "gameId": 15019,
+      "slots": {
+        "goblet": "/assets/artifacts/15019_goblet.png",
+        "flower": "/assets/artifacts/15019_flower.png"
+      }
+    },
+    "翠綠之影": {
+      "gameId": 15002,
+      "slots": {
+        "flower": "/assets/artifacts/15002_flower.png",
+        "plume": "/assets/artifacts/15002_plume.png",
+        "sands": "/assets/artifacts/15002_sands.png",
+        "goblet": "/assets/artifacts/15002_goblet.png",
+        "circlet": "/assets/artifacts/15002_circlet.png"
+      }
+    },
+    "熾烈的炎之魔女": {
+      "gameId": 15006,
+      "slots": {
+        "goblet": "/assets/artifacts/15006_goblet.png",
+        "flower": "/assets/artifacts/15006_flower.png"
+      }
+    },
+    "爐火融煉之心": {
+      "gameId": 15048,
+      "slots": {
+        "flower": "/assets/artifacts/15048_flower.png",
+        "plume": "/assets/artifacts/15048_plume.png",
+        "sands": "/assets/artifacts/15048_sands.png",
+        "circlet": "/assets/artifacts/15048_circlet.png"
+      }
+    },
+    "長夜之誓": {
+      "gameId": 15039,
+      "slots": {
+        "flower": "/assets/artifacts/15039_flower.png",
+        "plume": "/assets/artifacts/15039_plume.png",
+        "sands": "/assets/artifacts/15039_sands.png",
+        "circlet": "/assets/artifacts/15039_circlet.png"
+      }
+    },
+    "絕緣之旗印": {
+      "gameId": 15020,
+      "slots": {
+        "flower": "/assets/artifacts/15020_flower.png",
+        "plume": "/assets/artifacts/15020_plume.png",
+        "sands": "/assets/artifacts/15020_sands.png",
+        "circlet": "/assets/artifacts/15020_circlet.png"
+      }
+    },
+    "蒼白之火": {
+      "gameId": 15018,
+      "slots": {
+        "goblet": "/assets/artifacts/15018_goblet.png",
+        "flower": "/assets/artifacts/15018_flower.png"
+      }
+    },
+    "如雷的盛怒": {
+      "gameId": 15005,
+      "slots": {
+        "flower": "/assets/artifacts/15005_flower.png",
+        "plume": "/assets/artifacts/15005_plume.png",
+        "sands": "/assets/artifacts/15005_sands.png",
+        "circlet": "/assets/artifacts/15005_circlet.png"
+      }
+    },
+    "風起之日": {
+      "gameId": 15044,
+      "slots": {
+        "circlet": "/assets/artifacts/15044_circlet.png",
+        "flower": "/assets/artifacts/15044_flower.png"
+      }
+    },
+    "深林的記憶": {
+      "gameId": 15025,
+      "slots": {
+        "flower": "/assets/artifacts/15025_flower.png",
+        "plume": "/assets/artifacts/15025_plume.png",
+        "sands": "/assets/artifacts/15025_sands.png",
+        "goblet": "/assets/artifacts/15025_goblet.png",
+        "circlet": "/assets/artifacts/15025_circlet.png"
+      }
+    },
+    "逐影獵人": {
+      "gameId": 15031,
+      "slots": {
+        "flower": "/assets/artifacts/15031_flower.png",
+        "plume": "/assets/artifacts/15031_plume.png",
+        "sands": "/assets/artifacts/15031_sands.png",
+        "circlet": "/assets/artifacts/15031_circlet.png"
+      }
+    },
+    "昔日宗室之儀": {
+      "gameId": 15007,
+      "slots": {
+        "flower": "/assets/artifacts/15007_flower.png",
+        "plume": "/assets/artifacts/15007_plume.png",
+        "goblet": "/assets/artifacts/15007_goblet.png",
+        "circlet": "/assets/artifacts/15007_circlet.png",
+        "sands": "/assets/artifacts/15007_sands.png"
+      }
+    },
+    "燼城勇者繪卷": {
+      "gameId": 15037,
+      "slots": {
+        "flower": "/assets/artifacts/15037_flower.png",
+        "plume": "/assets/artifacts/15037_plume.png",
+        "sands": "/assets/artifacts/15037_sands.png",
+        "goblet": "/assets/artifacts/15037_goblet.png",
+        "circlet": "/assets/artifacts/15037_circlet.png"
+      }
+    },
+    "飾金之夢": {
+      "gameId": 15026,
+      "slots": {
+        "flower": "/assets/artifacts/15026_flower.png",
+        "plume": "/assets/artifacts/15026_plume.png",
+        "sands": "/assets/artifacts/15026_sands.png",
+        "goblet": "/assets/artifacts/15026_goblet.png"
+      }
+    },
+    "海染硨磲": {
+      "gameId": 15022,
+      "slots": {
+        "flower": "/assets/artifacts/15022_flower.png",
+        "plume": "/assets/artifacts/15022_plume.png",
+        "sands": "/assets/artifacts/15022_sands.png",
+        "circlet": "/assets/artifacts/15022_circlet.png"
+      }
+    },
+    "被憐愛的少女": {
+      "gameId": 14004,
+      "slots": {
+        "goblet": "/assets/artifacts/14004_goblet.png",
+        "flower": "/assets/artifacts/14004_flower.png"
+      }
+    }
+  }
+}

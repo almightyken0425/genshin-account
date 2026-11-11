@@ -2,7 +2,7 @@
   "type": "object",
   "properties": {
     "schema_version": {
-      "const": 1
+      "const": 2
     },
     "updated_at": {
       "type": "string",
@@ -190,7 +190,7 @@
   ],
   "additionalProperties": false,
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Genshin account version 1",
+  "title": "Genshin account version 2",
   "$defs": {
     "measurement": {
       "oneOf": [
@@ -613,6 +613,54 @@
         },
         "provenance": {
           "$ref": "#/$defs/provenance"
+        },
+        "substat_rolls": {
+          "type": "object",
+          "properties": {
+            "character_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "values": {
+              "type": "array",
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "properties": {
+                  "key": {
+                    "type": "string"
+                  },
+                  "enhancements": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 0,
+                    "maximum": 5
+                  },
+                  "effective": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "key",
+                  "enhancements",
+                  "effective"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "character_id",
+            "values"
+          ],
+          "additionalProperties": false
         }
       },
       "required": [
@@ -624,7 +672,8 @@
         "level",
         "main_stat",
         "substats",
-        "provenance"
+        "provenance",
+        "substat_rolls"
       ],
       "additionalProperties": false
     },

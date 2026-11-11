@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "id": "image_chevreuse_flower_20261111",
+  "imported_at": "2026-11-11T09:34:03+00:00",
+  "media": {
+    "type": "image",
+    "file_name": "6314203053497718022_121.jpg",
+    "sha256": "d6453f1c3b2ceb539cf4a617d4e7e50a5f116d37680732c46c14565ccaffc199",
+    "resolution": [
+      1280,
+      588
+    ],
+    "recorded_at": null,
+    "game_version": null,
+    "stored_in_repo": true
+  },
+  "extraction": {
+    "path": "imports/image_chevreuse_flower_20261111/extracted.json",
+    "sha256": "9d6578f0a1a006414932d7f755df89860dbcf227d028582ce60994d96c991125"
+  },
+  "screenshots": [
+    {
+      "id": "image_chevreuse_flower_20261111_shot_001",
+      "path": "evidence/image_chevreuse_flower_20261111/screenshots/001.jpg",
+      "sha256": "d6453f1c3b2ceb539cf4a617d4e7e50a5f116d37680732c46c14565ccaffc199",
+      "time_seconds": null,
+      "character_id": "chevreuse",
+      "kind": "artifact_flower",
+      "verification": "agent_reviewed"
+    }
+  ],
+  "notes": [
+    "來源錄影日期與遊戲版本未知。截圖保留完整畫面及原擷取解析度。"
+  ]
+}

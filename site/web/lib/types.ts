@@ -1,0 +1,10 @@
+export type Stat={key:string,value:number|null,unit:'flat'|'percent'};
+export type Provenance={source_ids:string[],evidence_refs:string[],verification:string,notes:string[]};
+export type Level={current:number|null,cap:number|null};
+export type Talent={normal:number|null,skill:number|null,burst:number|null};
+export type Character={id:string,name:string,element:string,weapon_type:string,level:Level,constellation:number|null,friendship:number|null,talents:{base:Talent,displayed:Talent,bonus_context:string|null},panel_snapshot_id:string|null,provenance:Provenance};
+export type Weapon={id:string,name:string,weapon_type:string,rarity:number|null,level:Level,refinement:number|null,base_atk:number|null,secondary_stat:Stat|null,provenance:Provenance};
+export type SubstatRoll={key:string,enhancements:number|null,effective:boolean|null};
+export type Artifact={id:string,name:string,set_name:string,slot:string,rarity:number|null,level:number|null,main_stat:Stat,substats:Stat[],substat_rolls?:{character_id:string|null,values:SubstatRoll[]},provenance:Provenance};
+export type Account={schema_version:number,updated_at:string,source_ids:string[],coverage:{roster:string,inventory:string,notes:string[]},characters:Character[],weapons:Weapon[],artifacts:Artifact[],equipment:Record<string,{weapon_id:string|null,artifacts:Record<string,string|null>}>,panel_snapshots:{id:string,character_id:string,stats:Stat[],observed_at:string|null,imported_at:string,build_fingerprint:string,context:{notes:string[],buffs:string|null,team_character_ids:string[]|null},provenance:Provenance}[],teams:unknown[]};
+export type AccountResult={preview?:boolean,account:Account,revision:string,repository:string,panels:Record<string,string>,evidence:{id:string,time_seconds:number|null,character_id:string,kind:string}[],savedRevision?:string};

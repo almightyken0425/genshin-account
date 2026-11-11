@@ -1,0 +1,760 @@
+{
+  "format": "reviewed_capture_v1",
+  "characters": [
+    {
+      "id": "kukishinobu",
+      "name": "久岐忍",
+      "video": "5685",
+      "overview": [
+        24,
+        90,
+        90,
+        10,
+        22526,
+        1229,
+        1085,
+        882
+      ],
+      "panel": [
+        26,
+        27.2,
+        110.6,
+        117.5,
+        0
+      ],
+      "weapon": [
+        21,
+        "鐵蜂刺",
+        4,
+        90,
+        90,
+        1,
+        510,
+        "elemental_mastery",
+        165
+      ],
+      "talents": [
+        1,
+        1,
+        13,
+        9
+      ],
+      "constellation": [
+        29,
+        6
+      ],
+      "artifacts": [
+        [
+          "r1",
+          15026,
+          "hp",
+          4780,
+          "elemental_mastery=37,atk=53,energy_recharge=6.5,crit_dmg=12.4",
+          20,
+          5,
+          [
+            1,
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        [
+          "r2",
+          15026,
+          "atk",
+          311,
+          "crit_dmg=15.5,atk_percent=8.7,elemental_mastery=40,crit_rate=8.9",
+          20,
+          5,
+          [
+            1,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        [
+          "r3",
+          15026,
+          "elemental_mastery",
+          187,
+          "crit_rate=7.0,crit_dmg=14.0,hp_percent=20.4,atk_percent=5.8",
+          20,
+          5,
+          [
+            1,
+            1,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        [
+          "r4",
+          15026,
+          "elemental_mastery",
+          187,
+          "def_percent=19.0,energy_recharge=11.0,crit_dmg=13.2,atk_percent=5.3",
+          20,
+          5,
+          [
+            2,
+            1,
+            1,
+            0
+          ],
+          [
+            2
+          ]
+        ],
+        [
+          "r5",
+          15025,
+          "elemental_mastery",
+          187,
+          "crit_rate=6.2,crit_dmg=5.4,def_percent=19.7,def=44",
+          20,
+          5,
+          [
+            1,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "notes": [],
+      "panel_extra_frames": [
+        "t24.5"
+      ]
+    },
+    {
+      "id": "fischl",
+      "name": "菲謝爾",
+      "video": "5685",
+      "overview": [
+        51,
+        90,
+        90,
+        10,
+        14895,
+        2049,
+        749,
+        233
+      ],
+      "panel": [
+        52,
+        60.6,
+        86.5,
+        105.2,
+        46.6
+      ],
+      "weapon": [
+        50,
+        "絕弦",
+        4,
+        90,
+        90,
+        5,
+        510,
+        "elemental_mastery",
+        165
+      ],
+      "talents": [
+        33,
+        1,
+        10,
+        4
+      ],
+      "constellation": [
+        34,
+        6
+      ],
+      "artifacts": [
+        [
+          "r8",
+          15032,
+          "hp",
+          4780,
+          "energy_recharge=5.2,crit_rate=10.1,def_percent=17.5,atk=19",
+          20,
+          5,
+          [
+            0,
+            2,
+            2,
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        [
+          "r9",
+          15032,
+          "atk",
+          311,
+          "elemental_mastery=23,atk_percent=25.7,crit_rate=2.7,def=16",
+          20,
+          5,
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        [
+          "r10",
+          15020,
+          "atk_percent",
+          46.6,
+          "crit_dmg=17.9,crit_rate=6.2,atk=18,hp=418",
+          20,
+          5,
+          [
+            2,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          "r11",
+          15032,
+          "electro_dmg_bonus",
+          46.6,
+          "crit_rate=5.4,hp=508,atk_percent=11.7,atk=51",
+          20,
+          5,
+          [
+            1,
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        [
+          "r12",
+          15032,
+          "crit_rate",
+          31.1,
+          "def=35,atk_percent=11.1,elemental_mastery=44,crit_dmg=18.7",
+          20,
+          5,
+          [
+            1,
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ]
+      ],
+      "notes": []
+    },
+    {
+      "id": "aino",
+      "name": "愛諾",
+      "video": "5685",
+      "overview": [
+        58,
+        90,
+        90,
+        10,
+        19441,
+        1127,
+        821,
+        529
+      ],
+      "panel": [
+        60,
+        49.7,
+        77.2,
+        162.1,
+        46.6
+      ],
+      "weapon": [
+        62,
+        "拾慧鑄熔",
+        4,
+        90,
+        90,
+        5,
+        510,
+        "elemental_mastery",
+        165
+      ],
+      "talents": [
+        79,
+        1,
+        10,
+        12
+      ],
+      "constellation": [
+        78,
+        6
+      ],
+      "artifacts": [
+        [
+          "r16",
+          15042,
+          "hp",
+          4780,
+          "energy_recharge=16.8,elemental_mastery=19,crit_rate=3.9,def_percent=19.7",
+          20,
+          5,
+          [
+            2,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        [
+          "r17",
+          15042,
+          "atk",
+          311,
+          "elemental_mastery=21,crit_rate=3.1,energy_recharge=14.2,hp=657",
+          20,
+          5,
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        [
+          "r18",
+          15042,
+          "elemental_mastery",
+          187,
+          "def=23,crit_dmg=14.8,hp_percent=15.2,atk=31",
+          20,
+          5,
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        [
+          "r19",
+          15003,
+          "hydro_dmg_bonus",
+          46.6,
+          "energy_recharge=11,atk=33,crit_rate=6.6,hp=508",
+          20,
+          5,
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        [
+          "r20",
+          15042,
+          "crit_rate",
+          31.1,
+          "elemental_mastery=42,crit_dmg=12.4,def_percent=11.7,hp=598",
+          20,
+          5,
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "notes": [],
+      "panel_extra_frames": [
+        "t58.1"
+      ]
+    },
+    {
+      "id": "xingqiu",
+      "name": "行秋",
+      "video": "5685",
+      "overview": [
+        100,
+        90,
+        90,
+        10,
+        17983,
+        1536,
+        926,
+        42
+      ],
+      "panel": [
+        101,
+        52.8,
+        86.5,
+        250.5,
+        66.6
+      ],
+      "weapon": [
+        98,
+        "祭禮劍",
+        4,
+        90,
+        90,
+        1,
+        454,
+        "energy_recharge",
+        61.3
+      ],
+      "talents": [
+        81,
+        1,
+        9,
+        13
+      ],
+      "constellation": [
+        82,
+        6
+      ],
+      "artifacts": [
+        [
+          "r22",
+          15020,
+          "hp",
+          4780,
+          "energy_recharge=18.1,crit_dmg=7,elemental_mastery=42,atk_percent=8.2",
+          20,
+          5,
+          [
+            2,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        [
+          "r23",
+          15020,
+          "atk",
+          311,
+          "def=16,crit_rate=9.7,crit_dmg=21.8,hp_percent=4.7",
+          20,
+          5,
+          [
+            0,
+            2,
+            2,
+            0
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          "r24",
+          15020,
+          "atk_percent",
+          46.6,
+          "hp_percent=8.2,hp=598,energy_recharge=13.6,crit_rate=7",
+          20,
+          5,
+          [
+            1,
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          "r25",
+          15019,
+          "hydro_dmg_bonus",
+          46.6,
+          "energy_recharge=15.5,def_percent=14.6,atk_percent=5.8,hp_percent=10.5",
+          20,
+          5,
+          [
+            2,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        [
+          "r26",
+          15003,
+          "crit_rate",
+          31.1,
+          "crit_dmg=7.8,def=42,energy_recharge=22,atk=14",
+          20,
+          5,
+          [
+            0,
+            1,
+            3,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      ],
+      "notes": [],
+      "panel_extra_frames": [
+        "t102.5"
+      ]
+    }
+  ],
+  "artifact_updates": [],
+  "notes": [
+    "整數 frame 代表一秒擷取的第 n 張，時間為 n-0.5 秒。r 前綴對應本來源精選畫面，t 前綴為秒數。數值與強化次數由畫面核對，亮起狀態依畫面背景辨識及人工核對。"
+  ],
+  "frames": {
+    "video_5685_20261111_shot_001": {
+      "path": "evidence/video_5685_20261111/screenshots/001.png",
+      "time_seconds": 23.5
+    },
+    "video_5685_20261111_shot_002": {
+      "path": "evidence/video_5685_20261111/screenshots/002.png",
+      "time_seconds": 28.5
+    },
+    "video_5685_20261111_shot_003": {
+      "path": "evidence/video_5685_20261111/screenshots/003.png",
+      "time_seconds": 0.5
+    },
+    "video_5685_20261111_shot_004": {
+      "path": "evidence/video_5685_20261111/screenshots/004.png",
+      "time_seconds": 20.5
+    },
+    "video_5685_20261111_shot_005": {
+      "path": "evidence/video_5685_20261111/screenshots/005.png",
+      "time_seconds": 7.345006898015494
+    },
+    "video_5685_20261111_shot_006": {
+      "path": "evidence/video_5685_20261111/screenshots/006.png",
+      "time_seconds": 9.68205454738406
+    },
+    "video_5685_20261111_shot_007": {
+      "path": "evidence/video_5685_20261111/screenshots/007.png",
+      "time_seconds": 12.019102196752627
+    },
+    "video_5685_20261111_shot_008": {
+      "path": "evidence/video_5685_20261111/screenshots/008.png",
+      "time_seconds": 14.52308182107609
+    },
+    "video_5685_20261111_shot_009": {
+      "path": "evidence/video_5685_20261111/screenshots/009.png",
+      "time_seconds": 17.027061445399553
+    },
+    "video_5685_20261111_shot_010": {
+      "path": "evidence/video_5685_20261111/screenshots/010.png",
+      "time_seconds": 25.5
+    },
+    "video_5685_20261111_shot_011": {
+      "path": "evidence/video_5685_20261111/screenshots/011.png",
+      "time_seconds": 24.5
+    },
+    "video_5685_20261111_shot_012": {
+      "path": "evidence/video_5685_20261111/screenshots/012.png",
+      "time_seconds": 50.5
+    },
+    "video_5685_20261111_shot_013": {
+      "path": "evidence/video_5685_20261111/screenshots/013.png",
+      "time_seconds": 33.5
+    },
+    "video_5685_20261111_shot_014": {
+      "path": "evidence/video_5685_20261111/screenshots/014.png",
+      "time_seconds": 32.5
+    },
+    "video_5685_20261111_shot_015": {
+      "path": "evidence/video_5685_20261111/screenshots/015.png",
+      "time_seconds": 49.5
+    },
+    "video_5685_20261111_shot_016": {
+      "path": "evidence/video_5685_20261111/screenshots/016.png",
+      "time_seconds": 36.72503449007747
+    },
+    "video_5685_20261111_shot_017": {
+      "path": "evidence/video_5685_20261111/screenshots/017.png",
+      "time_seconds": 39.062082139446034
+    },
+    "video_5685_20261111_shot_018": {
+      "path": "evidence/video_5685_20261111/screenshots/018.png",
+      "time_seconds": 41.06526583890481
+    },
+    "video_5685_20261111_shot_019": {
+      "path": "evidence/video_5685_20261111/screenshots/019.png",
+      "time_seconds": 43.56924546322827
+    },
+    "video_5685_20261111_shot_020": {
+      "path": "evidence/video_5685_20261111/screenshots/020.png",
+      "time_seconds": 46.40708903746153
+    },
+    "video_5685_20261111_shot_021": {
+      "path": "evidence/video_5685_20261111/screenshots/021.png",
+      "time_seconds": 51.5
+    },
+    "video_5685_20261111_shot_022": {
+      "path": "evidence/video_5685_20261111/screenshots/022.png",
+      "time_seconds": 57.5
+    },
+    "video_5685_20261111_shot_023": {
+      "path": "evidence/video_5685_20261111/screenshots/023.png",
+      "time_seconds": 77.5
+    },
+    "video_5685_20261111_shot_024": {
+      "path": "evidence/video_5685_20261111/screenshots/024.png",
+      "time_seconds": 78.5
+    },
+    "video_5685_20261111_shot_025": {
+      "path": "evidence/video_5685_20261111/screenshots/025.png",
+      "time_seconds": 61.5
+    },
+    "video_5685_20261111_shot_026": {
+      "path": "evidence/video_5685_20261111/screenshots/026.png",
+      "time_seconds": 64.43574233259046
+    },
+    "video_5685_20261111_shot_027": {
+      "path": "evidence/video_5685_20261111/screenshots/027.png",
+      "time_seconds": 67.44051788177863
+    },
+    "video_5685_20261111_shot_028": {
+      "path": "evidence/video_5685_20261111/screenshots/028.png",
+      "time_seconds": 69.77756553114719
+    },
+    "video_5685_20261111_shot_029": {
+      "path": "evidence/video_5685_20261111/screenshots/029.png",
+      "time_seconds": 71.94768120556085
+    },
+    "video_5685_20261111_shot_030": {
+      "path": "evidence/video_5685_20261111/screenshots/030.png",
+      "time_seconds": 74.11779687997453
+    },
+    "video_5685_20261111_shot_031": {
+      "path": "evidence/video_5685_20261111/screenshots/031.png",
+      "time_seconds": 59.5
+    },
+    "video_5685_20261111_shot_032": {
+      "path": "evidence/video_5685_20261111/screenshots/032.png",
+      "time_seconds": 58.1
+    },
+    "video_5685_20261111_shot_033": {
+      "path": "evidence/video_5685_20261111/screenshots/033.png",
+      "time_seconds": 99.5
+    },
+    "video_5685_20261111_shot_034": {
+      "path": "evidence/video_5685_20261111/screenshots/034.png",
+      "time_seconds": 81.5
+    },
+    "video_5685_20261111_shot_035": {
+      "path": "evidence/video_5685_20261111/screenshots/035.png",
+      "time_seconds": 80.5
+    },
+    "video_5685_20261111_shot_036": {
+      "path": "evidence/video_5685_20261111/screenshots/036.png",
+      "time_seconds": 97.5
+    },
+    "video_5685_20261111_shot_037": {
+      "path": "evidence/video_5685_20261111/screenshots/037.png",
+      "time_seconds": 84.63451130213308
+    },
+    "video_5685_20261111_shot_038": {
+      "path": "evidence/video_5685_20261111/screenshots/038.png",
+      "time_seconds": 87.13849092645654
+    },
+    "video_5685_20261111_shot_039": {
+      "path": "evidence/video_5685_20261111/screenshots/039.png",
+      "time_seconds": 89.9763345006898
+    },
+    "video_5685_20261111_shot_040": {
+      "path": "evidence/video_5685_20261111/screenshots/040.png",
+      "time_seconds": 92.48031412501327
+    },
+    "video_5685_20261111_shot_041": {
+      "path": "evidence/video_5685_20261111/screenshots/041.png",
+      "time_seconds": 94.48349782447204
+    },
+    "video_5685_20261111_shot_042": {
+      "path": "evidence/video_5685_20261111/screenshots/042.png",
+      "time_seconds": 100.5
+    },
+    "video_5685_20261111_shot_043": {
+      "path": "evidence/video_5685_20261111/screenshots/043.png",
+      "time_seconds": 102.5
+    }
+  }
+}

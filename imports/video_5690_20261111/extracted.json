@@ -1,0 +1,465 @@
+{
+  "schema_version": 1,
+  "source_id": "video_5690_20261111",
+  "based_on_account_sha256": "270ee1871c2acaa101f11bff2806c84fe1a98af3bdad01fa5a1a8dfde7f31655",
+  "artifact_updates": [
+    {
+      "artifact_id": "artifact_video_5687_20261111_barbara_flower",
+      "before": {
+        "character_id": "barbara",
+        "values": [
+          {
+            "key": "hp_pct",
+            "enhancements": 0,
+            "effective": true
+          },
+          {
+            "key": "em",
+            "enhancements": 0,
+            "effective": false
+          },
+          {
+            "key": "def_pct",
+            "enhancements": 0,
+            "effective": false
+          }
+        ]
+      },
+      "after": {
+        "character_id": "barbara",
+        "values": [
+          {
+            "key": "hp_pct",
+            "enhancements": 0,
+            "effective": true
+          },
+          {
+            "key": "em",
+            "enhancements": 0,
+            "effective": false
+          },
+          {
+            "key": "def_pct",
+            "enhancements": 0,
+            "effective": false
+          }
+        ]
+      },
+      "observed_level": 0,
+      "observed_main_stat": {
+        "key": "hp",
+        "value": 717,
+        "unit": "flat"
+      },
+      "observed_substats": [
+        {
+          "key": "hp_pct",
+          "value": 5.3,
+          "unit": "percent"
+        },
+        {
+          "key": "em",
+          "value": 16,
+          "unit": "flat"
+        },
+        {
+          "key": "def_pct",
+          "value": 5.1,
+          "unit": "percent"
+        }
+      ],
+      "evidence_refs": [
+        "video_5690_20261111_barbara_artifact_flower"
+      ],
+      "effective_total": 1
+    },
+    {
+      "artifact_id": "artifact_video_5687_20261111_barbara_plume",
+      "before": {
+        "character_id": "barbara",
+        "values": [
+          {
+            "key": "hp_pct",
+            "enhancements": 0,
+            "effective": null
+          },
+          {
+            "key": "hp",
+            "enhancements": 0,
+            "effective": null
+          },
+          {
+            "key": "crit_rate",
+            "enhancements": 0,
+            "effective": null
+          },
+          {
+            "key": "crit_dmg",
+            "enhancements": 0,
+            "effective": null
+          }
+        ]
+      },
+      "after": {
+        "character_id": "barbara",
+        "values": [
+          {
+            "key": "hp_pct",
+            "enhancements": 0,
+            "effective": true
+          },
+          {
+            "key": "hp",
+            "enhancements": 0,
+            "effective": false
+          },
+          {
+            "key": "crit_rate",
+            "enhancements": 0,
+            "effective": false
+          },
+          {
+            "key": "crit_dmg",
+            "enhancements": 0,
+            "effective": true
+          }
+        ]
+      },
+      "observed_level": 0,
+      "observed_main_stat": {
+        "key": "atk",
+        "value": 47,
+        "unit": "flat"
+      },
+      "observed_substats": [
+        {
+          "key": "hp_pct",
+          "value": 4.1,
+          "unit": "percent"
+        },
+        {
+          "key": "hp",
+          "value": 269,
+          "unit": "flat"
+        },
+        {
+          "key": "crit_rate",
+          "value": 2.7,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_dmg",
+          "value": 5.4,
+          "unit": "percent"
+        }
+      ],
+      "evidence_refs": [
+        "video_5690_20261111_barbara_artifact_plume"
+      ],
+      "effective_total": 2
+    },
+    {
+      "artifact_id": "artifact_video_5687_20261111_barbara_sands",
+      "before": {
+        "character_id": "barbara",
+        "values": [
+          {
+            "key": "hp",
+            "enhancements": 0,
+            "effective": null
+          },
+          {
+            "key": "atk",
+            "enhancements": 0,
+            "effective": null
+          },
+          {
+            "key": "atk_pct",
+            "enhancements": 0,
+            "effective": null
+          }
+        ]
+      },
+      "after": {
+        "character_id": "barbara",
+        "values": [
+          {
+            "key": "hp",
+            "enhancements": 0,
+            "effective": false
+          },
+          {
+            "key": "atk",
+            "enhancements": 0,
+            "effective": false
+          },
+          {
+            "key": "atk_pct",
+            "enhancements": 0,
+            "effective": false
+          }
+        ]
+      },
+      "observed_level": 0,
+      "observed_main_stat": {
+        "key": "hp_pct",
+        "value": 7,
+        "unit": "percent"
+      },
+      "observed_substats": [
+        {
+          "key": "hp",
+          "value": 299,
+          "unit": "flat"
+        },
+        {
+          "key": "atk",
+          "value": 16,
+          "unit": "flat"
+        },
+        {
+          "key": "atk_pct",
+          "value": 5.3,
+          "unit": "percent"
+        }
+      ],
+      "evidence_refs": [
+        "video_5690_20261111_barbara_artifact_sands"
+      ],
+      "effective_total": 0
+    },
+    {
+      "artifact_id": "artifact_video_5687_20261111_barbara_goblet",
+      "before": {
+        "character_id": "barbara",
+        "values": [
+          {
+            "key": "crit_dmg",
+            "enhancements": 0,
+            "effective": true
+          },
+          {
+            "key": "energy_recharge",
+            "enhancements": 3,
+            "effective": true
+          },
+          {
+            "key": "def_pct",
+            "enhancements": 0,
+            "effective": false
+          },
+          {
+            "key": "em",
+            "enhancements": 1,
+            "effective": false
+          }
+        ]
+      },
+      "after": {
+        "character_id": "barbara",
+        "values": [
+          {
+            "key": "crit_dmg",
+            "enhancements": 0,
+            "effective": true
+          },
+          {
+            "key": "energy_recharge",
+            "enhancements": 3,
+            "effective": true
+          },
+          {
+            "key": "def_pct",
+            "enhancements": 0,
+            "effective": false
+          },
+          {
+            "key": "em",
+            "enhancements": 1,
+            "effective": false
+          }
+        ]
+      },
+      "observed_level": 20,
+      "observed_main_stat": {
+        "key": "hp_pct",
+        "value": 46.6,
+        "unit": "percent"
+      },
+      "observed_substats": [
+        {
+          "key": "crit_dmg",
+          "value": 7.8,
+          "unit": "percent"
+        },
+        {
+          "key": "energy_recharge",
+          "value": 24.6,
+          "unit": "percent"
+        },
+        {
+          "key": "def_pct",
+          "value": 5.1,
+          "unit": "percent"
+        },
+        {
+          "key": "em",
+          "value": 40,
+          "unit": "flat"
+        }
+      ],
+      "evidence_refs": [
+        "video_5690_20261111_barbara_artifact_goblet"
+      ],
+      "effective_total": 5
+    },
+    {
+      "artifact_id": "artifact_video_5687_20261111_barbara_circlet",
+      "before": {
+        "character_id": "barbara",
+        "values": [
+          {
+            "key": "energy_recharge",
+            "enhancements": 0,
+            "effective": null
+          },
+          {
+            "key": "em",
+            "enhancements": 0,
+            "effective": null
+          },
+          {
+            "key": "crit_rate",
+            "enhancements": 0,
+            "effective": null
+          }
+        ]
+      },
+      "after": {
+        "character_id": "barbara",
+        "values": [
+          {
+            "key": "energy_recharge",
+            "enhancements": 0,
+            "effective": true
+          },
+          {
+            "key": "em",
+            "enhancements": 0,
+            "effective": false
+          },
+          {
+            "key": "crit_rate",
+            "enhancements": 0,
+            "effective": false
+          }
+        ]
+      },
+      "observed_level": 0,
+      "observed_main_stat": {
+        "key": "healing_bonus",
+        "value": 5.4,
+        "unit": "percent"
+      },
+      "observed_substats": [
+        {
+          "key": "energy_recharge",
+          "value": 6.5,
+          "unit": "percent"
+        },
+        {
+          "key": "em",
+          "value": 21,
+          "unit": "flat"
+        },
+        {
+          "key": "crit_rate",
+          "value": 3.1,
+          "unit": "percent"
+        }
+      ],
+      "evidence_refs": [
+        "video_5690_20261111_barbara_artifact_circlet"
+      ],
+      "effective_total": 1
+    }
+  ],
+  "panel_update": {
+    "previous_panel_id": "video_5687_20261111_chevreuse_panel",
+    "new_snapshot": {
+      "id": "video_5690_20261111_chevreuse_panel",
+      "character_id": "chevreuse",
+      "observed_at": null,
+      "imported_at": "2026-11-11T10:14:54+00:00",
+      "build_fingerprint": "98a2c3f19890b2b776bad453a687a5ebb10c248dc49bf24ecfd36cbe421d56e0",
+      "stats": [
+        {
+          "key": "hp",
+          "value": 41794,
+          "unit": "flat"
+        },
+        {
+          "key": "atk",
+          "value": 979,
+          "unit": "flat"
+        },
+        {
+          "key": "def",
+          "value": 761,
+          "unit": "flat"
+        },
+        {
+          "key": "em",
+          "value": 112,
+          "unit": "flat"
+        },
+        {
+          "key": "crit_rate",
+          "value": 11.6,
+          "unit": "percent"
+        },
+        {
+          "key": "crit_dmg",
+          "value": 80.3,
+          "unit": "percent"
+        },
+        {
+          "key": "energy_recharge",
+          "value": 120.7,
+          "unit": "percent"
+        },
+        {
+          "key": "pyro_dmg_bonus",
+          "value": 0,
+          "unit": "percent"
+        }
+      ],
+      "context": {
+        "team_character_ids": null,
+        "buffs": null,
+        "notes": [
+          "使用者提供升級生之花後的補充面板。其他穿戴沿用目前紀錄，未確認隊伍、臨時加成或遊戲版本。",
+          "生命值採概覽顯示的 41,794，不以分項已四捨五入的 11,134 加 30,661 取代畫面總值。"
+        ]
+      },
+      "provenance": {
+        "source_ids": [
+          "video_5690_20261111"
+        ],
+        "evidence_refs": [
+          "video_5690_20261111_chevreuse_overview",
+          "video_5690_20261111_chevreuse_panel",
+          "video_5690_20261111_chevreuse_panel_elements"
+        ],
+        "verification": "agent_reviewed",
+        "notes": [
+          "依 IMG_5690 的概覽與詳細屬性建立新觀測，保留升級前快照。"
+        ]
+      }
+    }
+  },
+  "notes": [
+    "強化次數與有效性為兩個不同欄位。+0 物品的已啟用副詞條強化次數為 0。",
+    "芭芭拉五部位有效總數為 1、2、0、5、1，合計 9。時之沙亮起的充能為尚未解鎖預告，不計入。"
+  ]
+}

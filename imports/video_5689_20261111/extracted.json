@@ -1,0 +1,418 @@
+{
+  "format": "reviewed_capture_v1",
+  "characters": [],
+  "artifact_updates": [
+    {
+      "artifact_id": "artifact_video_001_001",
+      "character_id": "escoffier",
+      "video": "5689",
+      "frame": "r1",
+      "counts": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "effective": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_002",
+      "character_id": "escoffier",
+      "video": "5689",
+      "frame": "r2",
+      "counts": [
+        2,
+        1,
+        0,
+        2
+      ],
+      "effective": [
+        1,
+        3
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_003",
+      "character_id": "escoffier",
+      "video": "5689",
+      "frame": "r3",
+      "counts": [
+        0,
+        2,
+        0,
+        2
+      ],
+      "effective": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_004",
+      "character_id": "escoffier",
+      "video": "5689",
+      "frame": "r4",
+      "counts": [
+        0,
+        3,
+        0,
+        2
+      ],
+      "effective": [
+        1
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_005",
+      "character_id": "escoffier",
+      "video": "5689",
+      "frame": "r5",
+      "counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "effective": [
+        2
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_006",
+      "character_id": "furina",
+      "video": "5689",
+      "frame": "r6",
+      "counts": [
+        0,
+        2,
+        1,
+        1
+      ],
+      "effective": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_007",
+      "character_id": "furina",
+      "video": "5689",
+      "frame": "r7",
+      "counts": [
+        2,
+        0,
+        2,
+        0
+      ],
+      "effective": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_008",
+      "character_id": "furina",
+      "video": "5689",
+      "frame": "r8",
+      "counts": [
+        1,
+        1,
+        0,
+        3
+      ],
+      "effective": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_009",
+      "character_id": "furina",
+      "video": "5689",
+      "frame": "r9",
+      "counts": [
+        3,
+        0,
+        0,
+        1
+      ],
+      "effective": [
+        0,
+        1
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_010",
+      "character_id": "furina",
+      "video": "5689",
+      "frame": "r10",
+      "counts": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "effective": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_011",
+      "character_id": "voyanitsa",
+      "video": "5689",
+      "frame": "r11",
+      "counts": [
+        1,
+        0,
+        2,
+        1
+      ],
+      "effective": [
+        0,
+        2
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_012",
+      "character_id": "voyanitsa",
+      "video": "5689",
+      "frame": "r12",
+      "counts": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "effective": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_013",
+      "character_id": "voyanitsa",
+      "video": "5689",
+      "frame": "r13",
+      "counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "effective": [
+        2,
+        3
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_014",
+      "character_id": "voyanitsa",
+      "video": "5689",
+      "frame": "r14",
+      "counts": [
+        0,
+        2,
+        3,
+        0
+      ],
+      "effective": [
+        1
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_015",
+      "character_id": "voyanitsa",
+      "video": "5689",
+      "frame": "r15",
+      "counts": [
+        2,
+        2,
+        1,
+        0
+      ],
+      "effective": [
+        1,
+        2
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_016",
+      "character_id": "skirk",
+      "video": "5689",
+      "frame": "r16",
+      "counts": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "effective": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_017",
+      "character_id": "skirk",
+      "video": "5689",
+      "frame": "r17",
+      "counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "effective": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_018",
+      "character_id": "skirk",
+      "video": "5689",
+      "frame": "r18",
+      "counts": [
+        2,
+        1,
+        0,
+        1
+      ],
+      "effective": [
+        0,
+        1
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_019",
+      "character_id": "skirk",
+      "video": "5689",
+      "frame": "r19",
+      "counts": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "effective": [
+        0,
+        2
+      ]
+    },
+    {
+      "artifact_id": "artifact_video_001_020",
+      "character_id": "skirk",
+      "video": "5689",
+      "frame": "r20",
+      "counts": [
+        2,
+        2,
+        0,
+        1
+      ],
+      "effective": [
+        0,
+        1
+      ]
+    }
+  ],
+  "notes": [
+    "整數 frame 代表一秒擷取的第 n 張，時間為 n-0.5 秒。r 前綴對應本來源精選畫面，t 前綴為秒數。數值與強化次數由畫面核對，亮起狀態依畫面背景辨識及人工核對。"
+  ],
+  "frames": {
+    "video_5689_20261111_shot_001": {
+      "path": "evidence/video_5689_20261111/screenshots/001.png",
+      "time_seconds": 1.50546780072904
+    },
+    "video_5689_20261111_shot_002": {
+      "path": "evidence/video_5689_20261111/screenshots/002.png",
+      "time_seconds": 3.8473066018631026
+    },
+    "video_5689_20261111_shot_003": {
+      "path": "evidence/video_5689_20261111/screenshots/003.png",
+      "time_seconds": 6.3564196030781694
+    },
+    "video_5689_20261111_shot_004": {
+      "path": "evidence/video_5689_20261111/screenshots/004.png",
+      "time_seconds": 8.698258404212233
+    },
+    "video_5689_20261111_shot_005": {
+      "path": "evidence/video_5689_20261111/screenshots/005.png",
+      "time_seconds": 10.705548805184286
+    },
+    "video_5689_20261111_shot_006": {
+      "path": "evidence/video_5689_20261111/screenshots/006.png",
+      "time_seconds": 15.891049007695424
+    },
+    "video_5689_20261111_shot_007": {
+      "path": "evidence/video_5689_20261111/screenshots/007.png",
+      "time_seconds": 19.06925880923451
+    },
+    "video_5689_20261111_shot_008": {
+      "path": "evidence/video_5689_20261111/screenshots/008.png",
+      "time_seconds": 21.07654921020656
+    },
+    "video_5689_20261111_shot_009": {
+      "path": "evidence/video_5689_20261111/screenshots/009.png",
+      "time_seconds": 23.083839611178615
+    },
+    "video_5689_20261111_shot_010": {
+      "path": "evidence/video_5689_20261111/screenshots/010.png",
+      "time_seconds": 25.425678412312678
+    },
+    "video_5689_20261111_shot_011": {
+      "path": "evidence/video_5689_20261111/screenshots/011.png",
+      "time_seconds": 30.276630214661807
+    },
+    "video_5689_20261111_shot_012": {
+      "path": "evidence/video_5689_20261111/screenshots/012.png",
+      "time_seconds": 32.28392061563386
+    },
+    "video_5689_20261111_shot_013": {
+      "path": "evidence/video_5689_20261111/screenshots/013.png",
+      "time_seconds": 34.960307816929934
+    },
+    "video_5689_20261111_shot_014": {
+      "path": "evidence/video_5689_20261111/screenshots/014.png",
+      "time_seconds": 37.13487241798299
+    },
+    "video_5689_20261111_shot_015": {
+      "path": "evidence/video_5689_20261111/screenshots/015.png",
+      "time_seconds": 39.47671121911705
+    },
+    "video_5689_20261111_shot_016": {
+      "path": "evidence/video_5689_20261111/screenshots/016.png",
+      "time_seconds": 43.49129202106116
+    },
+    "video_5689_20261111_shot_017": {
+      "path": "evidence/video_5689_20261111/screenshots/017.png",
+      "time_seconds": 45.66585662211422
+    },
+    "video_5689_20261111_shot_018": {
+      "path": "evidence/video_5689_20261111/screenshots/018.png",
+      "time_seconds": 47.67314702308627
+    },
+    "video_5689_20261111_shot_019": {
+      "path": "evidence/video_5689_20261111/screenshots/019.png",
+      "time_seconds": 50.01498582422033
+    },
+    "video_5689_20261111_shot_020": {
+      "path": "evidence/video_5689_20261111/screenshots/020.png",
+      "time_seconds": 52.189550425273396
+    }
+  }
+}
