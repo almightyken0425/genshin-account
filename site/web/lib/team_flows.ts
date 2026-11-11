@@ -1,11 +1,9 @@
 export type FlowStep={id:string,moves:string[]};
 export const teamFlows:Record<string,FlowStep[]>={
  mavuika:[
-  {id:'mavuika',moves:['短 E（掛火）']},
-  {id:'xilonen',moves:['E → A2','缺血：E → Q → A2','親自撿火結晶']},
-  {id:'iansan',moves:['E → Q（親自觸發超載）','需補雷：E → 強化重擊 → Q']},
-  {id:'citlali',moves:['E → Q → A','直接切瑪薇卡']},
-  {id:'mavuika',moves:['敵人掛冰 → Q → 跳躍','長按 A 摩托重擊（移動追敵）','能量／戰意不足：先補技能']}],
+  {id:'mavuika',moves:['短 E']},{id:'bennett',moves:['E → Q']},
+  {id:'xilonen',moves:['E → A2','親自撿火結晶']},{id:'citlali',moves:['E → Q']},
+  {id:'mavuika',moves:['敵人掛冰 → Q → 跳躍','持續摩托重擊（班尼特圈內）']}],
  zibai:[
   {id:'columbina',moves:['E → Q（可用時）']},{id:'linnea',moves:['A → E（單按）','Q（需要治療時）']},
   {id:'illuga',moves:['Q → E']},{id:'zibai',moves:['E','（A4 → 強化 E）×4','Q 可用：E 後 A → Q','或以 Q 取代一組 A4']}],

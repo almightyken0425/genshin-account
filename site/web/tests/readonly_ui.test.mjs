@@ -59,10 +59,14 @@ test('FAB restores after scrolling and stays reachable by keyboard',()=>{
  assert.match(dashboard,/onFocusCapture={\(\)=>setNavScrolling\(false\)}/);
  assert.match(css,/\.footer-fab.is-scrolling:not\(:focus-within\)/);
 });
-test('Mavuika swaps Bennett for Iansan with reaction and handoff conditions',()=>{
+test('Mavuika keeps Bennett and the original melt rotation',()=>{
  const teams=readFileSync(new URL('../lib/selected_teams.ts',import.meta.url),'utf8');
  const flow=readFileSync(new URL('../lib/team_flows.ts',import.meta.url),'utf8').split(' zibai:[')[0];
- assert.ok(teams.includes("members:['mavuika','xilonen','iansan','citlali']"));
- assert.ok(!flow.includes('bennett'));
- for(const text of ['親自觸發超載','親自撿火結晶','E → Q → A','敵人掛冰','直接切瑪薇卡'])assert.ok(flow.includes(text));
+ assert.ok(teams.includes("members:['mavuika','bennett','xilonen','citlali']"));
+ assert.ok(flow.includes("id:'bennett'"));assert.ok(!flow.includes("id:'iansan'"));
+ for(const text of ['親自撿火結晶','敵人掛冰','班尼特圈內'])assert.ok(flow.includes(text));
+});
+test('all team flow cards use equal action typography',()=>{
+ const css=readFileSync(new URL('../app/globals.css',import.meta.url),'utf8');
+ assert.ok(css.includes('.skirk-minimal-flow .minimal-flow-moves>strong,.skirk-minimal-flow .minimal-flow-combos{font-size:inherit;font-weight:600;color:var(--ink);line-height:1.8;background:transparent;letter-spacing:normal}'));
 });
