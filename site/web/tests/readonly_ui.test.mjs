@@ -109,3 +109,9 @@ test('rotation cards have compact layout without inter-card arrows',()=>{
  const flow=readFileSync(new URL('../app/skirk_flow.tsx',import.meta.url),'utf8');
  assert.ok(flow.includes('短 E → A2 → Q'));assert.ok(flow.includes('A5 → 衝刺'));
 });
+test('FAB is icon-only with accessible destinations and selected state',()=>{
+ const nav=dashboard.split('<nav ref={footerRef}')[1].split('</nav>')[0];
+ assert.ok(!nav.includes('<span>'));
+ for(const label of ['隊伍','角色列表','培養重點'])assert.ok(nav.includes('aria-label="'+label+'"'));
+ assert.equal((nav.match(/aria-current=/g)||[]).length,3);
+});
