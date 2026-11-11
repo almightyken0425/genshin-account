@@ -101,3 +101,11 @@ test('Zibai requested exact five rows and simplified support skills',()=>{
  assert.ok(flow.includes("id:'columbina',moves:['E → Q']"));assert.ok(flow.includes("id:'linnea',moves:['A → E']"));
  assert.ok(flow.includes("moves:['E → Q','A4 → E','A4 → E','A4 → E','A4 → E']"));assert.ok(!flow.includes('治療'));
 });
+test('rotation cards have compact layout without inter-card arrows',()=>{
+ for(const name of ['skirk_flow','team_flow']){
+  const flow=readFileSync(new URL('../app/'+name+'.tsx',import.meta.url),'utf8');
+  assert.ok(!flow.includes('ArrowDown'));assert.ok(!flow.includes('minimal-flow-arrow'));
+ }
+ const flow=readFileSync(new URL('../app/skirk_flow.tsx',import.meta.url),'utf8');
+ assert.ok(flow.includes('短 E → A2 → Q'));assert.ok(flow.includes('A5 → 衝刺'));
+});
