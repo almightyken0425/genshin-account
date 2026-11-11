@@ -20,8 +20,9 @@ test('exactly seven owner-selected teams and no Chasca',()=>{
  assert.equal((teams.match(/members:/g)||[]).length,7);assert.ok(!teams.includes("'chasca'"));
 });
 
-test('Skirk uses a mobile flow diagram with optional healing and direct handoff',()=>{
+test('Skirk flow is image and moves only, preserving full combo',()=>{
  const flow=readFileSync(new URL('../app/skirk_flow.tsx',import.meta.url),'utf8');
  assert.match(dashboard,/team.id==='skirk'\?<SkirkFlow/);
- for(const text of ['短 E → A2 → Q','A5 → 衝刺','A5 → 重擊','預設不按','不插入其他角色','不能保證絲柯克第一刀已滿層'])assert.ok(flow.includes(text),text);
+ for(const text of ['E → A','E → Q','短 E → A2 → Q','A5 → 衝刺','A5 → 重擊'])assert.ok(flow.includes(text),text);
+ for(const text of ['figcaption','flow-optional','flow-loop','flow-caution','step.name}</','連段 {'])assert.ok(!flow.includes(text),text);
 });
