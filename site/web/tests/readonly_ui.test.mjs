@@ -23,7 +23,7 @@ test('exactly seven owner-selected teams and no Chasca',()=>{
 test('Skirk flow is image and moves only, preserving full combo',()=>{
  const flow=readFileSync(new URL('../app/skirk_flow.tsx',import.meta.url),'utf8');
  assert.match(dashboard,/team.id==='skirk'\?<SkirkFlow/);
- for(const text of ['E → A','E → Q','短 E → A2 → Q','A5 → 衝刺','A5 → 重擊'])assert.ok(flow.includes(text),text);
+ for(const text of ['E → Q','短 E → A2 → Q','A5 → 衝刺','A5 → 重擊'])assert.ok(flow.includes(text),text);
  for(const text of ['figcaption','flow-optional','flow-loop','flow-caution','step.name}</','連段 {'])assert.ok(!flow.includes(text),text);
 });
 
@@ -31,7 +31,7 @@ test('Skirk exact four rows and no extra A5 or Escoffier Q',()=>{
  const flow=readFileSync(new URL('../app/skirk_flow.tsx',import.meta.url),'utf8');
  assert.equal((flow.match(/A5/g)||[]).length,3);
  assert.equal((flow.match(/<span>/g)||[]).length,3);
- assert.match(flow,/id:'escoffier',name:'愛可菲',keys:'E → A'/);
+ assert.match(flow,/id:'escoffier',name:'愛可菲',keys:'E'/);
  assert.match(dashboard,/skirk-centered-header/);
 });
 
@@ -52,4 +52,17 @@ test('Skirk action rows inherit one shared font size',()=>{
  const css=readFileSync(new URL('../app/globals.css',import.meta.url),'utf8');
  assert.match(flow,/skirk-uniform-type/);
  assert.ok(css.includes('.skirk-uniform-type .minimal-flow-moves>strong,.skirk-uniform-type .minimal-flow-combos{font-size:inherit}'));
+});
+test('FAB restores after scrolling and stays reachable by keyboard',()=>{
+ const css=readFileSync(new URL('../app/globals.css',import.meta.url),'utf8');
+ assert.match(dashboard,/idle=setTimeout\(\(\)=>setNavScrolling\(false\),180\)/);
+ assert.match(dashboard,/onFocusCapture={\(\)=>setNavScrolling\(false\)}/);
+ assert.match(css,/\.footer-fab.is-scrolling:not\(:focus-within\)/);
+});
+test('Mavuika swaps Bennett for Iansan with reaction and handoff conditions',()=>{
+ const teams=readFileSync(new URL('../lib/selected_teams.ts',import.meta.url),'utf8');
+ const flow=readFileSync(new URL('../lib/team_flows.ts',import.meta.url),'utf8').split(' zibai:[')[0];
+ assert.ok(teams.includes("members:['mavuika','xilonen','iansan','citlali']"));
+ assert.ok(!flow.includes('bennett'));
+ for(const text of ['親自觸發超載','親自撿火結晶','E → Q → A','敵人掛冰','直接切瑪薇卡'])assert.ok(flow.includes(text));
 });

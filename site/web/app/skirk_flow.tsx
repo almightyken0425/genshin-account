@@ -2,7 +2,7 @@ import {ArrowDown} from 'lucide-react';
 import {characterImage} from '@/lib/game_assets';
 import GameImage from './game_image';
 const steps=[
- {id:'escoffier',name:'愛可菲',keys:'E → A'},
+ {id:'escoffier',name:'愛可菲',keys:'E'},
  {id:'furina',name:'芙寧娜',keys:'E → Q'},
  {id:'voyanitsa',name:'沃雅妮莎',keys:'E'},
  {id:'skirk',name:'絲柯克',keys:'短 E → A2 → Q'},

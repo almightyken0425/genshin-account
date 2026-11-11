@@ -26,6 +26,21 @@ export default function Dashboard({initialCharacter=''}:{initialCharacter?:strin
  const [data,setData]=useState<AccountResult|null>(null),[selected,setSelected]=useState(initialCharacter),[query,setQuery]=useState(''),[filters,setFilters]=useState<RosterFilters>({rarities:[],weapons:[],elements:[]}),[sorts,setSorts]=useState<SortRule[]>([]),[fullLabels,setFullLabels]=useState(false),[expanded,setExpanded]=useState<'weapon'|'artifacts'|null>(null),[section,setSection]=useState('roster'),[selectedTeam,setSelectedTeam]=useState('');
  const [busy,setBusy]=useState(true),[error,setError]=useState<{code:string,message:string}|null>(null);
  const [headerCollapsed,setHeaderCollapsed]=useState(false);
+ const [navScrolling,setNavScrolling]=useState(false);
+ const footerRef=useRef<HTMLElement>(null);
+ useEffect(()=>{
+  let idle:ReturnType<typeof setTimeout>|undefined;
+  const show=()=>{clearTimeout(idle);setNavScrolling(false)};
+  const onScroll=()=>{
+   clearTimeout(idle);
+   if(footerRef.current?.contains(document.activeElement)){setNavScrolling(false);return}
+   setNavScrolling(true);idle=setTimeout(()=>setNavScrolling(false),180);
+  };
+  const onVisibility=()=>{if(document.visibilityState!=='visible')show()};
+  window.addEventListener('scroll',onScroll,{passive:true});
+  document.addEventListener('visibilitychange',onVisibility);
+  return()=>{clearTimeout(idle);window.removeEventListener('scroll',onScroll);document.removeEventListener('visibilitychange',onVisibility)};
+ },[]);
  useEffect(()=>{
   setHeaderCollapsed(false);
   if(!selected||section!=='roster')return;
@@ -151,7 +166,7 @@ export default function Dashboard({initialCharacter=''}:{initialCharacter?:strin
 
    </>:<div className="welcome">{busy?<LoaderCircle className="spin" size={26}/>:<BookOpen size={28}/>}<h2>{busy?'正在讀取角色資料':data?'找不到這位角色':'開始查看角色'}</h2><p>{busy?'連接你的 GitHub 紀錄中…':data?'請返回列表，選擇已記錄的角色。':'連線後即可查看數值、天賦和配裝。'}</p></div>}</section>}
    <footer className="page-footer"><span>遊戲圖片 © HoYoverse</span><span>圖源 <a href="https://enka.network" target="_blank" rel="noreferrer">Enka Network</a><span className="footer-separator">/</span>資料索引 <a href="https://github.com/theBowja/genshin-db" target="_blank" rel="noreferrer">genshin-db</a></span></footer>
-   <nav className="footer-fab" aria-label="主要分頁"><button className={section==='teams'?'active':''} aria-current={section==='teams'?'page':undefined} onClick={()=>switchTab('teams')}><UsersRound size={21}/><span>隊伍</span></button><button className={section==='roster'?'active':''} aria-current={section==='roster'?'page':undefined} onClick={()=>switchTab('roster')}><BookOpen size={21}/><span>角色列表</span></button><button className={section==='growth'?'active':''} aria-current={section==='growth'?'page':undefined} onClick={()=>switchTab('growth')}><Sprout size={21}/><span>培養重點</span></button></nav>
+   <nav ref={footerRef} className={'footer-fab '+(navScrolling?'is-scrolling':'')} onFocusCapture={()=>setNavScrolling(false)} aria-label="主要分頁"><button className={section==='teams'?'active':''} aria-current={section==='teams'?'page':undefined} onClick={()=>switchTab('teams')}><UsersRound size={21}/><span>隊伍</span></button><button className={section==='roster'?'active':''} aria-current={section==='roster'?'page':undefined} onClick={()=>switchTab('roster')}><BookOpen size={21}/><span>角色列表</span></button><button className={section==='growth'?'active':''} aria-current={section==='growth'?'page':undefined} onClick={()=>switchTab('growth')}><Sprout size={21}/><span>培養重點</span></button></nav>
   </main>
  </div></MetricDisplayContext>
 }
