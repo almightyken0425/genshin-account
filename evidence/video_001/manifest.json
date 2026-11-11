@@ -1,0 +1,467 @@
+{
+  "schema_version": 1,
+  "id": "video_001",
+  "imported_at": "2026-11-11T02:35:58+00:00",
+  "video": {
+    "file_name": "IMG_5679.MP4",
+    "sha256": "469ed91f3ab624cccb90e7c7a304649fa68dd477f13d07b5d45282c63724e46f",
+    "duration_seconds": 93.666667,
+    "resolution": [
+      848,
+      384
+    ],
+    "recorded_at": null,
+    "game_version": null,
+    "stored_in_repo": false
+  },
+  "extraction": {
+    "path": "imports/video_001/extracted.json",
+    "sha256": "66627f70965abe01eb2f068bee2cf9a2db376e32b51f688384ffccbe82af0e34"
+  },
+  "screenshots": [
+    {
+      "id": "video_001_escoffier_overview_0004",
+      "path": "evidence/video_001/screenshots/escoffier_overview_0004.png",
+      "sha256": "0e1bc66c6cb87d5efa61e6db9c49d289f8dba3fdbfffa4a69a0158122fb71a3d",
+      "time_seconds": 0.4,
+      "character_id": "escoffier",
+      "kind": "overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_escoffier_stats_0030",
+      "path": "evidence/video_001/screenshots/escoffier_stats_0030.png",
+      "sha256": "557944087fa95c408712d82ea7462fd9ff0064ed3a6a6b5a87d027c9560ed4c8",
+      "time_seconds": 3.0,
+      "character_id": "escoffier",
+      "kind": "stats",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_escoffier_elements_0024",
+      "path": "evidence/video_001/screenshots/escoffier_elements_0024.png",
+      "sha256": "70b8678816aa943503720670e3e2b4ecc99341600dbe0a323a7497c121ab66e1",
+      "time_seconds": 2.4,
+      "character_id": "escoffier",
+      "kind": "elements",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_escoffier_weapon_0054",
+      "path": "evidence/video_001/screenshots/escoffier_weapon_0054.png",
+      "sha256": "79867367f49e782b6d4f9e0a9b9f1018db09ea28f085a85bd2e29e518581dd2f",
+      "time_seconds": 5.4,
+      "character_id": "escoffier",
+      "kind": "weapon",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_escoffier_artifact_overview_0074",
+      "path": "evidence/video_001/screenshots/escoffier_artifact_overview_0074.png",
+      "sha256": "22133b473d30a5d6e59d91d856655a6c4655cee37ced5f27125afae5c7512a1c",
+      "time_seconds": 7.4,
+      "character_id": "escoffier",
+      "kind": "artifact_overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_escoffier_constellation_0154",
+      "path": "evidence/video_001/screenshots/escoffier_constellation_0154.png",
+      "sha256": "a32a8c71bdc9f610d4d6fdcf1000e45d78d6ac29d3902d606e93400bb8da0381",
+      "time_seconds": 15.4,
+      "character_id": "escoffier",
+      "kind": "constellation",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_escoffier_talents_0174",
+      "path": "evidence/video_001/screenshots/escoffier_talents_0174.png",
+      "sha256": "c28a9969c9135da3d0cf9685db0cf840527b38f86519eb3729445d797916721f",
+      "time_seconds": 17.4,
+      "character_id": "escoffier",
+      "kind": "talents",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_escoffier_artifact_1_0084",
+      "path": "evidence/video_001/screenshots/escoffier_artifact_1_0084.png",
+      "sha256": "a75e96057f911ce33dedb406b1753d8eb035791ba5a6a54d3dc7879cdbad2aa9",
+      "time_seconds": 8.4,
+      "character_id": "escoffier",
+      "kind": "artifact_flower",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_escoffier_artifact_2_0094",
+      "path": "evidence/video_001/screenshots/escoffier_artifact_2_0094.png",
+      "sha256": "8fa06c65c4c9b04b59fd99707b3be1338e507a9d57c389e4f18cf647b5293686",
+      "time_seconds": 9.4,
+      "character_id": "escoffier",
+      "kind": "artifact_plume",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_escoffier_artifact_3_0104",
+      "path": "evidence/video_001/screenshots/escoffier_artifact_3_0104.png",
+      "sha256": "37efed38ee06a5d2dc8f96cf42d0be50ce06219067c005b94106ea21c340db9a",
+      "time_seconds": 10.4,
+      "character_id": "escoffier",
+      "kind": "artifact_sands",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_escoffier_artifact_4_0124",
+      "path": "evidence/video_001/screenshots/escoffier_artifact_4_0124.png",
+      "sha256": "1826f888d5affb0b7ab943a81e3df0b755dbe0442d443263c43c55d8decdd961",
+      "time_seconds": 12.4,
+      "character_id": "escoffier",
+      "kind": "artifact_goblet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_escoffier_artifact_5_0134",
+      "path": "evidence/video_001/screenshots/escoffier_artifact_5_0134.png",
+      "sha256": "831aeb8581e93d64242668413600c8223a19a130b0933bc9919e33c755e0adfc",
+      "time_seconds": 13.4,
+      "character_id": "escoffier",
+      "kind": "artifact_circlet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_furina_overview_0204",
+      "path": "evidence/video_001/screenshots/furina_overview_0204.png",
+      "sha256": "cc3b49a3746d28c13fb3250eb3f44b5caf990229cee93953cb9bab3373a71b22",
+      "time_seconds": 20.4,
+      "character_id": "furina",
+      "kind": "overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_furina_stats_0224",
+      "path": "evidence/video_001/screenshots/furina_stats_0224.png",
+      "sha256": "fec92f862515d8316ab340c8442288842b21cfac9fd4ab30e8a14851ea085c7e",
+      "time_seconds": 22.4,
+      "character_id": "furina",
+      "kind": "stats",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_furina_elements_0244",
+      "path": "evidence/video_001/screenshots/furina_elements_0244.png",
+      "sha256": "7f4297c5abc084bb91f8547ec2a1acae892d669b8c0196502b24fe3012aca313",
+      "time_seconds": 24.4,
+      "character_id": "furina",
+      "kind": "elements",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_furina_weapon_0264",
+      "path": "evidence/video_001/screenshots/furina_weapon_0264.png",
+      "sha256": "a647eb0757591b1cb73c7ed33edcea62d8191df62ad663cfd4dcf4a2f6d5b82c",
+      "time_seconds": 26.4,
+      "character_id": "furina",
+      "kind": "weapon",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_furina_artifact_overview_0284",
+      "path": "evidence/video_001/screenshots/furina_artifact_overview_0284.png",
+      "sha256": "2009347f8d6594fb835404e7d995efb9227c9200839dbe417afe5c437fcf0511",
+      "time_seconds": 28.4,
+      "character_id": "furina",
+      "kind": "artifact_overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_furina_constellation_0384",
+      "path": "evidence/video_001/screenshots/furina_constellation_0384.png",
+      "sha256": "c5ec0c9da565e35f68e91ee1be2f099b8f6b58ae2f78f62a342e75c687b925cb",
+      "time_seconds": 38.4,
+      "character_id": "furina",
+      "kind": "constellation",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_furina_talents_0424",
+      "path": "evidence/video_001/screenshots/furina_talents_0424.png",
+      "sha256": "4670a46c44ce28fec12ae30eacc65165938bb756837b468c13d252c8acbf0fc0",
+      "time_seconds": 42.4,
+      "character_id": "furina",
+      "kind": "talents",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_furina_artifact_1_0304",
+      "path": "evidence/video_001/screenshots/furina_artifact_1_0304.png",
+      "sha256": "b43e74f5e2ba8a47f55cf6e32886bb4c8ab36cae5b51d4fefa101ea029da9eac",
+      "time_seconds": 30.4,
+      "character_id": "furina",
+      "kind": "artifact_flower",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_furina_artifact_2_0314",
+      "path": "evidence/video_001/screenshots/furina_artifact_2_0314.png",
+      "sha256": "6dfb5874eeb4154dabaad2e96684c1a10540837580cb3bb79f1949dc62648f14",
+      "time_seconds": 31.4,
+      "character_id": "furina",
+      "kind": "artifact_plume",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_furina_artifact_3_0324",
+      "path": "evidence/video_001/screenshots/furina_artifact_3_0324.png",
+      "sha256": "008f39e43713116f154d51594dc554b3ff5a721f46a499195d0e3b08c8b1dc61",
+      "time_seconds": 32.4,
+      "character_id": "furina",
+      "kind": "artifact_sands",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_furina_artifact_4_0344",
+      "path": "evidence/video_001/screenshots/furina_artifact_4_0344.png",
+      "sha256": "1044aca34979418860f98ea3759fd1e99aa46dd2d29ff715ab03a7c1dd838b37",
+      "time_seconds": 34.4,
+      "character_id": "furina",
+      "kind": "artifact_goblet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_furina_artifact_5_0364",
+      "path": "evidence/video_001/screenshots/furina_artifact_5_0364.png",
+      "sha256": "41b6c09b3cd93c9702a088aa48283f3a6a9e7e4eb07c7e8e412ed828408589e5",
+      "time_seconds": 36.4,
+      "character_id": "furina",
+      "kind": "artifact_circlet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_voyanitsa_overview_0464",
+      "path": "evidence/video_001/screenshots/voyanitsa_overview_0464.png",
+      "sha256": "48599cae62e86c91320336f329f8a0207abbbe95e24a075294ab479025c7ffce",
+      "time_seconds": 46.4,
+      "character_id": "voyanitsa",
+      "kind": "overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_voyanitsa_stats_0480",
+      "path": "evidence/video_001/screenshots/voyanitsa_stats_0480.png",
+      "sha256": "99b63ef1252392be84740c3082354832d2ed2915d33faa412327e75825e10d96",
+      "time_seconds": 48.0,
+      "character_id": "voyanitsa",
+      "kind": "stats",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_voyanitsa_elements_0474",
+      "path": "evidence/video_001/screenshots/voyanitsa_elements_0474.png",
+      "sha256": "94e52db8af69376df88d2590168b8596d42b353c97309ca1755cd2b76688b604",
+      "time_seconds": 47.4,
+      "character_id": "voyanitsa",
+      "kind": "elements",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_voyanitsa_weapon_0504",
+      "path": "evidence/video_001/screenshots/voyanitsa_weapon_0504.png",
+      "sha256": "eae09da7bae61d035415edbc244ff6c47af366584846f913c654b46286458dba",
+      "time_seconds": 50.4,
+      "character_id": "voyanitsa",
+      "kind": "weapon",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_voyanitsa_artifact_overview_0524",
+      "path": "evidence/video_001/screenshots/voyanitsa_artifact_overview_0524.png",
+      "sha256": "09cac502b223fcb169b522fcba2e12ba2b34a2d089c3667f17b918a70da9c0a8",
+      "time_seconds": 52.4,
+      "character_id": "voyanitsa",
+      "kind": "artifact_overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_voyanitsa_constellation_0644",
+      "path": "evidence/video_001/screenshots/voyanitsa_constellation_0644.png",
+      "sha256": "89e49b04917715c471ff986591ab612eba144e281cbd5e98daec02de791295e3",
+      "time_seconds": 64.4,
+      "character_id": "voyanitsa",
+      "kind": "constellation",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_voyanitsa_talents_0664",
+      "path": "evidence/video_001/screenshots/voyanitsa_talents_0664.png",
+      "sha256": "b357c69f22c4d62bfe9d44640d422fa4bb243c251e9b157a3112b7b730751e6b",
+      "time_seconds": 66.4,
+      "character_id": "voyanitsa",
+      "kind": "talents",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_voyanitsa_artifact_1_0554",
+      "path": "evidence/video_001/screenshots/voyanitsa_artifact_1_0554.png",
+      "sha256": "c109c9d548cebfeb604048d480850b55d73e402d4f6d09d0c742904608cb3582",
+      "time_seconds": 55.4,
+      "character_id": "voyanitsa",
+      "kind": "artifact_flower",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_voyanitsa_artifact_2_0564",
+      "path": "evidence/video_001/screenshots/voyanitsa_artifact_2_0564.png",
+      "sha256": "2c9321d565cefb595407252af0f14073c70afb5b588dc94ae0f92ce40d11c0d6",
+      "time_seconds": 56.4,
+      "character_id": "voyanitsa",
+      "kind": "artifact_plume",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_voyanitsa_artifact_3_0584",
+      "path": "evidence/video_001/screenshots/voyanitsa_artifact_3_0584.png",
+      "sha256": "9f4ae12ca2de6e885a54212da2810611aaf0081498030e5c68ff43c458c60023",
+      "time_seconds": 58.4,
+      "character_id": "voyanitsa",
+      "kind": "artifact_sands",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_voyanitsa_artifact_4_0604",
+      "path": "evidence/video_001/screenshots/voyanitsa_artifact_4_0604.png",
+      "sha256": "841aae1c439d25ddf2a4a71f8493b6d167862e36a2072f33f2075a4a32e13373",
+      "time_seconds": 60.4,
+      "character_id": "voyanitsa",
+      "kind": "artifact_goblet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_voyanitsa_artifact_5_0614",
+      "path": "evidence/video_001/screenshots/voyanitsa_artifact_5_0614.png",
+      "sha256": "10e6a45ef9bf46ad7e90fd2d85466605d2c2a769cf338ff941a706edd1f8bc05",
+      "time_seconds": 61.4,
+      "character_id": "voyanitsa",
+      "kind": "artifact_circlet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_skirk_overview_0694",
+      "path": "evidence/video_001/screenshots/skirk_overview_0694.png",
+      "sha256": "4d324f1314381e2ec0775bb79ce90749bb859fed21ffe426a31b23dec48bfc68",
+      "time_seconds": 69.4,
+      "character_id": "skirk",
+      "kind": "overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_skirk_stats_0704",
+      "path": "evidence/video_001/screenshots/skirk_stats_0704.png",
+      "sha256": "dcb1c9190b997efa159bc1862e14bce0831d61ce717505161eb4a5b925d478bc",
+      "time_seconds": 70.4,
+      "character_id": "skirk",
+      "kind": "stats",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_skirk_elements_0724",
+      "path": "evidence/video_001/screenshots/skirk_elements_0724.png",
+      "sha256": "a1a5808c6ad821b4fc744a92c18299958e98bec29b50a5551ec18e3a272db929",
+      "time_seconds": 72.4,
+      "character_id": "skirk",
+      "kind": "elements",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_skirk_weapon_0754",
+      "path": "evidence/video_001/screenshots/skirk_weapon_0754.png",
+      "sha256": "3a94c53c7d3849566019d5f79057b860ef2e3f99f26b51ed7264517ea9b77a96",
+      "time_seconds": 75.4,
+      "character_id": "skirk",
+      "kind": "weapon",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_skirk_artifact_overview_0774",
+      "path": "evidence/video_001/screenshots/skirk_artifact_overview_0774.png",
+      "sha256": "e6d37ced14000059b7c8cd32666f0919acae762b0074e0ed3393ecc2b190ce30",
+      "time_seconds": 77.4,
+      "character_id": "skirk",
+      "kind": "artifact_overview",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_skirk_constellation_0874",
+      "path": "evidence/video_001/screenshots/skirk_constellation_0874.png",
+      "sha256": "e833bd26b66266baf28b4c08f1bbae2f76185f9f8ccece5ea3b7ded73cdf6805",
+      "time_seconds": 87.4,
+      "character_id": "skirk",
+      "kind": "constellation",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_skirk_talents_0904",
+      "path": "evidence/video_001/screenshots/skirk_talents_0904.png",
+      "sha256": "ab787a15341d4750065f7f8786f95c96aa9bdc8eb24329fef3220bbeef55f9ca",
+      "time_seconds": 90.4,
+      "character_id": "skirk",
+      "kind": "talents",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_skirk_artifact_1_0784",
+      "path": "evidence/video_001/screenshots/skirk_artifact_1_0784.png",
+      "sha256": "4de19d36342948d5d04b87fe4411944328402aa495ce7c0a9cefd53f1dcc95d0",
+      "time_seconds": 78.4,
+      "character_id": "skirk",
+      "kind": "artifact_flower",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_skirk_artifact_2_0804",
+      "path": "evidence/video_001/screenshots/skirk_artifact_2_0804.png",
+      "sha256": "dd94f69eb2f0fa254086c93b2848f7f945eb344beb28804846b7d0e5de9bb4f1",
+      "time_seconds": 80.4,
+      "character_id": "skirk",
+      "kind": "artifact_plume",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_skirk_artifact_3_0824",
+      "path": "evidence/video_001/screenshots/skirk_artifact_3_0824.png",
+      "sha256": "ee190a7253a87ee8595a0faf3ab6224c9af5b9653999a8b7453bc215551a1a6e",
+      "time_seconds": 82.4,
+      "character_id": "skirk",
+      "kind": "artifact_sands",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_skirk_artifact_4_0834",
+      "path": "evidence/video_001/screenshots/skirk_artifact_4_0834.png",
+      "sha256": "e8948ac6e5b69dea7606d627ad2d389c58b7b1f8ffaf70a139c9d99e283f5198",
+      "time_seconds": 83.4,
+      "character_id": "skirk",
+      "kind": "artifact_goblet",
+      "verification": "agent_reviewed"
+    },
+    {
+      "id": "video_001_skirk_artifact_5_0854",
+      "path": "evidence/video_001/screenshots/skirk_artifact_5_0854.png",
+      "sha256": "634f10bd1b1b9f4c726f9ad6a30ef5849171ee677faf52bde012c03ffcfcecdc",
+      "time_seconds": 85.4,
+      "character_id": "skirk",
+      "kind": "artifact_circlet",
+      "verification": "agent_reviewed"
+    }
+  ],
+  "notes": [
+    "所有配裝與數值均依影片畫面抄錄。這是錄影當時的面板，未推算未顯示的戰鬥狀態。",
+    "天賦依序為普通攻擊、元素戰技、元素爆發。記錄畫面當下顯示等級，未反推基礎等級或加成來源。",
+    "四名角色各五件聖遺物，全部顯示為五星、強化 +20。",
+    "四人的治療加成、受治療加成、冷卻縮減、護盾強效，畫面均顯示 0.0%。",
+    "可見的火、水、草、雷、風、冰元素抗性均為 0.0%。岩元素抗性與物理欄位未完整擷取，未列為已確認。",
+    "可見的七元素傷害加成除愛可菲冰傷 46.6%、絲柯克冰傷 61.6% 外均為 0.0%。",
+    "詳細天賦倍率、命之座效果與實戰傷害未在影片中展開，未推測填入。",
+    "左側角色列表還有其他頭像，但未展開其資料頁，不把頭像視為完整角色資料。",
+    "沃雅妮莎名稱另以 HoYoWiki 交叉確認。其等級、配裝與數值仍以本影片為準。",
+    "逐項數值已人工核對截圖。原始影片解析度 848 × 384，少數裝備名稱的細部字形仍可能受壓縮影響，以附圖為準。"
+  ]
+}
