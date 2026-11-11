@@ -44,7 +44,7 @@ test('team members follow first appearance and detail cards contain images only'
 test('all six other teams use minimal flows with conditional actions retained',()=>{
  const flow=readFileSync(new URL('../lib/team_flows.ts',import.meta.url),'utf8');
  for(const id of ['mavuika','zibai','nefer','neuvillette','varesa','mizuki'])assert.ok(flow.includes(' '+id+':['));
- for(const condition of ['可用時','撿火結晶','撿水結晶','月露不足','首輪','Q 未就緒'])assert.ok(flow.includes(condition));
+ for(const condition of ['可用時','撿火結晶','撿水結晶','月露','首輪','Q 未就緒'])assert.ok(flow.includes(condition));
  assert.match(dashboard,/<TeamFlow id={team.id}/);assert.ok(!dashboard.includes('目前配裝注意事項'));
 });
 test('Skirk action rows inherit one shared font size',()=>{
@@ -114,4 +114,14 @@ test('FAB is icon-only with accessible destinations and selected state',()=>{
  assert.ok(!nav.includes('<span>'));
  for(const label of ['隊伍','角色列表','培養重點'])assert.ok(nav.includes('aria-label="'+label+'"'));
  assert.equal((nav.match(/aria-current=/g)||[]).length,3);
+});
+
+test('owner-specified three team sequences retain exact step counts',()=>{
+ const source=readFileSync(new URL('../lib/team_flows.ts',import.meta.url),'utf8');
+ const block=(id,next)=>source.split(' '+id+':[')[1].split(' '+next+':[')[0];
+ assert.equal((block('nefer','neuvillette').match(/id:/g)||[]).length,6);
+ assert.equal((block('neuvillette','varesa').match(/id:/g)||[]).length,10);
+ assert.equal((block('varesa','mizuki').match(/id:/g)||[]).length,6);
+ assert.equal((block('nefer','neuvillette').match(/E → 長 A/g)||[]).length,2);
+ assert.ok(source.includes("moves:['E → A → 下落 A → 小 Q']"));
 });

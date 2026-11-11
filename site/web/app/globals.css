@@ -281,3 +281,5 @@ h3{font-size:14px;font-weight:600}
 @media(max-width:520px){.skirk-minimal-flow{gap:10px}.skirk-minimal-flow .minimal-flow-card{grid-template-columns:58px minmax(0,1fr);gap:14px;padding:16px}.skirk-minimal-flow .minimal-flow-card>img{width:58px;height:58px}}
 .footer-fab button{min-width:54px;width:54px;min-height:54px;padding:12px;gap:0}
 @media(max-width:520px){.footer-fab button{min-width:50px;width:50px;min-height:50px;padding:12px}}
+.team-flow-notes{max-width:520px;margin:26px auto 4px;border-top:1px solid var(--line);padding-top:18px}
+.team-flow-notes p{font-size:12px;line-height:1.8;color:var(--muted);margin:0 0 10px}
