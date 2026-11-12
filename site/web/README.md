@@ -101,3 +101,7 @@ API 參考：[GitHub commit mutation](https://docs.github.com/en/graphql/referen
 - 絕區零使用獨立 `data/zzz/account.json`、`/api/zzz` 與角色畫面；未確認數值保留 null。
 - 角色圖片只從已確認的 `evidence/zzz/` 路徑經登入保護 API 取得，不公開私人錄影。
 - 品牌統一 HOYO；既有 GitHub repo 和 Site slug 保留，舊連結繼續可用。
+
+### 角色與配裝共用展示
+
+原神與絕區零共用 `MetricLabel`、`ArtifactSubstat`、`EffectiveBadge` 與角色／配裝卡片 CSS；`CenteredHeader` 的可選 action 保持標題置中。數值規則不共用：原神沿用 `artifact_rolls.mjs`，絕區零使用 `zzz_discs.mjs`，只計入有證據的有效性及強化次數，未確認回傳 null。絕區零固定呈現六個槽位，缺少觀測顯示尚未確認而非未裝備。低等級盤以 `substatsComplete` 確認完整性，不以副詞條必須四個判定。正式帳號資料與證據不因排版修改而更動。

@@ -3,6 +3,19 @@ import {createContext,useContext} from 'react';
 import {Heart,Sword,Shield,Sparkles,UserRound,TrendingUp,Star,Gem,Target,Crosshair,BatteryCharging,Snowflake,Droplets,Flame,Zap,Wind,Mountain,Leaf,PlusCircle,Flower2} from 'lucide-react';
 
 const metrics:Partial<Record<string,{short:string,Icon:typeof Heart}>>={
+ '影畫':{short:'影畫',Icon:Star},
+ '音擎等級':{short:'Lv.',Icon:Sword},
+ '衝擊力':{short:'衝擊',Icon:Sparkles},
+ '異常掌控':{short:'掌控',Icon:Target},
+ '異常精通':{short:'精通',Icon:Sparkles},
+ '穿透率':{short:'穿透',Icon:Crosshair},
+ '穿透值':{short:'穿透',Icon:Crosshair},
+ '能量自動回復':{short:'回能',Icon:BatteryCharging},
+ '閃避':{short:'閃避',Icon:Wind},
+ '支援技':{short:'支援',Icon:PlusCircle},
+ '特殊技':{short:'特殊',Icon:Sparkles},
+ '連攜技':{short:'連攜',Icon:Zap},
+ '核心技':{short:'核心',Icon:Gem},
  '角色等級':{short:'Lv.',Icon:UserRound},
  '武器等級':{short:'Lv.',Icon:Sword},
  '等級上限':{short:'上限',Icon:TrendingUp},

@@ -24,3 +24,13 @@ HOYO 將原神與絕區零分開保存。`data/zzz/account.json` 是絕區零正
 執行 `python scripts/validate_zzz.py`，檢查 schema、唯一角色 ID、時間落在影片內、證據路徑、檔案存在及 SHA-256。修改時保留原神資料與既有證據。新的影片使用新的來源資料夾，不覆寫原始證據。
 
 Sites 從同一 GitHub revision 讀取資料及圖片。圖片須經 owner-only API 提供，不把私人證據放進公開前端靜態目錄。尚未核對與缺少欄位必須在頁面保持可辨識，不展示推測值。
+
+## 驅動盤逐項觀測
+
+`driveDiscs` 可為部分槽位的陣列；缺少槽位或 null 代表未核對，不代表未裝備。每盤 `slot` 為1到6，`id`識別該來源的盤面觀測，不根據同名同數值合併物品。主副詞條 value 為數字、unit 為 flat/percent；未看清保留 null。
+
+依使用者指定，橘黃色副詞條標示 isEffective=true，清楚顯示但非橘黃者false，顏色無法確認者null。數值後 `+N` 是 enhancementCount，僅在清晰完整畫面確定沒有 `+N` 時記0，不從數值反推。有效詞條總數為有效副詞條各計初始1次加強化次數；副詞條區不完整 substatsComplete=false、任有效性未知、或有效詞條強化次數未知，effectiveRollCount為null。主詞條不計入該總數。
+
+每盤保留各自的時間戳及遮UID圖像SHA-256；新增證據另存於獨立資料夾，不覆寫先前截圖。
+
+角色基本面板的 `statsEffective` 另外逐圖核對，key與stats原語相同、value為boolean或null；不由驅動盤有效詞條推算角色面板標記。未見標記不默認true或false。

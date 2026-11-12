@@ -1,0 +1,6053 @@
+{
+  "characters": [
+    {
+      "id": "jane",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "識羽之誓",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 12.0,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 19.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            }
+          ],
+          "id": "jane_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 7.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/jane_slot1_t007.25.jpg",
+              "sha256": "f665a514f956c1e07068f16581cb72bd925d31159ca1c9d95dda3d13f0d4f9c2"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "識羽之誓",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "防禦力",
+              "value": 15.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 12.0,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": true
+            },
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "jane_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 7.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/jane_slot2_t007.75.jpg",
+              "sha256": "3ad71fafdd1f896b855b7abe37c8ddfc48b8e32e65d8469b8c7adfe5feb665da"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "獠牙重金屬",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "jane_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 5,
+          "evidence": [
+            {
+              "timestampSec": 8.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/jane_slot3_t008.75.jpg",
+              "sha256": "8ec4c2b36a63093a103cdd94365eebd301c8f70536f7b5c2360ce94af9055aae"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "獠牙重金屬",
+          "level": 15,
+          "mainStat": {
+            "name": "異常精通",
+            "value": 92.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 30.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "jane_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 9.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/jane_slot4_t009.75.jpg",
+              "sha256": "0f6b5a8083aef5df2e8fdd68f1d3762ab833f7e325ad5ebc5826d3168ab83861"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "獠牙重金屬",
+          "level": 15,
+          "mainStat": {
+            "name": "物理傷害加成",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "防禦力",
+              "value": 30.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": true
+            }
+          ],
+          "id": "jane_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 10.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/jane_slot5_t010.75.jpg",
+              "sha256": "a8ebf10630397c2264a9c152e37960a7d20e3d0beefa292609910cbf60dabe46"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "獠牙重金屬",
+          "level": 15,
+          "mainStat": {
+            "name": "異常掌控",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "穿透值",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 14.4,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 224.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "jane_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 11.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/jane_slot6_t011.75.jpg",
+              "sha256": "b97aadc600041de5327040b9d5a446d2cd43b394ea7c9a8a4e80eb75f0bb5dc7"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "damielle",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "識羽之誓",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 30.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "damielle_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 19.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/damielle_slot1_t019.75.jpg",
+              "sha256": "04ea547c2dc3b0ebefcea5c5699aee257ea01b6bd808820e052a9528de0a7480"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "自由藍調",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 36.0,
+              "unit": "flat",
+              "enhancementCount": 3,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 224.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "damielle_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 19.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/damielle_slot2_t019.25.jpg",
+              "sha256": "7eca7f7000afc20cfe9ca5b6f351e07608f9f6d22253138f16c33db94d972fe0"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "自由藍調",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 15.0,
+              "unit": "percent",
+              "enhancementCount": 4,
+              "isEffective": true
+            },
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 112.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "damielle_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 18.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/damielle_slot3_t018.25.jpg",
+              "sha256": "afc07f2bf9250a5624977047a645e54c1a160f590c6d715f1826bf52b5f778da"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "識羽之誓",
+          "level": 15,
+          "mainStat": {
+            "name": "異常精通",
+            "value": 92.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 57.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 224.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "damielle_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 17.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/damielle_slot4_t017.25.jpg",
+              "sha256": "8e5d3b3b36293f1eddf7a366d10ba245197060fd0ad5dd27675997df0955dc56"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "識羽之誓",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 19.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "穿透值",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "damielle_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 16.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/damielle_slot5_t016.25.jpg",
+              "sha256": "8f36a899edf4dec98a338b00a070d024514fee9b43a512d079b573f0b81dc677"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "識羽之誓",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 76.0,
+              "unit": "flat",
+              "enhancementCount": 3,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 15.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "damielle_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 5,
+          "evidence": [
+            {
+              "timestampSec": 15.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/damielle_slot6_t015.75.jpg",
+              "sha256": "11945333d02021fc031e4f2b231e90a070ee4a2966f516847d22b3951922723e"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "velina",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "呼嘯沙龍",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "異常精通",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "velina_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 5,
+          "evidence": [
+            {
+              "timestampSec": 34.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/velina_slot1_t034.75.jpg",
+              "sha256": "096adbdf365e9ae6d6ec2a39847d25ded31426a55a1f85d08ee19604238245bd"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "呼嘯沙龍",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "穿透值",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "velina_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 5,
+          "evidence": [
+            {
+              "timestampSec": 33.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/velina_slot2_t033.75.jpg",
+              "sha256": "cf08ef117c6189ea356952c3d054f57e9098bc7058ed176e3d5f02775ed59c97"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "搖擺爵士",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 7.2,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            }
+          ],
+          "id": "velina_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 32.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/velina_slot3_t032.75.jpg",
+              "sha256": "caf85a5711ad970206bcc3d003141fee176c2e3e9d8864b8d2282bfa0bce61e2"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "呼嘯沙龍",
+          "level": 15,
+          "mainStat": {
+            "name": "異常精通",
+            "value": 92.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "防禦力",
+              "value": 15.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 57.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "velina_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 31.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/velina_slot4_t031.75.jpg",
+              "sha256": "ffeaf8b7c3350a467fe2660f4d1723037f3d85bbaac885ac6fb61299e120f261"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "搖擺爵士",
+          "level": 15,
+          "mainStat": {
+            "name": "風屬性傷害加成",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 45.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "velina_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 30.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/velina_slot5_t030.75.jpg",
+              "sha256": "27e29483c2dccfa1c34bb1de8b2d24d3f56b1079c61799e29a5304e90170e8e0"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "呼嘯沙龍",
+          "level": 15,
+          "mainStat": {
+            "name": "能量自動回復",
+            "value": 60.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 112.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "velina_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 30.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/velina_slot6_t030.25.jpg",
+              "sha256": "06eb18c0e7b6902eb88c44a992a941a0ee438cf6cb0f0b75fd78e2fe244da262"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "pyrois",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "啄木鳥電音",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊率",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 30,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 3,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            }
+          ],
+          "id": "pyrois_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 38.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/pyrois_slot1_t038.25.jpg",
+              "sha256": "fb526151e7d8fdf2d81750e9a235400180fece532dc3001c2994f8020a978113"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "啄木鳥電音",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "防禦力",
+              "value": 30.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            }
+          ],
+          "id": "pyrois_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 5,
+          "evidence": [
+            {
+              "timestampSec": 39.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/pyrois_slot2_t039.25.jpg",
+              "sha256": "a8b31f75f702f654d4b7cfc8d1d4513556d137c2e58c156d7ccf9749efccd95b"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "拂曉行紀",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 7.2,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "pyrois_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 7,
+          "evidence": [
+            {
+              "timestampSec": 39.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/pyrois_slot3_t039.75.jpg",
+              "sha256": "78ffa8b5aa91b2ff019594ba61837feb1732883169296b723fb3ce8f58ed5d9c"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "拂曉行紀",
+          "level": 15,
+          "mainStat": {
+            "name": "暴擊率",
+            "value": 24.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "異常精通",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "pyrois_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 40.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/pyrois_slot4_t040.75.jpg",
+              "sha256": "2f9ee0e0a1a724a471245d266d221ac3caad24cdda23b54d76a7bbafd46882d1"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "拂曉行紀",
+          "level": 15,
+          "mainStat": {
+            "name": "以太傷害加成",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "穿透值",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 45.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "異常精通",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "pyrois_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 1,
+          "evidence": [
+            {
+              "timestampSec": 41.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/pyrois_slot5_t041.75.jpg",
+              "sha256": "58a11ef1d370f2edb1c2bc4f0fd9bb14074f8e5f655a4fe32da5553abf760665"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "拂曉行紀",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "暴擊率",
+              "value": 7.2,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 15.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "穿透值",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "pyrois_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 42.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/pyrois_slot6_t042.75.jpg",
+              "sha256": "dc2fb88b1d200ff875e05467ffda70cc941473510f613fc4fd695abd50094798"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "nangong_yu",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "流光詠嘆",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 14.4,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "nangong_yu_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 52.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/nangong_yu_slot1_t052.25.jpg",
+              "sha256": "82b25407a235fdf4854c4e7f89b307502fd61b7bf058d77f83aa1183207ba172"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "流光詠嘆",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "異常精通",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 112.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "nangong_yu_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 5,
+          "evidence": [
+            {
+              "timestampSec": 52.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/nangong_yu_slot2_t052.75.jpg",
+              "sha256": "b39d4b07a62c572671d85265263b4d1352b9a881c475c79a2333e46eab557b09"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "流光詠嘆",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 19.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "nangong_yu_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 5,
+          "evidence": [
+            {
+              "timestampSec": 53.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/nangong_yu_slot3_t053.75.jpg",
+              "sha256": "d46ef64703248470f56a09898fd3395305f6bbec5398a589e1840dbd2b42e2ff"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "法厄同之歌",
+          "level": 15,
+          "mainStat": {
+            "name": "異常精通",
+            "value": 92.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "穿透值",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 12.0,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "nangong_yu_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 54.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/nangong_yu_slot4_t054.75.jpg",
+              "sha256": "b60b8f7b1268215abce1c82a1b989b969aeada49ec13827374a0174ca7e24adb"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "法厄同之歌",
+          "level": 15,
+          "mainStat": {
+            "name": "以太傷害加成",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 57.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "nangong_yu_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 55.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/nangong_yu_slot5_t055.75.jpg",
+              "sha256": "0d50fe541ce3bde480d6e318284c9a71abd90082396cb140a248f16c567dcaa3"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "流光詠嘆",
+          "level": 15,
+          "mainStat": {
+            "name": "異常掌控",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 45.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "nangong_yu_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 56.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/nangong_yu_slot6_t056.25.jpg",
+              "sha256": "aff928343d0c1b2ab8defa8a454ed4b3b75cfdc4d51d2dea27e182b52859b1ea"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "sunna",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "月光騎士頌",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 38,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 14.4,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "sunna_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 66.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/sunna_slot1_t066.25.jpg",
+              "sha256": "58869fd0b378c64807e0db3d5ba0ac24ddbc42ae2a7defb6648d39f85d67e345"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "月光騎士頌",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "sunna_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 65.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/sunna_slot2_t065.75.jpg",
+              "sha256": "f63b19372671eec0415547b603a0bc0bc60f406aacc28aa7b9521f71d5ab199b"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "月光騎士頌",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            }
+          ],
+          "id": "sunna_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 64.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/sunna_slot3_t064.75.jpg",
+              "sha256": "d0ccd09123cc5aa745fb1049476fca3e3c62ee564f275515d8bb1abebe557110"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "月光騎士頌",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "穿透值",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 30.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 14.4,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "sunna_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 63.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/sunna_slot4_t063.75.jpg",
+              "sha256": "e722e965b98fe09faad4e020e4b18938c697a78fe5fab1d21ba473389259ceff"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "搖擺爵士",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 12.0,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 224.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "sunna_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 62.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/sunna_slot5_t062.75.jpg",
+              "sha256": "ff68caa0d20a6f3d0a898ac48ae235fcb242a034a941bb66e73971f39437c7aa"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "搖擺爵士",
+          "level": 15,
+          "mainStat": {
+            "name": "能量自動回復",
+            "value": 60.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 45.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 112.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "sunna_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 61.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/sunna_slot6_t061.75.jpg",
+              "sha256": "ac3d617b16579e2cb96dddf8153cf3982dd40e0c3afe7dcb331bb23701c05df6"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "zhao",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "雲巋如我",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 12.0,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "zhao_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 76.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/zhao_slot1_t076.75.jpg",
+              "sha256": "58011782b44c20f14ace185a5d46d622c04c0e8929e9bb11ad1dc0bc907024e0"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "雲巋如我",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "zhao_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 77.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/zhao_slot2_t077.75.jpg",
+              "sha256": "2df13a11344c78798f5b4a630e43bd2abbf0014ed214224ce5cf48cf57722848"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "靜聽嘉音",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 336.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "zhao_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 5,
+          "evidence": [
+            {
+              "timestampSec": 78.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/zhao_slot3_t078.75.jpg",
+              "sha256": "91a20b558ab5b4a22ae0ccc4b2055446546c0ceef302fb23ca2db00186ce1d41"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "靜聽嘉音",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "防禦力",
+              "value": 45.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 224.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            }
+          ],
+          "id": "zhao_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 79.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/zhao_slot4_t079.75.jpg",
+              "sha256": "f3c40076078f67ba5ae089830ca17195edf2a53ec271ab31e863667851e86c51"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "靜聽嘉音",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 448.0,
+              "unit": "flat",
+              "enhancementCount": 3,
+              "isEffective": true
+            }
+          ],
+          "id": "zhao_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 80.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/zhao_slot5_t080.75.jpg",
+              "sha256": "7bbe683e9b287608543a82dcfd890414bf93774674e988cbe844dbdd8f96a780"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "靜聽嘉音",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 24.0,
+              "unit": "percent",
+              "enhancementCount": 4,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "zhao_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 0,
+          "evidence": [
+            {
+              "timestampSec": 81.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/zhao_slot6_t081.25.jpg",
+              "sha256": "44beb3c65772b76ff16ea243b1f1e9463b1103793723e8b48f1c913da33d7b4f"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "lucia",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "月光騎士頌",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "生命值",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 30.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "lucia_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 86.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/lucia_slot1_t086.25.jpg",
+              "sha256": "6b606c0d937689318efe8ce0c2b9f1a28a09cdddddd4ea739d1bbd33c207ca66"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "月光騎士頌",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 224.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            }
+          ],
+          "id": "lucia_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 87.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/lucia_slot2_t087.25.jpg",
+              "sha256": "a63cd8d250a5c438f64f7ff14ec46ca296e9dc1dfd3d6b1a3826072406c9ddb6"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "月光騎士頌",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 336.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "lucia_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 87.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/lucia_slot3_t087.75.jpg",
+              "sha256": "028fb936a351b23ca103655405861c392329a9dbb2977f00f5c2e0ba772534d8"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "月光騎士頌",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 112.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 15.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 12.0,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": false
+            }
+          ],
+          "id": "lucia_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 1,
+          "evidence": [
+            {
+              "timestampSec": 88.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/lucia_slot4_t088.75.jpg",
+              "sha256": "36a6529802ad93a5315b118b980a5547c6907175e3794e4495c5ea8aef0bf5dc"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "雲巋如我",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "防禦力",
+              "value": 15.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 224.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 14.4,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "lucia_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 89.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/lucia_slot5_t089.25.jpg",
+              "sha256": "c86a20126a6c7d8146702d1a364a71ef2ddc4075265960a1e17f959c09d676b1"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "雲巋如我",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 57.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "lucia_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 0,
+          "evidence": [
+            {
+              "timestampSec": 90.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/lucia_slot6_t090.25.jpg",
+              "sha256": "3f7869b2372217d195b71aed48579572a21966722b683bac5ff5d89675a14e37"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "yuzuha",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "月光騎士頌",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 9,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "穿透值",
+              "value": 27,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 9,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            }
+          ],
+          "id": "yuzuha_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 98.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/yuzuha_slot1_t098.25.jpg",
+              "sha256": "d3e7e6f4d32758aa217029075a0c9b2a9094ba3a91b8832f488bdb2558de4422"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "月光騎士頌",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "防禦力",
+              "value": 45.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 224.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "yuzuha_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 99.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/yuzuha_slot2_t099.25.jpg",
+              "sha256": "6d19a792dde6255744a89704e665f1d0fc4bbbe23cb863d363719a159f682315"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "月光騎士頌",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 14.4,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "yuzuha_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 5,
+          "evidence": [
+            {
+              "timestampSec": 99.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/yuzuha_slot3_t099.75.jpg",
+              "sha256": "66a2a7b6ff5c30ee360eb7dcefebc7d3827d1aa555710ecc44a46acfcd26cbd0"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "法厄同之歌",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "暴擊傷害",
+              "value": 19.2,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 15.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "yuzuha_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 1,
+          "evidence": [
+            {
+              "timestampSec": 100.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/yuzuha_slot4_t100.75.jpg",
+              "sha256": "2ae70847dcc7e41a0c5600ae32537f64aaef25ed8e94d89126dd9fbbc84bb6bc"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "法厄同之歌",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "防禦力",
+              "value": 30.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 36.0,
+              "unit": "flat",
+              "enhancementCount": 3,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "yuzuha_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 101.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/yuzuha_slot5_t101.75.jpg",
+              "sha256": "73a143a3e7310bc93fc121266cc5965d508673bd4b503610271bdb98c3912700"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "月光騎士頌",
+          "level": 15,
+          "mainStat": {
+            "name": "異常掌控",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "穿透值",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "yuzuha_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 102.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/yuzuha_slot6_t102.25.jpg",
+              "sha256": "1922d0a13f5acb52790218e30284e2a9aa84e54a78d47b197ed118f8ec8b8b23"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "manato",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "雲巋如我",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "穿透值",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            }
+          ],
+          "id": "manato_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 5,
+          "evidence": [
+            {
+              "timestampSec": 107.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/manato_slot1_t107.25.jpg",
+              "sha256": "67e848fbde40abc7475dc9bebb05b05d3277c2e3cbca374ecee6667f5d0d5536"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "雲巋如我",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊率",
+              "value": 7.2,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 224.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "manato_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 7,
+          "evidence": [
+            {
+              "timestampSec": 107.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/manato_slot2_t107.75.jpg",
+              "sha256": "f2b6e173f9988363b91946f0bcb79fe7bc55d42ac3d4df8f75aee4de10c85fb2"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "折枝劍歌",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 224.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 7.2,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            }
+          ],
+          "id": "manato_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 108.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/manato_slot3_t108.75.jpg",
+              "sha256": "f832e1b2abd456a1b694d8df676e3b40f4da05d03a0f2ec28dc2d23ad46575b8"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "雲巋如我",
+          "level": 15,
+          "mainStat": {
+            "name": "暴擊率",
+            "value": 24.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 19.2,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "manato_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 109.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/manato_slot4_t109.75.jpg",
+              "sha256": "241ad244a13343c81f1c214e4d88a623fef759a81b05fabfb88cb791334728eb"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "折枝劍歌",
+          "level": 15,
+          "mainStat": {
+            "name": "火屬性傷害加成",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "生命值",
+              "value": 336.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 57.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 15.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            }
+          ],
+          "id": "manato_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 1,
+          "evidence": [
+            {
+              "timestampSec": 110.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/manato_slot5_t110.75.jpg",
+              "sha256": "5f434865055f12dfa3e349e201e40771ce27a9fb1f1f8f5fafb69955bd989232"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "雲巋如我",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 19.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "manato_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 111.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/manato_slot6_t111.25.jpg",
+              "sha256": "4021b1ba91586c7ac3eb81ad8081a074bc44f052a6cbc4e5db79127f8279ca49"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "ye_shunguang",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "滄浪行歌",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 57.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 14.4,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            }
+          ],
+          "id": "ye_shunguang_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 125.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/ye_shunguang_slot1_t125.25.jpg",
+              "sha256": "994bf4362fb3f4dc4b312a84989b43604495f22826513beb72d2eae46be14ca1"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "滄浪行歌",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "生命值",
+              "value": 336.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            }
+          ],
+          "id": "ye_shunguang_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 124.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/ye_shunguang_slot2_t124.25.jpg",
+              "sha256": "f3e32433a61819c1c710065ea024a866806d6a4be53c29dbfe741e794dcd4dab"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "滄浪行歌",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 19.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 7.2,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            }
+          ],
+          "id": "ye_shunguang_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 123.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/ye_shunguang_slot3_t123.75.jpg",
+              "sha256": "15cf274bf0aef26fa7db973d38654a70589c9d7a9353e82be176964a64998004"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "折枝劍歌",
+          "level": 15,
+          "mainStat": {
+            "name": "暴擊傷害",
+            "value": 48.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "生命值",
+              "value": 112.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 45.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 7.2,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "ye_shunguang_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 122.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/ye_shunguang_slot4_t122.75.jpg",
+              "sha256": "0d18d183d2ded7b6937105cf388033425ca8f8dc841a40b06e4db245e7dd589f"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "滄浪行歌",
+          "level": 15,
+          "mainStat": {
+            "name": "物理傷害加成",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "暴擊傷害",
+              "value": 14.4,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 45.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "ye_shunguang_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 121.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/ye_shunguang_slot5_t121.75.jpg",
+              "sha256": "85e15f1368b08a0f033610b78deb2236f45278fa31edf5a16acd78971bcd52c6"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "折枝劍歌",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "暴擊傷害",
+              "value": 14.4,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 45.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "ye_shunguang_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 5,
+          "evidence": [
+            {
+              "timestampSec": 121.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/ye_shunguang_slot6_t121.25.jpg",
+              "sha256": "fe31d75aa23f004beef43ac2053f14b85aa1476772773431c73aafd6ac18d545"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "ju_fufu",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "山大王",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 12,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": true
+            }
+          ],
+          "id": "ju_fufu_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 127.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/ju_fufu_slot1_t127.75.jpg",
+              "sha256": "a8204492ad7e612d377440d6fa3467bc1721914679589ccecaf471ee602bb131"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "山大王",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "ju_fufu_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 128.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/ju_fufu_slot2_t128.75.jpg",
+              "sha256": "50265b2b99cacadd907e5ab6645b7881bc10270a9f3784f8e086bea557d46623"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "搖擺爵士",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 7.2,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "ju_fufu_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 129.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/ju_fufu_slot3_t129.75.jpg",
+              "sha256": "59e8e5a087c9d3bc18561cbe23c6bc147d6b76f719c5347a2ab98a6276d60f22"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "山大王",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "穿透值",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 45.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "ju_fufu_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 1,
+          "evidence": [
+            {
+              "timestampSec": 130.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/ju_fufu_slot4_t130.25.jpg",
+              "sha256": "d8d6cde82c231e78cd7ceea0560bb1bb336b34bec090fc90d8a1ff60ba33cb01"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "山大王",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 336.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            }
+          ],
+          "id": "ju_fufu_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 131.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/ju_fufu_slot5_t131.25.jpg",
+              "sha256": "883ff93a00d05f4aef3ed0fa5884e5988fc71d980c4e15181dc5b78a3cb60bb3"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "搖擺爵士",
+          "level": 15,
+          "mainStat": {
+            "name": "衝擊力",
+            "value": 18.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "生命值",
+              "value": 12.0,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 45.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "穿透值",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            }
+          ],
+          "id": "ju_fufu_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 1,
+          "evidence": [
+            {
+              "timestampSec": 132.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/ju_fufu_slot6_t132.25.jpg",
+              "sha256": "8161d44929e9d4327929c9a158ff3904d09f67e9921c4d89b64e1e21782ec754"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "yixuan",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "雲巋如我",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊率",
+              "value": 7.2,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 57.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            }
+          ],
+          "id": "yixuan_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 139.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/yixuan_slot1_t139.25.jpg",
+              "sha256": "3d267882023ce49d859a0f2506cdac3b1f502f2a608933097b3abdc89e21b24c"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "雲巋如我",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "生命值",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "yixuan_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 5,
+          "evidence": [
+            {
+              "timestampSec": 140.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/yixuan_slot2_t140.25.jpg",
+              "sha256": "c0fa0a40039a87922fb5ab77afbeea307353ec7818e6586c6be35a76e41b8ba6"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "雲巋如我",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 7.2,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "穿透值",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "yixuan_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 5,
+          "evidence": [
+            {
+              "timestampSec": 140.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/yixuan_slot3_t140.75.jpg",
+              "sha256": "74e7ab3105e2c9a52854f57d1879ca657e7d4d8a507a435a3124f28990a10953"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "折枝劍歌",
+          "level": 15,
+          "mainStat": {
+            "name": "暴擊率",
+            "value": 24.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "生命值",
+              "value": 12.0,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 112.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "yixuan_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 141.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/yixuan_slot4_t141.75.jpg",
+              "sha256": "3a482bf9122256f43b8bb5119578bc19a1225318daa26dd2247aa7eb1514f32b"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "折枝劍歌",
+          "level": 15,
+          "mainStat": {
+            "name": "以太傷害加成",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "暴擊傷害",
+              "value": 14.4,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            }
+          ],
+          "id": "yixuan_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 142.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/yixuan_slot5_t142.25.jpg",
+              "sha256": "2f339f0ea0171cd7468c4461184983e3f489d84fc3ff7bf537751af58d30b4cb"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "雲巋如我",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 57.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            }
+          ],
+          "id": "yixuan_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 143.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/yixuan_slot6_t143.25.jpg",
+              "sha256": "1670b36d97c9b43e142f6fcb019603afba6b8e03c75c7f9a86badc73b6dfd898"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "pan_yinhu",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "搖擺爵士",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 7.2,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            }
+          ],
+          "id": "pan_yinhu_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 154.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/pan_yinhu_slot1_t154.25.jpg",
+              "sha256": "412ed84a9189b5cb3ac937b2fbf1ea69625978b2e928a7339324acdf1eb35934"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "雪兔夢遊仙境",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 19.2,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "穿透值",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "pan_yinhu_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 153.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/pan_yinhu_slot2_t153.25.jpg",
+              "sha256": "e78102a98d34ae7e2509df8d523867f599ceb45e8d7b0a76d738581c7a4c1000"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "搖擺爵士",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "穿透值",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "pan_yinhu_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 152.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/pan_yinhu_slot3_t152.25.jpg",
+              "sha256": "6d50fc2dbb2070556bf7e0cb120c6a2ae806b742345535ec2b0e52cef9ef9a9d"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "雪兔夢遊仙境",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 30.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "pan_yinhu_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 0,
+          "evidence": [
+            {
+              "timestampSec": 151.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/pan_yinhu_slot4_t151.75.jpg",
+              "sha256": "eb0980d0dec78ecbf644f9a25320920a879f48eb92ba1e9e72fcf11227ab6aa4"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "雪兔夢遊仙境",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 112.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 45.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "pan_yinhu_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 0,
+          "evidence": [
+            {
+              "timestampSec": 150.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/pan_yinhu_slot5_t150.75.jpg",
+              "sha256": "5e6626a8081d36a085ce92ff7fdc93ca40e7dbf2977641746b86a4a1bd5ad41c"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "雪兔夢遊仙境",
+          "level": 15,
+          "mainStat": {
+            "name": "能量自動回復",
+            "value": 60.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "穿透值",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "pan_yinhu_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 149.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/pan_yinhu_slot6_t149.75.jpg",
+              "sha256": "d48f1edeafbfd54576e6828cdb7b2795662e4951c38ced5c624cc72fad281ee0"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "vivian",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "法厄同之歌",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 15.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": true
+            }
+          ],
+          "id": "vivian_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 5,
+          "evidence": [
+            {
+              "timestampSec": 160.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/vivian_slot1_t160.75.jpg",
+              "sha256": "ea61f4065bd3cda4098df624d9e85c07ea41aa4da1f1bc6d9401e611f2876eeb"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "搖擺爵士",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "生命值",
+              "value": 224.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 45.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "vivian_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 161.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/vivian_slot2_t161.75.jpg",
+              "sha256": "32790b9d8e4b5bb049d04557c6c7e3d1fb358e03bc71be690a17caa3b69ea191"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "法厄同之歌",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 36.0,
+              "unit": "flat",
+              "enhancementCount": 3,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            }
+          ],
+          "id": "vivian_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 162.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/vivian_slot3_t162.75.jpg",
+              "sha256": "f28b5ccfa0640213a205bbcb2c2a02788df32f1a0d36636bac56ae535ddecbff"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "搖擺爵士",
+          "level": 15,
+          "mainStat": {
+            "name": "異常精通",
+            "value": 92.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "穿透值",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "vivian_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 163.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/vivian_slot4_t163.25.jpg",
+              "sha256": "b09987bd336e0365866f284ec084b5fd052f42674162884b86a1ec253a028a41"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "法厄同之歌",
+          "level": 15,
+          "mainStat": {
+            "name": "以太傷害加成",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 224.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "vivian_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 164.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/vivian_slot5_t164.25.jpg",
+              "sha256": "bf162de0b92609b7e2654cf5a630e17a27f155f653bbf70ae534be2c1d3dccf0"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "法厄同之歌",
+          "level": 15,
+          "mainStat": {
+            "name": "異常掌控",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 30.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "vivian_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 164.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/vivian_slot6_t164.75.jpg",
+              "sha256": "4fd594f5287735d717c769f50353575b3589a96330125afd7ffaa3fc8138b1fe"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "astra",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "靜聽嘉音",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "astra_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 5,
+          "evidence": [
+            {
+              "timestampSec": 168.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/astra_slot1_t168.75.jpg",
+              "sha256": "67d751c59e6cf8ff8d3e474b285725805df6a7487ff319838bb0c8e0665af8f7"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "靜聽嘉音",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 12.0,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": true
+            },
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "astra_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 169.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/astra_slot2_t169.25.jpg",
+              "sha256": "34a8560ca7218def3b8aaef087fc35976b3653349ef2dfe1c7833033ba8ff04a"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "靜聽嘉音",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 12.0,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": true
+            },
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "astra_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 170.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/astra_slot3_t170.25.jpg",
+              "sha256": "83430e81c3322f814fdef3651db9c9de5601499e44866ced6717315b2fbdb473"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "搖擺爵士",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "astra_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 171.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/astra_slot4_t171.25.jpg",
+              "sha256": "85015977e5d446c1c5db7087473568785b14766216704d0f6e5b2f14939895f4"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "靜聽嘉音",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 224.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 19.2,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": false
+            }
+          ],
+          "id": "astra_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 0,
+          "evidence": [
+            {
+              "timestampSec": 171.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/astra_slot5_t171.75.jpg",
+              "sha256": "51c282652d27b6d8a0b398cbf78dec433fce3573561ec2ea3ac0c59b8009e8cc"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "搖擺爵士",
+          "level": 15,
+          "mainStat": {
+            "name": "能量自動回復",
+            "value": 60.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 7.2,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 30.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "astra_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 172.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/astra_slot6_t172.75.jpg",
+              "sha256": "9859df654beeae32001000e777f60075bb9dab17fd3be8e9f93520c3517df09a"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "qingyi",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "震星迪斯可",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "異常精通",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 57.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "qingyi_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 180.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/qingyi_slot1_t180.25.jpg",
+              "sha256": "2b4730d2e463a0131cccf0291c21c8a081d15f075d7863eff5c5ef9349af8ed9"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "震星迪斯可",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 19.2,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": false
+            },
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            }
+          ],
+          "id": "qingyi_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 1,
+          "evidence": [
+            {
+              "timestampSec": 181.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/qingyi_slot2_t181.25.jpg",
+              "sha256": "3d2d6288d6498cab16c392ee0c4c7b46f19632dc4553fec96a478a8ee44e4772"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "雷暴重金屬",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "穿透值",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 14.4,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            }
+          ],
+          "id": "qingyi_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 182.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/qingyi_slot3_t182.25.jpg",
+              "sha256": "9969404fdde3dd3749ea6aa7eac266c1d3ec5cf683828d0bb40ca6e58138b19c"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "雷暴重金屬",
+          "level": 15,
+          "mainStat": {
+            "name": "暴擊率",
+            "value": 24.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 224.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 30.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "qingyi_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 0,
+          "evidence": [
+            {
+              "timestampSec": 182.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/qingyi_slot4_t182.75.jpg",
+              "sha256": "4b44e1d3635649c147a8922ad783fe42082230e1efa8bd88c6e09dff79df0661"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "震星迪斯可",
+          "level": 15,
+          "mainStat": {
+            "name": "電屬性傷害加成",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 14.4,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "qingyi_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 0,
+          "evidence": [
+            {
+              "timestampSec": 183.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/qingyi_slot5_t183.75.jpg",
+              "sha256": "8d0f26b6b6ce6c642d2013c3ce95c2b7683d26ff469a700e6f60e6dbc3495abb"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "震星迪斯可",
+          "level": 15,
+          "mainStat": {
+            "name": "衝擊力",
+            "value": 18.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 30.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 112.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "qingyi_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 184.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/qingyi_slot6_t184.75.jpg",
+              "sha256": "21bd69ca4afd34600226147588c8d2a7715513b8775c820a2bffccda47c7c2fe"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "zhu_yuan",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "混沌重金屬",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 14.4,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            }
+          ],
+          "id": "zhu_yuan_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 188.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/zhu_yuan_slot1_t188.25.jpg",
+              "sha256": "814dd06989ccc01bf7ef55f81b14a40c5a91e7f5afa1e006cc34c72841394ec9"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "折枝劍歌",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊率",
+              "value": 2.4,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 12.0,
+              "unit": "percent",
+              "enhancementCount": 3,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "zhu_yuan_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 6,
+          "evidence": [
+            {
+              "timestampSec": 189.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/zhu_yuan_slot2_t189.25.jpg",
+              "sha256": "d19560f3afc17870014e5b1b9d57eb226b8c74adaabf8d834efcb8ff9118e1bb"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "折枝劍歌",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊率",
+              "value": 7.2,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "zhu_yuan_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 4,
+          "evidence": [
+            {
+              "timestampSec": 189.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/zhu_yuan_slot3_t189.75.jpg",
+              "sha256": "cbe60b0480c64ca4e6fba13729b7231b430f7541acfa8e6ab293a913da2d98f2"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "混沌重金屬",
+          "level": 15,
+          "mainStat": {
+            "name": "暴擊率",
+            "value": 24.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "穿透值",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 336.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "zhu_yuan_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 1,
+          "evidence": [
+            {
+              "timestampSec": 190.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/zhu_yuan_slot4_t190.75.jpg",
+              "sha256": "b4f045d363533f2774c68ec17e2083d0d7dcd2ce5dc20ad8cc1ba1ce3e7d827d"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "混沌重金屬",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "暴擊傷害",
+              "value": 14.4,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 30.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 224.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "zhu_yuan_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 191.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/zhu_yuan_slot5_t191.75.jpg",
+              "sha256": "c488019830915de87a1e1c0714554198137865f2b17df860bbb1fd80418bd4f5"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "混沌重金屬",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "防禦力",
+              "value": 30.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "生命值",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 336.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "zhu_yuan_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 1,
+          "evidence": [
+            {
+              "timestampSec": 192.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/zhu_yuan_slot6_t192.25.jpg",
+              "sha256": "1d0713bafc6039391a7684373204d43b6f6f1b4fe602f4bd54c4ba9b85107ee8"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "id": "seth",
+      "driveDiscs": [
+        {
+          "slot": 1,
+          "setName": "激素龐克",
+          "level": 15,
+          "mainStat": {
+            "name": "生命值",
+            "value": 2200.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "攻擊力",
+              "value": 38.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "seth_slot_1",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 203.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/seth_slot1_t203.25.jpg",
+              "sha256": "50633dc71b000c6ce861c5644bc64d34d658c25789ba963e21801180be7fb2f8"
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "setName": "搖擺爵士",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 316.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 6.0,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 30.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "seth_slot_2",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 204.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/seth_slot2_t204.25.jpg",
+              "sha256": "9963f993c813e3ec0999f651f55bb296e48d3dd160d9f976436dd9232ca1e7c0"
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "setName": "搖擺爵士",
+          "level": 15,
+          "mainStat": {
+            "name": "防禦力",
+            "value": 184.0,
+            "unit": "flat"
+          },
+          "substats": [
+            {
+              "name": "攻擊力",
+              "value": 9.0,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "暴擊傷害",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            }
+          ],
+          "id": "seth_slot_3",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 3,
+          "evidence": [
+            {
+              "timestampSec": 205.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/seth_slot3_t205.25.jpg",
+              "sha256": "a058cd229dfc2cf6b9458d083fa00093dcb575d1eabc3fdfea1cc247e9916064"
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "setName": "激素龐克",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "暴擊率",
+              "value": 4.8,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 9.6,
+              "unit": "percent",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 9.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": true
+            },
+            {
+              "name": "穿透值",
+              "value": 27.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "seth_slot_4",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 1,
+          "evidence": [
+            {
+              "timestampSec": 205.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/seth_slot4_t205.75.jpg",
+              "sha256": "1b52d4a1f2d06dfb237276ffdbb85fd60e1ab36ec8c050b72ca1be1ad5cd33c3"
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "setName": "搖擺爵士",
+          "level": 15,
+          "mainStat": {
+            "name": "攻擊力",
+            "value": 30.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            },
+            {
+              "name": "防禦力",
+              "value": 30.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "攻擊力",
+              "value": 19.0,
+              "unit": "flat",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "防禦力",
+              "value": 14.4,
+              "unit": "percent",
+              "enhancementCount": 2,
+              "isEffective": false
+            }
+          ],
+          "id": "seth_slot_5",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 206.75,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/seth_slot5_t206.75.jpg",
+              "sha256": "dea997500561b5f4d2d01463113b03db039c384cc9b1c0fcbb50dc96ad0ddfc2"
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "setName": "搖擺爵士",
+          "level": 15,
+          "mainStat": {
+            "name": "能量自動回復",
+            "value": 60.0,
+            "unit": "percent"
+          },
+          "substats": [
+            {
+              "name": "生命值",
+              "value": 3.0,
+              "unit": "percent",
+              "enhancementCount": 0,
+              "isEffective": false
+            },
+            {
+              "name": "生命值",
+              "value": 336.0,
+              "unit": "flat",
+              "enhancementCount": 2,
+              "isEffective": false
+            },
+            {
+              "name": "穿透值",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": false
+            },
+            {
+              "name": "異常精通",
+              "value": 18.0,
+              "unit": "flat",
+              "enhancementCount": 1,
+              "isEffective": true
+            }
+          ],
+          "id": "seth_slot_6",
+          "rarity": "S",
+          "substatsComplete": true,
+          "effectiveRollCount": 2,
+          "evidence": [
+            {
+              "timestampSec": 207.25,
+              "timestampToleranceSec": 0.25,
+              "framePath": "evidence/zzz/discs_video_001/a/seth_slot6_t207.25.jpg",
+              "sha256": "05ddbdbac7c93b8e859b6e677b3f551f10e6ee84f9f721d87f621f217cf93eb2"
+            }
+          ]
+        }
+      ],
+      "uncertainties": []
+    }
+  ],
+  "coverage": {
+    "startSec": 0,
+    "endSec": 210,
+    "characters": 19,
+    "discs": 114,
+    "method": "每0.5秒擷取盤面，OCR後逐盤視覺核對數值、橘黃詞條及+強化次數，補取缺盤；正式證據保留完整畫面僅裁底部UID"
+  }
+}

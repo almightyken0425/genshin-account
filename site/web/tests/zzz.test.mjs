@@ -19,7 +19,7 @@ test('HOYO separates games, retains existing source and has no fabricated ZZZ fa
  const source=readFileSync(new URL('../lib/github.mjs',import.meta.url),'utf8');
  assert.match(source,/data\/account.json/);assert.match(source,/data\/zzz\/account.json/);
  const ui=readFileSync(new URL('../app/zzz_dashboard.tsx',import.meta.url),'utf8');
- assert.ok(!ui.includes('fixture'));assert.ok(!ui.includes('POST'));assert.ok(ui.includes('尚未確認'));
+ assert.ok(!ui.includes('fixture'));assert.ok(!ui.includes('POST'));assert.ok(readFileSync(new URL('../app/zzz_character_detail.tsx',import.meta.url),'utf8').includes('尚未確認'));
 });
 
 test('ZZZ account is read at a fixed GitHub head and does not write',async()=>{

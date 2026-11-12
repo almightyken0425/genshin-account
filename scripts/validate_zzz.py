@@ -19,7 +19,24 @@ def validate(account, root=ROOT, check_files=True):
         if cid in ids:
             errors.append(f'duplicate character: {cid}')
         ids.add(cid)
-        for evidence in character['evidence']:
+        if not set(character.get('statsEffective', {})) <= set(character.get('stats') or {}):
+            errors.append(f'{cid}: effective stat label not in observed stats')
+        evidence_records = list(character['evidence'])
+        disc_ids, slots = set(), set()
+        for disc in character.get('driveDiscs') or []:
+            if disc['id'] in disc_ids or disc['slot'] in slots:
+                errors.append(f'{cid}: duplicate drive disc ID or slot')
+            disc_ids.add(disc['id']); slots.add(disc['slot'])
+            substats = disc['substats']
+            names = [(s['name'], s['unit']) for s in substats if s['name'] is not None]
+            if len(names) != len(set(names)):
+                errors.append(f'{cid}: duplicate drive disc substat')
+            unknown = not disc['substatsComplete'] or any(s['isEffective'] is None or (s['isEffective'] and s['enhancementCount'] is None) for s in substats)
+            expected = None if unknown else sum(1 + s['enhancementCount'] for s in substats if s['isEffective'])
+            if disc['effectiveRollCount'] != expected:
+                errors.append(f'{cid}: effective roll count is inconsistent with observations')
+            evidence_records.extend(disc['evidence'])
+        for evidence in evidence_records:
             if evidence['timestampSec'] > duration:
                 errors.append(f'{cid}: timestamp exceeds source duration')
             path = root / evidence['framePath']

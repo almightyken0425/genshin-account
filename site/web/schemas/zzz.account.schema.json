@@ -176,8 +176,193 @@
               "array",
               "null"
             ],
+            "maxItems": 6,
             "items": {
-              "type": "object"
+              "type": "object",
+              "required": [
+                "id",
+                "slot",
+                "setName",
+                "rarity",
+                "level",
+                "mainStat",
+                "substats",
+                "effectiveRollCount",
+                "evidence",
+                "uncertainties",
+                "substatsComplete"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9_]+$"
+                },
+                "slot": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 6
+                },
+                "setName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "rarity": {
+                  "enum": [
+                    "S",
+                    "A",
+                    "B",
+                    null
+                  ]
+                },
+                "level": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 0,
+                  "maximum": 15
+                },
+                "mainStat": {
+                  "type": "object",
+                  "required": [
+                    "name",
+                    "value",
+                    "unit"
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "value": {
+                      "type": [
+                        "number",
+                        "null"
+                      ]
+                    },
+                    "unit": {
+                      "enum": [
+                        "flat",
+                        "percent",
+                        null
+                      ]
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "substats": {
+                  "type": "array",
+                  "maxItems": 4,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "name",
+                      "value",
+                      "unit",
+                      "isEffective",
+                      "enhancementCount"
+                    ],
+                    "properties": {
+                      "name": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "value": {
+                        "type": [
+                          "number",
+                          "null"
+                        ]
+                      },
+                      "unit": {
+                        "enum": [
+                          "flat",
+                          "percent",
+                          null
+                        ]
+                      },
+                      "isEffective": {
+                        "type": [
+                          "boolean",
+                          "null"
+                        ]
+                      },
+                      "enhancementCount": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ],
+                        "minimum": 0,
+                        "maximum": 5
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                },
+                "effectiveRollCount": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 0,
+                  "maximum": 9
+                },
+                "evidence": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "timestampSec",
+                      "framePath",
+                      "sha256"
+                    ],
+                    "properties": {
+                      "timestampSec": {
+                        "type": "number",
+                        "minimum": 0
+                      },
+                      "framePath": {
+                        "type": "string",
+                        "pattern": "^evidence/zzz/(?!.*\\.\\.)[a-zA-Z0-9_./-]+\\.(png|jpe?g)$"
+                      },
+                      "sha256": {
+                        "type": "string",
+                        "pattern": "^[0-9a-f]{64}$"
+                      },
+                      "page": {
+                        "type": "string"
+                      },
+                      "timestampToleranceSec": {
+                        "type": "number",
+                        "minimum": 0
+                      },
+                      "fields": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                },
+                "uncertainties": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "substatsComplete": {
+                  "type": "boolean"
+                }
+              },
+              "additionalProperties": false
             }
           },
           "evidence": {
@@ -245,6 +430,15 @@
               "string",
               "null"
             ]
+          },
+          "statsEffective": {
+            "type": "object",
+            "additionalProperties": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            }
           }
         },
         "additionalProperties": false

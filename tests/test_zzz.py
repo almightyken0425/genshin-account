@@ -17,4 +17,26 @@ class TestZzz(unittest.TestCase):
   a=copy.deepcopy(BASE);a['game']='genshin';self.assertTrue(m.validate(a,check_files=False))
  def test_evidence_required(self):
   a=copy.deepcopy(BASE);a['characters'][0]['evidence']=[];self.assertTrue(m.validate(a,check_files=False))
+
+ def disc_account(self):
+  a=copy.deepcopy(BASE)
+  a['characters'][0]['driveDiscs']=[{'id':'test_slot_1_video001','slot':1,'setName':'測試','rarity':'S','level':15,'mainStat':{'name':'生命值','value':2200,'unit':'flat'},'substats':[{'name':'攻擊力','value':9,'unit':'percent','isEffective':True,'enhancementCount':2},{'name':'防禦力','value':19,'unit':'flat','isEffective':False,'enhancementCount':0}],'substatsComplete':True,'effectiveRollCount':3,'evidence':copy.deepcopy(a['characters'][0]['evidence']),'uncertainties':[]}]
+  return a
+ def test_effective_rolls_observed(self): self.assertEqual(m.validate(self.disc_account(),check_files=False),[])
+ def test_wrong_effective_total(self):
+  a=self.disc_account();a['characters'][0]['driveDiscs'][0]['effectiveRollCount']=2;self.assertTrue(m.validate(a,check_files=False))
+ def test_unknown_roll_count_must_stay_unknown(self):
+  a=self.disc_account();d=a['characters'][0]['driveDiscs'][0];d['substats'][0]['enhancementCount']=None;d['effectiveRollCount']=None;self.assertEqual(m.validate(a,check_files=False),[])
+ def test_unknown_effectiveness_must_stay_unknown(self):
+  a=self.disc_account();d=a['characters'][0]['driveDiscs'][0];d['substats'][1]['isEffective']=None;self.assertTrue(m.validate(a,check_files=False));d['effectiveRollCount']=None;self.assertEqual(m.validate(a,check_files=False),[])
+ def test_incomplete_substats_total_unknown(self):
+  a=self.disc_account();d=a['characters'][0]['driveDiscs'][0];d['substatsComplete']=False;d['effectiveRollCount']=None;self.assertEqual(m.validate(a,check_files=False),[])
+ def test_duplicate_slot_rejected(self):
+  a=self.disc_account();a['characters'][0]['driveDiscs']*=2;self.assertTrue(m.validate(a,check_files=False))
+
+ def test_flat_and_percent_are_distinct(self):
+  a=self.disc_account();d=a['characters'][0]['driveDiscs'][0];d['substats'][1]['name']='攻擊力';self.assertEqual(m.validate(a,check_files=False),[])
+ def test_stats_effective_must_reference_observed_label(self):
+  a=copy.deepcopy(BASE);a['characters'][0]['statsEffective']={'不存在':True};self.assertTrue(m.validate(a,check_files=False))
+
 if __name__=='__main__': unittest.main()

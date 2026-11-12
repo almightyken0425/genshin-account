@@ -164,8 +164,8 @@
 .set-icons,.artifact-art{position:relative}
 .effective-badge{position:absolute;right:0;bottom:0;display:grid;place-items:center;min-width:26px;height:26px;padding:0 6px;border:1px solid #d9e4f1;border-radius:8px;background:#fff;color:#315e95;font-size:13px;font-weight:650;font-variant-numeric:tabular-nums;box-shadow:0 2px 8px #24395612}
 .substat-field{border:1px solid transparent;border-radius:10px;padding:10px 4px;min-width:0}
-.substat-field.is-effective{background:#eef5ff;border-color:#d5e4f8}
-.detail-centered .substat-field.is-effective .metric-label{color:#426b9c}
+.substat-field.is-effective,.summary-stats>.is-effective{background:#eef5ff;border-color:#d5e4f8}
+.detail-centered .substat-field.is-effective .metric-label,.summary-stats>.is-effective .metric-label{color:#426b9c}
 .substat-heading{display:flex;align-items:center;justify-content:center;gap:5px;max-width:100%}
 .substat-heading .metric-label{min-width:0}
 .roll-count{color:#8392a5;font-size:11px;font-weight:600;font-variant-numeric:tabular-nums}
@@ -176,3 +176,5 @@
  .substat-field{padding:8px 2px}
  .detail-centered .substat-heading .metric-label{font-size:9px}
 }
+
+.summary-stats>.is-effective{border-radius:10px;padding-block:8px;margin-block:-8px}

@@ -1,0 +1,4 @@
+export type ZzzStat={name:string|null,value:number|null,unit:'flat'|'percent'|null};
+export type ZzzSubstat=ZzzStat&{isEffective:boolean|null,enhancementCount:number|null};
+export type DriveDisc={id:string,slot:number,setName:string|null,rarity:string|null,level:number|null,mainStat:ZzzStat|null,substatsComplete:boolean,substats:ZzzSubstat[],effectiveRollCount:number|null,uncertainties?:string[]};
+export type ZzzAgent={id:string,name:string,element?:string|null,specialty?:string|null,level:number|null,mindscape:number|null,stats:Record<string,string|number|null>|null,statsEffective?:Record<string,boolean|null>,skills:Record<string,string|number|null>|null,wEngine:{name:string|null,level:number|null,refinement:number|null,rarity:string|null,stats:Record<string,string|number|null>|null}|null,driveDiscs:DriveDisc[]|null,portraitPath?:string,evidence:{timestampSec:number,timestampToleranceSec?:number,framePath?:string}[],uncertainties?:string[]};
