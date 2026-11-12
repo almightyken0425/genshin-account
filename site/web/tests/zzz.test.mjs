@@ -37,3 +37,11 @@ test('portrait uses the account revision and verifies its content',async()=>{
  const result=await client.zzzImage(character.id,revision);assert.deepEqual(result.bytes,image);assert.equal(calls.length,2);assert.ok(calls.every(url=>!url.includes('/commits/')));
  await assert.rejects(()=>client.zzzImage(character.id,'main'));
 });
+
+test('observation notes use natural wording without changing source evidence',async()=>{
+ const {zzzNote}=await import('../lib/zzz_notes.mjs');
+ assert.equal(zzzNote('音擎未確認者為 null'),'音擎尚未確認');
+ assert.equal(zzzNote('技能與驅動盤尚未完整逐項轉錄'),'技能與驅動盤尚未完整核對');
+ assert.equal(zzzNote('驅動盤逐片主副詞條尚未完整抽取'),'驅動盤主副詞條尚未完整核對');
+ assert.equal(zzzNote('驅動盤尚未逐片完整核對'),'驅動盤尚未逐片完整核對');
+});
