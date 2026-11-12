@@ -5,329 +5,423 @@
       "gameId": 10000112,
       "icon": "/assets/characters/escoffier_icon.png",
       "splash": "/assets/characters/escoffier_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/escoffier_roster_source.png",
+      "roster": "/assets/characters/escoffier_roster.webp"
     },
     "furina": {
       "name": "芙寧娜",
       "gameId": 10000089,
       "icon": "/assets/characters/furina_icon.png",
       "splash": "/assets/characters/furina_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/furina_roster_source.png",
+      "roster": "/assets/characters/furina_roster.webp"
     },
     "voyanitsa": {
       "name": "沃雅妮莎",
       "gameId": 10000140,
       "icon": "/assets/characters/vodyanitsa_icon.png",
       "splash": "/assets/characters/vodyanitsa_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/vodyanitsa_splash.png",
+      "roster": "/assets/characters/voyanitsa_roster.webp"
     },
     "skirk": {
       "name": "絲柯克",
       "gameId": 10000114,
       "icon": "/assets/characters/skirk_icon.png",
       "splash": "/assets/characters/skirk_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/skirk_splash.png",
+      "roster": "/assets/characters/skirk_roster.webp"
     },
     "chasca": {
       "name": "恰斯卡",
       "gameId": 10000104,
       "icon": "/assets/characters/chasca_icon.png",
       "splash": "/assets/characters/chasca_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/chasca_splash.png",
+      "roster": "/assets/characters/chasca_roster.webp"
     },
     "linnea": {
       "name": "莉奈婭",
       "gameId": 10000130,
       "icon": "/assets/characters/linnea_icon.png",
       "splash": "/assets/characters/linnea_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/linnea_splash.png",
+      "roster": "/assets/characters/linnea_roster.webp"
     },
     "zibai": {
       "name": "茲白",
       "gameId": 10000126,
       "icon": "/assets/characters/zibai_icon.png",
       "splash": "/assets/characters/zibai_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/zibai_splash.png",
+      "roster": "/assets/characters/zibai_roster.webp"
     },
     "xilonen": {
       "name": "希諾寧",
       "gameId": 10000103,
       "icon": "/assets/characters/xilonen_icon.png",
       "splash": "/assets/characters/xilonen_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/xilonen_splash.png",
+      "roster": "/assets/characters/xilonen_roster.webp"
     },
     "zhongli": {
       "name": "鍾離",
       "gameId": 10000030,
       "icon": "/assets/characters/zhongli_icon.png",
       "splash": "/assets/characters/zhongli_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/zhongli_splash.png",
+      "roster": "/assets/characters/zhongli_roster.webp"
     },
     "yumemizukimizuki": {
       "name": "夢見月瑞希",
       "gameId": 10000109,
       "icon": "/assets/characters/yumemizukimizuki_icon.png",
       "splash": "/assets/characters/yumemizukimizuki_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/yumemizukimizuki_splash.png",
+      "roster": "/assets/characters/yumemizukimizuki_roster.webp"
     },
     "kaedeharakazuha": {
       "name": "楓原萬葉",
       "gameId": 10000047,
       "icon": "/assets/characters/kaedeharakazuha_icon.png",
       "splash": "/assets/characters/kaedeharakazuha_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/kaedeharakazuha_roster_source.png",
+      "roster": "/assets/characters/kaedeharakazuha_roster.webp"
     },
     "jean": {
       "name": "琴",
       "gameId": 10000003,
       "icon": "/assets/characters/jean_icon.png",
       "splash": "/assets/characters/jean_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/jean_splash.png",
+      "roster": "/assets/characters/jean_roster.webp"
     },
     "odetta": {
       "name": "奧黛塔",
       "gameId": 10000150,
       "icon": "/assets/characters/odetta_icon.png",
       "splash": "/assets/characters/odetta_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/odetta_splash.png",
+      "roster": "/assets/characters/odetta_roster.webp"
     },
     "citlali": {
       "name": "茜特菈莉",
       "gameId": 10000107,
       "icon": "/assets/characters/citlali_icon.png",
       "splash": "/assets/characters/citlali_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/citlali_splash.png",
+      "roster": "/assets/characters/citlali_roster.webp"
     },
     "varesa": {
       "name": "瓦雷莎",
       "gameId": 10000111,
       "icon": "/assets/characters/varesa_icon.png",
       "splash": "/assets/characters/varesa_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/varesa_splash.png",
+      "roster": "/assets/characters/varesa_roster.webp"
     },
     "raidenshogun": {
       "name": "雷電將軍",
       "gameId": 10000052,
       "icon": "/assets/characters/raidenshogun_icon.png",
       "splash": "/assets/characters/raidenshogun_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/raidenshogun_splash.png",
+      "roster": "/assets/characters/raidenshogun_roster.webp"
     },
     "keqing": {
       "name": "刻晴",
       "gameId": 10000042,
       "icon": "/assets/characters/keqing_icon.png",
       "splash": "/assets/characters/keqing_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/keqing_splash.png",
+      "roster": "/assets/characters/keqing_roster.webp"
     },
     "nefer": {
       "name": "奈芙爾",
       "gameId": 10000122,
       "icon": "/assets/characters/nefer_icon.png",
       "splash": "/assets/characters/nefer_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/nefer_splash.png",
+      "roster": "/assets/characters/nefer_roster.webp"
     },
     "lauma": {
       "name": "菈烏瑪",
       "gameId": 10000119,
       "icon": "/assets/characters/lauma_icon.png",
       "splash": "/assets/characters/lauma_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/lauma_splash.png",
+      "roster": "/assets/characters/lauma_roster.webp"
     },
     "nahida": {
       "name": "納西妲",
       "gameId": 10000073,
       "icon": "/assets/characters/nahida_icon.png",
       "splash": "/assets/characters/nahida_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/nahida_splash.png",
+      "roster": "/assets/characters/nahida_roster.webp"
     },
     "columbina": {
       "name": "哥倫比婭",
       "gameId": 10000125,
       "icon": "/assets/characters/columbina_icon.png",
       "splash": "/assets/characters/columbina_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/columbina_splash.png",
+      "roster": "/assets/characters/columbina_roster.webp"
     },
     "neuvillette": {
       "name": "那維萊特",
       "gameId": 10000087,
       "icon": "/assets/characters/neuvillette_icon.png",
       "splash": "/assets/characters/neuvillette_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/neuvillette_splash.png",
+      "roster": "/assets/characters/neuvillette_roster.webp"
     },
     "yelan": {
       "name": "夜蘭",
       "gameId": 10000060,
       "icon": "/assets/characters/yelan_icon.png",
       "splash": "/assets/characters/yelan_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/yelan_splash.png",
+      "roster": "/assets/characters/yelan_roster.webp"
     },
     "mavuika": {
       "name": "瑪薇卡",
       "gameId": 10000106,
       "icon": "/assets/characters/mavuika_icon.png",
       "splash": "/assets/characters/mavuika_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/mavuika_splash.png",
+      "roster": "/assets/characters/mavuika_roster.webp"
     },
     "illuga": {
       "name": "葉洛亞",
       "gameId": 10000127,
       "icon": "/assets/characters/illuga_icon.png",
       "splash": "/assets/characters/illuga_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/illuga_splash.png",
+      "roster": "/assets/characters/illuga_roster.webp"
     },
     "charlotte": {
       "name": "夏洛蒂",
       "gameId": 10000088,
       "icon": "/assets/characters/charlotte_icon.png",
       "splash": "/assets/characters/charlotte_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/charlotte_splash.png",
+      "roster": "/assets/characters/charlotte_roster.webp"
     },
     "arosha": {
       "name": "阿羅夏",
       "gameId": 10000148,
       "icon": "/assets/characters/arosha_icon.png",
       "splash": "/assets/characters/arosha_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/arosha_splash.png",
+      "roster": "/assets/characters/arosha_roster.webp"
     },
     "iansan": {
       "name": "伊安珊",
       "gameId": 10000110,
       "icon": "/assets/characters/iansan_icon.png",
       "splash": "/assets/characters/iansan_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/iansan_splash.png",
+      "roster": "/assets/characters/iansan_roster.webp"
     },
     "ororon": {
       "name": "歐洛倫",
       "gameId": 10000105,
       "icon": "/assets/characters/ororon_icon.png",
       "splash": "/assets/characters/ororon_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/ororon_splash.png",
+      "roster": "/assets/characters/ororon_roster.webp"
     },
     "kukishinobu": {
       "name": "久岐忍",
       "gameId": 10000065,
       "icon": "/assets/characters/kukishinobu_icon.png",
       "splash": "/assets/characters/kukishinobu_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/kukishinobu_splash.png",
+      "roster": "/assets/characters/kukishinobu_roster.webp"
     },
     "fischl": {
       "name": "菲謝爾",
       "gameId": 10000031,
       "icon": "/assets/characters/fischl_icon.png",
       "splash": "/assets/characters/fischl_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/fischl_splash.png",
+      "roster": "/assets/characters/fischl_roster.webp"
     },
     "aino": {
       "name": "愛諾",
       "gameId": 10000121,
       "icon": "/assets/characters/aino_icon.png",
       "splash": "/assets/characters/aino_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/aino_splash.png",
+      "roster": "/assets/characters/aino_roster.webp"
     },
     "xingqiu": {
       "name": "行秋",
       "gameId": 10000025,
       "icon": "/assets/characters/xingqiu_icon.png",
       "splash": "/assets/characters/xingqiu_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/xingqiu_splash.png",
+      "roster": "/assets/characters/xingqiu_roster.webp"
     },
     "bennett": {
       "name": "班尼特",
       "gameId": 10000032,
       "icon": "/assets/characters/bennett_icon.png",
       "splash": "/assets/characters/bennett_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/bennett_splash.png",
+      "roster": "/assets/characters/bennett_roster.webp"
     },
     "xiangling": {
       "name": "香菱",
       "gameId": 10000023,
       "icon": "/assets/characters/xiangling_icon.png",
       "splash": "/assets/characters/xiangling_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/xiangling_splash.png",
+      "roster": "/assets/characters/xiangling_roster.webp"
     },
     "mona": {
       "name": "莫娜",
       "gameId": 10000041,
       "icon": "/assets/characters/mona_icon.png",
       "splash": "/assets/characters/mona_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/mona_splash.png",
+      "roster": "/assets/characters/mona_roster.webp"
     },
     "noelle": {
       "name": "諾艾爾",
       "gameId": 10000034,
       "icon": "/assets/characters/noelle_icon.png",
       "splash": "/assets/characters/noelle_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/noelle_splash.png",
+      "roster": "/assets/characters/noelle_roster.webp"
     },
     "ningguang": {
       "name": "凝光",
       "gameId": 10000027,
       "icon": "/assets/characters/ningguang_icon.png",
       "splash": "/assets/characters/ningguang_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/ningguang_splash.png",
+      "roster": "/assets/characters/ningguang_roster.webp"
     },
     "faruzan": {
       "name": "琺露珊",
       "gameId": 10000076,
       "icon": "/assets/characters/faruzan_icon.png",
       "splash": "/assets/characters/faruzan_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/faruzan_splash.png",
+      "roster": "/assets/characters/faruzan_roster.webp"
     },
     "sucrose": {
       "name": "砂糖",
       "gameId": 10000043,
       "icon": "/assets/characters/sucrose_icon.png",
       "splash": "/assets/characters/sucrose_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/sucrose_splash.png",
+      "roster": "/assets/characters/sucrose_roster.webp"
     },
     "layla": {
       "name": "萊依拉",
       "gameId": 10000074,
       "icon": "/assets/characters/layla_icon.png",
       "splash": "/assets/characters/layla_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/layla_splash.png",
+      "roster": "/assets/characters/layla_roster.webp"
     },
     "diona": {
       "name": "迪奧娜",
       "gameId": 10000039,
       "icon": "/assets/characters/diona_icon.png",
       "splash": "/assets/characters/diona_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/diona_splash.png",
+      "roster": "/assets/characters/diona_roster.webp"
     },
     "kaeya": {
       "name": "凱亞",
       "gameId": 10000015,
       "icon": "/assets/characters/kaeya_icon.png",
       "splash": "/assets/characters/kaeya_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/kaeya_roster_source.png",
+      "roster": "/assets/characters/kaeya_roster.webp"
     },
     "collei": {
       "name": "柯萊",
       "gameId": 10000067,
       "icon": "/assets/characters/collei_icon.png",
       "splash": "/assets/characters/collei_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/collei_splash.png",
+      "roster": "/assets/characters/collei_roster.webp"
     },
     "barbara": {
       "name": "芭芭拉",
       "gameId": 10000014,
       "icon": "/assets/characters/barbara_icon.png",
       "splash": "/assets/characters/barbara_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/barbara_splash.png",
+      "roster": "/assets/characters/barbara_roster.webp"
     },
     "chevreuse": {
       "name": "夏沃蕾",
       "gameId": 10000090,
       "icon": "/assets/characters/chevreuse_icon.png",
       "splash": "/assets/characters/chevreuse_splash.png",
-      "rarity": 4
+      "rarity": 4,
+      "rosterSource": "/assets/characters/chevreuse_splash.png",
+      "roster": "/assets/characters/chevreuse_roster.webp"
     },
     "traveler_cryo": {
       "name": "旅行者・冰",
       "gameId": 10000007,
       "icon": "/assets/characters/traveler_cryo_icon.png",
       "splash": "/assets/characters/traveler_cryo_splash.png",
-      "rarity": 5
+      "rarity": 5,
+      "rosterSource": "/assets/characters/traveler_cryo_roster_source.png",
+      "roster": "/assets/characters/traveler_cryo_roster.webp"
     }
   },
   "weapons": {

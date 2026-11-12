@@ -3,15 +3,20 @@ import {useState,useEffect,useRef} from 'react';
 import { BookOpen, Search, RefreshCw, X, AlertTriangle, Sword, Flower2, LoaderCircle, Tags, Shapes, ChevronDown, ArrowLeft, UsersRound, Sprout } from 'lucide-react';
 import type {AccountResult,Stat} from '@/lib/types';
 import {characterImage,characterRarity,weaponImage,artifactImage} from '@/lib/game_assets';
-import GameImage from './game_image';
-import MetricLabel,{MetricDisplayContext} from './metric_label';
+import MediaImage from '@/components/media/media_image';
+import CharacterCard from '@/components/character/character_card';
+import NavigationDock from '@/components/navigation/navigation_dock';
+import PortraitSummary from '@/components/character/portrait_summary';
+import MetricValue from '@/components/metrics/metric_value';
+import MetricLabel,{MetricDisplayContext} from '@/components/metrics/metric_label';
 import {artifactSummary} from '@/lib/artifact_summary.mjs';
 import {effectiveSubstatCount,effectiveLoadoutCount,substatRoll} from '@/lib/artifact_rolls.mjs';
-import ArtifactSubstat,{EffectiveBadge} from './artifact_substat';
+import ArtifactSubstat,{EffectiveBadge} from '@/components/equipment/artifact_substat';
+import EquipmentTile from '@/components/equipment/equipment_tile';
 import RosterControls from './roster_controls';
 import {selectedTeams} from '@/lib/selected_teams';
 import TeamFlow from './team_flow';
-import CenteredHeader from './centered_header';
+import CenteredHeader from '@/components/navigation/centered_header';
 import GrowthTarget from './growth_target';
 import SkirkFlow from './skirk_flow';
 import {selectRoster} from '@/lib/roster_view.mjs';
@@ -22,27 +27,12 @@ const labels:Record<string,string>={hp:'生命值',atk:'攻擊力',def:'防禦�
 const fmt=(n:number|null|undefined)=>n==null?'未知':n.toLocaleString('zh-TW',{maximumFractionDigits:2});
 const show=(s:Stat)=>fmt(s.value)+(s.value!==null&&s.unit==='percent'?'%':'');
 function Numeric({label,value}:{label:string,value:number|null}){
- return <div className="field" title={label}><MetricLabel label={label}/><strong>{fmt(value)}{label.endsWith('(%)')?'%':''}</strong></div>
+ return <MetricValue label={label} value={<>{fmt(value)}{label.endsWith('(%)')?'%':''}</>}/>;
 }
-export default function Dashboard({initialCharacter=''}:{initialCharacter?:string}){
+export default function Dashboard({initialCharacter='',gameControl}:{initialCharacter?:string,gameControl?:React.ReactNode}){
  const [data,setData]=useState<AccountResult|null>(null),[selected,setSelected]=useState(initialCharacter),[query,setQuery]=useState(''),[filters,setFilters]=useState<RosterFilters>({rarities:[],weapons:[],elements:[]}),[sorts,setSorts]=useState<SortRule[]>([]),[fullLabels,setFullLabels]=useState(false),[expanded,setExpanded]=useState<'weapon'|'artifacts'|null>(null),[section,setSection]=useState('roster'),[selectedTeam,setSelectedTeam]=useState('');
  const [busy,setBusy]=useState(true),[error,setError]=useState<{code:string,message:string}|null>(null);
  const [headerCollapsed,setHeaderCollapsed]=useState(false);
- const [navScrolling,setNavScrolling]=useState(false);
- const footerRef=useRef<HTMLElement>(null);
- useEffect(()=>{
-  let idle:ReturnType<typeof setTimeout>|undefined;
-  const show=()=>{clearTimeout(idle);setNavScrolling(false)};
-  const onScroll=()=>{
-   clearTimeout(idle);
-   if(footerRef.current?.contains(document.activeElement)){setNavScrolling(false);return}
-   setNavScrolling(true);idle=setTimeout(()=>setNavScrolling(false),180);
-  };
-  const onVisibility=()=>{if(document.visibilityState!=='visible')show()};
-  window.addEventListener('scroll',onScroll,{passive:true});
-  document.addEventListener('visibilitychange',onVisibility);
-  return()=>{clearTimeout(idle);window.removeEventListener('scroll',onScroll);document.removeEventListener('visibilitychange',onVisibility)};
- },[]);
  useEffect(()=>{
   setHeaderCollapsed(false);
   if(!selected||section!=='roster')return;
@@ -124,12 +114,12 @@ export default function Dashboard({initialCharacter=''}:{initialCharacter?:strin
  const visible=selectRoster(a?.characters||[],{filters,sorts,query,effectiveTotals,rarities});
  const feedback=error&&<div className="message error" role="alert"><AlertTriangle size={18}/><div><strong>{error.code==='signin_required'?'請先登入':'目前無法讀取資料'}</strong><p>{error.message}{data?' 目前畫面保留上次讀取資料。':''}</p>{error.code==='signin_required'&&<a href="/signin-with-chatgpt?return_to=%2F" target="_top">使用 ChatGPT 登入</a>}</div><button className="icon-button" onClick={refresh} disabled={busy} aria-label="重新讀取"><RefreshCw size={17} className={busy?'spin':''}/></button></div>;
  return <MetricDisplayContext value={fullLabels}><div className="app-shell">
-  <main className="main">
+  <main className="main hoyo-main">
    {feedback}
-   {section==='teams'?<section className="teams-page" aria-label="隊伍">{team?<><CenteredHeader title={team.name} onBack={()=>switchTab('teams')} backLabel="返回隊伍列表"/><div className="team-detail-members">{team.members.map(id=>{const character=a?.characters.find(c=>c.id===id);return <button key={id} onClick={()=>openCharacter(id)} aria-label={'查看'+(character?.name||id)+'角色詳情'}><GameImage src={characterImage(id,'icon')} alt=""/></button>})}</div><section className="team-guide" aria-label="隊伍循環">{team.id==='skirk'?<SkirkFlow/>:<TeamFlow id={team.id}/>}</section></>:<div className="teams-grid">{selectedTeams.map(team=><button className="team-card team-image-card" key={team.id} onClick={()=>openTeam(team.id)} aria-label={'查看'+team.name+'操作手法：'+team.members.map(id=>a?.characters.find(c=>c.id===id)?.name||id).join('、')}><div className="team-members">{team.members.map(id=><GameImage key={id} src={characterImage(id,'icon')} alt=""/>)}</div></button>)}</div>}</section>
+   {section==='teams'?<section className="teams-page" aria-label="隊伍">{team?<><CenteredHeader title={team.name} onBack={()=>switchTab('teams')} backLabel="返回隊伍列表"/><div className="team-detail-members">{team.members.map(id=>{const character=a?.characters.find(c=>c.id===id);return <button key={id} onClick={()=>openCharacter(id)} aria-label={'查看'+(character?.name||id)+'角色詳情'}><MediaImage src={characterImage(id,'icon')} alt=""/></button>})}</div><section className="team-guide" aria-label="隊伍循環">{team.id==='skirk'?<SkirkFlow/>:<TeamFlow id={team.id}/>}</section></>:<div className="teams-grid">{selectedTeams.map(team=><button className="team-card team-image-card" key={team.id} onClick={()=>openTeam(team.id)} aria-label={'查看'+team.name+'操作手法：'+team.members.map(id=>a?.characters.find(c=>c.id===id)?.name||id).join('、')}><div className="team-members">{team.members.map(id=><MediaImage key={id} src={characterImage(id,'icon')} alt=""/>)}</div></button>)}</div>}</section>
    :section==='growth'?<section className="teams-page" aria-label="培養重點"><GrowthTarget/></section>
    :!selected?<section className="roster" aria-label="角色列表"><RosterControls characters={a?.characters||[]} rarities={rarities} filters={filters} onFilters={setFilters} sorts={sorts} onSorts={setSorts}/><div className="roster-search"><label className="search"><Search size={17}/><input ref={searchRef} placeholder="搜尋角色名稱" aria-label="搜尋角色名稱" value={query} onChange={e=>setQuery(e.target.value)}/>{query&&<button aria-label="清除搜尋" onClick={()=>setQuery('')}><X size={13}/></button>}</label></div>
-    <div className="character-list">{!a?(busy?<div className="empty small"><LoaderCircle className="spin"/><p>正在讀取角色紀錄…</p></div>:<div className="empty small"><BookOpen/><p>連接 GitHub 後<br/>角色會顯示在這裡</p></div>):visible.length===0?<div className="empty small"><Search/><p>找不到符合條件的角色</p><button className="text-button" onClick={()=>{setQuery('');setFilters({rarities:[],weapons:[],elements:[]})}}>清除篩選</button></div>:visible.map(x=><button className="character-card" key={x.id} ref={el=>{if(el)cardRefs.current.set(x.id,el);else cardRefs.current.delete(x.id)}} onClick={()=>openCharacter(x.id)} aria-label={'查看'+x.name+'的角色詳情，角色等級 '+fmt(x.level.current)+'，命之座 '+fmt(x.constellation)+'，有效詞條總數 '+fmt(effectiveTotals[x.id])}><div className="character-emblem"><GameImage src={characterImage(x.id,'icon')} alt="" eager/></div><span className="character-card-stats" aria-hidden="true"><span title="角色等級">{x.level.current??'—'}</span><span title="命之座">{x.constellation??'—'}</span><span title="有效詞條總數">{effectiveTotals[x.id]??'—'}</span></span></button>)}</div></section>
+    <div className="character-list">{!a?(busy?<div className="empty small"><LoaderCircle className="spin"/><p>正在讀取角色紀錄…</p></div>:<div className="empty small"><BookOpen/><p>連接 GitHub 後<br/>角色會顯示在這裡</p></div>):visible.length===0?<div className="empty small"><Search/><p>找不到符合條件的角色</p><button className="text-button" onClick={()=>{setQuery('');setFilters({rarities:[],weapons:[],elements:[]})}}>清除篩選</button></div>:visible.map((x,index)=><CharacterCard key={x.id} name={x.name} ref={el=>{if(el)cardRefs.current.set(x.id,el);else cardRefs.current.delete(x.id)}} onClick={()=>openCharacter(x.id)} aria-label={'查看'+x.name+'的角色詳情，角色等級 '+fmt(x.level.current)+'，命之座 '+fmt(x.constellation)+'，有效詞條總數 '+fmt(effectiveTotals[x.id])} image={{src:characterImage(x.id,'roster'),alt:'',eager:index<4}} metrics={[{label:'角色等級',value:x.level.current},{label:'命之座',value:x.constellation},{label:'有效詞條總數',value:effectiveTotals[x.id]??null}]}/>)}</div></section>
    :<section className="detail detail-centered" aria-label="角色詳細資料">
     <header className={'detail-header '+(headerCollapsed?'is-collapsed':'')} onFocusCapture={()=>setHeaderCollapsed(false)}>
      <div className="character-heading"><button className="icon-button detail-back" onClick={returnToList} aria-label="返回上一頁" title="返回上一頁"><ArrowLeft size={20}/></button><h2 ref={headingRef} tabIndex={-1}>{c?.name||(busy?'讀取中':'角色詳情')}</h2></div>
@@ -138,24 +128,19 @@ export default function Dashboard({initialCharacter=''}:{initialCharacter?:strin
     {c&&a&&data?<>
      <fieldset key={c.id} className="detail-fieldset">
       <section className="character-summary" aria-label="角色與配裝">
-       <div className={'portrait-stage '+c.element+(c.id==='traveler_cryo'?' portrait-icon':'')}>
-        <GameImage src={characterImage(c.id,'splash')} alt={c.name+'公開角色立繪'} eager/>
-        <MetricDisplayContext value={false}><div className="portrait-basics"><Numeric label="角色等級" value={c.level.current}/><Numeric label="命之座" value={c.constellation}/><div className="field" title="有效詞條總數"><MetricLabel label="有效詞條總數"/><strong>{effectiveTotal??'—'}</strong></div></div></MetricDisplayContext>
-       </div>
+       <PortraitSummary image={{src:characterImage(c.id,'splash'),alt:c.name+'角色圖片',eager:true}} metrics={[{label:'角色等級',value:c.level.current},{label:'命之座',value:c.constellation},{label:'有效詞條總數',value:effectiveTotal}]}/>
        <div className="loadout-overview" aria-label="武器與聖遺物">
-        <button className={'equipment-tile '+(expanded==='weapon'?'expanded':'')} aria-label={'展開武器詳情：'+(w?.name||'未裝備')} aria-expanded={expanded==='weapon'} aria-controls="weapon-details" onClick={()=>setExpanded(previous=>previous==='weapon'?null:'weapon')}>
-         <span className="equipment-art">{w?<GameImage src={weaponImage(w.name)} alt={w.name}/>:<Sword size={44}/>}</span>
-         <ChevronDown className="expand-chevron" size={16}/>
-        </button>
-        <button className={'equipment-tile '+(expanded==='artifacts'?'expanded':'')} aria-label={'展開聖遺物詳情：'+(artifactOverview.groups.map(group=>group.name+' '+group.count+' 件').join('、')||'未裝備')} aria-expanded={expanded==='artifacts'} aria-controls="artifact-details" onClick={()=>setExpanded(previous=>previous==='artifacts'?null:'artifacts')}>
-         <span className="set-icons">{artifactOverview.sets.length?artifactOverview.sets.map(group=><span className="set-art" key={group.name} title={group.name+' · '+group.count+' 件'}>{artifactImage(group.name,'flower')?<GameImage src={artifactImage(group.name,'flower')} alt={group.name}/>:<Flower2 size={44}/>}</span>):<span className="set-art" title={artifactOverview.total?'散搭':'未裝備'}><Flower2 size={44}/></span>}</span>
-         <ChevronDown className="expand-chevron" size={16}/>
-        </button>
+        <EquipmentTile label="武器" aria-label={'展開武器詳情：'+(w?.name||'未裝備')} aria-expanded={expanded==='weapon'} aria-controls="weapon-details" onClick={()=>setExpanded(previous=>previous==='weapon'?null:'weapon')}>
+         <span className="equipment-art">{w?<MediaImage src={weaponImage(w.name)} alt={w.name}/>:<Sword size={44}/>}</span>
+        </EquipmentTile>
+        <EquipmentTile label="聖遺物" aria-label={'展開聖遺物詳情：'+(artifactOverview.groups.map(group=>group.name+' '+group.count+' 件').join('、')||'未裝備')} aria-expanded={expanded==='artifacts'} aria-controls="artifact-details" onClick={()=>setExpanded(previous=>previous==='artifacts'?null:'artifacts')}>
+         <span className="set-icons">{artifactOverview.sets.length?artifactOverview.sets.map(group=><span className="set-art" key={group.name} title={group.name+' · '+group.count+' 件'}>{artifactImage(group.name,'flower')?<MediaImage src={artifactImage(group.name,'flower')} alt={group.name}/>:<Flower2 size={44}/>}</span>):<span className="set-art" title={artifactOverview.total?'散搭':'未裝備'}><Flower2 size={44}/></span>}</span>
+        </EquipmentTile>
        </div>
       </section>
       <section className="loadout" aria-label="配裝詳情">
-       {expanded==='weapon'&&<div className="equipment-disclosure" key="weapon"><div className="equipment-clip"><div className="equipment-expanded" id="weapon-details" aria-label="武器詳情"><div className="expanded-weapon"><div className="equipment-identity"><div className="expanded-art"><GameImage src={w?weaponImage(w.name):undefined} alt={w?.name||'未裝備武器'}/></div><div className="item-kicker">裝備武器</div>{fullLabels?<h3>{w?.name||'未裝備武器'}</h3>:null}{fullLabels&&w&&<div className="item-stars">{'★'.repeat(w.rarity||0)}</div>}</div><div className="weapon-content">{w&&<div className="item-fields"><Numeric label="武器等級" value={w.level.current}/><Numeric label="精煉階數" value={w.refinement}/><Numeric label="基礎攻擊力" value={w.base_atk}/>{w.secondary_stat&&<Numeric label={(labels[w.secondary_stat.key]||w.secondary_stat.key)+(w.secondary_stat.unit==='percent'?' (%)':'')} value={w.secondary_stat.value}/>}</div>}</div></div></div></div></div>}
-       {expanded==='artifacts'&&<div className="equipment-disclosure" key="artifacts"><div className="equipment-clip"><div className="equipment-expanded" id="artifact-details" aria-label="聖遺物詳情"><div className="artifact-details-grid">{Object.entries(slots).map(([slot,label])=>{const x=a.artifacts.find(x=>x.id===e?.artifacts[slot]);return <article className="artifact-details" key={slot}><div className="artifact-identity"><div className="artifact-art"><GameImage src={x?artifactImage(x.set_name,slot):undefined} alt={x?.name||label}/><EffectiveBadge count={effectiveSubstatCount(x,c.id)}/></div>{fullLabels&&<div className="artifact-ident"><div><span className="slot-label">{label}</span><h4>{x?.name||'未裝備'}</h4>{x&&<p>{x.set_name}</p>}</div></div>}</div><div className="artifact-values">{x&&<><div className="artifact-primary"><Numeric label="強化等級" value={x.level}/><Numeric label={(labels[x.main_stat.key]||x.main_stat.key)+(x.main_stat.unit==='percent'?' (%)':'')} value={x.main_stat.value}/></div><div className="artifact-substats">{x.substats.map((s,i)=><ArtifactSubstat key={i} stat={s} label={(labels[s.key]||s.key)+(s.unit==='percent'?' (%)':'')} roll={substatRoll(x,s.key,c.id)}/>)}</div></>}</div></article>})}</div></div></div></div>}
+       {expanded==='weapon'&&<div className="equipment-disclosure" key="weapon"><div className="equipment-clip"><div className="equipment-expanded" id="weapon-details" aria-label="武器詳情"><div className="expanded-weapon"><div className="equipment-identity"><div className="expanded-art"><MediaImage src={w?weaponImage(w.name):undefined} alt={w?.name||'未裝備武器'}/></div><div className="item-kicker">裝備武器</div>{fullLabels?<h3>{w?.name||'未裝備武器'}</h3>:null}{fullLabels&&w&&<div className="item-stars">{'★'.repeat(w.rarity||0)}</div>}</div><div className="weapon-content">{w&&<div className="item-fields"><Numeric label="武器等級" value={w.level.current}/><Numeric label="精煉階數" value={w.refinement}/><Numeric label="基礎攻擊力" value={w.base_atk}/>{w.secondary_stat&&<Numeric label={(labels[w.secondary_stat.key]||w.secondary_stat.key)+(w.secondary_stat.unit==='percent'?' (%)':'')} value={w.secondary_stat.value}/>}</div>}</div></div></div></div></div>}
+       {expanded==='artifacts'&&<div className="equipment-disclosure" key="artifacts"><div className="equipment-clip"><div className="equipment-expanded" id="artifact-details" aria-label="聖遺物詳情"><div className="artifact-details-grid">{Object.entries(slots).map(([slot,label])=>{const x=a.artifacts.find(x=>x.id===e?.artifacts[slot]);return <article className="artifact-details" key={slot}><div className="artifact-identity"><div className="artifact-art"><MediaImage src={x?artifactImage(x.set_name,slot):undefined} alt={x?.name||label}/><EffectiveBadge count={effectiveSubstatCount(x,c.id)}/></div>{fullLabels&&<div className="artifact-ident"><div><span className="slot-label">{label}</span><h4>{x?.name||'未裝備'}</h4>{x&&<p>{x.set_name}</p>}</div></div>}</div><div className="artifact-values">{x&&<><div className="artifact-primary"><Numeric label="強化等級" value={x.level}/><Numeric label={(labels[x.main_stat.key]||x.main_stat.key)+(x.main_stat.unit==='percent'?' (%)':'')} value={x.main_stat.value}/></div><div className="artifact-substats">{x.substats.map((s,i)=><ArtifactSubstat key={i} stat={s} label={(labels[s.key]||s.key)+(s.unit==='percent'?' (%)':'')} roll={substatRoll(x,s.key,c.id)}/>)}</div></>}</div></article>})}</div></div></div></div>}
 
       </section>
       <section className="summary-surface" aria-label="人物總體數值"><div className="stats-container">{stale&&<span className="stats-state" role="img" aria-label="配裝已變更，以下數值待更新" title="配裝已變更，以下數值待更新"><AlertTriangle size={15}/></span>}<div className="summary-stats" aria-label="角色屬性">{panel?.stats.filter(s=>s.key!=='stamina').map(s=><div key={s.key}><MetricLabel label={labels[s.key]||s.key}/><strong>{show(s)}</strong></div>)}</div></div></section>
@@ -167,8 +152,8 @@ export default function Dashboard({initialCharacter=''}:{initialCharacter?:strin
 
 
    </>:<div className="welcome">{busy?<LoaderCircle className="spin" size={26}/>:<BookOpen size={28}/>}<h2>{busy?'正在讀取角色資料':data?'找不到這位角色':'開始查看角色'}</h2><p>{busy?'連接你的 GitHub 紀錄中…':data?'請返回列表，選擇已記錄的角色。':'連線後即可查看數值、天賦和配裝。'}</p></div>}</section>}
-   <footer className="page-footer"><span>遊戲圖片 © HoYoverse</span><span>圖源 <a href="https://enka.network" target="_blank" rel="noreferrer">Enka Network</a><span className="footer-separator">/</span>資料索引 <a href="https://github.com/theBowja/genshin-db" target="_blank" rel="noreferrer">genshin-db</a></span></footer>
-   <nav ref={footerRef} className={'footer-fab '+(navScrolling?'is-scrolling':'')} onFocusCapture={()=>setNavScrolling(false)} aria-label="主要分頁"><button className={section==='teams'?'active':''} aria-current={section==='teams'?'page':undefined} aria-label="隊伍" title="隊伍" onClick={()=>switchTab('teams')}><UsersRound size={21} aria-hidden="true"/></button><button className={section==='roster'?'active':''} aria-current={section==='roster'?'page':undefined} aria-label="角色列表" title="角色列表" onClick={()=>switchTab('roster')}><BookOpen size={21} aria-hidden="true"/></button><button className={section==='growth'?'active':''} aria-current={section==='growth'?'page':undefined} aria-label="培養重點" title="培養重點" onClick={()=>switchTab('growth')}><Sprout size={21} aria-hidden="true"/></button></nav>
+   <footer className="page-footer"><span>遊戲圖片 © HoYoverse</span><span>圖源 <a href="https://wiki.hoyolab.com/pc/genshin/home" target="_blank" rel="noreferrer">HoYoWiki</a><span className="footer-separator">/</span>資料索引 <a href="https://github.com/theBowja/genshin-db" target="_blank" rel="noreferrer">genshin-db</a></span></footer>
+   <NavigationDock>{gameControl}<button className={section==='teams'?'active':''} aria-current={section==='teams'?'page':undefined} aria-label="隊伍" title="隊伍" onClick={()=>switchTab('teams')}><UsersRound size={21} aria-hidden="true"/></button><button className={section==='roster'?'active':''} aria-current={section==='roster'?'page':undefined} aria-label="角色列表" title="角色列表" onClick={()=>switchTab('roster')}><BookOpen size={21} aria-hidden="true"/></button><button className={section==='growth'?'active':''} aria-current={section==='growth'?'page':undefined} aria-label="培養重點" title="培養重點" onClick={()=>switchTab('growth')}><Sprout size={21} aria-hidden="true"/></button></NavigationDock>
   </main>
  </div></MetricDisplayContext>
 }

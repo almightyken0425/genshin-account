@@ -1,0 +1,422 @@
+{
+  "/assets/zzz/weapons/14121.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      14,
+      1,
+      393,
+      400
+    ]
+  },
+  "/assets/zzz/weapons/13115.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      17,
+      2,
+      386,
+      396
+    ]
+  },
+  "/assets/zzz/weapons/14114.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      0,
+      23,
+      399,
+      387
+    ]
+  },
+  "/assets/zzz/weapons/14155.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      23,
+      4,
+      374,
+      398
+    ]
+  },
+  "/assets/zzz/weapons/13007.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      20,
+      18,
+      389,
+      377
+    ]
+  },
+  "/assets/zzz/weapons/14126.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      1,
+      21,
+      399,
+      379
+    ]
+  },
+  "/assets/zzz/weapons/13144.png": {
+    "width": 156,
+    "height": 156,
+    "bounds": [
+      14,
+      13,
+      141,
+      144
+    ]
+  },
+  "/assets/zzz/weapons/14131.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      36,
+      5,
+      364,
+      392
+    ]
+  },
+  "/assets/zzz/weapons/14156.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      53,
+      0,
+      350,
+      400
+    ]
+  },
+  "/assets/zzz/weapons/14104.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      19,
+      20,
+      384,
+      378
+    ]
+  },
+  "/assets/zzz/weapons/14139.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      13,
+      0,
+      390,
+      400
+    ]
+  },
+  "/assets/zzz/weapons/14158.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      42,
+      0,
+      354,
+      400
+    ]
+  },
+  "/assets/zzz/weapons/13135.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      0,
+      26,
+      400,
+      394
+    ]
+  },
+  "/assets/zzz/weapons/14102.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      3,
+      9,
+      397,
+      381
+    ]
+  },
+  "/assets/zzz/weapons/14145.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      17,
+      0,
+      380,
+      399
+    ]
+  },
+  "/assets/zzz/weapons/13008.png": {
+    "width": 375,
+    "height": 375,
+    "bounds": [
+      2,
+      3,
+      373,
+      372
+    ]
+  },
+  "/assets/zzz/weapons/13142.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      8,
+      14,
+      398,
+      392
+    ]
+  },
+  "/assets/zzz/weapons/14151.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      13,
+      0,
+      378,
+      400
+    ]
+  },
+  "/assets/zzz/weapons/14133.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      21,
+      25,
+      375,
+      378
+    ]
+  },
+  "/assets/zzz/discs/33900.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/31000.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/32900.png": {
+    "width": 512,
+    "height": 512,
+    "bounds": [
+      17,
+      17,
+      495,
+      495
+    ]
+  },
+  "/assets/zzz/discs/33200.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/32700.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/34000.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/31600.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/33400.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/32500.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/33000.png": {
+    "width": 512,
+    "height": 512,
+    "bounds": [
+      17,
+      17,
+      495,
+      495
+    ]
+  },
+  "/assets/zzz/discs/33600.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/31800.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/32300.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/33500.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/31400.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/32600.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/31300.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/34100.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/33700.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/33100.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/32400.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/31200.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  },
+  "/assets/zzz/discs/32800.png": {
+    "width": 152,
+    "height": 152,
+    "bounds": [
+      0,
+      0,
+      152,
+      152
+    ]
+  }
+}

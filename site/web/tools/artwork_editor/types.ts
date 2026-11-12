@@ -1,0 +1,20 @@
+export type ArtworkGame='genshin'|'zzz';
+export type ArtworkRole='roster'|'portrait';
+export type CropView={zoom:number,offsetX:number,offsetY:number};
+export type ArtworkSource={path:string,width:number,height:number,sha256:string,label:string};
+export type ArtworkMetric={label:string,value:number|null};
+export type ArtworkEntry={
+ game:ArtworkGame;
+ role:ArtworkRole;
+ id:string;
+ name:string;
+ metrics:[ArtworkMetric,ArtworkMetric,ArtworkMetric];
+ sources:ArtworkSource[];
+ sourcePath:string;
+ view:CropView;
+ expectedRevision:number;
+ previewPath:string;
+ defaultSourcePath:string;
+ defaultView:CropView;
+};
+export type ArtworkBootstrap={schemaVersion:1,revision:number,entries:ArtworkEntry[],websitePreviewUrl:string};

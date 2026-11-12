@@ -1,0 +1,425 @@
+{
+  "escoffier": {
+    "sourcePath": "/assets/characters/escoffier_roster_source.png",
+    "x": 796,
+    "y": 94,
+    "width": 498,
+    "height": 664,
+    "sourceWidth": 2048,
+    "sourceHeight": 1024
+  },
+  "furina": {
+    "sourcePath": "/assets/characters/furina_roster_source.png",
+    "x": 868,
+    "y": 658,
+    "width": 441,
+    "height": 588,
+    "sourceWidth": 2001,
+    "sourceHeight": 1900
+  },
+  "voyanitsa": {
+    "sourcePath": "/assets/characters/vodyanitsa_splash.png",
+    "x": 295,
+    "y": 177,
+    "width": 447,
+    "height": 596,
+    "sourceWidth": 1024,
+    "sourceHeight": 1024
+  },
+  "skirk": {
+    "sourcePath": "/assets/characters/skirk_splash.png",
+    "x": 651,
+    "y": 473,
+    "width": 564,
+    "height": 752,
+    "sourceWidth": 2400,
+    "sourceHeight": 2048
+  },
+  "chasca": {
+    "sourcePath": "/assets/characters/chasca_splash.png",
+    "x": 415,
+    "y": 163,
+    "width": 426,
+    "height": 568,
+    "sourceWidth": 1280,
+    "sourceHeight": 1280
+  },
+  "linnea": {
+    "sourcePath": "/assets/characters/linnea_splash.png",
+    "x": 218,
+    "y": 115,
+    "width": 588,
+    "height": 784,
+    "sourceWidth": 1024,
+    "sourceHeight": 1024
+  },
+  "zibai": {
+    "sourcePath": "/assets/characters/zibai_splash.png",
+    "x": 280,
+    "y": 118,
+    "width": 465,
+    "height": 620,
+    "sourceWidth": 1024,
+    "sourceHeight": 1024
+  },
+  "xilonen": {
+    "sourcePath": "/assets/characters/xilonen_splash.png",
+    "x": 406,
+    "y": 252,
+    "width": 483,
+    "height": 644,
+    "sourceWidth": 1280,
+    "sourceHeight": 1280
+  },
+  "zhongli": {
+    "sourcePath": "/assets/characters/zhongli_splash.png",
+    "x": 383,
+    "y": 382,
+    "width": 465,
+    "height": 620,
+    "sourceWidth": 1222,
+    "sourceHeight": 1542
+  },
+  "yumemizukimizuki": {
+    "sourcePath": "/assets/characters/yumemizukimizuki_splash.png",
+    "x": 406,
+    "y": 248,
+    "width": 561,
+    "height": 748,
+    "sourceWidth": 1280,
+    "sourceHeight": 1280
+  },
+  "kaedeharakazuha": {
+    "sourcePath": "/assets/characters/kaedeharakazuha_roster_source.png",
+    "x": 650,
+    "y": 36,
+    "width": 702,
+    "height": 936,
+    "sourceWidth": 2073,
+    "sourceHeight": 1519
+  },
+  "jean": {
+    "sourcePath": "/assets/characters/jean_splash.png",
+    "x": 634,
+    "y": 287,
+    "width": 702,
+    "height": 936,
+    "sourceWidth": 2000,
+    "sourceHeight": 1936
+  },
+  "odetta": {
+    "sourcePath": "/assets/characters/odetta_splash.png",
+    "x": 273,
+    "y": 124,
+    "width": 465,
+    "height": 620,
+    "sourceWidth": 1024,
+    "sourceHeight": 1024
+  },
+  "citlali": {
+    "sourcePath": "/assets/characters/citlali_splash.png",
+    "x": 434,
+    "y": 353,
+    "width": 444,
+    "height": 592,
+    "sourceWidth": 1280,
+    "sourceHeight": 1280
+  },
+  "varesa": {
+    "sourcePath": "/assets/characters/varesa_splash.png",
+    "x": 255,
+    "y": 84,
+    "width": 495,
+    "height": 660,
+    "sourceWidth": 1024,
+    "sourceHeight": 1024
+  },
+  "raidenshogun": {
+    "sourcePath": "/assets/characters/raidenshogun_splash.png",
+    "x": 440,
+    "y": 249,
+    "width": 678,
+    "height": 904,
+    "sourceWidth": 1604,
+    "sourceHeight": 1494
+  },
+  "keqing": {
+    "sourcePath": "/assets/characters/keqing_splash.png",
+    "x": 538,
+    "y": 152,
+    "width": 609,
+    "height": 812,
+    "sourceWidth": 1516,
+    "sourceHeight": 1376
+  },
+  "nefer": {
+    "sourcePath": "/assets/characters/nefer_splash.png",
+    "x": 259,
+    "y": 121,
+    "width": 525,
+    "height": 700,
+    "sourceWidth": 1024,
+    "sourceHeight": 1024
+  },
+  "lauma": {
+    "sourcePath": "/assets/characters/lauma_splash.png",
+    "x": 218,
+    "y": 47,
+    "width": 588,
+    "height": 784,
+    "sourceWidth": 1024,
+    "sourceHeight": 1024
+  },
+  "nahida": {
+    "sourcePath": "/assets/characters/nahida_splash.png",
+    "x": 356,
+    "y": 327,
+    "width": 489,
+    "height": 652,
+    "sourceWidth": 1291,
+    "sourceHeight": 1200
+  },
+  "columbina": {
+    "sourcePath": "/assets/characters/columbina_splash.png",
+    "x": 280,
+    "y": 124,
+    "width": 465,
+    "height": 620,
+    "sourceWidth": 1024,
+    "sourceHeight": 1024
+  },
+  "neuvillette": {
+    "sourcePath": "/assets/characters/neuvillette_splash.png",
+    "x": 447,
+    "y": 272,
+    "width": 387,
+    "height": 516,
+    "sourceWidth": 1280,
+    "sourceHeight": 1280
+  },
+  "yelan": {
+    "sourcePath": "/assets/characters/yelan_splash.png",
+    "x": 330,
+    "y": 215,
+    "width": 489,
+    "height": 652,
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "mavuika": {
+    "sourcePath": "/assets/characters/mavuika_splash.png",
+    "x": 457,
+    "y": 427,
+    "width": 366,
+    "height": 488,
+    "sourceWidth": 1280,
+    "sourceHeight": 1280
+  },
+  "illuga": {
+    "sourcePath": "/assets/characters/illuga_splash.png",
+    "x": 230,
+    "y": 171,
+    "width": 558,
+    "height": 744,
+    "sourceWidth": 1024,
+    "sourceHeight": 1024
+  },
+  "charlotte": {
+    "sourcePath": "/assets/characters/charlotte_splash.png",
+    "x": 376,
+    "y": 144,
+    "width": 543,
+    "height": 724,
+    "sourceWidth": 1280,
+    "sourceHeight": 1280
+  },
+  "arosha": {
+    "sourcePath": "/assets/characters/arosha_splash.png",
+    "x": 289,
+    "y": 102,
+    "width": 447,
+    "height": 596,
+    "sourceWidth": 1024,
+    "sourceHeight": 1024
+  },
+  "iansan": {
+    "sourcePath": "/assets/characters/iansan_splash.png",
+    "x": 227,
+    "y": 0,
+    "width": 588,
+    "height": 784,
+    "sourceWidth": 1024,
+    "sourceHeight": 1024
+  },
+  "ororon": {
+    "sourcePath": "/assets/characters/ororon_splash.png",
+    "x": 497,
+    "y": 330,
+    "width": 387,
+    "height": 516,
+    "sourceWidth": 1280,
+    "sourceHeight": 1280
+  },
+  "kukishinobu": {
+    "sourcePath": "/assets/characters/kukishinobu_splash.png",
+    "x": 460,
+    "y": 171,
+    "width": 381,
+    "height": 508,
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "fischl": {
+    "sourcePath": "/assets/characters/fischl_splash.png",
+    "x": 455,
+    "y": 473,
+    "width": 582,
+    "height": 776,
+    "sourceWidth": 1340,
+    "sourceHeight": 1607
+  },
+  "aino": {
+    "sourcePath": "/assets/characters/aino_splash.png",
+    "x": 238,
+    "y": 155,
+    "width": 573,
+    "height": 764,
+    "sourceWidth": 1024,
+    "sourceHeight": 1024
+  },
+  "xingqiu": {
+    "sourcePath": "/assets/characters/xingqiu_splash.png",
+    "x": 458,
+    "y": 86,
+    "width": 555,
+    "height": 740,
+    "sourceWidth": 1412,
+    "sourceHeight": 1411
+  },
+  "bennett": {
+    "sourcePath": "/assets/characters/bennett_splash.png",
+    "x": 886,
+    "y": 528,
+    "width": 750,
+    "height": 1000,
+    "sourceWidth": 2000,
+    "sourceHeight": 1834
+  },
+  "xiangling": {
+    "sourcePath": "/assets/characters/xiangling_splash.png",
+    "x": 579,
+    "y": 78,
+    "width": 609,
+    "height": 812,
+    "sourceWidth": 2000,
+    "sourceHeight": 1340
+  },
+  "mona": {
+    "sourcePath": "/assets/characters/mona_splash.png",
+    "x": 582,
+    "y": 340,
+    "width": 471,
+    "height": 628,
+    "sourceWidth": 1560,
+    "sourceHeight": 1560
+  },
+  "noelle": {
+    "sourcePath": "/assets/characters/noelle_splash.png",
+    "x": 414,
+    "y": 61,
+    "width": 570,
+    "height": 760,
+    "sourceWidth": 1255,
+    "sourceHeight": 1175
+  },
+  "ningguang": {
+    "sourcePath": "/assets/characters/ningguang_splash.png",
+    "x": 574,
+    "y": 107,
+    "width": 492,
+    "height": 656,
+    "sourceWidth": 1420,
+    "sourceHeight": 992
+  },
+  "faruzan": {
+    "sourcePath": "/assets/characters/faruzan_splash.png",
+    "x": 350,
+    "y": 215,
+    "width": 435,
+    "height": 580,
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "sucrose": {
+    "sourcePath": "/assets/characters/sucrose_splash.png",
+    "x": 470,
+    "y": 98,
+    "width": 636,
+    "height": 848,
+    "sourceWidth": 1533,
+    "sourceHeight": 1404
+  },
+  "layla": {
+    "sourcePath": "/assets/characters/layla_splash.png",
+    "x": 365,
+    "y": 175,
+    "width": 471,
+    "height": 628,
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "diona": {
+    "sourcePath": "/assets/characters/diona_splash.png",
+    "x": 133,
+    "y": 121,
+    "width": 693,
+    "height": 924,
+    "sourceWidth": 1189,
+    "sourceHeight": 1207
+  },
+  "kaeya": {
+    "sourcePath": "/assets/characters/kaeya_roster_source.png",
+    "x": 478,
+    "y": 28,
+    "width": 567,
+    "height": 756,
+    "sourceWidth": 1404,
+    "sourceHeight": 1113
+  },
+  "collei": {
+    "sourcePath": "/assets/characters/collei_splash.png",
+    "x": 293,
+    "y": 325,
+    "width": 489,
+    "height": 652,
+    "sourceWidth": 1294,
+    "sourceHeight": 1293
+  },
+  "barbara": {
+    "sourcePath": "/assets/characters/barbara_splash.png",
+    "x": 463,
+    "y": 153,
+    "width": 594,
+    "height": 792,
+    "sourceWidth": 1528,
+    "sourceHeight": 1283
+  },
+  "chevreuse": {
+    "sourcePath": "/assets/characters/chevreuse_splash.png",
+    "x": 597,
+    "y": 262,
+    "width": 726,
+    "height": 968,
+    "sourceWidth": 1920,
+    "sourceHeight": 1920
+  },
+  "traveler_cryo": {
+    "sourcePath": "/assets/characters/traveler_cryo_roster_source.png",
+    "x": 240,
+    "y": 60,
+    "width": 420,
+    "height": 560,
+    "sourceWidth": 1322,
+    "sourceHeight": 1382
+  }
+}
