@@ -99,9 +99,15 @@ API 參考：[GitHub commit mutation](https://docs.github.com/en/graphql/referen
 - `app/hoyo.tsx` 提供遊戲切換，原有角色、隊伍與培養頁面保留。
 - 原神維持 `data/account.json` 與既有 schema，避免歷史證據、面板指紋或使用者修改遺失。
 - 絕區零使用獨立 `data/zzz/account.json`、`/api/zzz` 與角色畫面；未確認數值保留 null。
-- 角色圖片只從已確認的 `evidence/zzz/` 路徑經登入保護 API 取得，不公開私人錄影。
+- 展示圖片採已核對官方角色資產；私人錄影截圖仍留在 evidence/zzz，僅經登入保護 API 讀取作為證據。
 - 品牌統一 HOYO；既有 GitHub repo 和 Site slug 保留，舊連結繼續可用。
 
 ### 角色與配裝共用展示
 
 原神與絕區零共用 `MetricLabel`、`ArtifactSubstat`、`EffectiveBadge` 與角色／配裝卡片 CSS；`CenteredHeader` 的可選 action 保持標題置中。數值規則不共用：原神沿用 `artifact_rolls.mjs`，絕區零使用 `zzz_discs.mjs`，只計入有證據的有效性及強化次數，未確認回傳 null。絕區零固定呈現六個槽位，缺少觀測顯示尚未確認而非未裝備。低等級盤以 `substatsComplete` 確認完整性，不以副詞條必須四個判定。正式帳號資料與證據不因排版修改而更動。
+
+## 絕區零展示圖片
+
+38 位角色依官方內容 ID 逐一核對，完整立繪與頭像下載自 HoYoverse 官方角色頁 API 所列的 fastcdn/webstatic 資產。官方頭像仍為細長導航切片的 9 位角色，列表改用同角色完整立繪並 contain，不使用殘缺切片。音擎與驅動盤採 Enka Network 的遊戲素材索引，並非官方託管；只以已核對名稱/ID 建立對照，不猜近似名稱。
+
+來源 URL、官方 ID、名稱、尺寸與 SHA-256 見 public/zzz_asset_sources.json；顯示對照見 lib/zzz_assets.json。遊戲美術版權歸 HoYoverse，這不是額外授權聲明。原始影片截圖仍在私人資料庫保留，僅作數值證據，與展示圖片分離。此更新不改角色配裝、面板或有效詞條。

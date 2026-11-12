@@ -1,0 +1,202 @@
+{
+  "characters": {
+    "jane": {
+      "icon": "/assets/zzz/characters/jane_icon.png",
+      "splash": "/assets/zzz/characters/jane_splash.png"
+    },
+    "damielle": {
+      "icon": "/assets/zzz/characters/damielle_splash.png",
+      "splash": "/assets/zzz/characters/damielle_splash.png"
+    },
+    "velina": {
+      "icon": "/assets/zzz/characters/velina_splash.png",
+      "splash": "/assets/zzz/characters/velina_splash.png"
+    },
+    "pyrois": {
+      "icon": "/assets/zzz/characters/pyrois_splash.png",
+      "splash": "/assets/zzz/characters/pyrois_splash.png"
+    },
+    "nangong_yu": {
+      "icon": "/assets/zzz/characters/nangong_yu_splash.png",
+      "splash": "/assets/zzz/characters/nangong_yu_splash.png"
+    },
+    "sunna": {
+      "icon": "/assets/zzz/characters/sunna_splash.png",
+      "splash": "/assets/zzz/characters/sunna_splash.png"
+    },
+    "zhao": {
+      "icon": "/assets/zzz/characters/zhao_splash.png",
+      "splash": "/assets/zzz/characters/zhao_splash.png"
+    },
+    "lucia": {
+      "icon": "/assets/zzz/characters/lucia_splash.png",
+      "splash": "/assets/zzz/characters/lucia_splash.png"
+    },
+    "yuzuha": {
+      "icon": "/assets/zzz/characters/yuzuha_icon.png",
+      "splash": "/assets/zzz/characters/yuzuha_splash.png"
+    },
+    "manato": {
+      "icon": "/assets/zzz/characters/manato_splash.png",
+      "splash": "/assets/zzz/characters/manato_splash.png"
+    },
+    "ye_shunguang": {
+      "icon": "/assets/zzz/characters/ye_shunguang_splash.png",
+      "splash": "/assets/zzz/characters/ye_shunguang_splash.png"
+    },
+    "ju_fufu": {
+      "icon": "/assets/zzz/characters/ju_fufu_icon.png",
+      "splash": "/assets/zzz/characters/ju_fufu_splash.png"
+    },
+    "yixuan": {
+      "icon": "/assets/zzz/characters/yixuan_icon.png",
+      "splash": "/assets/zzz/characters/yixuan_splash.png"
+    },
+    "pan_yinhu": {
+      "icon": "/assets/zzz/characters/pan_yinhu_icon.png",
+      "splash": "/assets/zzz/characters/pan_yinhu_splash.png"
+    },
+    "vivian": {
+      "icon": "/assets/zzz/characters/vivian_icon.png",
+      "splash": "/assets/zzz/characters/vivian_splash.png"
+    },
+    "astra": {
+      "icon": "/assets/zzz/characters/astra_icon.png",
+      "splash": "/assets/zzz/characters/astra_splash.png"
+    },
+    "qingyi": {
+      "icon": "/assets/zzz/characters/qingyi_icon.png",
+      "splash": "/assets/zzz/characters/qingyi_splash.png"
+    },
+    "zhu_yuan": {
+      "icon": "/assets/zzz/characters/zhu_yuan_icon.png",
+      "splash": "/assets/zzz/characters/zhu_yuan_splash.png"
+    },
+    "seth": {
+      "icon": "/assets/zzz/characters/seth_icon.png",
+      "splash": "/assets/zzz/characters/seth_splash.png"
+    },
+    "miyabi": {
+      "icon": "/assets/zzz/characters/miyabi_icon.png",
+      "splash": "/assets/zzz/characters/miyabi_splash.png"
+    },
+    "yanagi": {
+      "icon": "/assets/zzz/characters/yanagi_icon.png",
+      "splash": "/assets/zzz/characters/yanagi_splash.png"
+    },
+    "soukaku": {
+      "icon": "/assets/zzz/characters/soukaku_icon.png",
+      "splash": "/assets/zzz/characters/soukaku_splash.png"
+    },
+    "pulchra": {
+      "icon": "/assets/zzz/characters/pulchra_icon.png",
+      "splash": "/assets/zzz/characters/pulchra_splash.png"
+    },
+    "piper": {
+      "icon": "/assets/zzz/characters/piper_icon.png",
+      "splash": "/assets/zzz/characters/piper_splash.png"
+    },
+    "lucy": {
+      "icon": "/assets/zzz/characters/lucy_icon.png",
+      "splash": "/assets/zzz/characters/lucy_splash.png"
+    },
+    "grace": {
+      "icon": "/assets/zzz/characters/grace_icon.png",
+      "splash": "/assets/zzz/characters/grace_splash.png"
+    },
+    "koleda": {
+      "icon": "/assets/zzz/characters/koleda_icon.png",
+      "splash": "/assets/zzz/characters/koleda_splash.png"
+    },
+    "anton": {
+      "icon": "/assets/zzz/characters/anton_icon.png",
+      "splash": "/assets/zzz/characters/anton_splash.png"
+    },
+    "ellen": {
+      "icon": "/assets/zzz/characters/ellen_icon.png",
+      "splash": "/assets/zzz/characters/ellen_splash.png"
+    },
+    "rina": {
+      "icon": "/assets/zzz/characters/rina_icon.png",
+      "splash": "/assets/zzz/characters/rina_splash.png"
+    },
+    "lycaon": {
+      "icon": "/assets/zzz/characters/lycaon_icon.png",
+      "splash": "/assets/zzz/characters/lycaon_splash.png"
+    },
+    "nekomata": {
+      "icon": "/assets/zzz/characters/nekomata_icon.png",
+      "splash": "/assets/zzz/characters/nekomata_splash.png"
+    },
+    "nicole": {
+      "icon": "/assets/zzz/characters/nicole_icon.png",
+      "splash": "/assets/zzz/characters/nicole_splash.png"
+    },
+    "anby": {
+      "icon": "/assets/zzz/characters/anby_icon.png",
+      "splash": "/assets/zzz/characters/anby_splash.png"
+    },
+    "corin": {
+      "icon": "/assets/zzz/characters/corin_icon.png",
+      "splash": "/assets/zzz/characters/corin_splash.png"
+    },
+    "ben": {
+      "icon": "/assets/zzz/characters/ben_icon.png",
+      "splash": "/assets/zzz/characters/ben_splash.png"
+    },
+    "billy": {
+      "icon": "/assets/zzz/characters/billy_icon.png",
+      "splash": "/assets/zzz/characters/billy_splash.png"
+    },
+    "soldier_11": {
+      "icon": "/assets/zzz/characters/soldier_11_icon.png",
+      "splash": "/assets/zzz/characters/soldier_11_splash.png"
+    }
+  },
+  "engines": {
+    "啜泣搖籃": "/assets/zzz/weapons/14121.png",
+    "好鬥的阿炮": "/assets/zzz/weapons/13115.png",
+    "拘縛者": "/assets/zzz/weapons/14114.png",
+    "日冕遺蛻": "/assets/zzz/weapons/14155.png",
+    "正版變身器": "/assets/zzz/weapons/13007.png",
+    "淬鋒鉗刺": "/assets/zzz/weapons/14126.png",
+    "燔火朧夜": "/assets/zzz/weapons/13144.png",
+    "玲瓏妝匣": "/assets/zzz/weapons/14131.png",
+    "琳琅遠心": "/assets/zzz/weapons/14156.png",
+    "硫磺石": "/assets/zzz/weapons/14104.png",
+    "福虎爐爐": "/assets/zzz/weapons/14139.png",
+    "空羽復歸之詩": "/assets/zzz/weapons/14158.png",
+    "裁紙刀": "/assets/zzz/weapons/13135.png",
+    "鋼鐵肉墊": "/assets/zzz/weapons/14102.png",
+    "鑄夢爐歌": "/assets/zzz/weapons/14145.png",
+    "雙生泣星": "/assets/zzz/weapons/13008.png",
+    "震元奇樞": "/assets/zzz/weapons/13142.png",
+    "霓虹妄想": "/assets/zzz/weapons/14151.png",
+    "飛鳥星夢": "/assets/zzz/weapons/14133.png"
+  },
+  "discs": {
+    "呼嘯沙龍": "/assets/zzz/discs/33900.png",
+    "啄木鳥電音": "/assets/zzz/discs/31000.png",
+    "如影相隨": "/assets/zzz/discs/32900.png",
+    "山大王": "/assets/zzz/discs/33200.png",
+    "折枝劍歌": "/assets/zzz/discs/32700.png",
+    "拂曉行紀": "/assets/zzz/discs/34000.png",
+    "搖擺爵士": "/assets/zzz/discs/31600.png",
+    "月光騎士頌": "/assets/zzz/discs/33400.png",
+    "極地重金屬": "/assets/zzz/discs/32500.png",
+    "法厄同之歌": "/assets/zzz/discs/33000.png",
+    "流光詠嘆": "/assets/zzz/discs/33600.png",
+    "混沌爵士": "/assets/zzz/discs/31800.png",
+    "混沌重金屬": "/assets/zzz/discs/32300.png",
+    "滄浪行歌": "/assets/zzz/discs/33500.png",
+    "激素龐克": "/assets/zzz/discs/31400.png",
+    "獠牙重金屬": "/assets/zzz/discs/32600.png",
+    "自由藍調": "/assets/zzz/discs/31300.png",
+    "識羽之誓": "/assets/zzz/discs/34100.png",
+    "雪兔夢遊仙境": "/assets/zzz/discs/33700.png",
+    "雲巋如我": "/assets/zzz/discs/33100.png",
+    "雷暴重金屬": "/assets/zzz/discs/32400.png",
+    "震星迪斯可": "/assets/zzz/discs/31200.png",
+    "靜聽嘉音": "/assets/zzz/discs/32800.png"
+  }
+}
