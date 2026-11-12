@@ -1,7 +1,9 @@
+import {validateZzz,allowedZzzImage} from './zzz-schema.mjs';
 import { applyCandidate, validateAccount, validateEvidence, hash, canonical, panelStates } from './account.mjs';
 import { renderSummary } from './report.mjs';
 export const REPO='almightyken0425/genshin-account';
 const ROOT='https://api.github.com';
+const zzzAccountCache=new Map();
 export class AppError extends Error { constructor(message,status=502,code='github_error'){super(message);this.status=status;this.code=code;} }
 export function assertRequest(request,write=false){
  if(!request.headers.get('oai-authenticated-user-id'))throw new AppError('請先使用 ChatGPT 登入',401,'signin_required');
@@ -12,7 +14,7 @@ export function githubClient(token,fetcher=fetch){
  if(!token)throw new AppError('尚未設定 GitHub 專用連線。請先完成安全設定。',503,'connection_missing');
  async function api(path,options={}){
   let response;
-  try{response=await fetcher(ROOT+path,{...options,signal:AbortSignal.timeout(20000),headers:{Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'Genshin-Sites','Authorization':'Bearer '+token,...options.headers},cache:'no-store'})}
+  try{response=await fetcher(ROOT+path,{...options,signal:AbortSignal.timeout(20000),headers:{Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'HOYO-Sites','Authorization':'Bearer '+token,...options.headers},cache:'no-store'})}
   catch{throw new AppError('GitHub 回應逾時，請先重新讀取確認狀態',504,'upstream_timeout')}
   if(!response.ok)throw new AppError(response.status===401?'GitHub 連線憑證無效或已到期':response.status===403?'GitHub 權限不足或暫時限制請求':response.status===404?'無法讀取私人 repo，請確認專用 token 的範圍':'GitHub 暫時無法完成請求',response.status===409?409:502,response.status===409?'conflict':'github_error');
   return response.json();
@@ -88,7 +90,33 @@ export function githubClient(token,fetcher=fetch){
   if(hash(bytes)!==shot.sha256)throw new AppError('截圖完整性檢查失敗',422);
   return {bytes,contentType:shot.path.endsWith('.png')?'image/png':'image/jpeg'};
  }
- return {read,save,check,evidence};
+ async function zzzAt(revision){
+  if(!/^[a-f0-9]{40}$/.test(revision))throw new AppError('GitHub 版本格式錯誤',400);
+  const cached=zzzAccountCache.get(revision);
+  if(cached&&cached.expires>Date.now())return cached.promise;
+  const promise=file('data/zzz/account.json',revision).then(bytes=>{
+   const account=JSON.parse(bytes.toString('utf8'));
+   const errors=validateZzz(account);if(errors.length)throw new AppError(errors.join('、'),422,'invalid_data');
+   return account;
+  });
+  if(zzzAccountCache.size>=4)zzzAccountCache.delete(zzzAccountCache.keys().next().value);
+  zzzAccountCache.set(revision,{expires:Date.now()+30000,promise});
+  try{return await promise}catch(error){zzzAccountCache.delete(revision);throw error}
+ }
+ async function readZzz(){
+  const head=await api('/repos/'+REPO+'/commits/main');
+  const account=await zzzAt(head.sha);
+  return {account,revision:head.sha,repository:REPO};
+ }
+ async function zzzImage(id,revision){
+  if(!/^[a-z0-9_]+$/.test(id))throw new AppError('角色識別無效',400);
+  const account=await zzzAt(revision),character=account.characters.find(c=>c.id===id);
+  if(!allowedZzzImage(character?.portraitPath))throw new AppError('此角色尚無確認圖片',404);
+  const bytes=await file(character.portraitPath,revision);
+  if(character.portraitSha256&&hash(bytes)!==character.portraitSha256)throw new AppError('角色圖片完整性檢查失敗',422);
+  return {bytes,contentType:character.portraitPath.endsWith('.png')?'image/png':'image/jpeg'};
+ }
+ return {read,save,check,evidence,readZzz,zzzImage};
 }
 export function publicAccount(result){
  const {commitMessage,manifests,...rest}=result;

@@ -1,0 +1,2327 @@
+{
+  "schemaVersion": 1,
+  "game": "zzz",
+  "source": {
+    "filename": "ScreenRecording_11-11-2026 23-49-27_1.MP4",
+    "sha256": "6eedfe8e5fabcec54bd45fa12f934905c52658100beec421bba739e8589b3f83",
+    "durationSeconds": 416.652744,
+    "capturedAt": null
+  },
+  "characters": [
+    {
+      "id": "jane",
+      "name": "簡・杜",
+      "level": 60,
+      "element": "物理",
+      "specialty": "異常",
+      "mindscape": 2,
+      "stats": {
+        "生命值": 11147,
+        "攻擊力": 2549,
+        "防禦力": 1039,
+        "衝擊力": 86,
+        "暴擊率": "12.2%",
+        "暴擊傷害": "50%",
+        "異常掌控": 192,
+        "異常精通": 443,
+        "穿透率": "0%",
+        "能量自動回復": 1.2
+      },
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "wEngine": {
+        "name": "淬鋒鉗刺",
+        "rarity": "S",
+        "level": 60,
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 713,
+          "異常精通": 90
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 1,
+          "framePath": "evidence/zzz/video_001/f001.jpg",
+          "page": "基礎",
+          "timestampToleranceSec": 1,
+          "sha256": "fd3107084d1371611edf9555a4a4dfe74b89e2ca42d2cedcdbc8567116236d11"
+        },
+        {
+          "timestampSec": 3,
+          "framePath": "evidence/zzz/video_001/f002.jpg",
+          "page": "技能",
+          "timestampToleranceSec": 1,
+          "sha256": "db727fa0406f978fdb092e9aa397daf4dee7cdebe43045b46502c10d7aebdf95"
+        },
+        {
+          "timestampSec": 13,
+          "framePath": "evidence/zzz/video_001/f007.jpg",
+          "page": "裝備",
+          "timestampToleranceSec": 1,
+          "sha256": "992844985156b1c600592296c713da64821de1ccdcb26fca23afd281ecb9c3fd"
+        },
+        {
+          "timestampSec": 5.5,
+          "framePath": "evidence/zzz/video_001/exact5.5.jpg",
+          "page": "音擎",
+          "timestampToleranceSec": 0,
+          "sha256": "855fb712fed7cd3790dac4d8d3e186f220b45e8b3e1eaf61b9e18fb63507a630"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤尚未逐片完整核對"
+      ],
+      "portraitPath": "evidence/zzz/video_001/jane_portrait.jpg",
+      "portraitSha256": "469e80497f2c7c7172caa4c0ff8739c0a2f04075ac364733c0f72b14c02de1cc"
+    },
+    {
+      "id": "damielle",
+      "name": "蕾米埃爾・丹",
+      "level": 60,
+      "element": "流明",
+      "specialty": "異常",
+      "mindscape": 1,
+      "stats": {
+        "生命值": 10691,
+        "攻擊力": 4092,
+        "防禦力": 857,
+        "衝擊力": 83,
+        "暴擊率": "5%",
+        "暴擊傷害": "74%",
+        "異常掌控": 115,
+        "異常精通": 412,
+        "穿透率": "0%",
+        "能量自動回復": 1.2
+      },
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 10,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "wEngine": {
+        "name": "空羽復歸之詩",
+        "rarity": "S",
+        "level": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 743,
+          "攻擊力": "36%"
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 23.6,
+          "framePath": "evidence/zzz/video_001/base0236.jpg",
+          "page": "基礎",
+          "timestampToleranceSec": 0,
+          "sha256": "498b3f92826ea7dcba7d4a7a28ac0d5170d2b1b3e88c5315ebd9a45a3e250838"
+        },
+        {
+          "timestampSec": 21,
+          "framePath": "evidence/zzz/video_001/f011.jpg",
+          "page": "音擎",
+          "timestampToleranceSec": 1,
+          "sha256": "82e058fa0e74a10eeb7e341b7dff66bcb6504391f9242e0ca54eb2329722e33d"
+        },
+        {
+          "timestampSec": 22.2,
+          "framePath": "evidence/zzz/video_001/exact22.2.jpg",
+          "page": "技能",
+          "timestampToleranceSec": 0,
+          "sha256": "56df0e1e69a9a201b2d2d80510a30c230ef7bcbadee8698a1796db4bd2d03d2b"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤尚未逐片完整核對"
+      ],
+      "portraitPath": "evidence/zzz/video_001/damielle_portrait.jpg",
+      "portraitSha256": "c6053550d11aa5419c3ae2b530bd8dc6010665c54f800188331cf420282ebe7e"
+    },
+    {
+      "id": "velina",
+      "name": "維琳娜・艾嘉德",
+      "level": 60,
+      "element": "風屬性",
+      "specialty": "異常",
+      "mindscape": 0,
+      "stats": {
+        "生命值": 10801,
+        "攻擊力": 2576,
+        "防禦力": 856,
+        "衝擊力": 86,
+        "暴擊率": "14.6%",
+        "暴擊傷害": "64.4%",
+        "異常掌控": 112,
+        "異常精通": 365,
+        "穿透率": "0%",
+        "能量自動回復": 2.88
+      },
+      "skills": {
+        "普通攻擊": 11,
+        "閃避": 10,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "wEngine": {
+        "name": "琳琅遠心",
+        "rarity": "S",
+        "level": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "能量自動回復": "60%"
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 25,
+          "framePath": "evidence/zzz/video_001/f013.jpg",
+          "page": "基礎",
+          "timestampToleranceSec": 1,
+          "sha256": "102e466274d6131ee0e7916ff33ba52d9c7c49de2571dd42af084dae97956354"
+        },
+        {
+          "timestampSec": 27,
+          "framePath": "evidence/zzz/video_001/f014.jpg",
+          "page": "技能",
+          "timestampToleranceSec": 1,
+          "sha256": "3d4470d08bfcd49829c5b15de05093a1a4a9d5086a111479e15a3a95d803d6a7"
+        },
+        {
+          "timestampSec": 35,
+          "framePath": "evidence/zzz/video_001/f018.jpg",
+          "page": "驅動盤",
+          "timestampToleranceSec": 1,
+          "sha256": "9894ae11c6e70d3da0cd96547358a519d2d525588134862c2ffa9ad5d6d0e07d"
+        },
+        {
+          "timestampSec": 29,
+          "framePath": "evidence/zzz/video_001/exact29.jpg",
+          "page": "音擎",
+          "timestampToleranceSec": 0,
+          "sha256": "66c13de46aa99472be1aa3e83112689044b663187b3698f7b3a3f0f16ae01de8"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤尚未逐片完整核對"
+      ],
+      "portraitPath": "evidence/zzz/video_001/velina_portrait.jpg",
+      "portraitSha256": "5a6625681461556e88b25caf8f81082b12706a81facf133f1b0c43e84b0257b3"
+    },
+    {
+      "id": "pyrois",
+      "name": "佩洛伊斯",
+      "level": 60,
+      "element": "以太",
+      "specialty": "強攻",
+      "mindscape": 4,
+      "stats": {
+        "生命值": 10794,
+        "攻擊力": 3415,
+        "防禦力": 916,
+        "衝擊力": 94,
+        "暴擊率": "82.6%",
+        "暴擊傷害": "69.2%",
+        "異常掌控": 94,
+        "異常精通": 147,
+        "穿透率": "0%",
+        "能量自動回復": 1
+      },
+      "skills": {
+        "普通攻擊": 13,
+        "閃避": 9,
+        "支援技": 13,
+        "特殊技": 14,
+        "連攜技": 13
+      },
+      "wEngine": {
+        "name": "日冕遺蛻",
+        "rarity": "S",
+        "level": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "攻擊力": "30%"
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 47,
+          "framePath": "evidence/zzz/video_001/f024.jpg",
+          "page": "基礎",
+          "timestampToleranceSec": 1,
+          "sha256": "3ade44b8fc2295bf281d39e08236b396f0668d54d473fff530fade36803be494"
+        },
+        {
+          "timestampSec": 45,
+          "framePath": "evidence/zzz/video_001/f023.jpg",
+          "page": "技能",
+          "timestampToleranceSec": 1,
+          "sha256": "b5a398e083f6c328adbf4a299a74f71543d41d2e0d592e3d98f1a8a802e9bd85"
+        },
+        {
+          "timestampSec": 43,
+          "framePath": "evidence/zzz/video_001/f022.jpg",
+          "page": "音擎",
+          "timestampToleranceSec": 1,
+          "sha256": "cb1f64adfb30c714d93bd94b23097fc6b772c80005b5665f2707031136f31221"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤尚未逐片完整核對"
+      ],
+      "portraitPath": "evidence/zzz/video_001/pyrois_portrait.jpg",
+      "portraitSha256": "dff902cc707c03452b45d95ef0c7354433b467cbc822747556f54b202ec6f2af"
+    },
+    {
+      "id": "nangong_yu",
+      "name": "南宮羽",
+      "level": 60,
+      "element": "以太",
+      "specialty": "擊破",
+      "mindscape": 0,
+      "stats": {
+        "生命值": 11439,
+        "攻擊力": 2545,
+        "防禦力": 1149,
+        "衝擊力": 120,
+        "暴擊率": "7.4%",
+        "暴擊傷害": "59.6%",
+        "異常掌控": 211,
+        "異常精通": 239,
+        "穿透率": "0%",
+        "能量自動回復": 1.2
+      },
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 3,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11
+      },
+      "wEngine": {
+        "name": "霓虹妄想",
+        "rarity": "S",
+        "level": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "異常掌控": "30%"
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 49,
+          "framePath": "evidence/zzz/video_001/f025.jpg",
+          "page": "基礎",
+          "timestampToleranceSec": 1,
+          "sha256": "7e79b325484ebd7857d16c64a7f1dfde65c5cdd9c05b5f328f518df4f1bc8eee"
+        },
+        {
+          "timestampSec": 57,
+          "framePath": "evidence/zzz/video_001/f029.jpg",
+          "page": "音擎",
+          "timestampToleranceSec": 1,
+          "sha256": "9e86f07b7e0d4e8e6f969b41ff481854990abcf5d41f96b3c317b5aa93e40352"
+        },
+        {
+          "timestampSec": 49.8,
+          "framePath": "evidence/zzz/video_001/exact49.8.jpg",
+          "page": "技能",
+          "timestampToleranceSec": 0,
+          "sha256": "ee21b0a50a5a5e1912a8cdc31ed12f3e834481f145a3a08dd8267b52883207fe"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤尚未逐片完整核對"
+      ],
+      "portraitPath": "evidence/zzz/video_001/nangong_yu_portrait.jpg",
+      "portraitSha256": "9ece4d3ea8384f04100e9f386eddec666bf7b17e8a8ae11099a7d5573874a21e"
+    },
+    {
+      "id": "sunna",
+      "name": "千夏",
+      "level": 60,
+      "element": "物理",
+      "specialty": "支援",
+      "mindscape": 0,
+      "stats": {
+        "生命值": 13048,
+        "攻擊力": 3325,
+        "防禦力": 974,
+        "衝擊力": 98,
+        "暴擊率": "12.2%",
+        "暴擊傷害": "83.6%",
+        "異常掌控": 96,
+        "異常精通": 113,
+        "穿透率": "0%",
+        "能量自動回復": 2.5
+      },
+      "skills": {
+        "普通攻擊": 1,
+        "閃避": 1,
+        "支援技": 11,
+        "特殊技": 12,
+        "連攜技": 11
+      },
+      "wEngine": {
+        "name": "好鬥的阿炮",
+        "rarity": "A",
+        "level": 60,
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "能量自動回復": "50%"
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 71,
+          "framePath": "evidence/zzz/video_001/f036.jpg",
+          "page": "基礎",
+          "timestampToleranceSec": 1,
+          "sha256": "eba1c1ddf0f9b8387c34c8d12dcd8f5b9f8baf304535f5c72601d9c63cc81c67"
+        },
+        {
+          "timestampSec": 61,
+          "framePath": "evidence/zzz/video_001/f031.jpg",
+          "page": "音擎",
+          "timestampToleranceSec": 1,
+          "sha256": "60157e6060d38313e9937ce66f8295b13f318712c8474cc66eb8fbff4257a56b"
+        },
+        {
+          "timestampSec": 69.8,
+          "framePath": "evidence/zzz/video_001/exact69.8.jpg",
+          "page": "技能",
+          "timestampToleranceSec": 0,
+          "sha256": "702d614bead56466273fafad4a0720bde29de1210d5c32f0e06d2b7f21d6902f"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤尚未逐片完整核對"
+      ],
+      "portraitPath": "evidence/zzz/video_001/sunna_portrait.jpg",
+      "portraitSha256": "09f1f1d210d146db1d564d8d6a25d4dbc559c97c9b9ea08e0d644daf5a96d42c"
+    },
+    {
+      "id": "zhao",
+      "name": "照",
+      "level": 60,
+      "element": "冰屬性",
+      "specialty": "防護",
+      "mindscape": 0,
+      "stats": {
+        "生命值": 27824,
+        "攻擊力": 2055,
+        "防禦力": 1098,
+        "衝擊力": 93,
+        "暴擊率": "9.8%",
+        "暴擊傷害": "93.2%",
+        "異常掌控": 93,
+        "異常精通": 159,
+        "穿透率": "0%",
+        "能量自動回復": 1.2
+      },
+      "skills": {
+        "普通攻擊": 1,
+        "閃避": 1,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11
+      },
+      "wEngine": {
+        "name": "正版變身器",
+        "rarity": "A",
+        "level": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 594,
+          "生命值": "25%"
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 73,
+          "framePath": "evidence/zzz/video_001/f037.jpg",
+          "page": "基礎",
+          "timestampToleranceSec": 1,
+          "sha256": "d5cb71425b3447db9df25dde84e75afff7eb87a3534330544290f5107be6de20"
+        },
+        {
+          "timestampSec": 83,
+          "framePath": "evidence/zzz/video_001/f042.jpg",
+          "page": "音擎",
+          "timestampToleranceSec": 1,
+          "sha256": "aeed3476a9a6f321d4e4ae4d81bb2d20c6942b8bae28b41f6c5a4c88ce24c7fc"
+        },
+        {
+          "timestampSec": 74,
+          "framePath": "evidence/zzz/video_001/exact74.jpg",
+          "page": "技能",
+          "timestampToleranceSec": 0,
+          "sha256": "ea25214c5ca3a08a7f67c613a4b64605d1e006d7992905982970e6193efbb083"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤尚未逐片完整核對"
+      ],
+      "portraitPath": "evidence/zzz/video_001/zhao_portrait.jpg",
+      "portraitSha256": "441abd52150a7a3396dbaef753fe04ddf3955ca90be96debb87aafa20a2439e4"
+    },
+    {
+      "id": "lucia",
+      "name": "盧西婭·艾洛溫",
+      "level": 60,
+      "mindscape": 0,
+      "element": "以太",
+      "specialty": "支援",
+      "stats": {
+        "生命值": 24628,
+        "攻擊力": 2279,
+        "防禦力": 838,
+        "衝擊力": 83,
+        "暴擊率": "14.6%",
+        "暴擊傷害": "83.6%",
+        "異常掌控": 96,
+        "異常精通": 113,
+        "穿透率": "0%",
+        "能量自動回復": 1.87
+      },
+      "skills": null,
+      "wEngine": {
+        "name": "鑄夢爐歌",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "生命值": "30%"
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 94,
+          "framePath": "evidence/zzz/video_001/ex94.jpg",
+          "page": "基礎",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "specialty",
+            "stats"
+          ],
+          "timestampToleranceSec": 0,
+          "sha256": "9845dbd9804420548541c318a2a219ea35c1f8945568d3da88e96eb6f92c4925"
+        },
+        {
+          "timestampSec": 91,
+          "framePath": "evidence/zzz/video_001/f046.jpg",
+          "page": "音擎",
+          "fields": [
+            "wEngine"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "3364779f4d2d27bc30edf4b63e862ab813ee463dcc9f0e3e46c76cf71e76f511"
+        }
+      ],
+      "uncertainties": [
+        "技能與驅動盤尚未完整逐項轉錄"
+      ],
+      "portraitPath": "evidence/zzz/video_001/lucia_portrait.jpg",
+      "portraitSha256": "fb78f1e934e438674be0c5b84d0f27a65368a2905382d42c445e7ad1091cdd97"
+    },
+    {
+      "id": "yuzuha",
+      "name": "浮波柚葉",
+      "level": 60,
+      "mindscape": 0,
+      "element": "物理",
+      "specialty": "支援",
+      "stats": {
+        "生命值": 12313,
+        "攻擊力": 3012,
+        "防禦力": 1032,
+        "衝擊力": 86,
+        "暴擊率": "7.4%",
+        "暴擊傷害": "78.8%",
+        "異常掌控": 171,
+        "異常精通": 201,
+        "穿透率": "24%",
+        "能量自動回復": 1.44
+      },
+      "skills": null,
+      "wEngine": {
+        "name": "啜泣搖籃",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 684,
+          "穿透率": "24%"
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 95,
+          "framePath": "evidence/zzz/video_001/f048.jpg",
+          "page": "基礎",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "specialty",
+            "stats"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "692ae40d5f3ff49f256fe3d0fd2c4d410d20ac18e058fcdd5eb7e8407144bd8d"
+        },
+        {
+          "timestampSec": 103,
+          "framePath": "evidence/zzz/video_001/f052.jpg",
+          "page": "音擎",
+          "fields": [
+            "wEngine"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "507fba099bae795d114132fd3eb3722535bd5186429f054d9941c94bd77c6cbf"
+        }
+      ],
+      "uncertainties": [
+        "技能與驅動盤尚未完整逐項轉錄"
+      ],
+      "portraitPath": "evidence/zzz/video_001/yuzuha_portrait.jpg",
+      "portraitSha256": "4c3fe14b642ac507a3bf63703dda21000c38098816f4e15570576f2e531518eb"
+    },
+    {
+      "id": "manato",
+      "name": "狛野真斗",
+      "level": 60,
+      "mindscape": 6,
+      "element": "火屬性",
+      "specialty": "命破",
+      "stats": {
+        "生命值": 19205,
+        "攻擊力": 1812,
+        "防禦力": 642,
+        "衝擊力": 95,
+        "暴擊率": "53%",
+        "暴擊傷害": "104.4%",
+        "異常掌控": 87,
+        "異常精通": 135,
+        "穿透率": null,
+        "能量自動回復": null,
+        "貫穿力": 2463,
+        "閃能自動累積": 0
+      },
+      "skills": null,
+      "wEngine": {
+        "name": "燔火朧夜",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "生命值": "25%"
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 115,
+          "framePath": "evidence/zzz/video_001/f058.jpg",
+          "page": "基礎",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "specialty",
+            "stats"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "8dd403ce50ba40f0fc206572babf444660afe4abd45d6ca881ec40bf428db6c1"
+        },
+        {
+          "timestampSec": 112,
+          "framePath": "evidence/zzz/video_001/ex112.jpg",
+          "page": "音擎",
+          "fields": [
+            "wEngine"
+          ],
+          "timestampToleranceSec": 0,
+          "sha256": "8101fcf73583786cb4ae6a07b7b2a94b0dcf1ebfde24fdcaaff6f2b8a9416455"
+        }
+      ],
+      "uncertainties": [
+        "技能與驅動盤尚未完整逐項轉錄"
+      ],
+      "portraitPath": "evidence/zzz/video_001/manato_portrait.jpg",
+      "portraitSha256": "c8037f1935581931960d1710395199ed99493340b1f8e101eaf270a7aa893b17"
+    },
+    {
+      "id": "ye_shunguang",
+      "name": "葉瞬光",
+      "level": 60,
+      "mindscape": 2,
+      "element": "凜刃",
+      "specialty": "強攻",
+      "stats": {
+        "生命值": 10782,
+        "攻擊力": 2917,
+        "防禦力": 925,
+        "衝擊力": 83,
+        "暴擊率": "50.6%",
+        "暴擊傷害": "214.8%",
+        "異常掌控": 94,
+        "異常精通": 120,
+        "穿透率": "0%",
+        "能量自動回復": 1.2
+      },
+      "skills": null,
+      "wEngine": null,
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 117,
+          "framePath": "evidence/zzz/video_001/f059.jpg",
+          "page": "基礎",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "specialty",
+            "stats"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "ff7a42d6d4afa1345dc7d3db226f576fead8ac3c7412bcff28ce3de7934a1068"
+        }
+      ],
+      "uncertainties": [
+        "技能與驅動盤尚未完整逐項轉錄"
+      ],
+      "portraitPath": "evidence/zzz/video_001/ye-shunguang_portrait.jpg",
+      "portraitSha256": "ef5f7dd2661560a2c17f4b7791d3a6affaf1b4580dc3413e3ea6b768e1978f99"
+    },
+    {
+      "id": "ju_fufu",
+      "name": "橘福福",
+      "level": 60,
+      "mindscape": 0,
+      "element": "火屬性",
+      "specialty": "擊破",
+      "stats": {
+        "生命值": 12271,
+        "攻擊力": 3561,
+        "防禦力": 1042,
+        "衝擊力": 139,
+        "暴擊率": "38.6%",
+        "暴擊傷害": "54.8%",
+        "異常掌控": 93,
+        "異常精通": 96,
+        "穿透率": "0%",
+        "能量自動回復": 1.44
+      },
+      "skills": null,
+      "wEngine": {
+        "name": "福虎爐爐",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "攻擊力": "30%"
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 135,
+          "framePath": "evidence/zzz/video_001/f068.jpg",
+          "page": "基礎",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "specialty",
+            "stats"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "67ab63af993c9294b3207ea115bf3011acd28b424e6e5f86e92ad1541a895b3c"
+        },
+        {
+          "timestampSec": 133,
+          "framePath": "evidence/zzz/video_001/f067.jpg",
+          "page": "音擎",
+          "fields": [
+            "wEngine"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "cd08fde2feb68b9f8987adccd56da9c84b29f3073169af832ead71a8ed843808"
+        }
+      ],
+      "uncertainties": [
+        "技能與驅動盤尚未完整逐項轉錄"
+      ],
+      "portraitPath": "evidence/zzz/video_001/ju-fufu_portrait.jpg",
+      "portraitSha256": "9a5014ed84bd3326f58e94c87dad372a60dfa4db57a2370bf78da6e23bbf41bf"
+    },
+    {
+      "id": "yixuan",
+      "name": "儀玄",
+      "level": 60,
+      "mindscape": 0,
+      "element": "玄墨",
+      "specialty": "命破",
+      "stats": {
+        "生命值": 18305,
+        "攻擊力": 2325,
+        "防禦力": 646,
+        "衝擊力": 93,
+        "暴擊率": "69.8%",
+        "暴擊傷害": "123.6%",
+        "異常掌控": 92,
+        "異常精通": 108,
+        "穿透率": null,
+        "能量自動回復": null,
+        "貫穿力": 2527,
+        "閃能自動累積": 2
+      },
+      "skills": null,
+      "wEngine": null,
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 136.5,
+          "framePath": "evidence/zzz/video_001/ex136.5.jpg",
+          "page": "基礎",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "specialty",
+            "stats"
+          ],
+          "timestampToleranceSec": 0,
+          "sha256": "05eb4f0bb0099446ef607633a6c4b7163fcd70a3a39f2e6edc88cec583ee900c"
+        }
+      ],
+      "uncertainties": [
+        "技能與驅動盤尚未完整逐項轉錄"
+      ],
+      "portraitPath": "evidence/zzz/video_001/yixuan_portrait.jpg",
+      "portraitSha256": "4d6f0d23b7351c9286b8611cfd77ff20b6a16c970134e51bfb9863b14043d7e8"
+    },
+    {
+      "id": "pan_yinhu",
+      "name": "潘引壺",
+      "level": 60,
+      "mindscape": 6,
+      "element": "物理",
+      "specialty": "防護",
+      "stats": {
+        "生命值": 12118,
+        "攻擊力": 3078,
+        "防禦力": 1312,
+        "衝擊力": 94,
+        "暴擊率": "33.8%",
+        "暴擊傷害": "50%",
+        "異常掌控": 91,
+        "異常精通": 90,
+        "穿透率": "0%",
+        "能量自動回復": 2.8
+      },
+      "skills": null,
+      "wEngine": {
+        "name": "震元奇樞",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "攻擊力": "25%"
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 157,
+          "framePath": "evidence/zzz/video_001/f079.jpg",
+          "page": "基礎",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "specialty",
+            "stats"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "5bf01e5b123c1b1fb925db5028b6e0c9e9f5a5b9eda8605ab26964c8c84c1c13"
+        },
+        {
+          "timestampSec": 149,
+          "framePath": "evidence/zzz/video_001/f075.jpg",
+          "page": "音擎",
+          "fields": [
+            "wEngine"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "3544e4ee7b5adee8fc2af75de983143cdedff8882b95e52b85df1cdeae021072"
+        }
+      ],
+      "uncertainties": [
+        "技能與驅動盤尚未完整逐項轉錄"
+      ],
+      "portraitPath": "evidence/zzz/video_001/pan-yinhu_portrait.jpg",
+      "portraitSha256": "9466003c7dec3915489870c6442d846fc05b24311d2084d7af01a0bc00b498b8"
+    },
+    {
+      "id": "vivian",
+      "name": "薇薇安·班希",
+      "level": 60,
+      "mindscape": 0,
+      "element": "以太",
+      "specialty": "異常",
+      "stats": {
+        "生命值": 10321,
+        "攻擊力": 2520,
+        "防禦力": 967,
+        "衝擊力": 86,
+        "暴擊率": "9.8%",
+        "暴擊傷害": "69.2%",
+        "異常掌控": 198,
+        "異常精通": 408,
+        "穿透率": "0%",
+        "能量自動回復": 1.44
+      },
+      "skills": null,
+      "wEngine": {
+        "name": "飛鳥星夢",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "異常精通": 90
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 157.5,
+          "framePath": "evidence/zzz/video_001/ex157.5.jpg",
+          "page": "基礎",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "specialty",
+            "stats"
+          ],
+          "timestampToleranceSec": 0,
+          "sha256": "6056e3cc49ab046c7082c5d953253ea72352f11073ace9b966c0d10126258495"
+        },
+        {
+          "timestampSec": 165.5,
+          "framePath": "evidence/zzz/video_001/ex165.5.jpg",
+          "page": "音擎",
+          "fields": [
+            "wEngine"
+          ],
+          "timestampToleranceSec": 0,
+          "sha256": "cd7728592c6564532bd94853a9a76d47c56b27c043fa05a79d90cab93044f95a"
+        }
+      ],
+      "uncertainties": [
+        "技能與驅動盤尚未完整逐項轉錄"
+      ],
+      "portraitPath": "evidence/zzz/video_001/vivian_portrait.jpg",
+      "portraitSha256": "9a1fdb3a32ee9db30e4c97846f14415e903c4d96ced7c2066c3a6e1e72b99191"
+    },
+    {
+      "id": "astra",
+      "name": "耀嘉音",
+      "level": 60,
+      "mindscape": 0,
+      "element": "以太",
+      "specialty": "支援",
+      "stats": {
+        "生命值": 12067,
+        "攻擊力": 3757,
+        "防禦力": 986,
+        "衝擊力": 83,
+        "暴擊率": "17%",
+        "暴擊傷害": "64.4%",
+        "異常掌控": 93,
+        "異常精通": 146,
+        "穿透率": "0%",
+        "能量自動回復": 2.8
+      },
+      "skills": null,
+      "wEngine": {
+        "name": "玲瓏妝匣",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "攻擊力": "30%"
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 176.5,
+          "framePath": "evidence/zzz/video_001/ex176.5.jpg",
+          "page": "基礎",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "specialty",
+            "stats"
+          ],
+          "timestampToleranceSec": 0,
+          "sha256": "d784bf08d78b30a5af7327ccc73f07fd91bc4a792d537344e23e05bc69bfa901"
+        },
+        {
+          "timestampSec": 173,
+          "framePath": "evidence/zzz/video_001/f087.jpg",
+          "page": "音擎",
+          "fields": [
+            "wEngine"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "28a2741856aa9c1d8aa1ba9090fd9761ccacb3c1734cab92785eb54514f2d10c"
+        }
+      ],
+      "uncertainties": [
+        "技能與驅動盤尚未完整逐項轉錄"
+      ],
+      "portraitPath": "evidence/zzz/video_001/astra_portrait.jpg",
+      "portraitSha256": "65d13cb2b76b167216affcc0d17530cd64e430374b3d10018f8b1ce3ad093936"
+    },
+    {
+      "id": "qingyi",
+      "name": "青衣",
+      "level": 60,
+      "mindscape": 0,
+      "element": "電屬性",
+      "specialty": "擊破",
+      "stats": {
+        "生命值": 11529,
+        "攻擊力": 2193,
+        "防禦力": 1120,
+        "衝擊力": 193,
+        "暴擊率": "33.8%",
+        "暴擊傷害": "64.4%",
+        "異常掌控": 94,
+        "異常精通": 147,
+        "穿透率": "0%",
+        "能量自動回復": 1.2
+      },
+      "skills": null,
+      "wEngine": {
+        "name": "拘縛者",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 684,
+          "衝擊力": "18%"
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 177.5,
+          "framePath": "evidence/zzz/video_001/ex177.5.jpg",
+          "page": "基礎",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "specialty",
+            "stats"
+          ],
+          "timestampToleranceSec": 0,
+          "sha256": "056a9491ffffe52325e20a3c17b95c0c06684a0d1a011cd048d3ed592aa7c847"
+        },
+        {
+          "timestampSec": 185,
+          "framePath": "evidence/zzz/video_001/f093.jpg",
+          "page": "音擎",
+          "fields": [
+            "wEngine"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "72c7e171aefc97210fda2f765a347a4d09f62df3272c335a038adaafa59509c6"
+        }
+      ],
+      "uncertainties": [
+        "技能與驅動盤尚未完整逐項轉錄"
+      ],
+      "portraitPath": "evidence/zzz/video_001/qingyi_portrait.jpg",
+      "portraitSha256": "7c5b14d68b5d6e311c4c44fbe8ee0cb5553eee277835c8847acee0a39f6a2382"
+    },
+    {
+      "id": "zhu_yuan",
+      "name": "朱鳶",
+      "level": 60,
+      "mindscape": 0,
+      "element": "以太",
+      "specialty": "強攻",
+      "stats": {
+        "生命值": 12823,
+        "攻擊力": 3554,
+        "防禦力": 901,
+        "衝擊力": 90,
+        "暴擊率": "41%",
+        "暴擊傷害": "142.8%",
+        "異常掌控": 93,
+        "異常精通": 137,
+        "穿透率": "0%",
+        "能量自動回復": 1.2
+      },
+      "skills": null,
+      "wEngine": {
+        "name": "硫磺石",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 684,
+          "攻擊力": "30%"
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 196,
+          "framePath": "evidence/zzz/video_001/ex196.jpg",
+          "page": "基礎",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "specialty",
+            "stats"
+          ],
+          "timestampToleranceSec": 0,
+          "sha256": "4b150a42f2d8fc36f460c3b25536db06211b9938638f2ec6b46004b01bce7256"
+        },
+        {
+          "timestampSec": 193,
+          "framePath": "evidence/zzz/video_001/f097.jpg",
+          "page": "音擎",
+          "fields": [
+            "wEngine"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "d3a338f858106c726681cf9f690f67ae5448ada04d381e43102c794b673086a8"
+        }
+      ],
+      "uncertainties": [
+        "技能與驅動盤尚未完整逐項轉錄"
+      ],
+      "portraitPath": "evidence/zzz/video_001/zhu-yuan_portrait.jpg",
+      "portraitSha256": "61185316b76d1b9ba05f73298068ecf49a3081e465ce83dd0544001b75f2967c"
+    },
+    {
+      "id": "seth",
+      "name": "賽斯·洛威爾",
+      "level": 60,
+      "mindscape": 6,
+      "element": "電屬性",
+      "specialty": "防護",
+      "stats": {
+        "生命值": 12543,
+        "攻擊力": 3109,
+        "防禦力": 1312,
+        "衝擊力": 94,
+        "暴擊率": "9.8%",
+        "暴擊傷害": "69.2%",
+        "異常掌控": 86,
+        "異常精通": 135,
+        "穿透率": "0%",
+        "能量自動回復": 2.8
+      },
+      "skills": {
+        "普通攻擊": 13,
+        "閃避": 5,
+        "支援技": 16,
+        "特殊技": 15,
+        "連攜技": 15,
+        "核心技": "F"
+      },
+      "wEngine": null,
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 211,
+          "framePath": "evidence/zzz/video_001/f106.jpg",
+          "page": "基礎",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "specialty",
+            "stats"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "de141fab50a9ecbea3baf5ef507c8d7093c83fd6fb4f191dac0d6ad142add62e"
+        },
+        {
+          "timestampSec": 208.5,
+          "framePath": "evidence/zzz/video_001/ex208.5.jpg",
+          "page": "技能",
+          "fields": [
+            "skills"
+          ],
+          "timestampToleranceSec": 0,
+          "sha256": "37eb08b8f90c335af202d33e6ce7c3d8a4886654aaa8f866a51143754d01263f"
+        }
+      ],
+      "uncertainties": [
+        "技能與驅動盤尚未完整逐項轉錄"
+      ],
+      "portraitPath": "evidence/zzz/video_001/seth_portrait.jpg",
+      "portraitSha256": "10f94cc53de51d690a2e220f7ce305cdfd008817329e3c2db60e981023c5e4ef"
+    },
+    {
+      "id": "miyabi",
+      "name": "星見雅",
+      "level": 60,
+      "mindscape": 0,
+      "element": "烈霜",
+      "specialty": "異常",
+      "stats": {
+        "生命值": 11472,
+        "攻擊力": 2815,
+        "防禦力": 878,
+        "衝擊力": 86,
+        "暴擊率": "70.6%",
+        "暴擊傷害": "109.2%",
+        "異常掌控": 116,
+        "異常精通": 238,
+        "穿透率": "0%",
+        "能量自動回復": 1.2
+      },
+      "skills": null,
+      "wEngine": {
+        "name": "雙生泣星",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 594,
+          "攻擊力": "25%"
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 233,
+          "framePath": "evidence/zzz/video_001/f117.jpg",
+          "page": "基礎",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "specialty",
+            "stats"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "a1d7c40c1f24aa77abacda7189007ba79a31877606125e9e250db58dfc4b24dc"
+        },
+        {
+          "timestampSec": 221,
+          "framePath": "evidence/zzz/video_001/f111.jpg",
+          "page": "音擎",
+          "fields": [
+            "wEngine"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "d6ae85b6c644cf2e94c8fd3f4a9b1d4a225a5f3d513643ebc12ff91b3e0f354a"
+        }
+      ],
+      "uncertainties": [
+        "技能與驅動盤尚未完整逐項轉錄"
+      ],
+      "portraitPath": "evidence/zzz/video_001/miyabi_portrait.jpg",
+      "portraitSha256": "239e25587bdcacd4cac185092fe88e4d2654a7d5e08c0c2a8274cb8d0c08a915"
+    },
+    {
+      "id": "yanagi",
+      "name": "月城柳",
+      "level": 60,
+      "mindscape": 0,
+      "element": "電屬性",
+      "specialty": "異常",
+      "stats": {
+        "生命值": 11950,
+        "攻擊力": 2702,
+        "防禦力": 1017,
+        "衝擊力": 86,
+        "暴擊率": "9.8%",
+        "暴擊傷害": "69.2%",
+        "異常掌控": 192,
+        "異常精通": 311,
+        "穿透率": "0%",
+        "能量自動回復": 1.2
+      },
+      "skills": null,
+      "wEngine": {
+        "name": "雙生泣星",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 594,
+          "攻擊力": "25%"
+        }
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 232.5,
+          "framePath": "evidence/zzz/video_001/ex232.5.jpg",
+          "page": "基礎",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "specialty",
+            "stats"
+          ],
+          "timestampToleranceSec": 0,
+          "sha256": "98ce7964276fb814ff9dcb95d4d2e2160f34fbb7772861527b4e56d0236e306e"
+        },
+        {
+          "timestampSec": 229,
+          "framePath": "evidence/zzz/video_001/f115.jpg",
+          "page": "音擎",
+          "fields": [
+            "wEngine"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "85f6006e6976a17f891885068f1e049f3837b03f455ccc1398fbc9f02f1c9aa5"
+        }
+      ],
+      "uncertainties": [
+        "技能與驅動盤尚未完整逐項轉錄"
+      ],
+      "portraitPath": "evidence/zzz/video_001/yanagi_portrait.jpg",
+      "portraitSha256": "2743ff35f690f98e1d6c1b50fb028c7d03ea1b086d92693fae5161814e54ca9d"
+    },
+    {
+      "id": "soukaku",
+      "name": "蒼角",
+      "level": 60,
+      "mindscape": 6,
+      "element": "冰屬性",
+      "specialty": "支援",
+      "stats": {
+        "生命值": 12230,
+        "攻擊力": 3125,
+        "防禦力": 943,
+        "衝擊力": 86,
+        "暴擊率": "12.2%",
+        "暴擊傷害": "69.2%",
+        "異常掌控": 120,
+        "異常精通": 171,
+        "穿透率": "0%",
+        "能量自動回復": 1.87
+      },
+      "skills": null,
+      "wEngine": null,
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 237,
+          "framePath": "evidence/zzz/video_001/f119.jpg",
+          "page": "基礎",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "specialty",
+            "stats"
+          ],
+          "timestampToleranceSec": 1,
+          "sha256": "8aa712ac8673434f4b6808ed6ad03d8a31512e0708a647961222c33416f775a5"
+        }
+      ],
+      "uncertainties": [
+        "技能與驅動盤尚未完整逐項轉錄"
+      ],
+      "portraitPath": "evidence/zzz/video_001/soukaku_portrait.jpg",
+      "portraitSha256": "7aea9b7cd5cadb62711ca705bb4aeaf2144b8d2429264cbf285b43af874864ec"
+    },
+    {
+      "id": "pulchra",
+      "name": "波可娜・費雷尼",
+      "level": 60,
+      "mindscape": 6,
+      "element": "物理",
+      "stats": {
+        "生命值": 11295,
+        "攻擊力": 1856,
+        "防禦力": 979,
+        "衝擊力": 180,
+        "暴擊率": "31%",
+        "暴擊傷害": "74%",
+        "異常掌控": 92,
+        "異常精通": 117,
+        "穿透率": "0%",
+        "能量自動回復": 1.2
+      },
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 14,
+        "特殊技": 13,
+        "連攜技": 11
+      },
+      "wEngine": {
+        "name": "裁紙刀",
+        "level": 60,
+        "refinement": 5,
+        "stats": {}
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 257.5,
+          "framePath": "evidence/zzz/video_001/t257.5.jpg",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "role",
+            "stats"
+          ],
+          "page": "基礎",
+          "timestampToleranceSec": 0,
+          "sha256": "ab5883345f3c3798f3004ffed4679e55fb022d761e5b80e96a3d771b8620d71a"
+        },
+        {
+          "timestampSec": 255,
+          "framePath": "evidence/zzz/video_001/t255.jpg",
+          "fields": [
+            "wEngine"
+          ],
+          "page": "音擎",
+          "timestampToleranceSec": 0,
+          "sha256": "d0c60fb56536bcea2f30e83abb965ec15250e7d35dcc4047323f84a04d031e34"
+        },
+        {
+          "timestampSec": 256,
+          "framePath": "evidence/zzz/video_001/t256.jpg",
+          "fields": [
+            "skills"
+          ],
+          "page": "技能",
+          "timestampToleranceSec": 0,
+          "sha256": "31e9995dd8e7c73868f4afae6d68c46f39b576250657c6c79242027c4bbf69f5"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤逐片主副詞條尚未完整抽取",
+        "音擎未確認者為 null"
+      ],
+      "specialty": "擊破",
+      "portraitPath": "evidence/zzz/video_001/pulchra_portrait.jpg",
+      "portraitSha256": "dd6beefcecac9aea58b48c790df1b95b5e66f8b5c1ae114e1c47320da7eca9c9"
+    },
+    {
+      "id": "piper",
+      "name": "派派・韋爾",
+      "level": 60,
+      "mindscape": 6,
+      "element": "物理",
+      "stats": {
+        "生命值": 9624,
+        "攻擊力": 2330,
+        "防禦力": 929,
+        "衝擊力": 86,
+        "暴擊率": "19.4%",
+        "暴擊傷害": "54.8%",
+        "異常掌控": 150,
+        "異常精通": 369,
+        "穿透率": "0%",
+        "能量自動回復": 1.56
+      },
+      "skills": null,
+      "wEngine": null,
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 259,
+          "framePath": "evidence/zzz/video_001/f130.jpg",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "role",
+            "stats"
+          ],
+          "page": "基礎",
+          "timestampToleranceSec": 1,
+          "sha256": "453dc10aaef9fac62d5ce4784554bc4f4afb97067107c57eda5eb8a8029379f7"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤逐片主副詞條尚未完整抽取",
+        "音擎未確認者為 null"
+      ],
+      "specialty": "異常",
+      "portraitPath": "evidence/zzz/video_001/piper_portrait.jpg",
+      "portraitSha256": "eee3ebdad8c4cf484755df472b945bc547048fff6215b956e63cd6de68de1403"
+    },
+    {
+      "id": "lucy",
+      "name": "露西亞娜・德・蒙特夫",
+      "level": 60,
+      "mindscape": 6,
+      "element": "火",
+      "stats": {
+        "生命值": 12471,
+        "攻擊力": 2398,
+        "防禦力": 988,
+        "衝擊力": 86,
+        "暴擊率": "14.6%",
+        "暴擊傷害": "78.8%",
+        "異常掌控": 94,
+        "異常精通": 221,
+        "穿透率": "0%",
+        "能量自動回復": 3.58
+      },
+      "skills": {
+        "普通攻擊": 10,
+        "閃避": 6,
+        "支援技": 15,
+        "特殊技": 16,
+        "連攜技": 15
+      },
+      "wEngine": {
+        "name": "好鬥的阿炮",
+        "level": 60,
+        "refinement": 5,
+        "stats": {}
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 277.5,
+          "framePath": "evidence/zzz/video_001/t277.5.jpg",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "role",
+            "stats"
+          ],
+          "page": "基礎",
+          "timestampToleranceSec": 0,
+          "sha256": "fe91b223ee4bd5434f49a91e9e9eb8bf45143f5879fc0651d5f6f0556364119c"
+        },
+        {
+          "timestampSec": 275,
+          "framePath": "evidence/zzz/video_001/t275.jpg",
+          "fields": [
+            "wEngine"
+          ],
+          "page": "音擎",
+          "timestampToleranceSec": 0,
+          "sha256": "b4c6986065e2ef7360a6fa3057fd8513e4157b453e5779786bd867915dca0f2d"
+        },
+        {
+          "timestampSec": 277,
+          "framePath": "evidence/zzz/video_001/f139.jpg",
+          "fields": [
+            "skills"
+          ],
+          "page": "技能",
+          "timestampToleranceSec": 1,
+          "sha256": "72d55e050e95a71f78bc4989b848b2883498657fdcad44c9af86481664273bcd"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤逐片主副詞條尚未完整抽取",
+        "音擎未確認者為 null"
+      ],
+      "specialty": "支援",
+      "portraitPath": "evidence/zzz/video_001/lucy_portrait.jpg",
+      "portraitSha256": "c82a91e11819e943fee47630f7776b1dc0471eb245dcf7fdfb64cc03f68a45b2"
+    },
+    {
+      "id": "grace",
+      "name": "格莉絲・霍華德",
+      "level": 60,
+      "mindscape": 2,
+      "element": "電",
+      "stats": {
+        "生命值": 10690,
+        "攻擊力": 2567,
+        "防禦力": 973,
+        "衝擊力": 83,
+        "暴擊率": "14.6%",
+        "暴擊傷害": "64.4%",
+        "異常掌控": 196,
+        "異常精通": 301,
+        "穿透率": "0%",
+        "能量自動回復": 1.2
+      },
+      "skills": null,
+      "wEngine": {
+        "name": "雙生泣星",
+        "level": 60,
+        "refinement": 5,
+        "stats": {}
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 279,
+          "framePath": "evidence/zzz/video_001/f140.jpg",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "role",
+            "stats"
+          ],
+          "page": "基礎",
+          "timestampToleranceSec": 1,
+          "sha256": "2519b83ed2c1258a0c1d2e6bfad01e2be074cdad545107e815b2121bd990c252"
+        },
+        {
+          "timestampSec": 287,
+          "framePath": "evidence/zzz/video_001/f144.jpg",
+          "fields": [
+            "wEngine"
+          ],
+          "page": "音擎",
+          "timestampToleranceSec": 1,
+          "sha256": "2713bab1872701a22de7c48083f314ab04d7b65634e033df8ec261c460987c7d"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤逐片主副詞條尚未完整抽取",
+        "音擎未確認者為 null"
+      ],
+      "specialty": "異常",
+      "portraitPath": "evidence/zzz/video_001/grace_portrait.jpg",
+      "portraitSha256": "89913b27d86c313178245eeba2ed20281292b16cd450dc07292ba24a1a577bc3"
+    },
+    {
+      "id": "koleda",
+      "name": "珂蕾妲・貝洛伯格",
+      "level": 60,
+      "mindscape": 1,
+      "element": "火",
+      "stats": {
+        "生命值": 12278,
+        "攻擊力": 1939,
+        "防禦力": 923,
+        "衝擊力": 178,
+        "暴擊率": "43.4%",
+        "暴擊傷害": "93.2%",
+        "異常掌控": 97,
+        "異常精通": 123,
+        "穿透率": "0%",
+        "能量自動回復": 1.44
+      },
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 7,
+        "支援技": 11,
+        "特殊技": 12,
+        "連攜技": 11
+      },
+      "wEngine": null,
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 297.5,
+          "framePath": "evidence/zzz/video_001/t297.5.jpg",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "role",
+            "stats"
+          ],
+          "page": "基礎",
+          "timestampToleranceSec": 0,
+          "sha256": "3092139baf89a169df750ec9f8c00524287ea9b1624c855ab6b8d6db9da7e12c"
+        },
+        {
+          "timestampSec": 296,
+          "framePath": "evidence/zzz/video_001/t296.jpg",
+          "fields": [
+            "skills"
+          ],
+          "page": "技能",
+          "timestampToleranceSec": 0,
+          "sha256": "359e71d26280c2779d1e8245eb7a22fb697633878b964f417fede56902b970db"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤逐片主副詞條尚未完整抽取",
+        "音擎未確認者為 null"
+      ],
+      "specialty": "擊破",
+      "portraitPath": "evidence/zzz/video_001/koleda_portrait.jpg",
+      "portraitSha256": "af3427e9304d81dc25daa732bdb0e1361f4c602f0c18f687bcba81b1b5ac2c1d"
+    },
+    {
+      "id": "anton",
+      "name": "安東・伊萬諾夫",
+      "level": 60,
+      "mindscape": 6,
+      "element": "電",
+      "stats": {
+        "生命值": 8315,
+        "攻擊力": 1654,
+        "防禦力": 712,
+        "衝擊力": 95,
+        "暴擊率": "19.4%",
+        "暴擊傷害": "74%",
+        "異常掌控": 86,
+        "異常精通": 99,
+        "穿透率": "0%",
+        "能量自動回復": 1.96
+      },
+      "skills": null,
+      "wEngine": null,
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 299,
+          "framePath": "evidence/zzz/video_001/f150.jpg",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "role",
+            "stats"
+          ],
+          "page": "基礎",
+          "timestampToleranceSec": 1,
+          "sha256": "0d85e896bd748c6c79c0c609710f0406aa49a5d43618ab47346ff30654960131"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤逐片主副詞條尚未完整抽取",
+        "音擎未確認者為 null"
+      ],
+      "specialty": "強攻",
+      "portraitPath": "evidence/zzz/video_001/anton_portrait.jpg",
+      "portraitSha256": "a440620b18519ff80a5d0eb06ded35b49de84343baffc3a11afeb08401bd8c94"
+    },
+    {
+      "id": "ellen",
+      "name": "艾蓮・喬",
+      "level": 60,
+      "mindscape": 0,
+      "element": "冰",
+      "stats": {
+        "生命值": 11690,
+        "攻擊力": 3435,
+        "防禦力": 877,
+        "衝擊力": 93,
+        "暴擊率": "53%",
+        "暴擊傷害": "142.8%",
+        "異常掌控": 94,
+        "異常精通": 102,
+        "穿透率": "0%",
+        "能量自動回復": 1.2
+      },
+      "skills": null,
+      "wEngine": null,
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 319,
+          "framePath": "evidence/zzz/video_001/f160.jpg",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "role",
+            "stats"
+          ],
+          "page": "基礎",
+          "timestampToleranceSec": 1,
+          "sha256": "ce55145da14d07c45c7b65c853dc1c3150dba25621f3237468b83ea3a81b36da"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤逐片主副詞條尚未完整抽取",
+        "音擎未確認者為 null"
+      ],
+      "specialty": "強攻",
+      "portraitPath": "evidence/zzz/video_001/ellen_portrait.jpg",
+      "portraitSha256": "b403f1c4fdc33f17ed1ed1a787074721d89b480eb36d63656b547c30b371604b"
+    },
+    {
+      "id": "rina",
+      "name": "亞歷山德麗娜・莎芭絲緹安",
+      "level": 60,
+      "mindscape": 0,
+      "element": "電",
+      "stats": {
+        "生命值": 12729,
+        "攻擊力": 1938,
+        "防禦力": 1000,
+        "衝擊力": 83,
+        "暴擊率": "21.8%",
+        "暴擊傷害": "59.6%",
+        "異常掌控": 93,
+        "異常精通": 238,
+        "穿透率": "38.4%",
+        "能量自動回復": 3
+      },
+      "skills": {
+        "普通攻擊": 7,
+        "閃避": 7,
+        "支援技": 7,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "wEngine": {
+        "name": "好鬥的阿炮",
+        "level": 60,
+        "refinement": 5,
+        "stats": {}
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 320,
+          "framePath": "evidence/zzz/video_001/t320.jpg",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "role",
+            "stats"
+          ],
+          "page": "基礎",
+          "timestampToleranceSec": 0,
+          "sha256": "4a9c9bbfbaa0821fd77ffe8aa3b439f189a805aa6748445c87ac8628fb951812"
+        },
+        {
+          "timestampSec": 329,
+          "framePath": "evidence/zzz/video_001/f165.jpg",
+          "fields": [
+            "wEngine"
+          ],
+          "page": "音擎",
+          "timestampToleranceSec": 1,
+          "sha256": "27fa23c2c9f93a85826890204127a8d6d9d374b7df166417a884d085a5b9d02c"
+        },
+        {
+          "timestampSec": 321,
+          "framePath": "evidence/zzz/video_001/f161.jpg",
+          "fields": [
+            "skills"
+          ],
+          "page": "技能",
+          "timestampToleranceSec": 1,
+          "sha256": "fbf664ac6c5ebcdb0ec89c7e3e3b84cc1a3e67c1347c5b9d87a4e34274146ee7"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤逐片主副詞條尚未完整抽取",
+        "音擎未確認者為 null"
+      ],
+      "specialty": "支援",
+      "portraitPath": "evidence/zzz/video_001/rina_portrait.jpg",
+      "portraitSha256": "28472760e0646e547b2207e000e8ef327d4f6669ec2281b902252eda56d6b691"
+    },
+    {
+      "id": "lycaon",
+      "name": "馮・萊卡恩",
+      "level": 60,
+      "mindscape": 3,
+      "element": "冰",
+      "stats": {
+        "生命值": 11934,
+        "攻擊力": 2024,
+        "防禦力": 1110,
+        "衝擊力": 194,
+        "暴擊率": "38.6%",
+        "暴擊傷害": "93.2%",
+        "異常掌控": 91,
+        "異常精通": 117,
+        "穿透率": "0%",
+        "能量自動回復": 1.2
+      },
+      "skills": null,
+      "wEngine": null,
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 341,
+          "framePath": "evidence/zzz/video_001/f171.jpg",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "role",
+            "stats"
+          ],
+          "page": "基礎",
+          "timestampToleranceSec": 1,
+          "sha256": "2993955d5df8e4b515608a376a29eb9f751401d7a6f5b20bad5a6311569dfa19"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤逐片主副詞條尚未完整抽取",
+        "音擎未確認者為 null"
+      ],
+      "specialty": "擊破",
+      "portraitPath": "evidence/zzz/video_001/lycaon_portrait.jpg",
+      "portraitSha256": "bd36bf581498f64b5a1860ce7f7a92acbc1bd2e48eac3f4c412d69c710a9711b"
+    },
+    {
+      "id": "nekomata",
+      "name": "貓宮 又奈",
+      "level": 60,
+      "mindscape": 1,
+      "element": "物理",
+      "stats": {
+        "生命值": 11569,
+        "攻擊力": 2408,
+        "防禦力": 842,
+        "衝擊力": 92,
+        "暴擊率": "91.7%",
+        "暴擊傷害": "102.8%",
+        "異常掌控": 97,
+        "異常精通": 159,
+        "穿透率": "0%",
+        "能量自動回復": 1.2
+      },
+      "skills": null,
+      "wEngine": {
+        "name": "鋼鐵肉墊",
+        "level": 50,
+        "refinement": 1,
+        "stats": {}
+      },
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 343,
+          "framePath": "evidence/zzz/video_001/f172.jpg",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "role",
+            "stats"
+          ],
+          "page": "基礎",
+          "timestampToleranceSec": 1,
+          "sha256": "06cd4f29814254c2dce1d4b9b838fe0b9cf7fefab0a0181f1b026485cdce9386"
+        },
+        {
+          "timestampSec": 351,
+          "framePath": "evidence/zzz/video_001/f176.jpg",
+          "fields": [
+            "wEngine"
+          ],
+          "page": "音擎",
+          "timestampToleranceSec": 1,
+          "sha256": "328460fe82042747b1789bd4910714f60e0c3751ecd700db663ef9564dbec037"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤逐片主副詞條尚未完整抽取",
+        "音擎未確認者為 null"
+      ],
+      "specialty": "強攻",
+      "portraitPath": "evidence/zzz/video_001/nekomata_portrait.jpg",
+      "portraitSha256": "aa8d309d39ac21c5e4ae6c7c02d853e62b1cff8970022b61a2111e040a8eed79"
+    },
+    {
+      "id": "nicole",
+      "name": "妮可・德瑪拉",
+      "level": 60,
+      "mindscape": 6,
+      "element": "以太",
+      "stats": {
+        "生命值": 11659,
+        "攻擊力": 2136,
+        "防禦力": 836,
+        "衝擊力": 88,
+        "暴擊率": "19.4%",
+        "暴擊傷害": "112.4%",
+        "異常掌控": 90,
+        "異常精通": 248,
+        "穿透率": "0%",
+        "能量自動回復": 3.58
+      },
+      "skills": null,
+      "wEngine": null,
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 361.5,
+          "framePath": "evidence/zzz/video_001/t361.5.jpg",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "role",
+            "stats"
+          ],
+          "page": "基礎",
+          "timestampToleranceSec": 0,
+          "sha256": "e2bc40654ec96f6c140ffd490b281beaa936fbc1b77e24cb86d698270f938818"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤逐片主副詞條尚未完整抽取",
+        "音擎未確認者為 null"
+      ],
+      "specialty": "支援",
+      "portraitPath": "evidence/zzz/video_001/nicole_portrait.jpg",
+      "portraitSha256": "c39aece7ef06f7903a08cefe225e3f7d8f0e26589f5c70cd7c3ef860ceed7364"
+    },
+    {
+      "id": "anby",
+      "name": "安比・德瑪拉",
+      "level": 60,
+      "mindscape": 6,
+      "element": "電",
+      "stats": {
+        "生命值": 8387,
+        "攻擊力": 1302,
+        "防禦力": 776,
+        "衝擊力": 160,
+        "暴擊率": "18.2%",
+        "暴擊傷害": "69.2%",
+        "異常掌控": 94,
+        "異常精通": 120,
+        "穿透率": "0%",
+        "能量自動回復": 1.2
+      },
+      "skills": null,
+      "wEngine": null,
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 363,
+          "framePath": "evidence/zzz/video_001/f182.jpg",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "role",
+            "stats"
+          ],
+          "page": "基礎",
+          "timestampToleranceSec": 1,
+          "sha256": "c5a608f23e52d121202ba64751fd529e7b14d98fb6c5071f4de1032b0178f6f6"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤逐片主副詞條尚未完整抽取",
+        "音擎未確認者為 null"
+      ],
+      "specialty": "擊破",
+      "portraitPath": "evidence/zzz/video_001/anby_portrait.jpg",
+      "portraitSha256": "988dceb9ad8821e24ee699643d33ce4074dfa35127341c8e17a6b6a3992a5359"
+    },
+    {
+      "id": "corin",
+      "name": "可琳・威克斯",
+      "level": 31,
+      "mindscape": 6,
+      "element": "物理",
+      "stats": {
+        "生命值": 6551,
+        "攻擊力": 1009,
+        "防禦力": 609,
+        "衝擊力": 93,
+        "暴擊率": "48.2%",
+        "暴擊傷害": "93.2%",
+        "異常掌控": 93,
+        "異常精通": 141,
+        "穿透率": "0%",
+        "能量自動回復": 1.44
+      },
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 5,
+        "特殊技": 5,
+        "連攜技": 5
+      },
+      "wEngine": null,
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 383,
+          "framePath": "evidence/zzz/video_001/f192.jpg",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "role",
+            "stats"
+          ],
+          "page": "基礎",
+          "timestampToleranceSec": 1,
+          "sha256": "515918ce350bdc5d3548b494e7cb790aa0fd096f10c2d56f9342a0899af250f3"
+        },
+        {
+          "timestampSec": 381,
+          "framePath": "evidence/zzz/video_001/f191.jpg",
+          "fields": [
+            "skills"
+          ],
+          "page": "技能",
+          "timestampToleranceSec": 1,
+          "sha256": "f526cbc17f3eb3462ec60d3d7e16b8354975b5f48421ef49270df2969d587676"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤逐片主副詞條尚未完整抽取",
+        "音擎未確認者為 null"
+      ],
+      "specialty": "強攻",
+      "portraitPath": "evidence/zzz/video_001/corin_portrait.jpg",
+      "portraitSha256": "dab3df057f4e0d84cea50bd03d6e81aa75f78868be804fe3a611ec0304ea2465"
+    },
+    {
+      "id": "ben",
+      "name": "本・比格",
+      "level": 20,
+      "mindscape": 6,
+      "element": "火",
+      "stats": {
+        "生命值": 4251,
+        "攻擊力": 653,
+        "防禦力": 407,
+        "衝擊力": 95,
+        "暴擊率": "5%",
+        "暴擊傷害": "59.6%",
+        "異常掌控": 86,
+        "異常精通": 117,
+        "穿透率": "0%",
+        "能量自動回復": 1.58
+      },
+      "skills": null,
+      "wEngine": null,
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 395,
+          "framePath": "evidence/zzz/video_001/f198.jpg",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "role",
+            "stats"
+          ],
+          "page": "基礎",
+          "timestampToleranceSec": 1,
+          "sha256": "1bbafd4e36b1d45ebdb4b563735c66ba5eee8a90dcd582f20ffa26855c279b85"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤逐片主副詞條尚未完整抽取",
+        "音擎未確認者為 null"
+      ],
+      "specialty": "防護",
+      "portraitPath": "evidence/zzz/video_001/ben_portrait.jpg",
+      "portraitSha256": "5f1266ef87eba8756b3486f7cbac3ce951e5c80cc7738a1f7650940e63db9edc"
+    },
+    {
+      "id": "billy",
+      "name": "比利・奇德",
+      "level": 20,
+      "mindscape": 6,
+      "element": "物理",
+      "stats": {
+        "生命值": 5188,
+        "攻擊力": 771,
+        "防禦力": 430,
+        "衝擊力": 91,
+        "暴擊率": "38.6%",
+        "暴擊傷害": "64.4%",
+        "異常掌控": 92,
+        "異常精通": 172,
+        "穿透率": "0%",
+        "能量自動回復": 1.44
+      },
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 5,
+        "特殊技": 5,
+        "連攜技": 5
+      },
+      "wEngine": null,
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 395.5,
+          "framePath": "evidence/zzz/video_001/exact395.5.jpg",
+          "page": "基礎",
+          "fields": [
+            "name",
+            "level",
+            "element",
+            "role",
+            "stats",
+            "mindscape"
+          ],
+          "timestampToleranceSec": 0,
+          "sha256": "39ce31f80b38c19960acb2a4607551191f52b7dd80a5e08436be4fb553831ffb"
+        },
+        {
+          "timestampSec": 405,
+          "framePath": "evidence/zzz/video_001/f203.jpg",
+          "fields": [
+            "mindscape"
+          ],
+          "page": "其他",
+          "timestampToleranceSec": 1,
+          "sha256": "db205d9b4ca6847c21c135688403fc5947a8e427e1599227598dd8a11562aa79"
+        },
+        {
+          "timestampSec": 397,
+          "framePath": "evidence/zzz/video_001/f199.jpg",
+          "fields": [
+            "skills"
+          ],
+          "page": "技能",
+          "timestampToleranceSec": 1,
+          "sha256": "810f2194fc33b09b83a94a884a0a48f610e62e046395154c627aa9991b7e3d7b"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤逐片主副詞條尚未完整抽取",
+        "音擎未確認者為 null"
+      ],
+      "specialty": "強攻",
+      "portraitPath": "evidence/zzz/video_001/billy_portrait.jpg",
+      "portraitSha256": "bfc776d3df8002368eebde0ec35c798112a990aade6b4b54e46abf7de4700cdf"
+    },
+    {
+      "id": "soldier_11",
+      "name": "11號",
+      "level": 1,
+      "mindscape": 1,
+      "element": "火",
+      "stats": {
+        "生命值": 1242,
+        "攻擊力": 385,
+        "防禦力": 272,
+        "衝擊力": 93,
+        "暴擊率": "25%",
+        "暴擊傷害": "54.8%",
+        "異常掌控": 94,
+        "異常精通": 93,
+        "穿透率": "0%",
+        "能量自動回復": 1.44
+      },
+      "skills": null,
+      "wEngine": null,
+      "driveDiscs": null,
+      "evidence": [
+        {
+          "timestampSec": 415,
+          "framePath": "evidence/zzz/video_001/f208.jpg",
+          "fields": [
+            "name",
+            "level",
+            "mindscape",
+            "element",
+            "role",
+            "stats"
+          ],
+          "page": "基礎",
+          "timestampToleranceSec": 1,
+          "sha256": "d222faa99204d4ede837b0d99e750c5aab2b07ce2df87903c32aa720d4e43d0e"
+        }
+      ],
+      "uncertainties": [
+        "驅動盤逐片主副詞條尚未完整抽取",
+        "音擎未確認者為 null"
+      ],
+      "specialty": "強攻",
+      "portraitPath": "evidence/zzz/video_001/soldier-11_portrait.jpg",
+      "portraitSha256": "e8ae2ce96659c382624e17f6aeb3c588a523e44bf0e54082c7512f37b15d646f"
+    }
+  ],
+  "coverage": {
+    "method": "逐角色人工核對影片；每2秒索引並補取短暫面板",
+    "status": "已確認角色及所附面板；未完整逐片轉錄驅動盤",
+    "unknownPolicy": "不清楚或未核對欄位為null，不據外觀推測數值",
+    "privacy": "證據圖片已裁除底部UID；未匯入控制中心畫面或影片音訊"
+  }
+}

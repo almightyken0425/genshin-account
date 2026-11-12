@@ -1,14 +1,16 @@
-# 原神手帳
+# HOYO
 
-保存個人的角色現況、裝備與截圖證據，供後續 Sites 查看、編輯及助手分析使用。
+保存原神與絕區零的個人角色現況、裝備及影片截圖證據，供唯讀 Sites 查看與助手分析。兩款遊戲使用獨立資料契約，不混用角色、裝備或數值規則。
 
-先看 [帳號資料摘要](docs/account_summary.md)。目前本分支涵蓋 47 名角色、47 件武器、235 件聖遺物與 513 張截圖，未盤點完整角色庫與背包。本次新增內容與補充核對見 [匯入核對紀錄](docs/import_review_20261111.md)。
+產品名稱為 HOYO。既有 GitHub repo 與 Sites 網址保留，避免中斷連結及資料連線。
+
+先看 [帳號資料摘要](docs/account_summary.md)。原神現況涵蓋 47 名角色、47 件武器、236 件聖遺物，未盤點完整角色庫與背包。本次新增內容與補充核對見 [匯入核對紀錄](docs/import_review_20261111.md)。
 
 ## 資料入口
 
 | 內容 | 位置 | 用途 |
 | --- | --- | --- |
-| 正式現況 | [data/account.json](data/account.json) | 角色、裝備、配裝、面板觀測及隊伍 |
+| 原神正式現況 | [data/account.json](data/account.json) | 角色、裝備、配裝、面板觀測及隊伍 |
 | 個人偏好 | [data/preferences.json](data/preferences.json) | 培養目標、喜好與資源限制，未提供的欄位保持未知 |
 | 閱讀摘要 | [docs/account_summary.md](docs/account_summary.md) | 由正式現況產生，含截圖連結 |
 | 原始辨識 | [imports/video_001/extracted.json](imports/video_001/extracted.json) | 保留首次辨識結果，供回查 |
@@ -18,11 +20,14 @@
 | 分析紀錄 | [analysis/README.md](analysis/README.md) | 建議的版本依據與保存格式 |
 | Sites 交接 | [site/README.md](site/README.md) | 網站來源、部署方式與驗證狀態 |
 
+| 絕區零正式現況 | [data/zzz/account.json](data/zzz/account.json) | 影片確認的角色與裝備觀測，未知欄位保持 null |
+| 絕區零資料契約 | [docs/zzz_data_contract.md](docs/zzz_data_contract.md) | 獨立 schema、來源及證據規則 |
+
 ## 目前狀態
 
-資料、匯入工具、驗證器、閱讀摘要及 Sites 網站已建立。本分支包含 47 位角色的匯入候選，合併至 main 後才會成為網站的正式資料。網站的實際寫回驗收仍需獨立確認。
+原神資料及網站已建立。絕區零以獨立影片匯入，未出現在影片或未看清的資訊不補猜；收錄清單不代表完整角色庫。
 
-GitHub 保存正式資料。Sites 透過服務端專用連線讀寫同一份資料，不建立另一份可獨立修改的帳號資料庫。
+GitHub 保存正式資料。Sites 透過服務端專用連線唯讀取得資料，不建立另一份可獨立修改的帳號資料庫。
 
 本次影片的錄影日期與遊戲版本未知。匯入時間不代表錄影時間。天賦是畫面顯示等級，基礎等級保持 `null`。
 

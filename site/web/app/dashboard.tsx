@@ -59,8 +59,8 @@ export default function Dashboard({initialCharacter=''}:{initialCharacter?:strin
   window.addEventListener('scroll',onScroll,{passive:true});
   return()=>window.removeEventListener('scroll',onScroll);
  },[selected,section]);
- useEffect(()=>{try{setFullLabels(localStorage.getItem('genshin-detail-labels')==='full')}catch{}},[]);
- function toggleLabels(){setFullLabels(previous=>{const next=!previous;try{localStorage.setItem('genshin-detail-labels',next?'full':'compact')}catch{}return next})}
+ useEffect(()=>{try{setFullLabels((localStorage.getItem('hoyo-genshin-detail-labels')??localStorage.getItem('genshin-detail-labels'))==='full')}catch{}},[]);
+ function toggleLabels(){setFullLabels(previous=>{const next=!previous;try{localStorage.setItem('hoyo-genshin-detail-labels',next?'full':'compact')}catch{}return next})}
 
  const headingRef=useRef<HTMLHeadingElement>(null),searchRef=useRef<HTMLInputElement>(null);
  const cardRefs=useRef(new Map<string,HTMLButtonElement>()),listScroll=useRef(0),lastOpened=useRef('');
@@ -91,11 +91,11 @@ export default function Dashboard({initialCharacter=''}:{initialCharacter?:strin
  function openCharacter(id:string){
   listScroll.current=window.scrollY;lastOpened.current=id;focusTarget.current='detail';
   const url=new URL(window.location.href);url.searchParams.delete('tab');url.searchParams.delete('team');url.searchParams.set('character',id);
-  window.history.pushState({...window.history.state,genshinCharacterFromList:true},'',url);
+  window.history.pushState({...window.history.state,hoyoCharacterFromList:true},'',url);
   setSelected(id);setSection('roster');setExpanded(null);
  }
  function returnToList(){
-  if(new URL(window.location.href).searchParams.has('character')&&window.history.state?.genshinCharacterFromList){
+  if(new URL(window.location.href).searchParams.has('character')&&(window.history.state?.hoyoCharacterFromList||window.history.state?.genshinCharacterFromList)){
    window.history.back();return;
   }
   const url=new URL(window.location.href);url.searchParams.delete('character');

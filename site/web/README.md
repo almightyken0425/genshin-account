@@ -1,10 +1,10 @@
-# 原神手帳
+# HOYO
 
-私人 Sites 網站，唯讀查看 GitHub 的原神角色紀錄。
+私人 Sites 網站，唯讀查看 GitHub 的原神與絕區零角色紀錄。
 
 ## 正式資料
 
-固定來源為 almightyken0425/genshin-account 的 main 分支。data/account.json 是唯一正式現況。網站不內建帳號資料副本，不使用瀏覽器儲存作為正式紀錄。
+固定來源為 almightyken0425/genshin-account 的 main 分支。原神 data/account.json 與絕區零 data/zzz/account.json 分別是各遊戲的正式現況。網站不內建帳號資料副本，不使用瀏覽器儲存作為正式紀錄。
 
 來源碼由 Sites 的獨立託管庫保存。GitHub repo 的 site/web 是交付時的來源副本，Sites source push 不會同步角色資料。
 
@@ -93,3 +93,11 @@ API 參考：[GitHub commit mutation](https://docs.github.com/en/graphql/referen
 沿用 .openai/hosting.json 的 project_id。依 Sites skill 使用 source helper 保存精確來源及封裝，再發布到既有私人 Site。不要另建 Site 或切換可見範圍。
 
 尚未執行真正的角色資料寫入驗收，不應僅憑測試通過就宣稱線上寫入已驗證。
+
+## HOYO 多遊戲結構
+
+- `app/hoyo.tsx` 提供遊戲切換，原有角色、隊伍與培養頁面保留。
+- 原神維持 `data/account.json` 與既有 schema，避免歷史證據、面板指紋或使用者修改遺失。
+- 絕區零使用獨立 `data/zzz/account.json`、`/api/zzz` 與角色畫面；未確認數值保留 null。
+- 角色圖片只從已確認的 `evidence/zzz/` 路徑經登入保護 API 取得，不公開私人錄影。
+- 品牌統一 HOYO；既有 GitHub repo 和 Site slug 保留，舊連結繼續可用。

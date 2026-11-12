@@ -1,17 +1,19 @@
-# 原神手帳網站
+# HOYO
 
-[開啟原神手帳](https://ken-genshin-archive.almightyken0425.chatgpt.site)，僅擁有者可見。
+[開啟 HOYO](https://ken-genshin-archive.almightyken0425.chatgpt.site)，僅擁有者可見。
 
-## 來源與正式資料
+## 來源與資料
 
-Sites 託管庫保存網站來源；[web](web) 是對應已部署來源的副本，[source.json](source.json) 記錄精確版本。GitHub main 的 data/account.json 為唯一角色現況，網站即時讀取，不將測試樣本當正式資料。沿用既有 Site，不新建或改動分享。
+Sites 託管庫保存網站來源；web 是對應來源的副本，source.json 記錄部署版本。GitHub main 的 data/account.json 保留原神現況，data/zzz/account.json 是獨立的絕區零觀測。網站從固定 revision 讀取資料與證據，不使用測試資料冒充正式帳號。
 
-## 唯讀介面
+保留原 GitHub repo 與 Site 網址，產品名稱改為 HOYO。未更改分享或登入權限。全站介面唯讀，原神既有角色、隊伍、培養頁與循環卡片保持原有功能。
 
-2026-11-11 依使用者要求移除全站編輯、保存、草稿及配裝轉移介面。角色數據、來源與舊面板不刪除。既有伺服器資料服務保留；本次不變更憑證、權限或正式角色資料。
+## 絕區零
 
-底部浮動導覽提供「隊伍」、「角色列表」與「培養重點」（等待分析）。隊伍列表無標題且每卡僅四人圖片，整卡進操作詳情；七隊建議依 2026/11/11 現況整理，非實測最佳秒軸，附查核依據。詳情成員可進角色頁。保留搜尋、篩選、排序與精簡／完整標籤模式。
+目前38名角色來自使用者指定影片，基本面板、等級、影畫與頭像有截圖依據。技能與音擎僅保留已核對資訊。驅動盤尚未逐片完整轉錄，保持 null，不代表未裝備。影片日期未知，不把匯入時間當錄影時間。
+
+圖片經 owner-only API 取得，驗證 GitHub revision、允許的路徑與SHA-256；未將私人圖片包進公開靜態來源。
 
 ## 驗證
 
-43 項自動測試、TypeScript、正式 build 通過。本機以固定 v1 測試資料完成列表、詳情、聖遺物展開、隊伍切換及瀏覽器返回測試；未以測試資料替換線上帳號。Sites v10 部署成功。依 Sites skill 管理原 owner-private 網站，憑證不得進入來源碼或瀏覽器。
+HOYO 整合來源通過73項測試、TypeScript與build；資料通過獨立schema、116張證據與頭像hash驗證。部署結果以 source.json 為準，不能把本機測試等同線上已驗收。
