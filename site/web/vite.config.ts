@@ -1,5 +1,6 @@
 import vinext from "vinext";
 import {localAccountPreview} from "./scripts/vite/local-account-preview.mjs";
+import {artworkDraftPreview} from "./scripts/vite/artwork-draft-preview.mjs";
 import { defineConfig } from "vite";
 import hostingConfig from "./.openai/hosting.json";
 import { readExecutionProfile } from "./scripts/execution-profile.mjs";
@@ -55,6 +56,7 @@ export default defineConfig(async ({ command }) => {
     },
     plugins: [
       localAccountPreview(),
+      artworkDraftPreview(),
       vinext(),
       sites({ mockAuth: !managedLinux }),
       connectorPreview(),

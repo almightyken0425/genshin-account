@@ -1,0 +1,344 @@
+{
+  "jane": {
+    "sourcePath": "/assets/zzz/characters/jane_splash.png",
+    "x": 200,
+    "y": 0,
+    "width": 600,
+    "height": 800,
+    "sourceWidth": 961,
+    "sourceHeight": 1800
+  },
+  "damielle": {
+    "sourcePath": "/assets/zzz/characters/damielle_splash.png",
+    "x": 680,
+    "y": 0,
+    "width": 450,
+    "height": 600,
+    "sourceWidth": 1800,
+    "sourceHeight": 1135
+  },
+  "velina": {
+    "sourcePath": "/assets/zzz/characters/velina_splash.png",
+    "x": 335,
+    "y": 0,
+    "width": 810,
+    "height": 1080,
+    "sourceWidth": 1442,
+    "sourceHeight": 1800
+  },
+  "pyrois": {
+    "sourcePath": "/assets/zzz/characters/pyrois_splash.png",
+    "x": 720,
+    "y": 0,
+    "width": 600,
+    "height": 800,
+    "sourceWidth": 1800,
+    "sourceHeight": 1700
+  },
+  "nangong_yu": {
+    "sourcePath": "/assets/zzz/characters/nangong_yu_splash.png",
+    "x": 250,
+    "y": 0,
+    "width": 450,
+    "height": 600,
+    "sourceWidth": 777,
+    "sourceHeight": 1152
+  },
+  "sunna": {
+    "sourcePath": "/assets/zzz/characters/sunna_splash.png",
+    "x": 53,
+    "y": 0,
+    "width": 750,
+    "height": 1000,
+    "sourceWidth": 803,
+    "sourceHeight": 1800
+  },
+  "zhao": {
+    "sourcePath": "/assets/zzz/characters/zhao_splash.png",
+    "x": 120,
+    "y": 0,
+    "width": 600,
+    "height": 800,
+    "sourceWidth": 919,
+    "sourceHeight": 966
+  },
+  "lucia": {
+    "sourcePath": "/assets/zzz/characters/lucia_splash.png",
+    "x": 160,
+    "y": 40,
+    "width": 675,
+    "height": 900,
+    "sourceWidth": 975,
+    "sourceHeight": 1800
+  },
+  "yuzuha": {
+    "sourcePath": "/assets/zzz/characters/yuzuha_splash.png",
+    "x": 215,
+    "y": 260,
+    "width": 570,
+    "height": 760,
+    "sourceWidth": 931,
+    "sourceHeight": 1800
+  },
+  "manato": {
+    "sourcePath": "/assets/zzz/characters/manato_splash.png",
+    "x": 159,
+    "y": 0,
+    "width": 414,
+    "height": 552,
+    "sourceWidth": 757,
+    "sourceHeight": 1221
+  },
+  "ye_shunguang": {
+    "sourcePath": "/assets/zzz/characters/ye_shunguang_splash.png",
+    "x": 170,
+    "y": 0,
+    "width": 525,
+    "height": 700,
+    "sourceWidth": 858,
+    "sourceHeight": 1224
+  },
+  "ju_fufu": {
+    "sourcePath": "/assets/zzz/characters/ju_fufu_splash.png",
+    "x": 245,
+    "y": 140,
+    "width": 750,
+    "height": 1000,
+    "sourceWidth": 1118,
+    "sourceHeight": 1800
+  },
+  "yixuan": {
+    "sourcePath": "/assets/zzz/characters/yixuan_splash.png",
+    "x": 400,
+    "y": 0,
+    "width": 675,
+    "height": 900,
+    "sourceWidth": 1304,
+    "sourceHeight": 1800
+  },
+  "pan_yinhu": {
+    "sourcePath": "/assets/zzz/characters/pan_yinhu_splash.png",
+    "x": 250,
+    "y": 0,
+    "width": 750,
+    "height": 1000,
+    "sourceWidth": 1269,
+    "sourceHeight": 1800
+  },
+  "vivian": {
+    "sourcePath": "/assets/zzz/characters/vivian_splash.png",
+    "x": 250,
+    "y": 280,
+    "width": 600,
+    "height": 800,
+    "sourceWidth": 984,
+    "sourceHeight": 1800
+  },
+  "astra": {
+    "sourcePath": "/assets/zzz/characters/astra_splash.png",
+    "x": 250,
+    "y": 50,
+    "width": 600,
+    "height": 800,
+    "sourceWidth": 1038,
+    "sourceHeight": 1800
+  },
+  "qingyi": {
+    "sourcePath": "/assets/zzz/characters/qingyi_splash.png",
+    "x": 180,
+    "y": 0,
+    "width": 840,
+    "height": 1120,
+    "sourceWidth": 1031,
+    "sourceHeight": 1800
+  },
+  "zhu_yuan": {
+    "sourcePath": "/assets/zzz/characters/zhu_yuan_splash.png",
+    "x": 100,
+    "y": 0,
+    "width": 675,
+    "height": 900,
+    "sourceWidth": 795,
+    "sourceHeight": 1800
+  },
+  "seth": {
+    "sourcePath": "/assets/zzz/characters/seth_splash.png",
+    "x": 350,
+    "y": 0,
+    "width": 600,
+    "height": 800,
+    "sourceWidth": 1201,
+    "sourceHeight": 1800
+  },
+  "miyabi": {
+    "sourcePath": "/assets/zzz/characters/miyabi_splash.png",
+    "x": 220,
+    "y": 140,
+    "width": 600,
+    "height": 800,
+    "sourceWidth": 1141,
+    "sourceHeight": 1800
+  },
+  "yanagi": {
+    "sourcePath": "/assets/zzz/characters/yanagi_splash.png",
+    "x": 180,
+    "y": 0,
+    "width": 600,
+    "height": 800,
+    "sourceWidth": 1264,
+    "sourceHeight": 1800
+  },
+  "soukaku": {
+    "sourcePath": "/assets/zzz/characters/soukaku_splash.png",
+    "x": 410,
+    "y": 0,
+    "width": 840,
+    "height": 1120,
+    "sourceWidth": 1332,
+    "sourceHeight": 1775
+  },
+  "pulchra": {
+    "sourcePath": "/assets/zzz/characters/pulchra_splash.png",
+    "x": 250,
+    "y": 80,
+    "width": 600,
+    "height": 800,
+    "sourceWidth": 1059,
+    "sourceHeight": 1800
+  },
+  "piper": {
+    "sourcePath": "/assets/zzz/characters/piper_splash.png",
+    "x": 50,
+    "y": 80,
+    "width": 780,
+    "height": 1040,
+    "sourceWidth": 867,
+    "sourceHeight": 1800
+  },
+  "lucy": {
+    "sourcePath": "/assets/zzz/characters/lucy_splash.png",
+    "x": 450,
+    "y": 0,
+    "width": 600,
+    "height": 800,
+    "sourceWidth": 1355,
+    "sourceHeight": 1560
+  },
+  "grace": {
+    "sourcePath": "/assets/zzz/characters/grace_splash.png",
+    "x": 15,
+    "y": 0,
+    "width": 675,
+    "height": 900,
+    "sourceWidth": 698,
+    "sourceHeight": 1800
+  },
+  "koleda": {
+    "sourcePath": "/assets/zzz/characters/koleda_splash.png",
+    "x": 410,
+    "y": 0,
+    "width": 750,
+    "height": 1000,
+    "sourceWidth": 1472,
+    "sourceHeight": 1711
+  },
+  "anton": {
+    "sourcePath": "/assets/zzz/characters/anton_splash.png",
+    "x": 200,
+    "y": 0,
+    "width": 840,
+    "height": 1120,
+    "sourceWidth": 1055,
+    "sourceHeight": 1800
+  },
+  "ellen": {
+    "sourcePath": "/assets/zzz/characters/ellen_splash.png",
+    "x": 550,
+    "y": 0,
+    "width": 600,
+    "height": 800,
+    "sourceWidth": 1530,
+    "sourceHeight": 1800
+  },
+  "rina": {
+    "sourcePath": "/assets/zzz/characters/rina_splash.png",
+    "x": 260,
+    "y": 0,
+    "width": 600,
+    "height": 800,
+    "sourceWidth": 1390,
+    "sourceHeight": 1800
+  },
+  "lycaon": {
+    "sourcePath": "/assets/zzz/characters/lycaon_splash.png",
+    "x": 325,
+    "y": 0,
+    "width": 750,
+    "height": 1000,
+    "sourceWidth": 1333,
+    "sourceHeight": 1800
+  },
+  "nekomata": {
+    "sourcePath": "/assets/zzz/characters/nekomata_splash.png",
+    "x": 250,
+    "y": 80,
+    "width": 600,
+    "height": 800,
+    "sourceWidth": 932,
+    "sourceHeight": 1479
+  },
+  "nicole": {
+    "sourcePath": "/assets/zzz/characters/nicole_splash.png",
+    "x": 419,
+    "y": 0,
+    "width": 600,
+    "height": 800,
+    "sourceWidth": 1019,
+    "sourceHeight": 1800
+  },
+  "anby": {
+    "sourcePath": "/assets/zzz/characters/anby_splash.png",
+    "x": 450,
+    "y": 0,
+    "width": 750,
+    "height": 1000,
+    "sourceWidth": 1267,
+    "sourceHeight": 1716
+  },
+  "corin": {
+    "sourcePath": "/assets/zzz/characters/corin_splash.png",
+    "x": 350,
+    "y": 0,
+    "width": 750,
+    "height": 1000,
+    "sourceWidth": 1344,
+    "sourceHeight": 1750
+  },
+  "ben": {
+    "sourcePath": "/assets/zzz/characters/ben_splash.png",
+    "x": 100,
+    "y": 180,
+    "width": 840,
+    "height": 1120,
+    "sourceWidth": 1362,
+    "sourceHeight": 1800
+  },
+  "billy": {
+    "sourcePath": "/assets/zzz/characters/billy_splash.png",
+    "x": 100,
+    "y": 0,
+    "width": 900,
+    "height": 1200,
+    "sourceWidth": 1124,
+    "sourceHeight": 1800
+  },
+  "soldier_11": {
+    "sourcePath": "/assets/zzz/characters/soldier_11_splash.png",
+    "x": 0,
+    "y": 0,
+    "width": 825,
+    "height": 1100,
+    "sourceWidth": 828,
+    "sourceHeight": 1800
+  }
+}

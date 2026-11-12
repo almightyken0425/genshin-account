@@ -1,0 +1,33 @@
+/* Game-specific equipment framing. Character surfaces live in components/character. */
+.zzz-main{padding-bottom:32px}
+.zzz-equipment-image{position:relative;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr);place-items:center;flex-shrink:0;min-width:0;overflow:hidden;isolation:isolate}
+.zzz-equipment-image>img{position:absolute;inset:0;display:block;width:100%;height:100%;min-width:0;min-height:0;max-width:none;object-fit:contain;object-position:center}
+.zzz-equipment-image--disc{width:100%;aspect-ratio:1}
+.zzz-equipment-image>.media-image-fallback{position:absolute;inset:0;width:100%;height:100%}
+
+.zzz-equipment-sets{display:flex;align-items:center;align-content:center;justify-content:center;flex-wrap:wrap;gap:4px;min-width:0;min-height:96px;width:100%}
+.zzz-set-art{display:block;flex:0 0 56px;width:56px;max-width:100%}
+.zzz-detail .expanded-weapon{grid-template-columns:180px minmax(0,1fr)}
+.zzz-disc-details{row-gap:18px}
+.zzz-disc-heading{grid-column:1/-1;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:7px;color:var(--ink);font-size:13px;font-weight:600}
+.zzz-disc-divider{color:var(--subtle);font-weight:400}
+.zzz-disc-effectiveness{display:inline-flex;align-items:baseline;gap:5px;color:var(--muted);font-size:12px;font-weight:400}
+.zzz-disc-heading .effective-badge{position:static;display:inline;min-width:0;height:auto;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;color:var(--ink);font-size:13px;font-weight:650}
+.zzz-disc-picture{width:120px;max-width:100%}
+.zzz-unconfirmed,.zzz-evidence,.zzz-notes{color:var(--muted)}
+.zzz-evidence,.zzz-notes{margin:24px 0;text-align:center}
+.zzz-evidence p{margin-top:8px;overflow-wrap:anywhere}
+.zzz-classification{text-align:center;margin-bottom:18px;color:var(--muted)}
+.zzz-detail .talent-values{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:24px}
+@media(max-width:720px){
+ .zzz-disc-picture{width:96px}
+ .zzz-detail .expanded-weapon{grid-template-columns:120px minmax(0,1fr)}
+}
+@media(max-width:480px){
+ .zzz-detail .expanded-weapon{grid-template-columns:90px minmax(0,1fr);gap:14px}
+ .zzz-disc-details{row-gap:15px}
+ .zzz-disc-picture{width:70px}
+ .zzz-disc-heading{gap:6px;font-size:12px}
+ .zzz-disc-effectiveness{font-size:11px}
+ .zzz-disc-heading .effective-badge{font-size:12px}
+}

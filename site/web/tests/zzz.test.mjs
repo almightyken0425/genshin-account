@@ -15,7 +15,10 @@ test('ZZZ image paths stay in owner-protected evidence directory',()=>{
 });
 test('HOYO separates games, retains existing source and has no fabricated ZZZ fallback',()=>{
  const shell=readFileSync(new URL('../app/hoyo.tsx',import.meta.url),'utf8');
- assert.match(shell,/HOYO/);assert.match(shell,/絕區零/);assert.match(shell,/popstate/);
+ const gameSwitch=readFileSync(new URL('../components/navigation/game_switch.tsx',import.meta.url),'utf8');
+ assert.match(shell,/GameSwitch/);assert.match(shell,/popstate/);
+ assert.match(gameSwitch,/genshin:'原神'/);assert.match(gameSwitch,/zzz:'絕區零'/);
+ assert.ok(!shell.includes('game-switch'));
  const source=readFileSync(new URL('../lib/github.mjs',import.meta.url),'utf8');
  assert.match(source,/data\/account.json/);assert.match(source,/data\/zzz\/account.json/);
  const ui=readFileSync(new URL('../app/zzz_dashboard.tsx',import.meta.url),'utf8');

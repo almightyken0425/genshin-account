@@ -1,0 +1,10 @@
+/* Game selection belongs to the same dock as the active game's pages. */
+.main.hoyo-main{padding-top:18px;padding-bottom:calc(118px + env(safe-area-inset-bottom))}
+.footer-fab.navigation-dock{max-width:calc(100vw - 24px);gap:6px;padding:7px}
+.footer-fab.navigation-dock>button{flex:0 0 50px;width:50px;min-width:50px;min-height:50px;padding:12px}
+.footer-fab.navigation-dock>.game-switch-button{color:var(--ink);font-size:20px;font-weight:650;line-height:1}
+@media(max-width:640px){.main.hoyo-main{padding-top:12px}}
+@media(max-width:360px){
+ .footer-fab.navigation-dock{gap:4px;padding:6px}
+ .footer-fab.navigation-dock>button{flex-basis:46px;width:46px;min-width:46px;min-height:46px}
+}

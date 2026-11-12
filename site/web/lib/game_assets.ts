@@ -1,9 +1,13 @@
 import catalog from './game_assets.json';
-type CharacterArt={name:string,gameId:number,rarity:number,icon:string,splash:string};
+import {editedArtwork} from './artwork_edits';
+type CharacterArt={name:string,gameId:number,rarity:number,icon:string,splash:string,roster:string,rosterSource?:string};
 type ItemArt={gameId:number,icon:string};
 type ArtifactArt={gameId:number,slots:Record<string,string>};
-export function characterImage(id:string,kind:'icon'|'splash'){
- return (catalog.characters as Record<string,CharacterArt>)[id]?.[kind];
+export function characterImage(id:string,kind:'icon'|'splash'|'roster'){
+ const art=(catalog.characters as Record<string,CharacterArt>)[id];
+ if(kind==='roster')return editedArtwork('genshin','roster',id)??art?.roster;
+ if(kind==='splash')return editedArtwork('genshin','portrait',id)??(id==='traveler_cryo'?art?.roster:art?.splash);
+ return art?.icon;
 }
 export function characterRarity(id:string){
  return (catalog.characters as Record<string,CharacterArt>)[id]?.rarity??null;

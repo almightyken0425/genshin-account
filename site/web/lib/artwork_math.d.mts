@@ -1,0 +1,20 @@
+export type ArtworkRole = 'roster' | 'portrait';
+export type ArtworkView = { zoom: number; offsetX: number; offsetY: number };
+export type ArtworkSize = { width: number; height: number };
+export type ArtworkPlacement = ArtworkSize & { left: number; top: number };
+export type ArtworkCrop = {
+  x: number;
+  y: number;
+  sourceWidth: number;
+  sourceHeight: number;
+  w?: number;
+  h?: number;
+  width?: number;
+  height?: number;
+};
+export function frameSize(role: ArtworkRole): ArtworkSize;
+export function assertValidView(view: unknown): ArtworkView;
+export function clampView(view?: Partial<ArtworkView> | null): ArtworkView;
+export function imagePlacement(source: ArtworkSize, view: ArtworkView, frame: ArtworkSize): ArtworkPlacement;
+export function viewFromCrop(crop: ArtworkCrop, role: ArtworkRole): ArtworkView;
+export function zoomView(view: ArtworkView, nextZoom: number, anchorX?: number, anchorY?: number): ArtworkView;

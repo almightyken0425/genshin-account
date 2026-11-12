@@ -1,0 +1,45 @@
+/* Shared gallery palette. Game adapters do not select separate themes. */
+:root{
+ color-scheme:dark;
+ --canvas:#121418;
+ --surface:#1a1e24;
+ --surface-raised:#22272f;
+ --surface-hover:#2a3039;
+ --soft:var(--surface-raised);
+ --ink:#f0f1f3;
+ --muted:#acb4c0;
+ --subtle:#919ba9;
+ --line:#343b46;
+ --line-strong:#536173;
+ --accent:#aecbf2;
+ --accent-hover:#c2d9f8;
+ --accent-soft:#29384c;
+ --accent-line:#607fa8;
+ --on-accent:#142237;
+ --blue:var(--accent);
+ --blue-soft:var(--accent-soft);
+ --warn:#e3bf80;
+ --warning-soft:#30291f;
+ --warning-line:#655538;
+ --success:#a4ceb7;
+ --success-soft:#20312a;
+ --success-line:#3d5e4e;
+ --effective-soft:var(--accent-soft);
+ --effective-line:var(--accent-line);
+ --effective-ink:var(--accent);
+ --art-surface:#1a1e24;
+ --art-glow:rgba(118,134,155,.20);
+ --art-shade:linear-gradient(180deg,rgba(18,20,24,0),rgba(18,20,24,.92));
+ --on-art:#f5f6f8;
+ --dock-surface:rgba(30,34,41,.94);
+ --scrim:rgba(7,9,12,.82);
+ --focus-ring:#c1d7f7;
+ --shadow-card:0 12px 36px rgba(0,0,0,.18);
+ --shadow-dock:0 12px 40px rgba(0,0,0,.36);
+ --shadow-dialog:0 24px 80px rgba(0,0,0,.48);
+ --radius-card:18px;
+ --radius-panel:20px;
+ --radius-control:10px;
+ --background:var(--canvas);
+ --foreground:var(--ink);
+}

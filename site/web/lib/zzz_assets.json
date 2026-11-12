@@ -2,155 +2,231 @@
   "characters": {
     "jane": {
       "icon": "/assets/zzz/characters/jane_icon.png",
-      "splash": "/assets/zzz/characters/jane_splash.png"
+      "splash": "/assets/zzz/characters/jane_splash.png",
+      "roster": "/assets/zzz/characters/jane_roster.webp",
+      "rosterSource": "/assets/zzz/characters/jane_roster_source.png"
     },
     "damielle": {
-      "icon": "/assets/zzz/characters/damielle_splash.png",
-      "splash": "/assets/zzz/characters/damielle_splash.png"
+      "icon": "/assets/zzz/characters/damielle_icon.png",
+      "splash": "/assets/zzz/characters/damielle_splash.png",
+      "roster": "/assets/zzz/characters/damielle_roster.webp",
+      "rosterSource": "/assets/zzz/characters/damielle_roster_source.png"
     },
     "velina": {
-      "icon": "/assets/zzz/characters/velina_splash.png",
-      "splash": "/assets/zzz/characters/velina_splash.png"
+      "icon": "/assets/zzz/characters/velina_icon.png",
+      "splash": "/assets/zzz/characters/velina_splash.png",
+      "roster": "/assets/zzz/characters/velina_roster.webp",
+      "rosterSource": "/assets/zzz/characters/velina_roster_source.png"
     },
     "pyrois": {
-      "icon": "/assets/zzz/characters/pyrois_splash.png",
-      "splash": "/assets/zzz/characters/pyrois_splash.png"
+      "icon": "/assets/zzz/characters/pyrois_icon.png",
+      "splash": "/assets/zzz/characters/pyrois_splash.png",
+      "roster": "/assets/zzz/characters/pyrois_roster.webp",
+      "rosterSource": "/assets/zzz/characters/pyrois_roster_source.png"
     },
     "nangong_yu": {
-      "icon": "/assets/zzz/characters/nangong_yu_splash.png",
-      "splash": "/assets/zzz/characters/nangong_yu_splash.png"
+      "icon": "/assets/zzz/characters/nangong_yu_icon.png",
+      "splash": "/assets/zzz/characters/nangong_yu_splash.png",
+      "roster": "/assets/zzz/characters/nangong_yu_roster.webp",
+      "rosterSource": "/assets/zzz/characters/nangong_yu_roster_source.png"
     },
     "sunna": {
-      "icon": "/assets/zzz/characters/sunna_splash.png",
-      "splash": "/assets/zzz/characters/sunna_splash.png"
+      "icon": "/assets/zzz/characters/sunna_icon.png",
+      "splash": "/assets/zzz/characters/sunna_splash.png",
+      "roster": "/assets/zzz/characters/sunna_roster.webp",
+      "rosterSource": "/assets/zzz/characters/sunna_roster_source.png"
     },
     "zhao": {
-      "icon": "/assets/zzz/characters/zhao_splash.png",
-      "splash": "/assets/zzz/characters/zhao_splash.png"
+      "icon": "/assets/zzz/characters/zhao_icon.png",
+      "splash": "/assets/zzz/characters/zhao_splash.png",
+      "roster": "/assets/zzz/characters/zhao_roster.webp",
+      "rosterSource": "/assets/zzz/characters/zhao_roster_source.png"
     },
     "lucia": {
-      "icon": "/assets/zzz/characters/lucia_splash.png",
-      "splash": "/assets/zzz/characters/lucia_splash.png"
+      "icon": "/assets/zzz/characters/lucia_icon.png",
+      "splash": "/assets/zzz/characters/lucia_splash.png",
+      "roster": "/assets/zzz/characters/lucia_roster.webp",
+      "rosterSource": "/assets/zzz/characters/lucia_roster_source.png"
     },
     "yuzuha": {
       "icon": "/assets/zzz/characters/yuzuha_icon.png",
-      "splash": "/assets/zzz/characters/yuzuha_splash.png"
+      "splash": "/assets/zzz/characters/yuzuha_splash.png",
+      "roster": "/assets/zzz/characters/yuzuha_roster.webp",
+      "rosterSource": "/assets/zzz/characters/yuzuha_roster_source.png"
     },
     "manato": {
-      "icon": "/assets/zzz/characters/manato_splash.png",
-      "splash": "/assets/zzz/characters/manato_splash.png"
+      "icon": "/assets/zzz/characters/manato_icon.png",
+      "splash": "/assets/zzz/characters/manato_splash.png",
+      "roster": "/assets/zzz/characters/manato_roster.webp",
+      "rosterSource": "/assets/zzz/characters/manato_roster_source.png"
     },
     "ye_shunguang": {
-      "icon": "/assets/zzz/characters/ye_shunguang_splash.png",
-      "splash": "/assets/zzz/characters/ye_shunguang_splash.png"
+      "icon": "/assets/zzz/characters/ye_shunguang_icon.png",
+      "splash": "/assets/zzz/characters/ye_shunguang_splash.png",
+      "roster": "/assets/zzz/characters/ye_shunguang_roster.webp",
+      "rosterSource": "/assets/zzz/characters/ye_shunguang_roster_source.png"
     },
     "ju_fufu": {
       "icon": "/assets/zzz/characters/ju_fufu_icon.png",
-      "splash": "/assets/zzz/characters/ju_fufu_splash.png"
+      "splash": "/assets/zzz/characters/ju_fufu_splash.png",
+      "roster": "/assets/zzz/characters/ju_fufu_roster.webp",
+      "rosterSource": "/assets/zzz/characters/ju_fufu_roster_source.png"
     },
     "yixuan": {
       "icon": "/assets/zzz/characters/yixuan_icon.png",
-      "splash": "/assets/zzz/characters/yixuan_splash.png"
+      "splash": "/assets/zzz/characters/yixuan_splash.png",
+      "roster": "/assets/zzz/characters/yixuan_roster.webp",
+      "rosterSource": "/assets/zzz/characters/yixuan_roster_source.png"
     },
     "pan_yinhu": {
       "icon": "/assets/zzz/characters/pan_yinhu_icon.png",
-      "splash": "/assets/zzz/characters/pan_yinhu_splash.png"
+      "splash": "/assets/zzz/characters/pan_yinhu_splash.png",
+      "roster": "/assets/zzz/characters/pan_yinhu_roster.webp",
+      "rosterSource": "/assets/zzz/characters/pan_yinhu_roster_source.png"
     },
     "vivian": {
       "icon": "/assets/zzz/characters/vivian_icon.png",
-      "splash": "/assets/zzz/characters/vivian_splash.png"
+      "splash": "/assets/zzz/characters/vivian_splash.png",
+      "roster": "/assets/zzz/characters/vivian_roster.webp",
+      "rosterSource": "/assets/zzz/characters/vivian_roster_source.png"
     },
     "astra": {
       "icon": "/assets/zzz/characters/astra_icon.png",
-      "splash": "/assets/zzz/characters/astra_splash.png"
+      "splash": "/assets/zzz/characters/astra_splash.png",
+      "roster": "/assets/zzz/characters/astra_roster.webp",
+      "rosterSource": "/assets/zzz/characters/astra_roster_source.png"
     },
     "qingyi": {
       "icon": "/assets/zzz/characters/qingyi_icon.png",
-      "splash": "/assets/zzz/characters/qingyi_splash.png"
+      "splash": "/assets/zzz/characters/qingyi_splash.png",
+      "roster": "/assets/zzz/characters/qingyi_roster.webp",
+      "rosterSource": "/assets/zzz/characters/qingyi_roster_source.png"
     },
     "zhu_yuan": {
       "icon": "/assets/zzz/characters/zhu_yuan_icon.png",
-      "splash": "/assets/zzz/characters/zhu_yuan_splash.png"
+      "splash": "/assets/zzz/characters/zhu_yuan_splash.png",
+      "roster": "/assets/zzz/characters/zhu_yuan_roster.webp",
+      "rosterSource": "/assets/zzz/characters/zhu_yuan_roster_source.png"
     },
     "seth": {
       "icon": "/assets/zzz/characters/seth_icon.png",
-      "splash": "/assets/zzz/characters/seth_splash.png"
+      "splash": "/assets/zzz/characters/seth_splash.png",
+      "roster": "/assets/zzz/characters/seth_roster.webp",
+      "rosterSource": "/assets/zzz/characters/seth_roster_source.png"
     },
     "miyabi": {
       "icon": "/assets/zzz/characters/miyabi_icon.png",
-      "splash": "/assets/zzz/characters/miyabi_splash.png"
+      "splash": "/assets/zzz/characters/miyabi_splash.png",
+      "roster": "/assets/zzz/characters/miyabi_roster.webp",
+      "rosterSource": "/assets/zzz/characters/miyabi_roster_source.png"
     },
     "yanagi": {
       "icon": "/assets/zzz/characters/yanagi_icon.png",
-      "splash": "/assets/zzz/characters/yanagi_splash.png"
+      "splash": "/assets/zzz/characters/yanagi_splash.png",
+      "roster": "/assets/zzz/characters/yanagi_roster.webp",
+      "rosterSource": "/assets/zzz/characters/yanagi_roster_source.png"
     },
     "soukaku": {
       "icon": "/assets/zzz/characters/soukaku_icon.png",
-      "splash": "/assets/zzz/characters/soukaku_splash.png"
+      "splash": "/assets/zzz/characters/soukaku_splash.png",
+      "roster": "/assets/zzz/characters/soukaku_roster.webp",
+      "rosterSource": "/assets/zzz/characters/soukaku_roster_source.png"
     },
     "pulchra": {
       "icon": "/assets/zzz/characters/pulchra_icon.png",
-      "splash": "/assets/zzz/characters/pulchra_splash.png"
+      "splash": "/assets/zzz/characters/pulchra_splash.png",
+      "roster": "/assets/zzz/characters/pulchra_roster.webp",
+      "rosterSource": "/assets/zzz/characters/pulchra_roster_source.png"
     },
     "piper": {
       "icon": "/assets/zzz/characters/piper_icon.png",
-      "splash": "/assets/zzz/characters/piper_splash.png"
+      "splash": "/assets/zzz/characters/piper_splash.png",
+      "roster": "/assets/zzz/characters/piper_roster.webp",
+      "rosterSource": "/assets/zzz/characters/piper_roster_source.png"
     },
     "lucy": {
       "icon": "/assets/zzz/characters/lucy_icon.png",
-      "splash": "/assets/zzz/characters/lucy_splash.png"
+      "splash": "/assets/zzz/characters/lucy_splash.png",
+      "roster": "/assets/zzz/characters/lucy_roster.webp",
+      "rosterSource": "/assets/zzz/characters/lucy_roster_source.png"
     },
     "grace": {
       "icon": "/assets/zzz/characters/grace_icon.png",
-      "splash": "/assets/zzz/characters/grace_splash.png"
+      "splash": "/assets/zzz/characters/grace_splash.png",
+      "roster": "/assets/zzz/characters/grace_roster.webp",
+      "rosterSource": "/assets/zzz/characters/grace_roster_source.png"
     },
     "koleda": {
       "icon": "/assets/zzz/characters/koleda_icon.png",
-      "splash": "/assets/zzz/characters/koleda_splash.png"
+      "splash": "/assets/zzz/characters/koleda_splash.png",
+      "roster": "/assets/zzz/characters/koleda_roster.webp",
+      "rosterSource": "/assets/zzz/characters/koleda_roster_source.png"
     },
     "anton": {
       "icon": "/assets/zzz/characters/anton_icon.png",
-      "splash": "/assets/zzz/characters/anton_splash.png"
+      "splash": "/assets/zzz/characters/anton_splash.png",
+      "roster": "/assets/zzz/characters/anton_roster.webp",
+      "rosterSource": "/assets/zzz/characters/anton_roster_source.png"
     },
     "ellen": {
       "icon": "/assets/zzz/characters/ellen_icon.png",
-      "splash": "/assets/zzz/characters/ellen_splash.png"
+      "splash": "/assets/zzz/characters/ellen_splash.png",
+      "roster": "/assets/zzz/characters/ellen_roster.webp",
+      "rosterSource": "/assets/zzz/characters/ellen_roster_source.png"
     },
     "rina": {
       "icon": "/assets/zzz/characters/rina_icon.png",
-      "splash": "/assets/zzz/characters/rina_splash.png"
+      "splash": "/assets/zzz/characters/rina_splash.png",
+      "roster": "/assets/zzz/characters/rina_roster.webp",
+      "rosterSource": "/assets/zzz/characters/rina_roster_source.png"
     },
     "lycaon": {
       "icon": "/assets/zzz/characters/lycaon_icon.png",
-      "splash": "/assets/zzz/characters/lycaon_splash.png"
+      "splash": "/assets/zzz/characters/lycaon_splash.png",
+      "roster": "/assets/zzz/characters/lycaon_roster.webp",
+      "rosterSource": "/assets/zzz/characters/lycaon_roster_source.png"
     },
     "nekomata": {
       "icon": "/assets/zzz/characters/nekomata_icon.png",
-      "splash": "/assets/zzz/characters/nekomata_splash.png"
+      "splash": "/assets/zzz/characters/nekomata_splash.png",
+      "roster": "/assets/zzz/characters/nekomata_roster.webp",
+      "rosterSource": "/assets/zzz/characters/nekomata_roster_source.png"
     },
     "nicole": {
       "icon": "/assets/zzz/characters/nicole_icon.png",
-      "splash": "/assets/zzz/characters/nicole_splash.png"
+      "splash": "/assets/zzz/characters/nicole_splash.png",
+      "roster": "/assets/zzz/characters/nicole_roster.webp",
+      "rosterSource": "/assets/zzz/characters/nicole_roster_source.png"
     },
     "anby": {
       "icon": "/assets/zzz/characters/anby_icon.png",
-      "splash": "/assets/zzz/characters/anby_splash.png"
+      "splash": "/assets/zzz/characters/anby_splash.png",
+      "roster": "/assets/zzz/characters/anby_roster.webp",
+      "rosterSource": "/assets/zzz/characters/anby_roster_source.png"
     },
     "corin": {
       "icon": "/assets/zzz/characters/corin_icon.png",
-      "splash": "/assets/zzz/characters/corin_splash.png"
+      "splash": "/assets/zzz/characters/corin_splash.png",
+      "roster": "/assets/zzz/characters/corin_roster.webp",
+      "rosterSource": "/assets/zzz/characters/corin_roster_source.png"
     },
     "ben": {
       "icon": "/assets/zzz/characters/ben_icon.png",
-      "splash": "/assets/zzz/characters/ben_splash.png"
+      "splash": "/assets/zzz/characters/ben_splash.png",
+      "roster": "/assets/zzz/characters/ben_roster.webp",
+      "rosterSource": "/assets/zzz/characters/ben_roster_source.png"
     },
     "billy": {
       "icon": "/assets/zzz/characters/billy_icon.png",
-      "splash": "/assets/zzz/characters/billy_splash.png"
+      "splash": "/assets/zzz/characters/billy_splash.png",
+      "roster": "/assets/zzz/characters/billy_roster.webp",
+      "rosterSource": "/assets/zzz/characters/billy_roster_source.png"
     },
     "soldier_11": {
       "icon": "/assets/zzz/characters/soldier_11_icon.png",
-      "splash": "/assets/zzz/characters/soldier_11_splash.png"
+      "splash": "/assets/zzz/characters/soldier_11_splash.png",
+      "roster": "/assets/zzz/characters/soldier_11_roster.webp",
+      "rosterSource": "/assets/zzz/characters/soldier_11_roster_source.png"
     }
   },
   "engines": {
