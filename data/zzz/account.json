@@ -32,7 +32,8 @@
         "閃避": 12,
         "支援技": 12,
         "特殊技": 12,
-        "連攜技": 12
+        "連攜技": 12,
+        "核心技": "F"
       },
       "wEngine": {
         "name": "淬鋒鉗刺",
@@ -392,6 +393,21 @@
           "page": "音擎",
           "timestampToleranceSec": 0,
           "sha256": "855fb712fed7cd3790dac4d8d3e186f220b45e8b3e1eaf61b9e18fb63507a630"
+        },
+        {
+          "timestampSec": 3,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/jane_skills_t003.00.jpg",
+          "sha256": "526829bc41439404151552280058a6fb1a20b91f1bf33bfcc60590be08fc965e",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -434,7 +450,8 @@
         "閃避": 10,
         "支援技": 12,
         "特殊技": 12,
-        "連攜技": 12
+        "連攜技": 12,
+        "核心技": "F"
       },
       "wEngine": {
         "name": "空羽復歸之詩",
@@ -787,6 +804,21 @@
           "page": "技能",
           "timestampToleranceSec": 0,
           "sha256": "56df0e1e69a9a201b2d2d80510a30c230ef7bcbadee8698a1796db4bd2d03d2b"
+        },
+        {
+          "timestampSec": 22.2,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/damielle_skills_t022.20.jpg",
+          "sha256": "4d448bcb73dc07b4653394e8471d818669b2355829b901bcc303c235c9024df5",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -829,7 +861,8 @@
         "閃避": 10,
         "支援技": 12,
         "特殊技": 12,
-        "連攜技": 12
+        "連攜技": 12,
+        "核心技": "F"
       },
       "wEngine": {
         "name": "琳琅遠心",
@@ -1189,6 +1222,21 @@
           "page": "音擎",
           "timestampToleranceSec": 0,
           "sha256": "66c13de46aa99472be1aa3e83112689044b663187b3698f7b3a3f0f16ae01de8"
+        },
+        {
+          "timestampSec": 27,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/velina_skills_t027.00.jpg",
+          "sha256": "03a15152d634b9f3f9a3b7cca123d39ab76a6954a9f5e5c295b524cb9ecdb6f5",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -1231,7 +1279,8 @@
         "閃避": 9,
         "支援技": 13,
         "特殊技": 14,
-        "連攜技": 13
+        "連攜技": 13,
+        "核心技": "F"
       },
       "wEngine": {
         "name": "日冕遺蛻",
@@ -1584,6 +1633,21 @@
           "page": "音擎",
           "timestampToleranceSec": 1,
           "sha256": "cb1f64adfb30c714d93bd94b23097fc6b772c80005b5665f2707031136f31221"
+        },
+        {
+          "timestampSec": 45,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/pyrois_skills_t045.00.jpg",
+          "sha256": "8102b02a403e135c837bf03e653c07037104f3730e31418a3d6bea33c18a187f",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -1626,7 +1690,8 @@
         "閃避": 3,
         "支援技": 11,
         "特殊技": 11,
-        "連攜技": 11
+        "連攜技": 11,
+        "核心技": "F"
       },
       "wEngine": {
         "name": "霓虹妄想",
@@ -1979,6 +2044,21 @@
           "page": "技能",
           "timestampToleranceSec": 0,
           "sha256": "ee21b0a50a5a5e1912a8cdc31ed12f3e834481f145a3a08dd8267b52883207fe"
+        },
+        {
+          "timestampSec": 49.8,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/nangong_yu_skills_t049.80.jpg",
+          "sha256": "82b3cc5402a2bbd8573d58f85cd6a30a83b204bdcf849a52f217d8721d8b89b2",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -2021,7 +2101,8 @@
         "閃避": 1,
         "支援技": 11,
         "特殊技": 12,
-        "連攜技": 11
+        "連攜技": 11,
+        "核心技": "F"
       },
       "wEngine": {
         "name": "好鬥的阿炮",
@@ -2374,6 +2455,21 @@
           "page": "技能",
           "timestampToleranceSec": 0,
           "sha256": "702d614bead56466273fafad4a0720bde29de1210d5c32f0e06d2b7f21d6902f"
+        },
+        {
+          "timestampSec": 69.8,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/sunna_skills_t069.80.jpg",
+          "sha256": "487d344b720eaaea8b358c014fb7189810280b638c9cb61181dbebe1ac6f4423",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -2416,7 +2512,8 @@
         "閃避": 1,
         "支援技": 11,
         "特殊技": 11,
-        "連攜技": 11
+        "連攜技": 11,
+        "核心技": "F"
       },
       "wEngine": {
         "name": "正版變身器",
@@ -2769,6 +2866,21 @@
           "page": "技能",
           "timestampToleranceSec": 0,
           "sha256": "ea25214c5ca3a08a7f67c613a4b64605d1e006d7992905982970e6193efbb083"
+        },
+        {
+          "timestampSec": 74,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/zhao_skills_t074.00.jpg",
+          "sha256": "1890e8e1988438c381ea58e3af1c31392af665e8d58fd5876010614f75e7f57c",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -2806,7 +2918,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.87
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 1,
+        "支援技": 11,
+        "特殊技": 12,
+        "連攜技": 11,
+        "核心技": "F"
+      },
       "wEngine": {
         "name": "鑄夢爐歌",
         "level": 60,
@@ -3163,6 +3282,21 @@
           ],
           "timestampToleranceSec": 1,
           "sha256": "3364779f4d2d27bc30edf4b63e862ab813ee463dcc9f0e3e46c76cf71e76f511"
+        },
+        {
+          "timestampSec": 92.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/lucia_skills_t092.50.jpg",
+          "sha256": "dae637aa95c01454c979c9cfea1805aa16a50260b4ce31541678f71d098891d4",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -3200,7 +3334,14 @@
         "穿透率": "24%",
         "能量自動回復": 1.44
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 1,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11,
+        "核心技": "F"
+      },
       "wEngine": {
         "name": "啜泣搖籃",
         "level": 60,
@@ -3557,6 +3698,21 @@
           ],
           "timestampToleranceSec": 1,
           "sha256": "507fba099bae795d114132fd3eb3722535bd5186429f054d9941c94bd77c6cbf"
+        },
+        {
+          "timestampSec": 96.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/yuzuha_skills_t096.50.jpg",
+          "sha256": "db85ebb85cec230c5b000326af870d0f4316c5e3db12713ebdc5a452e36fd2ea",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -3596,7 +3752,14 @@
         "貫穿力": 2463,
         "閃能自動累積": 0
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 16,
+        "閃避": 10,
+        "支援技": 15,
+        "特殊技": 15,
+        "連攜技": 15,
+        "核心技": "F"
+      },
       "wEngine": {
         "name": "燔火朧夜",
         "level": 60,
@@ -3953,6 +4116,21 @@
           ],
           "timestampToleranceSec": 0,
           "sha256": "8101fcf73583786cb4ae6a07b7b2a94b0dcf1ebfde24fdcaaff6f2b8a9416455"
+        },
+        {
+          "timestampSec": 114.2,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/manato_skills_t114.20.jpg",
+          "sha256": "20c92c95b2607bb9a8cb6fae289b7c44b58f4b53bc195d5cb1fedcea1466b68b",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -3992,7 +4170,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.2
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 11,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12,
+        "核心技": "F"
+      },
       "wEngine": null,
       "driveDiscs": [
         {
@@ -4329,6 +4514,21 @@
           ],
           "timestampToleranceSec": 1,
           "sha256": "ff7a42d6d4afa1345dc7d3db226f576fead8ac3c7412bcff28ce3de7934a1068"
+        },
+        {
+          "timestampSec": 118,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/ye_shunguang_skills_t118.00.jpg",
+          "sha256": "8d34175d5a6d6babfe1ea24fc2ef5db34b86cd85cd4d5d1b9340928d299be8b0",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -4366,7 +4566,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.44
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 6,
+        "閃避": 6,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 12,
+        "核心技": "F"
+      },
       "wEngine": {
         "name": "福虎爐爐",
         "level": 60,
@@ -4723,6 +4930,21 @@
           ],
           "timestampToleranceSec": 1,
           "sha256": "cd08fde2feb68b9f8987adccd56da9c84b29f3073169af832ead71a8ed843808"
+        },
+        {
+          "timestampSec": 134.6,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/ju_fufu_skills_t134.60.jpg",
+          "sha256": "3787eff8f9ef419bdb787ffe5bc8c1dc5f9262e96d05deedfca9d84cb2c8bfeb",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -4762,7 +4984,14 @@
         "貫穿力": 2527,
         "閃能自動累積": 2
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 11,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12,
+        "核心技": "F"
+      },
       "wEngine": null,
       "driveDiscs": [
         {
@@ -5106,6 +5335,21 @@
           ],
           "timestampToleranceSec": 0,
           "sha256": "05eb4f0bb0099446ef607633a6c4b7163fcd70a3a39f2e6edc88cec583ee900c"
+        },
+        {
+          "timestampSec": 137.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/yixuan_skills_t137.50.jpg",
+          "sha256": "3ab0f7bbbd779763f46d693396bfda853a2e548279090984298baecb386c813e",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -5145,7 +5389,14 @@
         "穿透率": "0%",
         "能量自動回復": 2.8
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 15,
+        "特殊技": 16,
+        "連攜技": 15,
+        "核心技": "F"
+      },
       "wEngine": {
         "name": "震元奇樞",
         "level": 60,
@@ -5502,6 +5753,21 @@
           ],
           "timestampToleranceSec": 1,
           "sha256": "3544e4ee7b5adee8fc2af75de983143cdedff8882b95e52b85df1cdeae021072"
+        },
+        {
+          "timestampSec": 155,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/pan_yinhu_skills_t155.00.jpg",
+          "sha256": "96ccd6f62f87b537a67ee2447446d7aea8f9a77c6d72880b6bf2d4f856b0ff8a",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -5539,7 +5805,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.44
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 11,
+        "閃避": 7,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11,
+        "核心技": "F"
+      },
       "wEngine": {
         "name": "飛鳥星夢",
         "level": 60,
@@ -5896,6 +6169,21 @@
           ],
           "timestampToleranceSec": 0,
           "sha256": "cd7728592c6564532bd94853a9a76d47c56b27c043fa05a79d90cab93044f95a"
+        },
+        {
+          "timestampSec": 158.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/vivian_skills_t158.50.jpg",
+          "sha256": "411634014528b0e7a3859c5284fa939ed91a377bc34af9dbe68ef5ba7489a7c4",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -5933,7 +6221,14 @@
         "穿透率": "0%",
         "能量自動回復": 2.8
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 7,
+        "閃避": 7,
+        "支援技": 7,
+        "特殊技": 12,
+        "連攜技": 11,
+        "核心技": "F"
+      },
       "wEngine": {
         "name": "玲瓏妝匣",
         "level": 60,
@@ -6290,6 +6585,21 @@
           ],
           "timestampToleranceSec": 1,
           "sha256": "28a2741856aa9c1d8aa1ba9090fd9761ccacb3c1734cab92785eb54514f2d10c"
+        },
+        {
+          "timestampSec": 175,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/astra_skills_t175.00.jpg",
+          "sha256": "90697bc39aaf29fed8817c150a2c654afa16f6b194ff54b2dc7194d023acdfe7",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -6327,7 +6637,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.2
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 1,
+        "支援技": 11,
+        "特殊技": 10,
+        "連攜技": 10,
+        "核心技": "F"
+      },
       "wEngine": {
         "name": "拘縛者",
         "level": 60,
@@ -6684,6 +7001,21 @@
           ],
           "timestampToleranceSec": 1,
           "sha256": "72c7e171aefc97210fda2f765a347a4d09f62df3272c335a038adaafa59509c6"
+        },
+        {
+          "timestampSec": 178.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/qingyi_skills_t178.50.jpg",
+          "sha256": "c7e91df506d9a717fdad255d893c532fc77f521aa50face50c3e41409786af19",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -6721,7 +7053,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.2
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 9,
+        "支援技": 9,
+        "特殊技": 10,
+        "連攜技": 9,
+        "核心技": "F"
+      },
       "wEngine": {
         "name": "硫磺石",
         "level": 60,
@@ -7078,6 +7417,21 @@
           ],
           "timestampToleranceSec": 1,
           "sha256": "d3a338f858106c726681cf9f690f67ae5448ada04d381e43102c794b673086a8"
+        },
+        {
+          "timestampSec": 195,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/zhu_yuan_skills_t195.00.jpg",
+          "sha256": "fc73014d2bdf4524d0c3ed42a37578fc9d1632bd7dbbf87acbbb46583f11c6c4",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -7469,6 +7823,21 @@
           ],
           "timestampToleranceSec": 0,
           "sha256": "37eb08b8f90c335af202d33e6ce7c3d8a4886654aaa8f866a51143754d01263f"
+        },
+        {
+          "timestampSec": 208.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/seth_skills_t208.50.jpg",
+          "sha256": "02fd409b71a0447d690d06d7bbd87692a3a9e44b228861cb4efc9f40528b66e9",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -7506,7 +7875,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.2
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 10,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11,
+        "核心技": "F"
+      },
       "wEngine": {
         "name": "雙生泣星",
         "level": 60,
@@ -7857,6 +8233,21 @@
           ],
           "timestampToleranceSec": 1,
           "sha256": "d6ae85b6c644cf2e94c8fd3f4a9b1d4a225a5f3d513643ebc12ff91b3e0f354a"
+        },
+        {
+          "timestampSec": 213,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/miyabi_skills_t213.00.jpg",
+          "sha256": "996906ac1d017e9b37595696208c9756459fa4d893fa737ee409767ccad5b953",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -7894,7 +8285,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.2
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 11,
+        "閃避": 11,
+        "支援技": 11,
+        "特殊技": 12,
+        "連攜技": 11,
+        "核心技": "F"
+      },
       "wEngine": {
         "name": "雙生泣星",
         "level": 60,
@@ -8245,6 +8643,21 @@
           ],
           "timestampToleranceSec": 1,
           "sha256": "85f6006e6976a17f891885068f1e049f3837b03f455ccc1398fbc9f02f1c9aa5"
+        },
+        {
+          "timestampSec": 231,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/yanagi_skills_t231.00.jpg",
+          "sha256": "dc1258aff9cd1ab67884c0879edd072f722481c731dde2579949f3afee541c94",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -8282,7 +8695,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.87
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 9,
+        "閃避": 7,
+        "支援技": 11,
+        "特殊技": 15,
+        "連攜技": 15,
+        "核心技": "F"
+      },
       "wEngine": null,
       "driveDiscs": [
         {
@@ -8613,6 +9033,21 @@
           ],
           "timestampToleranceSec": 1,
           "sha256": "8aa712ac8673434f4b6808ed6ad03d8a31512e0708a647961222c33416f775a5"
+        },
+        {
+          "timestampSec": 238,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/soukaku_skills_t238.00.jpg",
+          "sha256": "67d1deeb1c6fad292a3d43e1a10349af757f42b4121c77de5cb6c3ebb950d857",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [],
@@ -8654,7 +9089,8 @@
         "閃避": 5,
         "支援技": 14,
         "特殊技": 13,
-        "連攜技": 11
+        "連攜技": 11,
+        "核心技": "F"
       },
       "wEngine": {
         "name": "裁紙刀",
@@ -9004,6 +9440,21 @@
           "page": "技能",
           "timestampToleranceSec": 0,
           "sha256": "31e9995dd8e7c73868f4afae6d68c46f39b576250657c6c79242027c4bbf69f5"
+        },
+        {
+          "timestampSec": 256.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/pulchra_skills_t256.50.jpg",
+          "sha256": "1dc9514cff095d990b5cb7a015d308714f61499962d98a6a1bd42f64e56d6f51",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [
@@ -9043,7 +9494,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.56
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 11,
+        "特殊技": 16,
+        "連攜技": 12,
+        "核心技": "F"
+      },
       "wEngine": null,
       "driveDiscs": [
         {
@@ -9374,6 +9832,21 @@
           "page": "基礎",
           "timestampToleranceSec": 1,
           "sha256": "453dc10aaef9fac62d5ce4784554bc4f4afb97067107c57eda5eb8a8029379f7"
+        },
+        {
+          "timestampSec": 260,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/piper_skills_t260.00.jpg",
+          "sha256": "73342f58151bf4fe93a04b9f5f0eab6aa2cc88938baefeca513f81443bb4039a",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [
@@ -9418,7 +9891,8 @@
         "閃避": 6,
         "支援技": 15,
         "特殊技": 16,
-        "連攜技": 15
+        "連攜技": 15,
+        "核心技": "F"
       },
       "wEngine": {
         "name": "好鬥的阿炮",
@@ -9775,6 +10249,21 @@
           "page": "技能",
           "timestampToleranceSec": 1,
           "sha256": "72d55e050e95a71f78bc4989b848b2883498657fdcad44c9af86481664273bcd"
+        },
+        {
+          "timestampSec": 277,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/lucy_skills_t277.00.jpg",
+          "sha256": "b67f940f8bbe525e9bd6c1b3bb0af7ea9b7a424de9f436bd070ce71189a6f9d2",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [
@@ -9814,7 +10303,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.2
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 9,
+        "支援技": 9,
+        "特殊技": 12,
+        "連攜技": 10,
+        "核心技": "F"
+      },
       "wEngine": {
         "name": "雙生泣星",
         "level": 60,
@@ -10160,6 +10656,21 @@
           "page": "音擎",
           "timestampToleranceSec": 1,
           "sha256": "2713bab1872701a22de7c48083f314ab04d7b65634e033df8ec261c460987c7d"
+        },
+        {
+          "timestampSec": 279.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/grace_skills_t279.50.jpg",
+          "sha256": "344f9c0b08e53bd998f35d8da21913fe979657c6073e1bc09f42d16381667167",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [
@@ -10204,7 +10715,8 @@
         "閃避": 7,
         "支援技": 11,
         "特殊技": 12,
-        "連攜技": 11
+        "連攜技": 11,
+        "核心技": "F"
       },
       "wEngine": null,
       "driveDiscs": [
@@ -10546,6 +11058,21 @@
           "page": "技能",
           "timestampToleranceSec": 0,
           "sha256": "359e71d26280c2779d1e8245eb7a22fb697633878b964f417fede56902b970db"
+        },
+        {
+          "timestampSec": 296,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/koleda_skills_t296.00.jpg",
+          "sha256": "f7032e0c33839c97d0d79f026ee967d01c3cd2837576bdb439a8533db11a558d",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [
@@ -10585,7 +11112,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.96
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 13,
+        "閃避": 13,
+        "支援技": 13,
+        "特殊技": 13,
+        "連攜技": 13,
+        "核心技": "D"
+      },
       "wEngine": null,
       "driveDiscs": [
         {
@@ -10888,6 +11422,21 @@
           "page": "基礎",
           "timestampToleranceSec": 1,
           "sha256": "0d85e896bd748c6c79c0c609710f0406aa49a5d43618ab47346ff30654960131"
+        },
+        {
+          "timestampSec": 300.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/anton_skills_t300.50.jpg",
+          "sha256": "b2af2f767ea263d3f89724e53cd7082511b4678accf62c71dc11044867b6604b",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [
@@ -10927,7 +11476,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.2
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 11,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11,
+        "核心技": "F"
+      },
       "wEngine": null,
       "driveDiscs": [
         {
@@ -11258,6 +11814,21 @@
           "page": "基礎",
           "timestampToleranceSec": 1,
           "sha256": "ce55145da14d07c45c7b65c853dc1c3150dba25621f3237468b83ea3a81b36da"
+        },
+        {
+          "timestampSec": 318,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/ellen_skills_t318.00.jpg",
+          "sha256": "ad18842c9b55205b801358a62aff6a169ce92671fbe4d9524806c10dffae5fed",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [
@@ -11302,7 +11873,8 @@
         "閃避": 7,
         "支援技": 7,
         "特殊技": 12,
-        "連攜技": 12
+        "連攜技": 12,
+        "核心技": "F"
       },
       "wEngine": {
         "name": "好鬥的阿炮",
@@ -11659,6 +12231,21 @@
           "page": "技能",
           "timestampToleranceSec": 1,
           "sha256": "fbf664ac6c5ebcdb0ec89c7e3e3b84cc1a3e67c1347c5b9d87a4e34274146ee7"
+        },
+        {
+          "timestampSec": 321,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/rina_skills_t321.00.jpg",
+          "sha256": "b35b46dc20e4029dccb933d4a203d6c45d5f816a83cd5da84176554a444dc4e8",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [
@@ -11698,7 +12285,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.2
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 13,
+        "閃避": 9,
+        "支援技": 13,
+        "特殊技": 13,
+        "連攜技": 13,
+        "核心技": "F"
+      },
       "wEngine": null,
       "driveDiscs": [
         {
@@ -12029,6 +12623,21 @@
           "page": "基礎",
           "timestampToleranceSec": 1,
           "sha256": "2993955d5df8e4b515608a376a29eb9f751401d7a6f5b20bad5a6311569dfa19"
+        },
+        {
+          "timestampSec": 340,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/lycaon_skills_t340.00.jpg",
+          "sha256": "da0aff15153d1c241998dd2128388eb39a49a6346a3684e3ee82bb07f8043255",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [
@@ -12068,7 +12677,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.2
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 11,
+        "閃避": 8,
+        "支援技": 9,
+        "特殊技": 9,
+        "連攜技": 9,
+        "核心技": "E"
+      },
       "wEngine": {
         "name": "鋼鐵肉墊",
         "level": 50,
@@ -12414,6 +13030,21 @@
           "page": "音擎",
           "timestampToleranceSec": 1,
           "sha256": "328460fe82042747b1789bd4910714f60e0c3751ecd700db663ef9564dbec037"
+        },
+        {
+          "timestampSec": 344,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/nekomata_skills_t344.00.jpg",
+          "sha256": "50d220de4fb8f19b5b16d0b78e2bdb00537c5b844bbf2986cfe4dee76da29933",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [
@@ -12453,7 +13084,14 @@
         "穿透率": "0%",
         "能量自動回復": 3.58
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 11,
+        "閃避": 12,
+        "支援技": 15,
+        "特殊技": 16,
+        "連攜技": 15,
+        "核心技": "F"
+      },
       "wEngine": null,
       "driveDiscs": [
         {
@@ -12784,6 +13422,21 @@
           "page": "基礎",
           "timestampToleranceSec": 0,
           "sha256": "e2bc40654ec96f6c140ffd490b281beaa936fbc1b77e24cb86d698270f938818"
+        },
+        {
+          "timestampSec": 360.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/nicole_skills_t360.50.jpg",
+          "sha256": "679ecf8dac1f0b4fcba0002f1a7fbeaa5e4fbe82ea3f4b7e743a451e1ccea079",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [
@@ -12823,7 +13476,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.2
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 13,
+        "閃避": 13,
+        "支援技": 12,
+        "特殊技": 13,
+        "連攜技": 13,
+        "核心技": "D"
+      },
       "wEngine": null,
       "driveDiscs": [
         {
@@ -13140,6 +13800,21 @@
           "page": "基礎",
           "timestampToleranceSec": 1,
           "sha256": "c5a608f23e52d121202ba64751fd529e7b14d98fb6c5071f4de1032b0178f6f6"
+        },
+        {
+          "timestampSec": 363.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/anby_skills_t363.50.jpg",
+          "sha256": "ffe9d46f634c5d173c8bfac1da0ce666b77f30a9b550f41d8dafb78e22e9b390",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [
@@ -13184,7 +13859,8 @@
         "閃避": 5,
         "支援技": 5,
         "特殊技": 5,
-        "連攜技": 5
+        "連攜技": 5,
+        "核心技": "A"
       },
       "wEngine": null,
       "driveDiscs": [
@@ -13519,6 +14195,21 @@
           "page": "技能",
           "timestampToleranceSec": 1,
           "sha256": "f526cbc17f3eb3462ec60d3d7e16b8354975b5f48421ef49270df2969d587676"
+        },
+        {
+          "timestampSec": 381.25,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/corin_skills_t381.25.jpg",
+          "sha256": "6027bc54014b86fe76af03bcb9a648d30d191a277b1c3c66823b6a301c389678",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [
@@ -13558,7 +14249,14 @@
         "穿透率": "0%",
         "能量自動回復": 1.58
       },
-      "skills": null,
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 5,
+        "特殊技": 5,
+        "連攜技": 5,
+        "核心技": "A"
+      },
       "wEngine": null,
       "driveDiscs": [
         {
@@ -13875,6 +14573,21 @@
           "page": "基礎",
           "timestampToleranceSec": 1,
           "sha256": "1bbafd4e36b1d45ebdb4b563735c66ba5eee8a90dcd582f20ffa26855c279b85"
+        },
+        {
+          "timestampSec": 384.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/ben_skills_t384.50.jpg",
+          "sha256": "2be62e016abbff497d62a09506c3497973eb085ba7090cc7d95bb86f8932efa6",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [
@@ -13919,7 +14632,8 @@
         "閃避": 5,
         "支援技": 5,
         "特殊技": 5,
-        "連攜技": 5
+        "連攜技": 5,
+        "核心技": "A"
       },
       "wEngine": null,
       "driveDiscs": [
@@ -14264,6 +14978,21 @@
           "page": "技能",
           "timestampToleranceSec": 1,
           "sha256": "810f2194fc33b09b83a94a884a0a48f610e62e046395154c627aa9991b7e3d7b"
+        },
+        {
+          "timestampSec": 396.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/billy_skills_t396.50.jpg",
+          "sha256": "a147f6902f1a67cc24800ba6e5448dc0b90990ec11fd267ca1e8b0cd7f2baa0b",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
       "uncertainties": [
@@ -14616,7 +15345,8 @@
         }
       ],
       "uncertainties": [
-        "音擎尚未核對"
+        "音擎尚未核對",
+        "原影片未拍到技能頁，五項技能等級及核心技待補觀測"
       ],
       "specialty": "強攻",
       "portraitPath": "evidence/zzz/video_001/soldier-11_portrait.jpg",
@@ -14637,7 +15367,7 @@
   ],
   "coverage": {
     "method": "逐角色人工核對影片；每2秒索引並補取短暫面板",
-    "status": "影片所示38角色及228張驅動盤已逐項核對；仍不代表完整未裝備背包",
+    "status": "影片所示38角色、228張驅動盤及37角色技能與核心技已逐項核對，11號技能頁未拍到。仍不代表完整未裝備背包。",
     "unknownPolicy": "不清楚或未核對欄位為null，不據外觀推測數值",
     "privacy": "證據圖片已裁除底部UID；未匯入控制中心畫面或影片音訊",
     "driveDiscs": {
@@ -14645,6 +15375,16 @@
       "discs": 228,
       "method": "逐盤核對原影片；橘黃色詞條文字為有效標記，+N為強化次數，不由數值反推",
       "originalEvidenceRetained": true
+    },
+    "skills": {
+      "reviewId": "skills_video_001_review_20261112",
+      "reviewedCharacters": 38,
+      "completeCharacters": 37,
+      "unknownCharacterIds": [
+        "soldier_11"
+      ],
+      "importPath": "imports/zzz/skills_video_001_review_20261112/review.json",
+      "method": "逐角色核對原影片技能頁，記錄五項顯示等級與亮起的核心技階段。11號未拍到技能頁。"
     }
   }
 }

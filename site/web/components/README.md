@@ -2,7 +2,7 @@
 
 原神與絕區零共用呈現結構。遊戲頁提供已確認的圖片與數值，元件負責顯示及互動。
 
-本次圖片編輯器以 Site 來源 `fd74c9b4522bf0f623902e0fa3adf8d083ca2267` 為基準。帳號資料、遊戲計算與圖片來源契約維持各自的責任。
+本次隊伍與培養頁以 Site 來源 `dde1b564f44d8fcfb6cd7c1ab44f3d94abfb899a` 為基準。帳號資料、遊戲計算與圖片來源契約維持各自的責任。
 
 ## 整站視覺規則
 
@@ -34,10 +34,15 @@
 | 人物圖面 | [ImageSurface](character/image_surface.tsx) | 圖框、圖片適配、背景色與唯一的半透明疊層 |
 | 人物組合 | [CharacterCard](character/character_card.tsx)、[PortraitSummary](character/portrait_summary.tsx) | 列表按鈕與詳情摘要。共用三欄數值列 |
 | 裝備呈現 | [EquipmentTile](equipment/equipment_tile.tsx)、[ArtifactSubstat](equipment/artifact_substat.tsx) | 共用預覽按鈕、副詞條與有效數徽章。只顯示傳入結果 |
-| 導覽 | [GameSwitch](navigation/game_switch.tsx)、[NavigationDock](navigation/navigation_dock.tsx)、[CenteredHeader](navigation/centered_header.tsx) | 遊戲切換、底部導覽生命週期、標題與返回操作 |
+| 導覽 | [GameNavigation](navigation/game_navigation.tsx)、[GameSwitch](navigation/game_switch.tsx)、[NavigationDock](navigation/navigation_dock.tsx)、[CenteredHeader](navigation/centered_header.tsx) | 共用三個分頁、遊戲切換、底部導覽生命週期、標題與返回操作 |
+| 隊伍呈現 | [TeamCard](teams/team_card.tsx)、[TeamMembers](teams/team_members.tsx) | 共用隊伍按鈕與成員導覽，按實際人數排列三人或四人隊 |
 | 遊戲適配 | [絕區零裝備圖片](games/zzz/equipment_image.tsx) | 將絕區零透明邊界資料轉成圖片樣式，再使用 MediaImage |
 
 人物組合依賴人物圖面、媒體與數值呈現。遊戲適配層可以使用共用元件，共用基礎層不查詢遊戲素材或套用遊戲規則。
+
+隊伍與培養頁共用導覽及隊員呈現。遊戲頁持有網址、返回位置與帳號資料，共用元件只接收圖片、姓名及操作。原神保留既有七隊和愛可菲目標，絕區零依已記錄角色篩選三人搭配。
+
+絕區零的官方技能依據與培養方向集中在 [隊伍建議資料](../lib/zzz_team_guides.json)，包含查證日期、版本、基準提交與資料限制。[建議邏輯](../lib/zzz_recommendations.mjs) 只從已確認的等級與盤面產生項目，不以有效詞條數量排列角色強弱。音擎、核心技或技能缺少觀測時列為待核對，不記成未培養。
 
 ## 人物圖與數值
 

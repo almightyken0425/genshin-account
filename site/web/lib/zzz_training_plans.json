@@ -1,0 +1,1060 @@
+{
+  "meta": {
+    "checkedAt": "2026-11-13",
+    "basedOnCommit": "defbe33d1aff1be037354c0f692f3f835358c652",
+    "accountSha256": "2f3dab85ccb209ad53586bed9a30bad2b34b41ce41219d5ce00030fa490fb885",
+    "workingTreeChanges": "使用已補齊37名角色技能與核心技的未提交帳號資料。",
+    "method": "上限直接讀原影片技能頁右側分母。依角色任務設定顯示等級階段目標，不反推基礎等級，不統一要求全技能滿級。",
+    "capsEvidence": [
+      {
+        "characterId": "pyrois",
+        "timestampSec": 45,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/pyrois_skills_t045.00.jpg",
+        "sha256": "8102b02a403e135c837bf03e653c07037104f3730e31418a3d6bea33c18a187f",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "qingyi",
+        "timestampSec": 178.5,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/qingyi_skills_t178.50.jpg",
+        "sha256": "c7e91df506d9a717fdad255d893c532fc77f521aa50face50c3e41409786af19",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "sunna",
+        "timestampSec": 69.8,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/sunna_skills_t069.80.jpg",
+        "sha256": "487d344b720eaaea8b358c014fb7189810280b638c9cb61181dbebe1ac6f4423",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "damielle",
+        "timestampSec": 22.2,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/damielle_skills_t022.20.jpg",
+        "sha256": "4d448bcb73dc07b4653394e8471d818669b2355829b901bcc303c235c9024df5",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "velina",
+        "timestampSec": 27,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/velina_skills_t027.00.jpg",
+        "sha256": "03a15152d634b9f3f9a3b7cca123d39ab76a6954a9f5e5c295b524cb9ecdb6f5",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "yanagi",
+        "timestampSec": 231,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/yanagi_skills_t231.00.jpg",
+        "sha256": "dc1258aff9cd1ab67884c0879edd072f722481c731dde2579949f3afee541c94",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "jane",
+        "timestampSec": 3,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/jane_skills_t003.00.jpg",
+        "sha256": "526829bc41439404151552280058a6fb1a20b91f1bf33bfcc60590be08fc965e",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "vivian",
+        "timestampSec": 158.5,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/vivian_skills_t158.50.jpg",
+        "sha256": "411634014528b0e7a3859c5284fa939ed91a377bc34af9dbe68ef5ba7489a7c4",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "yuzuha",
+        "timestampSec": 96.5,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/yuzuha_skills_t096.50.jpg",
+        "sha256": "db85ebb85cec230c5b000326af870d0f4316c5e3db12713ebdc5a452e36fd2ea",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "ye_shunguang",
+        "timestampSec": 118,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/ye_shunguang_skills_t118.00.jpg",
+        "sha256": "8d34175d5a6d6babfe1ea24fc2ef5db34b86cd85cd4d5d1b9340928d299be8b0",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "ju_fufu",
+        "timestampSec": 134.6,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/ju_fufu_skills_t134.60.jpg",
+        "sha256": "3787eff8f9ef419bdb787ffe5bc8c1dc5f9262e96d05deedfca9d84cb2c8bfeb",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "zhao",
+        "timestampSec": 74,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/zhao_skills_t074.00.jpg",
+        "sha256": "1890e8e1988438c381ea58e3af1c31392af665e8d58fd5876010614f75e7f57c",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "yixuan",
+        "timestampSec": 137.5,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/yixuan_skills_t137.50.jpg",
+        "sha256": "3ab0f7bbbd779763f46d693396bfda853a2e548279090984298baecb386c813e",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "lucia",
+        "timestampSec": 92.5,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/lucia_skills_t092.50.jpg",
+        "sha256": "dae637aa95c01454c979c9cfea1805aa16a50260b4ce31541678f71d098891d4",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "miyabi",
+        "timestampSec": 213,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/miyabi_skills_t213.00.jpg",
+        "sha256": "996906ac1d017e9b37595696208c9756459fa4d893fa737ee409767ccad5b953",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "manato",
+        "timestampSec": 114.2,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/manato_skills_t114.20.jpg",
+        "sha256": "20c92c95b2607bb9a8cb6fae289b7c44b58f4b53bc195d5cb1fedcea1466b68b",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "zhu_yuan",
+        "timestampSec": 195,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/zhu_yuan_skills_t195.00.jpg",
+        "sha256": "fc73014d2bdf4524d0c3ed42a37578fc9d1632bd7dbbf87acbbb46583f11c6c4",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "nicole",
+        "timestampSec": 360.5,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/nicole_skills_t360.50.jpg",
+        "sha256": "679ecf8dac1f0b4fcba0002f1a7fbeaa5e4fbe82ea3f4b7e743a451e1ccea079",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      }
+    ]
+  },
+  "characters": {
+    "pyrois": {
+      "observedMindscape": 4,
+      "displayedCaps": {
+        "普通攻擊": 14,
+        "閃避": 14,
+        "支援技": 14,
+        "特殊技": 14,
+        "連攜技": 14
+      },
+      "skills": [
+        {
+          "skill": "連攜技",
+          "target": 14,
+          "priority": 2,
+          "reason": "這一欄也包含多分支終結技，補強失衡窗口的主要爆發。"
+        },
+        {
+          "skill": "普通攻擊",
+          "target": 14,
+          "priority": 2,
+          "reason": "天光強化普攻是日珥輸出循環的一部分，屬最後一級補強。"
+        },
+        {
+          "skill": "特殊技",
+          "target": 14,
+          "priority": 1,
+          "reason": "日華相關倍率維持已到位的目標。"
+        }
+      ],
+      "maintain": [
+        "閃避與支援技先維持，普攻及連攜升14屬後續補強。",
+        "先確認失衡時能完整施放終結技分支，再決定最後一級投入。"
+      ],
+      "sources": [
+        {
+          "label": "佩洛伊斯・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/1082"
+        }
+      ]
+    },
+    "qingyi": {
+      "observedMindscape": 0,
+      "displayedCaps": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "skills": [
+        {
+          "skill": "普通攻擊",
+          "target": 12,
+          "priority": 1,
+          "reason": "主要失衡來源與醉花月雲轉已到位。"
+        },
+        {
+          "skill": "特殊技",
+          "target": 11,
+          "priority": 2,
+          "reason": "補強強化特殊技的失衡倍率，優先度低於橘福福普攻與朱鳶爆發技能。"
+        },
+        {
+          "skill": "連攜技",
+          "target": 11,
+          "priority": 3,
+          "reason": "連攜與終結的失衡倍率屬後續補強，先保留資源給主要缺口。"
+        },
+        {
+          "skill": "支援技",
+          "target": 11,
+          "priority": 2,
+          "reason": "招架支援與支援突擊維持目前階段即可。"
+        }
+      ],
+      "maintain": [
+        "閃避1可先保留，若實戰頻繁使用閃避反擊，再提高其培養順序。",
+        "普攻12與核心F已到位，優先檢查羈服疊層與失衡窗口銜接。"
+      ],
+      "sources": [
+        {
+          "label": "青衣・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/350"
+        }
+      ]
+    },
+    "sunna": {
+      "observedMindscape": 0,
+      "displayedCaps": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "skills": [
+        {
+          "skill": "特殊技",
+          "target": 12,
+          "priority": 1,
+          "reason": "帷幕與支援循環所需的主要技能已到位。"
+        },
+        {
+          "skill": "支援技",
+          "target": 11,
+          "priority": 2,
+          "reason": "維持支援切入所需的本階段目標。"
+        },
+        {
+          "skill": "連攜技",
+          "target": 11,
+          "priority": 3,
+          "reason": "終結與連攜先維持本階段目標，無需為整齊而追滿。"
+        }
+      ],
+      "maintain": [
+        "普攻1、閃避1不列優先升級，先維持天使協律與帷幕。",
+        "核對初始攻擊力與核心增益條件，觀測的面板總攻擊力不直接視為初始值。"
+      ],
+      "sources": [
+        {
+          "label": "千夏・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/995"
+        }
+      ]
+    },
+    "damielle": {
+      "observedMindscape": 1,
+      "displayedCaps": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "skills": [
+        {
+          "skill": "普通攻擊",
+          "target": 12,
+          "priority": 1,
+          "reason": "前後台協戰循環的普攻倍率已到位。"
+        },
+        {
+          "skill": "特殊技",
+          "target": 12,
+          "priority": 1,
+          "reason": "施加流明與轉換姿態的主要技能已到位。"
+        },
+        {
+          "skill": "連攜技",
+          "target": 12,
+          "priority": 1,
+          "reason": "結算虛曜的輸出主線已到位。"
+        }
+      ],
+      "maintain": [
+        "閃避先維持，主要技能12與核心F已到位。",
+        "先確認三異常輪替能持續施加異常及結算虛曜，不為補滿閃避而打斷主要裝備規劃。"
+      ],
+      "sources": [
+        {
+          "label": "蕾米埃爾・丹・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/1112"
+        }
+      ]
+    },
+    "velina": {
+      "observedMindscape": 0,
+      "displayedCaps": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "skills": [
+        {
+          "skill": "特殊技",
+          "target": 12,
+          "priority": 1,
+          "reason": "風華與氣旋的主要循環技能已到位。"
+        },
+        {
+          "skill": "連攜技",
+          "target": 12,
+          "priority": 2,
+          "reason": "主要爆發倍率已到位。"
+        },
+        {
+          "skill": "普通攻擊",
+          "target": 12,
+          "priority": 3,
+          "reason": "前場輪替的倍率可以最後再補，不影響已確認核心F的支援條件。"
+        }
+      ],
+      "maintain": [
+        "閃避維持，普攻11至12僅列資源充裕時的補強。",
+        "核對初始能量自動回復與氣旋覆蓋，不直接用面板總值宣稱已達初始屬性門檻。"
+      ],
+      "sources": [
+        {
+          "label": "維琳娜・艾嘉德・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/1084"
+        }
+      ]
+    },
+    "yanagi": {
+      "observedMindscape": 0,
+      "displayedCaps": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "skills": [
+        {
+          "skill": "特殊技",
+          "target": 12,
+          "priority": 1,
+          "reason": "強化特殊技的紊亂輸出主線已到位。"
+        },
+        {
+          "skill": "普通攻擊",
+          "target": 12,
+          "priority": 3,
+          "reason": "核心F與特殊技12已具備異常主線，普攻本招倍率留待資源充裕時補強。"
+        },
+        {
+          "skill": "連攜技",
+          "target": 11,
+          "priority": 3,
+          "reason": "連攜與終結先維持本階段目標，優先照顧場上循環。"
+        }
+      ],
+      "maintain": [
+        "閃避與支援技先維持，特殊技12與核心F已到位。",
+        "雙生泣星先沿用，檢查輪替與紊亂覆蓋，無需因A級就直接要求更換。"
+      ],
+      "sources": [
+        {
+          "label": "月城柳・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/529"
+        }
+      ]
+    },
+    "jane": {
+      "observedMindscape": 2,
+      "displayedCaps": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "skills": [
+        {
+          "skill": "普通攻擊",
+          "target": 12,
+          "priority": 1,
+          "reason": "狂熱狀態的站場主線已到位。"
+        },
+        {
+          "skill": "特殊技",
+          "target": 12,
+          "priority": 1,
+          "reason": "主要技能已到位，無需再安排技能升級。"
+        },
+        {
+          "skill": "閃避",
+          "target": 12,
+          "priority": 2,
+          "reason": "常用閃避反擊的倍率也已到位。"
+        }
+      ],
+      "maintain": [
+        "五項技能12與核心F已到位，技能資源可先停。",
+        "以狂熱、強擊與支援增益覆蓋為重點，再檢視異常裝備配置。"
+      ],
+      "sources": [
+        {
+          "label": "簡・杜・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/368"
+        }
+      ]
+    },
+    "vivian": {
+      "observedMindscape": 0,
+      "displayedCaps": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "skills": [
+        {
+          "skill": "普通攻擊",
+          "target": 12,
+          "priority": 3,
+          "reason": "落羽生花本招倍率可再補，但異放的主要結算在核心，核心F已完成。"
+        },
+        {
+          "skill": "特殊技",
+          "target": 11,
+          "priority": 2,
+          "reason": "先維持能取得飛羽並銜接護羽的階段目標。"
+        },
+        {
+          "skill": "連攜技",
+          "target": 11,
+          "priority": 3,
+          "reason": "資源先用於異常配置與護羽循環，連攜倍率維持目前階段。"
+        }
+      ],
+      "maintain": [
+        "閃避7可先保留，普攻11至12屬低優先的本招倍率補強。",
+        "核心F已確認，先確保護羽供給、異常精通與隊友異常觸發，不把異放等同特殊技倍率。"
+      ],
+      "sources": [
+        {
+          "label": "薇薇安·班希・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/626"
+        }
+      ]
+    },
+    "yuzuha": {
+      "observedMindscape": 0,
+      "displayedCaps": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "skills": [
+        {
+          "skill": "普通攻擊",
+          "target": 12,
+          "priority": 2,
+          "reason": "追加攻擊相關倍率已到位。"
+        },
+        {
+          "skill": "特殊技",
+          "target": 11,
+          "priority": 2,
+          "reason": "狸之願的主要攻擊增益在核心，先維持11的技能階段目標。"
+        },
+        {
+          "skill": "支援技",
+          "target": 11,
+          "priority": 2,
+          "reason": "支援突擊與快速切入先維持目前階段。"
+        },
+        {
+          "skill": "連攜技",
+          "target": 11,
+          "priority": 3,
+          "reason": "核心F已完成，連攜與終結不必為補滿數字優先升12。"
+        }
+      ],
+      "maintain": [
+        "閃避1與其他已達11的支援技能先維持，不一律要求12。",
+        "目前已用異常掌控6號盤與2件法厄同之歌。200掌控是增益上限，不能靠刷副詞條補掌控，先檢查現有音擎與增益覆蓋。",
+        "初始攻擊3000的條件須另核對，面板總攻擊不直接當成初始攻擊。"
+      ],
+      "sources": [
+        {
+          "label": "浮波柚葉・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/837"
+        },
+        {
+          "label": "法厄同之歌・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/624"
+        }
+      ]
+    },
+    "ye_shunguang": {
+      "observedMindscape": 2,
+      "displayedCaps": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "skills": [
+        {
+          "skill": "普通攻擊",
+          "target": 12,
+          "priority": 1,
+          "reason": "明心境主要輸出技能已到位。"
+        },
+        {
+          "skill": "特殊技",
+          "target": 12,
+          "priority": 1,
+          "reason": "主要輸出倍率已到位。"
+        },
+        {
+          "skill": "連攜技",
+          "target": 12,
+          "priority": 1,
+          "reason": "終結技主線已到位。"
+        }
+      ],
+      "maintain": [
+        "閃避11先維持，主要技能12與核心F已到位。",
+        "音擎仍未記錄，先確認實際使用的音擎，再做暴擊配置與裝備更換決定。"
+      ],
+      "sources": [
+        {
+          "label": "葉瞬光・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/961"
+        }
+      ]
+    },
+    "ju_fufu": {
+      "observedMindscape": 0,
+      "displayedCaps": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "skills": [
+        {
+          "skill": "普通攻擊",
+          "target": 11,
+          "priority": 1,
+          "reason": "後台虎威也使用此技能的失衡倍率。原始官方表中6級85.3%至11級101.3%，同招係數約增加18.8%，可同時改善三支主力隊。"
+        },
+        {
+          "skill": "連攜技",
+          "target": 12,
+          "priority": 1,
+          "reason": "後台虎釜震煞與終結技的倍率已到位。"
+        },
+        {
+          "skill": "特殊技",
+          "target": 11,
+          "priority": 2,
+          "reason": "前場強化特殊技先維持目前階段，後台普攻缺口優先。"
+        },
+        {
+          "skill": "支援技",
+          "target": 11,
+          "priority": 2,
+          "reason": "支援失衡維持本階段目標即可。"
+        }
+      ],
+      "maintain": [
+        "閃避6先維持，先把會影響後台虎威的普攻補到11，再評估12。",
+        "核對初始攻擊3400的完整虎嘯暴傷條件，觀測面板攻擊不直接當成已證明達標。"
+      ],
+      "sources": [
+        {
+          "label": "橘福福・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/750"
+        }
+      ]
+    },
+    "zhao": {
+      "observedMindscape": 0,
+      "displayedCaps": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "skills": [
+        {
+          "skill": "支援技",
+          "target": 11,
+          "priority": 1,
+          "reason": "登場與支援銜接先維持本階段目標。"
+        },
+        {
+          "skill": "特殊技",
+          "target": 11,
+          "priority": 2,
+          "reason": "霜寒與回復循環先維持目前階段。"
+        },
+        {
+          "skill": "連攜技",
+          "target": 11,
+          "priority": 3,
+          "reason": "連攜與終結先維持11，主要帷幕增益已由核心F確認。"
+        }
+      ],
+      "maintain": [
+        "普攻1、閃避1先維持，不影響已確認核心F的帷幕支援判斷。",
+        "核對初始最大生命值27000的完整增傷條件，並確認霜寒與帷幕覆蓋。"
+      ],
+      "sources": [
+        {
+          "label": "照・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/960"
+        }
+      ]
+    },
+    "yixuan": {
+      "observedMindscape": 0,
+      "displayedCaps": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "skills": [
+        {
+          "skill": "普通攻擊",
+          "target": 12,
+          "priority": 1,
+          "reason": "命破輸出的主要普攻倍率已到位。"
+        },
+        {
+          "skill": "特殊技",
+          "target": 12,
+          "priority": 1,
+          "reason": "閃能輸出技能已到位。"
+        },
+        {
+          "skill": "連攜技",
+          "target": 12,
+          "priority": 1,
+          "reason": "主要終結技倍率已到位。"
+        }
+      ],
+      "maintain": [
+        "閃避11先維持，普攻、特殊技、連攜12與核心F已到位。",
+        "先確認尚未記錄的音擎，再檢查貫穿力、生命值與暴擊配置。"
+      ],
+      "sources": [
+        {
+          "label": "儀玄・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/752"
+        }
+      ]
+    },
+    "lucia": {
+      "observedMindscape": 0,
+      "displayedCaps": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "skills": [
+        {
+          "skill": "普通攻擊",
+          "target": 12,
+          "priority": 1,
+          "reason": "夢境循環相關普攻已到位。"
+        },
+        {
+          "skill": "特殊技",
+          "target": 12,
+          "priority": 1,
+          "reason": "主要技能已到位，優先檢查破暗與帷幕覆蓋。"
+        },
+        {
+          "skill": "支援技",
+          "target": 11,
+          "priority": 2,
+          "reason": "支援進出場先維持目前階段。"
+        },
+        {
+          "skill": "連攜技",
+          "target": 11,
+          "priority": 3,
+          "reason": "破暗增益應先看已到位的特殊技12與初始生命值條件，連攜本招倍率暫不追滿。"
+        }
+      ],
+      "maintain": [
+        "閃避1先維持，主要支援技能與核心F已到位。",
+        "核對初始最大生命值與破暗增益，並優先讓夢境帷幕覆蓋命破輸出窗口。"
+      ],
+      "sources": [
+        {
+          "label": "盧西婭·艾洛溫・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/907"
+        }
+      ]
+    },
+    "miyabi": {
+      "observedMindscape": 0,
+      "displayedCaps": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "skills": [
+        {
+          "skill": "普通攻擊",
+          "target": 12,
+          "priority": 1,
+          "reason": "霜月架勢的主要輸出倍率已到位。"
+        },
+        {
+          "skill": "特殊技",
+          "target": 12,
+          "priority": 2,
+          "reason": "補強主要爆發技能，排在暴擊率條件與循環檢查之後。"
+        },
+        {
+          "skill": "連攜技",
+          "target": 12,
+          "priority": 2,
+          "reason": "補強失衡窗口的連攜與終結倍率。"
+        }
+      ],
+      "maintain": [
+        "閃避10與支援11可先維持，特殊技與連攜12屬後續補強。",
+        "已裝備4件折枝劍歌，隊伍觸發凍結或碎冰後可獲得12%暴擊率。先確認效果覆蓋與核心80%轉換上限，再決定是否調整暴擊詞條。"
+      ],
+      "sources": [
+        {
+          "label": "星見雅・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/537"
+        },
+        {
+          "label": "折枝劍歌・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/547"
+        }
+      ]
+    },
+    "manato": {
+      "observedMindscape": 6,
+      "displayedCaps": {
+        "普通攻擊": 16,
+        "閃避": 16,
+        "支援技": 16,
+        "特殊技": 16,
+        "連攜技": 16
+      },
+      "skills": [
+        {
+          "skill": "普通攻擊",
+          "target": 16,
+          "priority": 1,
+          "reason": "熔鋒強化普攻主線已達畫面確認的16級。"
+        },
+        {
+          "skill": "特殊技",
+          "target": 16,
+          "priority": 2,
+          "reason": "補強天墜等命破技能，屬最後一級投資。"
+        },
+        {
+          "skill": "連攜技",
+          "target": 16,
+          "priority": 2,
+          "reason": "補強連攜與終結的失衡窗口輸出，屬最後一級投資。"
+        },
+        {
+          "skill": "支援技",
+          "target": 15,
+          "priority": 3,
+          "reason": "連續斬擊支援先維持15的階段目標。"
+        }
+      ],
+      "maintain": [
+        "閃避10先維持，普攻16與核心F已到位，特殊及連攜16屬最後一級補強。",
+        "先改善橘福福後台擊破，再確認命破生命值配置與熔鋒循環。"
+      ],
+      "sources": [
+        {
+          "label": "狛野真斗・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/908"
+        }
+      ]
+    },
+    "zhu_yuan": {
+      "observedMindscape": 0,
+      "displayedCaps": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12
+      },
+      "skills": [
+        {
+          "skill": "普通攻擊",
+          "target": 12,
+          "priority": 1,
+          "reason": "強化霰彈的普攻主線已到位。"
+        },
+        {
+          "skill": "連攜技",
+          "target": 11,
+          "priority": 1,
+          "reason": "連攜與終結參與失衡爆發，目前9級是明確的倍率缺口，先補至11。"
+        },
+        {
+          "skill": "特殊技",
+          "target": 11,
+          "priority": 1,
+          "reason": "強化特殊技補強失衡窗口輸出，先由10補至11。"
+        }
+      ],
+      "maintain": [
+        "閃避與支援先維持，先完成連攜9至11、特殊10至11，再評估12。",
+        "核對額外能力與妮可六影疊層後的實際暴擊率，不單憑面板暴擊率就要求大量補暴擊。"
+      ],
+      "sources": [
+        {
+          "label": "朱鳶・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/31"
+        }
+      ]
+    },
+    "nicole": {
+      "observedMindscape": 6,
+      "displayedCaps": {
+        "普通攻擊": 16,
+        "閃避": 16,
+        "支援技": 16,
+        "特殊技": 16,
+        "連攜技": 16
+      },
+      "skills": [
+        {
+          "skill": "特殊技",
+          "target": 16,
+          "priority": 1,
+          "reason": "能量場相關技能已到位，核心F與六影是支援朱鳶的主要依據。"
+        },
+        {
+          "skill": "連攜技",
+          "target": 15,
+          "priority": 3,
+          "reason": "連攜維持本階段目標，先核對音擎與能量場覆蓋。"
+        },
+        {
+          "skill": "支援技",
+          "target": 15,
+          "priority": 3,
+          "reason": "支援切入維持目前階段，不必追求所有技能16。"
+        }
+      ],
+      "maintain": [
+        "普通攻擊與閃避先維持，核心F、特殊16與六影已具備主要支援條件。",
+        "音擎仍未記錄，先確認實際裝備，並讓能量場與六影疊層覆蓋朱鳶爆發。"
+      ],
+      "sources": [
+        {
+          "label": "妮可・德瑪拉・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/20"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1288 @@
+{
+  "sourceId": "skills_video_001_review_20261112",
+  "basedOnCommit": "defbe33d1aff1be037354c0f692f3f835358c652",
+  "reviewedAt": "2026-11-12T15:34:56+00:00",
+  "status": "agent_reviewed",
+  "source": {
+    "filename": "ScreenRecording_11-11-2026 23-49-27_1.MP4",
+    "sha256": "6eedfe8e5fabcec54bd45fa12f934905c52658100beec421bba739e8589b3f83",
+    "durationSeconds": 416.652744,
+    "capturedAt": null
+  },
+  "originalAccountSha256": "07cc729c5e417565ea96fc038958bf83ef2a28a148aca8a61dbe2ca31e45343c",
+  "scope": "重新核對原影片所示38名角色的技能頁，保留畫面顯示等級與核心技啟用階段。",
+  "method": [
+    "原片SHA-256與正式來源一致。逐角色由立繪與頂部選中頭像確認身分。",
+    "技能取畫面顯示的目前等級，未採右側上限，未扣影畫加成。",
+    "核心技以實際亮起的字母確認，選取圈不視為解鎖。",
+    "直接擷取原片完整技能頁，保留原始橫式寬度，裁除底部UID。",
+    "37張最終技能圖均完成獨立第二次讀值核對。原始證據與匯入紀錄保留。"
+  ],
+  "summary": {
+    "reviewedCharacters": 38,
+    "completeCharacters": 37,
+    "newSkillSets": 23,
+    "newCoreLevels": 36,
+    "unknownCharacterIds": [
+      "soldier_11"
+    ]
+  },
+  "characters": [
+    {
+      "id": "jane",
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 3,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/jane_skills_t003.00.jpg",
+          "sha256": "526829bc41439404151552280058a6fb1a20b91f1bf33bfcc60590be08fc965e",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "直接由已核對SHA-256的原始影片取樣，依選中頭像及角色立繪識別。",
+        "核心A至F六節點均呈角色配色亮字，F已啟用。",
+        "技能取目前顯示等級分子，不採右側上限，不扣影畫加成。",
+        "保留autorotate後2622像素原寬，僅裁除底部54像素UID區域，輸出2622×1152高品質JPEG（q=2）。"
+      ]
+    },
+    {
+      "id": "damielle",
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 10,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 22.2,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/damielle_skills_t022.20.jpg",
+          "sha256": "4d448bcb73dc07b4653394e8471d818669b2355829b901bcc303c235c9024df5",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "直接由已核對SHA-256的原始影片取樣，依選中頭像及角色立繪識別。",
+        "核心A至F六節點均呈角色配色亮字，F已啟用。",
+        "技能取目前顯示等級分子，不採右側上限，不扣影畫加成。",
+        "保留autorotate後2622像素原寬，僅裁除底部54像素UID區域，輸出2622×1152高品質JPEG（q=2）。"
+      ]
+    },
+    {
+      "id": "velina",
+      "skills": {
+        "普通攻擊": 11,
+        "閃避": 10,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 27,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/velina_skills_t027.00.jpg",
+          "sha256": "03a15152d634b9f3f9a3b7cca123d39ab76a6954a9f5e5c295b524cb9ecdb6f5",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "直接由已核對SHA-256的原始影片取樣，依選中頭像及角色立繪識別。",
+        "核心A至F六節點均呈角色配色亮字，F已啟用。",
+        "技能取目前顯示等級分子，不採右側上限，不扣影畫加成。",
+        "保留autorotate後2622像素原寬，僅裁除底部54像素UID區域，輸出2622×1152高品質JPEG（q=2）。"
+      ]
+    },
+    {
+      "id": "pyrois",
+      "skills": {
+        "普通攻擊": 13,
+        "閃避": 9,
+        "支援技": 13,
+        "特殊技": 14,
+        "連攜技": 13,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 45,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/pyrois_skills_t045.00.jpg",
+          "sha256": "8102b02a403e135c837bf03e653c07037104f3730e31418a3d6bea33c18a187f",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "直接由已核對SHA-256的原始影片取樣，依選中頭像及角色立繪識別。",
+        "核心A至F六節點均呈角色配色亮字，F已啟用。",
+        "技能取目前顯示等級分子，不採右側上限，不扣影畫加成。",
+        "保留autorotate後2622像素原寬，僅裁除底部54像素UID區域，輸出2622×1152高品質JPEG（q=2）。"
+      ]
+    },
+    {
+      "id": "nangong_yu",
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 3,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 49.8,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/nangong_yu_skills_t049.80.jpg",
+          "sha256": "82b3cc5402a2bbd8573d58f85cd6a30a83b204bdcf849a52f217d8721d8b89b2",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "直接由已核對SHA-256的原始影片取樣，依選中頭像及角色立繪識別。",
+        "核心A至F六節點均呈角色配色亮字，F已啟用。",
+        "技能取目前顯示等級分子，不採右側上限，不扣影畫加成。",
+        "保留autorotate後2622像素原寬，僅裁除底部54像素UID區域，輸出2622×1152高品質JPEG（q=2）。"
+      ]
+    },
+    {
+      "id": "sunna",
+      "skills": {
+        "普通攻擊": 1,
+        "閃避": 1,
+        "支援技": 11,
+        "特殊技": 12,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 69.8,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/sunna_skills_t069.80.jpg",
+          "sha256": "487d344b720eaaea8b358c014fb7189810280b638c9cb61181dbebe1ac6f4423",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "直接由已核對SHA-256的原始影片取樣，依選中頭像及角色立繪識別。",
+        "核心A至F六節點均呈角色配色亮字，F已啟用。",
+        "技能取目前顯示等級分子，不採右側上限，不扣影畫加成。",
+        "保留autorotate後2622像素原寬，僅裁除底部54像素UID區域，輸出2622×1152高品質JPEG（q=2）。"
+      ]
+    },
+    {
+      "id": "zhao",
+      "skills": {
+        "普通攻擊": 1,
+        "閃避": 1,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 74,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/zhao_skills_t074.00.jpg",
+          "sha256": "1890e8e1988438c381ea58e3af1c31392af665e8d58fd5876010614f75e7f57c",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "直接由已核對SHA-256的原始影片取樣，依選中頭像及角色立繪識別。",
+        "核心A至F六節點均呈角色配色亮字，F已啟用。",
+        "技能取目前顯示等級分子，不採右側上限，不扣影畫加成。",
+        "保留autorotate後2622像素原寬，僅裁除底部54像素UID區域，輸出2622×1152高品質JPEG（q=2）。"
+      ]
+    },
+    {
+      "id": "lucia",
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 1,
+        "支援技": 11,
+        "特殊技": 12,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 92.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/lucia_skills_t092.50.jpg",
+          "sha256": "dae637aa95c01454c979c9cfea1805aa16a50260b4ce31541678f71d098891d4",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "直接由已核對SHA-256的原始影片取樣，依選中頭像及角色立繪識別。",
+        "核心A至F六節點均呈角色配色亮字，F已啟用。",
+        "技能取目前顯示等級分子，不採右側上限，不扣影畫加成。",
+        "保留autorotate後2622像素原寬，僅裁除底部54像素UID區域，輸出2622×1152高品質JPEG（q=2）。"
+      ]
+    },
+    {
+      "id": "yuzuha",
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 1,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 96.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/yuzuha_skills_t096.50.jpg",
+          "sha256": "db85ebb85cec230c5b000326af870d0f4316c5e3db12713ebdc5a452e36fd2ea",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "直接由已核對SHA-256的原始影片取樣，依選中頭像及角色立繪識別。",
+        "核心A至F六節點均呈角色配色亮字，F已啟用。",
+        "技能取目前顯示等級分子，不採右側上限，不扣影畫加成。",
+        "保留autorotate後2622像素原寬，僅裁除底部54像素UID區域，輸出2622×1152高品質JPEG（q=2）。"
+      ]
+    },
+    {
+      "id": "manato",
+      "skills": {
+        "普通攻擊": 16,
+        "閃避": 10,
+        "支援技": 15,
+        "特殊技": 15,
+        "連攜技": 15,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 114.2,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/manato_skills_t114.20.jpg",
+          "sha256": "20c92c95b2607bb9a8cb6fae289b7c44b58f4b53bc195d5cb1fedcea1466b68b",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "直接由已核對SHA-256的原始影片取樣，依選中頭像及角色立繪識別。",
+        "核心A至F六節點均呈角色配色亮字，F已啟用。",
+        "技能取目前顯示等級分子，不採右側上限，不扣影畫加成。",
+        "保留autorotate後2622像素原寬，僅裁除底部54像素UID區域，輸出2622×1152高品質JPEG（q=2）。"
+      ]
+    },
+    {
+      "id": "ye_shunguang",
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 11,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 118,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/ye_shunguang_skills_t118.00.jpg",
+          "sha256": "8d34175d5a6d6babfe1ea24fc2ef5db34b86cd85cd4d5d1b9340928d299be8b0",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "直接由已核對SHA-256的原始影片取樣，依選中頭像及角色立繪識別。",
+        "核心A至F六節點均呈角色配色亮字，F已啟用。",
+        "技能取目前顯示等級分子，不採右側上限，不扣影畫加成。",
+        "保留autorotate後2622像素原寬，僅裁除底部54像素UID區域，輸出2622×1152高品質JPEG（q=2）。"
+      ]
+    },
+    {
+      "id": "ju_fufu",
+      "skills": {
+        "普通攻擊": 6,
+        "閃避": 6,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 12,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 134.6,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/ju_fufu_skills_t134.60.jpg",
+          "sha256": "3787eff8f9ef419bdb787ffe5bc8c1dc5f9262e96d05deedfca9d84cb2c8bfeb",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "直接由已核對SHA-256的原始影片取樣，依選中頭像及角色立繪識別。",
+        "核心A至F六節點均呈角色配色亮字，F已啟用。",
+        "技能取目前顯示等級分子，不採右側上限，不扣影畫加成。",
+        "保留autorotate後2622像素原寬，僅裁除底部54像素UID區域，輸出2622×1152高品質JPEG（q=2）。"
+      ]
+    },
+    {
+      "id": "yixuan",
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 11,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 137.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/yixuan_skills_t137.50.jpg",
+          "sha256": "3ab0f7bbbd779763f46d693396bfda853a2e548279090984298baecb386c813e",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "直接由已核對SHA-256的原始影片取樣，依選中頭像及角色立繪識別。",
+        "核心A至F六節點均呈角色配色亮字，F已啟用。",
+        "技能取目前顯示等級分子，不採右側上限，不扣影畫加成。",
+        "保留autorotate後2622像素原寬，僅裁除底部54像素UID區域，輸出2622×1152高品質JPEG（q=2）。"
+      ]
+    },
+    {
+      "id": "pan_yinhu",
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 15,
+        "特殊技": 16,
+        "連攜技": 15,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 155,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/pan_yinhu_skills_t155.00.jpg",
+          "sha256": "96ccd6f62f87b537a67ee2447446d7aea8f9a77c6d72880b6bf2d4f856b0ff8a",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "五項技能採用畫面顯示等級，未扣影畫加成。",
+        "核心A至F字母與周圍底板均亮起，確認已啟用至F。",
+        "保留原寬2622，裁除底部40像素UID區域。"
+      ]
+    },
+    {
+      "id": "vivian",
+      "skills": {
+        "普通攻擊": 11,
+        "閃避": 7,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 158.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/vivian_skills_t158.50.jpg",
+          "sha256": "411634014528b0e7a3859c5284fa939ed91a377bc34af9dbe68ef5ba7489a7c4",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "五項技能採用畫面顯示等級，未扣影畫加成。",
+        "核心A至F字母與周圍底板均亮起，確認已啟用至F。",
+        "保留原寬2622，裁除底部40像素UID區域。"
+      ]
+    },
+    {
+      "id": "astra",
+      "skills": {
+        "普通攻擊": 7,
+        "閃避": 7,
+        "支援技": 7,
+        "特殊技": 12,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 175,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/astra_skills_t175.00.jpg",
+          "sha256": "90697bc39aaf29fed8817c150a2c654afa16f6b194ff54b2dc7194d023acdfe7",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "技能頁A至F字母皆亮起。",
+        "五項技能採用畫面顯示等級，未扣影畫加成。",
+        "保留原寬2622，裁除底部54像素UID區域。",
+        "由c代理補取精準影格，本代理再次檢視原寬JPEG確認。"
+      ]
+    },
+    {
+      "id": "qingyi",
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 1,
+        "支援技": 11,
+        "特殊技": 10,
+        "連攜技": 10,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 178.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/qingyi_skills_t178.50.jpg",
+          "sha256": "c7e91df506d9a717fdad255d893c532fc77f521aa50face50c3e41409786af19",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "五項技能採用畫面顯示等級，未扣影畫加成。",
+        "核心A至F字母與周圍底板均亮起，確認已啟用至F。",
+        "保留原寬2622，裁除底部40像素UID區域。"
+      ]
+    },
+    {
+      "id": "zhu_yuan",
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 9,
+        "支援技": 9,
+        "特殊技": 10,
+        "連攜技": 9,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 195,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/zhu_yuan_skills_t195.00.jpg",
+          "sha256": "fc73014d2bdf4524d0c3ed42a37578fc9d1632bd7dbbf87acbbb46583f11c6c4",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "五項技能採用畫面顯示等級，未扣影畫加成。",
+        "核心A至F字母與周圍底板均亮起，確認已啟用至F。",
+        "保留原寬2622，裁除底部40像素UID區域。"
+      ]
+    },
+    {
+      "id": "seth",
+      "skills": {
+        "普通攻擊": 13,
+        "閃避": 5,
+        "支援技": 16,
+        "特殊技": 15,
+        "連攜技": 15,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 208.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/seth_skills_t208.50.jpg",
+          "sha256": "02fd409b71a0447d690d06d7bbd87692a3a9e44b228861cb4efc9f40528b66e9",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "五項技能採用畫面顯示等級，未扣影畫加成。",
+        "核心A至F字母與周圍底板均亮起，確認已啟用至F。",
+        "保留原寬2622，裁除底部40像素UID區域。",
+        "已複核既有五項技能值，與原紀錄一致。"
+      ]
+    },
+    {
+      "id": "miyabi",
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 10,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 213,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/miyabi_skills_t213.00.jpg",
+          "sha256": "996906ac1d017e9b37595696208c9756459fa4d893fa737ee409767ccad5b953",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "五項技能採用畫面顯示等級，未扣影畫加成。",
+        "核心A至F字母與周圍底板均亮起，確認已啟用至F。",
+        "保留原寬2622，裁除底部40像素UID區域。"
+      ]
+    },
+    {
+      "id": "yanagi",
+      "skills": {
+        "普通攻擊": 11,
+        "閃避": 11,
+        "支援技": 11,
+        "特殊技": 12,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 231,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/yanagi_skills_t231.00.jpg",
+          "sha256": "dc1258aff9cd1ab67884c0879edd072f722481c731dde2579949f3afee541c94",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "技能頁A至F字母皆亮起。",
+        "五項技能採用畫面顯示等級，未扣影畫加成。",
+        "保留原寬2622，裁除底部54像素UID區域。",
+        "由c代理補取精準影格，本代理再次檢視原寬JPEG確認。"
+      ]
+    },
+    {
+      "id": "soukaku",
+      "skills": {
+        "普通攻擊": 9,
+        "閃避": 7,
+        "支援技": 11,
+        "特殊技": 15,
+        "連攜技": 15,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 238,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/soukaku_skills_t238.00.jpg",
+          "sha256": "67d1deeb1c6fad292a3d43e1a10349af757f42b4121c77de5cb6c3ebb950d857",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "五項技能採用畫面顯示等級，未扣影畫加成。",
+        "核心A至F字母與周圍底板均亮起，確認已啟用至F。",
+        "保留原寬2622，裁除底部40像素UID區域。"
+      ]
+    },
+    {
+      "id": "pulchra",
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 14,
+        "特殊技": 13,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 256.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/pulchra_skills_t256.50.jpg",
+          "sha256": "1dc9514cff095d990b5cb7a015d308714f61499962d98a6a1bd42f64e56d6f51",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "五項技能採用畫面顯示等級，未扣影畫加成。",
+        "核心A至F字母與周圍底板均亮起，確認已啟用至F。",
+        "保留原寬2622，裁除底部40像素UID區域。",
+        "已複核既有五項技能值，與原紀錄一致。"
+      ]
+    },
+    {
+      "id": "piper",
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 11,
+        "特殊技": 16,
+        "連攜技": 12,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 260,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/piper_skills_t260.00.jpg",
+          "sha256": "73342f58151bf4fe93a04b9f5f0eab6aa2cc88938baefeca513f81443bb4039a",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "五項技能採用畫面顯示等級，未扣影畫加成。",
+        "核心A至F字母與周圍底板均亮起，確認已啟用至F。",
+        "保留原寬2622，裁除底部40像素UID區域。"
+      ]
+    },
+    {
+      "id": "lucy",
+      "skills": {
+        "普通攻擊": 10,
+        "閃避": 6,
+        "支援技": 15,
+        "特殊技": 16,
+        "連攜技": 15,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 277,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/lucy_skills_t277.00.jpg",
+          "sha256": "b67f940f8bbe525e9bd6c1b3bb0af7ea9b7a424de9f436bd070ce71189a6f9d2",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "技能頁A至F字母皆亮起。",
+        "五項技能採用畫面顯示等級，未扣影畫加成。",
+        "保留原寬2622，裁除底部54像素UID區域。",
+        "由c代理補取精準影格，本代理再次檢視原寬JPEG確認。",
+        "已複核既有五項技能值，與原紀錄一致。"
+      ]
+    },
+    {
+      "id": "grace",
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 9,
+        "支援技": 9,
+        "特殊技": 12,
+        "連攜技": 10,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 279.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/grace_skills_t279.50.jpg",
+          "sha256": "344f9c0b08e53bd998f35d8da21913fe979657c6073e1bc09f42d16381667167",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "五項技能採用畫面顯示等級，未扣影畫加成。",
+        "核心A至F字母與周圍底板均亮起，確認已啟用至F。",
+        "保留原寬2622，裁除底部40像素UID區域。"
+      ]
+    },
+    {
+      "id": "koleda",
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 7,
+        "支援技": 11,
+        "特殊技": 12,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 296,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/koleda_skills_t296.00.jpg",
+          "sha256": "f7032e0c33839c97d0d79f026ee967d01c3cd2837576bdb439a8533db11a558d",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "anton",
+      "skills": {
+        "普通攻擊": 13,
+        "閃避": 13,
+        "支援技": 13,
+        "特殊技": 13,
+        "連攜技": 13,
+        "核心技": "D"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 300.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/anton_skills_t300.50.jpg",
+          "sha256": "b2af2f767ea263d3f89724e53cd7082511b4678accf62c71dc11044867b6604b",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "A、B、C、D亮起，E、F暗。"
+      ]
+    },
+    {
+      "id": "ellen",
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 11,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 318,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/ellen_skills_t318.00.jpg",
+          "sha256": "ad18842c9b55205b801358a62aff6a169ce92671fbe4d9524806c10dffae5fed",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "rina",
+      "skills": {
+        "普通攻擊": 7,
+        "閃避": 7,
+        "支援技": 7,
+        "特殊技": 12,
+        "連攜技": 12,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 321,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/rina_skills_t321.00.jpg",
+          "sha256": "b35b46dc20e4029dccb933d4a203d6c45d5f816a83cd5da84176554a444dc4e8",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "lycaon",
+      "skills": {
+        "普通攻擊": 13,
+        "閃避": 9,
+        "支援技": 13,
+        "特殊技": 13,
+        "連攜技": 13,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 340,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/lycaon_skills_t340.00.jpg",
+          "sha256": "da0aff15153d1c241998dd2128388eb39a49a6346a3684e3ee82bb07f8043255",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "畫面上限14，保留顯示等級，不扣影畫。"
+      ]
+    },
+    {
+      "id": "nekomata",
+      "skills": {
+        "普通攻擊": 11,
+        "閃避": 8,
+        "支援技": 9,
+        "特殊技": 9,
+        "連攜技": 9,
+        "核心技": "E"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 344,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/nekomata_skills_t344.00.jpg",
+          "sha256": "50d220de4fb8f19b5b16d0b78e2bdb00537c5b844bbf2986cfe4dee76da29933",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "E亮、F暗。"
+      ]
+    },
+    {
+      "id": "nicole",
+      "skills": {
+        "普通攻擊": 11,
+        "閃避": 12,
+        "支援技": 15,
+        "特殊技": 16,
+        "連攜技": 15,
+        "核心技": "F"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 360.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/nicole_skills_t360.50.jpg",
+          "sha256": "679ecf8dac1f0b4fcba0002f1a7fbeaa5e4fbe82ea3f4b7e743a451e1ccea079",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "anby",
+      "skills": {
+        "普通攻擊": 13,
+        "閃避": 13,
+        "支援技": 12,
+        "特殊技": 13,
+        "連攜技": 13,
+        "核心技": "D"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 363.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/anby_skills_t363.50.jpg",
+          "sha256": "ffe9d46f634c5d173c8bfac1da0ce666b77f30a9b550f41d8dafb78e22e9b390",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "A、B、C、D亮起，E、F暗。"
+      ]
+    },
+    {
+      "id": "corin",
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 5,
+        "特殊技": 5,
+        "連攜技": 5,
+        "核心技": "A"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 381.25,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/corin_skills_t381.25.jpg",
+          "sha256": "6027bc54014b86fe76af03bcb9a648d30d191a277b1c3c66823b6a301c389678",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "A亮，B僅有綠色選取圈，字母本身暗，C至F暗。"
+      ]
+    },
+    {
+      "id": "ben",
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 5,
+        "特殊技": 5,
+        "連攜技": 5,
+        "核心技": "A"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 384.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/ben_skills_t384.50.jpg",
+          "sha256": "2be62e016abbff497d62a09506c3497973eb085ba7090cc7d95bb86f8932efa6",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "A亮、B至F暗。"
+      ]
+    },
+    {
+      "id": "billy",
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 5,
+        "特殊技": 5,
+        "連攜技": 5,
+        "核心技": "A"
+      },
+      "status": "agent_reviewed",
+      "evidence": [
+        {
+          "timestampSec": 396.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/skills_video_001_review_20261112/billy_skills_t396.50.jpg",
+          "sha256": "a147f6902f1a67cc24800ba6e5448dc0b90990ec11fd267ca1e8b0cd7f2baa0b",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
+        }
+      ],
+      "notes": [
+        "A亮、B至F暗。"
+      ]
+    },
+    {
+      "id": "soldier_11",
+      "skills": null,
+      "status": "pending",
+      "evidence": [],
+      "notes": [
+        "影片414.5至415.5秒只顯示11號基礎頁，416.3秒已進入控制中心。未見11號技能頁，不從等級1反推技能或核心技。"
+      ]
+    }
+  ]
+}
