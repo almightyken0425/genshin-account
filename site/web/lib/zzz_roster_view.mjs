@@ -1,4 +1,4 @@
-import {selectRosterItems,effectiveRatio} from './roster_view.mjs';
+import {selectRosterItems,effectiveRatio,defaultRosterSorts} from './roster_view.mjs';
 
 export const ZZZ_ELEMENT_ORDER=['物理','火','冰','電','以太','風','烈霜','玄墨','凜刃','流明'];
 export const ZZZ_SPECIALTY_ORDER=['強攻','擊破','異常','支援','防護','命破'];
@@ -38,14 +38,20 @@ export function selectZzzRoster(characters,{filters=emptyZzzFilters(),sorts=[],q
  });
 }
 export function parseZzzRosterState(serialized){
- const state={query:'',filters:emptyZzzFilters(),sorts:[]};
+ const state={query:'',filters:emptyZzzFilters(),sorts:defaultRosterSorts()};
  try{
   const value=JSON.parse(serialized??'null');
   if(!value||typeof value!=='object')return state;
   state.query=typeof value.query==='string'?value.query:'';
   for(const key of filterKeys)if(Array.isArray(value.filters?.[key]))state.filters[key]=[...new Set(value.filters[key].filter(item=>typeof item==='string'))];
-  if(Array.isArray(value.sorts))for(const rule of value.sorts)if(ZZZ_SORT_KEYS.includes(rule?.key)&&['asc','desc'].includes(rule.direction)&&!state.sorts.some(item=>item.key===rule.key))state.sorts.push({key:rule.key,direction:rule.direction});
+  if(Array.isArray(value.sorts)){
+   state.sorts=[];
+   for(const rule of value.sorts)if(ZZZ_SORT_KEYS.includes(rule?.key)&&['asc','desc'].includes(rule.direction)&&!state.sorts.some(item=>item.key===rule.key))state.sorts.push({key:rule.key,direction:rule.direction});
+  }
  }catch{}
  return state;
 }
-export function serializeZzzRosterState(state){return state.query||Object.values(state.filters).some(values=>values.length)||state.sorts.length?JSON.stringify(state):null}
+export function serializeZzzRosterState(state){
+ const defaultSort=state.sorts.length===1&&state.sorts[0].key==='ratio'&&state.sorts[0].direction==='desc';
+ return state.query||Object.values(state.filters).some(values=>values.length)||!defaultSort?JSON.stringify(state):null;
+}

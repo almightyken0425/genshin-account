@@ -1,9 +1,9 @@
 {
   "project_id": "appgprj_6af3d7df0f3481919cbe1b4416108ff6",
-  "source_commit": "6a5550f68f629b42342509ef751521ff189a194d",
+  "source_commit": "0f1797042492c5d7d912e034cf0f069d9ae93230",
   "site_url": "https://ken-genshin-archive.almightyken0425.chatgpt.site",
-  "version_id": "appgprj_6af3d7df0f3481919cbe1b4416108ff6~appgver_47d38b6cfcc48191819cb3508e4f8396",
-  "deployment_id": "appgdep_6af6e9a32a4081919bc6f586555b8fde",
+  "version_id": "appgprj_6af3d7df0f3481919cbe1b4416108ff6~appgver_ea078e12d65c81918cde8ed3912fc271",
+  "deployment_id": "appgdep_6af6f2fc9b0c819191dd8ddea10a469f",
   "review": {
     "id": "hoyo-layout-equipment-20261113",
     "based_on_commit": "e36f0599abce933c4678d87c48cf7e8baf21ffbc",
@@ -52,7 +52,7 @@
     "account_merge_revision": "529c51780cd384cc6d7707a6780736fd8e44bb83",
     "snapshots_in_runtime": false
   },
-  "version_number": 45,
+  "version_number": 46,
   "zzz_teams_removed": {
     "checked_at": "2026-11-13",
     "based_on_commit": "2afcdece74b98a3bcb9ff6cc7e252dcd7f994d6c",
@@ -91,6 +91,25 @@
       "build": "passed",
       "protected_file_count": 1068,
       "protected_files_changed": 0,
+      "browser": "not_repeated_after_preview_timeout",
+      "deployment": "succeeded"
+    }
+  },
+  "roster_default_sort": {
+    "checked_at": "2026-11-13",
+    "based_on_commit": "9cc70c2cf7133e188085c44885e9196ffd2ac5e8",
+    "games": [
+      "genshin",
+      "zzz"
+    ],
+    "key": "ratio",
+    "direction": "desc",
+    "preserve_explicit_sorts": true,
+    "github_branch": "codex/roster-default-effective-ratio",
+    "verification": {
+      "web_tests_passed": 256,
+      "typescript": "passed",
+      "build": "passed",
       "browser": "not_repeated_after_preview_timeout",
       "deployment": "succeeded"
     }

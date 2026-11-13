@@ -1,11 +1,16 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {selectRoster} from '../lib/roster_view.mjs';
+import {selectRoster,defaultRosterSorts} from '../lib/roster_view.mjs';
 
 const make=(id,name,element,weapon_type,constellation,level)=>({id,name,element,weapon_type,constellation,level:{current:level}});
 const roster=[make('a','A','hydro','sword',1,90),make('b','B','hydro','bow',1,80),make('c','C','cryo','sword',6,90),make('d','D','pyro','catalyst',0,60)];
 const options=(patch={})=>({filters:{rarities:[],weapons:[],elements:[]},sorts:[],query:'',effectiveTotals:{a:12,b:20,c:null,d:0},rarities:{a:5,b:4,c:5,d:4},...patch});
 const ids=rows=>rows.map(row=>row.id);
+
+test('initial roster selection sorts by effective ratio descending with unknown values last',()=>{
+ const maximumTotals={a:20,b:40,c:null,d:8};
+ assert.deepEqual(ids(selectRoster(roster,options({maximumTotals,sorts:defaultRosterSorts()}))),['a','b','d','c']);
+});
 
 test('filters accept alternatives within a category and combine categories',()=>{
  assert.deepEqual(ids(selectRoster(roster,options({filters:{rarities:[4,5],weapons:['sword','bow'],elements:['hydro']}}))),['a','b']);

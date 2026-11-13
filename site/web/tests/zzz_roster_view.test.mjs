@@ -52,3 +52,16 @@ test('roster URL state round trips and rejects malformed or duplicate sort rules
  const parsed=parseZzzRosterState(JSON.stringify({filters:{rarities:['A','A',1]},sorts:[{key:'ratio',direction:'desc'},{key:'ratio',direction:'asc'},{key:'invalid',direction:'desc'},{key:'name',direction:'sideways'}]}));
  assert.deepEqual(parsed.filters.rarities,['A']);assert.deepEqual(parsed.sorts,[{key:'ratio',direction:'desc'}]);
 });
+
+test('missing or damaged roster state defaults to effective ratio descending',()=>{
+ for(const input of [null,undefined,'{bad','{}',JSON.stringify({query:'A'})])assert.deepEqual(parseZzzRosterState(input).sorts,[{key:'ratio',direction:'desc'}]);
+ const effectiveTotals={a:12,b:20,c:0,d:null},maximumTotals={a:20,b:40,c:8,d:null};
+ assert.deepEqual(ids(selectZzzRoster(rows,{...parseZzzRosterState(null),catalog,effectiveTotals,maximumTotals})),['a','b','c','d']);
+});
+
+test('an explicitly cleared sort survives URL serialization instead of restoring the initial sort',()=>{
+ const cleared={...parseZzzRosterState(null),sorts:[]};
+ assert.notEqual(serializeZzzRosterState(cleared),null);
+ assert.deepEqual(parseZzzRosterState(serializeZzzRosterState(cleared)),cleared);
+ assert.equal(serializeZzzRosterState(parseZzzRosterState(null)),null);
+});

@@ -27,7 +27,7 @@ import {teamFlowNotes} from '@/lib/team_flows';
 import CenteredHeader from '@/components/navigation/centered_header';
 import GrowthTarget from './growth_target';
 import SkirkFlow from './skirk_flow';
-import {selectRoster} from '@/lib/roster_view.mjs';
+import {selectRoster,defaultRosterSorts} from '@/lib/roster_view.mjs';
 import type {RosterFilters,SortRule} from '@/lib/roster_view.mjs';
 
 const slots:Record<string,string>={flower:'生之花',plume:'死之羽',sands:'時之沙',goblet:'空之杯',circlet:'理之冠'};
@@ -38,7 +38,7 @@ function Numeric({label,value}:{label:string,value:number|null}){
  return <MetricValue label={label} value={<>{fmt(value)}{label.endsWith('(%)')?'%':''}</>}/>;
 }
 export default function Dashboard({initialCharacter='',gameControl}:{initialCharacter?:string,gameControl?:React.ReactNode}){
- const [data,setData]=useState<AccountResult|null>(null),[selected,setSelected]=useState(initialCharacter),[query,setQuery]=useState(''),[filters,setFilters]=useState<RosterFilters>({rarities:[],weapons:[],elements:[]}),[sorts,setSorts]=useState<SortRule[]>([]),[fullLabels,setFullLabels]=useState(false),[expanded,setExpanded]=useState<'weapon'|'artifacts'|null>(null),[section,setSection]=useState<GameSection>('roster'),[selectedTeam,setSelectedTeam]=useState('');
+ const [data,setData]=useState<AccountResult|null>(null),[selected,setSelected]=useState(initialCharacter),[query,setQuery]=useState(''),[filters,setFilters]=useState<RosterFilters>({rarities:[],weapons:[],elements:[]}),[sorts,setSorts]=useState<SortRule[]>(defaultRosterSorts),[fullLabels,setFullLabels]=useState(false),[expanded,setExpanded]=useState<'weapon'|'artifacts'|null>(null),[section,setSection]=useState<GameSection>('roster'),[selectedTeam,setSelectedTeam]=useState('');
  const [busy,setBusy]=useState(true),[error,setError]=useState<{code:string,message:string}|null>(null);
  useEffect(()=>{try{setFullLabels((localStorage.getItem('hoyo-genshin-detail-labels')??localStorage.getItem('genshin-detail-labels'))==='full')}catch{}},[]);
  function toggleLabels(){setFullLabels(previous=>{const next=!previous;try{localStorage.setItem('hoyo-genshin-detail-labels',next?'full':'compact')}catch{}return next})}
