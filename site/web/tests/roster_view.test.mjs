@@ -49,3 +49,10 @@ test('missing catalog rarity is not silently treated as four or five stars',()=>
  assert.equal(selectRoster(roster,options({rarities:{},filters:{rarities:[4,5],weapons:[],elements:[]}})).length,0);
  assert.equal(selectRoster(roster,options({rarities:{}})).length,4);
 });
+
+test('Genshin adapter shares maximum, ratio and name sorting with the generic engine',()=>{
+ const maximumTotals={a:20,b:40,c:null,d:8};
+ assert.deepEqual(ids(selectRoster(roster,options({maximumTotals,sorts:[{key:'maximum',direction:'desc'}]}))),['b','a','d','c']);
+ assert.deepEqual(ids(selectRoster(roster,options({maximumTotals,sorts:[{key:'ratio',direction:'desc'}]}))),['a','b','d','c']);
+ assert.deepEqual(ids(selectRoster(roster,options({sorts:[{key:'name',direction:'asc'}]}))),['a','b','c','d']);
+});

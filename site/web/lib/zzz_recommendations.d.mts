@@ -16,6 +16,7 @@ export type ZzzTeamGuide = {
  reason:string;
  accountAssessment?:{verdict:string;reason:string;alternatives?:string[]};
  members:ZzzTeamMember[];
+ companion?:{id:string;name:string;src?:string;status:'recommended'|'unconfirmed'};
  activation:string[];
  steps:{characterId:string;action:string}[];
  sources:GuideSource[];

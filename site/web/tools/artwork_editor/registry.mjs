@@ -1,8 +1,8 @@
 import {readFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {viewFromCrop} from '../../lib/artwork_math.mjs';
-import {effectiveLoadoutCount} from '../../lib/artifact_rolls.mjs';
-import {effectiveDiscLoadout} from '../../lib/zzz_discs.mjs';
+import {effectiveLoadoutCount,artifactEffectiveKeys,maximumArtifactLoadout} from '../../lib/artifact_rolls.mjs';
+import {effectiveDiscLoadout,discEffectiveKeys,maximumDiscLoadout} from '../../lib/zzz_discs.mjs';
 import {selectRoster} from '../../lib/roster_view.mjs';
 
 const json=async path=>JSON.parse(await readFile(path,'utf8'));
@@ -40,7 +40,9 @@ export async function createArtworkRegistry({root,accountRoot}){
   const gi=await json(resolve(accountRoot,'data/account.json'));
   const zzz=await json(resolve(accountRoot,'data/zzz/account.json'));
   const artifactIndex=new Map(gi.artifacts.map(artifact=>[artifact.id,artifact]));
-  const totals=Object.fromEntries(gi.characters.map(character=>[character.id,effectiveLoadoutCount(Object.values(gi.equipment?.[character.id]?.artifacts??{}).map(id=>id?artifactIndex.get(id):undefined),character.id)]));
+  const equippedArtifacts=Object.fromEntries(gi.characters.map(character=>[character.id,Object.values(gi.equipment?.[character.id]?.artifacts??{}).map(id=>id?artifactIndex.get(id):undefined)]));
+  const totals=Object.fromEntries(gi.characters.map(character=>[character.id,effectiveLoadoutCount(equippedArtifacts[character.id],character.id)]));
+  const maximums=Object.fromEntries(gi.characters.map(character=>[character.id,maximumArtifactLoadout(equippedArtifacts[character.id],artifactEffectiveKeys(equippedArtifacts[character.id],character.id))]));
   const giOrder=selectRoster(gi.characters,{filters:{rarities:[],weapons:[],elements:[]},sorts:[]});
   const characters={genshin:giOrder,zzz:zzz.characters};
   const entries=[];
@@ -49,7 +51,8 @@ export async function createArtworkRegistry({root,accountRoot}){
    if(!template)throw Error('角色缺少已核對的圖片來源：'+character.name);
    const saved=document.entries[key(game,role,character.id)];
    const metrics=game==='genshin'?[{label:'角色等級',value:character.level.current},{label:'命之座',value:character.constellation},{label:'有效詞條總數',value:totals[character.id]}]:[{label:'角色等級',value:character.level},{label:'影畫',value:character.mindscape},{label:'有效詞條總數',value:effectiveDiscLoadout(character.driveDiscs)}];
-   entries.push({game,role,id:character.id,name:character.name,metrics,sources:template.sources.map(({path,width,height,sha256,label})=>({path,width,height,sha256,label})),sourcePath:saved?.sourcePath??template.defaultSourcePath,view:saved?.view??template.defaultView,expectedRevision:saved?.revision??0,previewPath:saved?.renderedPath??template.basePreviewPath,defaultSourcePath:template.defaultSourcePath,defaultView:template.defaultView});
+   const effectiveMaximum=game==='genshin'?maximums[character.id]:maximumDiscLoadout(character.driveDiscs,discEffectiveKeys(character.driveDiscs));
+   entries.push({game,role,id:character.id,name:character.name,metrics,effectiveMaximum,sources:template.sources.map(({path,width,height,sha256,label})=>({path,width,height,sha256,label})),sourcePath:saved?.sourcePath??template.defaultSourcePath,view:saved?.view??template.defaultView,expectedRevision:saved?.revision??0,previewPath:saved?.renderedPath??template.basePreviewPath,defaultSourcePath:template.defaultSourcePath,defaultView:template.defaultView});
   }
   return {schemaVersion:1,revision:document.revision,entries,websitePreviewUrl};
  }

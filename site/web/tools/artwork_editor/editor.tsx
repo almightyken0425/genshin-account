@@ -2,6 +2,8 @@ import {useEffect,useLayoutEffect,useRef,useState,type MouseEvent} from 'react';
 import {ArrowLeft,ArrowUpRight,Check,LoaderCircle,RotateCcw,Save} from 'lucide-react';
 import CharacterCard from '../../components/character/character_card';
 import PortraitSummary from '../../components/character/portrait_summary';
+import type {CharacterMetrics2,CharacterMetrics3} from '../../components/character/types';
+import {effectiveRollMetric,formatEffectivePercent} from '../../components/metrics/effective_roll_metric';
 import {clampView} from '../../lib/artwork_math.mjs';
 import CropStage from './crop_stage';
 import type {ArtworkBootstrap,ArtworkEntry,ArtworkGame,ArtworkRole,ArtworkSource,CropView} from './types';
@@ -17,7 +19,9 @@ class ArtworkRequestError extends Error{
 }
 const gameName=(game:ArtworkGame)=>game==='genshin'?'原神':'絕區零';
 const roleName=(role:ArtworkRole)=>role==='roster'?'角色列表':'角色詳情';
-const editLabel=(entry:ArtworkEntry)=>'編輯'+entry.name+'的'+roleName(entry.role)+'圖片，'+entry.metrics.map(metric=>metric.label+' '+(metric.value===null?'未知':metric.value)).join('，');
+const rosterMetrics=(entry:ArtworkEntry):CharacterMetrics2=>[entry.metrics[1],{label:'有效達成率',value:formatEffectivePercent(entry.metrics[2].value,entry.effectiveMaximum)}];
+const portraitMetrics=(entry:ArtworkEntry):CharacterMetrics3=>[entry.metrics[0],entry.metrics[1],effectiveRollMetric(entry.metrics[2].value,entry.effectiveMaximum)];
+const editLabel=(entry:ArtworkEntry)=>'編輯'+entry.name+'的'+roleName(entry.role)+'圖片，'+(entry.role==='roster'?rosterMetrics(entry):portraitMetrics(entry)).map(metric=>metric.label+' '+(metric.value===null||metric.value==='—'?'未知':metric.value)).join('，');
 const overviewPath=(route:Route)=>'/'+route.game+'/'+route.role;
 const sameEntry=(a:Route,b:ArtworkEntry)=>a.game===b.game&&a.role===b.role&&a.id===b.id;
 const routePattern=/^\/(genshin|zzz)\/(roster|portrait)(?:\/([^/]+))?\/?$/;
@@ -164,7 +168,7 @@ export default function ArtworkEditor(){
     <div className="artwork-editor__overview-heading"><div><h2>{gameName(route.game)} · {roleName(route.role)}</h2><p>{entries.length} 位角色 · {route.role==='roster'?'3:4 近景大卡':'1:1 詳情圖框'} · 點選圖片調整構圖</p></div><label className="artwork-editor__search"><span>搜尋角色</span><input type="search" placeholder="名稱或角色 ID" value={query} onChange={event=>setQueries(current=>({...current,[currentPath]:event.target.value}))}/></label></div>
     <div className="artwork-editor__grid">
      {visible.map(entry=><article className="artwork-editor__preview-card" key={entry.id}>
-      {route.role==='roster'?<CharacterCard ref={node=>{const key=currentPath+'/'+entry.id;if(node)cardRefs.current.set(key,node);else cardRefs.current.delete(key)}} name={entry.name} image={{src:previewSource(entry),alt:entry.name}} metrics={entry.metrics} disabled={saving||readingLatest} aria-label={editLabel(entry)} onClick={()=>open(entry)}/>:<button type="button" className="artwork-editor__portrait-card" ref={node=>{const key=currentPath+'/'+entry.id;if(node)cardRefs.current.set(key,node);else cardRefs.current.delete(key)}} disabled={saving||readingLatest} aria-label={editLabel(entry)} onClick={()=>open(entry)}><PortraitSummary image={{src:previewSource(entry),alt:entry.name}} metrics={entry.metrics}/></button>}
+      {route.role==='roster'?<CharacterCard ref={node=>{const key=currentPath+'/'+entry.id;if(node)cardRefs.current.set(key,node);else cardRefs.current.delete(key)}} name={entry.name} image={{src:previewSource(entry),alt:entry.name}} metrics={rosterMetrics(entry)} disabled={saving||readingLatest} aria-label={editLabel(entry)} onClick={()=>open(entry)}/>:<button type="button" className="artwork-editor__portrait-card" ref={node=>{const key=currentPath+'/'+entry.id;if(node)cardRefs.current.set(key,node);else cardRefs.current.delete(key)}} disabled={saving||readingLatest} aria-label={editLabel(entry)} onClick={()=>open(entry)}><PortraitSummary image={{src:previewSource(entry),alt:entry.name}} metrics={portraitMetrics(entry)}/></button>}
       <span className="artwork-editor__character-name">{entry.name}</span>
      </article>)}
     </div>

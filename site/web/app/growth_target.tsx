@@ -1,3 +1,14 @@
-import MediaImage from '@/components/media/media_image';
+'use client';
+
+import {useState} from 'react';
 import {characterImage,artifactImage} from '@/lib/game_assets';
-export default function GrowthTarget(){return <article className="growth-target" aria-label="愛可菲黃金劇團攻擊沙培養目標"><div className="growth-art"><MediaImage src={characterImage('escoffier','icon')} alt="愛可菲"/><span className="growth-artifact"><MediaImage src={artifactImage('黃金劇團','sands')} alt="黃金劇團時之沙"/></span></div><div className="growth-content"><h1>愛可菲</h1><h2>黃金劇團 · 時之沙</h2><div className="growth-main">攻擊力 %</div><div className="growth-substats"><span>暴擊率</span><span>暴擊傷害</span><span>元素充能效率</span></div><p className="growth-location">楓丹 · 罪禍的終末</p><p className="growth-context">替換生命沙，保留劇團四件套</p></div></article>}
+import {selectedTeams} from '@/lib/selected_teams';
+import GrowthPage from '@/components/pages/growth_page';
+import type {GrowthTargetViewModel} from '@/components/growth/growth_target_card';
+
+export default function GrowthTarget({teamId,onSelectTeam,onOpenCharacter}:{teamId?:string,onSelectTeam?:(id:string)=>void,onOpenCharacter?:(id:string)=>void}={}){
+ const [localTeam,setLocalTeam]=useState('');
+ const activeId=teamId??localTeam,team=selectedTeams.find(team=>team.id===activeId);
+ const targets:GrowthTargetViewModel[]=team&&!team.members.some(id=>id==='escoffier')?[]:[{id:'escoffier-golden-troupe-sands',kind:'upgrade',character:{id:'escoffier',name:'愛可菲',src:characterImage('escoffier','icon')},title:'黃金劇團 · 時之沙',main:'攻擊力 %',tags:['暴擊率','暴擊傷害','元素充能效率'],artifact:{src:artifactImage('黃金劇團','sands'),name:'黃金劇團時之沙'},location:'楓丹 · 罪禍的終末',context:'替換生命沙，保留劇團四件套'}];
+ return <GrowthPage teams={selectedTeams} teamId={team?.id||''} onSelectTeam={id=>{setLocalTeam(id);onSelectTeam?.(id)}} targets={targets} onOpenCharacter={onOpenCharacter}/>;
+}

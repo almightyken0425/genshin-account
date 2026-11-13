@@ -1,7 +1,45 @@
 {
   "project_id": "appgprj_6af3d7df0f3481919cbe1b4416108ff6",
-  "source_commit": "ce258f580ede441e571bf80c8de98f135e9f7dcc",
+  "source_commit": "ea05e4a577b039f1089912d48ff0a35f0ab5c221",
   "site_url": "https://ken-genshin-archive.almightyken0425.chatgpt.site",
-  "version_id": "appgprj_6af3d7df0f3481919cbe1b4416108ff6~appgver_9635f723360c8191addca3ed675154e3",
-  "deployment_id": "appgdep_6af67f7d441c8191b36827d4a1c109c7"
+  "version_id": "appgprj_6af3d7df0f3481919cbe1b4416108ff6~appgver_5c11d4e4e32881919b1a84eee57d212f",
+  "deployment_id": "appgdep_6af6c50ed128819181bcd063f5c1e5e9",
+  "review": {
+    "id": "hoyo-layout-equipment-20261113",
+    "based_on_commit": "e36f0599abce933c4678d87c48cf7e8baf21ffbc",
+    "account_sha256": "693353f08b426a85770c365cd5491a0edf0aac085035ff364d7776319498756d",
+    "github_pushed": false
+  },
+  "access_mode": "public",
+  "genshin_review": {
+    "id": "hoyo-genshin-artifacts-20261113",
+    "based_on_commit": "e36f0599abce933c4678d87c48cf7e8baf21ffbc",
+    "account_sha256": "51159cc2f7493a68647ca84e87333a081c5c889dc692633bf7a37942fc3dc490",
+    "github_pushed": false
+  },
+  "effective_stats": {
+    "checked_at": "2026-11-13",
+    "characters": 47,
+    "profile_source": "web/lib/genshin_stat_profiles.json",
+    "based_on_commit": "e36f0599abce933c4678d87c48cf7e8baf21ffbc",
+    "based_account_sha256": "51159cc2f7493a68647ca84e87333a081c5c889dc692633bf7a37942fc3dc490",
+    "github_pushed": false
+  },
+  "summary_spacing": {
+    "shared_games": [
+      "genshin",
+      "zzz"
+    ],
+    "mobile_gap_px": 12,
+    "medium_gap_px": 10,
+    "desktop_gap_px": 16,
+    "github_pushed": false
+  },
+  "genshin_weapon_restore": {
+    "icon_count": 33,
+    "restored_from_site_source": "fd74c9b4522bf0f623902e0fa3adf8d083ca2267",
+    "source_provider": "HoYoWiki",
+    "display": "square-icons-with-original-frame-sizes",
+    "github_pushed": false
+  }
 }

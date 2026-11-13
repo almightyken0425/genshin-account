@@ -25,7 +25,7 @@ h1,h2,h3,h4,p{margin:0}svg{flex-shrink:0}img{display:block;max-width:100%}
 .icon-button:hover{background:var(--surface-hover);color:var(--ink)}
 
 .roster{max-width:1120px;margin:0 auto;min-height:calc(100svh - 80px)}
-.roster-toolbar{position:sticky;top:0;z-index:20;background:var(--canvas);border-bottom:1px solid var(--line)}
+.roster-toolbar{position:sticky;top:0;z-index:20}
 .roster-toolbar .filters{margin:0;padding:14px 0;min-height:64px}
 .roster-toolbar .filters button{min-height:36px;padding:7px 12px}
 .roster-search{padding:14px 0 12px}
@@ -203,7 +203,7 @@ h3{font-size:14px;font-weight:600}
 
 /* Read-only workspace navigation. */
 .main{padding-bottom:calc(110px + env(safe-area-inset-bottom))}
-.footer-fab{position:fixed;z-index:50;bottom:calc(18px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);display:flex;gap:6px;padding:7px;background:var(--dock-surface);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow-dock);backdrop-filter:blur(16px)}
+.footer-fab{position:fixed;z-index:50;bottom:calc(18px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);display:flex;gap:6px;padding:7px;background:var(--glass-surface);border:1px solid var(--glass-line);border-radius:26px;box-shadow:var(--glass-shadow);backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter)}
 .footer-fab button{min-width:112px;min-height:54px;padding:9px 18px;display:flex;gap:9px;align-items:center;justify-content:center;border-radius:20px;background:transparent;color:var(--muted);font-weight:600;white-space:nowrap}
 .footer-fab button:hover{background:var(--soft)}
 .footer-fab button.active{color:var(--blue);background:var(--blue-soft)}

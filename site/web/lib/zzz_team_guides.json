@@ -2,16 +2,17 @@
   "meta": {
     "checkedAt": "2026-11-13",
     "gameVersion": "3.3",
-    "basedOnCommit": "defbe33d1aff1be037354c0f692f3f835358c652",
+    "basedOnCommit": "e36f0599abce933c4678d87c48cf7e8baf21ffbc",
     "goal": "為各個已投入主力選出目前持有範圍內的優先搭配，允許不同隊伍重複使用同一隊友。",
     "scope": "依官方HoYoWiki機制、額外能力、現有裝備及補齊後技能觀測，重新評估8組主力。隊伍順序沿用既有入口，並非傷害排名。",
     "limitations": [
       "影片錄影日期與遊戲版本未知，帳號觀測不代表即時遊戲伺服器狀態。",
       "機制於2026-11-13重新查核官方公開資料，適用版本3.3。未進行傷害模擬或實戰評分，優先搭配為依現有資料作出的判斷。",
-      "技能採影片顯示等級與已亮起的核心技階段。11號未拍到技能頁，未知音擎及其被動仍不當成已確認。",
+      "技能採影片顯示等級與已亮起的核心技階段。38名角色技能均已核對。37名角色音擎完整，珂蕾妲仍有未知欄位，未逐項分析音擎被動對循環的影響。",
       "觀測面板不等同技能所稱的初始屬性，不據此判定增益已達上限。",
       "同名音擎或驅動盤是否獨立持有尚未逐件證明，不把多隊列出等同可同時使用相同裝備。",
-      "隊伍條件已逐位核對。觸發額外能力只代表相容，不單憑此條件宣稱全環境最優。"
+      "隊伍條件已逐位核對。觸發額外能力只代表相容，不單憑此條件宣稱全環境最優。",
+      "邦布僅為已核對額外能力條件的建議搭配，帳號持有、星級、等級與裝備狀態未知。"
     ],
     "sources": [
       {
@@ -108,8 +109,8 @@
       }
     ],
     "reassessment": {
-      "accountSha256": "2f3dab85ccb209ad53586bed9a30bad2b34b41ce41219d5ce00030fa490fb885",
-      "workingTreeChanges": "以未提交的技能補齊資料與網站候選重新評估，尚未合併至main。",
+      "accountSha256": "693353f08b426a85770c365cd5491a0edf0aac085035ff364d7776319498756d",
+      "workingTreeChanges": "依本次未提交的音擎與11號技能補證資料產生Sites審閱版，尚未推送GitHub。",
       "skillReview": "imports/zzz/skills_video_001_review_20261112/review.json",
       "trainingPlans": "lib/zzz_training_plans.json",
       "conclusion": "8組主要搭配保留，改以已知技能缺口、核心F與裝備條件重新安排培養優先序。"
@@ -178,11 +179,21 @@
         {
           "label": "千夏・HoYoWiki",
           "url": "https://wiki.hoyolab.com/pc/zzz/entry/995"
+        },
+        {
+          "label": "氣壓布・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/114?lang=zh-tw"
         }
       ],
       "accountAssessment": {
         "verdict": "保留，優先補強爆發技能",
         "reason": "佩洛伊斯四影、核心F，特殊技已14，普攻與連攜為13/14。青衣普攻12、核心F，千夏特殊技12、核心F，已具備擊破與支援骨架。無需因青衣閃避1或千夏普攻1而換人，先檢查失衡窗口，再補佩洛伊斯最後一級。"
+      },
+      "companion": {
+        "id": "bangboo_114",
+        "name": "氣壓布",
+        "src": "/assets/zzz/bangboo/bangboo_114.png",
+        "status": "recommended"
       }
     },
     {
@@ -251,11 +262,21 @@
         {
           "label": "月城柳・HoYoWiki",
           "url": "https://wiki.hoyolab.com/pc/zzz/entry/529"
+        },
+        {
+          "label": "不良布・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/532?lang=zh-tw"
         }
       ],
       "accountAssessment": {
         "verdict": "保留三異常，優先穩定輪替",
         "reason": "蕾米埃爾、維琳娜、柳的核心都已F，三人的特殊技都12，足以支持三異常的既定職責。補齊技能後沒有因培養不足必須換人的理由。蕾米埃爾主要技能已到位，維琳娜與柳普攻11至12留作低優先補強。"
+      },
+      "companion": {
+        "id": "bangboo_532",
+        "name": "不良布",
+        "src": "/assets/zzz/bangboo/bangboo_532.png",
+        "status": "recommended"
       }
     },
     {
@@ -328,6 +349,10 @@
         {
           "label": "法厄同之歌・HoYoWiki",
           "url": "https://wiki.hoyolab.com/pc/zzz/entry/624"
+        },
+        {
+          "label": "左輪布・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/108?lang=zh-tw"
         }
       ],
       "accountAssessment": {
@@ -336,6 +361,12 @@
         "alternatives": [
           "若需要護盾與容錯，可將柚葉換成已確認核心F的賽斯，屬生存取向替補。"
         ]
+      },
+      "companion": {
+        "id": "bangboo_108",
+        "name": "左輪布",
+        "src": "/assets/zzz/bangboo/bangboo_108.png",
+        "status": "recommended"
       }
     },
     {
@@ -400,11 +431,21 @@
         {
           "label": "照・HoYoWiki",
           "url": "https://wiki.hoyolab.com/pc/zzz/entry/960"
+        },
+        {
+          "label": "芽芽・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/985?lang=zh-tw"
         }
       ],
       "accountAssessment": {
         "verdict": "保留，先補橘福福後台擊破",
-        "reason": "葉瞬光二影、普攻/特殊/連攜12、核心F已確認。照的核心F與支援技能11可保留帷幕職責。真正的技能缺口是橘福福普攻6，後台虎威也使用此欄失衡倍率，先補至11。葉瞬光尚未記錄音擎，不能據此推定未裝備。"
+        "reason": "葉瞬光二影、普攻/特殊/連攜12、核心F已確認。照的核心F與支援技能11可保留帷幕職責。真正的技能缺口是橘福福普攻6，後台虎威也使用此欄失衡倍率，先補至11。葉瞬光音擎已確認雲霓孤光60級、精煉1。"
+      },
+      "companion": {
+        "id": "bangboo_985",
+        "name": "芽芽",
+        "src": "/assets/zzz/bangboo/bangboo_985.png",
+        "status": "recommended"
       }
     },
     {
@@ -473,6 +514,10 @@
         {
           "label": "潘引壺・HoYoWiki",
           "url": "https://wiki.hoyolab.com/pc/zzz/entry/751"
+        },
+        {
+          "label": "獅耶・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/793?lang=zh-tw"
         }
       ],
       "accountAssessment": {
@@ -481,6 +526,12 @@
         "alternatives": [
           "盧西婭可由六影、核心F的潘引壺作貫穿力與生存支援替補。儀玄可滿足命破條件，但現有資料不足以判定替換後更強。"
         ]
+      },
+      "companion": {
+        "id": "bangboo_793",
+        "name": "獅耶",
+        "src": "/assets/zzz/bangboo/bangboo_793.png",
+        "status": "recommended"
       }
     },
     {
@@ -553,11 +604,21 @@
         {
           "label": "法厄同之歌・HoYoWiki",
           "url": "https://wiki.hoyolab.com/pc/zzz/entry/624"
+        },
+        {
+          "label": "格列佛探員・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/542?lang=zh-tw"
         }
       ],
       "accountAssessment": {
         "verdict": "保留雅柳，先核對套裝暴擊覆蓋",
         "reason": "星見雅普攻12、核心F，柳特殊12、核心F，柚葉核心F，主要循環已具備。雅的面板暴擊率70.6%搭配已裝備4件折枝劍歌，凍結或碎冰後的12%暴擊率生效時可到82.6%。先確認套裝覆蓋，不能直接把面板當成缺9.4%而重刷暴擊。"
+      },
+      "companion": {
+        "id": "bangboo_542",
+        "name": "格列佛探員",
+        "src": "/assets/zzz/bangboo/bangboo_542.png",
+        "status": "recommended"
       }
     },
     {
@@ -622,6 +683,10 @@
         {
           "label": "盧西婭·艾洛溫・HoYoWiki",
           "url": "https://wiki.hoyolab.com/pc/zzz/entry/907"
+        },
+        {
+          "label": "艾絲彌小姐・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/878?lang=zh-tw"
         }
       ],
       "accountAssessment": {
@@ -630,6 +695,12 @@
         "alternatives": [
           "盧西婭可由六影、核心F的潘引壺作貫穿力與生存支援替補。真斗可滿足命破條件，不因技能補齊而自動換人。"
         ]
+      },
+      "companion": {
+        "id": "bangboo_878",
+        "name": "艾絲彌小姐",
+        "src": "/assets/zzz/bangboo/bangboo_878.png",
+        "status": "recommended"
       }
     },
     {
@@ -694,11 +765,21 @@
         {
           "label": "妮可・德瑪拉・HoYoWiki",
           "url": "https://wiki.hoyolab.com/pc/zzz/entry/20"
+        },
+        {
+          "label": "共鳴布・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/109?lang=zh-tw"
         }
       ],
       "accountAssessment": {
         "verdict": "保留，朱鳶爆發技能列優先",
-        "reason": "朱鳶普攻12、核心F已到位，但連攜9、特殊10仍有明確爆發倍率缺口，先補到11。青衣普攻12、核心F，妮可六影、核心F與特殊16，已具備擊破、減防與暴擊支援。妮可音擎尚未記錄，這項缺口不等於技能未培養。"
+        "reason": "朱鳶普攻12、核心F已到位，但連攜9、特殊10仍有明確爆發倍率缺口，先補到11。青衣普攻12、核心F，妮可六影、核心F與特殊16，已具備擊破、減防與暴擊支援。妮可音擎已確認聚寶箱60級、精煉5。"
+      },
+      "companion": {
+        "id": "bangboo_109",
+        "name": "共鳴布",
+        "src": "/assets/zzz/bangboo/bangboo_109.png",
+        "status": "recommended"
       }
     }
   ]

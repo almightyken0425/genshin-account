@@ -1,0 +1,352 @@
+{
+  "based_on_commit": "e36f0599abce933c4678d87c48cf7e8baf21ffbc",
+  "reviewed_at": "2026-11-13",
+  "before_account_sha256": "4bc3b2f7093fe09de80a4d31eb36acb3e695237a40522248a4413f96ed3239b6",
+  "after_account_sha256": "51159cc2f7493a68647ca84e87333a081c5c889dc692633bf7a37942fc3dc490",
+  "scope": "只補正阿羅夏杯暴傷有效標記及瑪薇卡目前羽毛的缺漏。保留兩個穩定物品ID、原始證據、原值與強化次數。",
+  "sources": [
+    "arosha_artifact_review_20261113",
+    "mavuika_plume_equipped_review_20261113",
+    "mavuika_plume_rolls_review_20261113"
+  ],
+  "artifacts": [
+    {
+      "id": "artifact_video_5684_20261111_arosha_goblet",
+      "before": {
+        "id": "artifact_video_5684_20261111_arosha_goblet",
+        "name": "宗室銀甕",
+        "set_name": "昔日宗室之儀",
+        "slot": "goblet",
+        "rarity": 5,
+        "level": 20,
+        "main_stat": {
+          "key": "atk_pct",
+          "value": 46.6,
+          "unit": "percent"
+        },
+        "substats": [
+          {
+            "key": "def_pct",
+            "value": 27.7,
+            "unit": "percent"
+          },
+          {
+            "key": "crit_dmg",
+            "value": 7,
+            "unit": "percent"
+          },
+          {
+            "key": "energy_recharge",
+            "value": 13,
+            "unit": "percent"
+          },
+          {
+            "key": "hp",
+            "value": 299,
+            "unit": "flat"
+          }
+        ],
+        "provenance": {
+          "source_ids": [
+            "video_5684_20261111"
+          ],
+          "evidence_refs": [
+            "video_5684_20261111_shot_029"
+          ],
+          "verification": "agent_reviewed",
+          "notes": []
+        },
+        "substat_rolls": {
+          "character_id": "arosha",
+          "values": [
+            {
+              "key": "def_pct",
+              "enhancements": 3,
+              "effective": false
+            },
+            {
+              "key": "crit_dmg",
+              "enhancements": 0,
+              "effective": false
+            },
+            {
+              "key": "energy_recharge",
+              "enhancements": 1,
+              "effective": true
+            },
+            {
+              "key": "hp",
+              "enhancements": 0,
+              "effective": false
+            }
+          ]
+        }
+      },
+      "after": {
+        "id": "artifact_video_5684_20261111_arosha_goblet",
+        "name": "宗室銀甕",
+        "set_name": "昔日宗室之儀",
+        "slot": "goblet",
+        "rarity": 5,
+        "level": 20,
+        "main_stat": {
+          "key": "atk_pct",
+          "value": 46.6,
+          "unit": "percent"
+        },
+        "substats": [
+          {
+            "key": "def_pct",
+            "value": 27.7,
+            "unit": "percent"
+          },
+          {
+            "key": "crit_dmg",
+            "value": 7,
+            "unit": "percent"
+          },
+          {
+            "key": "energy_recharge",
+            "value": 13,
+            "unit": "percent"
+          },
+          {
+            "key": "hp",
+            "value": 299,
+            "unit": "flat"
+          }
+        ],
+        "provenance": {
+          "source_ids": [
+            "video_5684_20261111",
+            "arosha_artifact_review_20261113"
+          ],
+          "evidence_refs": [
+            "video_5684_20261111_shot_029",
+            "arosha_artifact_review_20261113_shot_001"
+          ],
+          "verification": "agent_reviewed",
+          "notes": [
+            "直接二讀既有029原截圖，暴擊傷害列有淡色填底，和同圖元素充能列及羽、沙有效列交叉核對，修正為有效。",
+            "暴擊傷害7.0%、強化0次及物品ID不變，包含初始1次後杯有效次數由2改3。",
+            "IMG_5684.MP4未在下載資料夾找到，本次不宣稱重新讀取原片；原截圖與既有manifest的SHA已核對。新到的5679、5689、5690影片均為其他既有來源，未拿來冒充5684。"
+          ]
+        },
+        "substat_rolls": {
+          "character_id": "arosha",
+          "values": [
+            {
+              "key": "def_pct",
+              "enhancements": 3,
+              "effective": false
+            },
+            {
+              "key": "crit_dmg",
+              "enhancements": 0,
+              "effective": true
+            },
+            {
+              "key": "energy_recharge",
+              "enhancements": 1,
+              "effective": true
+            },
+            {
+              "key": "hp",
+              "enhancements": 0,
+              "effective": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "artifact_image_mavuika_plume_20261111",
+      "before": {
+        "id": "artifact_image_mavuika_plume_20261111",
+        "name": "靈髓的根脈",
+        "set_name": "黑曜秘典",
+        "slot": "plume",
+        "rarity": null,
+        "level": null,
+        "main_stat": {
+          "key": "atk",
+          "value": 311,
+          "unit": "flat"
+        },
+        "substats": [
+          {
+            "key": "atk_pct",
+            "value": 16.3,
+            "unit": "percent"
+          },
+          {
+            "key": "crit_rate",
+            "value": 3.1,
+            "unit": "percent"
+          },
+          {
+            "key": "hp_pct",
+            "value": 9.9,
+            "unit": "percent"
+          },
+          {
+            "key": "crit_dmg",
+            "value": 22.5,
+            "unit": "percent"
+          }
+        ],
+        "provenance": {
+          "source_ids": [
+            "image_mavuika_plume_20261111"
+          ],
+          "evidence_refs": [
+            "image_mavuika_plume_20261111_shot_001"
+          ],
+          "verification": "agent_reviewed",
+          "notes": [
+            "使用者於 2026-11-11 指示以附圖更新瑪薇卡死之羽；角色關聯依使用者敘述。",
+            "圖片為重塑選擇頁，僅採用畫面當下數值，不宣稱已執行重塑。",
+            "與原穿戴羽毛副詞條種類不同，新增實體並保留原物品；精確名稱對照既有資料中的黑曜秘典。",
+            "畫面未顯示星級與等級，保持未知；有效詞條判定亦未確認。",
+            "使用者於 2026-11-11 明確確認：「已經給瑪薇卡穿上了」。依此更新穿戴引用。"
+          ]
+        },
+        "substat_rolls": {
+          "character_id": "mavuika",
+          "values": [
+            {
+              "key": "atk_pct",
+              "enhancements": 2,
+              "effective": null
+            },
+            {
+              "key": "crit_rate",
+              "enhancements": 0,
+              "effective": null
+            },
+            {
+              "key": "hp_pct",
+              "enhancements": 1,
+              "effective": null
+            },
+            {
+              "key": "crit_dmg",
+              "enhancements": 2,
+              "effective": null
+            }
+          ]
+        }
+      },
+      "after": {
+        "id": "artifact_image_mavuika_plume_20261111",
+        "name": "靈髓的根脈",
+        "set_name": "黑曜秘典",
+        "slot": "plume",
+        "rarity": 5,
+        "level": 20,
+        "main_stat": {
+          "key": "atk",
+          "value": 311,
+          "unit": "flat"
+        },
+        "substats": [
+          {
+            "key": "atk_pct",
+            "value": 16.3,
+            "unit": "percent"
+          },
+          {
+            "key": "crit_rate",
+            "value": 3.1,
+            "unit": "percent"
+          },
+          {
+            "key": "hp_pct",
+            "value": 9.9,
+            "unit": "percent"
+          },
+          {
+            "key": "crit_dmg",
+            "value": 22.5,
+            "unit": "percent"
+          }
+        ],
+        "provenance": {
+          "source_ids": [
+            "image_mavuika_plume_20261111",
+            "mavuika_plume_equipped_review_20261113",
+            "mavuika_plume_rolls_review_20261113"
+          ],
+          "evidence_refs": [
+            "image_mavuika_plume_20261111_shot_001",
+            "mavuika_plume_equipped_review_20261113_shot_001",
+            "mavuika_plume_rolls_review_20261113_shot_001"
+          ],
+          "verification": "agent_reviewed",
+          "notes": [
+            "使用者於 2026-11-11 指示以附圖更新瑪薇卡死之羽；角色關聯依使用者敘述。",
+            "圖片為重塑選擇頁，僅採用畫面當下數值，不宣稱已執行重塑。",
+            "與原穿戴羽毛副詞條種類不同，新增實體並保留原物品；精確名稱對照既有資料中的黑曜秘典。",
+            "畫面未顯示星級與等級，保持未知；有效詞條判定亦未確認。",
+            "使用者於 2026-11-11 明確確認：「已經給瑪薇卡穿上了」。依此更新穿戴引用。",
+            "新裝備詳情圖直接顯示五顆星、+20、瑪薇卡已裝備，四個副詞條與既有新羽毛完全吻合，沿用同一穩定物品ID。",
+            "攻擊力%、暴擊率、暴擊傷害有淡色填底，生命值%沒有；與新重塑詳情圖及獨立讀圖一致。有效標記依序為true、true、false、true。",
+            "未由主攻擊311反推星級或等級，亦未使用舊影片另一件羽毛的資料。",
+            "新重塑詳情圖與新裝備詳情圖同件：副詞條16.3%、3.1%、9.9%、22.5%一致，+N逐項確認為2、0、1、2，沿用原次數。",
+            "本圖只作副詞條及+N對照，不單憑重塑資格或主攻擊值推算星級、等級。"
+          ]
+        },
+        "substat_rolls": {
+          "character_id": "mavuika",
+          "values": [
+            {
+              "key": "atk_pct",
+              "enhancements": 2,
+              "effective": true
+            },
+            {
+              "key": "crit_rate",
+              "enhancements": 0,
+              "effective": true
+            },
+            {
+              "key": "hp_pct",
+              "enhancements": 1,
+              "effective": false
+            },
+            {
+              "key": "crit_dmg",
+              "enhancements": 2,
+              "effective": true
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "verification": {
+    "arosha": "原029截圖校驗與同張ER/DEF/HP列、羽與沙亮底交叉比較，由獨立二讀確認暴傷列有效。原5684影片未找到，未宣稱重讀MP4。",
+    "mavuika": "新下載2026-11-13 15.05.21.jpg直接顯示五星、20級及瑪薇卡已裝備。15.05.14.jpg確認相同四副詞條與+N=2/0/1/2。兩張均直接可見ATK%、CR、CD亮底，HP%暗底。",
+    "new_videos": "下載的IMG5679、5689、5690影片SHA吻合其他既有來源，角色無阿羅夏同件，不挪用作目標原片。"
+  },
+  "result": {
+    "arosha": {
+      "current": 22,
+      "maximum": 42,
+      "percentage": 52
+    },
+    "mavuika": {
+      "plume_effective_count": 7,
+      "current": 30,
+      "maximum": 43,
+      "percentage": 70
+    }
+  },
+  "preserved": [
+    "既有imports與evidence檔案",
+    "絕區零帳號資料",
+    "panel_snapshots及其舊指紋",
+    "88張裁切素材"
+  ],
+  "publication": "先更新既有公開Sites，不提交或推送GitHub。"
+}

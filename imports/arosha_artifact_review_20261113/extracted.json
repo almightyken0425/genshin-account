@@ -1,0 +1,222 @@
+{
+  "format": "reviewed_capture_v1",
+  "reviewed_at": "2026-11-13T07:09:18+00:00",
+  "based_on_commit": "e36f0599abce933c4678d87c48cf7e8baf21ffbc",
+  "verification": "agent_reviewed",
+  "changes": [
+    {
+      "artifact_id": "artifact_video_5684_20261111_arosha_goblet",
+      "field": "substat_rolls.values[crit_dmg].effective",
+      "before": false,
+      "after": true
+    }
+  ],
+  "notes": [
+    "直接二讀既有029原截圖，暴擊傷害列有淡色填底，和同圖元素充能列及羽、沙有效列交叉核對，修正為有效。",
+    "暴擊傷害7.0%、強化0次及物品ID不變，包含初始1次後杯有效次數由2改3。",
+    "IMG_5684.MP4未在下載資料夾找到，本次不宣稱重新讀取原片；原截圖與既有manifest的SHA已核對。新到的5679、5689、5690影片均為其他既有來源，未拿來冒充5684。"
+  ],
+  "original_source": {
+    "file_name": "029.png",
+    "sha256": "b219f0e83e8153b42a6bac4cc99b2e942a9daca094a94cac95a1611a2960f430"
+  },
+  "upstream": {
+    "source_id": "video_5684_20261111",
+    "screenshot_path": "evidence/video_5684_20261111/screenshots/029.png",
+    "screenshot_sha256": "b219f0e83e8153b42a6bac4cc99b2e942a9daca094a94cac95a1611a2960f430",
+    "timestamp_seconds": 61.166666666666664,
+    "row_contrast": {
+      "method": "Original PNG RGB luminance, x550..709, interior centerY102+30r ±7; baseline linear interpolation of median gap rows centerY±15 ±1; no upsampling, no enhancement; descriptive contrast, not a calibrated effective-tag classifier",
+      "data": [
+        {
+          "shot": "026",
+          "key": "atk_pct",
+          "row": 1,
+          "insideMedian": 70.2332,
+          "interpolatedGapMedian": 62.00496,
+          "medianDelta": 6.605320000000006,
+          "positiveOver3Fraction": 0.9329166666666666
+        },
+        {
+          "shot": "026",
+          "key": "energy_recharge",
+          "row": 2,
+          "insideMedian": 86.9048,
+          "interpolatedGapMedian": 73.9466,
+          "medianDelta": 8.62400000000001,
+          "positiveOver3Fraction": 0.92625
+        },
+        {
+          "shot": "026",
+          "key": "def",
+          "row": 3,
+          "insideMedian": 76.26820000000001,
+          "interpolatedGapMedian": 81.88164,
+          "medianDelta": -6.139559999999989,
+          "positiveOver3Fraction": 0.01
+        },
+        {
+          "shot": "026",
+          "key": "crit_rate",
+          "row": 4,
+          "insideMedian": 88.4928,
+          "interpolatedGapMedian": 81.56434666666667,
+          "medianDelta": 7.009999999999991,
+          "positiveOver3Fraction": 0.7720833333333333
+        },
+        {
+          "shot": "027",
+          "key": "crit_dmg",
+          "row": 1,
+          "insideMedian": 71.64,
+          "interpolatedGapMedian": 62.145999999999994,
+          "medianDelta": 10.529733333333326,
+          "positiveOver3Fraction": 0.9554166666666667
+        },
+        {
+          "shot": "027",
+          "key": "hp_pct",
+          "row": 2,
+          "insideMedian": 71.1884,
+          "interpolatedGapMedian": 74.85762666666666,
+          "medianDelta": -2.747400000000013,
+          "positiveOver3Fraction": 0.032916666666666664
+        },
+        {
+          "shot": "027",
+          "key": "def_pct",
+          "row": 3,
+          "insideMedian": 70.0624,
+          "interpolatedGapMedian": 81.05664666666667,
+          "medianDelta": -8.253000000000014,
+          "positiveOver3Fraction": 0.0020833333333333333
+        },
+        {
+          "shot": "027",
+          "key": "energy_recharge",
+          "row": 4,
+          "insideMedian": 87.0624,
+          "interpolatedGapMedian": 78.52544,
+          "medianDelta": 8.663613333333316,
+          "positiveOver3Fraction": 0.905
+        },
+        {
+          "shot": "028",
+          "key": "crit_rate",
+          "row": 1,
+          "insideMedian": 80.49159999999999,
+          "interpolatedGapMedian": 72.37906666666667,
+          "medianDelta": 7.531800000000004,
+          "positiveOver3Fraction": 0.9245833333333333
+        },
+        {
+          "shot": "028",
+          "key": "crit_dmg",
+          "row": 2,
+          "insideMedian": 90.4756,
+          "interpolatedGapMedian": 78.49912,
+          "medianDelta": 8.604600000000005,
+          "positiveOver3Fraction": 0.7466666666666667
+        },
+        {
+          "shot": "028",
+          "key": "em",
+          "row": 3,
+          "insideMedian": 68.06639999999999,
+          "interpolatedGapMedian": 74.5736,
+          "medianDelta": -7.2464200000000005,
+          "positiveOver3Fraction": 0.008333333333333333
+        },
+        {
+          "shot": "028",
+          "key": "hp",
+          "row": 4,
+          "insideMedian": 73.92719999999998,
+          "interpolatedGapMedian": 81.65133333333333,
+          "medianDelta": -7.23790666666666,
+          "positiveOver3Fraction": 0.00875
+        },
+        {
+          "shot": "029",
+          "key": "def_pct",
+          "row": 1,
+          "insideMedian": 70.4756,
+          "interpolatedGapMedian": 73.45098666666667,
+          "medianDelta": -2.6281866666666573,
+          "positiveOver3Fraction": 0.052083333333333336
+        },
+        {
+          "shot": "029",
+          "key": "crit_dmg",
+          "row": 2,
+          "insideMedian": 79.4784,
+          "interpolatedGapMedian": 76.1856,
+          "medianDelta": 4.513240000000025,
+          "positiveOver3Fraction": 0.7791666666666667
+        },
+        {
+          "shot": "029",
+          "key": "energy_recharge",
+          "row": 3,
+          "insideMedian": 82.5598,
+          "interpolatedGapMedian": 71.7704,
+          "medianDelta": 8.518019999999993,
+          "positiveOver3Fraction": 0.9595833333333333
+        },
+        {
+          "shot": "029",
+          "key": "hp",
+          "row": 4,
+          "insideMedian": 76.7736,
+          "interpolatedGapMedian": 81.99278,
+          "medianDelta": -5.732780000000005,
+          "positiveOver3Fraction": 0.00875
+        },
+        {
+          "shot": "030",
+          "key": "crit_rate",
+          "row": 1,
+          "insideMedian": 88.1868,
+          "interpolatedGapMedian": 74.40092,
+          "medianDelta": 12.934919999999991,
+          "positiveOver3Fraction": 0.87375
+        },
+        {
+          "shot": "030",
+          "key": "em",
+          "row": 2,
+          "insideMedian": 58.432599999999994,
+          "interpolatedGapMedian": 66.70308,
+          "medianDelta": -8.248720000000006,
+          "positiveOver3Fraction": 0.021666666666666667
+        },
+        {
+          "shot": "030",
+          "key": "def",
+          "row": 3,
+          "insideMedian": 65.859,
+          "interpolatedGapMedian": 73.29232,
+          "medianDelta": -7.221373333333332,
+          "positiveOver3Fraction": 0.008333333333333333
+        },
+        {
+          "shot": "030",
+          "key": "energy_recharge",
+          "row": 4,
+          "insideMedian": 91.6974,
+          "interpolatedGapMedian": 83.95372,
+          "medianDelta": 7.219499999999982,
+          "positiveOver3Fraction": 0.9120833333333334
+        }
+      ]
+    }
+  },
+  "screenshot": {
+    "id": "arosha_artifact_review_20261113_shot_001",
+    "path": "evidence/arosha_artifact_review_20261113/screenshots/001.png",
+    "sha256": "dc97f8a32409b1d847d74ec4e7598bdf35eb1f91ebc227fa0e4a296a9807f011",
+    "width": 848,
+    "height": 368,
+    "transform": "UID-only bottom crop; no recoloring, sharpening, or generated pixels."
+  }
+}

@@ -248,7 +248,20 @@
     "雙生泣星": "/assets/zzz/weapons/13008.png",
     "震元奇樞": "/assets/zzz/weapons/13142.png",
     "霓虹妄想": "/assets/zzz/weapons/14151.png",
-    "飛鳥星夢": "/assets/zzz/weapons/14133.png"
+    "飛鳥星夢": "/assets/zzz/weapons/14133.png",
+    "雲霓孤光": "/assets/zzz/weapons/wiki_982.png",
+    "青溟籠舍": "/assets/zzz/weapons/wiki_782.png",
+    "維序者-特化型": "/assets/zzz/weapons/wiki_378.png",
+    "含羞惡面": "/assets/zzz/weapons/wiki_76.png",
+    "旋鑽機-赤軸": "/assets/zzz/weapons/wiki_74.png",
+    "仿製星徽引擎": "/assets/zzz/weapons/wiki_73.png",
+    "居家服務員": "/assets/zzz/weapons/wiki_72.png",
+    "聚寶箱": "/assets/zzz/weapons/wiki_71.png",
+    "觸電唇彩": "/assets/zzz/weapons/wiki_67.png",
+    "德瑪拉電池Ⅱ型": "/assets/zzz/weapons/wiki_3.png",
+    "旋鑽機—赤軸": "/assets/zzz/weapons/wiki_74.png",
+    "琳琅鎏心": "/assets/zzz/weapons/14156.png",
+    "琳琅鑒心": "/assets/zzz/weapons/14156.png"
   },
   "discs": {
     "呼嘯沙龍": "/assets/zzz/discs/33900.png",
@@ -274,5 +287,15 @@
     "雷暴重金屬": "/assets/zzz/discs/32400.png",
     "震星迪斯可": "/assets/zzz/discs/31200.png",
     "靜聽嘉音": "/assets/zzz/discs/32800.png"
+  },
+  "bangboo": {
+    "bangboo_114": "/assets/zzz/bangboo/bangboo_114.png",
+    "bangboo_532": "/assets/zzz/bangboo/bangboo_532.png",
+    "bangboo_108": "/assets/zzz/bangboo/bangboo_108.png",
+    "bangboo_985": "/assets/zzz/bangboo/bangboo_985.png",
+    "bangboo_793": "/assets/zzz/bangboo/bangboo_793.png",
+    "bangboo_542": "/assets/zzz/bangboo/bangboo_542.png",
+    "bangboo_878": "/assets/zzz/bangboo/bangboo_878.png",
+    "bangboo_109": "/assets/zzz/bangboo/bangboo_109.png"
   }
 }

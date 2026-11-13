@@ -1,0 +1,86 @@
+{
+  "based_on_commit": "e36f0599abce933c4678d87c48cf7e8baf21ffbc",
+  "working_tree_account_sha256": {
+    "data/account.json": "4bc3b2f7093fe09de80a4d31eb36acb3e695237a40522248a4413f96ed3239b6",
+    "data/zzz/account.json": "693353f08b426a85770c365cd5491a0edf0aac085035ff364d7776319498756d"
+  },
+  "checked_at": "2026-11-13",
+  "goal": "依角色已確認有效屬性，估算相同主詞條與稀有度下理論有效上限，統一目前／最大顯示。",
+  "scope": "47名原神角色與38名絕區零角色的既有配裝觀測，未重新定義有效屬性或改動帳號現況。",
+  "rule": {
+    "effective_candidates": "目前裝備觀測中已確認有效的屬性集合，排除與主詞條相同key，固定值與百分比不同。",
+    "supported_rarities": {
+      "genshin": 5,
+      "zzz": "S"
+    },
+    "maximum": "n=0時為0，否則min(n,4)+5。",
+    "current": "保持逐件已觀測有效副詞條的初始1次與強化次數加總。",
+    "order": "目前／最大",
+    "unknown": "稀有度、主詞條、有效集合不明，或有效標記互相矛盾時最大值為null。"
+  },
+  "limitations": [
+    "有效集合僅為已觀測true標記聯集，未觀測屬性未計入，不把未觀測寫成false，也不宣稱已完整核實所有角色的屬性偏好。",
+    "沒有有效候選的0與資料不足的null分開。",
+    "同理論上限不受目前裝備實際初始3或4詞條、等級、+N影響，並非剩餘強化次數。"
+  ],
+  "sunna": {
+    "effective_keys": [
+      "攻擊力|flat",
+      "攻擊力|percent"
+    ],
+    "items": [
+      {
+        "slot": 1,
+        "current": 4,
+        "maximum": 7
+      },
+      {
+        "slot": 2,
+        "current": 3,
+        "maximum": 6
+      },
+      {
+        "slot": 3,
+        "current": 4,
+        "maximum": 7
+      },
+      {
+        "slot": 4,
+        "current": 2,
+        "maximum": 6
+      },
+      {
+        "slot": 5,
+        "current": 2,
+        "maximum": 6
+      },
+      {
+        "slot": 6,
+        "current": 2,
+        "maximum": 7
+      }
+    ],
+    "current": 17,
+    "maximum": 39
+  },
+  "arosha_conflict": {
+    "key": "crit_dmg",
+    "observations": {
+      "true": [
+        "artifact_video_5684_20261111_arosha_plume",
+        "artifact_video_5684_20261111_arosha_sands"
+      ],
+      "false": [
+        "artifact_video_5684_20261111_arosha_goblet"
+      ],
+      "null": []
+    },
+    "evidence_paths": [
+      "evidence/video_5684_20261111/screenshots/026.png",
+      "evidence/video_5684_20261111/screenshots/027.png",
+      "evidence/video_5684_20261111/screenshots/028.png",
+      "evidence/video_5684_20261111/screenshots/029.png"
+    ],
+    "review": "原圖SHA與manifest一致。杯的暴傷7.0%、+0行受光效與848×384解析度影響，無法可靠證明舊false是否轉錄錯。保留原逐件current，不據此改寫帳號，上限維持未知。"
+  }
+}

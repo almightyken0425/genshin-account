@@ -1,0 +1,1742 @@
+{
+  "sourceId": "engines_video_001_review_20261113",
+  "basedOnCommit": "e36f0599abce933c4678d87c48cf7e8baf21ffbc",
+  "reviewedAt": "2026-11-13",
+  "status": "agent_reviewed",
+  "source": {
+    "filename": "ScreenRecording_11-11-2026 23-49-27_1.MP4",
+    "sha256": "6eedfe8e5fabcec54bd45fa12f934905c52658100beec421bba739e8589b3f83",
+    "durationSeconds": 416.652744,
+    "capturedAt": null
+  },
+  "originalAccountSha256": "2f3dab85ccb209ad53586bed9a30bad2b34b41ce41219d5ce00030fa490fb885",
+  "scope": "核對38名角色音擎，補正11號技能頁漏記。",
+  "method": [
+    "原片SHA-256已核對，角色依選中頭像、裝備者標記與鄰近角色頁關聯。",
+    "音擎名稱與數值均直接讀畫面，不用圖鑑或外觀推算帳號值。",
+    "保留來源影片、既有證據與既有匯入紀錄，新證據裁除底部UID。",
+    "珂蕾妲未拍到音擎詳情，未知欄位維持null。"
+  ],
+  "summary": {
+    "reviewedCharacters": 38,
+    "completeEngines": 37,
+    "partialEngines": 1,
+    "completeSkillSets": 38
+  },
+  "characters": [
+    {
+      "id": "jane",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "淬鋒鉗刺",
+        "rarity": "S",
+        "level": 60,
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 713,
+          "異常精通": 90
+        }
+      },
+      "wEngine": {
+        "name": "淬鋒鉗刺",
+        "rarity": "S",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 713,
+          "異常精通": 90
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 5.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/jane_engine_t005.50.jpg",
+          "sha256": "6e25c16b367df303c9f289e5c59548494fa8faebd3397294fc2275d86f0b42d4",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。"
+      ]
+    },
+    {
+      "id": "damielle",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "空羽復歸之詩",
+        "rarity": "S",
+        "level": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 743,
+          "攻擊力": "36%"
+        }
+      },
+      "wEngine": {
+        "name": "空羽復歸之詩",
+        "rarity": "S",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 743,
+          "攻擊力": "36%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 21,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/damielle_engine_t021.00.jpg",
+          "sha256": "e6d5f84ae70261c55d427ac6d1fadec5bd8a7e2e8dbbbac77e71998206bfe0c6",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。"
+      ]
+    },
+    {
+      "id": "velina",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "琳琅遠心",
+        "rarity": "S",
+        "level": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "能量自動回復": "60%"
+        }
+      },
+      "wEngine": {
+        "name": "琳琅鎏心",
+        "rarity": "S",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "能量自動回復": "60%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 29,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/velina_engine_t029.00.jpg",
+          "sha256": "be5de7fd069a0208df794f9c476af52f2a5f0a11603116d69fb0e6ef08b29189",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。",
+        "原帳號name=琳琅遠心；t29清楚顯示琳琅鑒心，已放大逐字複核，請合併前獨立二讀。",
+        "影片縮小字形原辨作琳琅鑒心，經官方繁中條目1104交叉核對為琳琅鎏心。名稱字形採官方核對，裝備與數值仍直接來自影片。"
+      ]
+    },
+    {
+      "id": "pyrois",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "日冕遺蛻",
+        "rarity": "S",
+        "level": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "攻擊力": "30%"
+        }
+      },
+      "wEngine": {
+        "name": "日冕遺蛻",
+        "rarity": "S",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "攻擊力": "30%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 43,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/pyrois_engine_t043.00.jpg",
+          "sha256": "ec24999d10fc2045b5e3ba8879f63de101a83452cd8bde541f231cecb31ef105",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。"
+      ]
+    },
+    {
+      "id": "nangong_yu",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "霓虹妄想",
+        "rarity": "S",
+        "level": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "異常掌控": "30%"
+        }
+      },
+      "wEngine": {
+        "name": "霓虹妄想",
+        "rarity": "S",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "異常掌控": "30%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 57,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/nangong_yu_engine_t057.00.jpg",
+          "sha256": "4d75a808495b9bcfa264078d9670a6b35c473da39dbef8dab4bfa0537d107608",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。"
+      ]
+    },
+    {
+      "id": "sunna",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "好鬥的阿炮",
+        "rarity": "A",
+        "level": 60,
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "能量自動回復": "50%"
+        }
+      },
+      "wEngine": {
+        "name": "好鬥的阿炮",
+        "rarity": "A",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "能量自動回復": "50%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 61,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/sunna_engine_t061.00.jpg",
+          "sha256": "b9112394f13365bd9db397497fc4e7003e56cf7c250c8e4a5405041e3bd8fc75",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。"
+      ]
+    },
+    {
+      "id": "zhao",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "正版變身器",
+        "rarity": "A",
+        "level": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 594,
+          "生命值": "25%"
+        }
+      },
+      "wEngine": {
+        "name": "正版變身器",
+        "rarity": "A",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 594,
+          "生命值": "25%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 83,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/zhao_engine_t083.00.jpg",
+          "sha256": "78d0b715c2d4f7818be55a0f7466f75cae2f946f260c8f14366d0090d47d96fd",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。"
+      ]
+    },
+    {
+      "id": "lucia",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "鑄夢爐歌",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "生命值": "30%"
+        }
+      },
+      "wEngine": {
+        "name": "鑄夢爐歌",
+        "rarity": "S",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "生命值": "30%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 91,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/lucia_engine_t091.00.jpg",
+          "sha256": "ac48972bf8576c4f7f8405127b6b7e53de97aeb6cf761ca9eca67582540462c4",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。"
+      ]
+    },
+    {
+      "id": "yuzuha",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "啜泣搖籃",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 684,
+          "穿透率": "24%"
+        }
+      },
+      "wEngine": {
+        "name": "啜泣搖籃",
+        "rarity": "S",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 684,
+          "穿透率": "24%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 103,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/yuzuha_engine_t103.00.jpg",
+          "sha256": "d9977d6d85cc83de9c6da41063b5969bc0fdee7b11f2ff13dffd0a2040268d1a",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。"
+      ]
+    },
+    {
+      "id": "manato",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "燔火朧夜",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "生命值": "25%"
+        }
+      },
+      "wEngine": {
+        "name": "燔火朧夜",
+        "rarity": "A",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "生命值": "25%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 112,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/manato_engine_t112.00.jpg",
+          "sha256": "4e1ee6c7c0a1e49bcec736031ef6c82eb01102f968b12dc769c6691e58a303e2",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。"
+      ]
+    },
+    {
+      "id": "ye_shunguang",
+      "status": "agent_reviewed",
+      "before": null,
+      "wEngine": {
+        "name": "雲霓孤光",
+        "rarity": "S",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 743,
+          "暴擊傷害": "48%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 117,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/ye_shunguang_association_t117.00.jpg",
+          "sha256": "600462e7993e49985753b4137df3bcd8b185c6dc8377d9e6720d44855bf3aca9",
+          "page": "角色辨識",
+          "fields": [
+            "id",
+            "wEngine"
+          ]
+        },
+        {
+          "timestampSec": 120,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/ye_shunguang_engine_t120.00.jpg",
+          "sha256": "88204d8f3b4643218972ffd68a59c6604e782bfb6024016c4656a5dc42792d09",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。",
+        "以相鄰基礎頁角色姓名及連續裝備頁過程確認角色關聯；未僅由音擎列表小頭像推定裝備。"
+      ]
+    },
+    {
+      "id": "ju_fufu",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "福虎爐爐",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "攻擊力": "30%"
+        }
+      },
+      "wEngine": {
+        "name": "福虎爐爐",
+        "rarity": "S",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "攻擊力": "30%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 133,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/ju_fufu_engine_t133.00.jpg",
+          "sha256": "9d603583be01df5505ef8d15e1af1f0728eb83141bbbb4bfbf8468bda4149291",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。"
+      ]
+    },
+    {
+      "id": "yixuan",
+      "status": "agent_reviewed",
+      "before": null,
+      "wEngine": {
+        "name": "青溟籠舍",
+        "rarity": "S",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 743,
+          "生命值": "30%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 136.7,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/yixuan_association_t136.70.jpg",
+          "sha256": "cb93bf20c3c6ac6366b781a526de323cff3cdd6e3cd520e8060a2250d10bead1",
+          "page": "角色辨識",
+          "fields": [
+            "id",
+            "wEngine"
+          ]
+        },
+        {
+          "timestampSec": 144,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/yixuan_engine_t144.00.jpg",
+          "sha256": "4c99177472ea5444cfcad33f7773cc6bfd6905b816b1ea1c95c1f1a800f92745",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。",
+        "以相鄰基礎頁角色姓名及連續裝備頁過程確認角色關聯；未僅由音擎列表小頭像推定裝備。"
+      ]
+    },
+    {
+      "id": "pan_yinhu",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "震元奇樞",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "攻擊力": "25%"
+        }
+      },
+      "wEngine": {
+        "name": "震元奇樞",
+        "rarity": "A",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "攻擊力": "25%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 149,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/pan_yinhu_engine_t149.00.jpg",
+          "sha256": "560667a500d1606741d7df967168901b9e0dca7d261c101c4add1cc8ef878fdf",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。"
+      ]
+    },
+    {
+      "id": "vivian",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "飛鳥星夢",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "異常精通": 90
+        }
+      },
+      "wEngine": {
+        "name": "飛鳥星夢",
+        "rarity": "S",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "異常精通": 90
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 165.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/vivian_engine_t165.50.jpg",
+          "sha256": "fcee7864268ec77b62e796450e5ce168d1613ef4be4c0eba12b0bfa84f01589d",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。"
+      ]
+    },
+    {
+      "id": "astra",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "玲瓏妝匣",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "攻擊力": "30%"
+        }
+      },
+      "wEngine": {
+        "name": "玲瓏妝匣",
+        "rarity": "S",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 713,
+          "攻擊力": "30%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 173,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/astra_engine_t173.00.jpg",
+          "sha256": "ce5ff9aef7ed7919aeb453e04f7480cf62074614fcdac5f0b35eed1fa77bfe12",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。"
+      ]
+    },
+    {
+      "id": "qingyi",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "拘縛者",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 684,
+          "衝擊力": "18%"
+        }
+      },
+      "wEngine": {
+        "name": "拘縛者",
+        "rarity": "S",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 684,
+          "衝擊力": "18%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 185,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/qingyi_engine_t185.00.jpg",
+          "sha256": "77171159ee48bc9bc505b54c9202b79e8cf8cb4bf48a33d7fdf4e12efff8d0c7",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。"
+      ]
+    },
+    {
+      "id": "zhu_yuan",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "硫磺石",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 684,
+          "攻擊力": "30%"
+        }
+      },
+      "wEngine": {
+        "name": "硫磺石",
+        "rarity": "S",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 684,
+          "攻擊力": "30%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 193,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/zhu_yuan_engine_t193.00.jpg",
+          "sha256": "900908fdcba60126670be4864fe77d25e4c859cc92ebb9e19a4c446b26654ba7",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。"
+      ]
+    },
+    {
+      "id": "seth",
+      "status": "agent_reviewed",
+      "before": null,
+      "wEngine": {
+        "name": "維序者-特化型",
+        "rarity": "A",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "攻擊力": "25%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 211,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/seth_association_t211.00.jpg",
+          "sha256": "aec814c097af8f2a293ffff5b4cf1b7d4f3cf9b63f5343b5b45471c67d3b206d",
+          "page": "角色辨識",
+          "fields": [
+            "id",
+            "wEngine"
+          ]
+        },
+        {
+          "timestampSec": 202,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/seth_engine_t202.00.jpg",
+          "sha256": "9ce6235d86f90d644c2daef9eb07a2ce016365b76d0eed5321fe7111f921d98d",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "已直接目視詳情頁的名稱、S/A標記、60/60等級、亮白精煉星數及完整兩項面板；不從外部圖鑑、頭像或稀有度推算數值。",
+        "取原片autorotate後2622×1206畫面，保留頂部與音擎裝備者標記；crop=2622:1152:0:0移除底部UID，JPEG q:v=2。",
+        "原畫面名稱的連字號以ASCII -轉錄；其餘字樣維序者、特化型清晰。",
+        "以相鄰基礎頁角色姓名及連續裝備頁過程確認角色關聯；未僅由音擎列表小頭像推定裝備。"
+      ]
+    },
+    {
+      "id": "miyabi",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "雙生泣星",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 594,
+          "攻擊力": "25%"
+        }
+      },
+      "wEngine": {
+        "name": "雙生泣星",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 594,
+          "攻擊力": "25%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 220.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/miyabi-engine-220.5.jpg",
+          "sha256": "0481f916aa501708058d2bca929aa42a02b8fd26dd77a787cdf2058b12652ca8",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。",
+        "既有音擎資料已逐欄複核一致。"
+      ]
+    },
+    {
+      "id": "yanagi",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "雙生泣星",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 594,
+          "攻擊力": "25%"
+        }
+      },
+      "wEngine": {
+        "name": "雙生泣星",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 594,
+          "攻擊力": "25%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 228.9,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/yanagi-228.9.jpg",
+          "sha256": "23a01688b8410b2e5a811348c79621ff7cec5b194a89d24f03b520496ce3414d",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。",
+        "既有音擎資料已逐欄複核一致。"
+      ]
+    },
+    {
+      "id": "soukaku",
+      "status": "agent_reviewed",
+      "before": null,
+      "wEngine": {
+        "name": "含羞惡面",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "攻擊力": "25%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 245.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/soukaku-engine-245.5.jpg",
+          "sha256": "0b2c9e9315c9aaacb22a1f360a0e218c9b6bfb3949d1fa48f97c0a3ea7f8f3f6",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。"
+      ]
+    },
+    {
+      "id": "pulchra",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "裁紙刀",
+        "level": 60,
+        "refinement": 5,
+        "stats": {}
+      },
+      "wEngine": {
+        "name": "裁紙刀",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "衝擊力": "15%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 254.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/pulchra-engine-254.5.jpg",
+          "sha256": "14f6984cd49319bdbd1e4d40713a7f1ad252cb4920b2f852539e52ad8da35d7f",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。"
+      ]
+    },
+    {
+      "id": "piper",
+      "status": "agent_reviewed",
+      "before": null,
+      "wEngine": {
+        "name": "觸電唇彩",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 594,
+          "異常精通": 75
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 267.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/piper-engine-267.5.jpg",
+          "sha256": "2ac81d5d69850305e935a84be1d93f4dbc0e89c57b244dc6823faf9e901eaee2",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。"
+      ]
+    },
+    {
+      "id": "lucy",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "好鬥的阿炮",
+        "level": 60,
+        "refinement": 5,
+        "stats": {}
+      },
+      "wEngine": {
+        "name": "好鬥的阿炮",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "能量自動回復": "50%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 275.2,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/lucy-engine-275.2.jpg",
+          "sha256": "5fde9c7944d08a2af1de928bdcc3f32ab59e86e7796129602100cfd51b31dcd1",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。"
+      ]
+    },
+    {
+      "id": "grace",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "雙生泣星",
+        "level": 60,
+        "refinement": 5,
+        "stats": {}
+      },
+      "wEngine": {
+        "name": "雙生泣星",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 594,
+          "攻擊力": "25%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 287.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/grace-engine-287.5.jpg",
+          "sha256": "1acc4bee37ee5aca90088085b38a2118dd7ca5b575d68968d3959b9d78fb67bb",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。"
+      ]
+    },
+    {
+      "id": "koleda",
+      "status": "agent_reviewed",
+      "before": null,
+      "wEngine": {
+        "name": null,
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": null,
+        "stats": null
+      },
+      "evidence": [
+        {
+          "timestampSec": 289.4,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/koleda-check-289.4.jpg",
+          "sha256": "df75affec43befe211f668a6214b9f361bd1a57280114c8288b9b7b65f6a5fbd",
+          "page": "裝備總覽",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "只找到裝備總覽，A級及60/60可直接辨識。",
+        "已細查288.6至290秒與294至295.2秒，未見音擎詳情頁。名稱、精煉與面板保持null，不依球體外觀猜測。",
+        "此列證據是裝備總覽，不能作為音擎名稱或面板已確認的依據。"
+      ]
+    },
+    {
+      "id": "anton",
+      "status": "agent_reviewed",
+      "before": null,
+      "wEngine": {
+        "name": "旋鑽機-赤軸",
+        "level": 50,
+        "maxLevel": 50,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 521,
+          "能量自動回復": "44%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 307.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/anton-engine-307.5.jpg",
+          "sha256": "edfee2f7eaae3427e32134c9982687e33f16525b6cefddba0ce8adbfd7fb0129",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。"
+      ]
+    },
+    {
+      "id": "ellen",
+      "status": "agent_reviewed",
+      "before": null,
+      "wEngine": {
+        "name": "硫磺石",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 684,
+          "攻擊力": "30%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 316.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/ellen-engine-316.5.jpg",
+          "sha256": "885023ba28ca51c39d068800201ff71e81867cea20eb4d1045f9fa27697f0d29",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。"
+      ]
+    },
+    {
+      "id": "rina",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "好鬥的阿炮",
+        "level": 60,
+        "refinement": 5,
+        "stats": {}
+      },
+      "wEngine": {
+        "name": "好鬥的阿炮",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "能量自動回復": "50%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 329,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/rina-engine-329.jpg",
+          "sha256": "c9b78b92596165de7b77d8474dbca9ba4cf294e56501e81209a275a1ffa80ba1",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。"
+      ]
+    },
+    {
+      "id": "lycaon",
+      "status": "agent_reviewed",
+      "before": null,
+      "wEngine": {
+        "name": "拘縛者",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 684,
+          "衝擊力": "18%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 333.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/lycaon-engine-333.5.jpg",
+          "sha256": "919ceef3cfd3ec55ea55715ab31c3cae36a5a760d7c26ac6cb135f570a2cfad0",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。"
+      ]
+    },
+    {
+      "id": "nekomata",
+      "status": "agent_reviewed",
+      "before": {
+        "name": "鋼鐵肉墊",
+        "level": 50,
+        "refinement": 1,
+        "stats": {}
+      },
+      "wEngine": {
+        "name": "鋼鐵肉墊",
+        "level": 50,
+        "maxLevel": 50,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 570,
+          "暴擊率": "21.1%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 351,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/nekomata-engine-351.jpg",
+          "sha256": "ca5df0a125b1eb773308936efe68387e02df146a724705351b2540f55bb5294c",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。"
+      ]
+    },
+    {
+      "id": "nicole",
+      "status": "agent_reviewed",
+      "before": null,
+      "wEngine": {
+        "name": "聚寶箱",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "能量自動回復": "50%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 354.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/nicole-engine-354.5.jpg",
+          "sha256": "3636822d9e23d21d9d4135634abda18c827521dfd4949309c0ef4a88377b20ef",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。"
+      ]
+    },
+    {
+      "id": "anby",
+      "status": "agent_reviewed",
+      "before": null,
+      "wEngine": {
+        "name": "德瑪拉電池Ⅱ型",
+        "level": 50,
+        "maxLevel": 50,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 521,
+          "衝擊力": "13.2%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 365.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/anby-engine-365.5.jpg",
+          "sha256": "2b30441dedf40b4ddfb7e8b8ad49aac95caf553b752aec305ffcc25993beb647",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。"
+      ]
+    },
+    {
+      "id": "corin",
+      "status": "agent_reviewed",
+      "before": null,
+      "wEngine": {
+        "name": "居家服務員",
+        "level": 0,
+        "maxLevel": 10,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 42,
+          "攻擊力": "10%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 374.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/corin-engine-374.5.jpg",
+          "sha256": "66e20d118fb9416cd33e57513ecfb4e2f430774fe9eff0b5b6a657fae43c0647",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。",
+        "畫面明確顯示0/10，等級0為已確認值，不能改成null。"
+      ]
+    },
+    {
+      "id": "ben",
+      "status": "agent_reviewed",
+      "before": null,
+      "wEngine": {
+        "name": "震元奇樞",
+        "level": 0,
+        "maxLevel": 10,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 42,
+          "攻擊力": "10%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 392.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/ben-engine-392.5.jpg",
+          "sha256": "fbce0156650a04c1f76feb2fd454ed34ef366c191633da7810a48c8c693ab0f2",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。",
+        "畫面明確顯示0/10，等級0為已確認值，不能改成null。"
+      ]
+    },
+    {
+      "id": "billy",
+      "status": "agent_reviewed",
+      "before": null,
+      "wEngine": {
+        "name": "仿製星徽引擎",
+        "level": 20,
+        "maxLevel": 20,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 211,
+          "攻擊力": "13%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 403.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/billy-engine-403.5.jpg",
+          "sha256": "4455445a9c2ed59bbefa9e0c71added8de3bf46006d1a9adba18e12c62c0f0bb",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。"
+      ]
+    },
+    {
+      "id": "soldier_11",
+      "status": "agent_reviewed",
+      "before": null,
+      "wEngine": {
+        "name": "硫磺石",
+        "level": 0,
+        "maxLevel": 10,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 46,
+          "攻擊力": "12%"
+        }
+      },
+      "evidence": [
+        {
+          "timestampSec": 412.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/soldier_11-engine-412.5.jpg",
+          "sha256": "ea8e9a31a7f86f0015a13627376ccfccd1f009d02029dfe5307f0c3efae0d777",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        }
+      ],
+      "notes": [
+        "音擎欄位直接讀取原片，精煉依亮起星星數量記錄。",
+        "保留原寬2622與角色識別，僅裁掉底部54像素UID區域。",
+        "最終影格的名稱、角色頭像、等級、星數與兩項面板已完成切換且清楚可辨。",
+        "畫面明確顯示0/10，等級0為已確認值，不能改成null。"
+      ]
+    }
+  ],
+  "skillCorrection": {
+    "id": "soldier_11",
+    "skills": {
+      "普通攻擊": 1,
+      "閃避": 1,
+      "支援技": 1,
+      "特殊技": 1,
+      "連攜技": 1,
+      "核心技": 0
+    },
+    "displayedCaps": {
+      "普通攻擊": 12,
+      "閃避": 12,
+      "支援技": 12,
+      "特殊技": 12,
+      "連攜技": 12
+    },
+    "evidence": [
+      {
+        "timestampSec": 413.6,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/engines_video_001_review_20261113/soldier_11-skills-413.6.jpg",
+        "sha256": "f5d0d0e27452b8fb9f4f53f4dc3398141e4237da2e2976c883d098c78d3b07a9",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      }
+    ],
+    "notes": [
+      "413.6秒為完整穩定技能頁，頂部選中頭像為11號。",
+      "五項皆明確顯示01/12，核心A至F均為暗色未點亮，故核心記0。",
+      "右側附加能力圖案已呈黃色，不能將它當成A至F已啟用。",
+      "更正先前以稀疏抽樣誤判沒有11號技能頁的結論。"
+    ]
+  },
+  "nameCrossChecks": [
+    {
+      "characterId": "velina",
+      "name": "琳琅鎏心",
+      "source": "https://wiki.hoyolab.com/pc/zzz/entry/1104?lang=zh-tw",
+      "rawApiSha256": "15f729244d55f3a2caa78f6c23091666f6ac27ed8cfb2849c275dfaef0573221",
+      "checkedAt": "2026-11-13"
+    }
+  ]
+}

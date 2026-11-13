@@ -1,0 +1,728 @@
+{
+  "checkedAt": "2026-11-13",
+  "method": "稀有度直接採官方filter_values.agent_rarity.values，陣營優先採官方baseInfo的陣營，空缺時才採filter_values.agent_faction.values。統一官方同陣營的名稱別名，保留rawFaction和factionFilterValue供核對。雅的filter陣營誤標卡呂冬之子，採baseInfo的第六課。僅作公共角色目錄，不代表使用者持有或養成數值。",
+  "characters": {
+    "jane": {
+      "rawFaction": "刑偵特勤組",
+      "factionFilterValue": null,
+      "name": "簡・杜",
+      "wikiName": "簡·杜",
+      "rarity": "S",
+      "faction": "刑偵特勤組",
+      "element": "物理",
+      "specialty": "異常",
+      "source": {
+        "label": "簡·杜・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/368?lang=zh-tw",
+        "entryId": "368",
+        "version": "1739784224",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "25d253b9e99313739f054b1177c8d22986299acd3a01fa2268e30d5e040fd2a6"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/87fcb83576a57e1aae31dfa0d6445b68_3499070425918560638.png"
+    },
+    "damielle": {
+      "rawFaction": "達識結社",
+      "factionFilterValue": "達識結社",
+      "name": "蕾米埃爾・丹",
+      "wikiName": "蕾米埃爾·丹",
+      "rarity": "S",
+      "faction": "達識結社",
+      "element": "流明",
+      "specialty": "異常",
+      "source": {
+        "label": "蕾米埃爾·丹・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/1112?lang=zh-tw",
+        "entryId": "1112",
+        "version": "1785474702",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "9d93fa15401afe45ace3ed0ce223d054a0a7e5ceac43303e7f5fbdbc787f3d62"
+      },
+      "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/06/30/186855736/0d0cd5b5fc60173dc78d2e4002e3d2b5_98848863733430456.png"
+    },
+    "velina": {
+      "rawFaction": "外務籌策局",
+      "factionFilterValue": "外務籌策局",
+      "name": "維琳娜・艾嘉德",
+      "wikiName": "維琳娜·艾嘉德",
+      "rarity": "S",
+      "faction": "外務籌策局",
+      "element": "風屬性",
+      "specialty": "異常",
+      "source": {
+        "label": "維琳娜·艾嘉德・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/1084?lang=zh-tw",
+        "entryId": "1084",
+        "version": "1781778707",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "74aeebce8c13a38689d23595ff183b6793405cee484c39f3f19d0ce2e0b45f8f"
+      },
+      "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/05/06/186855736/d1c0912271a744a242ba3836e3ad7515_6354409740055146486.png"
+    },
+    "pyrois": {
+      "rawFaction": "法厄同",
+      "factionFilterValue": "法厄同",
+      "name": "佩洛伊斯",
+      "wikiName": "佩洛伊斯",
+      "rarity": "S",
+      "faction": "法厄同",
+      "element": "以太",
+      "specialty": "強攻",
+      "source": {
+        "label": "佩洛伊斯・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/1082?lang=zh-tw",
+        "entryId": "1082",
+        "version": "1781778495",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "1ea0f5c593ede9099bd84e68a5da86e4756c37f2e22c3398bf9393104e1d4b43"
+      },
+      "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2026/05/07/186855736/69723b34e8b9cf4f5b7b98e6dff8d202_7263267123329220836.png"
+    },
+    "nangong_yu": {
+      "rawFaction": "妄想天使",
+      "factionFilterValue": "妄想天使",
+      "name": "南宮羽",
+      "wikiName": "南宮羽",
+      "rarity": "S",
+      "faction": "妄想天使",
+      "element": "以太",
+      "specialty": "擊破",
+      "source": {
+        "label": "南宮羽・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/1038?lang=zh-tw",
+        "entryId": "1038",
+        "version": "1789296615",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "3ac8d4108aea820ae32884737329a31e04134044e0e46ee63f55f1b9ec83f6f9"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/03/23/d56138a233f0ef0d82fd32131b690560_4089960947877317843.png"
+    },
+    "sunna": {
+      "rawFaction": "妄想天使",
+      "factionFilterValue": "妄想天使",
+      "name": "千夏",
+      "wikiName": "千夏",
+      "rarity": "S",
+      "faction": "妄想天使",
+      "element": "物理",
+      "specialty": "支援",
+      "source": {
+        "label": "千夏・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/995?lang=zh-tw",
+        "entryId": "995",
+        "version": "1789296607",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "a563da84fe0436933f066c3d36307c53ccff87a4ae1fbfae745f1f0020f31c2f"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/02/05/fca35fd54bd8fe6704d24f46edb11f4c_5470950778403206107.png"
+    },
+    "zhao": {
+      "rawFaction": "坎卜斯黑枝",
+      "factionFilterValue": "坎卜斯黑枝",
+      "name": "照",
+      "wikiName": "照",
+      "rarity": "S",
+      "faction": "坎卜斯黑枝",
+      "element": "冰屬性",
+      "specialty": "防護",
+      "source": {
+        "label": "照・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/960?lang=zh-tw",
+        "entryId": "960",
+        "version": "1767189561",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "dca4b629b0f855f9b63de574d81e70ad22c17097b6bb8b655dcc4232daf09b58"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/12/30/1340550c86a14e14274ebded5cf4ba3b_2057292562699782140.png"
+    },
+    "lucia": {
+      "rawFaction": "怪啖屋",
+      "factionFilterValue": "怪啖屋",
+      "name": "盧西婭·艾洛溫",
+      "wikiName": "盧西婭·艾洛溫",
+      "rarity": "S",
+      "faction": "怪啖屋",
+      "element": "以太",
+      "specialty": "支援",
+      "source": {
+        "label": "盧西婭·艾洛溫・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/907?lang=zh-tw",
+        "entryId": "907",
+        "version": "1761112918",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "55cd2e2c33acc250e26ccf6b0556396df57ed11a1b79c7024837d3d72984c85e"
+      },
+      "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/08/25/186855736/8fdf223cf2bf3d02ffe6675738ec0853_2635696047949335888.png"
+    },
+    "yuzuha": {
+      "rawFaction": "$[{\"ep_id\":839,\"icon\":\"https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/06/28/186855736/3d8483bca40fba6f5eb1dd12c7e4cb36_2477400290608546932.png\",\"amount\":1,\"name\":\"怪啖屋\",\"menuId\":\"faction\",\"_menuId\":\"22\"}]$",
+      "factionFilterValue": "怪啖屋",
+      "name": "浮波柚葉",
+      "wikiName": "浮波柚葉",
+      "rarity": "S",
+      "faction": "怪啖屋",
+      "element": "物理",
+      "specialty": "支援",
+      "source": {
+        "label": "浮波柚葉・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/837?lang=zh-tw",
+        "entryId": "837",
+        "version": "1760201202",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "6aef84e5e9111696274c1867270ed7046a4423a0fe0a3b26864723ccc7529569"
+      },
+      "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/10/12/59155606/7a65124559c82ec0fea6dc7747537f44_759518407656223778.png"
+    },
+    "manato": {
+      "rawFaction": "怪啖屋",
+      "factionFilterValue": "怪啖屋",
+      "name": "狛野真斗",
+      "wikiName": "狛野真斗",
+      "rarity": "A",
+      "faction": "怪啖屋",
+      "element": "火屬性",
+      "specialty": "命破",
+      "source": {
+        "label": "狛野真斗・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/908?lang=zh-tw",
+        "entryId": "908",
+        "version": "1760527505",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "3e8524c07b19bd8d1313b8ace06457ae9ab2da9e8ef65108144a769cbe50cf46"
+      },
+      "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/08/25/186855736/4a5806a43ea0eeeaab0379a9f66cc3fe_868333633627102712.png"
+    },
+    "ye_shunguang": {
+      "rawFaction": "雲巋山",
+      "factionFilterValue": "雲巋山",
+      "name": "葉瞬光",
+      "wikiName": "葉瞬光",
+      "rarity": "S",
+      "faction": "雲巋山",
+      "element": "凜刃",
+      "specialty": "強攻",
+      "source": {
+        "label": "葉瞬光・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/961?lang=zh-tw",
+        "entryId": "961",
+        "version": "1768229033",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "2121077d9d0d66dab32e43c68cc1d3ddf67f54c8e8d54ca324ed8c0b21e6ae08"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/12/30/567b6d9975cec0cb335c09ead8e7720a_6766473380260453794.png"
+    },
+    "ju_fufu": {
+      "rawFaction": "雲嶽山",
+      "factionFilterValue": "雲巋山",
+      "name": "橘福福",
+      "wikiName": "橘福福",
+      "rarity": "S",
+      "faction": "雲巋山",
+      "element": "火屬性",
+      "specialty": "擊破",
+      "source": {
+        "label": "橘福福・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/750?lang=zh-tw",
+        "entryId": "750",
+        "version": "1754475792",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "5878eb1561d30381fc93106ec53fd08df2ce5a3a16773fcee5d21c901e044236"
+      },
+      "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/05/15/186855736/1ceafc3e6671f30b258a2b9b15bb3e78_1072259491736664221.png"
+    },
+    "yixuan": {
+      "rawFaction": "雲巋山",
+      "factionFilterValue": "雲巋山",
+      "name": "儀玄",
+      "wikiName": "儀玄",
+      "rarity": "S",
+      "faction": "雲巋山",
+      "element": "玄墨",
+      "specialty": "命破",
+      "source": {
+        "label": "儀玄・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/752?lang=zh-tw",
+        "entryId": "752",
+        "version": "1782960650",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "03f672389410e64fecf22f973e0e9361ab391a02f944998a584ac895c4bf0924"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/04/e6eceb709a7e39e22c09c94ec190fb42_3993513732551662280.png"
+    },
+    "pan_yinhu": {
+      "rawFaction": "雲巋山",
+      "factionFilterValue": "雲巋山",
+      "name": "潘引壺",
+      "wikiName": "潘引壺",
+      "rarity": "A",
+      "faction": "雲巋山",
+      "element": "物理",
+      "specialty": "防護",
+      "source": {
+        "label": "潘引壺・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/751?lang=zh-tw",
+        "entryId": "751",
+        "version": "1749210685",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "56e4b8aaef2a25b626772adddb8a782c5b1b07365969b236a2a6e763c958017b"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/04/de8464640c050cc3abbb90a410e37515_7863788274429390034.png"
+    },
+    "vivian": {
+      "rawFaction": "反舌鳥",
+      "factionFilterValue": "反舌鳥",
+      "name": "薇薇安·班希",
+      "wikiName": "薇薇安·班希",
+      "rarity": "S",
+      "faction": "反舌鳥",
+      "element": "以太",
+      "specialty": "異常",
+      "source": {
+        "label": "薇薇安·班希・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/626?lang=zh-tw",
+        "entryId": "626",
+        "version": "1749198173",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "6431ea2aab8a5c9460cb37ab7a672cca038897cb047d173567500da8fbbbf931"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/04/22/725b53a868786abab00f01ef9a174c88_7922982168600779570.png"
+    },
+    "astra": {
+      "rawFaction": "天琴座",
+      "factionFilterValue": "天琴座",
+      "name": "耀嘉音",
+      "wikiName": "耀嘉音",
+      "rarity": "S",
+      "faction": "天琴座",
+      "element": "以太",
+      "specialty": "支援",
+      "source": {
+        "label": "耀嘉音・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/588?lang=zh-tw",
+        "entryId": "588",
+        "version": "1783778982",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "79a677a935cbc45e7050a6a0d3888cf23ad6ad38d9653d43830c0f356c2abf82"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/01/21/96b569066923ada5741838ab3a62a9db_6757234780440279769.png"
+    },
+    "qingyi": {
+      "rawFaction": "刑偵特勤組",
+      "factionFilterValue": "治安局·刑偵特勤組",
+      "name": "青衣",
+      "wikiName": "青衣",
+      "rarity": "S",
+      "faction": "刑偵特勤組",
+      "element": "電屬性",
+      "specialty": "擊破",
+      "source": {
+        "label": "青衣・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/350?lang=zh-tw",
+        "entryId": "350",
+        "version": "1729070331",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "b09c31bf60447157575af3adeb2b9064f7bbd6a756f4318f27e590a945098835"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/12/ed5601b7cde9bda222181258a3a312d4_4632136586354055308.png"
+    },
+    "zhu_yuan": {
+      "rawFaction": "刑偵特勤組",
+      "factionFilterValue": "治安局·刑偵特勤組",
+      "name": "朱鳶",
+      "wikiName": "朱鳶",
+      "rarity": "S",
+      "faction": "刑偵特勤組",
+      "element": "以太",
+      "specialty": "強攻",
+      "source": {
+        "label": "朱鳶・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/31?lang=zh-tw",
+        "entryId": "31",
+        "version": "1727234825",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "e21055b81be196ba314f1b53b9fb8548d92f531285e1681a3e0e800588cbb6a8"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/05/28/391008a843e6a6e35b134b54dd498049_1301244787212807256.png"
+    },
+    "seth": {
+      "rawFaction": "刑偵特勤組",
+      "factionFilterValue": "治安局·刑偵特勤組",
+      "name": "賽斯·洛威爾",
+      "wikiName": "賽斯·洛威爾",
+      "rarity": "A",
+      "faction": "刑偵特勤組",
+      "element": "電屬性",
+      "specialty": "防護",
+      "source": {
+        "label": "賽斯·洛威爾・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/369?lang=zh-tw",
+        "entryId": "369",
+        "version": "1725495505",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "d18073f1447eb77f3a48289d0bfacceb661e2ed1768285f9a766afef81740068"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/08/26/b2f8135275830a304ab2e92b2543d95c_927816365385918993.png"
+    },
+    "miyabi": {
+      "rawFaction": "對空洞特別行動部第六課",
+      "factionFilterValue": "卡呂冬之子",
+      "name": "星見雅",
+      "wikiName": "星見雅",
+      "rarity": "S",
+      "faction": "對空洞特別行動部第六課",
+      "element": "烈霜屬性",
+      "specialty": "異常",
+      "source": {
+        "label": "星見雅・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/537?lang=zh-tw",
+        "entryId": "537",
+        "version": "1778070280",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "74228f81713e2dc94d02ef3981d01ae6d80be5d2e226c98d478d6f7bfa89523e"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/05/7cf7a63a5f2c358f41447e8625696179_5728613537777614486.png"
+    },
+    "yanagi": {
+      "rawFaction": "對空洞特別行動部第六課",
+      "factionFilterValue": "對空洞特別行動部第六課",
+      "name": "月城柳",
+      "wikiName": "月城柳",
+      "rarity": "S",
+      "faction": "對空洞特別行動部第六課",
+      "element": "電屬性",
+      "specialty": "異常",
+      "source": {
+        "label": "月城柳・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/529?lang=zh-tw",
+        "entryId": "529",
+        "version": "1734514010",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "eac46f9a5548c8e7d929291ffbe0013ce9dfc1993ad18e1e6491864b730b4751"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/10/25/3dd34f678f97c8a2101f0d3ba0710715_7070642981073250787.png"
+    },
+    "soukaku": {
+      "rawFaction": "對空洞特別行動部第六課",
+      "factionFilterValue": "對空洞特別行動部第六課",
+      "name": "蒼角",
+      "wikiName": "蒼角",
+      "rarity": "A",
+      "faction": "對空洞特別行動部第六課",
+      "element": "冰屬性",
+      "specialty": "支援",
+      "source": {
+        "label": "蒼角・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/89?lang=zh-tw",
+        "entryId": "89",
+        "version": "1725036405",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "d66827006f2e9ac3003557400bf45167c60d38b07e22e0f325217f2d5434f16c"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/05/23/f7e89a3278d04fc252011df8b9230b7b_1724004390987084817.png"
+    },
+    "pulchra": {
+      "rawFaction": "卡呂冬之子",
+      "factionFilterValue": "卡呂冬之子",
+      "name": "波可娜・費雷尼",
+      "wikiName": "波可娜·費雷尼",
+      "rarity": "A",
+      "faction": "卡呂冬之子",
+      "element": "物理",
+      "specialty": "擊破",
+      "source": {
+        "label": "波可娜·費雷尼・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/619?lang=zh-tw",
+        "entryId": "619",
+        "version": "1749268716",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "4a185e8e4d01268657006759d9a45cdb7e4bf6c1d6704967c549540715260ee9"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/03/11/76d1e64c6ea76ffb7aabfd090c30dba0_3692781990695818269.png"
+    },
+    "piper": {
+      "rawFaction": "卡呂冬之子",
+      "factionFilterValue": "卡呂冬之子",
+      "name": "派派・韋爾",
+      "wikiName": "派派·韋爾",
+      "rarity": "A",
+      "faction": "卡呂冬之子",
+      "element": "物理",
+      "specialty": "異常",
+      "source": {
+        "label": "派派·韋爾・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/126?lang=zh-tw",
+        "entryId": "126",
+        "version": "1725535145",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "4f9681823df4285a15f7c70be78d58b8a124618639ebda2b146c73aaadefcc4b"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/02/4a3910f9aad150df3aed53c5de28768e_8578434738157565712.png"
+    },
+    "lucy": {
+      "rawFaction": "卡呂冬之子",
+      "factionFilterValue": "卡呂冬之子",
+      "name": "露西亞娜・德・蒙特夫",
+      "wikiName": "露西亞娜·德·蒙特夫",
+      "rarity": "A",
+      "faction": "卡呂冬之子",
+      "element": "火屬性",
+      "specialty": "支援",
+      "source": {
+        "label": "露西亞娜·德·蒙特夫・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/125?lang=zh-tw",
+        "entryId": "125",
+        "version": "1725532888",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "fad5f6c6e3614dfde029e16d3c2ca1cbe7be4cddd630711e31b59b6702815654"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/02/0005cb04259b2f2101e5aeac52033299_4730938854595310447.png"
+    },
+    "grace": {
+      "rawFaction": "白祇重工",
+      "factionFilterValue": "白祇重工",
+      "name": "格莉絲・霍華德",
+      "wikiName": "格莉絲·霍華德",
+      "rarity": "S",
+      "faction": "白祇重工",
+      "element": "電屬性",
+      "specialty": "異常",
+      "source": {
+        "label": "格莉絲·霍華德・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/27?lang=zh-tw",
+        "entryId": "27",
+        "version": "1749268482",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "ca760cfa006aeaf97ae84e57ffb16ce29f00cb6b326df024175d936799bb8db8"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/05/28/b25a8a6174b97cc4c559029aafbe4a22_5090726243759751843.png"
+    },
+    "koleda": {
+      "rawFaction": "白祇重工",
+      "factionFilterValue": "白祇重工",
+      "name": "珂蕾妲・貝洛伯格",
+      "wikiName": "珂蕾妲·貝洛伯格",
+      "rarity": "S",
+      "faction": "白祇重工",
+      "element": "火屬性",
+      "specialty": "擊破",
+      "source": {
+        "label": "珂蕾妲·貝洛伯格・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/26?lang=zh-tw",
+        "entryId": "26",
+        "version": "1724934068",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "fcb7e69aeedaef2788f90f45edac8923de2f5c29c36a7b4ced164d35a03b0f7e"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/05/28/f2dcd3f680b1e3873406fa4132f26178_4686138976346855105.png"
+    },
+    "anton": {
+      "rawFaction": "白祇重工",
+      "factionFilterValue": "白祇重工",
+      "name": "安東・伊萬諾夫",
+      "wikiName": "安東·伊萬諾夫",
+      "rarity": "A",
+      "faction": "白祇重工",
+      "element": "電屬性",
+      "specialty": "強攻",
+      "source": {
+        "label": "安東·伊萬諾夫・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/24?lang=zh-tw",
+        "entryId": "24",
+        "version": "1724957045",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "934bae38e69950a47925036f229fdcd829c59053338994f1d1840fb954ca34d7"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/05/17/4ad598ef6760d23196d488cba5c1af8a_5032015665623889570.png"
+    },
+    "ellen": {
+      "rawFaction": "維多利亞居家服務",
+      "factionFilterValue": "維多利亞居家服務",
+      "name": "艾蓮・喬",
+      "wikiName": "艾蓮·喬",
+      "rarity": "S",
+      "faction": "維多利亞居家服務",
+      "element": "冰屬性",
+      "specialty": "強攻",
+      "source": {
+        "label": "艾蓮·喬・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/29?lang=zh-tw",
+        "entryId": "29",
+        "version": "1724928636",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "31c55d995a60cf42f86ea8d771d332f21201d405790f4f3bc07d5a2d753912e7"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/05/28/71b99a24f7864beec31370cf07cbcafb_7099117086480817211.png"
+    },
+    "rina": {
+      "rawFaction": "維多利亞居家服務",
+      "factionFilterValue": "維多利亞居家服務",
+      "name": "亞歷山德麗娜・莎芭絲緹安",
+      "wikiName": "亞歷山德麗娜·莎芭絲緹安",
+      "rarity": "S",
+      "faction": "維多利亞居家服務",
+      "element": "電屬性",
+      "specialty": "支援",
+      "source": {
+        "label": "亞歷山德麗娜·莎芭絲緹安・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/30?lang=zh-tw",
+        "entryId": "30",
+        "version": "1729070338",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "332649759ed38cc5db4aace1be9c24d38038953241493eecdfdd38a9bb03eaf0"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/05/28/af07b5681d49fb22a818dbf24536f347_3882748344546395498.png"
+    },
+    "lycaon": {
+      "rawFaction": "維多利亞居家服務",
+      "factionFilterValue": "維多利亞居家服務",
+      "name": "馮・萊卡恩",
+      "wikiName": "馮·萊卡恩",
+      "rarity": "S",
+      "faction": "維多利亞居家服務",
+      "element": "冰屬性",
+      "specialty": "擊破",
+      "source": {
+        "label": "馮·萊卡恩・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/28?lang=zh-tw",
+        "entryId": "28",
+        "version": "1724928721",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "9ea25d545c543c47702817768577a8fd6a79dbb6f878b17e0ea5cfd574328844"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/05/28/127f1076f431a56918ba080bd7084c85_3329381659090289799.png"
+    },
+    "nekomata": {
+      "rawFaction": "狡兔屋",
+      "factionFilterValue": "狡兔屋",
+      "name": "貓宮 又奈",
+      "wikiName": "貓宮 又奈",
+      "rarity": "S",
+      "faction": "狡兔屋",
+      "element": "物理",
+      "specialty": "強攻",
+      "source": {
+        "label": "貓宮 又奈・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/21?lang=zh-tw",
+        "entryId": "21",
+        "version": "1729070366",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "30142af280a10b9939acb30594e7c3ee07fc9650c41d76e8c53b1b7f1351ec7b"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/05/28/4f6da69b0ac332789cfa8f1a3db17e77_6866504406372735530.png"
+    },
+    "nicole": {
+      "rawFaction": "狡兔屋",
+      "factionFilterValue": "狡兔屋",
+      "name": "妮可・德瑪拉",
+      "wikiName": "妮可·德瑪拉",
+      "rarity": "A",
+      "faction": "狡兔屋",
+      "element": "以太",
+      "specialty": "支援",
+      "source": {
+        "label": "妮可·德瑪拉・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/20?lang=zh-tw",
+        "entryId": "20",
+        "version": "1729070384",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "a6b1ab6c530b8cf393b6a53565f48904dfcbe79d252123b3978e2d62620ef4d3"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/05/23/3815b87d0e526b12127e69f5baed3fa7_2071488341033625974.png"
+    },
+    "anby": {
+      "rawFaction": "狡兔屋",
+      "factionFilterValue": "狡兔屋",
+      "name": "安比・德瑪拉",
+      "wikiName": "安比·德瑪拉",
+      "rarity": "A",
+      "faction": "狡兔屋",
+      "element": "電屬性",
+      "specialty": "擊破",
+      "source": {
+        "label": "安比·德瑪拉・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/2?lang=zh-tw",
+        "entryId": "2",
+        "version": "1756549773",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "c4095a1f7716907d12dcce7245873c9c544de271a6959471dd10efc9b016da5d"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/05/28/43aeb29d176e10c9713b3b9b6ac0dd3a_2384682618213467101.png"
+    },
+    "corin": {
+      "rawFaction": "維多利亞居家服務",
+      "factionFilterValue": "維多利亞居家服務",
+      "name": "可琳・威克斯",
+      "wikiName": "可琳·威克斯",
+      "rarity": "A",
+      "faction": "維多利亞居家服務",
+      "element": "物理",
+      "specialty": "強攻",
+      "source": {
+        "label": "可琳·威克斯・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/23?lang=zh-tw",
+        "entryId": "23",
+        "version": "1742472396",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "e99a00d5098936546766db6abd73dcedab69a4f8be40fb5b9a59c43f5af51cab"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/05/16/6f351122be7781f8cd6f21722dd13661_2661769272105172713.png"
+    },
+    "ben": {
+      "rawFaction": "白祇重工",
+      "factionFilterValue": "白祇重工",
+      "name": "本・比格",
+      "wikiName": "本·比格",
+      "rarity": "A",
+      "faction": "白祇重工",
+      "element": "火屬性",
+      "specialty": "防護",
+      "source": {
+        "label": "本·比格・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/25?lang=zh-tw",
+        "entryId": "25",
+        "version": "1724930768",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "96907fd868a36342d125d9f03841cc4c91f0d4e7158ee14ecdaa3feeb9b06202"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/05/17/96c8a05b61d8a7a3d5c4ba5bfb76fd58_860957641937035940.png"
+    },
+    "billy": {
+      "rawFaction": "狡兔屋",
+      "factionFilterValue": "狡兔屋",
+      "name": "比利・奇德",
+      "wikiName": "比利·奇德",
+      "rarity": "A",
+      "faction": "狡兔屋",
+      "element": "物理",
+      "specialty": "強攻",
+      "source": {
+        "label": "比利·奇德・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/19?lang=zh-tw",
+        "entryId": "19",
+        "version": "1729070391",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "434d68530fc215cddcdaef3f7981a9c8685958c0877313c8255a74e346eac15d"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/05/28/3db23765159cef54aecb564a310aa214_5875819227834946917.png"
+    },
+    "soldier_11": {
+      "rawFaction": "奧波勒斯小隊",
+      "factionFilterValue": "防衛軍·奧波勒斯小隊",
+      "name": "11號",
+      "wikiName": "「11號」",
+      "rarity": "S",
+      "faction": "奧波勒斯小隊",
+      "element": "火屬性",
+      "specialty": "強攻",
+      "source": {
+        "label": "「11號」・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/22?lang=zh-tw",
+        "entryId": "22",
+        "version": "1727250200",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "963b0c93325dd84a72528161a99f4912156c35336cc23a67f3c587279b53a87a"
+      },
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/05/16/e0d2c585da7186984e2a1e66714131f8_348745644031971587.png"
+    }
+  }
+}

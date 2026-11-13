@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T12:03:22+00:00",
+  "updated_at": "2026-11-13T07:09:18+00:00",
   "source_ids": [
     "video_001",
     "video_5680_20261111",
@@ -14,7 +14,10 @@
     "video_5689_20261111",
     "image_chevreuse_flower_20261111",
     "video_5690_20261111",
-    "image_mavuika_plume_20261111"
+    "image_mavuika_plume_20261111",
+    "arosha_artifact_review_20261113",
+    "mavuika_plume_equipped_review_20261113",
+    "mavuika_plume_rolls_review_20261113"
   ],
   "coverage": {
     "roster": "partial",
@@ -12526,13 +12529,19 @@
       ],
       "provenance": {
         "source_ids": [
-          "video_5684_20261111"
+          "video_5684_20261111",
+          "arosha_artifact_review_20261113"
         ],
         "evidence_refs": [
-          "video_5684_20261111_shot_029"
+          "video_5684_20261111_shot_029",
+          "arosha_artifact_review_20261113_shot_001"
         ],
         "verification": "agent_reviewed",
-        "notes": []
+        "notes": [
+          "直接二讀既有029原截圖，暴擊傷害列有淡色填底，和同圖元素充能列及羽、沙有效列交叉核對，修正為有效。",
+          "暴擊傷害7.0%、強化0次及物品ID不變，包含初始1次後杯有效次數由2改3。",
+          "IMG_5684.MP4未在下載資料夾找到，本次不宣稱重新讀取原片；原截圖與既有manifest的SHA已核對。新到的5679、5689、5690影片均為其他既有來源，未拿來冒充5684。"
+        ]
       },
       "substat_rolls": {
         "character_id": "arosha",
@@ -12545,7 +12554,7 @@
           {
             "key": "crit_dmg",
             "enhancements": 0,
-            "effective": false
+            "effective": true
           },
           {
             "key": "energy_recharge",
@@ -19629,8 +19638,8 @@
       "name": "靈髓的根脈",
       "set_name": "黑曜秘典",
       "slot": "plume",
-      "rarity": null,
-      "level": null,
+      "rarity": 5,
+      "level": 20,
       "main_stat": {
         "key": "atk",
         "value": 311,
@@ -19660,10 +19669,14 @@
       ],
       "provenance": {
         "source_ids": [
-          "image_mavuika_plume_20261111"
+          "image_mavuika_plume_20261111",
+          "mavuika_plume_equipped_review_20261113",
+          "mavuika_plume_rolls_review_20261113"
         ],
         "evidence_refs": [
-          "image_mavuika_plume_20261111_shot_001"
+          "image_mavuika_plume_20261111_shot_001",
+          "mavuika_plume_equipped_review_20261113_shot_001",
+          "mavuika_plume_rolls_review_20261113_shot_001"
         ],
         "verification": "agent_reviewed",
         "notes": [
@@ -19671,7 +19684,12 @@
           "圖片為重塑選擇頁，僅採用畫面當下數值，不宣稱已執行重塑。",
           "與原穿戴羽毛副詞條種類不同，新增實體並保留原物品；精確名稱對照既有資料中的黑曜秘典。",
           "畫面未顯示星級與等級，保持未知；有效詞條判定亦未確認。",
-          "使用者於 2026-11-11 明確確認：「已經給瑪薇卡穿上了」。依此更新穿戴引用。"
+          "使用者於 2026-11-11 明確確認：「已經給瑪薇卡穿上了」。依此更新穿戴引用。",
+          "新裝備詳情圖直接顯示五顆星、+20、瑪薇卡已裝備，四個副詞條與既有新羽毛完全吻合，沿用同一穩定物品ID。",
+          "攻擊力%、暴擊率、暴擊傷害有淡色填底，生命值%沒有；與新重塑詳情圖及獨立讀圖一致。有效標記依序為true、true、false、true。",
+          "未由主攻擊311反推星級或等級，亦未使用舊影片另一件羽毛的資料。",
+          "新重塑詳情圖與新裝備詳情圖同件：副詞條16.3%、3.1%、9.9%、22.5%一致，+N逐項確認為2、0、1、2，沿用原次數。",
+          "本圖只作副詞條及+N對照，不單憑重塑資格或主攻擊值推算星級、等級。"
         ]
       },
       "substat_rolls": {
@@ -19680,22 +19698,22 @@
           {
             "key": "atk_pct",
             "enhancements": 2,
-            "effective": null
+            "effective": true
           },
           {
             "key": "crit_rate",
             "enhancements": 0,
-            "effective": null
+            "effective": true
           },
           {
             "key": "hp_pct",
             "enhancements": 1,
-            "effective": null
+            "effective": false
           },
           {
             "key": "crit_dmg",
             "enhancements": 2,
-            "effective": null
+            "effective": true
           }
         ]
       }

@@ -1,5 +1,5 @@
 import {characterImage,characterName as lookupCharacterName} from '@/lib/game_assets';
-import MediaImage from '@/components/media/media_image';
+import RotationAction from '@/components/teams/rotation_action';
 export default function RotationCard({characterId,characterName='',moves}:{characterId:string,characterName?:string,moves:readonly string[]}){
- return <div className="minimal-flow-card"><MediaImage src={characterImage(characterId,'icon')} alt={characterName||lookupCharacterName(characterId)}/><div className="minimal-flow-moves"><strong>{moves[0]}</strong>{moves.length>1&&<div className="minimal-flow-combos">{moves.slice(1).map((move,i)=><span key={i}>{move}</span>)}</div>}</div></div>
+ return <RotationAction name={characterName||lookupCharacterName(characterId)} src={characterImage(characterId,'icon')} moves={moves}/>;
 }

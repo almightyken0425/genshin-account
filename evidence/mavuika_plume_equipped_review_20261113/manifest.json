@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "id": "mavuika_plume_equipped_review_20261113",
+  "imported_at": "2026-11-13T07:09:18+00:00",
+  "media": {
+    "type": "image",
+    "file_name": "2026-11-13 15.05.21.jpg",
+    "sha256": "d4fa00868730ff2d18bb11fd48943022ee4d5c98db40b94b52f8df090e53ff6b",
+    "resolution": [
+      1280,
+      588
+    ],
+    "recorded_at": null,
+    "game_version": null,
+    "stored_in_repo": false
+  },
+  "extraction": {
+    "path": "imports/mavuika_plume_equipped_review_20261113/extracted.json",
+    "sha256": "ce5b0c6658bcf142b14b635e9a6202d64c57fea9b765c7d1fca411e219644352"
+  },
+  "screenshots": [
+    {
+      "id": "mavuika_plume_equipped_review_20261113_shot_001",
+      "path": "evidence/mavuika_plume_equipped_review_20261113/screenshots/001.png",
+      "sha256": "71e788523c5cac9f8d758366e6cb662cb66309515d93a7696055f7cd07b7c553",
+      "time_seconds": null,
+      "character_id": "mavuika",
+      "kind": "artifact_plume",
+      "verification": "agent_reviewed"
+    }
+  ],
+  "notes": [
+    "新裝備詳情圖直接顯示五顆星、+20、瑪薇卡已裝備，四個副詞條與既有新羽毛完全吻合，沿用同一穩定物品ID。",
+    "攻擊力%、暴擊率、暴擊傷害有淡色填底，生命值%沒有；與新重塑詳情圖及獨立讀圖一致。有效標記依序為true、true、false、true。",
+    "未由主攻擊311反推星級或等級，亦未使用舊影片另一件羽毛的資料。"
+  ]
+}

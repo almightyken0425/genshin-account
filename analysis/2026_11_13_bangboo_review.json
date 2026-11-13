@@ -1,0 +1,533 @@
+{
+  "checkedAt": "2026-11-13",
+  "basedOnCommit": "e36f0599abce933c4678d87c48cf7e8baf21ffbc",
+  "sourceTeamFile": "site/web/lib/zzz_team_guides.json",
+  "scope": "為現有8隊提供已驗證技能條件相容的邦布建議。帳號沒有邦布觀測，持有、星級、等級與裝備狀態皆未確認。不可標示為已持有或已裝備，也不宣稱全局最佳。",
+  "recommendations": [
+    {
+      "teamId": "pyrois-burst",
+      "wikiEntryId": "114",
+      "condition": {
+        "kind": "specialty",
+        "value": "支援",
+        "minimum": 1,
+        "matchingCharacterIds": [
+          "sunna"
+        ]
+      },
+      "reason": "千夏屬支援，符合氣壓平衡。接觸氣泡可為角色回復能量，額外能力讓後場也獲得能量。",
+      "bangbooId": "bangboo_114",
+      "name": "氣壓布",
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/07/03/5321fd591ea1c61d54062a37f396ac85_594392590788198819.png",
+      "source": {
+        "label": "氣壓布・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/114?lang=zh-tw",
+        "entryId": "114",
+        "version": "1748787776",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "50b52822eeb866173275de87c1dfaa2caa25e0ebfeb45c3ca00aaa98b587067c"
+      },
+      "extraAbility": {
+        "title": "氣壓平衡",
+        "description": "[額外能力] 隊伍中包含[支援]角色時觸發：以太氣泡接觸角色時，額外為後場角色回復能量，回復量為原本的60%。",
+        "attributes": [
+          {
+            "key": "気圧均衡",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5"
+            ]
+          },
+          {
+            "key": "後場角色能量回復比例",
+            "values": [
+              "60%",
+              "70%",
+              "80%",
+              "90%",
+              "100%"
+            ]
+          }
+        ],
+        "componentId": "talent40165"
+      },
+      "ownership": null,
+      "equipped": null,
+      "status": "recommended_unconfirmed_ownership",
+      "conditionVerified": true,
+      "recommendationBasis": "官方技能條件與目前隊伍名單相容，未進行全邦布傷害或循環實測比較。"
+    },
+    {
+      "teamId": "damielle-triple-anomaly",
+      "wikiEntryId": "532",
+      "condition": {
+        "kind": "specialty",
+        "value": "異常",
+        "minimum": 1,
+        "matchingCharacterIds": [
+          "damielle",
+          "velina",
+          "yanagi"
+        ]
+      },
+      "reason": "三位皆屬異常，符合異常火爆的隊伍條件。連攜技傷害獲得提升，對生物敵人另有增益。",
+      "bangbooId": "bangboo_532",
+      "name": "不良布",
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/11/05/457af0cf0900569ddb8fae305594bb84_1021397253864371510.png",
+      "source": {
+        "label": "不良布・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/532?lang=zh-tw",
+        "entryId": "532",
+        "version": "1748783565",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "e4f22d9899a4a6291dd5120f17bc35fad828fa279415f0ddf318838332dcf432"
+      },
+      "extraAbility": {
+        "title": "異常火爆",
+        "description": "[額外能力] 隊伍中包含[異常]角色時觸發：[邦布連攜技]造成的傷害提升20%，目標為[生物]敵人時，該增益效果額外提升15%。",
+        "attributes": [
+          {
+            "key": "",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5"
+            ]
+          },
+          {
+            "key": "傷害提升",
+            "values": [
+              "20%",
+              "25%",
+              "30%",
+              "35%",
+              "40%"
+            ]
+          },
+          {
+            "key": "傷害額外提升",
+            "values": [
+              "15%",
+              "19%",
+              "23%",
+              "27%",
+              "30%"
+            ]
+          }
+        ],
+        "componentId": "talent6427"
+      },
+      "ownership": null,
+      "equipped": null,
+      "status": "recommended_unconfirmed_ownership",
+      "conditionVerified": true,
+      "recommendationBasis": "官方技能條件與目前隊伍名單相容，未進行全邦布傷害或循環實測比較。"
+    },
+    {
+      "teamId": "jane-anomaly",
+      "wikiEntryId": "108",
+      "condition": {
+        "kind": "element",
+        "value": "物理",
+        "minimum": 2,
+        "matchingCharacterIds": [
+          "jane",
+          "yuzuha"
+        ]
+      },
+      "reason": "簡與柚葉同為物理，啟動左輪布的額外能力，增加邦布連攜技的物理異常積蓄。",
+      "bangbooId": "bangboo_108",
+      "name": "左輪布",
+      "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/07/25/11038150/1916b68ac98b6dad6b821a4eda559491_2572980193718392802.png",
+      "source": {
+        "label": "左輪布・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/108?lang=zh-tw",
+        "entryId": "108",
+        "version": "1749095099",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "02f8d7c098fa756dd6f698095a41589ad65fc2c2dbc148693b81d92df4fbd80e"
+      },
+      "extraAbility": {
+        "title": "運氣也是實力",
+        "description": "[額外能力] 隊伍中包含至少2名[物理属性]角色時觸發：[邦布連攜技]累積的屬性異常積蓄值提升100%。",
+        "attributes": [
+          {
+            "key": "",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5"
+            ]
+          },
+          {
+            "key": "屬性異常積蓄值提升",
+            "values": [
+              "100%",
+              "125%",
+              "150%",
+              "175%",
+              "200%"
+            ]
+          }
+        ],
+        "componentId": "talent41887"
+      },
+      "ownership": null,
+      "equipped": null,
+      "status": "recommended_unconfirmed_ownership",
+      "conditionVerified": true,
+      "recommendationBasis": "官方技能條件與目前隊伍名單相容，未進行全邦布傷害或循環實測比較。"
+    },
+    {
+      "teamId": "ye-shunguang-veil",
+      "wikiEntryId": "985",
+      "condition": {
+        "kind": "character",
+        "value": "ye_shunguang",
+        "minimum": 1,
+        "matchingCharacterIds": [
+          "ye_shunguang"
+        ]
+      },
+      "reason": "隊伍包含葉瞬光，符合芽芽的同心之契。決裁帷幕中的額外生劍效果須在該戰鬥狀態下觸發。",
+      "bangbooId": "bangboo_985",
+      "name": "芽芽",
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/12/29/e9c641b8db057f51a644c54d54621b97_3507731744732263654.png",
+      "source": {
+        "label": "芽芽・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/985?lang=zh-tw",
+        "entryId": "985",
+        "version": "1783779014",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "3dffc485841f5f512c7005563423f1d5ae5ce10468582547db414db664aa1d87"
+      },
+      "extraAbility": {
+        "title": "同心之契",
+        "description": "[額外能力] 隊伍中包含[葉瞬光]時觸發：芽芽造成的傷害提升30%。發動主動技時，如果處於[以太帷幕·決裁]，會在場地中生成1把[劍]。",
+        "attributes": [
+          {
+            "key": "",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5"
+            ]
+          },
+          {
+            "key": "傷害提升",
+            "values": [
+              "30%",
+              "37.5%",
+              "45%",
+              "52.5%",
+              "60%"
+            ]
+          }
+        ],
+        "componentId": "talent45"
+      },
+      "ownership": null,
+      "equipped": null,
+      "status": "recommended_unconfirmed_ownership",
+      "conditionVerified": true,
+      "recommendationBasis": "官方技能條件與目前隊伍名單相容，未進行全邦布傷害或循環實測比較。"
+    },
+    {
+      "teamId": "yixuan-sheer",
+      "wikiEntryId": "793",
+      "condition": {
+        "kind": "faction",
+        "value": "雲巋山",
+        "minimum": 2,
+        "matchingCharacterIds": [
+          "yixuan",
+          "ju_fufu"
+        ]
+      },
+      "reason": "儀玄與橘福福同屬雲巋山，符合獅耶的基礎額外能力條件。代理人終結技可縮短邦布主動技冷卻。",
+      "bangbooId": "bangboo_793",
+      "name": "獅耶",
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2025/06/04/70207dd0e8f09febea6b1e06e07e722d_5703079003259620936.png",
+      "source": {
+        "label": "獅耶・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/793?lang=zh-tw",
+        "entryId": "793",
+        "version": "1749198164",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "567c6c7fe9fccf414f877ce5695e395b31105f061e94382e9ee45cfd5f2f1b46"
+      },
+      "extraAbility": {
+        "title": "縱雲之道",
+        "description": "[額外能力] 隊伍中包含2名或以上[雲巋山]陣營的角色時觸發：獅耶造成的傷害提升25%。代理人發動[終結技]時，獅耶[主動技]的冷卻時間減少4秒，最多觸發2次，獅耶發動[主動技]時重置可觸發次數。",
+        "attributes": [
+          {
+            "key": "核心更新",
+            "values": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "key": "縱雲之道",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5"
+            ]
+          },
+          {
+            "key": "所需[雲巋山]角色數",
+            "values": [
+              "2",
+              "2",
+              "1",
+              "1",
+              "1"
+            ]
+          },
+          {
+            "key": "傷害提升",
+            "values": [
+              "25%",
+              "31%",
+              "37%",
+              "43%",
+              "50%"
+            ]
+          },
+          {
+            "key": "冷卻時間減少",
+            "values": [
+              "4秒",
+              "4秒",
+              "4秒",
+              "4秒",
+              "4秒"
+            ]
+          }
+        ],
+        "componentId": "talent59698"
+      },
+      "ownership": null,
+      "equipped": null,
+      "status": "recommended_unconfirmed_ownership",
+      "conditionVerified": true,
+      "recommendationBasis": "官方技能條件與目前隊伍名單相容，未進行全邦布傷害或循環實測比較。"
+    },
+    {
+      "teamId": "miyabi-disorder",
+      "wikiEntryId": "542",
+      "condition": {
+        "kind": "faction",
+        "value": "對空洞特別行動部第六課",
+        "minimum": 2,
+        "matchingCharacterIds": [
+          "miyabi",
+          "yanagi"
+        ]
+      },
+      "reason": "雅與柳同屬第六課，符合邦布突擊隊。增傷或積蓄效果仍取決於敵人的異常狀態。",
+      "bangbooId": "bangboo_542",
+      "name": "格列佛探員",
+      "iconUrl": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2024/12/17/a1daa7a41f6b4bbaeda796a472ba94f1_2378089684975694227.png",
+      "source": {
+        "label": "格列佛探員・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/542?lang=zh-tw",
+        "entryId": "542",
+        "version": "1744468031",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "579d4f81728e625cdd7536334339866d57731d667e2c1d7596d9c9333a09ca7c"
+      },
+      "extraAbility": {
+        "title": "邦布突擊隊",
+        "description": "[額外能力]隊伍中包含2名或以上[對空洞特別行動部第六課]陣營的角色時觸發：[主動技]和[邦布連攜技]命中處於[感電]狀態下的敵人時，造成的傷害提升30%。攻擊處於非電屬性的其他屬性異常狀態下的敵人時，累積的屬性異常積蓄值提升60%。",
+        "attributes": [
+          {
+            "key": "邦布突擊隊",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5"
+            ]
+          },
+          {
+            "key": "傷害提升",
+            "values": [
+              "30%",
+              "37%",
+              "45%",
+              "52%",
+              "60%"
+            ]
+          },
+          {
+            "key": "屬性異常累積值提升",
+            "values": [
+              "60%",
+              "75%",
+              "90%",
+              "105%",
+              "120%"
+            ]
+          }
+        ],
+        "componentId": "talent52548"
+      },
+      "ownership": null,
+      "equipped": null,
+      "status": "recommended_unconfirmed_ownership",
+      "conditionVerified": true,
+      "recommendationBasis": "官方技能條件與目前隊伍名單相容，未進行全邦布傷害或循環實測比較。"
+    },
+    {
+      "teamId": "manato-sheer",
+      "wikiEntryId": "878",
+      "condition": {
+        "kind": "faction",
+        "value": "怪啖屋",
+        "minimum": 2,
+        "matchingCharacterIds": [
+          "manato",
+          "lucia"
+        ]
+      },
+      "reason": "真斗與盧西婭同屬怪啖屋，符合星耀切換。接觸召喚物後的生命值或能量回復獲得提升。",
+      "bangbooId": "bangboo_878",
+      "name": "艾絲彌小姐",
+      "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/07/16/186855736/d23cb9a24d25c31a8b2cb84b20b7f2a8_1047001960847932971.png",
+      "source": {
+        "label": "艾絲彌小姐・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/878?lang=zh-tw",
+        "entryId": "878",
+        "version": "1782960595",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "852587685d5fdf5c10ea288d1713bc29bf94d83a5d8380c2819b0f25ebb76286"
+      },
+      "extraAbility": {
+        "title": "星耀切換",
+        "description": "[額外能力]隊伍中包含2名或以上[怪啖屋]陣營的角色時觸發：角色接觸[幻泡]時，回復的生命值提升20%角色接觸[星瑩]時，回復的能量值提升20%",
+        "attributes": [
+          {
+            "key": "",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5"
+            ]
+          },
+          {
+            "key": "所需[怪啖屋]角色數",
+            "values": [
+              "2",
+              "2",
+              "1",
+              "1",
+              "1"
+            ]
+          },
+          {
+            "key": "接觸[幻泡]時，回復的生命值提升",
+            "values": [
+              "20%",
+              "25%",
+              "30%",
+              "35%",
+              "40%"
+            ]
+          },
+          {
+            "key": "接觸[星瑩]時，回復的能量值提升",
+            "values": [
+              "20%",
+              "25%",
+              "30%",
+              "35%",
+              "40%"
+            ]
+          }
+        ],
+        "componentId": "talent72843"
+      },
+      "ownership": null,
+      "equipped": null,
+      "status": "recommended_unconfirmed_ownership",
+      "conditionVerified": true,
+      "recommendationBasis": "官方技能條件與目前隊伍名單相容，未進行全邦布傷害或循環實測比較。"
+    },
+    {
+      "teamId": "zhu-yuan-ether",
+      "wikiEntryId": "109",
+      "condition": {
+        "kind": "element",
+        "value": "以太",
+        "minimum": 2,
+        "matchingCharacterIds": [
+          "zhu_yuan",
+          "nicole"
+        ]
+      },
+      "reason": "朱鳶與妮可同為以太，啟動共鳴布的額外能力，增加邦布連攜技的以太異常積蓄。",
+      "bangbooId": "bangboo_109",
+      "name": "共鳴布",
+      "iconUrl": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2024/08/14/186855736/20660fe2f1fc198c07dbc673ff360491_4187981868145022470.png",
+      "source": {
+        "label": "共鳴布・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/109?lang=zh-tw",
+        "entryId": "109",
+        "version": "1749095108",
+        "checkedAt": "2026-11-13",
+        "rawSha256": "24bbc3fb82777f0027e63c66d0fd86cc9ac1f3596a150601b868f3631d5e1203"
+      },
+      "extraAbility": {
+        "title": "輻射效應",
+        "description": "[額外能力]隊伍中包含至少2名[以太屬性]角色時觸發：[邦布連攜技]累積的屬性異常積蓄值提升100%。",
+        "attributes": [
+          {
+            "key": "",
+            "values": [
+              "Lv.1",
+              "Lv.2",
+              "Lv.3",
+              "Lv.4",
+              "Lv.5"
+            ]
+          },
+          {
+            "key": "屬性異常積蓄值提升",
+            "values": [
+              "100%",
+              "125%",
+              "150%",
+              "175%",
+              "200%"
+            ]
+          }
+        ],
+        "componentId": "talent97582"
+      },
+      "ownership": null,
+      "equipped": null,
+      "status": "recommended_unconfirmed_ownership",
+      "conditionVerified": true,
+      "recommendationBasis": "官方技能條件與目前隊伍名單相容，未進行全邦布傷害或循環實測比較。"
+    }
+  ]
+}
