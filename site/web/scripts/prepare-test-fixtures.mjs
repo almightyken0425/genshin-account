@@ -12,6 +12,12 @@ mkdirSync(directory,{recursive:true});
 const baseline='388de3dc4c6384709ccb8d74971f8ed55d270600';
 for(const [from,to]of [['data/account.json','account.json'],['evidence/video_001/manifest.json','manifest.json'],['docs/account_summary.md','account_summary.md']])writeFileSync(path.join(directory,to),execFileSync('git',['-C',root,'show',baseline+':'+from]));
 
+// The accepted growth observations remain a fixed regression baseline after later imports.
+const focusBaseline='2afcdece74b98a3bcb9ff6cc7e252dcd7f994d6c';
+const focusAccount=JSON.parse(execFileSync('git',['-C',root,'show',focusBaseline+':data/zzz/account.json'],{encoding:'utf8'}));
+const focusIds=new Set(['ju_fufu','yanagi','miyabi','pyrois']);
+writeFileSync(path.join(directory,'zzz_growth_focus.json'),JSON.stringify(focusAccount.characters.filter(character=>focusIds.has(character.id)),null,2)+'\n');
+
 // Explicit test inputs only. Never imported by app/lib or included in publication.
 // A standalone Site checkout receives these ignored files before running tests.
 const digest=bytes=>createHash('sha256').update(bytes).digest('hex');

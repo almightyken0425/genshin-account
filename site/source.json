@@ -1,9 +1,9 @@
 {
   "project_id": "appgprj_6af3d7df0f3481919cbe1b4416108ff6",
-  "source_commit": "8ce7e0bf8d8db604668471883ef9fc009f821c26",
+  "source_commit": "6a5550f68f629b42342509ef751521ff189a194d",
   "site_url": "https://ken-genshin-archive.almightyken0425.chatgpt.site",
-  "version_id": "appgprj_6af3d7df0f3481919cbe1b4416108ff6~appgver_4bb69cafe33c81919fa3a32a7489434a",
-  "deployment_id": "appgdep_6af6d09dd4a88191b62ae706b5004615",
+  "version_id": "appgprj_6af3d7df0f3481919cbe1b4416108ff6~appgver_47d38b6cfcc48191819cb3508e4f8396",
+  "deployment_id": "appgdep_6af6e9a32a4081919bc6f586555b8fde",
   "review": {
     "id": "hoyo-layout-equipment-20261113",
     "based_on_commit": "e36f0599abce933c4678d87c48cf7e8baf21ffbc",
@@ -51,5 +51,48 @@
     "branch": "main",
     "account_merge_revision": "529c51780cd384cc6d7707a6780736fd8e44bb83",
     "snapshots_in_runtime": false
+  },
+  "version_number": 45,
+  "zzz_teams_removed": {
+    "checked_at": "2026-11-13",
+    "based_on_commit": "2afcdece74b98a3bcb9ff6cc7e252dcd7f994d6c",
+    "navigation": [
+      "roster",
+      "growth"
+    ],
+    "growth_observed_characters": 38,
+    "growth_existing_plans": 18,
+    "growth_unplanned_characters": 20,
+    "verification": {
+      "web_tests_passed": 244,
+      "typescript": "passed",
+      "build": "passed",
+      "browser": "preview_connection_timed_out",
+      "deployment": "succeeded"
+    },
+    "github_branch": "codex/zzz-remove-teams-and-growth-audit"
+  },
+  "zzz_growth_focus": {
+    "checked_at": "2026-11-13",
+    "based_on_commit": "2afcdece74b98a3bcb9ff6cc7e252dcd7f994d6c",
+    "characters": [
+      "ju_fufu",
+      "yanagi",
+      "miyabi",
+      "pyrois"
+    ],
+    "module": "web/lib/zzz_growth_focus.mjs",
+    "analysis": "analysis/2026_11_13_zzz_growth_audit.json",
+    "github_branch": "codex/zzz-remove-teams-and-growth-audit",
+    "verification": {
+      "web_tests_passed": 253,
+      "standalone_focus_tests_passed": 18,
+      "typescript": "passed",
+      "build": "passed",
+      "protected_file_count": 1068,
+      "protected_files_changed": 0,
+      "browser": "not_repeated_after_preview_timeout",
+      "deployment": "succeeded"
+    }
   }
 }

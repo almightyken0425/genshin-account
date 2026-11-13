@@ -1,0 +1,1086 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-13",
+  "based_on_commit": "2afcdece74b98a3bcb9ff6cc7e252dcd7f994d6c",
+  "goal": "移除絕區零配隊頁，依正式帳號觀測盤點培養缺口，至少提出三項具體建議。",
+  "sources": [
+    {
+      "id": "ju_fufu_official",
+      "url": "https://wiki.hoyolab.com/pc/zzz/entry/750?lang=zh-tw",
+      "checked_at": "2026-11-13",
+      "kind": "official_skill_table",
+      "applicability": "查核日現行頁面，角色技能及培養規則。帳號錄影版本未知。"
+    },
+    {
+      "id": "ju_fufu_review",
+      "url": "https://www.prydwen.gg/zenless/characters/ju-fufu",
+      "checked_at": "2026-11-13",
+      "kind": "original_theorycraft",
+      "applicability": "查核日現行頁面，角色技能及培養規則。帳號錄影版本未知。"
+    },
+    {
+      "id": "pyrois",
+      "url": "https://www.prydwen.gg/zenless/characters/pyrois",
+      "checked_at": "2026-11-13",
+      "kind": "original_theorycraft",
+      "applicability": "查核日現行頁面，角色技能及培養規則。帳號錄影版本未知。"
+    },
+    {
+      "id": "yanagi",
+      "url": "https://www.prydwen.gg/zenless/characters/yanagi",
+      "checked_at": "2026-11-13",
+      "kind": "original_theorycraft",
+      "applicability": "查核日現行頁面，角色技能及培養規則。帳號錄影版本未知。"
+    },
+    {
+      "id": "miyabi",
+      "url": "https://www.prydwen.gg/zenless/characters/miyabi",
+      "checked_at": "2026-11-13",
+      "kind": "original_theorycraft",
+      "applicability": "查核日現行頁面，角色技能及培養規則。帳號錄影版本未知。"
+    },
+    {
+      "id": "lucia",
+      "url": "https://www.prydwen.gg/zenless/characters/lucia",
+      "checked_at": "2026-11-13",
+      "kind": "original_theorycraft",
+      "applicability": "查核日現行頁面，角色技能及培養規則。帳號錄影版本未知。"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": 1,
+      "character_id": "ju_fufu",
+      "part": "普通攻擊",
+      "current": 6,
+      "suggested_target": 11,
+      "action": "先把普通攻擊由6升至11。連攜12、特殊11與核心F已到位，閃避不必一起升滿。",
+      "basis": "虎威屬於普通攻擊項。官方表列普通攻擊6與11的虎威失衡倍率為85.3%與101.3%。提升約18.8%僅指該招倍率，不代表整隊失衡速度或傷害增加同樣比例。",
+      "source_ids": [
+        "ju_fufu_official",
+        "ju_fufu_review"
+      ]
+    },
+    {
+      "priority": 2,
+      "character_id": "yanagi",
+      "part": "5號、6號驅動盤",
+      "current": {
+        "attack": 2702,
+        "anomaly_proficiency": 311,
+        "slot_5_main": "電屬性傷害加成30%",
+        "slot_5_observed_effective": 0,
+        "slot_6_main": "異常掌控30%",
+        "slot_6_observed_effective": 0
+      },
+      "action": "保留電傷與異常掌控主詞條及4混沌爵士加2自由藍調，優先換有異常精通、攻擊力%的5號與6號。先以每件至少3個已標記有效詞條作刷取停損點。",
+      "basis": "311精通仍有副詞條改善空間。3個是本次可執行的中繼目標，不是遊戲門檻。0僅指帳號目前的有效標記，固定攻擊和穿透仍可能提供少量傷害。",
+      "source_ids": [
+        "yanagi"
+      ]
+    },
+    {
+      "priority": 3,
+      "character_id": "miyabi",
+      "part": "4號驅動盤",
+      "current": {
+        "crit_rate": "70.6%",
+        "crit_damage": "109.2%",
+        "slot_4_main": "暴擊率24%",
+        "slot_4_observed_effective": 0
+      },
+      "action": "先保留暴率主詞條，換有暴擊傷害、攻擊力%的4號盤，並維持4折枝劍歌加2啄木鳥。不要因她屬異常角色就改成精通主詞條。",
+      "basis": "現有4號副詞條為固定攻擊76、穿透9、固定生命224與防禦9.6%。雅核心的暴率轉異常積蓄在80%封頂。折枝四件觸發時另加12%暴率，現有面板70.6%在該效果生效時可達82.6%，故不把面板未達80%直接視為缺口。",
+      "source_ids": [
+        "miyabi"
+      ]
+    },
+    {
+      "priority": 4,
+      "character_id": "pyrois",
+      "part": "5號驅動盤與雙暴分配",
+      "current": {
+        "mindscape": 4,
+        "crit_rate": "82.6%",
+        "crit_damage": "69.2%",
+        "engine": "日冕遺蛻60級1精",
+        "slot_4_main": "暴擊率24%",
+        "slot_5_main": "以太傷害加成30%",
+        "slot_5_observed_effective": 1
+      },
+      "action": "優先換5號盤的副詞條，補暴擊傷害、攻擊力%。4號暴傷盤列為候選，換前按日冕遺蛻與影畫計入後的實戰暴率比較，不只追求面板雙暴比。",
+      "basis": "公開原創分析要求先接近實戰100%暴率再補暴傷與攻擊。面板82.6%暴率、69.2%暴傷，加上專武及一影的額外暴率，有配置偏向暴率的風險。5號目前只有暴率2.4%為有效標記，另外三項為穿透9、防禦45與異常精通27。未取得進戰面板，不把110.6%假設值當成實測值。",
+      "source_ids": [
+        "pyrois"
+      ]
+    }
+  ],
+  "maintain": [
+    {
+      "character_id": "lucia",
+      "current_hp": 24628,
+      "action": "已超過24000初始生命的貫穿力增益門檻。雖然4、6號有效標記少，仍暫緩專為生命副詞條投入大量刷盤。",
+      "source_ids": [
+        "lucia"
+      ]
+    },
+    {
+      "character_ids": [
+        "ye_shunguang",
+        "yixuan"
+      ],
+      "action": "主軸普攻、核心及60級音擎已到位，裝備也全S+15。保留現況，先處理上述明確弱盤與技能。"
+    }
+  ],
+  "website_scope": {
+    "remove": "僅絕區零配隊頁及入口，舊連結回人物列表。",
+    "retain": "原神隊伍、兩遊戲角色頁與培養頁。",
+    "growth": "絕區零獨立呈現38名已記錄角色。原有18份技能規則沿用，其他角色不猜目標。",
+    "no_account_mutation": true,
+    "github_commit_or_push_authorized": true,
+    "authorization": "使用者本輪要求將四項建議加入絕區零培養頁、發布Sites並提交推送GitHub，不等待使用者審閱。",
+    "github_branch": "codex/zzz-remove-teams-and-growth-audit"
+  },
+  "character_snapshots": [
+    {
+      "id": "jane",
+      "name": "簡・杜",
+      "level": 60,
+      "mindscape": 2,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 12,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "淬鋒鉗刺",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 5
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 26
+    },
+    {
+      "id": "damielle",
+      "name": "蕾米埃爾・丹",
+      "level": 60,
+      "mindscape": 1,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 10,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "空羽復歸之詩",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 31
+    },
+    {
+      "id": "velina",
+      "name": "維琳娜・艾嘉德",
+      "level": 60,
+      "mindscape": 0,
+      "skills": {
+        "普通攻擊": 11,
+        "閃避": 10,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "琳琅鎏心",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 25
+    },
+    {
+      "id": "pyrois",
+      "name": "佩洛伊斯",
+      "level": 60,
+      "mindscape": 4,
+      "skills": {
+        "普通攻擊": 13,
+        "閃避": 9,
+        "支援技": 13,
+        "特殊技": 14,
+        "連攜技": 13,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "日冕遺蛻",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 26
+    },
+    {
+      "id": "nangong_yu",
+      "name": "南宮羽",
+      "level": 60,
+      "mindscape": 0,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 3,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "霓虹妄想",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 21
+    },
+    {
+      "id": "sunna",
+      "name": "千夏",
+      "level": 60,
+      "mindscape": 0,
+      "skills": {
+        "普通攻擊": 1,
+        "閃避": 1,
+        "支援技": 11,
+        "特殊技": 12,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "好鬥的阿炮",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 5
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 17
+    },
+    {
+      "id": "zhao",
+      "name": "照",
+      "level": 60,
+      "mindscape": 0,
+      "skills": {
+        "普通攻擊": 1,
+        "閃避": 1,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "正版變身器",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 18
+    },
+    {
+      "id": "lucia",
+      "name": "盧西婭·艾洛溫",
+      "level": 60,
+      "mindscape": 0,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 1,
+        "支援技": 11,
+        "特殊技": 12,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "鑄夢爐歌",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 16
+    },
+    {
+      "id": "yuzuha",
+      "name": "浮波柚葉",
+      "level": 60,
+      "mindscape": 0,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 1,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "啜泣搖籃",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 21
+    },
+    {
+      "id": "manato",
+      "name": "狛野真斗",
+      "level": 60,
+      "mindscape": 6,
+      "skills": {
+        "普通攻擊": 16,
+        "閃避": 10,
+        "支援技": 15,
+        "特殊技": 15,
+        "連攜技": 15,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "燔火朧夜",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 5
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 27
+    },
+    {
+      "id": "ye_shunguang",
+      "name": "葉瞬光",
+      "level": 60,
+      "mindscape": 2,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 11,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "雲霓孤光",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 30
+    },
+    {
+      "id": "ju_fufu",
+      "name": "橘福福",
+      "level": 60,
+      "mindscape": 0,
+      "skills": {
+        "普通攻擊": 6,
+        "閃避": 6,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 12,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "福虎爐爐",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 18
+    },
+    {
+      "id": "yixuan",
+      "name": "儀玄",
+      "level": 60,
+      "mindscape": 0,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 11,
+        "支援技": 12,
+        "特殊技": 12,
+        "連攜技": 12,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "青溟籠舍",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 30
+    },
+    {
+      "id": "pan_yinhu",
+      "name": "潘引壺",
+      "level": 60,
+      "mindscape": 6,
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 15,
+        "特殊技": 16,
+        "連攜技": 15,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "震元奇樞",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 5
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 11
+    },
+    {
+      "id": "vivian",
+      "name": "薇薇安·班希",
+      "level": 60,
+      "mindscape": 0,
+      "skills": {
+        "普通攻擊": 11,
+        "閃避": 7,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "飛鳥星夢",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 24
+    },
+    {
+      "id": "astra",
+      "name": "耀嘉音",
+      "level": 60,
+      "mindscape": 0,
+      "skills": {
+        "普通攻擊": 7,
+        "閃避": 7,
+        "支援技": 7,
+        "特殊技": 12,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "玲瓏妝匣",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 17
+    },
+    {
+      "id": "qingyi",
+      "name": "青衣",
+      "level": 60,
+      "mindscape": 0,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 1,
+        "支援技": 11,
+        "特殊技": 10,
+        "連攜技": 10,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "拘縛者",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 9
+    },
+    {
+      "id": "zhu_yuan",
+      "name": "朱鳶",
+      "level": 60,
+      "mindscape": 0,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 9,
+        "支援技": 9,
+        "特殊技": 10,
+        "連攜技": 9,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "硫磺石",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 19
+    },
+    {
+      "id": "seth",
+      "name": "賽斯·洛威爾",
+      "level": 60,
+      "mindscape": 6,
+      "skills": {
+        "普通攻擊": 13,
+        "閃避": 5,
+        "支援技": 16,
+        "特殊技": 15,
+        "連攜技": 15,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "維序者-特化型",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 5
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 12
+    },
+    {
+      "id": "miyabi",
+      "name": "星見雅",
+      "level": 60,
+      "mindscape": 0,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 10,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "雙生泣星",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 5
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 24
+    },
+    {
+      "id": "yanagi",
+      "name": "月城柳",
+      "level": 60,
+      "mindscape": 0,
+      "skills": {
+        "普通攻擊": 11,
+        "閃避": 11,
+        "支援技": 11,
+        "特殊技": 12,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "雙生泣星",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 5
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 15
+    },
+    {
+      "id": "soukaku",
+      "name": "蒼角",
+      "level": 60,
+      "mindscape": 6,
+      "skills": {
+        "普通攻擊": 9,
+        "閃避": 7,
+        "支援技": 11,
+        "特殊技": 15,
+        "連攜技": 15,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "含羞惡面",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 5
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 15
+    },
+    {
+      "id": "pulchra",
+      "name": "波可娜・費雷尼",
+      "level": 60,
+      "mindscape": 6,
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 14,
+        "特殊技": 13,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "裁紙刀",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 5
+      },
+      "discs_at_15": 4,
+      "disc_count": 6,
+      "observed_effective_total": 16
+    },
+    {
+      "id": "piper",
+      "name": "派派・韋爾",
+      "level": 60,
+      "mindscape": 6,
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 11,
+        "特殊技": 16,
+        "連攜技": 12,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "觸電唇彩",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 5
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 20
+    },
+    {
+      "id": "lucy",
+      "name": "露西亞娜・德・蒙特夫",
+      "level": 60,
+      "mindscape": 6,
+      "skills": {
+        "普通攻擊": 10,
+        "閃避": 6,
+        "支援技": 15,
+        "特殊技": 16,
+        "連攜技": 15,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "好鬥的阿炮",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 5
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 10
+    },
+    {
+      "id": "grace",
+      "name": "格莉絲・霍華德",
+      "level": 60,
+      "mindscape": 2,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 9,
+        "支援技": 9,
+        "特殊技": 12,
+        "連攜技": 10,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "雙生泣星",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 5
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 16
+    },
+    {
+      "id": "koleda",
+      "name": "珂蕾妲・貝洛伯格",
+      "level": 60,
+      "mindscape": 1,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 7,
+        "支援技": 11,
+        "特殊技": 12,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": null,
+        "level": 60,
+        "max_level": 60,
+        "refinement": null
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 20
+    },
+    {
+      "id": "anton",
+      "name": "安東・伊萬諾夫",
+      "level": 60,
+      "mindscape": 6,
+      "skills": {
+        "普通攻擊": 13,
+        "閃避": 13,
+        "支援技": 13,
+        "特殊技": 13,
+        "連攜技": 13,
+        "核心技": "D"
+      },
+      "engine": {
+        "name": "旋鑽機-赤軸",
+        "level": 50,
+        "max_level": 50,
+        "refinement": 5
+      },
+      "discs_at_15": 0,
+      "disc_count": 6,
+      "observed_effective_total": 8
+    },
+    {
+      "id": "ellen",
+      "name": "艾蓮・喬",
+      "level": 60,
+      "mindscape": 0,
+      "skills": {
+        "普通攻擊": 12,
+        "閃避": 11,
+        "支援技": 11,
+        "特殊技": 11,
+        "連攜技": 11,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "硫磺石",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 30
+    },
+    {
+      "id": "rina",
+      "name": "亞歷山德麗娜・莎芭絲緹安",
+      "level": 60,
+      "mindscape": 0,
+      "skills": {
+        "普通攻擊": 7,
+        "閃避": 7,
+        "支援技": 7,
+        "特殊技": 12,
+        "連攜技": 12,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "好鬥的阿炮",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 5
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 13
+    },
+    {
+      "id": "lycaon",
+      "name": "馮・萊卡恩",
+      "level": 60,
+      "mindscape": 3,
+      "skills": {
+        "普通攻擊": 13,
+        "閃避": 9,
+        "支援技": 13,
+        "特殊技": 13,
+        "連攜技": 13,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "拘縛者",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 20
+    },
+    {
+      "id": "nekomata",
+      "name": "貓宮 又奈",
+      "level": 60,
+      "mindscape": 1,
+      "skills": {
+        "普通攻擊": 11,
+        "閃避": 8,
+        "支援技": 9,
+        "特殊技": 9,
+        "連攜技": 9,
+        "核心技": "E"
+      },
+      "engine": {
+        "name": "鋼鐵肉墊",
+        "level": 50,
+        "max_level": 50,
+        "refinement": 1
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 21
+    },
+    {
+      "id": "nicole",
+      "name": "妮可・德瑪拉",
+      "level": 60,
+      "mindscape": 6,
+      "skills": {
+        "普通攻擊": 11,
+        "閃避": 12,
+        "支援技": 15,
+        "特殊技": 16,
+        "連攜技": 15,
+        "核心技": "F"
+      },
+      "engine": {
+        "name": "聚寶箱",
+        "level": 60,
+        "max_level": 60,
+        "refinement": 5
+      },
+      "discs_at_15": 6,
+      "disc_count": 6,
+      "observed_effective_total": 16
+    },
+    {
+      "id": "anby",
+      "name": "安比・德瑪拉",
+      "level": 60,
+      "mindscape": 6,
+      "skills": {
+        "普通攻擊": 13,
+        "閃避": 13,
+        "支援技": 12,
+        "特殊技": 13,
+        "連攜技": 13,
+        "核心技": "D"
+      },
+      "engine": {
+        "name": "德瑪拉電池Ⅱ型",
+        "level": 50,
+        "max_level": 50,
+        "refinement": 5
+      },
+      "discs_at_15": 0,
+      "disc_count": 6,
+      "observed_effective_total": 9
+    },
+    {
+      "id": "corin",
+      "name": "可琳・威克斯",
+      "level": 31,
+      "mindscape": 6,
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 5,
+        "特殊技": 5,
+        "連攜技": 5,
+        "核心技": "A"
+      },
+      "engine": {
+        "name": "居家服務員",
+        "level": 0,
+        "max_level": 10,
+        "refinement": 5
+      },
+      "discs_at_15": 5,
+      "disc_count": 6,
+      "observed_effective_total": 23
+    },
+    {
+      "id": "ben",
+      "name": "本・比格",
+      "level": 20,
+      "mindscape": 6,
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 5,
+        "特殊技": 5,
+        "連攜技": 5,
+        "核心技": "A"
+      },
+      "engine": {
+        "name": "震元奇樞",
+        "level": 0,
+        "max_level": 10,
+        "refinement": 5
+      },
+      "discs_at_15": 0,
+      "disc_count": 6,
+      "observed_effective_total": 6
+    },
+    {
+      "id": "billy",
+      "name": "比利・奇德",
+      "level": 20,
+      "mindscape": 6,
+      "skills": {
+        "普通攻擊": 5,
+        "閃避": 5,
+        "支援技": 5,
+        "特殊技": 5,
+        "連攜技": 5,
+        "核心技": "A"
+      },
+      "engine": {
+        "name": "仿製星徽引擎",
+        "level": 20,
+        "max_level": 20,
+        "refinement": 5
+      },
+      "discs_at_15": 4,
+      "disc_count": 6,
+      "observed_effective_total": 8
+    },
+    {
+      "id": "soldier_11",
+      "name": "11號",
+      "level": 1,
+      "mindscape": 1,
+      "skills": {
+        "普通攻擊": 1,
+        "閃避": 1,
+        "支援技": 1,
+        "特殊技": 1,
+        "連攜技": 1,
+        "核心技": 0
+      },
+      "engine": {
+        "name": "硫磺石",
+        "level": 0,
+        "max_level": 10,
+        "refinement": 1
+      },
+      "discs_at_15": 1,
+      "disc_count": 6,
+      "observed_effective_total": 9
+    }
+  ],
+  "working_tree_changes": {
+    "at_account_read": "clean main",
+    "current_branch": "codex/zzz-remove-teams-and-growth-audit",
+    "scope": [
+      "絕區零配隊頁移除與培養頁解耦",
+      "網站共用導航與培養卡相容調整",
+      "本次盤點與部署記錄",
+      "四項已確認培養建議加入共用培養卡"
+    ],
+    "account_data_unchanged": true
+  },
+  "generated_at": "2026-11-13T18:26:15+08:00",
+  "coverage": {
+    "account_path": "data/zzz/account.json",
+    "account_sha256": "693353f08b426a85770c365cd5491a0edf0aac085035ff364d7776319498756d",
+    "characters": 38,
+    "character_levels": {
+      "60": 34,
+      "31": 1,
+      "20": 2,
+      "1": 1
+    },
+    "core_levels": {
+      "F": 31,
+      "D": 2,
+      "E": 1,
+      "A": 3,
+      "0": 1
+    },
+    "engines_at_60": 31,
+    "s_rank_discs": 228,
+    "discs_at_15": 200,
+    "priority_character_ids": [
+      "pyrois",
+      "nangong_yu",
+      "sunna",
+      "ye_shunguang",
+      "zhao",
+      "jane",
+      "vivian",
+      "yuzuha",
+      "yixuan",
+      "ju_fufu",
+      "lucia",
+      "miyabi",
+      "yanagi",
+      "lycaon",
+      "soukaku"
+    ]
+  },
+  "missing_information": [
+    "錄影日期及適用遊戲版本未確認，這是已存觀測而非即時遊戲帳號。",
+    "沒有完整背包、資源預算及實戰面板，不假定有可立即替換的盤或額外音擎。",
+    "珂蕾妲音擎名稱、精煉和面板仍未確認。",
+    "低等角色是否投入取決於使用需求，未列成普遍優先升滿目標。"
+  ],
+  "status": "accepted",
+  "implementation": {
+    "status": "published",
+    "site_version": 45,
+    "site_url": "https://ken-genshin-archive.almightyken0425.chatgpt.site/?game=zzz&tab=growth",
+    "module": "site/web/lib/zzz_growth_focus.mjs",
+    "shared_component": "GrowthTargetCard",
+    "observation_change_behavior": "配裝或相關面板條件變更時改列待重評估，不沿用舊數字。普通攻擊達11級時移至完成。",
+    "github_branch": "codex/zzz-remove-teams-and-growth-audit"
+  }
+}
