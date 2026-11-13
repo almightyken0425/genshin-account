@@ -1,26 +1,36 @@
 export const ELEMENT_ORDER=['pyro','hydro','anemo','electro','dendro','cryo','geo'];
 const names=new Intl.Collator('zh-Hant',{numeric:true});
 
-/** Same-category alternatives are OR, different categories are AND. */
-export function selectRoster(characters,{filters,sorts,query='',effectiveTotals={},rarities={}}){
- const result=characters.filter(c=>
-  (!filters.rarities.length||filters.rarities.includes(rarities[c.id]))&&
-  (!filters.weapons.length||filters.weapons.includes(c.weapon_type))&&
-  (!filters.elements.length||filters.elements.includes(c.element))&&
-  c.name.includes(query.trim())
- );
- const elementRank=element=>{const index=ELEMENT_ORDER.indexOf(element);return index<0?ELEMENT_ORDER.length:index};
- const value=(c,key)=>key==='constellation'?c.constellation:key==='effective'?effectiveTotals[c.id]:c.level.current;
- return result.sort((a,b)=>{
+export function effectiveRatio(current,maximum){return Number.isFinite(current)&&current>=0&&Number.isFinite(maximum)&&maximum>0?current/maximum:null}
+
+/** Game adapters supply values; filtering and ordered comparison are shared. */
+export function selectRosterItems(items,{filters={},sorts=[],query='',getFacet,getValue,compareDefault}){
+ const needle=query.trim().toLocaleLowerCase('zh-Hant');
+ const unknown=value=>value==null||(typeof value==='number'&&!Number.isFinite(value));
+ return items.filter(item=>item.name.toLocaleLowerCase('zh-Hant').includes(needle)&&Object.entries(filters).every(([key,selected])=>{
+  if(!selected.length)return true;
+  const value=getFacet(item,key),values=Array.isArray(value)?value:[value];
+  return selected.some(option=>values.includes(option));
+ })).sort((a,b)=>{
   for(const rule of sorts){
-   const left=value(a,rule.key),right=value(b,rule.key);
-   // Unknown values stay last in both directions, and zero remains a real value.
-   if(left==null&&right!=null)return 1;
-   if(left!=null&&right==null)return -1;
-   if(left!=null&&right!=null&&left!==right)return rule.direction==='asc'?left-right:right-left;
+   const left=getValue(a,rule.key),right=getValue(b,rule.key);
+   if(unknown(left)&&!unknown(right))return 1;
+   if(!unknown(left)&&unknown(right))return -1;
+   if(!unknown(left)&&!unknown(right)){
+    const difference=typeof left==='number'&&typeof right==='number'?left-right:names.compare(String(left),String(right));
+    if(difference)return rule.direction==='asc'?difference:-difference;
+   }
   }
-  const group=elementRank(a.element)-elementRank(b.element)||names.compare(a.element,b.element);
-  if(group)return group;
-  return names.compare(a.name,b.name)||names.compare(a.id,b.id);
+  return (compareDefault?.(a,b)??0)||names.compare(a.name,b.name)||names.compare(a.id,b.id);
+ });
+}
+
+/** Same-category alternatives are OR, different categories are AND. */
+export function selectRoster(characters,{filters,sorts,query='',effectiveTotals={},maximumTotals={},rarities={}}){
+ const elementRank=element=>{const index=ELEMENT_ORDER.indexOf(element);return index<0?ELEMENT_ORDER.length:index};
+ return selectRosterItems(characters,{filters,sorts,query,
+  getFacet:(c,key)=>key==='rarities'?rarities[c.id]:key==='weapons'?c.weapon_type:c.element,
+  getValue:(c,key)=>({constellation:c.constellation,effective:effectiveTotals[c.id],maximum:maximumTotals[c.id],ratio:effectiveRatio(effectiveTotals[c.id],maximumTotals[c.id]),name:c.name,level:c.level.current})[key],
+  compareDefault:(a,b)=>elementRank(a.element)-elementRank(b.element)||names.compare(a.element??'',b.element??''),
  });
 }

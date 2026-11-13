@@ -1,0 +1,1566 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-13",
+  "based_on_commit": "e36f0599abce933c4678d87c48cf7e8baf21ffbc",
+  "based_on_site_source": "0d3bd38bbb36e429a64192f10f520919c3dba91c",
+  "based_account_sha256": "51159cc2f7493a68647ca84e87333a081c5c889dc692633bf7a37942fc3dc490",
+  "scope": "目前已觀測的47名原神角色，僅供角色詳情面板的培養有效屬性標記。",
+  "source_policy": "逐角色查核KQM原創理論分析及實測資料，不宣稱為遊戲官方配裝指引。來源版本逐項保留，查核日期不代表錄影或遊戲版本。",
+  "selection_policy": "依帳號現有武器、已採用配隊與角色職能判斷直接有效的面板屬性。條件式或另一套玩法保留理由，不直接亮底。有效不代表應無限追加，也不代表數值優先順序。",
+  "observation_boundary": "公開研究與遊戲畫面的聖遺物有效標記分開，不更新現況、強化次數、有效計數、理論上限或舊面板。",
+  "profiles": [
+    {
+      "id": "escoffier",
+      "name": "愛可菲",
+      "role": "後台冰傷與備用治療",
+      "effective_panel_keys": [
+        "atk",
+        "crit_rate",
+        "crit_dmg",
+        "cryo_dmg_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "energy_recharge",
+          "reason": "需要定期爆發治療時，先滿足循環需求。"
+        },
+        {
+          "key": "healing_bonus",
+          "reason": "只提高治療，現有定位以後台傷害優先。"
+        }
+      ],
+      "summary": "攻擊力同時影響冰傷及治療。現有絲柯克隊預設省略爆發，充能只在需要定期補血時生效。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 愛可菲角色攻略",
+          "url": "https://keqingmains.com/q/escoffier-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "5.6 充能計算，現行頁另含7.0星反應補充"
+        }
+      ]
+    },
+    {
+      "id": "furina",
+      "name": "芙寧娜",
+      "role": "後台水傷與爆發增益",
+      "effective_panel_keys": [
+        "hp",
+        "crit_rate",
+        "crit_dmg",
+        "energy_recharge",
+        "hydro_dmg_bonus"
+      ],
+      "conditional": [],
+      "summary": "生命提高召喚物傷害，雙暴提高個人傷害，充能支持每輪爆發。生命或水傷杯依外部增傷與命座比較。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 芙寧娜角色攻略",
+          "url": "https://keqingmains.com/q/furina-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "Luna II"
+        }
+      ]
+    },
+    {
+      "id": "voyanitsa",
+      "name": "沃雅妮莎",
+      "role": "討龍、生命增益與戰技支援",
+      "effective_panel_keys": [
+        "hp"
+      ],
+      "conditional": [
+        {
+          "key": "energy_recharge",
+          "reason": "主要水傷隊要求每輪爆發時有效，現有兩隊不預設此需求。"
+        },
+        {
+          "key": "crit_rate",
+          "reason": "主要水傷隊每輪爆發、提高個人爆發傷害或改西風武器時有效。"
+        },
+        {
+          "key": "crit_dmg",
+          "reason": "主要水傷隊每輪爆發、提高個人爆發傷害時有效。"
+        },
+        {
+          "key": "hydro_dmg_bonus",
+          "reason": "偏個人爆發輸出配裝時有效，現有討龍支援以生命優先。"
+        }
+      ],
+      "summary": "現有絲柯克與瑞希隊以戰技及討龍支援，優先生命提高固有天賦及命座增益。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 沃雅妮莎角色攻略",
+          "url": "https://keqingmains.com/q/vodyanitsa-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "7.1"
+        }
+      ]
+    },
+    {
+      "id": "skirk",
+      "name": "絲柯克",
+      "role": "站場冰傷主力",
+      "effective_panel_keys": [
+        "atk",
+        "crit_rate",
+        "crit_dmg",
+        "cryo_dmg_bonus"
+      ],
+      "conditional": [],
+      "summary": "以攻擊、雙暴與冰傷提高技能強化攻擊。爆發使用蛇之狡謀，不使用元素能量，充能無效。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 絲柯克角色攻略",
+          "url": "https://keqingmains.com/q/skirk-quickguide/",
+          "kind": "original_theorycraft"
+        }
+      ]
+    },
+    {
+      "id": "chasca",
+      "name": "恰斯卡",
+      "role": "轉換元素子彈的站場主力",
+      "effective_panel_keys": [
+        "atk",
+        "crit_rate",
+        "crit_dmg"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "蒸發、融化或其他由本人觸發的反應有效，通常低於攻擊與雙暴。"
+        },
+        {
+          "key": "energy_recharge",
+          "reason": "只為增加非必要爆發頻率，攻略不建議為每輪爆發特別堆充能。"
+        },
+        {
+          "key": "anemo_dmg_bonus",
+          "reason": "僅提高未轉換風子彈及其他風傷，並非全套子彈增益。"
+        },
+        {
+          "key": "pyro_dmg_bonus",
+          "reason": "隊友使子彈轉成火元素時只提高火子彈。"
+        },
+        {
+          "key": "hydro_dmg_bonus",
+          "reason": "隊友使子彈轉成水元素時只提高水子彈。"
+        },
+        {
+          "key": "cryo_dmg_bonus",
+          "reason": "隊友使子彈轉成冰元素時只提高冰子彈。"
+        },
+        {
+          "key": "electro_dmg_bonus",
+          "reason": "隊友使子彈轉成雷元素時只提高雷子彈。"
+        }
+      ],
+      "summary": "子彈轉成隊友元素，攻擊與雙暴通用；元素傷杯只影響對應種類子彈，不把自身風傷當通用增傷。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 恰斯卡角色攻略",
+          "url": "https://keqingmains.com/q/chasca-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "5.8"
+        }
+      ]
+    },
+    {
+      "id": "linnea",
+      "name": "莉奈婭",
+      "role": "月結晶後台輸出、增益與備用治療",
+      "effective_panel_keys": [
+        "def",
+        "crit_rate",
+        "crit_dmg",
+        "em"
+      ],
+      "conditional": [
+        {
+          "key": "energy_recharge",
+          "reason": "只有要求定期爆發治療時才需要，現有茲白隊按需使用。"
+        },
+        {
+          "key": "healing_bonus",
+          "reason": "只提高爆發治療。"
+        },
+        {
+          "key": "geo_dmg_bonus",
+          "reason": "僅提高普通岩傷，不提高直接月結晶主傷。"
+        }
+      ],
+      "summary": "防禦同時提高月結晶直接傷害、治療與精通增益。雙暴及精通提高月結晶傷害，岩傷不提高直接月結晶。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 莉奈婭角色攻略",
+          "url": "https://keqingmains.com/q/linnea-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "Luna VI"
+        }
+      ]
+    },
+    {
+      "id": "zibai",
+      "name": "茲白",
+      "role": "月結晶站場主力",
+      "effective_panel_keys": [
+        "def",
+        "crit_rate",
+        "crit_dmg",
+        "em"
+      ],
+      "conditional": [
+        {
+          "key": "energy_recharge",
+          "reason": "三岩搭莉奈婭時低成本達成每輪爆發可提高輸出，其他情況不為高充能犧牲主傷。"
+        },
+        {
+          "key": "geo_dmg_bonus",
+          "reason": "只提高常規岩傷，不提高主要的直接月結晶傷害。"
+        }
+      ],
+      "summary": "防禦與雙暴優先，精通提高月結晶。岩傷只影響少量常規岩傷，不能當主傷增幅。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 茲白角色攻略",
+          "url": "https://keqingmains.com/q/zibai-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "Luna VI，現行頁充能門檻已低於舊備份頁"
+        }
+      ]
+    },
+    {
+      "id": "xilonen",
+      "name": "希諾寧",
+      "role": "減抗與治療輔助",
+      "effective_panel_keys": [
+        "def",
+        "energy_recharge",
+        "crit_rate",
+        "healing_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "geo_dmg_bonus",
+          "reason": "只有改站場輸出定位才值得考慮。"
+        },
+        {
+          "key": "crit_dmg",
+          "reason": "只有改站場輸出定位才值得考慮。"
+        }
+      ],
+      "summary": "防禦提高治療，充能支持需要時爆發。現持西風劍，暴率提高產球可靠度，暴傷不提高增益。 治療加成提高本職能的治療量，治療充足後不必優先追加。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 希諾寧角色攻略",
+          "url": "https://keqingmains.com/q/xilonen-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "5.4"
+        }
+      ]
+    },
+    {
+      "id": "zhongli",
+      "name": "鍾離",
+      "role": "生命護盾輔助",
+      "effective_panel_keys": [
+        "hp"
+      ],
+      "conditional": [
+        {
+          "key": "crit_rate",
+          "reason": "改持西風長槍時用於觸發產球。"
+        },
+        {
+          "key": "energy_recharge",
+          "reason": "改用爆發輔助或爆發輸出時有效，純盾不需要。"
+        },
+        {
+          "key": "crit_dmg",
+          "reason": "改爆發輸出或月結晶傷害配裝時有效。"
+        },
+        {
+          "key": "geo_dmg_bonus",
+          "reason": "改常規岩傷爆發輸出時有效。"
+        },
+        {
+          "key": "em",
+          "reason": "改月結晶反應輸出時有效，不提高現有純盾效果。"
+        }
+      ],
+      "summary": "現持黑纓槍，以生命提高護盾。通用減抗與雙暴、充能無關。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 鍾離角色攻略",
+          "url": "https://keqingmains.com/q/zhongli-quickguide/",
+          "kind": "original_theorycraft"
+        }
+      ]
+    },
+    {
+      "id": "yumemizukimizuki",
+      "name": "夢見月瑞希",
+      "role": "星擴散站場主力",
+      "effective_panel_keys": [
+        "em",
+        "crit_rate",
+        "crit_dmg"
+      ],
+      "conditional": [
+        {
+          "key": "energy_recharge",
+          "reason": "只在需要更頻繁爆發自保時有效，星擴散隊不應主動追每輪爆發。"
+        },
+        {
+          "key": "anemo_dmg_bonus",
+          "reason": "僅提高常規風傷，不提高主要直接星擴散傷害。"
+        },
+        {
+          "key": "healing_bonus",
+          "reason": "只提高治療，不提高星擴散。"
+        }
+      ],
+      "summary": "現有奧黛塔與冰主會開啟星擴散，現行7.0攻略明列雙暴與精通。不可套用舊版常規擴散不能暴擊的配裝結論。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 夢見月瑞希角色攻略",
+          "url": "https://keqingmains.com/q/mizuki-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "7.0"
+        }
+      ]
+    },
+    {
+      "id": "kaedeharakazuha",
+      "name": "楓原萬葉",
+      "role": "精通增傷與聚怪輔助",
+      "effective_panel_keys": [
+        "em",
+        "energy_recharge"
+      ],
+      "conditional": [
+        {
+          "key": "crit_rate",
+          "reason": "改西風劍才作產球需求。"
+        },
+        {
+          "key": "atk",
+          "reason": "只提高少量常規技能傷害，不提高精通增傷或擴散，支援配裝不優先。"
+        },
+        {
+          "key": "crit_dmg",
+          "reason": "只提高常規技能傷害，支援配裝不優先。"
+        },
+        {
+          "key": "anemo_dmg_bonus",
+          "reason": "只提高常規風傷，支援配裝不優先。"
+        }
+      ],
+      "summary": "現有鐵蜂刺，精通同時提高擴散及隊伍元素增傷。充能用於現有那維萊特隊的爆發循環。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 楓原萬葉角色攻略",
+          "url": "https://keqingmains.com/q/kazuha-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "7.1"
+        }
+      ]
+    },
+    {
+      "id": "jean",
+      "name": "琴",
+      "role": "通用治療與風套輔助",
+      "effective_panel_keys": [
+        "atk",
+        "energy_recharge",
+        "crit_rate",
+        "crit_dmg",
+        "anemo_dmg_bonus",
+        "healing_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "日炎隊與班尼特配合、由本人觸發擴散反應時優先度大幅提高。"
+        }
+      ],
+      "summary": "攻擊提高治療及技能傷害。充能支援爆發，雙暴與風傷提高個人傷害。 治療加成提高本職能的治療量，治療充足後不必優先追加。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 琴角色攻略",
+          "url": "https://keqingmains.com/q/jean-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "4.0"
+        }
+      ]
+    },
+    {
+      "id": "odetta",
+      "name": "奧黛塔",
+      "role": "星擴散後台傷害支援",
+      "effective_panel_keys": [
+        "atk",
+        "crit_rate",
+        "crit_dmg",
+        "em"
+      ],
+      "conditional": [
+        {
+          "key": "energy_recharge",
+          "reason": "現有冰主隊建議隔輪爆發，按此頻率滿足需求即可，不追求每輪爆發。"
+        },
+        {
+          "key": "cryo_dmg_bonus",
+          "reason": "只提高普通冰傷，不提高星反應主要直接傷害。"
+        }
+      ],
+      "summary": "星反應直接傷害使用攻擊、雙暴與精通。現有西風劍也需要暴率。冰傷不提高星反應直接傷害。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 奧黛塔角色攻略",
+          "url": "https://keqingmains.com/q/odette-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "7.0"
+        }
+      ]
+    },
+    {
+      "id": "citlali",
+      "name": "茜特菈莉",
+      "role": "護盾、融化掛冰與討龍輔助",
+      "effective_panel_keys": [
+        "em",
+        "energy_recharge"
+      ],
+      "conditional": [
+        {
+          "key": "crit_rate",
+          "reason": "提高本人傷害或改西風秘典時有效，現有討龍盾輔不優先。"
+        },
+        {
+          "key": "crit_dmg",
+          "reason": "偏個人爆發融化傷害時有效，現有盾輔不優先。"
+        },
+        {
+          "key": "cryo_dmg_bonus",
+          "reason": "只在偏個人傷害配裝時有效，精通同時兼顧盾與傷害。"
+        }
+      ],
+      "summary": "精通提高護盾及部分傷害。現有瑪薇卡隊需要戰技與爆發維持夜魂及掛冰，充能有效。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 茜特菈莉角色攻略",
+          "url": "https://keqingmains.com/q/citlali-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "5.4"
+        }
+      ]
+    },
+    {
+      "id": "varesa",
+      "name": "瓦雷莎",
+      "role": "超載隊站場下落攻擊主力",
+      "effective_panel_keys": [
+        "atk",
+        "crit_rate",
+        "crit_dmg",
+        "electro_dmg_bonus",
+        "energy_recharge"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "只有改激化隊或特別以本人超載傷害為目標才考慮，現有配隊不作核心詞條。"
+        }
+      ],
+      "summary": "攻擊、雙暴與雷傷提高下落攻擊。現有雙雷超載隊若可低成本達成每輪兩次強化爆發，充能有用。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 瓦雷莎角色攻略",
+          "url": "https://keqingmains.com/q/varesa-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "7.1"
+        }
+      ]
+    },
+    {
+      "id": "raidenshogun",
+      "name": "雷電將軍",
+      "role": "爆發站場輸出與回能",
+      "effective_panel_keys": [
+        "atk",
+        "crit_rate",
+        "crit_dmg",
+        "energy_recharge",
+        "electro_dmg_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "改後台超綻放觸發者時成核心，此時不沿用雙暴與充能主C配裝。"
+        }
+      ],
+      "summary": "現持漁獲，以爆發站場輸出設定。充能支持循環並由固有天賦提高雷傷與回能。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 雷電將軍角色攻略",
+          "url": "https://keqingmains.com/q/raiden-quickguide/",
+          "kind": "original_theorycraft"
+        }
+      ]
+    },
+    {
+      "id": "keqing",
+      "name": "刻晴",
+      "role": "激化或雷傷站場主力",
+      "effective_panel_keys": [
+        "atk",
+        "crit_rate",
+        "crit_dmg",
+        "electro_dmg_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "激化與速綻隊有效，純雷隊不提供同樣收益。"
+        },
+        {
+          "key": "energy_recharge",
+          "reason": "常見隊伍需求極低，不需特別追求。"
+        }
+      ],
+      "summary": "攻擊、雙暴、雷傷提高技能與普重擊。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 刻晴角色攻略",
+          "url": "https://keqingmains.com/q/keqing-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "現行Quick Guide，Extended Guide 6.6"
+        }
+      ]
+    },
+    {
+      "id": "nefer",
+      "name": "奈芙爾",
+      "role": "月綻放站場主力",
+      "effective_panel_keys": [
+        "em",
+        "crit_rate",
+        "crit_dmg"
+      ],
+      "conditional": [
+        {
+          "key": "energy_recharge",
+          "reason": "爆發作月露銜接用途，現有三草隊通常100%即可，不主動犧牲雙暴精通追充能。"
+        },
+        {
+          "key": "dendro_dmg_bonus",
+          "reason": "只提高普通草傷，不提高主要直接月綻放。"
+        }
+      ],
+      "summary": "主要月綻放傷害使用精通與雙暴，攻擊及草傷不提高主要直接月綻放。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 奈芙爾角色攻略",
+          "url": "https://keqingmains.com/q/nefer-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "Luna II"
+        }
+      ]
+    },
+    {
+      "id": "lauma",
+      "name": "菈烏瑪",
+      "role": "月綻放精通增益支援",
+      "effective_panel_keys": [
+        "em",
+        "energy_recharge"
+      ],
+      "conditional": [
+        {
+          "key": "crit_rate",
+          "reason": "本人長按戰技月綻放傷害可以暴擊；以個人傷害為重或改持西風時更有效。"
+        },
+        {
+          "key": "crit_dmg",
+          "reason": "提高本人月綻放傷害，不提高精通增益。"
+        },
+        {
+          "key": "dendro_dmg_bonus",
+          "reason": "只提高普通草傷，不提高月綻放直接傷害。"
+        }
+      ],
+      "summary": "精通提高隊伍綻放相關增益與本人月綻放傷害，充能支援爆發。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 菈烏瑪角色攻略",
+          "url": "https://keqingmains.com/q/lauma-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "Luna V"
+        }
+      ]
+    },
+    {
+      "id": "nahida",
+      "name": "納西妲",
+      "role": "後台草附著、精通分享與技能傷害",
+      "effective_panel_keys": [
+        "em",
+        "energy_recharge",
+        "crit_rate",
+        "crit_dmg",
+        "dendro_dmg_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "atk",
+          "reason": "站場普攻或普通技能傷害有少量收益，後台精通支援不優先。"
+        }
+      ],
+      "summary": "精通提高技能傷害並提供精通分享。雙暴與草傷提高普通草傷技能，充能支持爆發覆蓋。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 納西妲角色攻略",
+          "url": "https://keqingmains.com/q/nahida-quickguide/",
+          "kind": "original_theorycraft"
+        }
+      ]
+    },
+    {
+      "id": "columbina",
+      "name": "哥倫比婭",
+      "role": "後台月反應主力與增益",
+      "effective_panel_keys": [
+        "hp",
+        "crit_rate",
+        "crit_dmg",
+        "em",
+        "energy_recharge"
+      ],
+      "conditional": [
+        {
+          "key": "hydro_dmg_bonus",
+          "reason": "一般水傷占比較高且月反應少的初輝隊更有效，現有月結晶及月綻放隊不作主傷屬性。"
+        }
+      ],
+      "summary": "生命提高直接月反應傷害及增益，雙暴與精通提高月反應，充能用於奈芙爾隊每輪爆發，茲白隊可按需。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 哥倫比婭角色攻略",
+          "url": "https://keqingmains.com/q/columbina-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "7.0"
+        }
+      ]
+    },
+    {
+      "id": "neuvillette",
+      "name": "那維萊特",
+      "role": "生命倍率重擊站場主力",
+      "effective_panel_keys": [
+        "hp",
+        "crit_rate",
+        "crit_dmg",
+        "hydro_dmg_bonus",
+        "energy_recharge"
+      ],
+      "conditional": [],
+      "summary": "重擊主傷使用生命而非攻擊。雙暴及水傷有效，充能支持水滴與爆發循環。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 那維萊特角色攻略",
+          "url": "https://keqingmains.com/q/neuvillette-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "Luna IV 充能計算，5.8配裝計算"
+        }
+      ]
+    },
+    {
+      "id": "yelan",
+      "name": "夜蘭",
+      "role": "後台水傷與爆發支援",
+      "effective_panel_keys": [
+        "hp",
+        "crit_rate",
+        "crit_dmg",
+        "hydro_dmg_bonus",
+        "energy_recharge"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "作妮露綻放主要觸發者或特定蒸發輸出時有效。"
+        }
+      ],
+      "summary": "生命提高技能及爆發傷害，爆發循環優先，攻擊不提高主傷。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 夜蘭角色攻略",
+          "url": "https://keqingmains.com/q/yelan-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "5.4"
+        }
+      ]
+    },
+    {
+      "id": "mavuika",
+      "name": "瑪薇卡",
+      "role": "融化站場與超載隊副主力",
+      "effective_panel_keys": [
+        "atk",
+        "crit_rate",
+        "crit_dmg",
+        "pyro_dmg_bonus",
+        "em"
+      ],
+      "conditional": [],
+      "summary": "現有融化主隊精通有效。火傷、攻擊及雙暴適用兩種定位。戰意取代元素能量，充能無效。 精通只對本人觸發的融化或蒸發增傷，在瓦雷莎超載隊不視為同等優先。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 瑪薇卡角色攻略",
+          "url": "https://keqingmains.com/q/mavuika-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "5.7"
+        }
+      ]
+    },
+    {
+      "id": "illuga",
+      "name": "葉洛亞",
+      "role": "茲白隊精通增益輔助",
+      "effective_panel_keys": [
+        "em",
+        "energy_recharge",
+        "crit_rate"
+      ],
+      "conditional": [
+        {
+          "key": "crit_dmg",
+          "reason": "僅提高低占比個人傷害。"
+        },
+        {
+          "key": "def",
+          "reason": "僅提高低占比個人傷害。"
+        },
+        {
+          "key": "geo_dmg_bonus",
+          "reason": "僅提高一般岩傷，不增加以精通決定的隊友增益。"
+        }
+      ],
+      "summary": "先滿足循環充能，精通提高夜鶯之歌；目前西風長槍使暴率有實際輔助用途。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 葉洛亞角色攻略",
+          "url": "https://keqingmains.com/q/illuga-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "7.1"
+        }
+      ]
+    },
+    {
+      "id": "charlotte",
+      "name": "夏洛蒂",
+      "role": "攻擊倍率治療輔助",
+      "effective_panel_keys": [
+        "atk",
+        "energy_recharge",
+        "healing_bonus",
+        "crit_rate"
+      ],
+      "conditional": [
+        {
+          "key": "crit_dmg",
+          "reason": "只在兼顧個人傷害時投資。"
+        },
+        {
+          "key": "cryo_dmg_bonus",
+          "reason": "只在兼顧個人傷害時投資。"
+        }
+      ],
+      "summary": "治療依攻擊力，且主要治療綁定爆發；雙暴及冰傷不是治療增益屬性。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 夏洛蒂角色攻略",
+          "url": "https://keqingmains.com/q/charlotte-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "4.7"
+        }
+      ]
+    },
+    {
+      "id": "arosha",
+      "name": "阿羅夏",
+      "role": "星超導治療輔助",
+      "effective_panel_keys": [
+        "atk",
+        "energy_recharge",
+        "healing_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "crit_rate",
+          "reason": "持西風長槍時提高產球可靠度，目前寒息不需要此條件。"
+        },
+        {
+          "key": "crit_dmg",
+          "reason": "只提高低占比個人傷害，不增加治療或固定星超導增益。"
+        },
+        {
+          "key": "electro_dmg_bonus",
+          "reason": "只提高一般雷傷，不增加治療或固定星超導增益。"
+        }
+      ],
+      "summary": "攻擊力提高治療；增攻百分比由戰技等級決定，星超導增傷為固定天賦效果；目前 C3 可考慮隔輪爆發。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 阿羅夏角色攻略",
+          "url": "https://keqingmains.com/q/alyosha-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "7.0"
+        }
+      ]
+    },
+    {
+      "id": "iansan",
+      "name": "伊安珊",
+      "role": "瓦雷莎隊攻擊增益兼治療輔助",
+      "effective_panel_keys": [
+        "atk",
+        "energy_recharge",
+        "healing_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "crit_rate",
+          "reason": "持西風長槍時提高產球可靠度，目前且住亭御咄沒有此要求。"
+        },
+        {
+          "key": "crit_dmg",
+          "reason": "只提高低占比個人傷害。"
+        },
+        {
+          "key": "electro_dmg_bonus",
+          "reason": "只提高一般雷傷。"
+        }
+      ],
+      "summary": "爆發增攻及天賦治療都吃自身攻擊力，循環充能先達需求。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 伊安珊角色攻略",
+          "url": "https://keqingmains.com/q/iansan-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "Luna II"
+        }
+      ]
+    },
+    {
+      "id": "ororon",
+      "name": "歐洛倫",
+      "role": "後台雷傷與繪卷輔助",
+      "effective_panel_keys": [
+        "atk",
+        "crit_rate",
+        "crit_dmg",
+        "energy_recharge",
+        "electro_dmg_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "觸發感電、月感電或超載時有額外收益；若作超載觸發者可改全精通。"
+        }
+      ],
+      "summary": "一般配裝為攻擊、雙暴與雷傷，先維持需要的爆發循環；精通價值取決於反應歸屬。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 歐洛倫角色攻略",
+          "url": "https://keqingmains.com/q/ororon-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "5.8"
+        }
+      ]
+    },
+    {
+      "id": "kukishinobu",
+      "name": "久岐忍",
+      "role": "超綻放觸發兼治療",
+      "effective_panel_keys": [
+        "em",
+        "hp",
+        "healing_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "energy_recharge",
+          "reason": "需要增加爆發頻率時有用，但超綻放配裝不應犧牲精通去堆充能。"
+        },
+        {
+          "key": "crit_rate",
+          "reason": "改用西風劍時有產球用途，激化個傷配裝亦有傷害用途。"
+        },
+        {
+          "key": "crit_dmg",
+          "reason": "只適用另建的激化個傷配裝。"
+        },
+        {
+          "key": "electro_dmg_bonus",
+          "reason": "只適用另建的激化個傷配裝，不提高超綻放。"
+        }
+      ],
+      "summary": "現有鐵蜂刺與全精通主詞條符合超綻放；精通提高反應及治療，生命與治療加成只服務生存。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 久岐忍角色攻略",
+          "url": "https://keqingmains.com/q/shinobu-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "5.4"
+        }
+      ]
+    },
+    {
+      "id": "fischl",
+      "name": "菲謝爾",
+      "role": "奧茲後台輸出",
+      "effective_panel_keys": [
+        "atk",
+        "crit_rate",
+        "crit_dmg",
+        "energy_recharge",
+        "electro_dmg_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "激化隊中接近攻擊百分比價值；其他隊中僅有少量反應收益。"
+        }
+      ],
+      "summary": "維持奧茲覆蓋所需充能後投資雙暴與攻擊；精通依激化等反應而定。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 菲謝爾角色攻略",
+          "url": "https://keqingmains.com/fischl/",
+          "kind": "original_theorycraft",
+          "version": "4.7"
+        }
+      ]
+    },
+    {
+      "id": "aino",
+      "name": "愛諾",
+      "role": "後台掛水與月兆輔助",
+      "effective_panel_keys": [
+        "em",
+        "energy_recharge"
+      ],
+      "conditional": [
+        {
+          "key": "crit_rate",
+          "reason": "持西風大劍時有產球用途；月感電或兼顧爆發個傷時可提高傷害。"
+        },
+        {
+          "key": "crit_dmg",
+          "reason": "月感電或兼顧爆發個傷時有用，一般掛水輔助不優先。"
+        },
+        {
+          "key": "atk",
+          "reason": "只提高低占比天賦傷害。"
+        },
+        {
+          "key": "hydro_dmg_bonus",
+          "reason": "只提高一般天賦水傷，不增加月感電或綻放。"
+        }
+      ],
+      "summary": "充能維持掛水，精通增加爆發附加基礎傷害與自己觸發的反應；目前拾慧鑄熔亦支援精通配裝。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 愛諾角色攻略",
+          "url": "https://keqingmains.com/q/aino-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "Luna I"
+        }
+      ]
+    },
+    {
+      "id": "xingqiu",
+      "name": "行秋",
+      "role": "後台掛水輸出",
+      "effective_panel_keys": [
+        "atk",
+        "crit_rate",
+        "crit_dmg",
+        "energy_recharge",
+        "hydro_dmg_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "只有自己觸發綻放等反應的特定隊伍才有較高價值。"
+        }
+      ],
+      "summary": "優先維持爆發，再以雙暴、攻擊與水傷提高雨簾劍輸出。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 行秋角色攻略",
+          "url": "https://keqingmains.com/q/xingqiu-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "5.7"
+        }
+      ]
+    },
+    {
+      "id": "bennett",
+      "name": "班尼特",
+      "role": "瑪薇卡隊增攻治療輔助",
+      "effective_panel_keys": [
+        "hp",
+        "energy_recharge",
+        "healing_bonus",
+        "crit_rate"
+      ],
+      "conditional": [
+        {
+          "key": "atk",
+          "reason": "只提高班尼特個人傷害，不提高爆發增攻。"
+        },
+        {
+          "key": "crit_dmg",
+          "reason": "只適用兼顧個傷或站場玩法。"
+        },
+        {
+          "key": "pyro_dmg_bonus",
+          "reason": "只適用兼顧個傷或站場玩法。"
+        },
+        {
+          "key": "em",
+          "reason": "自己觸發融化、蒸發、超載或烈綻放時有用。"
+        }
+      ],
+      "summary": "爆發增攻只吃角色白字基礎攻擊與武器白字，聖遺物攻擊不能提高該增益；生命與治療加成提高治療。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 班尼特角色攻略",
+          "url": "https://keqingmains.com/q/bennett-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "5.7"
+        }
+      ]
+    },
+    {
+      "id": "xiangling",
+      "name": "香菱",
+      "role": "後台火傷輸出",
+      "effective_panel_keys": [
+        "atk",
+        "crit_rate",
+        "crit_dmg",
+        "energy_recharge",
+        "pyro_dmg_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "香菱自己觸發蒸發、融化、超載或烈綻放時有效；純火、主動掛火讓隊友融化時不應同等重視。"
+        }
+      ],
+      "summary": "爆發循環優先，其次雙暴、攻擊與火傷；精通依反應歸屬變動。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 香菱角色攻略",
+          "url": "https://keqingmains.com/q/xiangling-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "4.5"
+        }
+      ]
+    },
+    {
+      "id": "mona",
+      "name": "莫娜",
+      "role": "討龍與星異增傷輔助",
+      "effective_panel_keys": [
+        "energy_recharge"
+      ],
+      "conditional": [
+        {
+          "key": "crit_rate",
+          "reason": "持西風秘典時為產球用途，或兼顧個人傷害時有用。"
+        },
+        {
+          "key": "crit_dmg",
+          "reason": "兼顧爆發或 C6 站場個傷時有用。"
+        },
+        {
+          "key": "atk",
+          "reason": "兼顧爆發或 C6 站場個傷時有用。"
+        },
+        {
+          "key": "hydro_dmg_bonus",
+          "reason": "兼顧一般水傷時有用。"
+        },
+        {
+          "key": "em",
+          "reason": "自己觸發蒸發、感電、月感電或綻放時有用。"
+        }
+      ],
+      "summary": "目前討龍定位優先讓爆發每輪可用；雙暴攻擊不增加星異的增傷百分比。C6 站場是另一套玩法，不能因現有 C6 就假定使用。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 莫娜角色攻略",
+          "url": "https://keqingmains.com/q/mona-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "7.1"
+        }
+      ]
+    },
+    {
+      "id": "noelle",
+      "name": "諾艾爾",
+      "role": "C6 站場岩傷兼全隊治療",
+      "effective_panel_keys": [
+        "def",
+        "atk",
+        "crit_rate",
+        "crit_dmg",
+        "energy_recharge",
+        "geo_dmg_bonus",
+        "healing_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "月結晶隊可用但很低優先，不應犧牲一般輸出屬性。"
+        }
+      ],
+      "summary": "目前 C6 及爆發顯示 13 級，防禦轉攻擊收益高；防禦同時提高護盾和治療，攻擊仍提高輸出。 治療加成提高本職能的治療量，治療充足後不必優先追加。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 諾艾爾角色攻略",
+          "url": "https://keqingmains.com/q/noelle-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "Luna VIII"
+        }
+      ]
+    },
+    {
+      "id": "ningguang",
+      "name": "凝光",
+      "role": "一般岩傷輸出",
+      "effective_panel_keys": [
+        "atk",
+        "crit_rate",
+        "crit_dmg",
+        "energy_recharge",
+        "geo_dmg_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "healing_bonus",
+          "reason": "改持試作金珀作治療工具人時可提高其治療，目前西風秘典不適用。"
+        }
+      ],
+      "summary": "普攻、戰技與爆發均以攻擊力為主要倍率，雙暴與岩傷提高一般傷害，充能達循環需求即可。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 凝光角色攻略",
+          "url": "https://keqingmains.com/ningguang/",
+          "kind": "original_theorycraft",
+          "version": "3.3"
+        }
+      ]
+    },
+    {
+      "id": "faruzan",
+      "name": "琺露珊",
+      "role": "C6 風系增益兼後台輸出",
+      "effective_panel_keys": [
+        "atk",
+        "crit_rate",
+        "crit_dmg",
+        "energy_recharge",
+        "anemo_dmg_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "改玩特定站場反應玩法才是主要投資。"
+        }
+      ],
+      "summary": "目前 C6 可在充能達標後兼顧攻擊、雙暴與風傷；暴率也服務現有西風獵弓。基礎攻擊決定的輔助加成不能等同總攻擊。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 琺露珊角色攻略",
+          "url": "https://keqingmains.com/faruzan/",
+          "kind": "original_theorycraft",
+          "version": "4.6"
+        }
+      ]
+    },
+    {
+      "id": "sucrose",
+      "name": "砂糖",
+      "role": "精通分享與擴散輔助",
+      "effective_panel_keys": [
+        "em"
+      ],
+      "conditional": [
+        {
+          "key": "energy_recharge",
+          "reason": "隊伍需要她使用爆發時有用，常規循環可視情況略過爆發。"
+        },
+        {
+          "key": "crit_rate",
+          "reason": "西風秘典產球，或參與月感電與星擴散傷害時計入暴擊。"
+        },
+        {
+          "key": "crit_dmg",
+          "reason": "月感電或星擴散時可提高該類可暴擊反應；一般擴散不吃雙暴。"
+        },
+        {
+          "key": "atk",
+          "reason": "只提高占比低的一般天賦傷害。"
+        },
+        {
+          "key": "anemo_dmg_bonus",
+          "reason": "只提高一般天賦風傷，不增加一般擴散、超綻放或星擴散。"
+        }
+      ],
+      "summary": "現有祭禮殘章與全精通主詞條，精通同時提高分享及擴散；雙暴須有可暴擊反應才提升主反應輸出。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 砂糖角色攻略",
+          "url": "https://keqingmains.com/q/sucrose-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "Luna VI"
+        },
+        {
+          "title": "KQM 星反應機制",
+          "url": "https://keqingmains.com/misc/stellar-reaction-guide/",
+          "kind": "original_theorycraft",
+          "version": "7.0"
+        }
+      ]
+    },
+    {
+      "id": "layla",
+      "name": "萊依拉",
+      "role": "生命護盾輔助",
+      "effective_panel_keys": [
+        "hp"
+      ],
+      "conditional": [
+        {
+          "key": "energy_recharge",
+          "reason": "需要每輪爆發維持掛冰或夜星時有用；可略過爆發的隊伍不用特別堆。"
+        },
+        {
+          "key": "crit_rate",
+          "reason": "西風劍產球或兼顧個人傷害時有用，目前銀釭不是西風。"
+        },
+        {
+          "key": "crit_dmg",
+          "reason": "兼顧個人傷害時有用。"
+        },
+        {
+          "key": "cryo_dmg_bonus",
+          "reason": "兼顧一般冰傷時有用。"
+        }
+      ],
+      "summary": "目前三生命主詞條走護盾定位；生命提高護盾且同時提高爆發及追加傷害。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 萊依拉角色攻略",
+          "url": "https://keqingmains.com/q/layla-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "4.6"
+        }
+      ]
+    },
+    {
+      "id": "diona",
+      "name": "迪奧娜",
+      "role": "護盾治療與充能輔助",
+      "effective_panel_keys": [
+        "hp",
+        "energy_recharge",
+        "healing_bonus",
+        "crit_rate"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "自己的特定反應才受益，C6 對站場者的固定 200 精通不依迪奧娜精通提高。"
+        }
+      ],
+      "summary": "生命同時提高護盾與治療；爆發治療及 C6 站場精通增益需要循環，現有西風獵弓使暴率有輔助用途。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 迪奧娜角色攻略",
+          "url": "https://keqingmains.com/q/diona-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "Luna VIII"
+        }
+      ]
+    },
+    {
+      "id": "kaeya",
+      "name": "凱亞",
+      "role": "後台冰傷輸出",
+      "effective_panel_keys": [
+        "atk",
+        "crit_rate",
+        "crit_dmg",
+        "energy_recharge",
+        "cryo_dmg_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "自己逆融化爆發、或參與星擴散傷害時有用；純冰凍結不提高主要天賦傷害。"
+        }
+      ],
+      "summary": "爆發循環後以雙暴攻擊與冰傷提高輸出；若改成專門掛冰讓火主輸出融化，充能與西風可靠度優先。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 凱亞角色攻略",
+          "url": "https://keqingmains.com/q/kaeya-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "Luna II"
+        }
+      ]
+    },
+    {
+      "id": "collei",
+      "name": "柯萊",
+      "role": "後台掛草兼一般草傷",
+      "effective_panel_keys": [
+        "atk",
+        "crit_rate",
+        "crit_dmg",
+        "energy_recharge",
+        "dendro_dmg_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "自己觸發綻放或蔓激化時更有效；純掛草超綻放配裝不應把反應傷害算給柯萊。"
+        }
+      ],
+      "summary": "優先確保掛草所需充能與套裝，其他輸出屬性僅提高柯萊個傷；特定純綻放可改精通配裝。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 柯萊角色攻略",
+          "url": "https://keqingmains.com/q/collei-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "5.8"
+        }
+      ]
+    },
+    {
+      "id": "barbara",
+      "name": "芭芭拉",
+      "role": "生命治療輔助",
+      "effective_panel_keys": [
+        "hp",
+        "healing_bonus"
+      ],
+      "conditional": [
+        {
+          "key": "energy_recharge",
+          "reason": "特定隊伍需要頻繁爆發治療時有用，常規純治療可以把爆發當緊急恢復。"
+        },
+        {
+          "key": "em",
+          "reason": "由芭芭拉觸發綻放或另建蒸發站場玩法時有用。"
+        },
+        {
+          "key": "atk",
+          "reason": "另建蒸發輸出玩法才優先。"
+        },
+        {
+          "key": "crit_rate",
+          "reason": "另建蒸發輸出玩法才優先。"
+        },
+        {
+          "key": "crit_dmg",
+          "reason": "另建蒸發輸出玩法才優先。"
+        },
+        {
+          "key": "hydro_dmg_bonus",
+          "reason": "另建一般水傷輸出玩法才優先。"
+        }
+      ],
+      "summary": "目前生命生命治療主詞條與蒼紋角杯，優先生命與治療加成；水傷與雙暴不提高海染泡沫或主要治療。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 芭芭拉角色攻略",
+          "url": "https://keqingmains.com/q/barbara-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "3.2"
+        }
+      ]
+    },
+    {
+      "id": "chevreuse",
+      "name": "夏沃蕾",
+      "role": "瓦雷莎隊火雷增益與治療",
+      "effective_panel_keys": [
+        "hp",
+        "healing_bonus",
+        "energy_recharge"
+      ],
+      "conditional": [
+        {
+          "key": "crit_rate",
+          "reason": "西風長槍產球或兼顧個人傷害時有用，目前黑纓槍非西風。"
+        },
+        {
+          "key": "crit_dmg",
+          "reason": "兼顧個人傷害時有用。"
+        },
+        {
+          "key": "atk",
+          "reason": "兼顧個人傷害時有用。"
+        },
+        {
+          "key": "pyro_dmg_bonus",
+          "reason": "兼顧一般火傷時有用。"
+        }
+      ],
+      "summary": "生命提高治療與增攻，增攻在40000生命封頂。超過後更多生命仍可提高治療。目前宗室配裝需要爆發維持增攻，充能有實際用途。",
+      "confidence": "high",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 夏沃蕾角色攻略",
+          "url": "https://keqingmains.com/q/chevreuse-quickguide/",
+          "kind": "original_theorycraft",
+          "version": "5.6"
+        }
+      ]
+    },
+    {
+      "id": "traveler_cryo",
+      "name": "旅行者・冰",
+      "role": "瑞希隊星擴散後台輸出與增益",
+      "effective_panel_keys": [
+        "atk",
+        "em",
+        "crit_rate",
+        "crit_dmg",
+        "energy_recharge"
+      ],
+      "conditional": [
+        {
+          "key": "cryo_dmg_bonus",
+          "reason": "只提高未轉為星反應的一般冰傷，不提高直接星超導或星擴散主傷。"
+        }
+      ],
+      "summary": "攻擊提高直接星反應倍率與轉精通、團隊反應基礎加成；精通與雙暴可提高星反應；爆發循環提供主要傷害。現有草傷杯不對應冰主技能。 這份屬性集合依公開技能與反應公式整理，屬於機制推論。",
+      "confidence": "medium",
+      "checked_at": "2026-11-13",
+      "sources": [
+        {
+          "title": "KQM 星反應機制",
+          "url": "https://keqingmains.com/misc/stellar-reaction-guide/",
+          "kind": "original_theorycraft",
+          "version": "7.0"
+        },
+        {
+          "title": "KQM 冰元素旅行者技能資料",
+          "url": "https://library.keqingmains.com/characters/cryo/traveler-cryo",
+          "kind": "community_verified_game_data",
+          "version": "7.0"
+        }
+      ]
+    }
+  ]
+}

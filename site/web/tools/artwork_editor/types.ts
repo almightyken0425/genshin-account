@@ -9,6 +9,7 @@ export type ArtworkEntry={
  id:string;
  name:string;
  metrics:[ArtworkMetric,ArtworkMetric,ArtworkMetric];
+ effectiveMaximum:number|null;
  sources:ArtworkSource[];
  sourcePath:string;
  view:CropView;

@@ -1,0 +1,41 @@
+{
+  "format": "reviewed_capture_v1",
+  "reviewed_at": "2026-11-13T07:09:18+00:00",
+  "based_on_commit": "e36f0599abce933c4678d87c48cf7e8baf21ffbc",
+  "verification": "agent_reviewed",
+  "changes": [
+    {
+      "artifact_id": "artifact_image_mavuika_plume_20261111",
+      "field": "substat_rolls.enhancements",
+      "before": [
+        2,
+        0,
+        1,
+        2
+      ],
+      "after": [
+        2,
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "notes": [
+    "新重塑詳情圖與新裝備詳情圖同件：副詞條16.3%、3.1%、9.9%、22.5%一致，+N逐項確認為2、0、1、2，沿用原次數。",
+    "本圖只作副詞條及+N對照，不單憑重塑資格或主攻擊值推算星級、等級。"
+  ],
+  "original_source": {
+    "file_name": "2026-11-13 15.05.14.jpg",
+    "sha256": "bcbd0ba835242d04effd95564b9cd9bd423d7b1ec7761baf6734b3548d5018fa"
+  },
+  "upstream": null,
+  "screenshot": {
+    "id": "mavuika_plume_rolls_review_20261113_shot_001",
+    "path": "evidence/mavuika_plume_rolls_review_20261113/screenshots/001.png",
+    "sha256": "bd1794e7d890c01f12e15d37b797ccc583df88658e8de4e54a9901aad5959ef5",
+    "width": 1280,
+    "height": 566,
+    "transform": "UID-only bottom crop; no recoloring, sharpening, or generated pixels."
+  }
+}

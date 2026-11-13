@@ -12,11 +12,11 @@ import {join} from 'node:path';
 const guides=JSON.parse(readFileSync(new URL('../lib/zzz_team_guides.json',import.meta.url),'utf8')).teams;
 const plans=JSON.parse(readFileSync(new URL('../lib/zzz_training_plans.json',import.meta.url),'utf8')).characters;
 const cacheDir=mkdtempSync(join(tmpdir(),'hoyo-guidance-ui-tests-'));
-let server,ZzzGrowthPage,ZzzTeamDetail;
+let server,ZzzGrowthPage,ZzzTeamDetail,ZzzTeamsOverview;
 before(async()=>{
  const root=fileURLToPath(new URL('../',import.meta.url));
  server=await createServer({configFile:false,root,cacheDir,plugins:[react()],resolve:{alias:{'@':root}},server:{middlewareMode:true,hmr:false},logLevel:'silent'});
- ({ZzzGrowthPage,ZzzTeamDetail}=await server.ssrLoadModule('/app/zzz_guidance.tsx'));
+ ({ZzzGrowthPage,ZzzTeamDetail,ZzzTeamsOverview}=await server.ssrLoadModule('/app/zzz_guidance.tsx'));
 });
 after(async()=>{await server?.close();rmSync(cacheDir,{recursive:true,force:true})});
 
@@ -24,7 +24,7 @@ function character(id,skills={}){
  return {id,name:id,level:60,mindscape:plans[id].observedMindscape,skills:{...plans[id].displayedCaps,'核心技':'F',...skills},stats:null,wEngine:{name:'已確認音擎',level:60,refinement:1,rarity:'A',stats:null},driveDiscs:null,evidence:[]};
 }
 const charactersFor=(team,overrides={})=>team.members.map(member=>character(member.id,overrides[member.id]));
-const renderGrowth=(team,characters)=>renderToStaticMarkup(createElement(ZzzGrowthPage,{teams:[team],characters,onOpenCharacter:()=>{}}));
+const renderGrowth=(team,characters)=>renderToStaticMarkup(createElement(ZzzGrowthPage,{teams:[team],characters,initialTeamId:team.id,onOpenCharacter:()=>{}}));
 const upgradeSection=html=>html.split('aria-label="可提升項目"')[1]?.split('</section>')[0]||'';
 
 test('shared member summary keeps observed values 13 to 16, zero and unknown in both pages',()=>{
@@ -57,11 +57,11 @@ test('same priority preserves team order and low priority remains visibly option
 
 test('completed targets use a native disclosure that starts closed',()=>{
  const team=guides[0],html=renderGrowth(team,charactersFor(team));
- const disclosure=html.match(/<details[^>]*zzz-guidance__growth-group--complete[^>]*>/)?.[0];
+ const disclosure=html.match(/<details[^>]*growth-disclosure--complete[^>]*>/)?.[0];
  assert.ok(disclosure);
  assert.doesNotMatch(disclosure,/\sopen(?:\s|=|>)/);
  assert.ok(html.includes('已達本次目標'));
- assert.ok(html.includes('本隊主要技能目標已到位，可繼續檢視裝備詞條與操作循環。'));
+ assert.ok(html.includes('目前主要技能目標已到位，可繼續檢視裝備詞條與操作循環。'));
 });
 
 test('unknown skill observations are not presented as completed training',()=>{
@@ -69,7 +69,8 @@ test('unknown skill observations are not presented as completed training',()=>{
  const html=renderGrowth(team,characters);
  assert.ok(upgradeSection(html).includes('先核對技能目標與觀測'));
  assert.ok(!upgradeSection(html).includes('主要技能目標已到位'));
- assert.ok(html.includes('目前 待核對'));
+ assert.ok(html.includes('aria-label="目前顯示待核對，本隊目標'));
+ assert.match(html,/<details[^>]*growth-disclosure--verify/);
 });
 
 test('unknown core or a missing teammate cannot make the whole team appear complete',()=>{
@@ -94,5 +95,52 @@ test('account assessment remains optional and exposes alternatives when supplied
  const original=guides[0],team={...original,accountAssessment:{verdict:'保留這套搭配',reason:'目前主線已到位',alternatives:['有生存需要時調整支援']}};
  const html=renderGrowth(team,charactersFor(team));
  for(const copy of ['保留這套搭配','目前主線已到位','有生存需要時調整支援'])assert.ok(html.includes(copy));
- assert.ok(renderGrowth({...original,accountAssessment:undefined},charactersFor(original)).includes('本隊培養方向'));
+ assert.ok(!renderGrowth({...original,accountAssessment:undefined},charactersFor(original)).includes('目前主線已到位'));
+ assert.ok(!html.includes('本隊培養方向'));
+});
+
+
+test('ZZZ overview shares the pure four-slot presentation without visible title or summary',()=>{
+ const team=guides[0],html=renderToStaticMarkup(createElement(ZzzTeamsOverview,{teams:[team],characters:charactersFor(team),onOpenTeam:()=>{}}));
+ assert.match(html,/shared-team-overview/);
+ assert.equal((html.match(/<button\b/g)||[]).length,1);
+ assert.equal((html.match(/<img\b/g)||[]).length,4);
+ assert.ok(html.includes(team.companion.src));
+ assert.doesNotMatch(html,/<h[1-6]\b|<strong\b|zzz-guidance__intro|zzz-guidance__card-copy/);
+ assert.ok(!html.includes(team.summary));
+});
+
+test('a team without a confirmed companion retains the shared fourth slot',()=>{
+ const team={...guides[0],companion:undefined};
+ const html=renderToStaticMarkup(createElement(ZzzTeamsOverview,{teams:[team],characters:charactersFor(team),onOpenTeam:()=>{}}));
+ assert.equal((html.match(/<img\b/g)||[]).length,3);
+ assert.match(html,/team-companion-placeholder/);
+});
+
+test('ZZZ detail keeps exact actions before a single closed supplement and a static companion slot',()=>{
+ const team=guides[0],html=renderToStaticMarkup(createElement(ZzzTeamDetail,{team,characters:charactersFor(team),onBack:()=>{},onOpenCharacter:()=>{}}));
+ assert.equal((html.match(/<details\b/g)||[]).length,1);
+ assert.match(html,/<summary>補充資訊<\/summary>/);
+ assert.doesNotMatch(html,/<details[^>]*\sopen(?:\s|=|>)/);
+ assert.equal((html.match(/aria-label="查看[^"]*角色詳情"/g)||[]).length,3);
+ const supplement=html.indexOf('<summary>補充資訊');
+ for(const step of team.steps){assert.ok(html.indexOf(step.action)>0);assert.ok(html.indexOf(step.action)<supplement)}
+ for(const text of [team.summary,team.reason,...team.activation])assert.ok(html.indexOf(text)>supplement,text);
+});
+
+test('all-team growth is the default and shared teammates produce one set of targets',()=>{
+ const selected=guides.filter(team=>team.members.some(member=>member.id==='ju_fufu'));
+ const ids=[...new Set(selected.flatMap(team=>team.members.map(member=>member.id)))];
+ const characters=ids.map(id=>character(id,id==='ju_fufu'?{'普通攻擊':6}:{}));
+ const html=renderToStaticMarkup(createElement(ZzzGrowthPage,{teams:selected,characters,onOpenCharacter:()=>{}}));
+ assert.match(html,/<option value="" selected="">全部隊伍<\/option>/);
+ assert.equal((upgradeSection(html).match(/aria-label="ju_fufu · 普通攻擊"/g)||[]).length,1);
+ assert.ok(!html.includes('本隊培養方向'));
+});
+
+test('choosing a team limits growth targets to its observed members',()=>{
+ const selected=guides.slice(0,2),ids=[...new Set(selected.flatMap(team=>team.members.map(member=>member.id)))],characters=ids.map(id=>character(id));
+ const html=renderToStaticMarkup(createElement(ZzzGrowthPage,{teams:selected,characters,initialTeamId:selected[1].id,onOpenCharacter:()=>{}}));
+ for(const member of selected[0].members.filter(member=>!selected[1].members.some(other=>other.id===member.id)))assert.ok(!html.includes('查看'+member.id+'角色詳情'));
+ for(const member of selected[1].members)assert.ok(html.includes('查看'+member.id+'角色詳情'));
 });

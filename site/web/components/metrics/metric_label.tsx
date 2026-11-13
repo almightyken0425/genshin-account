@@ -22,6 +22,8 @@ const metrics:Partial<Record<string,{short:string,Icon:typeof Heart}>>={
  '武器上限':{short:'上限',Icon:TrendingUp},
  '命之座':{short:'命座',Icon:Star},
  '有效詞條總數':{short:'有效',Icon:Flower2},
+ '目前有效次數／理論上限':{short:'有效／上限',Icon:Flower2},
+ '詞條上限／有效次數':{short:'上限／有效',Icon:Flower2},
  '精煉階數':{short:'精煉',Icon:Gem},
  '強化等級':{short:'強化',Icon:TrendingUp},
  '生命值':{short:'生命',Icon:Heart},

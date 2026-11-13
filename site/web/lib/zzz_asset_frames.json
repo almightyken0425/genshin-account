@@ -418,5 +418,185 @@
       152,
       152
     ]
+  },
+  "/assets/zzz/weapons/wiki_982.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      44,
+      0,
+      357,
+      400
+    ]
+  },
+  "/assets/zzz/weapons/wiki_782.png": {
+    "width": 5000,
+    "height": 4000,
+    "bounds": [
+      970,
+      289,
+      3581,
+      3885
+    ]
+  },
+  "/assets/zzz/weapons/wiki_378.png": {
+    "width": 156,
+    "height": 156,
+    "bounds": [
+      11,
+      11,
+      147,
+      141
+    ]
+  },
+  "/assets/zzz/weapons/wiki_76.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      4,
+      19,
+      388,
+      380
+    ]
+  },
+  "/assets/zzz/weapons/wiki_74.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      21,
+      18,
+      379,
+      380
+    ]
+  },
+  "/assets/zzz/weapons/wiki_73.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      0,
+      13,
+      400,
+      398
+    ]
+  },
+  "/assets/zzz/weapons/wiki_72.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      5,
+      0,
+      398,
+      394
+    ]
+  },
+  "/assets/zzz/weapons/wiki_71.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      12,
+      20,
+      390,
+      381
+    ]
+  },
+  "/assets/zzz/weapons/wiki_67.png": {
+    "width": 400,
+    "height": 400,
+    "bounds": [
+      28,
+      0,
+      374,
+      400
+    ]
+  },
+  "/assets/zzz/weapons/wiki_3.png": {
+    "width": 562,
+    "height": 562,
+    "bounds": [
+      41,
+      41,
+      517,
+      517
+    ]
+  },
+  "/assets/zzz/bangboo/bangboo_114.png": {
+    "width": 453,
+    "height": 672,
+    "bounds": [
+      57,
+      53,
+      413,
+      637
+    ]
+  },
+  "/assets/zzz/bangboo/bangboo_532.png": {
+    "width": 512,
+    "height": 512,
+    "bounds": [
+      85,
+      32,
+      393,
+      508
+    ]
+  },
+  "/assets/zzz/bangboo/bangboo_108.png": {
+    "width": 343,
+    "height": 533,
+    "bounds": [
+      30,
+      53,
+      314,
+      497
+    ]
+  },
+  "/assets/zzz/bangboo/bangboo_985.png": {
+    "width": 512,
+    "height": 512,
+    "bounds": [
+      57,
+      0,
+      437,
+      505
+    ]
+  },
+  "/assets/zzz/bangboo/bangboo_793.png": {
+    "width": 512,
+    "height": 512,
+    "bounds": [
+      87,
+      34,
+      401,
+      508
+    ]
+  },
+  "/assets/zzz/bangboo/bangboo_542.png": {
+    "width": 512,
+    "height": 512,
+    "bounds": [
+      85,
+      32,
+      394,
+      510
+    ]
+  },
+  "/assets/zzz/bangboo/bangboo_878.png": {
+    "width": 512,
+    "height": 512,
+    "bounds": [
+      85,
+      64,
+      430,
+      509
+    ]
+  },
+  "/assets/zzz/bangboo/bangboo_109.png": {
+    "width": 512,
+    "height": 512,
+    "bounds": [
+      85,
+      17,
+      381,
+      506
+    ]
   }
 }

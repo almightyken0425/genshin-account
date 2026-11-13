@@ -32,7 +32,7 @@
 | 媒體基礎 | [MediaImage](media/media_image.tsx) | 圖片載入、缺圖與失敗狀態。來源改變時重新建立載入狀態 |
 | 數值呈現 | [MetricLabel](metrics/metric_label.tsx)、[MetricValue](metrics/metric_value.tsx) | 標籤、圖示與欄位結構。格式化由呼叫端提供 |
 | 人物圖面 | [ImageSurface](character/image_surface.tsx) | 圖框、圖片適配、背景色與唯一的半透明疊層 |
-| 人物組合 | [CharacterCard](character/character_card.tsx)、[PortraitSummary](character/portrait_summary.tsx) | 列表按鈕與詳情摘要。共用三欄數值列 |
+| 人物組合 | [CharacterCard](character/character_card.tsx)、[PortraitSummary](character/portrait_summary.tsx) | 列表按鈕與詳情摘要。列表兩欄、詳情三欄數值 |
 | 裝備呈現 | [EquipmentTile](equipment/equipment_tile.tsx)、[ArtifactSubstat](equipment/artifact_substat.tsx) | 共用預覽按鈕、副詞條與有效數徽章。只顯示傳入結果 |
 | 導覽 | [GameNavigation](navigation/game_navigation.tsx)、[GameSwitch](navigation/game_switch.tsx)、[NavigationDock](navigation/navigation_dock.tsx)、[CenteredHeader](navigation/centered_header.tsx) | 共用三個分頁、遊戲切換、底部導覽生命週期、標題與返回操作 |
 | 隊伍呈現 | [TeamCard](teams/team_card.tsx)、[TeamMembers](teams/team_members.tsx) | 共用隊伍按鈕與成員導覽，按實際人數排列三人或四人隊 |
@@ -46,9 +46,9 @@
 
 ## 人物圖與數值
 
-列表卡片與詳情摘要都使用人物圖面。圖面依序包含圖片、半透明漸層與三個數值。
+列表卡片與詳情摘要都使用人物圖面。圖面依序包含圖片、半透明漸層與數值。列表保留兩項，詳情保留三項。
 
-- 列表只顯示數字。等級、命之座或影畫、有效詞條的名稱保留在輔助名稱與提示。
+- 列表只顯示命座或影畫，以及有效達成率整數百分比。名稱保留在輔助名稱與提示，不顯示等級。
 - 詳情數值列可以顯示圖示，仍使用同一疊層。切換完整模式不會讓這列出現文字標籤。
 - 呼叫端先計算有效詞條。元件保留 `0`，將 `null` 顯示為破折號。
 - 圖片適配由呼叫端提供。兩款遊戲共用圖面、背景與漸層結構。
@@ -64,19 +64,19 @@
 
 修改裁切表後執行 `npm run assets:roster`。使用 `npm run assets:roster -- --check` 重新產生並比對衍生圖片與來源紀錄。清單完整後才更新網站，避免部分角色回退成大頭貼。
 
-日常構圖調整使用 [本機圖片編輯器](../tools/artwork_editor/README.md)。四個總覽直接使用 CharacterCard 與 PortraitSummary，讓圖框、漸層與數值結構和網站一致。編輯器不取得遊戲計算責任，資料適配器提供實際帳號中的三項數值。
+日常構圖調整使用 [本機圖片編輯器](../tools/artwork_editor/README.md)。四個總覽直接使用 CharacterCard 與 PortraitSummary，讓圖框、漸層與數值結構和網站一致。編輯器不取得遊戲計算責任，資料適配器提供實際帳號數值，列表顯示兩項，詳情顯示三項。
 
 [共用裁切運算](../lib/artwork_math.mjs) 定義縮放、位移及輸出尺寸。瀏覽器遮罩與伺服器輸出使用相同座標。儲存後的圖像與來源校驗資料分別保存在 `public/assets/artwork_edits/` 及 `lib/artwork_edits.json`。兩款遊戲的素材選擇器優先讀取這份編輯稿，部署時也沿用同一份檔案。
 
 裝備預覽共用 [equipment_tile.css](equipment/equipment_tile.css)。精簡模式顯示圖片與展開提示，完整模式才顯示武器、聖遺物、音擎或驅動盤名稱。遊戲頁持有展開狀態與資料，EquipmentTile 保留原生按鈕屬性及輔助名稱。
 
-武器與音擎使用明確尺寸的方形格子，圖片完整置入並保留內距。完整武器立繪由 HoYoWiki 圖鑑取得，避免圖示來源已截斷尖端時仍靠放大容器處理。
+裝備預覽保留共用按鈕結構。原神武器已依使用者要求恢復HoYoWiki方形圖示，預覽與展開尺寸沿用完整立繪調整前的設定，不再額外內縮圖片。絕區零音擎維持既有方框與內距。
 
 ## 本次盤點的責任邊界
 
 | 項目 | 處理方式 | 理由 |
 | --- | --- | --- |
-| 人物列表、詳情與三欄數值 | 抽成同一套組合元件 | 兩款遊戲具有相同呈現與焦點需求 |
+| 人物列表、詳情與數值疊層 | 抽成同一套組合元件 | 兩款遊戲具有相同呈現與焦點需求 |
 | 圖片載入失敗 | 合併到 MediaImage | 避免兩套圖片元件對缺圖採不同處理 |
 | 底部導覽的捲動與焦點生命週期 | 合併到 NavigationDock | 兩頁原本具有相同事件與清理規則 |
 | 數值標籤、有效詞條與頁面標題 | 保留既有共用行為並整理目錄 | 已有多個呼叫端，不再新增平行實作 |

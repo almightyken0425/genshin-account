@@ -77,12 +77,12 @@ function plannedSkillActions(character,plan){
 function characterActions(character,plan){
  const actions=[];
  if(knownLevel(character.level)){
-  if(character.level<60)actions.push({id:'character-level',kind:'upgrade',title:'提升角色等級',detail:`目前${character.level}級，若用於這支隊伍，可先以60級為培養目標。`});
+  if(character.level<60)actions.push({id:'character-level',kind:'upgrade',current:character.level,target:60,title:'提升角色等級',detail:`目前${character.level}級，若用於這支隊伍，可先以60級為培養目標。`});
  }else actions.push({id:'character-level',kind:'verify',title:'核對角色等級',detail:'角色等級尚未確認，先補齊觀測再安排升級。'});
 
  const engine=character.wEngine;
  if(knownName(engine?.name)&&knownLevel(engine.level)){
-  if(engine.level<60)actions.push({id:'engine-level',kind:'upgrade',title:'提升音擎等級',detail:`${engine.name}目前${engine.level}級，可將已確認使用的音擎提升至60級。`});
+  if(engine.level<60)actions.push({id:'engine-level',kind:'upgrade',current:engine.level,target:60,title:'提升音擎等級',detail:`${engine.name}目前${engine.level}級，可將已確認使用的音擎提升至60級。`});
  }else{
   const detail=!knownName(engine?.name)?'音擎名稱尚未核對，先確認目前使用的音擎。':`${engine.name}的等級尚未核對，先確認等級再安排培養。`;
   actions.push({id:'engine-level',kind:'verify',title:'核對目前音擎',detail});
@@ -90,7 +90,7 @@ function characterActions(character,plan){
 
  const slots=discSlots(character.driveDiscs);
  const upgrades=slots.filter(({disc})=>disc?.rarity==='S'&&knownLevel(disc.level)&&disc.level<15);
- if(upgrades.length)actions.push({id:'disc-level',kind:'upgrade',title:'提升已確認的S級驅動盤',detail:upgrades.map(({slot,disc})=>`${slot}號盤目前${disc.level}級`).join('、')+'。若繼續使用這些盤，可提升至15級。'});
+ if(upgrades.length)actions.push({id:'disc-level',kind:'upgrade',current:upgrades.map(({slot,disc})=>`${slot}號 ${disc.level}`).join('、'),target:15,title:'提升已確認的S級驅動盤',detail:upgrades.map(({slot,disc})=>`${slot}號盤目前${disc.level}級`).join('、')+'。若繼續使用這些盤，可提升至15級。'});
  const ineffective=slots.filter(({disc})=>disc?.level===15&&effectiveDiscCount(disc)===0);
  if(ineffective.length)actions.push({id:'disc-effectiveness',kind:'verify',title:'檢視已強化盤的副詞條',detail:ineffective.map(({slot})=>slot+'號盤').join('、')+'：目前已強化15級，但觀測未記有效副詞條。先核對主詞條、套裝與隊伍用途，再決定是否更換。'});
  const missing=slots.filter(({disc})=>!disc||!knownName(disc.rarity)||!knownLevel(disc.level)||effectiveDiscCount(disc)===null);

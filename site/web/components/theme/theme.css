@@ -32,6 +32,11 @@
  --art-shade:linear-gradient(180deg,rgba(18,20,24,0),rgba(18,20,24,.92));
  --on-art:#f5f6f8;
  --dock-surface:rgba(30,34,41,.94);
+ --glass-solid:#20252d;
+ --glass-surface:var(--glass-solid);
+ --glass-line:var(--line);
+ --glass-filter:none;
+ --glass-shadow:var(--shadow-dock);
  --scrim:rgba(7,9,12,.82);
  --focus-ring:#c1d7f7;
  --shadow-card:0 12px 36px rgba(0,0,0,.18);
@@ -42,4 +47,17 @@
  --radius-control:10px;
  --background:var(--canvas);
  --foreground:var(--ink);
+}
+
+/* Only navigation and controls opt into glass. Content surfaces stay opaque. */
+@supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+ :root{
+  --glass-surface:linear-gradient(135deg,rgba(54,63,77,.86),rgba(25,30,38,.78));
+  --glass-line:rgba(186,205,232,.24);
+  --glass-filter:blur(22px) saturate(145%);
+  --glass-shadow:inset 0 1px 0 rgba(241,247,255,.07),0 12px 40px rgba(0,0,0,.34);
+ }
+}
+@media(prefers-reduced-transparency:reduce){
+ :root{--glass-surface:var(--glass-solid);--glass-line:var(--line);--glass-filter:none;--glass-shadow:var(--shadow-dock)}
 }

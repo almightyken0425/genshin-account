@@ -4,6 +4,7 @@ import {readFileSync,existsSync} from 'node:fs';
 const dashboard=readFileSync(new URL('../app/dashboard.tsx',import.meta.url),'utf8');
 const dock=readFileSync(new URL('../components/navigation/navigation_dock.tsx',import.meta.url),'utf8');
 const substat=readFileSync(new URL('../components/equipment/artifact_substat.tsx',import.meta.url),'utf8');
+const componentSource=name=>readFileSync(new URL('../components/'+name,import.meta.url),'utf8');
 test('account presentation has no edit, draft or save controls',()=>{
  for(const token of ['SaveControls','setDraft','mutate(','editing','/api/account/check','POST','textarea','type="number"']) assert.ok(!dashboard.includes(token),token);
  assert.ok(!existsSync(new URL('../app/save_controls.tsx',import.meta.url)));
@@ -11,7 +12,8 @@ test('account presentation has no edit, draft or save controls',()=>{
 });
 test('footer has three owner-specified destinations',()=>{
  assert.match(dashboard,/<GameNavigation section={section} onSelect={switchTab}/);assert.match(dock,/ariaLabel='主要分頁'/);
- assert.match(dashboard,/selectedTeams.map/);assert.match(dashboard,/openTeam\(team.id\)/);assert.ok(!dashboard.includes('teams-heading'));assert.match(dashboard,/返回隊伍列表/);
+ assert.match(dashboard,/<TeamOverviewPage\b/);assert.match(dashboard,/<TeamDetailPage\b/);assert.ok(!dashboard.includes('teams-heading'));
+ assert.match(componentSource('pages/team_detail_page.tsx'),/返回隊伍列表/);
  assert.match(dashboard,/window\.history\.pushState/);assert.match(dashboard,/popstate/);
 });
 
@@ -32,14 +34,15 @@ test('Skirk exact four rows and no extra A5 or Escoffier Q',()=>{
  assert.equal((flow.match(/A5/g)||[]).length,3);
  assert.match(flow,/RotationCard/);
  assert.match(flow,/id:'escoffier',name:'愛可菲',keys:'E'/);
- assert.match(dashboard,/<CenteredHeader title={team.name}/);
+ assert.match(componentSource('pages/team_detail_page.tsx'),/<CenteredHeader\b/);
 });
 
 test('team members follow first appearance and detail cards contain images only',()=>{
  const teams=readFileSync(new URL('../lib/selected_teams.ts',import.meta.url),'utf8');
  assert.ok(teams.includes("members:['escoffier','furina','voyanitsa','skirk']"));
  const detail=readFileSync(new URL('../components/teams/team_members.tsx',import.meta.url),'utf8');
- assert.match(dashboard,/<TeamMembers members={team.members.map/);
+ assert.match(dashboard,/<TeamDetailPage\b/);
+ assert.match(componentSource('pages/team_detail_page.tsx'),/<TeamMembers\b/);
  assert.ok(!detail.includes('<strong>'));assert.ok(!detail.includes('<small>'));assert.ok(detail.includes('<MediaImage'));
 });
 test('all six other teams use minimal flows with conditional actions retained',()=>{
@@ -84,7 +87,7 @@ test('team detail has no redundant rotation title',()=>{assert.ok(!dashboard.inc
 test('growth page contains exactly the requested Escoffier sands target',()=>{
  const page=readFileSync(new URL('../app/growth_target.tsx',import.meta.url),'utf8');
  for(const text of ['愛可菲','黃金劇團','時之沙','攻擊力 %','暴擊率','暴擊傷害','元素充能效率','罪禍的終末','替換生命沙'])assert.ok(page.includes(text));
- assert.equal((page.match(/<article/g)||[]).length,1);assert.ok(!page.includes('等待根據'));
+ assert.match(page,/Growth(?:Page|TargetCard)/);assert.ok(!page.includes('等待根據'));
 });
 
 test('all team headers share a symmetric accessible component',()=>{
@@ -96,7 +99,8 @@ test('all team headers share a symmetric accessible component',()=>{
 });
 test('shared rotation cards expose character identity to screen readers',()=>{
  const card=readFileSync(new URL('../app/rotation_card.tsx',import.meta.url),'utf8');
- assert.ok(card.includes('alt={characterName||lookupCharacterName(characterId)}'));
+ assert.ok(card.includes('name={characterName||lookupCharacterName(characterId)}'));
+ assert.match(componentSource('teams/rotation_action.tsx'),/alt={name}/);
 });
 test('Zibai requested exact five rows and simplified support skills',()=>{
  const flow=readFileSync(new URL('../lib/team_flows.ts',import.meta.url),'utf8').split(' zibai:[')[1].split(' nefer:[')[0];

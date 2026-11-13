@@ -1,0 +1,18 @@
+import type {ZzzAgent} from './zzz_types';
+export type ZzzCatalog=Record<string,{rarity?:string|null;element?:string|null;specialty?:string|null;faction?:string|null}>;
+export type ZzzRosterFilters={rarities:string[];elements:string[];specialties:string[];factions:string[];mindscapes:string[];cultivation:string[]};
+export type ZzzSortKey='level'|'mindscape'|'effective'|'maximum'|'ratio'|'name';
+export type ZzzSortRule={key:ZzzSortKey;direction:'asc'|'desc'};
+export type ZzzRosterState={query:string;filters:ZzzRosterFilters;sorts:ZzzSortRule[]};
+export const ZZZ_ELEMENT_ORDER:string[];
+export const ZZZ_SPECIALTY_ORDER:string[];
+export const ZZZ_SORT_KEYS:ZzzSortKey[];
+export const ZZZ_CULTIVATION_OPTIONS:{value:string;label:string}[];
+export function normalizeZzzElement(value:unknown):string|null;
+export function normalizeZzzSpecialty(value:unknown):string|null;
+export function emptyZzzFilters():ZzzRosterFilters;
+export function zzzCultivation(character:ZzzAgent):string[];
+export function zzzFacet(character:ZzzAgent,key:string,catalog?:ZzzCatalog):string|string[]|null;
+export function selectZzzRoster(characters:readonly ZzzAgent[],options?:{filters?:ZzzRosterFilters;sorts?:ZzzSortRule[];query?:string;catalog?:ZzzCatalog;effectiveTotals?:Record<string,number|null>;maximumTotals?:Record<string,number|null>}):ZzzAgent[];
+export function parseZzzRosterState(serialized:string|null|undefined):ZzzRosterState;
+export function serializeZzzRosterState(state:ZzzRosterState):string|null;

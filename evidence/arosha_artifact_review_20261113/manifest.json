@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "id": "arosha_artifact_review_20261113",
+  "imported_at": "2026-11-13T07:09:18+00:00",
+  "media": {
+    "type": "image",
+    "file_name": "029.png",
+    "sha256": "b219f0e83e8153b42a6bac4cc99b2e942a9daca094a94cac95a1611a2960f430",
+    "resolution": [
+      848,
+      384
+    ],
+    "recorded_at": null,
+    "game_version": null,
+    "stored_in_repo": true
+  },
+  "extraction": {
+    "path": "imports/arosha_artifact_review_20261113/extracted.json",
+    "sha256": "a447d59062cb05980354ac71eae040cddea72a81691846730785b748b5a3f6e9"
+  },
+  "screenshots": [
+    {
+      "id": "arosha_artifact_review_20261113_shot_001",
+      "path": "evidence/arosha_artifact_review_20261113/screenshots/001.png",
+      "sha256": "dc97f8a32409b1d847d74ec4e7598bdf35eb1f91ebc227fa0e4a296a9807f011",
+      "time_seconds": null,
+      "character_id": "arosha",
+      "kind": "artifact_goblet",
+      "verification": "agent_reviewed"
+    }
+  ],
+  "notes": [
+    "直接二讀既有029原截圖，暴擊傷害列有淡色填底，和同圖元素充能列及羽、沙有效列交叉核對，修正為有效。",
+    "暴擊傷害7.0%、強化0次及物品ID不變，包含初始1次後杯有效次數由2改3。",
+    "IMG_5684.MP4未在下載資料夾找到，本次不宣稱重新讀取原片；原截圖與既有manifest的SHA已核對。新到的5679、5689、5690影片均為其他既有來源，未拿來冒充5684。"
+  ]
+}

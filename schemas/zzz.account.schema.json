@@ -144,7 +144,7 @@
                   "integer",
                   "null"
                 ],
-                "minimum": 1,
+                "minimum": 0,
                 "maximum": 60
               },
               "refinement": {
@@ -167,6 +167,14 @@
                     "null"
                   ]
                 }
+              },
+              "maxLevel": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1,
+                "maximum": 60
               }
             },
             "additionalProperties": true

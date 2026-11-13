@@ -18,9 +18,10 @@ export function zzzEquipmentFrame(kind:'engine'|'disc',name:string|null|undefine
  const frame=src?(frames as Record<string,AssetFrame>)[src]:undefined;
  if(!frame)return undefined;
  const [left,top,right,bottom]=frame.bounds;
+ const basis=Math.max(frame.width,frame.height);
  return {
-  scale:frame.width/Math.max(right-left,bottom-top),
-  translateX:(frame.width-left-right)/frame.width*50,
-  translateY:(frame.height-top-bottom)/frame.height*50,
+  scale:basis/Math.max(right-left,bottom-top),
+  translateX:(frame.width-left-right)/basis*50,
+  translateY:(frame.height-top-bottom)/basis*50,
  };
 }

@@ -86,7 +86,7 @@ test('ZZZ artwork provenance is local, complete and hash verified',()=>{
  assert.equal(manifest.sources.filter(item=>item.kind==='icon').length,38);
  const paths=new Set(manifest.sources.map(item=>item.path));
  assert.equal(paths.size,manifest.sources.length);
- const active=new Set([...Object.values(catalog.characters).flatMap(art=>Object.values(art)),...Object.values(catalog.engines),...Object.values(catalog.discs)]);
+ const active=new Set([...Object.values(catalog.characters).flatMap(art=>Object.values(art)),...Object.values(catalog.engines),...Object.values(catalog.discs),...Object.values(catalog.bangboo)]);
  assert.deepEqual([...paths].sort(),[...active].sort());
  const assetRoot=new URL('../public/assets/zzz/',import.meta.url);
  const files=readdirSync(assetRoot,{recursive:true}).map(name=>name.replaceAll('\\','/')).filter(name=>statSync(new URL(name,assetRoot)).isFile()).map(name=>'/assets/zzz/'+name);
@@ -101,9 +101,9 @@ test('ZZZ artwork provenance is local, complete and hash verified',()=>{
   assert.equal(createHash('sha256').update(readFileSync(new URL('../public'+item.path,import.meta.url))).digest('hex'),item.sha256);
  }
 });
-test('equipment framing covers every engine and disc without extending beyond original pixels',()=>{
+test('equipment framing covers every unique engine, disc and companion without extending beyond original pixels',()=>{
  const frames=JSON.parse(readFileSync(new URL('../lib/zzz_asset_frames.json',import.meta.url)));
- const equipment=[...Object.values(catalog.engines),...Object.values(catalog.discs)];
+ const equipment=[...new Set([...Object.values(catalog.engines),...Object.values(catalog.discs),...Object.values(catalog.bangboo)])];
  assert.equal(Object.keys(frames).length,equipment.length);
  for(const src of equipment){
   const frame=frames[src];assert.ok(frame,src);
@@ -111,6 +111,17 @@ test('equipment framing covers every engine and disc without extending beyond or
   const [left,top,right,bottom]=frame.bounds;
   assert.ok(left>=0&&top>=0&&right<=frame.width&&bottom<=frame.height,src);
   assert.ok(right>left&&bottom>top,src);
+ }
+});
+test('eight recommended companions use original transparent Wiki assets and unknown ownership',()=>{
+ const guides=JSON.parse(readFileSync(new URL('../lib/zzz_team_guides.json',import.meta.url)));
+ assert.equal(Object.keys(catalog.bangboo).length,8);
+ for(const team of guides.teams){
+  assert.equal(team.companion.status,'recommended');
+  assert.equal(team.companion.src,catalog.bangboo[team.companion.id]);
+  const record=manifest.sources.find(item=>item.path===team.companion.src);
+  assert.equal(record.sourceProvider,'HoYoWiki');
+  assert.equal(record.transform.type,'none');
  }
 });
 test('display portraits do not fall back to video crops and preserve evidence API',()=>{

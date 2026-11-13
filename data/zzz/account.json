@@ -39,6 +39,7 @@
         "name": "淬鋒鉗刺",
         "rarity": "S",
         "level": 60,
+        "maxLevel": 60,
         "refinement": 5,
         "stats": {
           "基礎攻擊力": 713,
@@ -408,6 +409,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 5.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/jane_engine_t005.50.jpg",
+          "sha256": "6e25c16b367df303c9f289e5c59548494fa8faebd3397294fc2275d86f0b42d4",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -457,6 +473,7 @@
         "name": "空羽復歸之詩",
         "rarity": "S",
         "level": 60,
+        "maxLevel": 60,
         "refinement": 1,
         "stats": {
           "基礎攻擊力": 743,
@@ -819,6 +836,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 21,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/damielle_engine_t021.00.jpg",
+          "sha256": "e6d5f84ae70261c55d427ac6d1fadec5bd8a7e2e8dbbbac77e71998206bfe0c6",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -865,9 +897,10 @@
         "核心技": "F"
       },
       "wEngine": {
-        "name": "琳琅遠心",
+        "name": "琳琅鎏心",
         "rarity": "S",
         "level": 60,
+        "maxLevel": 60,
         "refinement": 1,
         "stats": {
           "基礎攻擊力": 713,
@@ -1237,6 +1270,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 29,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/velina_engine_t029.00.jpg",
+          "sha256": "be5de7fd069a0208df794f9c476af52f2a5f0a11603116d69fb0e6ef08b29189",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -1286,6 +1334,7 @@
         "name": "日冕遺蛻",
         "rarity": "S",
         "level": 60,
+        "maxLevel": 60,
         "refinement": 1,
         "stats": {
           "基礎攻擊力": 713,
@@ -1648,6 +1697,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 43,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/pyrois_engine_t043.00.jpg",
+          "sha256": "ec24999d10fc2045b5e3ba8879f63de101a83452cd8bde541f231cecb31ef105",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -1697,6 +1761,7 @@
         "name": "霓虹妄想",
         "rarity": "S",
         "level": 60,
+        "maxLevel": 60,
         "refinement": 1,
         "stats": {
           "基礎攻擊力": 713,
@@ -2059,6 +2124,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 57,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/nangong_yu_engine_t057.00.jpg",
+          "sha256": "4d75a808495b9bcfa264078d9670a6b35c473da39dbef8dab4bfa0537d107608",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -2108,6 +2188,7 @@
         "name": "好鬥的阿炮",
         "rarity": "A",
         "level": 60,
+        "maxLevel": 60,
         "refinement": 5,
         "stats": {
           "基礎攻擊力": 624,
@@ -2470,6 +2551,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 61,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/sunna_engine_t061.00.jpg",
+          "sha256": "b9112394f13365bd9db397497fc4e7003e56cf7c250c8e4a5405041e3bd8fc75",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -2519,6 +2615,7 @@
         "name": "正版變身器",
         "rarity": "A",
         "level": 60,
+        "maxLevel": 60,
         "refinement": 1,
         "stats": {
           "基礎攻擊力": 594,
@@ -2881,6 +2978,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 83,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/zhao_engine_t083.00.jpg",
+          "sha256": "78d0b715c2d4f7818be55a0f7466f75cae2f946f260c8f14366d0090d47d96fd",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -2928,9 +3040,9 @@
       },
       "wEngine": {
         "name": "鑄夢爐歌",
+        "rarity": "S",
         "level": 60,
         "maxLevel": 60,
-        "rarity": "S",
         "refinement": 1,
         "stats": {
           "基礎攻擊力": 713,
@@ -3297,6 +3409,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 91,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/lucia_engine_t091.00.jpg",
+          "sha256": "ac48972bf8576c4f7f8405127b6b7e53de97aeb6cf761ca9eca67582540462c4",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -3344,9 +3471,9 @@
       },
       "wEngine": {
         "name": "啜泣搖籃",
+        "rarity": "S",
         "level": 60,
         "maxLevel": 60,
-        "rarity": "S",
         "refinement": 1,
         "stats": {
           "基礎攻擊力": 684,
@@ -3713,6 +3840,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 103,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/yuzuha_engine_t103.00.jpg",
+          "sha256": "d9977d6d85cc83de9c6da41063b5969bc0fdee7b11f2ff13dffd0a2040268d1a",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -3762,9 +3904,9 @@
       },
       "wEngine": {
         "name": "燔火朧夜",
+        "rarity": "A",
         "level": 60,
         "maxLevel": 60,
-        "rarity": "A",
         "refinement": 5,
         "stats": {
           "基礎攻擊力": 624,
@@ -4131,6 +4273,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 112,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/manato_engine_t112.00.jpg",
+          "sha256": "4e1ee6c7c0a1e49bcec736031ef6c82eb01102f968b12dc769c6691e58a303e2",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -4178,7 +4335,17 @@
         "連攜技": 12,
         "核心技": "F"
       },
-      "wEngine": null,
+      "wEngine": {
+        "name": "雲霓孤光",
+        "rarity": "S",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 743,
+          "暴擊傷害": "48%"
+        }
+      },
       "driveDiscs": [
         {
           "slot": 1,
@@ -4529,6 +4696,32 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 117,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/ye_shunguang_association_t117.00.jpg",
+          "sha256": "600462e7993e49985753b4137df3bcd8b185c6dc8377d9e6720d44855bf3aca9",
+          "page": "角色辨識",
+          "fields": [
+            "id",
+            "wEngine"
+          ]
+        },
+        {
+          "timestampSec": 120,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/ye_shunguang_engine_t120.00.jpg",
+          "sha256": "88204d8f3b4643218972ffd68a59c6604e782bfb6024016c4656a5dc42792d09",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -4576,9 +4769,9 @@
       },
       "wEngine": {
         "name": "福虎爐爐",
+        "rarity": "S",
         "level": 60,
         "maxLevel": 60,
-        "rarity": "S",
         "refinement": 1,
         "stats": {
           "基礎攻擊力": 713,
@@ -4945,6 +5138,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 133,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/ju_fufu_engine_t133.00.jpg",
+          "sha256": "9d603583be01df5505ef8d15e1af1f0728eb83141bbbb4bfbf8468bda4149291",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -4992,7 +5200,17 @@
         "連攜技": 12,
         "核心技": "F"
       },
-      "wEngine": null,
+      "wEngine": {
+        "name": "青溟籠舍",
+        "rarity": "S",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 743,
+          "生命值": "30%"
+        }
+      },
       "driveDiscs": [
         {
           "slot": 1,
@@ -5350,6 +5568,32 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 136.7,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/yixuan_association_t136.70.jpg",
+          "sha256": "cb93bf20c3c6ac6366b781a526de323cff3cdd6e3cd520e8060a2250d10bead1",
+          "page": "角色辨識",
+          "fields": [
+            "id",
+            "wEngine"
+          ]
+        },
+        {
+          "timestampSec": 144,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/yixuan_engine_t144.00.jpg",
+          "sha256": "4c99177472ea5444cfcad33f7773cc6bfd6905b816b1ea1c95c1f1a800f92745",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -5399,9 +5643,9 @@
       },
       "wEngine": {
         "name": "震元奇樞",
+        "rarity": "A",
         "level": 60,
         "maxLevel": 60,
-        "rarity": "A",
         "refinement": 5,
         "stats": {
           "基礎攻擊力": 624,
@@ -5768,6 +6012,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 149,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/pan_yinhu_engine_t149.00.jpg",
+          "sha256": "560667a500d1606741d7df967168901b9e0dca7d261c101c4add1cc8ef878fdf",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -5815,9 +6074,9 @@
       },
       "wEngine": {
         "name": "飛鳥星夢",
+        "rarity": "S",
         "level": 60,
         "maxLevel": 60,
-        "rarity": "S",
         "refinement": 1,
         "stats": {
           "基礎攻擊力": 713,
@@ -6184,6 +6443,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 165.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/vivian_engine_t165.50.jpg",
+          "sha256": "fcee7864268ec77b62e796450e5ce168d1613ef4be4c0eba12b0bfa84f01589d",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -6231,9 +6505,9 @@
       },
       "wEngine": {
         "name": "玲瓏妝匣",
+        "rarity": "S",
         "level": 60,
         "maxLevel": 60,
-        "rarity": "S",
         "refinement": 1,
         "stats": {
           "基礎攻擊力": 713,
@@ -6600,6 +6874,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 173,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/astra_engine_t173.00.jpg",
+          "sha256": "ce5ff9aef7ed7919aeb453e04f7480cf62074614fcdac5f0b35eed1fa77bfe12",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -6647,9 +6936,9 @@
       },
       "wEngine": {
         "name": "拘縛者",
+        "rarity": "S",
         "level": 60,
         "maxLevel": 60,
-        "rarity": "S",
         "refinement": 1,
         "stats": {
           "基礎攻擊力": 684,
@@ -7016,6 +7305,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 185,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/qingyi_engine_t185.00.jpg",
+          "sha256": "77171159ee48bc9bc505b54c9202b79e8cf8cb4bf48a33d7fdf4e12efff8d0c7",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -7063,9 +7367,9 @@
       },
       "wEngine": {
         "name": "硫磺石",
+        "rarity": "S",
         "level": 60,
         "maxLevel": 60,
-        "rarity": "S",
         "refinement": 1,
         "stats": {
           "基礎攻擊力": 684,
@@ -7432,6 +7736,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 193,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/zhu_yuan_engine_t193.00.jpg",
+          "sha256": "900908fdcba60126670be4864fe77d25e4c859cc92ebb9e19a4c446b26654ba7",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -7477,7 +7796,17 @@
         "連攜技": 15,
         "核心技": "F"
       },
-      "wEngine": null,
+      "wEngine": {
+        "name": "維序者-特化型",
+        "rarity": "A",
+        "level": 60,
+        "maxLevel": 60,
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "攻擊力": "25%"
+        }
+      },
       "driveDiscs": [
         {
           "slot": 1,
@@ -7837,6 +8166,32 @@
             "skills.特殊技",
             "skills.連攜技",
             "skills.核心技"
+          ]
+        },
+        {
+          "timestampSec": 211,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/seth_association_t211.00.jpg",
+          "sha256": "aec814c097af8f2a293ffff5b4cf1b7d4f3cf9b63f5343b5b45471c67d3b206d",
+          "page": "角色辨識",
+          "fields": [
+            "id",
+            "wEngine"
+          ]
+        },
+        {
+          "timestampSec": 202,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/seth_engine_t202.00.jpg",
+          "sha256": "9ce6235d86f90d644c2daef9eb07a2ce016365b76d0eed5321fe7111f921d98d",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.rarity",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.refinement",
+            "wEngine.stats"
           ]
         }
       ],
@@ -8248,6 +8603,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 220.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/miyabi-engine-220.5.jpg",
+          "sha256": "0481f916aa501708058d2bca929aa42a02b8fd26dd77a787cdf2058b12652ca8",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -8658,6 +9028,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 228.9,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/yanagi-228.9.jpg",
+          "sha256": "23a01688b8410b2e5a811348c79621ff7cec5b194a89d24f03b520496ce3414d",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -8703,7 +9088,17 @@
         "連攜技": 15,
         "核心技": "F"
       },
-      "wEngine": null,
+      "wEngine": {
+        "name": "含羞惡面",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "攻擊力": "25%"
+        }
+      },
       "driveDiscs": [
         {
           "id": "soukaku_slot_1_video001",
@@ -9048,6 +9443,21 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 245.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/soukaku-engine-245.5.jpg",
+          "sha256": "0b2c9e9315c9aaacb22a1f360a0e218c9b6bfb3949d1fa48f97c0a3ea7f8f3f6",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [],
@@ -9095,8 +9505,13 @@
       "wEngine": {
         "name": "裁紙刀",
         "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
         "refinement": 5,
-        "stats": {}
+        "stats": {
+          "基礎攻擊力": 624,
+          "衝擊力": "15%"
+        }
       },
       "driveDiscs": [
         {
@@ -9455,11 +9870,24 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 254.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/pulchra-engine-254.5.jpg",
+          "sha256": "14f6984cd49319bdbd1e4d40713a7f1ad252cb4920b2f852539e52ad8da35d7f",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
-      "uncertainties": [
-        "音擎稀有度、面板數值待核對"
-      ],
+      "uncertainties": [],
       "specialty": "擊破",
       "portraitPath": "evidence/zzz/video_001/pulchra_portrait.jpg",
       "portraitSha256": "dd6beefcecac9aea58b48c790df1b95b5e66f8b5c1ae114e1c47320da7eca9c9",
@@ -9502,7 +9930,17 @@
         "連攜技": 12,
         "核心技": "F"
       },
-      "wEngine": null,
+      "wEngine": {
+        "name": "觸電唇彩",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 594,
+          "異常精通": 75
+        }
+      },
       "driveDiscs": [
         {
           "id": "piper_slot_1_video001",
@@ -9847,11 +10285,24 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 267.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/piper-engine-267.5.jpg",
+          "sha256": "2ac81d5d69850305e935a84be1d93f4dbc0e89c57b244dc6823faf9e901eaee2",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
-      "uncertainties": [
-        "音擎尚未核對"
-      ],
+      "uncertainties": [],
       "specialty": "異常",
       "portraitPath": "evidence/zzz/video_001/piper_portrait.jpg",
       "portraitSha256": "eee3ebdad8c4cf484755df472b945bc547048fff6215b956e63cd6de68de1403",
@@ -9897,8 +10348,13 @@
       "wEngine": {
         "name": "好鬥的阿炮",
         "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
         "refinement": 5,
-        "stats": {}
+        "stats": {
+          "基礎攻擊力": 624,
+          "能量自動回復": "50%"
+        }
       },
       "driveDiscs": [
         {
@@ -10264,11 +10720,24 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 275.2,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/lucy-engine-275.2.jpg",
+          "sha256": "5fde9c7944d08a2af1de928bdcc3f32ab59e86e7796129602100cfd51b31dcd1",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
-      "uncertainties": [
-        "音擎稀有度、面板數值待核對"
-      ],
+      "uncertainties": [],
       "specialty": "支援",
       "portraitPath": "evidence/zzz/video_001/lucy_portrait.jpg",
       "portraitSha256": "c82a91e11819e943fee47630f7776b1dc0471eb245dcf7fdfb64cc03f68a45b2",
@@ -10314,8 +10783,13 @@
       "wEngine": {
         "name": "雙生泣星",
         "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
         "refinement": 5,
-        "stats": {}
+        "stats": {
+          "基礎攻擊力": 594,
+          "攻擊力": "25%"
+        }
       },
       "driveDiscs": [
         {
@@ -10671,11 +11145,24 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 287.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/grace-engine-287.5.jpg",
+          "sha256": "1acc4bee37ee5aca90088085b38a2118dd7ca5b575d68968d3959b9d78fb67bb",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
-      "uncertainties": [
-        "音擎稀有度、面板數值待核對"
-      ],
+      "uncertainties": [],
       "specialty": "異常",
       "portraitPath": "evidence/zzz/video_001/grace_portrait.jpg",
       "portraitSha256": "89913b27d86c313178245eeba2ed20281292b16cd450dc07292ba24a1a577bc3",
@@ -10718,7 +11205,14 @@
         "連攜技": 11,
         "核心技": "F"
       },
-      "wEngine": null,
+      "wEngine": {
+        "name": null,
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": null,
+        "stats": null
+      },
       "driveDiscs": [
         {
           "id": "koleda_slot_1_video001",
@@ -11073,10 +11567,25 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 289.4,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/koleda-check-289.4.jpg",
+          "sha256": "df75affec43befe211f668a6214b9f361bd1a57280114c8288b9b7b65f6a5fbd",
+          "page": "裝備總覽",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
       "uncertainties": [
-        "音擎尚未核對"
+        "影片僅顯示音擎A級及60/60，未拍到音擎詳情，名稱、精煉及面板仍未確認"
       ],
       "specialty": "擊破",
       "portraitPath": "evidence/zzz/video_001/koleda_portrait.jpg",
@@ -11120,7 +11629,17 @@
         "連攜技": 13,
         "核心技": "D"
       },
-      "wEngine": null,
+      "wEngine": {
+        "name": "旋鑽機-赤軸",
+        "level": 50,
+        "maxLevel": 50,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 521,
+          "能量自動回復": "44%"
+        }
+      },
       "driveDiscs": [
         {
           "id": "anton_slot_1_video001",
@@ -11437,11 +11956,24 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 307.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/anton-engine-307.5.jpg",
+          "sha256": "edfee2f7eaae3427e32134c9982687e33f16525b6cefddba0ce8adbfd7fb0129",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
-      "uncertainties": [
-        "音擎尚未核對"
-      ],
+      "uncertainties": [],
       "specialty": "強攻",
       "portraitPath": "evidence/zzz/video_001/anton_portrait.jpg",
       "portraitSha256": "a440620b18519ff80a5d0eb06ded35b49de84343baffc3a11afeb08401bd8c94",
@@ -11484,7 +12016,17 @@
         "連攜技": 11,
         "核心技": "F"
       },
-      "wEngine": null,
+      "wEngine": {
+        "name": "硫磺石",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 684,
+          "攻擊力": "30%"
+        }
+      },
       "driveDiscs": [
         {
           "id": "ellen_slot_1_video001",
@@ -11829,11 +12371,24 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 316.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/ellen-engine-316.5.jpg",
+          "sha256": "885023ba28ca51c39d068800201ff71e81867cea20eb4d1045f9fa27697f0d29",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
-      "uncertainties": [
-        "音擎尚未核對"
-      ],
+      "uncertainties": [],
       "specialty": "強攻",
       "portraitPath": "evidence/zzz/video_001/ellen_portrait.jpg",
       "portraitSha256": "b403f1c4fdc33f17ed1ed1a787074721d89b480eb36d63656b547c30b371604b",
@@ -11879,8 +12434,13 @@
       "wEngine": {
         "name": "好鬥的阿炮",
         "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
         "refinement": 5,
-        "stats": {}
+        "stats": {
+          "基礎攻擊力": 624,
+          "能量自動回復": "50%"
+        }
       },
       "driveDiscs": [
         {
@@ -12246,11 +12806,24 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 329,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/rina-engine-329.jpg",
+          "sha256": "c9b78b92596165de7b77d8474dbca9ba4cf294e56501e81209a275a1ffa80ba1",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
-      "uncertainties": [
-        "音擎稀有度、面板數值待核對"
-      ],
+      "uncertainties": [],
       "specialty": "支援",
       "portraitPath": "evidence/zzz/video_001/rina_portrait.jpg",
       "portraitSha256": "28472760e0646e547b2207e000e8ef327d4f6669ec2281b902252eda56d6b691",
@@ -12293,7 +12866,17 @@
         "連攜技": 13,
         "核心技": "F"
       },
-      "wEngine": null,
+      "wEngine": {
+        "name": "拘縛者",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 684,
+          "衝擊力": "18%"
+        }
+      },
       "driveDiscs": [
         {
           "id": "lycaon_slot_1_video001",
@@ -12638,11 +13221,24 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 333.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/lycaon-engine-333.5.jpg",
+          "sha256": "919ceef3cfd3ec55ea55715ab31c3cae36a5a760d7c26ac6cb135f570a2cfad0",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
-      "uncertainties": [
-        "音擎尚未核對"
-      ],
+      "uncertainties": [],
       "specialty": "擊破",
       "portraitPath": "evidence/zzz/video_001/lycaon_portrait.jpg",
       "portraitSha256": "bd36bf581498f64b5a1860ce7f7a92acbc1bd2e48eac3f4c412d69c710a9711b",
@@ -12688,8 +13284,13 @@
       "wEngine": {
         "name": "鋼鐵肉墊",
         "level": 50,
+        "maxLevel": 50,
+        "rarity": "S",
         "refinement": 1,
-        "stats": {}
+        "stats": {
+          "基礎攻擊力": 570,
+          "暴擊率": "21.1%"
+        }
       },
       "driveDiscs": [
         {
@@ -13045,11 +13646,24 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 351,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/nekomata-engine-351.jpg",
+          "sha256": "ca5df0a125b1eb773308936efe68387e02df146a724705351b2540f55bb5294c",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
-      "uncertainties": [
-        "音擎稀有度、面板數值待核對"
-      ],
+      "uncertainties": [],
       "specialty": "強攻",
       "portraitPath": "evidence/zzz/video_001/nekomata_portrait.jpg",
       "portraitSha256": "aa8d309d39ac21c5e4ae6c7c02d853e62b1cff8970022b61a2111e040a8eed79",
@@ -13092,7 +13706,17 @@
         "連攜技": 15,
         "核心技": "F"
       },
-      "wEngine": null,
+      "wEngine": {
+        "name": "聚寶箱",
+        "level": 60,
+        "maxLevel": 60,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 624,
+          "能量自動回復": "50%"
+        }
+      },
       "driveDiscs": [
         {
           "id": "nicole_slot_1_video001",
@@ -13437,11 +14061,24 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 354.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/nicole-engine-354.5.jpg",
+          "sha256": "3636822d9e23d21d9d4135634abda18c827521dfd4949309c0ef4a88377b20ef",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
-      "uncertainties": [
-        "音擎尚未核對"
-      ],
+      "uncertainties": [],
       "specialty": "支援",
       "portraitPath": "evidence/zzz/video_001/nicole_portrait.jpg",
       "portraitSha256": "c39aece7ef06f7903a08cefe225e3f7d8f0e26589f5c70cd7c3ef860ceed7364",
@@ -13484,7 +14121,17 @@
         "連攜技": 13,
         "核心技": "D"
       },
-      "wEngine": null,
+      "wEngine": {
+        "name": "德瑪拉電池Ⅱ型",
+        "level": 50,
+        "maxLevel": 50,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 521,
+          "衝擊力": "13.2%"
+        }
+      },
       "driveDiscs": [
         {
           "id": "anby_slot_1_video001",
@@ -13815,11 +14462,24 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 365.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/anby-engine-365.5.jpg",
+          "sha256": "2b30441dedf40b4ddfb7e8b8ad49aac95caf553b752aec305ffcc25993beb647",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
-      "uncertainties": [
-        "音擎尚未核對"
-      ],
+      "uncertainties": [],
       "specialty": "擊破",
       "portraitPath": "evidence/zzz/video_001/anby_portrait.jpg",
       "portraitSha256": "988dceb9ad8821e24ee699643d33ce4074dfa35127341c8e17a6b6a3992a5359",
@@ -13862,7 +14522,17 @@
         "連攜技": 5,
         "核心技": "A"
       },
-      "wEngine": null,
+      "wEngine": {
+        "name": "居家服務員",
+        "level": 0,
+        "maxLevel": 10,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 42,
+          "攻擊力": "10%"
+        }
+      },
       "driveDiscs": [
         {
           "id": "corin_slot_1_video001",
@@ -14210,11 +14880,24 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 374.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/corin-engine-374.5.jpg",
+          "sha256": "66e20d118fb9416cd33e57513ecfb4e2f430774fe9eff0b5b6a657fae43c0647",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
-      "uncertainties": [
-        "音擎尚未核對"
-      ],
+      "uncertainties": [],
       "specialty": "強攻",
       "portraitPath": "evidence/zzz/video_001/corin_portrait.jpg",
       "portraitSha256": "dab3df057f4e0d84cea50bd03d6e81aa75f78868be804fe3a611ec0304ea2465",
@@ -14257,7 +14940,17 @@
         "連攜技": 5,
         "核心技": "A"
       },
-      "wEngine": null,
+      "wEngine": {
+        "name": "震元奇樞",
+        "level": 0,
+        "maxLevel": 10,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 42,
+          "攻擊力": "10%"
+        }
+      },
       "driveDiscs": [
         {
           "id": "ben_slot_1_video001",
@@ -14588,11 +15281,24 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 392.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/ben-engine-392.5.jpg",
+          "sha256": "fbce0156650a04c1f76feb2fd454ed34ef366c191633da7810a48c8c693ab0f2",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
-      "uncertainties": [
-        "音擎尚未核對"
-      ],
+      "uncertainties": [],
       "specialty": "防護",
       "portraitPath": "evidence/zzz/video_001/ben_portrait.jpg",
       "portraitSha256": "5f1266ef87eba8756b3486f7cbac3ce951e5c80cc7738a1f7650940e63db9edc",
@@ -14635,7 +15341,17 @@
         "連攜技": 5,
         "核心技": "A"
       },
-      "wEngine": null,
+      "wEngine": {
+        "name": "仿製星徽引擎",
+        "level": 20,
+        "maxLevel": 20,
+        "rarity": "A",
+        "refinement": 5,
+        "stats": {
+          "基礎攻擊力": 211,
+          "攻擊力": "13%"
+        }
+      },
       "driveDiscs": [
         {
           "id": "billy_slot_1_video001",
@@ -14993,11 +15709,24 @@
             "skills.連攜技",
             "skills.核心技"
           ]
+        },
+        {
+          "timestampSec": 403.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/billy-engine-403.5.jpg",
+          "sha256": "4455445a9c2ed59bbefa9e0c71added8de3bf46006d1a9adba18e12c62c0f0bb",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
         }
       ],
-      "uncertainties": [
-        "音擎尚未核對"
-      ],
+      "uncertainties": [],
       "specialty": "強攻",
       "portraitPath": "evidence/zzz/video_001/billy_portrait.jpg",
       "portraitSha256": "bfc776d3df8002368eebde0ec35c798112a990aade6b4b54e46abf7de4700cdf",
@@ -15032,8 +15761,25 @@
         "穿透率": "0%",
         "能量自動回復": 1.44
       },
-      "skills": null,
-      "wEngine": null,
+      "skills": {
+        "普通攻擊": 1,
+        "閃避": 1,
+        "支援技": 1,
+        "特殊技": 1,
+        "連攜技": 1,
+        "核心技": 0
+      },
+      "wEngine": {
+        "name": "硫磺石",
+        "level": 0,
+        "maxLevel": 10,
+        "rarity": "S",
+        "refinement": 1,
+        "stats": {
+          "基礎攻擊力": 46,
+          "攻擊力": "12%"
+        }
+      },
       "driveDiscs": [
         {
           "id": "soldier_11_slot_1_video001",
@@ -15342,12 +16088,39 @@
           "page": "基礎",
           "timestampToleranceSec": 1,
           "sha256": "d222faa99204d4ede837b0d99e750c5aab2b07ce2df87903c32aa720d4e43d0e"
+        },
+        {
+          "timestampSec": 412.5,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/soldier_11-engine-412.5.jpg",
+          "sha256": "ea8e9a31a7f86f0015a13627376ccfccd1f009d02029dfe5307f0c3efae0d777",
+          "page": "音擎",
+          "fields": [
+            "wEngine.name",
+            "wEngine.level",
+            "wEngine.maxLevel",
+            "wEngine.rarity",
+            "wEngine.refinement",
+            "wEngine.stats"
+          ]
+        },
+        {
+          "timestampSec": 413.6,
+          "timestampToleranceSec": 0.05,
+          "framePath": "evidence/zzz/engines_video_001_review_20261113/soldier_11-skills-413.6.jpg",
+          "sha256": "f5d0d0e27452b8fb9f4f53f4dc3398141e4237da2e2976c883d098c78d3b07a9",
+          "page": "技能",
+          "fields": [
+            "skills.普通攻擊",
+            "skills.閃避",
+            "skills.支援技",
+            "skills.特殊技",
+            "skills.連攜技",
+            "skills.核心技"
+          ]
         }
       ],
-      "uncertainties": [
-        "音擎尚未核對",
-        "原影片未拍到技能頁，五項技能等級及核心技待補觀測"
-      ],
+      "uncertainties": [],
       "specialty": "強攻",
       "portraitPath": "evidence/zzz/video_001/soldier-11_portrait.jpg",
       "portraitSha256": "e8ae2ce96659c382624e17f6aeb3c588a523e44bf0e54082c7512f37b15d646f",
@@ -15367,7 +16140,7 @@
   ],
   "coverage": {
     "method": "逐角色人工核對影片；每2秒索引並補取短暫面板",
-    "status": "影片所示38角色、228張驅動盤及37角色技能與核心技已逐項核對，11號技能頁未拍到。仍不代表完整未裝備背包。",
+    "status": "影片所示38角色、228張驅動盤、38角色技能與核心技已逐項核對。37名角色音擎完整，珂蕾妲僅稀有度與等級可確認，仍不代表完整未裝備背包。",
     "unknownPolicy": "不清楚或未核對欄位為null，不據外觀推測數值",
     "privacy": "證據圖片已裁除底部UID；未匯入控制中心畫面或影片音訊",
     "driveDiscs": {
@@ -15377,14 +16150,22 @@
       "originalEvidenceRetained": true
     },
     "skills": {
-      "reviewId": "skills_video_001_review_20261112",
+      "reviewId": "engines_video_001_review_20261113",
+      "reviewedCharacters": 38,
+      "completeCharacters": 38,
+      "unknownCharacterIds": [],
+      "importPath": "imports/zzz/engines_video_001_review_20261113/review.json",
+      "method": "沿用37名角色既有技能證據，補取413.6秒11號技能頁。五項顯示1/12，核心A至F均未啟用，核心技記0。"
+    },
+    "wEngines": {
+      "reviewId": "engines_video_001_review_20261113",
       "reviewedCharacters": 38,
       "completeCharacters": 37,
-      "unknownCharacterIds": [
-        "soldier_11"
+      "partialCharacterIds": [
+        "koleda"
       ],
-      "importPath": "imports/zzz/skills_video_001_review_20261112/review.json",
-      "method": "逐角色核對原影片技能頁，記錄五項顯示等級與亮起的核心技階段。11號未拍到技能頁。"
+      "importPath": "imports/zzz/engines_video_001_review_20261113/review.json",
+      "method": "逐角色對照原影片音擎詳情，記錄畫面名稱、稀有度、目前與突破上限等級、亮白精煉星數及面板。0級是明確觀測，不改成null或1。"
     }
   }
 }

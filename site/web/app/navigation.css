@@ -8,3 +8,19 @@
  .footer-fab.navigation-dock{gap:4px;padding:6px}
  .footer-fab.navigation-dock>button{flex-basis:46px;width:46px;min-width:46px;min-height:46px}
 }
+
+
+/* Shared page headers use the same opaque canvas as the gallery. */
+.page-header,.centered-page-header,.detail-centered .centered-page-header{position:sticky;top:0;z-index:20;border:0;border-radius:0;background:var(--canvas);box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;transform:none;opacity:1;pointer-events:auto;transition:transform .2s ease,opacity .2s ease}
+.centered-page-header,.detail-centered .centered-page-header{padding:14px 16px;margin-bottom:18px;color:#fff}
+.centered-page-header .character-heading{width:100%}
+.centered-page-header .detail-navigation{position:absolute;top:50%;right:16px;transform:translateY(-50%);display:flex;gap:6px}
+.centered-page-header .character-heading h2{min-width:0;overflow-wrap:anywhere;text-wrap:balance;color:#fff}
+.centered-page-header .icon-button{color:rgba(255,255,255,.88)}
+.page-header.is-collapsed:not(:has(:is(button,input,select,textarea,a[href],summary):focus-visible)),.centered-page-header.is-collapsed:not(:has(:is(button,input,select,textarea,a[href],summary):focus-visible)),.detail-centered .centered-page-header.is-collapsed:not(:has(:is(button,input,select,textarea,a[href],summary):focus-visible)){transform:translateY(-100%);opacity:0;pointer-events:none}
+@media(max-width:640px){
+ .centered-page-header,.detail-centered .centered-page-header{margin:0 -16px 18px;padding:10px 16px}
+}
+@media(prefers-reduced-motion:reduce){
+ .page-header,.centered-page-header,.detail-centered .centered-page-header{transition:none}
+}

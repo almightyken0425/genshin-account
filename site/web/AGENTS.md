@@ -1,10 +1,10 @@
 # 網站工作規則
 
-本網站 HOYO 是私人原神與絕區零紀錄工具，屬於外部專案。
+本網站 HOYO 是個人原神與絕區零紀錄工具，屬於外部專案。
 
 - 角色正式資料只存在 almightyken0425/genshin-account 的 main 分支。
 - 網站來源庫與角色資料庫分開。先核對 Git 狀態和 .openai/hosting.json，再接續工作。
-- 保存及部署沿用既有 Site 身分與 owner-private 範圍，依 Sites skill 操作。
+- 保存及部署沿用既有 Site 身分與使用者已確認的分享範圍，目前為公開。依 Sites skill 操作。
 - GITHUB_TOKEN 只存放在 Sites 秘密設定。不要讀出、列印或寫入來源碼。
 - tests/fixtures 只供驗證，不能作為線上讀取失敗時的替代資料。
 - 修改資料邏輯須維持 JSON schema、Python 指紋與摘要相容性。
