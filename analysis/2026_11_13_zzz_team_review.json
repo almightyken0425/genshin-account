@@ -1,0 +1,556 @@
+{
+  "based_on_commit": "defbe33d1aff1be037354c0f692f3f835358c652",
+  "working_tree_changes": {
+    "status": "uncommitted",
+    "branch": "codex/zzz-teams-growth",
+    "account_sha256": "2f3dab85ccb209ad53586bed9a30bad2b34b41ce41219d5ce00030fa490fb885",
+    "notes": [
+      "分析採用已補齊技能的本機帳號資料，尚未推送main。",
+      "網站隊伍與培養頁也是未提交候選，正式網站未更新。"
+    ]
+  },
+  "generated_at": "2026-11-13T00:33:08+08:00",
+  "goal": "依已補齊的技能、核心技與已記錄裝備，重新評估各主力的優先搭配與培養重點，允許隊友重複。",
+  "coverage": {
+    "observed_characters": 38,
+    "complete_skill_characters": 37,
+    "drive_discs": 228,
+    "reviewed_teams": 8,
+    "shared_training_characters": 18,
+    "version": "3.3",
+    "recorded_game_version": null,
+    "scope": "只涵蓋影片已記錄角色與已裝備物品，不包含完整背包或實戰傷害模擬。"
+  },
+  "missing_information": [
+    "11號技能頁未拍到，不影響這8隊的技能判斷。",
+    "葉瞬光、儀玄與妮可音擎未記錄，未知不等於未裝備。",
+    "初始攻擊、初始生命值與戰鬥增益覆蓋仍需相應證據，不能以最終面板直接宣稱達標。",
+    "未提供每日體力、技能材料或抽卡預算，不提出必須新抽角色或音擎的要求。"
+  ],
+  "recommendations": {
+    "teams": [
+      {
+        "id": "pyrois-burst",
+        "members": [
+          "pyrois",
+          "qingyi",
+          "sunna"
+        ],
+        "verdict": "保留，優先補強爆發技能",
+        "reason": "佩洛伊斯四影、核心F，特殊技已14，普攻與連攜為13/14。青衣普攻12、核心F，千夏特殊技12、核心F，已具備擊破與支援骨架。無需因青衣閃避1或千夏普攻1而換人，先檢查失衡窗口，再補佩洛伊斯最後一級。"
+      },
+      {
+        "id": "damielle-triple-anomaly",
+        "members": [
+          "damielle",
+          "velina",
+          "yanagi"
+        ],
+        "verdict": "保留三異常，優先穩定輪替",
+        "reason": "蕾米埃爾、維琳娜、柳的核心都已F，三人的特殊技都12，足以支持三異常的既定職責。補齊技能後沒有因培養不足必須換人的理由。蕾米埃爾主要技能已到位，維琳娜與柳普攻11至12留作低優先補強。"
+      },
+      {
+        "id": "jane-anomaly",
+        "members": [
+          "jane",
+          "vivian",
+          "yuzuha"
+        ],
+        "verdict": "保留進攻組合，技能資源先停在主軸",
+        "reason": "簡二影、五項12與核心F已到位。薇薇安核心F與11級主要技能可支援後台異放，柚葉核心F與普攻12也已確認。當前重點是護羽、狸之願與異常觸發覆蓋，薇薇安普攻11至12不排在主要裝備條件前。",
+        "alternatives": [
+          "若需要護盾與容錯，可將柚葉換成已確認核心F的賽斯，屬生存取向替補。"
+        ]
+      },
+      {
+        "id": "ye-shunguang-veil",
+        "members": [
+          "ye_shunguang",
+          "ju_fufu",
+          "zhao"
+        ],
+        "verdict": "保留，先補橘福福後台擊破",
+        "reason": "葉瞬光二影、普攻/特殊/連攜12、核心F已確認。照的核心F與支援技能11可保留帷幕職責。真正的技能缺口是橘福福普攻6，後台虎威也使用此欄失衡倍率，先補至11。葉瞬光尚未記錄音擎，不能據此推定未裝備。"
+      },
+      {
+        "id": "yixuan-sheer",
+        "members": [
+          "yixuan",
+          "ju_fufu",
+          "lucia"
+        ],
+        "verdict": "保留命破組合，共用橘福福補強",
+        "reason": "儀玄普攻、特殊與連攜12、核心F已到位。盧西婭普攻12、特殊12、核心F可保留命破支援職責。先補橘福福普攻6至11，提高後台虎威失衡，再核對儀玄音擎與盧西婭初始生命值條件。",
+        "alternatives": [
+          "盧西婭可由六影、核心F的潘引壺作貫穿力與生存支援替補。儀玄可滿足命破條件，但現有資料不足以判定替換後更強。"
+        ]
+      },
+      {
+        "id": "miyabi-disorder",
+        "members": [
+          "miyabi",
+          "yanagi",
+          "yuzuha"
+        ],
+        "verdict": "保留雅柳，先核對套裝暴擊覆蓋",
+        "reason": "星見雅普攻12、核心F，柳特殊12、核心F，柚葉核心F，主要循環已具備。雅的面板暴擊率70.6%搭配已裝備4件折枝劍歌，凍結或碎冰後的12%暴擊率生效時可到82.6%。先確認套裝覆蓋，不能直接把面板當成缺9.4%而重刷暴擊。"
+      },
+      {
+        "id": "manato-sheer",
+        "members": [
+          "manato",
+          "ju_fufu",
+          "lucia"
+        ],
+        "verdict": "保留六影真斗，先處理共用隊友缺口",
+        "reason": "真斗六影、普攻16、核心F與60級音擎已確認，不再列為技能未知。先補橘福福普攻6至11，盧西婭主要支援技能已到位。真斗特殊與連攜15至16屬後續最後一級投資，排在後台擊破缺口之後。",
+        "alternatives": [
+          "盧西婭可由六影、核心F的潘引壺作貫穿力與生存支援替補。真斗可滿足命破條件，不因技能補齊而自動換人。"
+        ]
+      },
+      {
+        "id": "zhu-yuan-ether",
+        "members": [
+          "zhu_yuan",
+          "qingyi",
+          "nicole"
+        ],
+        "verdict": "保留，朱鳶爆發技能列優先",
+        "reason": "朱鳶普攻12、核心F已到位，但連攜9、特殊10仍有明確爆發倍率缺口，先補到11。青衣普攻12、核心F，妮可六影、核心F與特殊16，已具備擊破、減防與暴擊支援。妮可音擎尚未記錄，這項缺口不等於技能未培養。"
+      }
+    ],
+    "priority": [
+      {
+        "tier": 1,
+        "character_id": "ju_fufu",
+        "skill": "普通攻擊",
+        "current": 6,
+        "target": 11,
+        "reason": "虎威後台失衡倍率也屬普通攻擊。官方同招係數由85.3%到101.3%，約增加18.8%，不是整隊DPS估算。"
+      },
+      {
+        "tier": 1,
+        "character_id": "zhu_yuan",
+        "skill": "連攜技",
+        "current": 9,
+        "target": 11,
+        "reason": "補強失衡爆發中的連攜與終結技。"
+      },
+      {
+        "tier": 1,
+        "character_id": "zhu_yuan",
+        "skill": "特殊技",
+        "current": 10,
+        "target": 11,
+        "reason": "補強失衡窗口中的強化特殊技。"
+      }
+    ],
+    "shared_plan_file": "site/web/lib/zzz_training_plans.json",
+    "target_method": "技能目標由角色任務作階段規劃，上限直接讀影片右側分母，不反推基礎等級，也不把所有角色都設成12。",
+    "equipment_notes": [
+      {
+        "character_id": "miyabi",
+        "reason": "4折枝劍歌效果生效時，70.6%面板加12%暴率可達82.6%。應檢查凍結或碎冰後的效果覆蓋，不能直接要求補9.4%暴擊。"
+      },
+      {
+        "character_id": "yuzuha",
+        "reason": "已用掌控6號盤與2法厄同之歌。200掌控為增益上限，不能將171到200直接變成刷掌控副詞條的建議。"
+      }
+    ]
+  },
+  "sources": {
+    "checked_at": "2026-11-13",
+    "version": "3.3",
+    "account": "data/zzz/account.json",
+    "skill_review": "imports/zzz/skills_video_001_review_20261112/review.json",
+    "displayed_cap_evidence": [
+      {
+        "characterId": "pyrois",
+        "timestampSec": 45,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/pyrois_skills_t045.00.jpg",
+        "sha256": "8102b02a403e135c837bf03e653c07037104f3730e31418a3d6bea33c18a187f",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "qingyi",
+        "timestampSec": 178.5,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/qingyi_skills_t178.50.jpg",
+        "sha256": "c7e91df506d9a717fdad255d893c532fc77f521aa50face50c3e41409786af19",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "sunna",
+        "timestampSec": 69.8,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/sunna_skills_t069.80.jpg",
+        "sha256": "487d344b720eaaea8b358c014fb7189810280b638c9cb61181dbebe1ac6f4423",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "damielle",
+        "timestampSec": 22.2,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/damielle_skills_t022.20.jpg",
+        "sha256": "4d448bcb73dc07b4653394e8471d818669b2355829b901bcc303c235c9024df5",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "velina",
+        "timestampSec": 27,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/velina_skills_t027.00.jpg",
+        "sha256": "03a15152d634b9f3f9a3b7cca123d39ab76a6954a9f5e5c295b524cb9ecdb6f5",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "yanagi",
+        "timestampSec": 231,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/yanagi_skills_t231.00.jpg",
+        "sha256": "dc1258aff9cd1ab67884c0879edd072f722481c731dde2579949f3afee541c94",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "jane",
+        "timestampSec": 3,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/jane_skills_t003.00.jpg",
+        "sha256": "526829bc41439404151552280058a6fb1a20b91f1bf33bfcc60590be08fc965e",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "vivian",
+        "timestampSec": 158.5,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/vivian_skills_t158.50.jpg",
+        "sha256": "411634014528b0e7a3859c5284fa939ed91a377bc34af9dbe68ef5ba7489a7c4",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "yuzuha",
+        "timestampSec": 96.5,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/yuzuha_skills_t096.50.jpg",
+        "sha256": "db85ebb85cec230c5b000326af870d0f4316c5e3db12713ebdc5a452e36fd2ea",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "ye_shunguang",
+        "timestampSec": 118,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/ye_shunguang_skills_t118.00.jpg",
+        "sha256": "8d34175d5a6d6babfe1ea24fc2ef5db34b86cd85cd4d5d1b9340928d299be8b0",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "ju_fufu",
+        "timestampSec": 134.6,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/ju_fufu_skills_t134.60.jpg",
+        "sha256": "3787eff8f9ef419bdb787ffe5bc8c1dc5f9262e96d05deedfca9d84cb2c8bfeb",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "zhao",
+        "timestampSec": 74,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/zhao_skills_t074.00.jpg",
+        "sha256": "1890e8e1988438c381ea58e3af1c31392af665e8d58fd5876010614f75e7f57c",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "yixuan",
+        "timestampSec": 137.5,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/yixuan_skills_t137.50.jpg",
+        "sha256": "3ab0f7bbbd779763f46d693396bfda853a2e548279090984298baecb386c813e",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "lucia",
+        "timestampSec": 92.5,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/lucia_skills_t092.50.jpg",
+        "sha256": "dae637aa95c01454c979c9cfea1805aa16a50260b4ce31541678f71d098891d4",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "miyabi",
+        "timestampSec": 213,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/miyabi_skills_t213.00.jpg",
+        "sha256": "996906ac1d017e9b37595696208c9756459fa4d893fa737ee409767ccad5b953",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "manato",
+        "timestampSec": 114.2,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/manato_skills_t114.20.jpg",
+        "sha256": "20c92c95b2607bb9a8cb6fae289b7c44b58f4b53bc195d5cb1fedcea1466b68b",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "zhu_yuan",
+        "timestampSec": 195,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/zhu_yuan_skills_t195.00.jpg",
+        "sha256": "fc73014d2bdf4524d0c3ed42a37578fc9d1632bd7dbbf87acbbb46583f11c6c4",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      },
+      {
+        "characterId": "nicole",
+        "timestampSec": 360.5,
+        "timestampToleranceSec": 0.05,
+        "framePath": "evidence/zzz/skills_video_001_review_20261112/nicole_skills_t360.50.jpg",
+        "sha256": "679ecf8dac1f0b4fcba0002f1a7fbeaa5e4fbe82ea3f4b7e743a451e1ccea079",
+        "page": "技能",
+        "fields": [
+          "skills.普通攻擊",
+          "skills.閃避",
+          "skills.支援技",
+          "skills.特殊技",
+          "skills.連攜技",
+          "skills.核心技"
+        ]
+      }
+    ],
+    "official": [
+      {
+        "label": "絕區零官方・3.3版本內容一覽",
+        "url": "https://zenless.hoyoverse.com/zh-tw/news/166964"
+      },
+      {
+        "label": "佩洛伊斯・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/1082"
+      },
+      {
+        "label": "青衣・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/350"
+      },
+      {
+        "label": "千夏・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/995"
+      },
+      {
+        "label": "蕾米埃爾・丹・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/1112"
+      },
+      {
+        "label": "維琳娜・艾嘉德・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/1084"
+      },
+      {
+        "label": "月城柳・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/529"
+      },
+      {
+        "label": "簡・杜・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/368"
+      },
+      {
+        "label": "薇薇安·班希・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/626"
+      },
+      {
+        "label": "浮波柚葉・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/837"
+      },
+      {
+        "label": "賽斯·洛威爾・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/369"
+      },
+      {
+        "label": "葉瞬光・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/961"
+      },
+      {
+        "label": "橘福福・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/750"
+      },
+      {
+        "label": "照・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/960"
+      },
+      {
+        "label": "儀玄・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/752"
+      },
+      {
+        "label": "盧西婭·艾洛溫・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/907"
+      },
+      {
+        "label": "潘引壺・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/751"
+      },
+      {
+        "label": "星見雅・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/537"
+      },
+      {
+        "label": "狛野真斗・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/908"
+      },
+      {
+        "label": "朱鳶・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/31"
+      },
+      {
+        "label": "妮可・德瑪拉・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/20"
+      },
+      {
+        "label": "折枝劍歌・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/547"
+      },
+      {
+        "label": "法厄同之歌・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/624"
+      },
+      {
+        "label": "絕區零3.3版本更新公告",
+        "url": "https://zenless.hoyoverse.com/zh-tw/news/166963"
+      }
+    ]
+  },
+  "status": "proposed"
+}

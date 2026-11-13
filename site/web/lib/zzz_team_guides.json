@@ -1,0 +1,705 @@
+{
+  "meta": {
+    "checkedAt": "2026-11-13",
+    "gameVersion": "3.3",
+    "basedOnCommit": "defbe33d1aff1be037354c0f692f3f835358c652",
+    "goal": "為各個已投入主力選出目前持有範圍內的優先搭配，允許不同隊伍重複使用同一隊友。",
+    "scope": "依官方HoYoWiki機制、額外能力、現有裝備及補齊後技能觀測，重新評估8組主力。隊伍順序沿用既有入口，並非傷害排名。",
+    "limitations": [
+      "影片錄影日期與遊戲版本未知，帳號觀測不代表即時遊戲伺服器狀態。",
+      "機制於2026-11-13重新查核官方公開資料，適用版本3.3。未進行傷害模擬或實戰評分，優先搭配為依現有資料作出的判斷。",
+      "技能採影片顯示等級與已亮起的核心技階段。11號未拍到技能頁，未知音擎及其被動仍不當成已確認。",
+      "觀測面板不等同技能所稱的初始屬性，不據此判定增益已達上限。",
+      "同名音擎或驅動盤是否獨立持有尚未逐件證明，不把多隊列出等同可同時使用相同裝備。",
+      "隊伍條件已逐位核對。觸發額外能力只代表相容，不單憑此條件宣稱全環境最優。"
+    ],
+    "sources": [
+      {
+        "label": "絕區零官方・3.3版本內容一覽",
+        "url": "https://zenless.hoyoverse.com/zh-tw/news/166964"
+      },
+      {
+        "label": "佩洛伊斯・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/1082"
+      },
+      {
+        "label": "青衣・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/350"
+      },
+      {
+        "label": "千夏・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/995"
+      },
+      {
+        "label": "蕾米埃爾・丹・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/1112"
+      },
+      {
+        "label": "維琳娜・艾嘉德・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/1084"
+      },
+      {
+        "label": "月城柳・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/529"
+      },
+      {
+        "label": "簡・杜・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/368"
+      },
+      {
+        "label": "薇薇安·班希・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/626"
+      },
+      {
+        "label": "浮波柚葉・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/837"
+      },
+      {
+        "label": "賽斯·洛威爾・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/369"
+      },
+      {
+        "label": "葉瞬光・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/961"
+      },
+      {
+        "label": "橘福福・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/750"
+      },
+      {
+        "label": "照・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/960"
+      },
+      {
+        "label": "儀玄・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/752"
+      },
+      {
+        "label": "盧西婭·艾洛溫・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/907"
+      },
+      {
+        "label": "潘引壺・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/751"
+      },
+      {
+        "label": "星見雅・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/537"
+      },
+      {
+        "label": "狛野真斗・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/908"
+      },
+      {
+        "label": "朱鳶・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/31"
+      },
+      {
+        "label": "妮可・德瑪拉・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/20"
+      },
+      {
+        "label": "折枝劍歌・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/547"
+      },
+      {
+        "label": "法厄同之歌・HoYoWiki",
+        "url": "https://wiki.hoyolab.com/pc/zzz/entry/624"
+      }
+    ],
+    "reassessment": {
+      "accountSha256": "2f3dab85ccb209ad53586bed9a30bad2b34b41ce41219d5ce00030fa490fb885",
+      "workingTreeChanges": "以未提交的技能補齊資料與網站候選重新評估，尚未合併至main。",
+      "skillReview": "imports/zzz/skills_video_001_review_20261112/review.json",
+      "trainingPlans": "lib/zzz_training_plans.json",
+      "conclusion": "8組主要搭配保留，改以已知技能缺口、核心F與裝備條件重新安排培養優先序。"
+    }
+  },
+  "teams": [
+    {
+      "id": "pyrois-burst",
+      "name": "佩洛伊斯・失衡爆發",
+      "summary": "青衣建立失衡窗口，千夏增益後交給佩洛伊斯輸出。",
+      "reason": "青衣提供失衡易傷與集中的輸出窗口，千夏以攻擊增益與帷幕支援佩洛伊斯的普攻及多分支終結技。三人的額外能力可互相觸發，適合圍繞失衡安排爆發。",
+      "members": [
+        {
+          "id": "pyrois",
+          "role": "主要輸出",
+          "focus": [
+            "連攜13至14、普攻13至14屬後續補強，特殊14已到位",
+            "先確保失衡窗口與終結技分支銜接"
+          ]
+        },
+        {
+          "id": "qingyi",
+          "role": "擊破與失衡易傷",
+          "focus": [
+            "普攻12與核心F已到位，特殊10至11再補",
+            "先確保羈服疊層，閃避1依實際反擊頻率決定"
+          ]
+        },
+        {
+          "id": "sunna",
+          "role": "攻擊與帷幕支援",
+          "focus": [
+            "核心F與特殊12已到位，普攻及閃避1暫緩",
+            "檢查初始攻擊條件與帷幕覆蓋"
+          ]
+        }
+      ],
+      "activation": [
+        "佩洛伊斯：青衣是擊破、千夏是支援，可觸發輝煌軍勢。",
+        "青衣：佩洛伊斯是強攻，可觸發陽關三疊。",
+        "千夏：佩洛伊斯是強攻，可觸發白日夢對位法。"
+      ],
+      "steps": [
+        {
+          "characterId": "sunna",
+          "action": "能量足夠時施放強化特殊技，再以特別拍照技巧開啟帷幕。"
+        },
+        {
+          "characterId": "qingyi",
+          "action": "以普攻與蓄力終結一擊建立羈服，將敵人打進失衡。"
+        },
+        {
+          "characterId": "pyrois",
+          "action": "失衡後進場，依日珥與喧響狀態銜接強化特殊技及終結技。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "佩洛伊斯・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/1082"
+        },
+        {
+          "label": "青衣・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/350"
+        },
+        {
+          "label": "千夏・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/995"
+        }
+      ],
+      "accountAssessment": {
+        "verdict": "保留，優先補強爆發技能",
+        "reason": "佩洛伊斯四影、核心F，特殊技已14，普攻與連攜為13/14。青衣普攻12、核心F，千夏特殊技12、核心F，已具備擊破與支援骨架。無需因青衣閃避1或千夏普攻1而換人，先檢查失衡窗口，再補佩洛伊斯最後一級。"
+      }
+    },
+    {
+      "id": "damielle-triple-anomaly",
+      "name": "蕾米埃爾・三異常",
+      "summary": "維琳娜與柳輪替施加異常，讓蕾米埃爾支援並結算虛曜。",
+      "reason": "三異常編成可利用蕾米埃爾的額外增益。維琳娜提供異常積蓄支援，柳以紊亂參與結算，蕾米埃爾可在相變時流中協戰。輪替時須避免三人同時爭用前場。",
+      "members": [
+        {
+          "id": "damielle",
+          "role": "協戰與虛曜結算",
+          "focus": [
+            "主要技能12與核心F已到位，閃避10暫緩",
+            "管理浮暉、虛曜與相變時流"
+          ]
+        },
+        {
+          "id": "velina",
+          "role": "風異常與氣旋支援",
+          "focus": [
+            "特殊與連攜12、核心F已到位，普攻12僅列選做",
+            "檢查初始能量自動回復與氣旋覆蓋"
+          ]
+        },
+        {
+          "id": "yanagi",
+          "role": "電異常與紊亂",
+          "focus": [
+            "特殊12與核心F已到位，普攻11至12列低優先",
+            "以紊亂支援主輸出資源，優先穩定輪替"
+          ]
+        }
+      ],
+      "activation": [
+        "蕾米埃爾：隊內另有兩位異常，可觸發芳菲之邀，並使用三異常條件。",
+        "維琳娜：隊內有其他異常角色，可觸發茶會禮儀。",
+        "月城柳：隊內有其他異常角色，可觸發月相。"
+      ],
+      "steps": [
+        {
+          "characterId": "damielle",
+          "action": "以強化特殊技施加流明積蓄點，浮暉滿時進入轉換姿態並換出。"
+        },
+        {
+          "characterId": "velina",
+          "action": "以強化特殊技累積風華，資源足夠時施放風暴眼建立氣旋。"
+        },
+        {
+          "characterId": "yanagi",
+          "action": "輪替累積電異常，對已處於異常的敵人施放強化特殊技。"
+        },
+        {
+          "characterId": "damielle",
+          "action": "花羽輪舞解鎖後換入，利用垂虹或驚鴻結算虛曜並回復浮暉。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "蕾米埃爾・丹・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/1112"
+        },
+        {
+          "label": "維琳娜・艾嘉德・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/1084"
+        },
+        {
+          "label": "月城柳・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/529"
+        }
+      ],
+      "accountAssessment": {
+        "verdict": "保留三異常，優先穩定輪替",
+        "reason": "蕾米埃爾、維琳娜、柳的核心都已F，三人的特殊技都12，足以支持三異常的既定職責。補齊技能後沒有因培養不足必須換人的理由。蕾米埃爾主要技能已到位，維琳娜與柳普攻11至12留作低優先補強。"
+      }
+    },
+    {
+      "id": "jane-anomaly",
+      "name": "簡・強擊異放",
+      "summary": "簡持續觸發強擊，薇薇安後台協戰，柚葉強化異常輸出。",
+      "reason": "簡持續施加物理異常，薇薇安從後台以護羽觸發落羽生花及異放，柚葉提供攻擊、增傷與異常相關增益。這是偏向進攻的搭配，護羽與狸之願覆蓋比三人都長時間站場更重要。",
+      "members": [
+        {
+          "id": "jane",
+          "role": "物理異常主輸出",
+          "focus": [
+            "五項技能12與核心F已到位，先停技能資源",
+            "維持狂熱、強擊與支援增益覆蓋"
+          ]
+        },
+        {
+          "id": "vivian",
+          "role": "後台異常協戰",
+          "focus": [
+            "核心F已確認，普攻11至12只列資源充裕時補強",
+            "先顧護羽供給與異常精通，不把異放等同特殊技倍率"
+          ]
+        },
+        {
+          "id": "yuzuha",
+          "role": "異常輸出支援",
+          "focus": [
+            "核心F、普攻12與其餘支援技能11已可用",
+            "先檢查初始攻擊與掌控增益條件，閃避1暫緩"
+          ]
+        }
+      ],
+      "activation": [
+        "簡：薇薇安是其他異常角色，可觸發痛點。",
+        "薇薇安：簡是其他異常角色，可觸發預言之淚。",
+        "浮波柚葉：隊內有異常角色，可觸發人多樂趣大。"
+      ],
+      "steps": [
+        {
+          "characterId": "yuzuha",
+          "action": "能量足夠時以強化特殊技施加狸之願。"
+        },
+        {
+          "characterId": "vivian",
+          "action": "準備護羽後換出，讓後台追加攻擊配合隊友的異常觸發。"
+        },
+        {
+          "characterId": "jane",
+          "action": "維持狂熱狀態與物理異常積蓄，持續觸發強擊並留意支援增益。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "簡・杜・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/368"
+        },
+        {
+          "label": "薇薇安·班希・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/626"
+        },
+        {
+          "label": "浮波柚葉・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/837"
+        },
+        {
+          "label": "賽斯·洛威爾・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/369"
+        },
+        {
+          "label": "法厄同之歌・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/624"
+        }
+      ],
+      "accountAssessment": {
+        "verdict": "保留進攻組合，技能資源先停在主軸",
+        "reason": "簡二影、五項12與核心F已到位。薇薇安核心F與11級主要技能可支援後台異放，柚葉核心F與普攻12也已確認。當前重點是護羽、狸之願與異常觸發覆蓋，薇薇安普攻11至12不排在主要裝備條件前。",
+        "alternatives": [
+          "若需要護盾與容錯，可將柚葉換成已確認核心F的賽斯，屬生存取向替補。"
+        ]
+      }
+    },
+    {
+      "id": "ye-shunguang-veil",
+      "name": "葉瞬光・帷幕劍勢",
+      "summary": "照開帷幕補充劍勢，橘福福支援擊破與終結技，葉瞬光集中輸出。",
+      "reason": "照開啟帷幕可配合葉瞬光取得青溟劍勢，橘福福的後台虎威推進失衡，虎嘯支援暴擊傷害與終結技。兩名隊友以短進場與後台職責保留主輸出的前場時間。",
+      "members": [
+        {
+          "id": "ye_shunguang",
+          "role": "明心境主輸出",
+          "focus": [
+            "主要技能12與核心F已到位，先核對音擎",
+            "管理青溟劍勢、明心境與帷幕"
+          ]
+        },
+        {
+          "id": "ju_fufu",
+          "role": "後台擊破與虎嘯",
+          "focus": [
+            "優先將普攻6升至11，後台虎威失衡也吃此倍率",
+            "核心F與連攜12已到位，閃避6暫緩"
+          ]
+        },
+        {
+          "id": "zhao",
+          "role": "帷幕與生存支援",
+          "focus": [
+            "核心F與主要支援技能11已到位，普攻閃避1暫緩",
+            "檢查初始生命值條件與帷幕覆蓋"
+          ]
+        }
+      ],
+      "activation": [
+        "葉瞬光：照是防護，可觸發溯影驚鴻。照開啟帷幕可配合取得青溟劍勢。",
+        "橘福福：葉瞬光是強攻，可觸發八面威風。",
+        "照：葉瞬光是強攻，可觸發凝聚力。"
+      ],
+      "steps": [
+        {
+          "characterId": "zhao",
+          "action": "霜寒值滿時換入，以登場技開啟湧泉帷幕。"
+        },
+        {
+          "characterId": "ju_fufu",
+          "action": "讓虎威開始後台攻擊，建立虎嘯並推進失衡。"
+        },
+        {
+          "characterId": "ye_shunguang",
+          "action": "透過終結技或登場技進入明心境，把主要連段放在帷幕期間。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "葉瞬光・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/961"
+        },
+        {
+          "label": "橘福福・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/750"
+        },
+        {
+          "label": "照・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/960"
+        }
+      ],
+      "accountAssessment": {
+        "verdict": "保留，先補橘福福後台擊破",
+        "reason": "葉瞬光二影、普攻/特殊/連攜12、核心F已確認。照的核心F與支援技能11可保留帷幕職責。真正的技能缺口是橘福福普攻6，後台虎威也使用此欄失衡倍率，先補至11。葉瞬光尚未記錄音擎，不能據此推定未裝備。"
+      }
+    },
+    {
+      "id": "yixuan-sheer",
+      "name": "儀玄・命破協戰",
+      "summary": "橘福福後台擊破，盧西婭提供貫穿力，儀玄保留前場時間。",
+      "reason": "儀玄以貫穿力進行命破輸出，盧西婭的破暗與帷幕提供相應支援。橘福福以後台擊破減少前場競爭，虎嘯支援暴擊傷害與終結技，便於安排失衡期間的命破爆發。",
+      "members": [
+        {
+          "id": "yixuan",
+          "role": "玄墨命破主輸出",
+          "focus": [
+            "主要技能12與核心F已到位，先確認音擎",
+            "依命破機制檢查生命值、貫穿力與暴擊配置"
+          ]
+        },
+        {
+          "id": "ju_fufu",
+          "role": "後台擊破與虎嘯",
+          "focus": [
+            "優先將普攻6升至11，後台虎威失衡也吃此倍率",
+            "核心F與連攜12已到位，閃避6暫緩"
+          ]
+        },
+        {
+          "id": "lucia",
+          "role": "貫穿力與帷幕支援",
+          "focus": [
+            "普攻12、特殊12與核心F已到位，閃避1暫緩",
+            "檢查初始生命值，讓破暗與帷幕覆蓋命破輸出"
+          ]
+        }
+      ],
+      "activation": [
+        "儀玄：隊內有擊破與支援，可觸發玄墨暗湧。",
+        "橘福福：儀玄是命破，可觸發八面威風。",
+        "盧西婭：儀玄是命破，橘福福是擊破，可觸發長夜詩篇。"
+      ],
+      "steps": [
+        {
+          "characterId": "lucia",
+          "action": "以合唱施加破暗，夢境值足夠時進入夢境並開啟帷幕。"
+        },
+        {
+          "characterId": "ju_fufu",
+          "action": "建立虎嘯，利用虎威後台攻擊推進失衡。"
+        },
+        {
+          "characterId": "yixuan",
+          "action": "消耗閃能施放主要技能，術法值足夠時使用額外終結技。持有玄墨值時以玄墨極陣回復閃能。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "儀玄・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/752"
+        },
+        {
+          "label": "橘福福・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/750"
+        },
+        {
+          "label": "盧西婭·艾洛溫・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/907"
+        },
+        {
+          "label": "潘引壺・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/751"
+        }
+      ],
+      "accountAssessment": {
+        "verdict": "保留命破組合，共用橘福福補強",
+        "reason": "儀玄普攻、特殊與連攜12、核心F已到位。盧西婭普攻12、特殊12、核心F可保留命破支援職責。先補橘福福普攻6至11，提高後台虎威失衡，再核對儀玄音擎與盧西婭初始生命值條件。",
+        "alternatives": [
+          "盧西婭可由六影、核心F的潘引壺作貫穿力與生存支援替補。儀玄可滿足命破條件，但現有資料不足以判定替換後更強。"
+        ]
+      }
+    },
+    {
+      "id": "miyabi-disorder",
+      "name": "星見雅・雅柳紊亂",
+      "summary": "柳觸發紊亂補落霜，柚葉增益後由雅以霜月輸出。",
+      "reason": "柳以紊亂支援星見雅的落霜循環，柚葉提供攻擊、增傷與異常相關增益。雅集中使用霜月架勢，柳在輪替時施加電異常，三人額外能力皆可觸發。",
+      "members": [
+        {
+          "id": "miyabi",
+          "role": "烈霜與霜月輸出",
+          "focus": [
+            "普攻12與核心F已到位，特殊及連攜12再補",
+            "先確認折枝劍歌暴擊效果覆蓋，再調整暴擊配置"
+          ]
+        },
+        {
+          "id": "yanagi",
+          "role": "電異常與紊亂",
+          "focus": [
+            "特殊12與核心F已到位，普攻11至12列低優先",
+            "以紊亂支援主輸出資源，優先穩定輪替"
+          ]
+        },
+        {
+          "id": "yuzuha",
+          "role": "異常輸出支援",
+          "focus": [
+            "核心F、普攻12與其餘支援技能11已可用",
+            "先檢查初始攻擊與掌控增益條件，閃避1暫緩"
+          ]
+        }
+      ],
+      "activation": [
+        "星見雅：柚葉是支援，柳也與自己同屬對空六課，可觸發同沐霜雪。",
+        "月城柳：星見雅是其他異常角色，可觸發月相。",
+        "浮波柚葉：隊內有異常角色，可觸發人多樂趣大。"
+      ],
+      "steps": [
+        {
+          "characterId": "yuzuha",
+          "action": "能量足夠時以強化特殊技施加狸之願。"
+        },
+        {
+          "characterId": "yanagi",
+          "action": "對已處於異常的敵人使用強化特殊技，輪替觸發紊亂。"
+        },
+        {
+          "characterId": "miyabi",
+          "action": "依落霜資源進入霜月架勢，施放蓄力攻擊後再輪替補足下一輪異常。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "星見雅・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/537"
+        },
+        {
+          "label": "月城柳・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/529"
+        },
+        {
+          "label": "浮波柚葉・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/837"
+        },
+        {
+          "label": "折枝劍歌・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/547"
+        },
+        {
+          "label": "法厄同之歌・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/624"
+        }
+      ],
+      "accountAssessment": {
+        "verdict": "保留雅柳，先核對套裝暴擊覆蓋",
+        "reason": "星見雅普攻12、核心F，柳特殊12、核心F，柚葉核心F，主要循環已具備。雅的面板暴擊率70.6%搭配已裝備4件折枝劍歌，凍結或碎冰後的12%暴擊率生效時可到82.6%。先確認套裝覆蓋，不能直接把面板當成缺9.4%而重刷暴擊。"
+      }
+    },
+    {
+      "id": "manato-sheer",
+      "name": "真斗・火命破",
+      "summary": "盧西婭補貫穿力，橘福福後台擊破，真斗進入熔鋒輸出。",
+      "reason": "真斗依生命值提高貫穿力，盧西婭能支援命破輸出並提供帷幕。橘福福負責後台擊破與虎嘯，讓真斗將前場時間用在熾心與熔鋒強化連段。",
+      "members": [
+        {
+          "id": "manato",
+          "role": "火命破主輸出",
+          "focus": [
+            "普攻16與核心F已到位，特殊/連攜16列後續補強",
+            "先改善橘福福後台擊破，再穩定熔鋒循環"
+          ]
+        },
+        {
+          "id": "ju_fufu",
+          "role": "後台擊破與虎嘯",
+          "focus": [
+            "優先將普攻6升至11，後台虎威失衡也吃此倍率",
+            "核心F與連攜12已到位，閃避6暫緩"
+          ]
+        },
+        {
+          "id": "lucia",
+          "role": "貫穿力與帷幕支援",
+          "focus": [
+            "普攻12、特殊12與核心F已到位，閃避1暫緩",
+            "檢查初始生命值，讓破暗與帷幕覆蓋命破輸出"
+          ]
+        }
+      ],
+      "activation": [
+        "真斗：盧西婭是支援、橘福福是擊破，可觸發復燃之心。",
+        "橘福福：真斗是命破，可觸發八面威風。",
+        "盧西婭：真斗是命破，橘福福是擊破，可觸發長夜詩篇。"
+      ],
+      "steps": [
+        {
+          "characterId": "lucia",
+          "action": "以合唱施加破暗，夢境值足夠時進入夢境並開啟帷幕。"
+        },
+        {
+          "characterId": "ju_fufu",
+          "action": "建立虎嘯，利用虎威後台攻擊推進失衡。"
+        },
+        {
+          "characterId": "manato",
+          "action": "以特殊技巧或招架支援累積熾心，進入熔鋒後銜接強化連段。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "狛野真斗・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/908"
+        },
+        {
+          "label": "橘福福・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/750"
+        },
+        {
+          "label": "盧西婭·艾洛溫・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/907"
+        }
+      ],
+      "accountAssessment": {
+        "verdict": "保留六影真斗，先處理共用隊友缺口",
+        "reason": "真斗六影、普攻16、核心F與60級音擎已確認，不再列為技能未知。先補橘福福普攻6至11，盧西婭主要支援技能已到位。真斗特殊與連攜15至16屬後續最後一級投資，排在後台擊破缺口之後。",
+        "alternatives": [
+          "盧西婭可由六影、核心F的潘引壺作貫穿力與生存支援替補。真斗可滿足命破條件，不因技能補齊而自動換人。"
+        ]
+      }
+    },
+    {
+      "id": "zhu-yuan-ether",
+      "name": "朱鳶・以太失衡",
+      "summary": "青衣擊破、妮可施加減益，朱鳶在失衡窗口消耗強化霰彈。",
+      "reason": "青衣的失衡易傷配合朱鳶集中消耗強化霰彈。妮可的能量場減益與六影暴擊增益覆蓋失衡窗口，三人的額外能力皆可觸發。",
+      "members": [
+        {
+          "id": "zhu_yuan",
+          "role": "強化霰彈主輸出",
+          "focus": [
+            "優先連攜9至11、特殊10至11，普攻12已到位",
+            "確認妮可能量場與六影暴擊疊層覆蓋失衡爆發"
+          ]
+        },
+        {
+          "id": "qingyi",
+          "role": "擊破與失衡易傷",
+          "focus": [
+            "普攻12與核心F已到位，特殊10至11再補",
+            "先確保羈服疊層，閃避1依實際反擊頻率決定"
+          ]
+        },
+        {
+          "id": "nicole",
+          "role": "聚怪與以太支援",
+          "focus": [
+            "六影、核心F與特殊16已到位，先確認音擎",
+            "讓能量場減益與六影疊層覆蓋朱鳶爆發"
+          ]
+        }
+      ],
+      "activation": [
+        "朱鳶：妮可是支援，青衣也與自己同屬刑偵特勤組，可觸發武裝協同。",
+        "青衣：朱鳶是強攻，也與自己同陣營，可觸發陽關三疊。",
+        "妮可：朱鳶與自己同為以太屬性，可觸發狡兔三窟。"
+      ],
+      "steps": [
+        {
+          "characterId": "qingyi",
+          "action": "以普攻與蓄力終結一擊建立羈服，將敵人打進失衡。"
+        },
+        {
+          "characterId": "nicole",
+          "action": "能量足夠時施放強化特殊技，讓能量場覆蓋目標。"
+        },
+        {
+          "characterId": "zhu_yuan",
+          "action": "透過連攜或快速支援進場，在失衡與減益窗口消耗強化霰彈。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "朱鳶・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/31"
+        },
+        {
+          "label": "青衣・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/350"
+        },
+        {
+          "label": "妮可・德瑪拉・HoYoWiki",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/20"
+        }
+      ],
+      "accountAssessment": {
+        "verdict": "保留，朱鳶爆發技能列優先",
+        "reason": "朱鳶普攻12、核心F已到位，但連攜9、特殊10仍有明確爆發倍率缺口，先補到11。青衣普攻12、核心F，妮可六影、核心F與特殊16，已具備擊破、減防與暴擊支援。妮可音擎尚未記錄，這項缺口不等於技能未培養。"
+      }
+    }
+  ]
+}

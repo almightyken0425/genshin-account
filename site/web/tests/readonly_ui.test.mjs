@@ -10,9 +10,8 @@ test('account presentation has no edit, draft or save controls',()=>{
  for(const token of ['<input','<select','onChange','onRoll']) assert.ok(!substat.includes(token),token);
 });
 test('footer has three owner-specified destinations',()=>{
- assert.match(dashboard,/<NavigationDock>/);assert.match(dock,/ariaLabel='主要分頁'/);
- assert.match(dashboard,/switchTab\('teams'\)/);assert.match(dashboard,/switchTab\('roster'\)/);
- assert.match(dashboard,/selectedTeams.map/);assert.match(dashboard,/switchTab\('growth'\)/);assert.match(dashboard,/openTeam\(team.id\)/);assert.ok(!dashboard.includes('teams-heading'));assert.match(dashboard,/返回隊伍列表/);
+ assert.match(dashboard,/<GameNavigation section={section} onSelect={switchTab}/);assert.match(dock,/ariaLabel='主要分頁'/);
+ assert.match(dashboard,/selectedTeams.map/);assert.match(dashboard,/openTeam\(team.id\)/);assert.ok(!dashboard.includes('teams-heading'));assert.match(dashboard,/返回隊伍列表/);
  assert.match(dashboard,/window\.history\.pushState/);assert.match(dashboard,/popstate/);
 });
 
@@ -39,7 +38,8 @@ test('Skirk exact four rows and no extra A5 or Escoffier Q',()=>{
 test('team members follow first appearance and detail cards contain images only',()=>{
  const teams=readFileSync(new URL('../lib/selected_teams.ts',import.meta.url),'utf8');
  assert.ok(teams.includes("members:['escoffier','furina','voyanitsa','skirk']"));
- const detail=dashboard.split('className="team-detail-members"')[1].split('<section className="team-guide"')[0];
+ const detail=readFileSync(new URL('../components/teams/team_members.tsx',import.meta.url),'utf8');
+ assert.match(dashboard,/<TeamMembers members={team.members.map/);
  assert.ok(!detail.includes('<strong>'));assert.ok(!detail.includes('<small>'));assert.ok(detail.includes('<MediaImage'));
 });
 test('all six other teams use minimal flows with conditional actions retained',()=>{
@@ -112,7 +112,7 @@ test('rotation cards have compact layout without inter-card arrows',()=>{
  assert.ok(flow.includes('短 E → A2 → Q'));assert.ok(flow.includes('A5 → 衝刺'));
 });
 test('page destinations remain icon-only with accessible names and selected state',()=>{
- const nav=dashboard.split('<NavigationDock>')[1].split('</NavigationDock>')[0];
+ const nav=readFileSync(new URL('../components/navigation/game_navigation.tsx',import.meta.url),'utf8');
  assert.ok(!nav.includes('<span>'));
  for(const label of ['隊伍','角色列表','培養重點'])assert.ok(nav.includes('aria-label="'+label+'"'));
  assert.equal((nav.match(/aria-current=/g)||[]).length,3);

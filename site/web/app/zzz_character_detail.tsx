@@ -19,13 +19,13 @@ function Field({label,value}:{label:string,value:string|number|null|undefined}){
  return <MetricValue label={label} value={show(value)}/>;
 }
 
-export default function ZzzCharacterDetail({character,onBack,sourceName}:{character:ZzzAgent,onBack:()=>void,sourceName?:string}){
+export default function ZzzCharacterDetail({character,onBack,sourceName,backLabel='返回角色列表'}:{character:ZzzAgent,onBack:()=>void,sourceName?:string,backLabel?:string}){
  const [fullLabels,setFullLabels]=useState(false),[expanded,setExpanded]=useState<'engine'|'discs'|null>(null);
  const weapon=character.wEngine;
  const engineImage=zzzEngineImage(weapon?.name);
  const sets=Array.from(new Set((character.driveDiscs||[]).map(disc=>disc.setName).filter((name):name is string=>!!name)));
  return <MetricDisplayContext value={fullLabels}><section className="detail detail-centered zzz-detail" aria-label="角色詳細資料">
-  <CenteredHeader title={character.name} onBack={onBack} backLabel="返回角色列表" action={<button className="icon-button mode-toggle" aria-label={fullLabels?'切換精簡模式':'切換完整模式'} aria-pressed={fullLabels} onClick={()=>setFullLabels(!fullLabels)}>{fullLabels?<Shapes size={19}/>:<Tags size={19}/>}</button>}/>
+  <CenteredHeader title={character.name} onBack={onBack} backLabel={backLabel} action={<button className="icon-button mode-toggle" aria-label={fullLabels?'切換精簡模式':'切換完整模式'} aria-pressed={fullLabels} onClick={()=>setFullLabels(!fullLabels)}>{fullLabels?<Shapes size={19}/>:<Tags size={19}/>}</button>}/>
   {fullLabels&&<p className="zzz-classification">{[character.element,character.specialty].filter(Boolean).join(' · ')}</p>}
   <section className="character-summary" aria-label="角色與配裝">
    <PortraitSummary image={{src:zzzCharacterImage(character.id,'splash'),alt:character.name,eager:true}} metrics={[{label:'角色等級',value:character.level},{label:'影畫',value:character.mindscape},{label:'有效詞條總數',value:effectiveDiscLoadout(character.driveDiscs)}]}/>

@@ -9,7 +9,7 @@ import {fileURLToPath} from 'node:url';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 
-let server,CharacterCard,PortraitSummary,MediaImage,EquipmentTile,MetricDisplayContext;
+let server,CharacterCard,PortraitSummary,MediaImage,EquipmentTile,MetricDisplayContext,GameNavigation,TeamCard,TeamMembers;
 const cacheDir=mkdtempSync(join(tmpdir(),'hoyo-component-tests-'));
 before(async()=>{
  const root=fileURLToPath(new URL('../',import.meta.url));
@@ -18,6 +18,9 @@ before(async()=>{
  PortraitSummary=(await server.ssrLoadModule('/components/character/portrait_summary.tsx')).default;
  MediaImage=(await server.ssrLoadModule('/components/media/media_image.tsx')).default;
  EquipmentTile=(await server.ssrLoadModule('/components/equipment/equipment_tile.tsx')).default;
+ GameNavigation=(await server.ssrLoadModule('/components/navigation/game_navigation.tsx')).default;
+ TeamCard=(await server.ssrLoadModule('/components/teams/team_card.tsx')).default;
+ TeamMembers=(await server.ssrLoadModule('/components/teams/team_members.tsx')).default;
  ({MetricDisplayContext}=await server.ssrLoadModule('/components/metrics/metric_label.tsx'));
 });
 after(async()=>{await server?.close();rmSync(cacheDir,{recursive:true,force:true})});
@@ -84,11 +87,32 @@ test('equipment tile keeps native disclosure and button semantics',()=>{
 });
 
 test('shared presentation layers do not depend on page or game-data modules',()=>{
- for(const folder of ['media','metrics','character','equipment','navigation']){
+ for(const folder of ['media','metrics','character','equipment','navigation','teams']){
   const directory=new URL('../components/'+folder+'/',import.meta.url);
   for(const name of readdirSync(directory).filter(name=>/\.tsx?$/.test(name))){
    const source=readFileSync(new URL(name,directory),'utf8');
    assert.doesNotMatch(source,/from ['"](?:@\/app\/|(?:\.\.\/)+app\/|@\/lib\/(?:zzz_|game_assets|account|types))/);
   }
+ }
+});
+
+test('shared game navigation exposes three destinations with one current page',()=>{
+ for(const section of ['teams','roster','growth']){
+  const html=render(GameNavigation,{section,onSelect:()=>{}});
+  for(const label of ['隊伍','角色列表','培養重點'])assert.ok(html.includes('aria-label="'+label+'"'));
+  assert.equal((html.match(/aria-current="page"/g)||[]).length,1);
+  assert.doesNotMatch(html,/>隊伍<|>角色列表<|>培養重點</);
+ }
+});
+
+test('team presentation supports three and four members without changing their order',()=>{
+ for(const count of [3,4]){
+  const members=Array.from({length:count},(_,index)=>({id:'member_'+index,name:'角色'+index,src:'/member-'+index+'.webp'}));
+  const card=render(TeamCard,{members,label:'查看隊伍',onClick:()=>{}});
+  const detail=render(TeamMembers,{members,onOpenCharacter:()=>{}});
+  assert.match(card,new RegExp('--team-count:'+count));
+  assert.match(detail,new RegExp('--team-count:'+count));
+  assert.equal((detail.match(/aria-label="查看角色/g)||[]).length,count);
+  for(let index=1;index<count;index++)assert.ok(detail.indexOf('/member-'+(index-1)+'.webp')<detail.indexOf('/member-'+index+'.webp'));
  }
 });

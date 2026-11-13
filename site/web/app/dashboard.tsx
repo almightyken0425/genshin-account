@@ -1,11 +1,13 @@
 'use client';
 import {useState,useEffect,useRef} from 'react';
-import { BookOpen, Search, RefreshCw, X, AlertTriangle, Sword, Flower2, LoaderCircle, Tags, Shapes, ChevronDown, ArrowLeft, UsersRound, Sprout } from 'lucide-react';
+import { BookOpen, Search, RefreshCw, X, AlertTriangle, Sword, Flower2, LoaderCircle, Tags, Shapes, ChevronDown, ArrowLeft } from 'lucide-react';
 import type {AccountResult,Stat} from '@/lib/types';
 import {characterImage,characterRarity,weaponImage,artifactImage} from '@/lib/game_assets';
 import MediaImage from '@/components/media/media_image';
 import CharacterCard from '@/components/character/character_card';
-import NavigationDock from '@/components/navigation/navigation_dock';
+import GameNavigation,{gameSection,type GameSection} from '@/components/navigation/game_navigation';
+import TeamCard from '@/components/teams/team_card';
+import TeamMembers from '@/components/teams/team_members';
 import PortraitSummary from '@/components/character/portrait_summary';
 import MetricValue from '@/components/metrics/metric_value';
 import MetricLabel,{MetricDisplayContext} from '@/components/metrics/metric_label';
@@ -30,7 +32,7 @@ function Numeric({label,value}:{label:string,value:number|null}){
  return <MetricValue label={label} value={<>{fmt(value)}{label.endsWith('(%)')?'%':''}</>}/>;
 }
 export default function Dashboard({initialCharacter='',gameControl}:{initialCharacter?:string,gameControl?:React.ReactNode}){
- const [data,setData]=useState<AccountResult|null>(null),[selected,setSelected]=useState(initialCharacter),[query,setQuery]=useState(''),[filters,setFilters]=useState<RosterFilters>({rarities:[],weapons:[],elements:[]}),[sorts,setSorts]=useState<SortRule[]>([]),[fullLabels,setFullLabels]=useState(false),[expanded,setExpanded]=useState<'weapon'|'artifacts'|null>(null),[section,setSection]=useState('roster'),[selectedTeam,setSelectedTeam]=useState('');
+ const [data,setData]=useState<AccountResult|null>(null),[selected,setSelected]=useState(initialCharacter),[query,setQuery]=useState(''),[filters,setFilters]=useState<RosterFilters>({rarities:[],weapons:[],elements:[]}),[sorts,setSorts]=useState<SortRule[]>([]),[fullLabels,setFullLabels]=useState(false),[expanded,setExpanded]=useState<'weapon'|'artifacts'|null>(null),[section,setSection]=useState<GameSection>('roster'),[selectedTeam,setSelectedTeam]=useState('');
  const [busy,setBusy]=useState(true),[error,setError]=useState<{code:string,message:string}|null>(null);
  const [headerCollapsed,setHeaderCollapsed]=useState(false);
  useEffect(()=>{
@@ -61,7 +63,7 @@ export default function Dashboard({initialCharacter='',gameControl}:{initialChar
   const sync=()=>{
    const id=new URL(window.location.href).searchParams.get('character')||'';
    focusTarget.current=id?'detail':'list';
-   const url=new URL(window.location.href);setSelected(id);setSelectedTeam(url.searchParams.get('team')||'');setSection(['teams','growth'].includes(url.searchParams.get('tab')||'')?url.searchParams.get('tab')!:'roster');setExpanded(null);
+   const url=new URL(window.location.href);setSelected(id);setSelectedTeam(url.searchParams.get('team')||'');setSection(gameSection(url.searchParams.get('tab')));setExpanded(null);
   };
   const initialId=new URL(window.location.href).searchParams.get('character')||'';
   if(initialId){focusTarget.current='detail';setSelected(initialId)}
@@ -100,7 +102,7 @@ export default function Dashboard({initialCharacter='',gameControl}:{initialChar
   setSelected('');setSelectedTeam('');setSection(tab);setExpanded(null);window.scrollTo({top:0});
  }
  const a=data?.account,c=a?.characters.find(x=>x.id===selected);
- useEffect(()=>{void refresh();const url=new URL(window.location.href);const tab=url.searchParams.get('tab');if(tab==='teams'||tab==='growth')setSection(tab);setSelectedTeam(url.searchParams.get('team')||'')},[]);
+ useEffect(()=>{void refresh();const url=new URL(window.location.href);setSection(gameSection(url.searchParams.get('tab')));setSelectedTeam(url.searchParams.get('team')||'')},[]);
  const team=selectedTeams.find(t=>t.id===selectedTeam);
  async function refresh(){setBusy(true);setError(null);try{const r=await fetch('/api/account',{cache:'no-store'});const result:any=await r.json();if(!r.ok)throw result;setData(result)}catch(e:any){setError({code:e.error||'network_error',message:e.message||'無法連線，請稍後重試'})}finally{setBusy(false)}}
  const e=c&&a?.equipment[c.id],w=a?.weapons.find(x=>x.id===e?.weapon_id),panel=a?.panel_snapshots.find(x=>x.id===c?.panel_snapshot_id);
@@ -116,7 +118,7 @@ export default function Dashboard({initialCharacter='',gameControl}:{initialChar
  return <MetricDisplayContext value={fullLabels}><div className="app-shell">
   <main className="main hoyo-main">
    {feedback}
-   {section==='teams'?<section className="teams-page" aria-label="隊伍">{team?<><CenteredHeader title={team.name} onBack={()=>switchTab('teams')} backLabel="返回隊伍列表"/><div className="team-detail-members">{team.members.map(id=>{const character=a?.characters.find(c=>c.id===id);return <button key={id} onClick={()=>openCharacter(id)} aria-label={'查看'+(character?.name||id)+'角色詳情'}><MediaImage src={characterImage(id,'icon')} alt=""/></button>})}</div><section className="team-guide" aria-label="隊伍循環">{team.id==='skirk'?<SkirkFlow/>:<TeamFlow id={team.id}/>}</section></>:<div className="teams-grid">{selectedTeams.map(team=><button className="team-card team-image-card" key={team.id} onClick={()=>openTeam(team.id)} aria-label={'查看'+team.name+'操作手法：'+team.members.map(id=>a?.characters.find(c=>c.id===id)?.name||id).join('、')}><div className="team-members">{team.members.map(id=><MediaImage key={id} src={characterImage(id,'icon')} alt=""/>)}</div></button>)}</div>}</section>
+   {section==='teams'?<section className="teams-page" aria-label="隊伍">{team?<><CenteredHeader title={team.name} onBack={()=>switchTab('teams')} backLabel="返回隊伍列表"/><TeamMembers members={team.members.map(id=>({id,name:a?.characters.find(c=>c.id===id)?.name||id,src:characterImage(id,'icon')}))} onOpenCharacter={openCharacter}/><section className="team-guide" aria-label="隊伍循環">{team.id==='skirk'?<SkirkFlow/>:<TeamFlow id={team.id}/>}</section></>:<div className="teams-grid">{selectedTeams.map(team=><TeamCard key={team.id} members={team.members.map(id=>({id,name:a?.characters.find(c=>c.id===id)?.name||id,src:characterImage(id,'icon')}))} onClick={()=>openTeam(team.id)} label={'查看'+team.name+'操作手法：'+team.members.map(id=>a?.characters.find(c=>c.id===id)?.name||id).join('、')}/>)}</div>}</section>
    :section==='growth'?<section className="teams-page" aria-label="培養重點"><GrowthTarget/></section>
    :!selected?<section className="roster" aria-label="角色列表"><RosterControls characters={a?.characters||[]} rarities={rarities} filters={filters} onFilters={setFilters} sorts={sorts} onSorts={setSorts}/><div className="roster-search"><label className="search"><Search size={17}/><input ref={searchRef} placeholder="搜尋角色名稱" aria-label="搜尋角色名稱" value={query} onChange={e=>setQuery(e.target.value)}/>{query&&<button aria-label="清除搜尋" onClick={()=>setQuery('')}><X size={13}/></button>}</label></div>
     <div className="character-list">{!a?(busy?<div className="empty small"><LoaderCircle className="spin"/><p>正在讀取角色紀錄…</p></div>:<div className="empty small"><BookOpen/><p>連接 GitHub 後<br/>角色會顯示在這裡</p></div>):visible.length===0?<div className="empty small"><Search/><p>找不到符合條件的角色</p><button className="text-button" onClick={()=>{setQuery('');setFilters({rarities:[],weapons:[],elements:[]})}}>清除篩選</button></div>:visible.map((x,index)=><CharacterCard key={x.id} name={x.name} ref={el=>{if(el)cardRefs.current.set(x.id,el);else cardRefs.current.delete(x.id)}} onClick={()=>openCharacter(x.id)} aria-label={'查看'+x.name+'的角色詳情，角色等級 '+fmt(x.level.current)+'，命之座 '+fmt(x.constellation)+'，有效詞條總數 '+fmt(effectiveTotals[x.id])} image={{src:characterImage(x.id,'roster'),alt:'',eager:index<4}} metrics={[{label:'角色等級',value:x.level.current},{label:'命之座',value:x.constellation},{label:'有效詞條總數',value:effectiveTotals[x.id]??null}]}/>)}</div></section>
@@ -153,7 +155,7 @@ export default function Dashboard({initialCharacter='',gameControl}:{initialChar
 
    </>:<div className="welcome">{busy?<LoaderCircle className="spin" size={26}/>:<BookOpen size={28}/>}<h2>{busy?'正在讀取角色資料':data?'找不到這位角色':'開始查看角色'}</h2><p>{busy?'連接你的 GitHub 紀錄中…':data?'請返回列表，選擇已記錄的角色。':'連線後即可查看數值、天賦和配裝。'}</p></div>}</section>}
    <footer className="page-footer"><span>遊戲圖片 © HoYoverse</span><span>圖源 <a href="https://wiki.hoyolab.com/pc/genshin/home" target="_blank" rel="noreferrer">HoYoWiki</a><span className="footer-separator">/</span>資料索引 <a href="https://github.com/theBowja/genshin-db" target="_blank" rel="noreferrer">genshin-db</a></span></footer>
-   <NavigationDock>{gameControl}<button className={section==='teams'?'active':''} aria-current={section==='teams'?'page':undefined} aria-label="隊伍" title="隊伍" onClick={()=>switchTab('teams')}><UsersRound size={21} aria-hidden="true"/></button><button className={section==='roster'?'active':''} aria-current={section==='roster'?'page':undefined} aria-label="角色列表" title="角色列表" onClick={()=>switchTab('roster')}><BookOpen size={21} aria-hidden="true"/></button><button className={section==='growth'?'active':''} aria-current={section==='growth'?'page':undefined} aria-label="培養重點" title="培養重點" onClick={()=>switchTab('growth')}><Sprout size={21} aria-hidden="true"/></button></NavigationDock>
+   <GameNavigation section={section} onSelect={switchTab} gameControl={gameControl}/>
   </main>
  </div></MetricDisplayContext>
 }
