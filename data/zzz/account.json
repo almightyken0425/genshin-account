@@ -26795,9 +26795,7 @@
           "record": "/zzz/characters/7"
         }
       ],
-      "uncertainties": [
-        "影片僅顯示音擎A級及60/60，未拍到音擎詳情，名稱、精煉及面板仍未確認"
-      ],
+      "uncertainties": [],
       "specialty": "擊破",
       "portraitPath": "evidence/zzz/video_001/koleda_portrait.jpg",
       "portraitSha256": "af3427e9304d81dc25daa732bdb0e1361f4c602f0c18f687bcba81b1b5ac2c1d",

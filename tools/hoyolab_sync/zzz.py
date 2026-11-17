@@ -56,6 +56,7 @@ AGENT_PROPERTIES = {
 EFFECTIVE_KEYS = {name + "|" + unit for name, unit in SUBSTAT_PROPERTIES.values()}
 _SUBSTAT_ORDER = {name + "|" + unit: index for index, (name, unit) in enumerate(SUBSTAT_PROPERTIES.values())}
 _NUMBER = re.compile(r"^[+-]?(?:\d+(?:\.\d*)?|\.\d+)%?$")
+_LEGACY_UNKNOWN_ENGINE_NOTE = "影片僅顯示音擎A級及60/60，未拍到音擎詳情，名稱、精煉及面板仍未確認"
 
 
 def _integer(value, minimum, maximum, *, required=False):
@@ -636,6 +637,16 @@ def merge(base, normalized, source, effective_rules=None):
             if _same_engine_observation(engine, old_engine):
                 engine["maxLevel"] = old_engine.get("maxLevel")
         current["wEngine"] = engine
+        # The original video limitation stays in legacyObservation. Retire only
+        # this resolved note when the new source actually supplies every field.
+        if (engine and engine.get("name") is not None
+                and engine.get("refinement") is not None
+                and len(engine.get("stats") or {}) >= 2
+                and all(value is not None for value in engine["stats"].values())):
+            current["uncertainties"] = [
+                note for note in current.get("uncertainties", [])
+                if note != _LEGACY_UNKNOWN_ENGINE_NOTE
+            ]
         current["statsEffective"] = {key: None for key in current.get("stats") or {}}
         current["sync"] = {"apiId": api_id, "sourceId": sid}
         evidence = {"sourceId": sid, "record": f"/zzz/characters/{index}"}
