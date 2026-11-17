@@ -162,6 +162,31 @@ class RollDerivationTests(unittest.TestCase):
 
 
 class MergeZZZTests(unittest.TestCase):
+    def test_resolved_engine_limitation_is_retained_only_in_original_observation(self):
+        base = base_account(); old = old_character()
+        old["uncertainties"] = [zzz._LEGACY_UNKNOWN_ENGINE_NOTE, "其他待確認事項"]
+        base["characters"] = [old]
+        candidate, _ = zzz.merge(base, normalized(), SOURCE)
+        current = candidate["characters"][0]
+        self.assertEqual(current["uncertainties"], ["其他待確認事項"])
+        self.assertEqual(current["legacyObservation"], old)
+        self.assertEqual(base["characters"][0], old)
+
+    def test_incomplete_engine_observation_keeps_unresolved_limitation(self):
+        for field in ("name", "refinement", "stats", "partial_stats"):
+            with self.subTest(field=field):
+                base = base_account(); old = old_character()
+                old["uncertainties"] = [zzz._LEGACY_UNKNOWN_ENGINE_NOTE]
+                base["characters"] = [old]
+                norm = normalized()
+                engine = norm["characters"][0]["wEngine"]
+                if field == "partial_stats":
+                    engine["stats"]["暴擊率"] = None
+                else:
+                    engine[field] = None
+                candidate, _ = zzz.merge(base, norm, SOURCE)
+                self.assertEqual(candidate["characters"][0]["uncertainties"], old["uncertainties"])
+
     def test_new_character_counts_are_derived_and_rule_is_separate(self):
         base = base_account(); before = deepcopy(base); norm = normalized(); norm_before = deepcopy(norm)
         candidate, summary = zzz.merge(base, norm, SOURCE, role_rule())
