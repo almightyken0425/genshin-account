@@ -29,13 +29,31 @@ def contained_path(root, relative):
         raise ValueError(f"Path escapes root: {relative}")
     return target
 
+
+def resolve_pointer(document, pointer):
+    """Resolve a JSON pointer without accepting negative or ambiguous list indexes."""
+    if not isinstance(pointer, str) or not pointer.startswith('/'):
+        raise ValueError('Invalid JSON pointer')
+    value = document
+    for part in pointer[1:].split('/'):
+        part = part.replace('~1', '/').replace('~0', '~')
+        if isinstance(value, list):
+            if not part.isdigit() or (len(part) > 1 and part.startswith('0')):
+                raise ValueError('Invalid JSON pointer index')
+            value = value[int(part)]
+        elif isinstance(value, dict):
+            value = value[part]
+        else:
+            raise ValueError('JSON pointer does not resolve')
+    return value
+
 def build_fingerprint(account, character_id):
     character = next(c for c in account["characters"] if c["id"] == character_id)
     equipment = account["equipment"][character_id]
     weapons = {w["id"]: w for w in account["weapons"]}
     artifacts = {a["id"]: a for a in account["artifacts"]}
     def mechanics(item):
-        return {k: v for k, v in item.items() if k not in ("provenance", "name", "substat_rolls")}
+        return {k: v for k, v in item.items() if k not in ("provenance", "name", "substat_rolls", "hoyolab_id")}
     payload = {
         "character": {k: character[k] for k in ("id", "element", "weapon_type", "level", "constellation", "talents")},
         "weapon": mechanics(weapons[equipment["weapon_id"]]) if equipment["weapon_id"] else None,
@@ -48,13 +66,24 @@ def snapshot_status(account, snapshot):
     return "matches_recorded_build" if snapshot["build_fingerprint"] == build_fingerprint(account, snapshot["character_id"]) else "build_changed"
 
 def effective_substat_count(artifact, character_id):
-    """Count observed highlighted rolls, including each substat's initial roll."""
+    """Count observed or explicitly assessed rolls, including each initial roll."""
     observation = artifact.get("substat_rolls")
     if not observation or observation["character_id"] != character_id:
         return None
     values = observation["values"]
     if {r["key"] for r in values} != {s["key"] for s in artifact["substats"]}:
         return None
-    if any(r["effective"] is None or (r["effective"] and r["enhancements"] is None) for r in values):
+    resolved = [(effective_roll(roll, observation), roll["enhancements"]) for roll in values]
+    if any(effective is None or (effective and enhancements is None) for effective, enhancements in resolved):
         return None
-    return sum(r["enhancements"] + 1 for r in values if r["effective"])
+    return sum(enhancements + 1 for effective, enhancements in resolved if effective)
+
+
+def effective_roll(roll, observation):
+    """Game observations take precedence over a named, complete role rule."""
+    if isinstance(roll.get("effective"), bool):
+        return roll["effective"]
+    if observation.get("rule_id") and isinstance(observation.get("effective_keys"), list):
+        assessed = roll.get('assessed_effective')
+        return assessed if isinstance(assessed, bool) else None
+    return None

@@ -1,22 +1,24 @@
-import { effectiveSubstatCount } from './artifact_rolls.mjs';
+import { effectiveSubstatCount,substatRoll } from './artifact_rolls.mjs';
 import { hash, panelStates, LABELS, SLOTS } from './account.mjs';
 const number=x=>x===null?'未知':String(x);
 const cell=x=>String(x).replaceAll('|','\\|').replaceAll('\n',' ');
 const stat=s=>(LABELS[s.key]||s.key)+' '+number(s.value)+(s.unit==='percent'&&s.value!==null?'%':'');
 export function renderSummary(a,text,manifests) {
  const ws=new Map(a.weapons.map(x=>[x.id,x])), ars=new Map(a.artifacts.map(x=>[x.id,x])), ps=new Map(a.panel_snapshots.map(x=>[x.id,x]));
- const shots=new Map(manifests.flatMap(m=>m.screenshots).map(x=>[x.id,x])), states=panelStates(a);
- const links=r=>r.provenance.evidence_refs.map(id=>{const s=shots.get(id);return '['+(s.time_seconds===null?'補充圖':String(Math.floor(s.time_seconds/60)).padStart(2,'0')+':'+(s.time_seconds%60).toFixed(1).padStart(4,'0'))+'](../'+s.path+')'}).join('、');
+ const shots=new Map(manifests.flatMap(m=>[...m.screenshots,...(m.observations||[]).map(observation=>({...observation,path:m.extraction.path}))]).map(x=>[x.id,x])), states=panelStates(a);
+ const links=r=>r.provenance.evidence_refs.map(id=>{const s=shots.get(id);if(s.kind==='hoyolab')return '[HoYoLAB](../'+s.path+'#'+s.pointer+')';return '['+(s.time_seconds===null?'補充圖':String(Math.floor(s.time_seconds/60)).padStart(2,'0')+':'+(s.time_seconds%60).toFixed(1).padStart(4,'0'))+'](../'+s.path+')'}).join('、');
  const lines=['# 帳號資料摘要','','此檔由 `scripts/report.py` 產生，修改現況請更新 `data/account.json`。','','資料 SHA-256：`'+hash(text)+'`','','已記錄 '+a.characters.length+' 名角色、'+ws.size+' 件武器、'+ars.size+' 件聖遺物。','','角色庫範圍：'+a.coverage.roster+'。裝備庫範圍：'+a.coverage.inventory+'。面板代表觀測值，非實戰傷害計算。','','天賦依序為普攻／戰技／爆發，表格使用記錄的顯示等級。基礎等級與觀測時間見正式資料，未知值保留為 null。','','| 角色 | 等級 | 命座 | 武器 | 精煉 | 天賦 | 面板與配裝 |','| --- | --- | --- | --- | --- | --- | --- |'];
- if(a.schema_version>=2)lines.splice(12,0,'有效副詞條依遊戲畫面亮起的項目記錄，以粗體標示。有效總數包含每項的初始 1 次，未知時不估算。','');
+ if(a.schema_version>=2)lines.splice(12,0,a.schema_version>=3?'有效副詞條優先採遊戲觀測，缺少標記時採已記錄的角色規則並註明。有效總數包含每項的初始 1 次，未知時不估算。':'有效副詞條依遊戲畫面亮起的項目記錄，以粗體標示。有效總數包含每項的初始 1 次，未知時不估算。','');
  const substats=(artifact,cid)=>{
   const observation=artifact.substat_rolls;
   if(!observation)return artifact.substats.map(stat).join('、');
   return artifact.substats.map(s=>{
    const r=observation.values.find(r=>r.key===s.key);
+   const resolved=substatRoll(artifact,s.key,cid).effective;
    let text=stat(s)+' · 強化 '+number(r.enhancements);
-   if(observation.character_id===cid&&r.effective===true)text='**'+text+'**';
-   else if(observation.character_id!==cid||r.effective===null)text+=' · 有效性未知';
+   if(r.effective===null&&typeof resolved==='boolean')text+=' · 角色規則判定';
+   if(resolved===true)text='**'+text+'**';
+   else if(resolved===null)text+=' · 有效性未知';
    return text;
   }).join('、');
  };

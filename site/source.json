@@ -1,9 +1,9 @@
 {
   "project_id": "appgprj_6af3d7df0f3481919cbe1b4416108ff6",
-  "source_commit": "0f1797042492c5d7d912e034cf0f069d9ae93230",
+  "source_commit": "8977856a37f01e1799297f35a94c6332729deecf",
   "site_url": "https://ken-genshin-archive.almightyken0425.chatgpt.site",
-  "version_id": "appgprj_6af3d7df0f3481919cbe1b4416108ff6~appgver_ea078e12d65c81918cde8ed3912fc271",
-  "deployment_id": "appgdep_6af6f2fc9b0c819191dd8ddea10a469f",
+  "version_id": "appgprj_6af3d7df0f3481919cbe1b4416108ff6~appgver_10d1ad0499b481919b18a60bab4e8f24",
+  "deployment_id": "appgdep_6afbdb14f1b08191824f0dfee147dffb",
   "review": {
     "id": "hoyo-layout-equipment-20261113",
     "based_on_commit": "e36f0599abce933c4678d87c48cf7e8baf21ffbc",
@@ -22,11 +22,11 @@
     "runtime_overlay": false
   },
   "effective_stats": {
-    "checked_at": "2026-11-13",
-    "characters": 47,
+    "checked_at": "2026-11-17",
+    "characters": 83,
     "profile_source": "web/lib/genshin_stat_profiles.json",
     "based_on_commit": "e36f0599abce933c4678d87c48cf7e8baf21ffbc",
-    "based_account_sha256": "51159cc2f7493a68647ca84e87333a081c5c889dc692633bf7a37942fc3dc490",
+    "based_account_sha256": "6a1bd3429cf5dcb44e0953e48967fb4a852d1c440c97330325a1f61eedcd66d8",
     "github_pushed": true
   },
   "summary_spacing": {
@@ -49,10 +49,13 @@
   "data_source": {
     "repository": "almightyken0425/genshin-account",
     "branch": "main",
-    "account_merge_revision": "529c51780cd384cc6d7707a6780736fd8e44bb83",
-    "snapshots_in_runtime": false
+    "snapshots_in_runtime": false,
+    "previous_account_merge_revision": "529c51780cd384cc6d7707a6780736fd8e44bb83",
+    "account_source_id": "hoyolab_056a6f44aed4f485",
+    "account_sha256": "6a1bd3429cf5dcb44e0953e48967fb4a852d1c440c97330325a1f61eedcd66d8",
+    "zzz_account_sha256": "c220d738d678c8779ab5b66a263e0b40c426c07c438d92e20e4102cd164e811b"
   },
-  "version_number": 46,
+  "version_number": 48,
   "zzz_teams_removed": {
     "checked_at": "2026-11-13",
     "based_on_commit": "2afcdece74b98a3bcb9ff6cc7e252dcd7f994d6c",
@@ -113,5 +116,41 @@
       "browser": "not_repeated_after_preview_timeout",
       "deployment": "succeeded"
     }
+  },
+  "hoyolab_sync": {
+    "checked_at": "2026-11-17",
+    "based_on_commit": "c2b910c8d672e6d313ba67821c3af18775831cd9",
+    "local_branch": "codex/hoyolab-sync",
+    "site_support": "deployed",
+    "formal_sync_write": "included_in_release",
+    "repository_main_code": "included_in_release",
+    "schemas": {
+      "genshin": 3,
+      "zzz": 2
+    },
+    "verification": {
+      "python_tests_passed": 188,
+      "web_tests": "passed",
+      "typescript": "passed",
+      "build": "passed",
+      "deployment": "succeeded",
+      "actual_read": "83_genshin_and_38_zzz_verified",
+      "local_preview": "verified_in_chrome",
+      "local_publish_button": "not_separately_exercised",
+      "retained_artwork_hashes_verified": 88,
+      "archive_runtime_images_verified": 682,
+      "archive_expanded_bytes": 226325953
+    },
+    "source_id": "hoyolab_056a6f44aed4f485",
+    "retrieved_at": "2026-11-16T14:27:54.500004+00:00",
+    "characters": {
+      "genshin": 83,
+      "zzz": 38
+    },
+    "verified_base_levels": {
+      "genshin": 249,
+      "zzz": 190
+    },
+    "conditional_effective_rows": 19
   }
 }

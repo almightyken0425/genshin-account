@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "corrections": [
+    {
+      "id": "review_20261116_chasca_goblet_atk",
+      "artifact_id": "artifact_video_5680_20261111_chasca_goblet",
+      "evidence_ref": "video_5680_20261111_shot_008",
+      "evidence_sha256": "67ef754df4e5d9c0b626ad532c547bd60718be8fb53f7f336f82fd4743e8b762",
+      "reviewed_at": "2026-11-16",
+      "from_key": "def",
+      "to_key": "atk",
+      "expected_mechanics": {
+        "name": "紛爭的前宴",
+        "set_name": "黑曜秘典",
+        "slot": "goblet",
+        "rarity": 5,
+        "level": 20,
+        "main_stat": {"key": "atk_pct", "value": 46.6, "unit": "percent"},
+        "substats": [
+          {"key": "crit_rate", "value": 3.5, "unit": "percent"},
+          {"key": "crit_dmg", "value": 28, "unit": "percent"},
+          {"key": "hp", "value": 269, "unit": "flat"},
+          {"key": "def", "value": 47, "unit": "flat"}
+        ]
+      },
+      "expected_substat_rolls": {
+        "character_id": "chasca",
+        "values": [
+          {"key": "crit_rate", "enhancements": 0, "effective": true},
+          {"key": "crit_dmg", "enhancements": 3, "effective": true},
+          {"key": "hp", "enhancements": 0, "effective": false},
+          {"key": "def", "enhancements": 2, "effective": false}
+        ]
+      },
+      "note": "2026-11-16 回查原圖 video_5680_20261111_shot_008：恰斯卡空之杯副詞條為攻擊力47、強化+2，修正舊OCR防禦力47；保留原物品ID、+2與有效標記false及歷史面板。"
+    }
+  ]
+}

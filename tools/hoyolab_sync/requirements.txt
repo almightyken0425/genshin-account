@@ -1,0 +1,4 @@
+-r ../../requirements.txt
+genshin==1.7.32
+truststore==0.10.5
+keyring==25.7.0

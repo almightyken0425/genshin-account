@@ -15,6 +15,7 @@ for(const [from,to]of [['data/account.json','account.json'],['evidence/video_001
 // The accepted growth observations remain a fixed regression baseline after later imports.
 const focusBaseline='2afcdece74b98a3bcb9ff6cc7e252dcd7f994d6c';
 const focusAccount=JSON.parse(execFileSync('git',['-C',root,'show',focusBaseline+':data/zzz/account.json'],{encoding:'utf8'}));
+for(const [game,sourcePath]of [['genshin','data/account.json'],['zzz','data/zzz/account.json']])writeFileSync(path.join(directory,'accepted_video_'+game+'_account.json'),execFileSync('git',['-C',root,'show',focusBaseline+':'+sourcePath]));
 const focusIds=new Set(['ju_fufu','yanagi','miyabi','pyrois']);
 writeFileSync(path.join(directory,'zzz_growth_focus.json'),JSON.stringify(focusAccount.characters.filter(character=>focusIds.has(character.id)),null,2)+'\n');
 
@@ -31,6 +32,9 @@ for(const [game,sourcePath]of [['genshin','data/account.json'],['zzz','data/zzz/
   writeFileSync(path.join(directory,'current_genshin_manifests.json'),JSON.stringify(manifests,null,2)+'\n');
   metadata.sourceReviewIds=account.source_ids.filter(id=>id.endsWith('_review_20261113'));
  }
+ const sourcePaths=game==='genshin'?account.source_ids.map(id=>JSON.parse(readFileSync(path.join(root,'evidence',id,'manifest.json'),'utf8'))).filter(manifest=>manifest.media?.type==='hoyolab').map(manifest=>manifest.extraction.path):(account.syncSources||[]).map(source=>source.path);
+ const sources=Object.fromEntries([...new Set(sourcePaths)].map(sourcePath=>[sourcePath,readFileSync(path.join(root,sourcePath),'utf8')]));
+ writeFileSync(path.join(directory,'current_'+game+'_sources.json'),JSON.stringify(sources)+'\n');
  writeFileSync(path.join(directory,'current_'+game+'_metadata.json'),JSON.stringify(metadata,null,2)+'\n');
 }
 console.log('Prepared ignored baseline and current formal-data test fixtures. These files are not published.');

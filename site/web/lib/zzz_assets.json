@@ -261,7 +261,9 @@
     "德瑪拉電池Ⅱ型": "/assets/zzz/weapons/wiki_3.png",
     "旋鑽機—赤軸": "/assets/zzz/weapons/wiki_74.png",
     "琳琅鎏心": "/assets/zzz/weapons/14156.png",
-    "琳琅鑒心": "/assets/zzz/weapons/14156.png"
+    "琳琅鑒心": "/assets/zzz/weapons/14156.png",
+    "福虓爐爐": "/assets/zzz/weapons/14139.png",
+    "左輪轉子": "/assets/zzz/weapons/14003.png"
   },
   "discs": {
     "呼嘯沙龍": "/assets/zzz/discs/33900.png",
@@ -286,7 +288,8 @@
     "雲巋如我": "/assets/zzz/discs/33100.png",
     "雷暴重金屬": "/assets/zzz/discs/32400.png",
     "震星迪斯可": "/assets/zzz/discs/31200.png",
-    "靜聽嘉音": "/assets/zzz/discs/32800.png"
+    "靜聽嘉音": "/assets/zzz/discs/32800.png",
+    "讖羽之誓": "/assets/zzz/discs/34100.png"
   },
   "bangboo": {
     "bangboo_114": "/assets/zzz/bangboo/bangboo_114.png",

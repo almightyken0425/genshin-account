@@ -1,0 +1,514 @@
+{
+  "schema_version": 3,
+  "id": "hoyolab_056a6f44aed4f485",
+  "imported_at": "2026-11-16T14:27:54.500004+00:00",
+  "media": {
+    "type": "hoyolab",
+    "recorded_at": null
+  },
+  "extraction": {
+    "path": "imports/hoyolab/hoyolab_056a6f44aed4f485.json",
+    "sha256": "056a6f44aed4f4852e628dc35ea464712abfb922e4d97ae52fd8adbfd8969a88"
+  },
+  "screenshots": [],
+  "observations": [
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000003",
+      "character_id": "jean",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/0"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000006",
+      "character_id": "hoyolab_character_10000006",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/1"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000007",
+      "character_id": "traveler_cryo",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/2"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000014",
+      "character_id": "barbara",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/3"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000015",
+      "character_id": "kaeya",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/4"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000016",
+      "character_id": "hoyolab_character_10000016",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/5"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000020",
+      "character_id": "hoyolab_character_10000020",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/6"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000021",
+      "character_id": "hoyolab_character_10000021",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/7"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000023",
+      "character_id": "xiangling",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/8"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000024",
+      "character_id": "hoyolab_character_10000024",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/9"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000025",
+      "character_id": "xingqiu",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/10"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000027",
+      "character_id": "ningguang",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/11"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000030",
+      "character_id": "zhongli",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/12"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000031",
+      "character_id": "fischl",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/13"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000032",
+      "character_id": "bennett",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/14"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000034",
+      "character_id": "noelle",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/15"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000035",
+      "character_id": "hoyolab_character_10000035",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/16"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000036",
+      "character_id": "hoyolab_character_10000036",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/17"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000039",
+      "character_id": "diona",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/18"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000041",
+      "character_id": "mona",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/19"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000042",
+      "character_id": "keqing",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/20"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000043",
+      "character_id": "sucrose",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/21"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000044",
+      "character_id": "hoyolab_character_10000044",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/22"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000045",
+      "character_id": "hoyolab_character_10000045",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/23"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000047",
+      "character_id": "kaedeharakazuha",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/24"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000048",
+      "character_id": "hoyolab_character_10000048",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/25"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000050",
+      "character_id": "hoyolab_character_10000050",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/26"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000052",
+      "character_id": "raidenshogun",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/27"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000053",
+      "character_id": "hoyolab_character_10000053",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/28"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000055",
+      "character_id": "hoyolab_character_10000055",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/29"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000056",
+      "character_id": "hoyolab_character_10000056",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/30"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000059",
+      "character_id": "hoyolab_character_10000059",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/31"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000060",
+      "character_id": "yelan",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/32"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000061",
+      "character_id": "hoyolab_character_10000061",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/33"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000064",
+      "character_id": "hoyolab_character_10000064",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/34"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000065",
+      "character_id": "kukishinobu",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/35"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000067",
+      "character_id": "collei",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/36"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000068",
+      "character_id": "hoyolab_character_10000068",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/37"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000069",
+      "character_id": "hoyolab_character_10000069",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/38"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000072",
+      "character_id": "hoyolab_character_10000072",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/39"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000073",
+      "character_id": "nahida",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/40"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000074",
+      "character_id": "layla",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/41"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000076",
+      "character_id": "faruzan",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/42"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000077",
+      "character_id": "hoyolab_character_10000077",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/43"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000079",
+      "character_id": "hoyolab_character_10000079",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/44"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000080",
+      "character_id": "hoyolab_character_10000080",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/45"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000081",
+      "character_id": "hoyolab_character_10000081",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/46"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000083",
+      "character_id": "hoyolab_character_10000083",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/47"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000085",
+      "character_id": "hoyolab_character_10000085",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/48"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000087",
+      "character_id": "neuvillette",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/49"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000088",
+      "character_id": "charlotte",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/50"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000089",
+      "character_id": "furina",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/51"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000090",
+      "character_id": "chevreuse",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/52"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000092",
+      "character_id": "hoyolab_character_10000092",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/53"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000097",
+      "character_id": "hoyolab_character_10000097",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/54"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000100",
+      "character_id": "hoyolab_character_10000100",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/55"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000103",
+      "character_id": "xilonen",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/56"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000104",
+      "character_id": "chasca",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/57"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000105",
+      "character_id": "ororon",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/58"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000106",
+      "character_id": "mavuika",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/59"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000107",
+      "character_id": "citlali",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/60"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000108",
+      "character_id": "hoyolab_character_10000108",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/61"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000109",
+      "character_id": "yumemizukimizuki",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/62"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000110",
+      "character_id": "iansan",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/63"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000111",
+      "character_id": "varesa",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/64"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000112",
+      "character_id": "escoffier",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/65"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000113",
+      "character_id": "hoyolab_character_10000113",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/66"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000114",
+      "character_id": "skirk",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/67"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000115",
+      "character_id": "hoyolab_character_10000115",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/68"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000117",
+      "character_id": "hoyolab_character_10000117",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/69"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000118",
+      "character_id": "hoyolab_character_10000118",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/70"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000119",
+      "character_id": "lauma",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/71"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000121",
+      "character_id": "aino",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/72"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000122",
+      "character_id": "nefer",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/73"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000124",
+      "character_id": "hoyolab_character_10000124",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/74"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000125",
+      "character_id": "columbina",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/75"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000126",
+      "character_id": "zibai",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/76"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000127",
+      "character_id": "illuga",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/77"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000130",
+      "character_id": "linnea",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/78"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000137",
+      "character_id": "hoyolab_character_10000137",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/79"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000140",
+      "character_id": "voyanitsa",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/80"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000148",
+      "character_id": "arosha",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/81"
+    },
+    {
+      "id": "hoyolab_056a6f44aed4f485_10000150",
+      "character_id": "odetta",
+      "kind": "hoyolab",
+      "pointer": "/genshin/characters/82"
+    }
+  ]
+}

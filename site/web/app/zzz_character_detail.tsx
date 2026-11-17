@@ -1,7 +1,7 @@
 'use client';
 
 import {useState} from 'react';
-import {Shapes,Tags} from 'lucide-react';
+import {ChevronDown,Shapes,Tags} from 'lucide-react';
 import {zzzCharacterImage,zzzEngineImage,zzzDiscImage} from '@/lib/zzz_assets';
 import CenteredHeader from '@/components/navigation/centered_header';
 import {MetricDisplayContext} from '@/components/metrics/metric_label';
@@ -11,7 +11,7 @@ import PortraitSummary from '@/components/character/portrait_summary';
 import ArtifactSubstat,{EffectiveBadge} from '@/components/equipment/artifact_substat';
 import EquipmentTile from '@/components/equipment/equipment_tile';
 import ZzzEquipmentImage from '@/components/games/zzz/equipment_image';
-import {effectiveDiscCount,effectiveDiscLoadout,maximumDiscCount,maximumDiscLoadout,discEffectiveKeys,discSlots} from '@/lib/zzz_discs.mjs';
+import {effectiveDiscCount,effectiveDiscLoadout,maximumDiscCount,maximumDiscLoadout,discEffectiveKeys,discSlots,discStatEffective} from '@/lib/zzz_discs.mjs';
 import {effectiveRollMetric} from '@/components/metrics/effective_roll_metric';
 import {zzzNote} from '@/lib/zzz_notes.mjs';
 import type {ZzzAgent} from '@/lib/zzz_types';
@@ -52,14 +52,16 @@ export default function ZzzCharacterDetail({character,onBack,sourceName,backLabe
      <div className="artifact-identity"><div className="zzz-disc-picture"><ZzzEquipmentImage src={zzzDiscImage(disc?.setName)} alt={disc?.setName||'驅動盤'} kind="disc"/></div>{fullLabels&&<div className="artifact-ident"><h4>{disc?.setName||'尚未確認'}</h4></div>}</div>
      <div className="artifact-values">{disc?<>
       <div className="artifact-primary"><Field label="強化等級" value={disc.level}/><Field label={disc.mainStat?.name||'主詞條'} value={disc.mainStat?.value==null?null:show(disc.mainStat.value)+(disc.mainStat.unit==='percent'?'%':disc.mainStat.unit===null?' 單位待核':'')}/></div>
-      <div className="artifact-substats">{disc.substats.map((stat,index)=><ArtifactSubstat key={index} stat={{key:stat.name||String(index),value:stat.value,unit:stat.unit}} label={(stat.name||'副詞條待核')+(stat.unit==='percent'?' (%)':'')} roll={{key:stat.name||String(index),enhancements:stat.enhancementCount,effective:stat.isEffective}}/>)}</div>
+      <div className="artifact-substats">{disc.substats.map((stat,index)=><ArtifactSubstat key={index} stat={{key:stat.name||String(index),value:stat.value,unit:stat.unit}} label={(stat.name||'副詞條待核')+(stat.unit==='percent'?' (%)':'')} roll={{key:stat.name||String(index),enhancements:stat.enhancementCount,effective:discStatEffective(stat,disc),effectiveSource:typeof stat.isEffective==='boolean'?'game_observed':disc.assessment?'role_rule':null,enhancementSource:stat.enhancementSource}}/>)}</div>
      </>:<p className="zzz-unconfirmed">尚未確認</p>}</div>
     </article>)}
    </div></div>}
   </section>
-  <section className="summary-surface" aria-label="人物總體數值"><div className="stats-container"><div className="summary-stats">{Object.entries(character.stats||{}).map(([label,value])=><SummaryStat key={label} label={label} value={show(value)} effective={character.statsEffective?.[label]===true}/>)}</div></div></section>
-  <section className="talent-section" aria-label="技能">{character.skills?<div className="talent-values">{Object.entries(character.skills).map(([label,value])=><Field key={label} label={label} value={value}/>)}</div>:<p className="zzz-unconfirmed">技能尚未確認</p>}</section>
+  <section className="summary-surface" aria-label="人物總體數值"><div className="stats-container"><div className="summary-stats">{Object.entries(character.stats||{}).map(([label,value])=><SummaryStat key={label} label={label} value={show(value)} effective={typeof character.statsEffective?.[label]==='boolean'?character.statsEffective[label]===true:character.effectiveProfile?.keys.some(key=>key.startsWith(label+'|'))===true} reason={character.statsEffective?.[label]==null&&character.effectiveProfile?'依角色規則判定，非本次遊戲有效標記':undefined}/>)}</div></div></section>
+  <section className="talent-section" aria-label="技能">{character.skills?<div className="talent-values">{Object.entries(character.skills).map(([label,value])=><Field key={label} label={label} value={value}/>)}</div>:<p className="zzz-unconfirmed">技能尚未確認</p>}
+   {character.skillsBase&&<details className="talent-extra"><summary aria-label="展開基礎技能與加成"><ChevronDown size={14}/>{fullLabels&&<span>基礎等級與加成</span>}</summary><div className="talent-values">{Object.entries(character.skillsBase).map(([label,value])=><Field key={label} label={label+'（基礎）'} value={value}/>)}</div><label className="field context-field"><span>加成來源</span><p>依已核對的影畫規則推導。戰績顯示等級保留，核心技能不扣影畫加成。</p></label></details>}
+  </section>
   {!!character.uncertainties?.length&&<div className="zzz-notes">{character.uncertainties.map((note,index)=><p key={index}>{zzzNote(note)}</p>)}</div>}
-  <details className="zzz-evidence"><summary>影片來源</summary><p>{sourceName}</p><p>{character.evidence.map(evidence=>(evidence.timestampToleranceSec?'約 ':'')+Math.floor(evidence.timestampSec/60)+':'+String(Math.floor(evidence.timestampSec%60)).padStart(2,'0')).join(' · ')}</p></details>
+  <details className="zzz-evidence"><summary>資料來源</summary><p>{character.sync?'目前數值來自 HoYoLAB 同步，時間代表讀取時間。':sourceName}</p>{character.sync&&<p>角色規則有效性與推導強化次數均獨立記錄，原影片觀測保留。</p>}<p>{character.evidence.filter((evidence):evidence is Extract<typeof evidence,{timestampSec:number}>=>'timestampSec' in evidence).map(evidence=>(evidence.timestampToleranceSec?'約 ':'')+Math.floor((evidence.timestampSec??0)/60)+':'+String(Math.floor((evidence.timestampSec??0)%60)).padStart(2,'0')).join(' · ')}</p></details>
  </section></MetricDisplayContext>;
 }

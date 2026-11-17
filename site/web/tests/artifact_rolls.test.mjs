@@ -20,7 +20,7 @@ test('five-piece totals include off-set pieces and reject incomplete information
  assert.equal(effectiveLoadoutCount(a.slice(1),'chasca'),null);a[4]=undefined;assert.equal(effectiveLoadoutCount(a,'chasca'),null);
 });
 test('a transfer retains counts but clears the old character effectiveness',()=>{
- const a=piece();assert.equal(effectiveSubstatCount(a,'furina'),null);assert.deepEqual(substatRoll(a,'crit_dmg','furina'),{key:'crit_dmg',enhancements:2,effective:null});
+ const a=piece();assert.equal(effectiveSubstatCount(a,'furina'),null);assert.deepEqual(substatRoll(a,'crit_dmg','furina'),{key:'crit_dmg',enhancements:2,effective:null,effectiveSource:null});
  editSubstatRoll(a,'furina','crit_rate',{effective:true});assert.equal(a.substat_rolls.character_id,'furina');assert.equal(a.substat_rolls.values[0].effective,null);assert.equal(a.substat_rolls.values[0].enhancements,2);
 });
 test('v2 schema validates roll context, count budgets and physical keys',()=>{

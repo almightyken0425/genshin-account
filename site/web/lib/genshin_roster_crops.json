@@ -421,5 +421,329 @@
     "height": 560,
     "sourceWidth": 1322,
     "sourceHeight": 1382
+  },
+  "hoyolab_character_10000006": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000006_splash.png",
+    "x": 350,
+    "y": 0,
+    "width": 501,
+    "height": 668,
+    "sourceWidth": 1201,
+    "sourceHeight": 1245
+  },
+  "hoyolab_character_10000016": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000016_splash.png",
+    "x": 460,
+    "y": 500,
+    "width": 420,
+    "height": 560,
+    "sourceWidth": 1252,
+    "sourceHeight": 1471
+  },
+  "hoyolab_character_10000020": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000020_splash.png",
+    "x": 643,
+    "y": 378,
+    "width": 663,
+    "height": 884,
+    "sourceWidth": 1680,
+    "sourceHeight": 1569
+  },
+  "hoyolab_character_10000021": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000021_splash.png",
+    "x": 456,
+    "y": 302,
+    "width": 504,
+    "height": 672,
+    "sourceWidth": 1528,
+    "sourceHeight": 1283
+  },
+  "hoyolab_character_10000024": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000024_splash.png",
+    "x": 525,
+    "y": 71,
+    "width": 468,
+    "height": 624,
+    "sourceWidth": 1528,
+    "sourceHeight": 1283
+  },
+  "hoyolab_character_10000035": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000035_splash.png",
+    "x": 432,
+    "y": 344,
+    "width": 633,
+    "height": 844,
+    "sourceWidth": 1560,
+    "sourceHeight": 1476
+  },
+  "hoyolab_character_10000036": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000036_splash.png",
+    "x": 567,
+    "y": 150,
+    "width": 588,
+    "height": 784,
+    "sourceWidth": 1528,
+    "sourceHeight": 1283
+  },
+  "hoyolab_character_10000044": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000044_splash.png",
+    "x": 545,
+    "y": 440,
+    "width": 510,
+    "height": 680,
+    "sourceWidth": 1680,
+    "sourceHeight": 1680
+  },
+  "hoyolab_character_10000045": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000045_splash.png",
+    "x": 432,
+    "y": 110,
+    "width": 522,
+    "height": 696,
+    "sourceWidth": 1443,
+    "sourceHeight": 1284
+  },
+  "hoyolab_character_10000048": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000048_splash.png",
+    "x": 278,
+    "y": 105,
+    "width": 822,
+    "height": 1096,
+    "sourceWidth": 2198,
+    "sourceHeight": 1550
+  },
+  "hoyolab_character_10000050": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000050_splash.png",
+    "x": 384,
+    "y": 117,
+    "width": 522,
+    "height": 696,
+    "sourceWidth": 1488,
+    "sourceHeight": 1285
+  },
+  "hoyolab_character_10000053": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000053_splash.png",
+    "x": 724,
+    "y": 218,
+    "width": 693,
+    "height": 924,
+    "sourceWidth": 1804,
+    "sourceHeight": 1343
+  },
+  "hoyolab_character_10000055": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000055_splash.png",
+    "x": 384,
+    "y": 263,
+    "width": 558,
+    "height": 744,
+    "sourceWidth": 1496,
+    "sourceHeight": 1426
+  },
+  "hoyolab_character_10000056": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000056_splash.png",
+    "x": 505,
+    "y": 105,
+    "width": 540,
+    "height": 720,
+    "sourceWidth": 1638,
+    "sourceHeight": 1379
+  },
+  "hoyolab_character_10000059": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000059_splash.png",
+    "x": 216,
+    "y": 194,
+    "width": 462,
+    "height": 616,
+    "sourceWidth": 1000,
+    "sourceHeight": 1000
+  },
+  "hoyolab_character_10000061": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000061_splash.png",
+    "x": 320,
+    "y": 50,
+    "width": 450,
+    "height": 600,
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "hoyolab_character_10000064": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000064_splash.png",
+    "x": 402,
+    "y": 311,
+    "width": 615,
+    "height": 820,
+    "sourceWidth": 1473,
+    "sourceHeight": 1651
+  },
+  "hoyolab_character_10000068": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000068_splash.png",
+    "x": 398,
+    "y": 212,
+    "width": 501,
+    "height": 668,
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "hoyolab_character_10000069": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000069_splash.png",
+    "x": 315,
+    "y": 60,
+    "width": 570,
+    "height": 760,
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "hoyolab_character_10000072": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000072_splash.png",
+    "x": 349,
+    "y": 255,
+    "width": 447,
+    "height": 596,
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "hoyolab_character_10000077": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000077_splash.png",
+    "x": 352,
+    "y": 110,
+    "width": 528,
+    "height": 704,
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "hoyolab_character_10000079": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000079_splash.png",
+    "x": 342,
+    "y": 109,
+    "width": 420,
+    "height": 560,
+    "sourceWidth": 1200,
+    "sourceHeight": 1000
+  },
+  "hoyolab_character_10000080": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000080_splash.png",
+    "x": 381,
+    "y": 134,
+    "width": 462,
+    "height": 616,
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "hoyolab_character_10000081": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000081_splash.png",
+    "x": 347,
+    "y": 101,
+    "width": 474,
+    "height": 632,
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "hoyolab_character_10000083": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000083_splash.png",
+    "x": 356,
+    "y": 251,
+    "width": 534,
+    "height": 712,
+    "sourceWidth": 1280,
+    "sourceHeight": 1280
+  },
+  "hoyolab_character_10000085": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000085_splash.png",
+    "x": 508,
+    "y": 327,
+    "width": 477,
+    "height": 636,
+    "sourceWidth": 1280,
+    "sourceHeight": 1280
+  },
+  "hoyolab_character_10000092": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000092_splash.png",
+    "x": 354,
+    "y": 215,
+    "width": 420,
+    "height": 560,
+    "sourceWidth": 1200,
+    "sourceHeight": 1200
+  },
+  "hoyolab_character_10000097": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000097_splash.png",
+    "x": 595,
+    "y": 380,
+    "width": 720,
+    "height": 960,
+    "sourceWidth": 2048,
+    "sourceHeight": 2048
+  },
+  "hoyolab_character_10000100": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000100_splash.png",
+    "x": 379,
+    "y": 245,
+    "width": 534,
+    "height": 712,
+    "sourceWidth": 1280,
+    "sourceHeight": 1280
+  },
+  "hoyolab_character_10000108": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000108_splash.png",
+    "x": 365,
+    "y": 210,
+    "width": 480,
+    "height": 640,
+    "sourceWidth": 1280,
+    "sourceHeight": 1280
+  },
+  "hoyolab_character_10000113": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000113_splash.png",
+    "x": 805,
+    "y": 51,
+    "width": 561,
+    "height": 748,
+    "sourceWidth": 2048,
+    "sourceHeight": 1024
+  },
+  "hoyolab_character_10000115": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000115_splash.png",
+    "x": 804,
+    "y": 81,
+    "width": 495,
+    "height": 660,
+    "sourceWidth": 2048,
+    "sourceHeight": 1024
+  },
+  "hoyolab_character_10000117": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000117_splash.png",
+    "x": 0,
+    "y": 0,
+    "width": 480,
+    "height": 640,
+    "sourceWidth": 480,
+    "sourceHeight": 640
+  },
+  "hoyolab_character_10000118": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000118_splash.png",
+    "x": 0,
+    "y": 0,
+    "width": 420,
+    "height": 560,
+    "sourceWidth": 420,
+    "sourceHeight": 560
+  },
+  "hoyolab_character_10000124": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000124_splash.png",
+    "x": 764,
+    "y": 78,
+    "width": 561,
+    "height": 748,
+    "sourceWidth": 2048,
+    "sourceHeight": 1024
+  },
+  "hoyolab_character_10000137": {
+    "sourcePath": "/assets/characters/hoyolab_character_10000137_splash.png",
+    "x": 784,
+    "y": 87,
+    "width": 630,
+    "height": 840,
+    "sourceWidth": 2048,
+    "sourceHeight": 1024
   }
 }

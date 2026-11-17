@@ -1,5 +1,7 @@
 import copy
+import json
 from pathlib import Path
+import subprocess
 import sys
 import unittest
 
@@ -12,7 +14,10 @@ from validate import validate_account
 
 class ArtifactRollTests(unittest.TestCase):
     def setUp(self):
-        self.account = read_json(ROOT / 'data/account.json')
+        # These tests exercise accepted video observations and the v1→v2 migration.
+        # A live v3 API account cannot be downgraded by changing only its version.
+        self.account = json.loads(subprocess.check_output(
+            ['git', 'show', '2afcdece74b98a3bcb9ff6cc7e252dcd7f994d6c:data/account.json'], cwd=ROOT))
 
     def flower(self, cid):
         aid = self.account['equipment'][cid]['artifacts']['flower']

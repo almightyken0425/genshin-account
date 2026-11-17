@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
 import schemaV2 from './account-schema.mjs';
 import schemaV1 from './account-schema-v1.mjs';
+import schemaV2Legacy from './account-schema-v2.mjs';
 export const SLOTS = { flower:'生之花', plume:'死之羽', sands:'時之沙', goblet:'空之杯', circlet:'理之冠' };
 export const LABELS = {hp:'生命值',atk:'攻擊力',def:'防禦力',em:'元素精通',stamina:'體力',hp_pct:'生命值',atk_pct:'攻擊力',def_pct:'防禦力',crit_rate:'暴擊率',crit_dmg:'暴擊傷害',energy_recharge:'元素充能效率',cryo_dmg_bonus:'冰傷加成',hydro_dmg_bonus:'水傷加成',pyro_dmg_bonus:'火傷加成',electro_dmg_bonus:'雷傷加成',anemo_dmg_bonus:'風傷加成',geo_dmg_bonus:'岩傷加成',dendro_dmg_bonus:'草傷加成',healing_bonus:'治療加成',physical_dmg_bonus:'物理傷害加成'};
 export const canonical = x => Array.isArray(x) ? '['+x.map(canonical).join(',')+']' : x && typeof x === 'object' ? '{'+Object.keys(x).sort().map(k=>JSON.stringify(k)+':'+canonical(x[k])).join(',')+'}' : JSON.stringify(x);
@@ -8,7 +9,7 @@ export const hash = x => createHash('sha256').update(x).digest('hex');
 const eq = (a,b) => canonical(a) === canonical(b);
 export function fingerprint(a,id) {
  const c=a.characters.find(x=>x.id===id), e=a.equipment[id];
- const mechanics=x=>x?Object.fromEntries(Object.entries(x).filter(([k])=>!['provenance','name','substat_rolls'].includes(k))):null;
+ const mechanics=x=>x?Object.fromEntries(Object.entries(x).filter(([k])=>!['provenance','name','substat_rolls','hoyolab_id'].includes(k))):null;
  return hash(canonical({character:Object.fromEntries(['id','element','weapon_type','level','constellation','talents'].map(k=>[k,c[k]])),
  weapon:mechanics(a.weapons.find(w=>w.id===e.weapon_id)),
  artifacts:Object.fromEntries(Object.entries(e.artifacts).map(([s,aid])=>[s,mechanics(a.artifacts.find(x=>x.id===aid))]))}));
@@ -16,7 +17,7 @@ export function fingerprint(a,id) {
 export const panelStates = a => Object.fromEntries(a.characters.map(c=>{ const s=a.panel_snapshots.find(s=>s.id===c.panel_snapshot_id); return [c.id,!s?'missing':s.build_fingerprint===fingerprint(a,c.id)?'current':'stale']; }));
 function dated(s){ return s===null || (typeof s==='string' && /(?:Z|[+-]\d{2}:\d{2})$/.test(s) && Number.isFinite(Date.parse(s))); }
 export function validateAccount(a) {
- const schemaValidate=a?.schema_version===1?schemaV1:schemaV2;
+ const schemaValidate=a?.schema_version===1?schemaV1:a?.schema_version===2?schemaV2Legacy:schemaV2;
  if (!schemaValidate(a)) return (schemaValidate.errors||[]).map(x=>(x.instancePath||'/')+' '+x.message);
  const errors=[], fail=s=>errors.push(s), indexes={};
  if(!dated(a.updated_at)) fail('更新時間需包含時區');
@@ -41,6 +42,7 @@ export function validateAccount(a) {
    const r=x.substat_rolls,rollKeys=r.values.map(s=>s.key);
    if(!eq([...keys].sort(),[...rollKeys].sort()))fail(x.name+' 強化紀錄與副詞條不符');
    if(r.character_id!==null&&!cs.has(r.character_id))fail(x.name+' 有效詞條的觀測角色不存在');
+   for(const row of r.values)if(typeof row.assessed_effective==='boolean'&&(!r.rule_id||!Array.isArray(r.effective_keys)||row.assessed_effective!==r.effective_keys.includes(row.key)))fail(x.name+' 詞條判定缺少一致的角色規則');
    if(x.level!==null&&r.values.reduce((sum,row)=>sum+(row.enhancements??0),0)>Math.floor(x.level/4))fail(x.name+' 強化次數超過等級允許的次數');
   }
   const fixed={flower:'hp',plume:'atk'}[x.slot];if(fixed&&x.main_stat.key!==fixed)fail(x.name+' 固定主詞條錯誤');
@@ -77,8 +79,11 @@ export function applyCandidate(base,candidate,note,now=new Date().toISOString())
 }
 export function validateEvidence(a,manifests){
  const known=new Map(), errors=[];
- for(const m of manifests){if(!a.source_ids.includes(m.id)||![1,2].includes(m.schema_version))errors.push('來源清單不符');
- for(const s of m.screenshots){if(known.has(s.id))errors.push('截圖 ID 重複');known.set(s.id,m.id)}}
+ for(const m of manifests){if(!a.source_ids.includes(m.id)||![1,2,3].includes(m.schema_version))errors.push('來源清單不符');
+ if(m.schema_version===3){
+  if(m.media?.type!=='hoyolab'||m.media?.recorded_at!==null||!dated(m.imported_at)||typeof m.imported_at!=='string'||m.extraction?.path!=='imports/hoyolab/'+m.id+'.json'||!/^[a-f0-9]{64}$/.test(m.extraction?.sha256||'')||!Array.isArray(m.screenshots)||m.screenshots.length||!Array.isArray(m.observations))errors.push('HoYoLAB 來源格式不符');
+  for(const observation of m.observations||[]){if(!/^[a-z][a-z0-9_]*$/.test(observation.id||'')||!a.characters.some(c=>c.id===observation.character_id)||observation.kind!=='hoyolab'||!/^\/genshin\/characters\/(0|[1-9][0-9]*)$/.test(observation.pointer||''))errors.push('HoYoLAB 觀測格式不符');if(known.has(observation.id))errors.push('觀測 ID 重複');known.set(observation.id,m.id)}
+ }else for(const s of m.screenshots){if(known.has(s.id))errors.push('截圖 ID 重複');known.set(s.id,m.id)}}
  for(const kind of ['characters','weapons','artifacts','panel_snapshots'])for(const r of a[kind])for(const id of r.provenance.evidence_refs)if(!known.has(id)||!r.provenance.source_ids.includes(known.get(id)))errors.push('截圖來源引用不符');
  return errors;
 }

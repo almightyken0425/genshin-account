@@ -12,12 +12,13 @@ import {join} from 'node:path';
 const plans=JSON.parse(readFileSync(new URL('../lib/zzz_training_plans.json',import.meta.url),'utf8')).characters;
 const catalog=JSON.parse(readFileSync(new URL('../lib/zzz_agent_catalog.json',import.meta.url),'utf8')).characters;
 const cacheDir=mkdtempSync(join(tmpdir(),'hoyo-guidance-ui-tests-'));
-let server,ZzzGrowthPage,GameNavigation;
+let server,ZzzGrowthPage,GameNavigation,ZzzCharacterDetail;
 before(async()=>{
  const root=fileURLToPath(new URL('../',import.meta.url));
  server=await createServer({configFile:false,root,cacheDir,plugins:[react()],resolve:{alias:{'@':root}},server:{middlewareMode:true,hmr:false},logLevel:'silent'});
  ({ZzzGrowthPage}=await server.ssrLoadModule('/app/zzz_guidance.tsx'));
  GameNavigation=(await server.ssrLoadModule('/components/navigation/game_navigation.tsx')).default;
+ ZzzCharacterDetail=(await server.ssrLoadModule('/app/zzz_character_detail.tsx')).default;
 });
 after(async()=>{await server?.close();rmSync(cacheDir,{recursive:true,force:true})});
 
@@ -28,11 +29,23 @@ function character(id,skills={}){
 const renderGrowth=characters=>renderToStaticMarkup(createElement(ZzzGrowthPage,{characters,onOpenCharacter:()=>{}}));
 const upgradeSection=html=>html.split('aria-label="可提升項目"')[1]?.split('</section>')[0]||'';
 
-test('ZZZ navigation contains only roster and growth while Genshin keeps all three destinations',()=>{
+test('ZZZ detail keeps displayed skills and exposes separately derived bases without inventing unknowns',()=>{
+ const row={...character('ben',{'普通攻擊':5,'支援技':5,'核心技':'F'}),skillsBase:{'普通攻擊':1,'支援技':null}};
+ const html=renderToStaticMarkup(createElement(ZzzCharacterDetail,{character:row,onBack:()=>{}}));
+ const bases=html.split('aria-label="展開基礎技能與加成"')[1];
+ assert.ok(bases);assert.ok(bases.includes('普通攻擊（基礎）'));assert.ok(bases.includes('支援技（基礎）'));
+ assert.ok(bases.includes('>1<'));assert.ok(bases.includes('>—<'));assert.ok(!bases.includes('核心技（基礎）'));
+ assert.ok(bases.includes('戰績顯示等級保留'));assert.ok(html.includes('>5<'));
+ const legacy=renderToStaticMarkup(createElement(ZzzCharacterDetail,{character:character('ben'),onBack:()=>{}}));
+ assert.ok(!legacy.includes('展開基礎技能與加成'));
+});
+
+test('ZZZ keeps roster and growth, Genshin keeps teams, and both expose local sync',()=>{
  const zzz=renderToStaticMarkup(createElement(GameNavigation,{sections:['roster','growth'],section:'roster',onSelect:()=>{}}));
  const genshin=renderToStaticMarkup(createElement(GameNavigation,{section:'roster',onSelect:()=>{}}));
  assert.doesNotMatch(zzz,/aria-label="隊伍"/);
- assert.equal((zzz.match(/<button\b/g)||[]).length,2);
+ assert.equal((zzz.match(/<button\b/g)||[]).length,3);
+ for(const html of [zzz,genshin])assert.match(html,/aria-label="資料同步"/);
  for(const label of ['隊伍','角色列表','培養重點'])assert.ok(genshin.includes('aria-label="'+label+'"'));
 });
 

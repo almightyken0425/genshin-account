@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "rule_id": "zzz_s_fixed_roll_observed_20261116",
+  "method": "project_observed_derivation",
+  "checked_at": "2026-11-16",
+  "based_on_commit": "c2b910c8d672e6d313ba67821c3af18775831cd9",
+  "source_path": "data/zzz/account.json",
+  "observed_discs": 228,
+  "rarity": "S",
+  "max_level": 15,
+  "enhancement_step": 3,
+  "allowed_initial_substats": [
+    3,
+    4
+  ],
+  "notes": [
+    "Values divided by one plus the directly observed +N are constant across the recorded S-rank sample after the explicit PEN review below. This is a project-derived rule, not a HoYoLAB API field or a complete A/B-rank rule.",
+    "The reviewer directly inspected the existing source image. The source account is not modified by this lookup."
+  ],
+  "increments": {
+    "生命值|flat": {
+      "value": "112",
+      "observations": 66
+    },
+    "生命值|percent": {
+      "value": "3",
+      "observations": 82
+    },
+    "攻擊力|flat": {
+      "value": "19",
+      "observations": 67
+    },
+    "攻擊力|percent": {
+      "value": "3",
+      "observations": 124
+    },
+    "防禦力|flat": {
+      "value": "15",
+      "observations": 66
+    },
+    "防禦力|percent": {
+      "value": "4.8",
+      "observations": 73
+    },
+    "暴擊率|percent": {
+      "value": "2.4",
+      "observations": 113
+    },
+    "暴擊傷害|percent": {
+      "value": "4.8",
+      "observations": 107
+    },
+    "異常精通|flat": {
+      "value": "9",
+      "observations": 105
+    },
+    "穿透值|flat": {
+      "value": "9",
+      "observations": 95
+    }
+  },
+  "review_overrides": [
+    {
+      "disc_id": "nekomata_slot_5_video001",
+      "character_id": "nekomata",
+      "stat_key": "穿透值|flat",
+      "value": 18,
+      "previous_enhancement_count": 0,
+      "enhancement_count": 1,
+      "method": "game_observed",
+      "checked_at": "2026-11-16",
+      "framePath": "evidence/zzz/discs_video_001/b/q280.jpg",
+      "sha256": "6d7c8dedbdc4d06dc4b2c778d20d1c7e60e5ad764fbf7012e191e94e6d00b161",
+      "review_note": "Root directly viewed the existing source image and confirmed the visible +1 after PEN 18. Preserve the original entry in legacyObservation."
+    }
+  ],
+  "public_references": {
+    "skill_display": "https://act.hoyolab.com/app/zzz-game-record/pc_9524b22f.js",
+    "skill_display_sha256": "64b096953b7db74238d94223d1e4822be59052b99ee22e489861bccf33b7d6dc",
+    "core_levels": "https://wiki.hoyolab.com/pc/zzz/entry/618?lang=zh-tw",
+    "sdk_models": "https://github.com/seriaati/genshin.py/blob/master/genshin/models/zzz/character.py"
+  }
+}

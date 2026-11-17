@@ -6,17 +6,28 @@ import sharp from 'sharp';
 
 const catalog=JSON.parse(readFileSync(new URL('../lib/game_assets.json',import.meta.url)));
 const manifest=JSON.parse(readFileSync(new URL('../public/asset_sources.json',import.meta.url)));
+const account=JSON.parse(readFileSync(new URL('./fixtures/current_genshin_account.json',import.meta.url)));
 const byPath=new Map(manifest.sources.map(source=>[source.path,source]));
 const references=[
  ...Object.values(catalog.characters).flatMap(art=>[art.icon,art.splash,art.roster,...(art.rosterSource?[art.rosterSource]:[])]),
  ...Object.values(catalog.weapons).map(art=>art.icon),
  ...Object.values(catalog.artifacts).flatMap(art=>Object.values(art.slots)),
 ];
+// Originals are allowed only when reached from an actual display asset's derivation.
+for(let index=0;index<references.length;index++){
+ const source=byPath.get(references[index]);
+ for(const dependency of [source?.derivedFrom,source?.sourcePath]){
+  if(typeof dependency==='string'&&dependency.startsWith('/assets/')&&!references.includes(dependency))references.push(dependency);
+ }
+}
 
 test('every Genshin display asset has verified HoYoWiki provenance and valid image content',async()=>{
- assert.equal(Object.keys(catalog.characters).length,47);
- assert.equal(Object.keys(catalog.weapons).length,33);
- assert.equal(Object.keys(catalog.artifacts).length,27);
+ for(const character of account.characters){
+  assert.ok(catalog.characters[character.id],character.name+' must have display art');
+  assert.ok([4,5].includes(catalog.characters[character.id].rarity),character.name+' must have official rarity');
+ }
+ for(const weapon of account.weapons)assert.ok(catalog.weapons[weapon.name],weapon.name+' must have an icon');
+ for(const artifact of account.artifacts)assert.ok(catalog.artifacts[artifact.set_name]?.slots[artifact.slot],artifact.name+' must have the correct set/slot image');
  assert.equal(byPath.size,manifest.sources.length);
  assert.deepEqual(new Set(references),new Set(byPath.keys()));
  for(const source of manifest.sources){
@@ -47,9 +58,9 @@ test('Genshin artifact images retain their actual set and equipment slot',()=>{
  }
 });
 
-test('all 33 weapons retain verified HoYoWiki square icons without gallery normalization',async()=>{
+test('all displayed weapons retain verified HoYoWiki square icons without gallery normalization',async()=>{
  const sources=manifest.sources.filter(source=>source.category==='weapons');
- assert.equal(sources.length,33);
+ assert.equal(sources.length,Object.keys(catalog.weapons).length);
  assert.deepEqual(new Set(sources.map(source=>source.path)),new Set(Object.values(catalog.weapons).map(art=>art.icon)));
  for(const [name,art] of Object.entries(catalog.weapons)){
   const source=byPath.get(art.icon);
@@ -91,7 +102,7 @@ test('Genshin roster uses native 3:4 illustration crops with complete source pro
   assert.equal(derived.alphaQuality,100,id);
   totalBytes+=bytes.length;
  }
- assert.ok(totalBytes<7*1024*1024,'The complete Genshin roster must stay below 7 MiB');
+ assert.ok(totalBytes<Object.keys(catalog.characters).length*160*1024,'The complete Genshin roster must average less than 160 KiB per character');
  const dashboard=readFileSync(new URL('../app/dashboard.tsx',import.meta.url),'utf8');
  assert.match(dashboard,/characterImage\(x.id,'roster'\)/);
 });
@@ -111,6 +122,27 @@ test('female Traveler keeps the verified avatar and uses female illustration art
  assert.equal(illustration.game_id,10000007);
  assert.ok(illustration.width>256&&illustration.height>256);
  assert.equal(roster.sourcePath,traveler.rosterSource);
+});
+
+test('Manekin and Manekina use separate native illustration regions with the shared original retained',async()=>{
+ const ids=['hoyolab_character_10000117','hoyolab_character_10000118'];
+ const portraits=ids.map(id=>catalog.characters[id]);
+ assert.equal(portraits[0].originalSource,portraits[1].originalSource);
+ const original=byPath.get(portraits[0].originalSource);
+ const originalBytes=readFileSync(new URL('../public'+original.path,import.meta.url));
+ const regions=[];
+ for(const portrait of portraits){
+  const source=byPath.get(portrait.splash),crop=source.transform.crop;
+  assert.equal(source.sourceLanguage,'en-us');
+  assert.equal(source.derivedFrom,original.path);
+  assert.equal(source.rawSourceSha256,original.sha256);
+  assert.equal(source.transform.withoutEnlargement,true);
+  const expected=await sharp(originalBytes).extract({left:crop.x,top:crop.y,width:crop.width,height:crop.height}).png().toBuffer();
+  assert.equal(createHash('sha256').update(expected).digest('hex'),source.sha256);
+  regions.push(crop);
+ }
+ assert.notEqual(byPath.get(portraits[0].splash).sha256,byPath.get(portraits[1].splash).sha256);
+ assert.ok(regions[1].x+regions[1].width<=regions[0].x,'the individual crops must not reuse the same area');
 });
 
 test('Genshin public display directories contain no untracked legacy-provider images',()=>{

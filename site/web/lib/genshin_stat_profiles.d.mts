@@ -6,6 +6,7 @@ export type GenshinStatProfile={
  effective_panel_keys:string[];
  conditional:{key:string,reason:string}[];
  summary:string;
+ assessment_note?:string;
  sources:GenshinStatSource[];
  confidence:string;
  unknown_reason?:string;

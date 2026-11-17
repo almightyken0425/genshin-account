@@ -2,7 +2,7 @@ import research from './genshin_stat_profiles.json' with {type:'json'};
 
 const profiles=new Map(research.profiles.map(profile=>[profile.id,profile]));
 
-/** Public build guidance is separate from observed artifact effectiveness. */
+/** Reviewed role/total-panel guidance stays separate from observed artifact effectiveness. */
 export function getGenshinStatProfile(id){
  return profiles.get(id)??null;
 }

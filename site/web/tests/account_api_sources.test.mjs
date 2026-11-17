@@ -9,7 +9,7 @@ import {loadCurrentGenshin,loadCurrentZzz} from './helpers/current_accounts.mjs'
 
 const genshin=loadCurrentGenshin(),zzz=loadCurrentZzz();
 const cacheDir=mkdtempSync(join(tmpdir(),'hoyo-formal-api-tests-'));
-let server,accountGET,zzzGET,evidenceGET,portraitGET;
+let server,accountGET,accountPOST,zzzGET,evidenceGET,portraitGET;
 before(async()=>{
  const root=fileURLToPath(new URL('../',import.meta.url));
  server=await createServer({configFile:false,root,cacheDir,resolve:{alias:{'@':root}},server:{middlewareMode:true,hmr:false},logLevel:'silent',plugins:[{
@@ -17,7 +17,7 @@ before(async()=>{
   resolveId(id){if(id==='cloudflare:workers')return '\0test-worker-environment'},
   load(id){if(id==='\0test-worker-environment')return "export const env={GITHUB_TOKEN:'unit-test-only'}"},
  }]});
- ({GET:accountGET}=await server.ssrLoadModule('/app/api/account/route.ts'));
+ ({GET:accountGET,POST:accountPOST}=await server.ssrLoadModule('/app/api/account/route.ts'));
  ({GET:zzzGET}=await server.ssrLoadModule('/app/api/zzz/route.ts'));
  ({GET:evidenceGET}=await server.ssrLoadModule('/app/api/evidence/route.ts'));
  ({GET:portraitGET}=await server.ssrLoadModule('/app/api/zzz/image/route.ts'));
@@ -25,7 +25,7 @@ before(async()=>{
 after(async()=>{await server?.close();rmSync(cacheDir,{recursive:true,force:true})});
 
 const request=(path,authenticated=true)=>new Request('https://unit.test'+path,{headers:authenticated?{'oai-authenticated-user-id':'test-user'}:{}});
-async function upstream({revision,account,manifests=[],unavailable=false},run){
+async function upstream({revision,account,manifests=[],sources={},unavailable=false},run){
  const previous=globalThis.fetch,calls=[];
  globalThis.fetch=async(url,options)=>{
   const address=new URL(url);calls[calls.length]={path:address.pathname,ref:address.searchParams.get('ref'),method:options?.method};
@@ -37,8 +37,8 @@ async function upstream({revision,account,manifests=[],unavailable=false},run){
   let value;
   if(key==='data/account.json'||key==='data/zzz/account.json')value=account;
   else value=manifests.find(manifest=>key==='evidence/'+manifest.id+'/manifest.json');
-  assert.ok(value,'Unexpected upstream path '+key);
-  const text=JSON.stringify(value);
+  assert.ok(value||sources[key],'Unexpected upstream path '+key);
+  const text=sources[key]??JSON.stringify(value);
   return Response.json({type:'file',encoding:'base64',size:Buffer.byteLength(text),content:Buffer.from(text).toString('base64')});
  };
  try{return await run(calls)}finally{globalThis.fetch=previous}
@@ -60,13 +60,13 @@ test('both account and private image GETs reject unauthenticated requests before
 
 test('Genshin GET reads main once, validates pinned formal data and strips private manifest details',async()=>{
  const revision='a'.repeat(40);
- await upstream({revision,account:genshin.account,manifests:genshin.manifests},async calls=>{
+ await upstream({revision,account:genshin.account,manifests:genshin.manifests,sources:genshin.sources},async calls=>{
   const response=await accountGET(request('/api/account'));assert.equal(response.status,200);privateResponse(response);
   const result=await response.json();assert.equal(result.revision,revision);assert.deepEqual(result.account,genshin.account);
   assert.equal(result.review,undefined);assert.equal(result.manifests,undefined);assert.equal(result.commitMessage,undefined);
   assert.ok(result.evidence.length>0);assert.ok(result.evidence.every(item=>!('path'in item)&&!('sha256'in item)));
   assert.equal(calls.filter(call=>call.path.endsWith('/commits/main')).length,1);
-  assert.equal(calls.filter(call=>call.path.includes('/contents/')).length,1+genshin.manifests.length);
+  assert.equal(calls.filter(call=>call.path.includes('/contents/')).length,1+genshin.manifests.length+Object.keys(genshin.sources).length);
   assert.ok(calls.filter(call=>call.path.includes('/contents/')).every(call=>call.ref===revision));
   assert.ok(calls.every(call=>!call.method));
  });
@@ -74,10 +74,10 @@ test('Genshin GET reads main once, validates pinned formal data and strips priva
 
 test('ZZZ GET returns the validated formal account at the main revision without an overlay',async()=>{
  const revision='b'.repeat(40);
- await upstream({revision,account:zzz.account},async calls=>{
+ await upstream({revision,account:zzz.account,sources:zzz.sources},async calls=>{
   const response=await zzzGET(request('/api/zzz'));assert.equal(response.status,200);privateResponse(response);
   const result=await response.json();assert.equal(result.revision,revision);assert.deepEqual(result.account,zzz.account);assert.equal(result.review,undefined);
-  assert.equal(calls.length,2);assert.ok(calls[0].path.endsWith('/commits/main'));assert.equal(calls[1].ref,revision);assert.ok(calls.every(call=>!call.method));
+  assert.equal(calls.length,2+Object.keys(zzz.sources).length);assert.ok(calls[0].path.endsWith('/commits/main'));assert.ok(calls.slice(1).every(call=>call.ref===revision));assert.ok(calls.every(call=>!call.method));
  });
 });
 
@@ -99,4 +99,12 @@ test('an upstream outage never falls back to test fixtures or generated account 
 
 test('deployment-only account overlays and their generator are absent from Site source',()=>{
  for(const path of ['../lib/review/','../lib/genshin_review.ts','../lib/zzz_review.ts','../scripts/prepare-review-snapshot.mjs'])assert.equal(existsSync(new URL(path,import.meta.url)),false,path);
+});
+
+
+test('public Site account POST is disabled and never reaches GitHub',async()=>{
+ await upstream({unavailable:true},async calls=>{
+  const response=await accountPOST(new Request('https://unit.test/api/account',{method:'POST',headers:{origin:'https://unit.test','content-type':'application/json','oai-authenticated-user-id':'visitor'},body:'{}'}));
+  assert.equal(response.status,403);assert.equal((await response.json()).error,'readonly');assert.equal(calls.length,0);
+ });
 });

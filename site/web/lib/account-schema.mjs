@@ -1,14 +1,15 @@
 import runtime0Module from "ajv/dist/runtime/ucs2length.js";const runtime0=runtime0Module.default??runtime0Module;
+import runtime1Module from "ajv/dist/runtime/equal.js";const runtime1=runtime1Module.default??runtime1Module;
 "use strict";
 export const validate = validate20;
 export default validate20;
-const schema31 = {"type":"object","properties":{"schema_version":{"const":2},"updated_at":{"type":"string","minLength":1},"source_ids":{"type":"array","items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"}},"coverage":{"type":"object","properties":{"roster":{"enum":["partial","complete"]},"inventory":{"enum":["equipped_items_only","partial","complete"]},"notes":{"type":"array","items":{"type":"string","minLength":1}}},"required":["roster","inventory","notes"],"additionalProperties":false},"characters":{"type":"array","items":{"$ref":"#/$defs/character"}},"weapons":{"type":"array","items":{"$ref":"#/$defs/weapon"}},"artifacts":{"type":"array","items":{"$ref":"#/$defs/artifact"}},"equipment":{"type":"object","propertyNames":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"additionalProperties":{"type":"object","properties":{"weapon_id":{"type":["string","null"]},"artifacts":{"type":"object","properties":{"flower":{"type":["string","null"]},"plume":{"type":["string","null"]},"sands":{"type":["string","null"]},"goblet":{"type":["string","null"]},"circlet":{"type":["string","null"]}},"required":["flower","plume","sands","goblet","circlet"],"additionalProperties":false}},"required":["weapon_id","artifacts"],"additionalProperties":false}},"panel_snapshots":{"type":"array","items":{"$ref":"#/$defs/snapshot"}},"teams":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"name":{"type":"string","minLength":1},"character_ids":{"type":"array","items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"uniqueItems":true,"maxItems":4},"notes":{"type":"array","items":{"type":"string","minLength":1}}},"required":["id","name","character_ids","notes"],"additionalProperties":false}}},"required":["schema_version","updated_at","source_ids","coverage","characters","weapons","artifacts","equipment","panel_snapshots","teams"],"additionalProperties":false,"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Genshin account version 2","$defs":{"measurement":{"oneOf":[{"type":"object","properties":{"key":{"enum":["hp","atk","def","em","stamina"]},"value":{"type":["number","null"],"minimum":0},"unit":{"const":"flat"}},"required":["key","value","unit"],"additionalProperties":false},{"type":"object","properties":{"key":{"enum":["hp_pct","atk_pct","def_pct","crit_rate","crit_dmg","energy_recharge","healing_bonus","incoming_healing_bonus","cooldown_reduction","shield_strength","physical_dmg_bonus","pyro_dmg_bonus","hydro_dmg_bonus","dendro_dmg_bonus","electro_dmg_bonus","anemo_dmg_bonus","cryo_dmg_bonus","geo_dmg_bonus"]},"value":{"type":["number","null"],"minimum":0},"unit":{"const":"percent"}},"required":["key","value","unit"],"additionalProperties":false}]},"provenance":{"type":"object","properties":{"source_ids":{"type":"array","items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"}},"evidence_refs":{"type":"array","items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"}},"verification":{"enum":["agent_reviewed","user_reported","pending"]},"notes":{"type":"array","items":{"type":"string","minLength":1}}},"required":["source_ids","evidence_refs","verification","notes"],"additionalProperties":false},"level":{"type":"object","properties":{"current":{"type":["integer","null"],"minimum":1},"cap":{"type":["integer","null"],"minimum":1}},"required":["current","cap"],"additionalProperties":false},"character":{"type":"object","properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"name":{"type":"string","minLength":1},"element":{"enum":["pyro","hydro","dendro","electro","anemo","cryo","geo"]},"weapon_type":{"enum":["sword","claymore","polearm","bow","catalyst"]},"level":{"$ref":"#/$defs/level"},"constellation":{"type":["integer","null"],"minimum":0,"maximum":6},"friendship":{"type":["integer","null"],"minimum":0,"maximum":10},"talents":{"type":"object","properties":{"base":{"type":"object","properties":{"normal":{"type":["integer","null"],"minimum":0},"skill":{"type":["integer","null"],"minimum":0},"burst":{"type":["integer","null"],"minimum":0}},"required":["normal","skill","burst"],"additionalProperties":false},"displayed":{"type":"object","properties":{"normal":{"type":["integer","null"],"minimum":0},"skill":{"type":["integer","null"],"minimum":0},"burst":{"type":["integer","null"],"minimum":0}},"required":["normal","skill","burst"],"additionalProperties":false},"bonus_context":{"type":["string","null"]}},"required":["base","displayed","bonus_context"],"additionalProperties":false},"panel_snapshot_id":{"type":["string","null"]},"provenance":{"$ref":"#/$defs/provenance"}},"required":["id","name","element","weapon_type","level","constellation","friendship","talents","panel_snapshot_id","provenance"],"additionalProperties":false},"weapon":{"type":"object","properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"name":{"type":"string","minLength":1},"weapon_type":{"enum":["sword","claymore","polearm","bow","catalyst"]},"rarity":{"type":["integer","null"],"minimum":1,"maximum":5},"level":{"$ref":"#/$defs/level"},"refinement":{"type":["integer","null"],"minimum":1,"maximum":5},"base_atk":{"type":["number","null"],"minimum":0},"secondary_stat":{"anyOf":[{"$ref":"#/$defs/measurement"},{"type":"null"}]},"provenance":{"$ref":"#/$defs/provenance"}},"required":["id","name","weapon_type","rarity","level","refinement","base_atk","secondary_stat","provenance"],"additionalProperties":false},"artifact":{"type":"object","properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"name":{"type":"string","minLength":1},"set_name":{"type":"string","minLength":1},"slot":{"enum":["flower","plume","sands","goblet","circlet"]},"rarity":{"type":["integer","null"],"minimum":1,"maximum":5},"level":{"type":["integer","null"],"minimum":0,"maximum":20},"main_stat":{"$ref":"#/$defs/measurement"},"substats":{"type":"array","items":{"$ref":"#/$defs/measurement"},"maxItems":4},"provenance":{"$ref":"#/$defs/provenance"},"substat_rolls":{"type":"object","properties":{"character_id":{"type":["string","null"]},"values":{"type":"array","maxItems":4,"items":{"type":"object","properties":{"key":{"type":"string"},"enhancements":{"type":["integer","null"],"minimum":0,"maximum":5},"effective":{"type":["boolean","null"]}},"required":["key","enhancements","effective"],"additionalProperties":false}}},"required":["character_id","values"],"additionalProperties":false}},"required":["id","name","set_name","slot","rarity","level","main_stat","substats","provenance","substat_rolls"],"additionalProperties":false},"snapshot":{"type":"object","properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"character_id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"observed_at":{"type":["string","null"]},"imported_at":{"type":"string","minLength":1},"build_fingerprint":{"type":"string","pattern":"^[0-9a-f]{64}$"},"stats":{"type":"array","items":{"$ref":"#/$defs/measurement"}},"context":{"type":"object","properties":{"team_character_ids":{"anyOf":[{"type":"array","items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"}},{"type":"null"}]},"buffs":{"type":["string","null"]},"notes":{"type":"array","items":{"type":"string","minLength":1}}},"required":["team_character_ids","buffs","notes"],"additionalProperties":false},"provenance":{"$ref":"#/$defs/provenance"}},"required":["id","character_id","observed_at","imported_at","build_fingerprint","stats","context","provenance"],"additionalProperties":false}}};
+const schema31 = {"type":"object","properties":{"schema_version":{"const":3},"updated_at":{"type":"string","minLength":1},"source_ids":{"type":"array","items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"}},"coverage":{"type":"object","properties":{"roster":{"enum":["partial","complete"]},"inventory":{"enum":["equipped_items_only","partial","complete"]},"notes":{"type":"array","items":{"type":"string","minLength":1}}},"required":["roster","inventory","notes"],"additionalProperties":false},"characters":{"type":"array","items":{"$ref":"#/$defs/character"}},"weapons":{"type":"array","items":{"$ref":"#/$defs/weapon"}},"artifacts":{"type":"array","items":{"$ref":"#/$defs/artifact"}},"equipment":{"type":"object","propertyNames":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"additionalProperties":{"type":"object","properties":{"weapon_id":{"type":["string","null"]},"artifacts":{"type":"object","properties":{"flower":{"type":["string","null"]},"plume":{"type":["string","null"]},"sands":{"type":["string","null"]},"goblet":{"type":["string","null"]},"circlet":{"type":["string","null"]}},"required":["flower","plume","sands","goblet","circlet"],"additionalProperties":false}},"required":["weapon_id","artifacts"],"additionalProperties":false}},"panel_snapshots":{"type":"array","items":{"$ref":"#/$defs/snapshot"}},"teams":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"name":{"type":"string","minLength":1},"character_ids":{"type":"array","items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"uniqueItems":true,"maxItems":4},"notes":{"type":"array","items":{"type":"string","minLength":1}}},"required":["id","name","character_ids","notes"],"additionalProperties":false}}},"required":["schema_version","updated_at","source_ids","coverage","characters","weapons","artifacts","equipment","panel_snapshots","teams"],"additionalProperties":false,"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Genshin account version 3","$defs":{"measurement":{"oneOf":[{"type":"object","properties":{"key":{"enum":["hp","atk","def","em","stamina"]},"value":{"type":["number","null"],"minimum":0},"unit":{"const":"flat"}},"required":["key","value","unit"],"additionalProperties":false},{"type":"object","properties":{"key":{"enum":["hp_pct","atk_pct","def_pct","crit_rate","crit_dmg","energy_recharge","healing_bonus","incoming_healing_bonus","cooldown_reduction","shield_strength","physical_dmg_bonus","pyro_dmg_bonus","hydro_dmg_bonus","dendro_dmg_bonus","electro_dmg_bonus","anemo_dmg_bonus","cryo_dmg_bonus","geo_dmg_bonus"]},"value":{"type":["number","null"],"minimum":0},"unit":{"const":"percent"}},"required":["key","value","unit"],"additionalProperties":false}]},"provenance":{"type":"object","properties":{"source_ids":{"type":"array","items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"}},"evidence_refs":{"type":"array","items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"}},"verification":{"enum":["agent_reviewed","user_reported","pending","api_observed"]},"notes":{"type":"array","items":{"type":"string","minLength":1}}},"required":["source_ids","evidence_refs","verification","notes"],"additionalProperties":false},"level":{"type":"object","properties":{"current":{"type":["integer","null"],"minimum":1},"cap":{"type":["integer","null"],"minimum":1}},"required":["current","cap"],"additionalProperties":false},"character":{"type":"object","properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"name":{"type":"string","minLength":1},"element":{"enum":["pyro","hydro","dendro","electro","anemo","cryo","geo"]},"weapon_type":{"enum":["sword","claymore","polearm","bow","catalyst"]},"level":{"$ref":"#/$defs/level"},"constellation":{"type":["integer","null"],"minimum":0,"maximum":6},"friendship":{"type":["integer","null"],"minimum":0,"maximum":10},"talents":{"type":"object","properties":{"base":{"type":"object","properties":{"normal":{"type":["integer","null"],"minimum":0},"skill":{"type":["integer","null"],"minimum":0},"burst":{"type":["integer","null"],"minimum":0}},"required":["normal","skill","burst"],"additionalProperties":false},"displayed":{"type":"object","properties":{"normal":{"type":["integer","null"],"minimum":0},"skill":{"type":["integer","null"],"minimum":0},"burst":{"type":["integer","null"],"minimum":0}},"required":["normal","skill","burst"],"additionalProperties":false},"bonus_context":{"type":["string","null"]}},"required":["base","displayed","bonus_context"],"additionalProperties":false},"panel_snapshot_id":{"type":["string","null"]},"provenance":{"$ref":"#/$defs/provenance"},"hoyolab_id":{"type":"integer","minimum":1}},"required":["id","name","element","weapon_type","level","constellation","friendship","talents","panel_snapshot_id","provenance"],"additionalProperties":false},"weapon":{"type":"object","properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"name":{"type":"string","minLength":1},"weapon_type":{"enum":["sword","claymore","polearm","bow","catalyst"]},"rarity":{"type":["integer","null"],"minimum":1,"maximum":5},"level":{"$ref":"#/$defs/level"},"refinement":{"type":["integer","null"],"minimum":1,"maximum":5},"base_atk":{"type":["number","null"],"minimum":0},"secondary_stat":{"anyOf":[{"$ref":"#/$defs/measurement"},{"type":"null"}]},"provenance":{"$ref":"#/$defs/provenance"},"hoyolab_id":{"type":"integer","minimum":1}},"required":["id","name","weapon_type","rarity","level","refinement","base_atk","secondary_stat","provenance"],"additionalProperties":false},"artifact":{"type":"object","properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"name":{"type":"string","minLength":1},"set_name":{"type":"string","minLength":1},"slot":{"enum":["flower","plume","sands","goblet","circlet"]},"rarity":{"type":["integer","null"],"minimum":1,"maximum":5},"level":{"type":["integer","null"],"minimum":0,"maximum":20},"main_stat":{"$ref":"#/$defs/measurement"},"substats":{"type":"array","items":{"$ref":"#/$defs/measurement"},"maxItems":4},"provenance":{"$ref":"#/$defs/provenance"},"substat_rolls":{"type":"object","properties":{"character_id":{"type":["string","null"]},"values":{"type":"array","maxItems":4,"items":{"type":"object","properties":{"key":{"type":"string"},"enhancements":{"type":["integer","null"],"minimum":0,"maximum":5},"effective":{"type":["boolean","null"]},"assessed_effective":{"type":["boolean","null"]}},"required":["key","enhancements","effective"],"additionalProperties":false}},"rule_id":{"type":"string","minLength":1},"effective_keys":{"type":"array","items":{"enum":["hp","hp_pct","atk","atk_pct","def","def_pct","em","energy_recharge","crit_rate","crit_dmg"]},"uniqueItems":true}},"required":["character_id","values"],"additionalProperties":false,"dependentRequired":{"rule_id":["effective_keys"],"effective_keys":["rule_id"]}},"hoyolab_id":{"type":"integer","minimum":1}},"required":["id","name","set_name","slot","rarity","level","main_stat","substats","provenance","substat_rolls"],"additionalProperties":false},"snapshot":{"type":"object","properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"character_id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"observed_at":{"type":["string","null"]},"imported_at":{"type":"string","minLength":1},"build_fingerprint":{"type":"string","pattern":"^[0-9a-f]{64}$"},"stats":{"type":"array","items":{"$ref":"#/$defs/measurement"}},"context":{"type":"object","properties":{"team_character_ids":{"anyOf":[{"type":"array","items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"}},{"type":"null"}]},"buffs":{"type":["string","null"]},"notes":{"type":"array","items":{"type":"string","minLength":1}}},"required":["team_character_ids","buffs","notes"],"additionalProperties":false},"provenance":{"$ref":"#/$defs/provenance"}},"required":["id","character_id","observed_at","imported_at","build_fingerprint","stats","context","provenance"],"additionalProperties":false}}};
 const func1 = Object.prototype.hasOwnProperty;
 const func2 = runtime0;
 const pattern4 = new RegExp("^[a-z][a-z0-9_]*$", "u");
-const schema32 = {"type":"object","properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"name":{"type":"string","minLength":1},"element":{"enum":["pyro","hydro","dendro","electro","anemo","cryo","geo"]},"weapon_type":{"enum":["sword","claymore","polearm","bow","catalyst"]},"level":{"$ref":"#/$defs/level"},"constellation":{"type":["integer","null"],"minimum":0,"maximum":6},"friendship":{"type":["integer","null"],"minimum":0,"maximum":10},"talents":{"type":"object","properties":{"base":{"type":"object","properties":{"normal":{"type":["integer","null"],"minimum":0},"skill":{"type":["integer","null"],"minimum":0},"burst":{"type":["integer","null"],"minimum":0}},"required":["normal","skill","burst"],"additionalProperties":false},"displayed":{"type":"object","properties":{"normal":{"type":["integer","null"],"minimum":0},"skill":{"type":["integer","null"],"minimum":0},"burst":{"type":["integer","null"],"minimum":0}},"required":["normal","skill","burst"],"additionalProperties":false},"bonus_context":{"type":["string","null"]}},"required":["base","displayed","bonus_context"],"additionalProperties":false},"panel_snapshot_id":{"type":["string","null"]},"provenance":{"$ref":"#/$defs/provenance"}},"required":["id","name","element","weapon_type","level","constellation","friendship","talents","panel_snapshot_id","provenance"],"additionalProperties":false};
+const schema32 = {"type":"object","properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"name":{"type":"string","minLength":1},"element":{"enum":["pyro","hydro","dendro","electro","anemo","cryo","geo"]},"weapon_type":{"enum":["sword","claymore","polearm","bow","catalyst"]},"level":{"$ref":"#/$defs/level"},"constellation":{"type":["integer","null"],"minimum":0,"maximum":6},"friendship":{"type":["integer","null"],"minimum":0,"maximum":10},"talents":{"type":"object","properties":{"base":{"type":"object","properties":{"normal":{"type":["integer","null"],"minimum":0},"skill":{"type":["integer","null"],"minimum":0},"burst":{"type":["integer","null"],"minimum":0}},"required":["normal","skill","burst"],"additionalProperties":false},"displayed":{"type":"object","properties":{"normal":{"type":["integer","null"],"minimum":0},"skill":{"type":["integer","null"],"minimum":0},"burst":{"type":["integer","null"],"minimum":0}},"required":["normal","skill","burst"],"additionalProperties":false},"bonus_context":{"type":["string","null"]}},"required":["base","displayed","bonus_context"],"additionalProperties":false},"panel_snapshot_id":{"type":["string","null"]},"provenance":{"$ref":"#/$defs/provenance"},"hoyolab_id":{"type":"integer","minimum":1}},"required":["id","name","element","weapon_type","level","constellation","friendship","talents","panel_snapshot_id","provenance"],"additionalProperties":false};
 const schema33 = {"type":"object","properties":{"current":{"type":["integer","null"],"minimum":1},"cap":{"type":["integer","null"],"minimum":1}},"required":["current","cap"],"additionalProperties":false};
-const schema34 = {"type":"object","properties":{"source_ids":{"type":"array","items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"}},"evidence_refs":{"type":"array","items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"}},"verification":{"enum":["agent_reviewed","user_reported","pending"]},"notes":{"type":"array","items":{"type":"string","minLength":1}}},"required":["source_ids","evidence_refs","verification","notes"],"additionalProperties":false};
+const schema34 = {"type":"object","properties":{"source_ids":{"type":"array","items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"}},"evidence_refs":{"type":"array","items":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"}},"verification":{"enum":["agent_reviewed","user_reported","pending","api_observed"]},"notes":{"type":"array","items":{"type":"string","minLength":1}}},"required":["source_ids","evidence_refs","verification","notes"],"additionalProperties":false};
 
 function validate21(data, {instancePath="", parentData, parentDataProperty, rootData=data, dynamicAnchors={}}={}){
 let vErrors = null;
@@ -862,7 +863,7 @@ errors++;
 }
 if(data20.verification !== undefined){
 let data25 = data20.verification;
-if(!(((data25 === "agent_reviewed") || (data25 === "user_reported")) || (data25 === "pending"))){
+if(!((((data25 === "agent_reviewed") || (data25 === "user_reported")) || (data25 === "pending")) || (data25 === "api_observed"))){
 const err71 = {instancePath:instancePath+"/provenance/verification",schemaPath:"#/$defs/provenance/properties/verification/enum",keyword:"enum",params:{allowedValues: schema34.properties.verification.enum},message:"must be equal to one of the allowed values"};
 if(vErrors === null){
 vErrors = [err71];
@@ -926,9 +927,10 @@ vErrors.push(err75);
 errors++;
 }
 }
-}
-else {
-const err76 = {instancePath,schemaPath:"#/type",keyword:"type",params:{type: "object"},message:"must be object"};
+if(data.hoyolab_id !== undefined){
+let data28 = data.hoyolab_id;
+if(!((typeof data28 == "number") && (!(data28 % 1) && !isNaN(data28)))){
+const err76 = {instancePath:instancePath+"/hoyolab_id",schemaPath:"#/properties/hoyolab_id/type",keyword:"type",params:{type: "integer"},message:"must be integer"};
 if(vErrors === null){
 vErrors = [err76];
 }
@@ -937,12 +939,36 @@ vErrors.push(err76);
 }
 errors++;
 }
+if(typeof data28 == "number"){
+if(data28 < 1 || isNaN(data28)){
+const err77 = {instancePath:instancePath+"/hoyolab_id",schemaPath:"#/properties/hoyolab_id/minimum",keyword:"minimum",params:{comparison: ">=", limit: 1},message:"must be >= 1"};
+if(vErrors === null){
+vErrors = [err77];
+}
+else {
+vErrors.push(err77);
+}
+errors++;
+}
+}
+}
+}
+else {
+const err78 = {instancePath,schemaPath:"#/type",keyword:"type",params:{type: "object"},message:"must be object"};
+if(vErrors === null){
+vErrors = [err78];
+}
+else {
+vErrors.push(err78);
+}
+errors++;
+}
 validate21.errors = vErrors;
 return errors === 0;
 }
 validate21.evaluated = {"props":true,"dynamicProps":false,"dynamicItems":false};
 
-const schema35 = {"type":"object","properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"name":{"type":"string","minLength":1},"weapon_type":{"enum":["sword","claymore","polearm","bow","catalyst"]},"rarity":{"type":["integer","null"],"minimum":1,"maximum":5},"level":{"$ref":"#/$defs/level"},"refinement":{"type":["integer","null"],"minimum":1,"maximum":5},"base_atk":{"type":["number","null"],"minimum":0},"secondary_stat":{"anyOf":[{"$ref":"#/$defs/measurement"},{"type":"null"}]},"provenance":{"$ref":"#/$defs/provenance"}},"required":["id","name","weapon_type","rarity","level","refinement","base_atk","secondary_stat","provenance"],"additionalProperties":false};
+const schema35 = {"type":"object","properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"name":{"type":"string","minLength":1},"weapon_type":{"enum":["sword","claymore","polearm","bow","catalyst"]},"rarity":{"type":["integer","null"],"minimum":1,"maximum":5},"level":{"$ref":"#/$defs/level"},"refinement":{"type":["integer","null"],"minimum":1,"maximum":5},"base_atk":{"type":["number","null"],"minimum":0},"secondary_stat":{"anyOf":[{"$ref":"#/$defs/measurement"},{"type":"null"}]},"provenance":{"$ref":"#/$defs/provenance"},"hoyolab_id":{"type":"integer","minimum":1}},"required":["id","name","weapon_type","rarity","level","refinement","base_atk","secondary_stat","provenance"],"additionalProperties":false};
 const schema37 = {"oneOf":[{"type":"object","properties":{"key":{"enum":["hp","atk","def","em","stamina"]},"value":{"type":["number","null"],"minimum":0},"unit":{"const":"flat"}},"required":["key","value","unit"],"additionalProperties":false},{"type":"object","properties":{"key":{"enum":["hp_pct","atk_pct","def_pct","crit_rate","crit_dmg","energy_recharge","healing_bonus","incoming_healing_bonus","cooldown_reduction","shield_strength","physical_dmg_bonus","pyro_dmg_bonus","hydro_dmg_bonus","dendro_dmg_bonus","electro_dmg_bonus","anemo_dmg_bonus","cryo_dmg_bonus","geo_dmg_bonus"]},"value":{"type":["number","null"],"minimum":0},"unit":{"const":"percent"}},"required":["key","value","unit"],"additionalProperties":false}]};
 
 function validate23(data, {instancePath="", parentData, parentDataProperty, rootData=data, dynamicAnchors={}}={}){
@@ -1748,7 +1774,7 @@ errors++;
 }
 if(data16.verification !== undefined){
 let data21 = data16.verification;
-if(!(((data21 === "agent_reviewed") || (data21 === "user_reported")) || (data21 === "pending"))){
+if(!((((data21 === "agent_reviewed") || (data21 === "user_reported")) || (data21 === "pending")) || (data21 === "api_observed"))){
 const err63 = {instancePath:instancePath+"/provenance/verification",schemaPath:"#/$defs/provenance/properties/verification/enum",keyword:"enum",params:{allowedValues: schema34.properties.verification.enum},message:"must be equal to one of the allowed values"};
 if(vErrors === null){
 vErrors = [err63];
@@ -1812,9 +1838,10 @@ vErrors.push(err67);
 errors++;
 }
 }
-}
-else {
-const err68 = {instancePath,schemaPath:"#/type",keyword:"type",params:{type: "object"},message:"must be object"};
+if(data.hoyolab_id !== undefined){
+let data24 = data.hoyolab_id;
+if(!((typeof data24 == "number") && (!(data24 % 1) && !isNaN(data24)))){
+const err68 = {instancePath:instancePath+"/hoyolab_id",schemaPath:"#/properties/hoyolab_id/type",keyword:"type",params:{type: "integer"},message:"must be integer"};
 if(vErrors === null){
 vErrors = [err68];
 }
@@ -1823,12 +1850,37 @@ vErrors.push(err68);
 }
 errors++;
 }
+if(typeof data24 == "number"){
+if(data24 < 1 || isNaN(data24)){
+const err69 = {instancePath:instancePath+"/hoyolab_id",schemaPath:"#/properties/hoyolab_id/minimum",keyword:"minimum",params:{comparison: ">=", limit: 1},message:"must be >= 1"};
+if(vErrors === null){
+vErrors = [err69];
+}
+else {
+vErrors.push(err69);
+}
+errors++;
+}
+}
+}
+}
+else {
+const err70 = {instancePath,schemaPath:"#/type",keyword:"type",params:{type: "object"},message:"must be object"};
+if(vErrors === null){
+vErrors = [err70];
+}
+else {
+vErrors.push(err70);
+}
+errors++;
+}
 validate23.errors = vErrors;
 return errors === 0;
 }
 validate23.evaluated = {"props":true,"dynamicProps":false,"dynamicItems":false};
 
-const schema39 = {"type":"object","properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"name":{"type":"string","minLength":1},"set_name":{"type":"string","minLength":1},"slot":{"enum":["flower","plume","sands","goblet","circlet"]},"rarity":{"type":["integer","null"],"minimum":1,"maximum":5},"level":{"type":["integer","null"],"minimum":0,"maximum":20},"main_stat":{"$ref":"#/$defs/measurement"},"substats":{"type":"array","items":{"$ref":"#/$defs/measurement"},"maxItems":4},"provenance":{"$ref":"#/$defs/provenance"},"substat_rolls":{"type":"object","properties":{"character_id":{"type":["string","null"]},"values":{"type":"array","maxItems":4,"items":{"type":"object","properties":{"key":{"type":"string"},"enhancements":{"type":["integer","null"],"minimum":0,"maximum":5},"effective":{"type":["boolean","null"]}},"required":["key","enhancements","effective"],"additionalProperties":false}}},"required":["character_id","values"],"additionalProperties":false}},"required":["id","name","set_name","slot","rarity","level","main_stat","substats","provenance","substat_rolls"],"additionalProperties":false};
+const schema39 = {"type":"object","properties":{"id":{"type":"string","pattern":"^[a-z][a-z0-9_]*$"},"name":{"type":"string","minLength":1},"set_name":{"type":"string","minLength":1},"slot":{"enum":["flower","plume","sands","goblet","circlet"]},"rarity":{"type":["integer","null"],"minimum":1,"maximum":5},"level":{"type":["integer","null"],"minimum":0,"maximum":20},"main_stat":{"$ref":"#/$defs/measurement"},"substats":{"type":"array","items":{"$ref":"#/$defs/measurement"},"maxItems":4},"provenance":{"$ref":"#/$defs/provenance"},"substat_rolls":{"type":"object","properties":{"character_id":{"type":["string","null"]},"values":{"type":"array","maxItems":4,"items":{"type":"object","properties":{"key":{"type":"string"},"enhancements":{"type":["integer","null"],"minimum":0,"maximum":5},"effective":{"type":["boolean","null"]},"assessed_effective":{"type":["boolean","null"]}},"required":["key","enhancements","effective"],"additionalProperties":false}},"rule_id":{"type":"string","minLength":1},"effective_keys":{"type":"array","items":{"enum":["hp","hp_pct","atk","atk_pct","def","def_pct","em","energy_recharge","crit_rate","crit_dmg"]},"uniqueItems":true}},"required":["character_id","values"],"additionalProperties":false,"dependentRequired":{"rule_id":["effective_keys"],"effective_keys":["rule_id"]}},"hoyolab_id":{"type":"integer","minimum":1}},"required":["id","name","set_name","slot","rarity","level","main_stat","substats","provenance","substat_rolls"],"additionalProperties":false};
+const func0 = runtime1;
 
 function validate25(data, {instancePath="", parentData, parentDataProperty, rootData=data, dynamicAnchors={}}={}){
 let vErrors = null;
@@ -2790,7 +2842,7 @@ errors++;
 }
 if(data21.verification !== undefined){
 let data26 = data21.verification;
-if(!(((data26 === "agent_reviewed") || (data26 === "user_reported")) || (data26 === "pending"))){
+if(!((((data26 === "agent_reviewed") || (data26 === "user_reported")) || (data26 === "pending")) || (data26 === "api_observed"))){
 const err75 = {instancePath:instancePath+"/provenance/verification",schemaPath:"#/$defs/provenance/properties/verification/enum",keyword:"enum",params:{allowedValues: schema34.properties.verification.enum},message:"must be equal to one of the allowed values"};
 if(vErrors === null){
 vErrors = [err75];
@@ -2878,7 +2930,7 @@ vErrors.push(err81);
 errors++;
 }
 for(const key6 in data29){
-if(!((key6 === "character_id") || (key6 === "values"))){
+if(!((((key6 === "character_id") || (key6 === "values")) || (key6 === "rule_id")) || (key6 === "effective_keys"))){
 const err82 = {instancePath:instancePath+"/substat_rolls",schemaPath:"#/properties/substat_rolls/additionalProperties",keyword:"additionalProperties",params:{additionalProperty: key6},message:"must NOT have additional properties"};
 if(vErrors === null){
 vErrors = [err82];
@@ -2950,7 +3002,7 @@ vErrors.push(err87);
 errors++;
 }
 for(const key7 in data32){
-if(!(((key7 === "key") || (key7 === "enhancements")) || (key7 === "effective"))){
+if(!((((key7 === "key") || (key7 === "enhancements")) || (key7 === "effective")) || (key7 === "assessed_effective"))){
 const err88 = {instancePath:instancePath+"/substat_rolls/values/" + i4,schemaPath:"#/properties/substat_rolls/properties/values/items/additionalProperties",keyword:"additionalProperties",params:{additionalProperty: key7},message:"must NOT have additional properties"};
 if(vErrors === null){
 vErrors = [err88];
@@ -3021,9 +3073,10 @@ vErrors.push(err93);
 errors++;
 }
 }
-}
-else {
-const err94 = {instancePath:instancePath+"/substat_rolls/values/" + i4,schemaPath:"#/properties/substat_rolls/properties/values/items/type",keyword:"type",params:{type: "object"},message:"must be object"};
+if(data32.assessed_effective !== undefined){
+let data36 = data32.assessed_effective;
+if((typeof data36 !== "boolean") && (data36 !== null)){
+const err94 = {instancePath:instancePath+"/substat_rolls/values/" + i4+"/assessed_effective",schemaPath:"#/properties/substat_rolls/properties/values/items/properties/assessed_effective/type",keyword:"type",params:{type: schema39.properties.substat_rolls.properties.values.items.properties.assessed_effective.type},message:"must be boolean,null"};
 if(vErrors === null){
 vErrors = [err94];
 }
@@ -3035,7 +3088,7 @@ errors++;
 }
 }
 else {
-const err95 = {instancePath:instancePath+"/substat_rolls/values",schemaPath:"#/properties/substat_rolls/properties/values/type",keyword:"type",params:{type: "array"},message:"must be array"};
+const err95 = {instancePath:instancePath+"/substat_rolls/values/" + i4,schemaPath:"#/properties/substat_rolls/properties/values/items/type",keyword:"type",params:{type: "object"},message:"must be object"};
 if(vErrors === null){
 vErrors = [err95];
 }
@@ -3047,7 +3100,7 @@ errors++;
 }
 }
 else {
-const err96 = {instancePath:instancePath+"/substat_rolls",schemaPath:"#/properties/substat_rolls/type",keyword:"type",params:{type: "object"},message:"must be object"};
+const err96 = {instancePath:instancePath+"/substat_rolls/values",schemaPath:"#/properties/substat_rolls/properties/values/type",keyword:"type",params:{type: "array"},message:"must be array"};
 if(vErrors === null){
 vErrors = [err96];
 }
@@ -3057,14 +3110,155 @@ vErrors.push(err96);
 errors++;
 }
 }
-}
-else {
-const err97 = {instancePath,schemaPath:"#/type",keyword:"type",params:{type: "object"},message:"must be object"};
+if(data29.rule_id !== undefined){
+let data37 = data29.rule_id;
+if(typeof data37 === "string"){
+if(func2(data37) < 1){
+const err97 = {instancePath:instancePath+"/substat_rolls/rule_id",schemaPath:"#/properties/substat_rolls/properties/rule_id/minLength",keyword:"minLength",params:{limit: 1},message:"must NOT have fewer than 1 characters"};
 if(vErrors === null){
 vErrors = [err97];
 }
 else {
 vErrors.push(err97);
+}
+errors++;
+}
+}
+else {
+const err98 = {instancePath:instancePath+"/substat_rolls/rule_id",schemaPath:"#/properties/substat_rolls/properties/rule_id/type",keyword:"type",params:{type: "string"},message:"must be string"};
+if(vErrors === null){
+vErrors = [err98];
+}
+else {
+vErrors.push(err98);
+}
+errors++;
+}
+}
+if(data29.effective_keys !== undefined){
+let data38 = data29.effective_keys;
+if(Array.isArray(data38)){
+const len5 = data38.length;
+for(let i5=0; i5<len5; i5++){
+let data39 = data38[i5];
+if(!((((((((((data39 === "hp") || (data39 === "hp_pct")) || (data39 === "atk")) || (data39 === "atk_pct")) || (data39 === "def")) || (data39 === "def_pct")) || (data39 === "em")) || (data39 === "energy_recharge")) || (data39 === "crit_rate")) || (data39 === "crit_dmg"))){
+const err99 = {instancePath:instancePath+"/substat_rolls/effective_keys/" + i5,schemaPath:"#/properties/substat_rolls/properties/effective_keys/items/enum",keyword:"enum",params:{allowedValues: schema39.properties.substat_rolls.properties.effective_keys.items.enum},message:"must be equal to one of the allowed values"};
+if(vErrors === null){
+vErrors = [err99];
+}
+else {
+vErrors.push(err99);
+}
+errors++;
+}
+}
+let i6 = data38.length;
+let j0;
+if(i6 > 1){
+outer0:
+for(;i6--;){
+for(j0 = i6; j0--;){
+if(func0(data38[i6], data38[j0])){
+const err100 = {instancePath:instancePath+"/substat_rolls/effective_keys",schemaPath:"#/properties/substat_rolls/properties/effective_keys/uniqueItems",keyword:"uniqueItems",params:{i: i6, j: j0},message:"must NOT have duplicate items (items ## "+j0+" and "+i6+" are identical)"};
+if(vErrors === null){
+vErrors = [err100];
+}
+else {
+vErrors.push(err100);
+}
+errors++;
+break outer0;
+}
+}
+}
+}
+}
+else {
+const err101 = {instancePath:instancePath+"/substat_rolls/effective_keys",schemaPath:"#/properties/substat_rolls/properties/effective_keys/type",keyword:"type",params:{type: "array"},message:"must be array"};
+if(vErrors === null){
+vErrors = [err101];
+}
+else {
+vErrors.push(err101);
+}
+errors++;
+}
+}
+if(data29.rule_id !== undefined){
+if(data29.effective_keys === undefined){
+const err102 = {instancePath:instancePath+"/substat_rolls",schemaPath:"#/properties/substat_rolls/dependentRequired",keyword:"dependentRequired",params:{property: "rule_id",
+    missingProperty: "effective_keys",
+    depsCount: 1,
+    deps: "effective_keys"},message:"must have property effective_keys when property rule_id is present"};
+if(vErrors === null){
+vErrors = [err102];
+}
+else {
+vErrors.push(err102);
+}
+errors++;
+}
+}
+if(data29.effective_keys !== undefined){
+if(data29.rule_id === undefined){
+const err103 = {instancePath:instancePath+"/substat_rolls",schemaPath:"#/properties/substat_rolls/dependentRequired",keyword:"dependentRequired",params:{property: "effective_keys",
+    missingProperty: "rule_id",
+    depsCount: 1,
+    deps: "rule_id"},message:"must have property rule_id when property effective_keys is present"};
+if(vErrors === null){
+vErrors = [err103];
+}
+else {
+vErrors.push(err103);
+}
+errors++;
+}
+}
+}
+else {
+const err104 = {instancePath:instancePath+"/substat_rolls",schemaPath:"#/properties/substat_rolls/type",keyword:"type",params:{type: "object"},message:"must be object"};
+if(vErrors === null){
+vErrors = [err104];
+}
+else {
+vErrors.push(err104);
+}
+errors++;
+}
+}
+if(data.hoyolab_id !== undefined){
+let data40 = data.hoyolab_id;
+if(!((typeof data40 == "number") && (!(data40 % 1) && !isNaN(data40)))){
+const err105 = {instancePath:instancePath+"/hoyolab_id",schemaPath:"#/properties/hoyolab_id/type",keyword:"type",params:{type: "integer"},message:"must be integer"};
+if(vErrors === null){
+vErrors = [err105];
+}
+else {
+vErrors.push(err105);
+}
+errors++;
+}
+if(typeof data40 == "number"){
+if(data40 < 1 || isNaN(data40)){
+const err106 = {instancePath:instancePath+"/hoyolab_id",schemaPath:"#/properties/hoyolab_id/minimum",keyword:"minimum",params:{comparison: ">=", limit: 1},message:"must be >= 1"};
+if(vErrors === null){
+vErrors = [err106];
+}
+else {
+vErrors.push(err106);
+}
+errors++;
+}
+}
+}
+}
+else {
+const err107 = {instancePath,schemaPath:"#/type",keyword:"type",params:{type: "object"},message:"must be object"};
+if(vErrors === null){
+vErrors = [err107];
+}
+else {
+vErrors.push(err107);
 }
 errors++;
 }
@@ -3895,7 +4089,7 @@ errors++;
 }
 if(data19.verification !== undefined){
 let data24 = data19.verification;
-if(!(((data24 === "agent_reviewed") || (data24 === "user_reported")) || (data24 === "pending"))){
+if(!((((data24 === "agent_reviewed") || (data24 === "user_reported")) || (data24 === "pending")) || (data24 === "api_observed"))){
 const err63 = {instancePath:instancePath+"/provenance/verification",schemaPath:"#/$defs/provenance/properties/verification/enum",keyword:"enum",params:{allowedValues: schema34.properties.verification.enum},message:"must be equal to one of the allowed values"};
 if(vErrors === null){
 vErrors = [err63];
@@ -4100,8 +4294,8 @@ errors++;
 }
 }
 if(data.schema_version !== undefined){
-if(2 !== data.schema_version){
-const err11 = {instancePath:instancePath+"/schema_version",schemaPath:"#/properties/schema_version/const",keyword:"const",params:{allowedValue: 2},message:"must be equal to constant"};
+if(3 !== data.schema_version){
+const err11 = {instancePath:instancePath+"/schema_version",schemaPath:"#/properties/schema_version/const",keyword:"const",params:{allowedValue: 3},message:"must be equal to constant"};
 if(vErrors === null){
 vErrors = [err11];
 }

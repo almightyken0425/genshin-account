@@ -31,6 +31,10 @@ GitHub 保存正式資料。Sites 透過服務端專用連線唯讀取得資料�
 
 本次影片的錄影日期與遊戲版本未知。匯入時間不代表錄影時間。天賦是畫面顯示等級，基礎等級保持 `null`。
 
+## HoYoLAB 同步
+
+使用 [本機同步工具](tools/hoyolab_sync/README.md)讀取兩款遊戲，預覽差異後更新 GitHub main。網站繼續讀取正式帳號檔，登入憑證只留在本機。影片證據與舊觀測保留，新資料使用獨立 API 來源。
+
 ## 本機檢查
 
 使用 Python 3.14。套件版本記錄在 [requirements.txt](requirements.txt)。
