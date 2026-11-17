@@ -27,18 +27,18 @@ import {teamFlowNotes} from '@/lib/team_flows';
 import CenteredHeader from '@/components/navigation/centered_header';
 import GrowthTarget from './growth_target';
 import SkirkFlow from './skirk_flow';
-import {selectRoster} from '@/lib/roster_view.mjs';
+import {selectRoster,defaultRosterSorts} from '@/lib/roster_view.mjs';
 import type {RosterFilters,SortRule} from '@/lib/roster_view.mjs';
 
 const slots:Record<string,string>={flower:'生之花',plume:'死之羽',sands:'時之沙',goblet:'空之杯',circlet:'理之冠'};
-const labels:Record<string,string>={hp:'生命值',atk:'攻擊力',def:'防禦力',em:'元素精通',stamina:'體力',hp_pct:'生命值',atk_pct:'攻擊力',def_pct:'防禦力',crit_rate:'暴擊率',crit_dmg:'暴擊傷害',energy_recharge:'元素充能效率',cryo_dmg_bonus:'冰元素傷害加成',hydro_dmg_bonus:'水元素傷害加成',pyro_dmg_bonus:'火元素傷害加成',electro_dmg_bonus:'雷元素傷害加成',anemo_dmg_bonus:'風元素傷害加成',geo_dmg_bonus:'岩元素傷害加成',dendro_dmg_bonus:'草元素傷害加成',healing_bonus:'治療加成',physical_dmg_bonus:'物理傷害加成'};
+const labels:Record<string,string>={hp:'生命值',atk:'攻擊力',def:'防禦力',em:'元素精通',stamina:'體力',hp_pct:'生命值',atk_pct:'攻擊力',def_pct:'防禦力',crit_rate:'暴擊率',crit_dmg:'暴擊傷害',energy_recharge:'元素充能效率',cryo_dmg_bonus:'冰元素傷害加成',hydro_dmg_bonus:'水元素傷害加成',pyro_dmg_bonus:'火元素傷害加成',electro_dmg_bonus:'雷元素傷害加成',anemo_dmg_bonus:'風元素傷害加成',geo_dmg_bonus:'岩元素傷害加成',dendro_dmg_bonus:'草元素傷害加成',healing_bonus:'治療加成',incoming_healing_bonus:'受治療加成',cooldown_reduction:'冷卻縮減',shield_strength:'護盾強效',physical_dmg_bonus:'物理傷害加成'};
 const fmt=(n:number|null|undefined)=>n==null?'未知':n.toLocaleString('zh-TW',{maximumFractionDigits:2});
 const show=(s:Stat)=>fmt(s.value)+(s.value!==null&&s.unit==='percent'?'%':'');
 function Numeric({label,value}:{label:string,value:number|null}){
  return <MetricValue label={label} value={<>{fmt(value)}{label.endsWith('(%)')?'%':''}</>}/>;
 }
 export default function Dashboard({initialCharacter='',gameControl}:{initialCharacter?:string,gameControl?:React.ReactNode}){
- const [data,setData]=useState<AccountResult|null>(null),[selected,setSelected]=useState(initialCharacter),[query,setQuery]=useState(''),[filters,setFilters]=useState<RosterFilters>({rarities:[],weapons:[],elements:[]}),[sorts,setSorts]=useState<SortRule[]>([]),[fullLabels,setFullLabels]=useState(false),[expanded,setExpanded]=useState<'weapon'|'artifacts'|null>(null),[section,setSection]=useState<GameSection>('roster'),[selectedTeam,setSelectedTeam]=useState('');
+ const [data,setData]=useState<AccountResult|null>(null),[selected,setSelected]=useState(initialCharacter),[query,setQuery]=useState(''),[filters,setFilters]=useState<RosterFilters>({rarities:[],weapons:[],elements:[]}),[sorts,setSorts]=useState<SortRule[]>(defaultRosterSorts),[fullLabels,setFullLabels]=useState(false),[expanded,setExpanded]=useState<'weapon'|'artifacts'|null>(null),[section,setSection]=useState<GameSection>('roster'),[selectedTeam,setSelectedTeam]=useState('');
  const [busy,setBusy]=useState(true),[error,setError]=useState<{code:string,message:string}|null>(null);
  useEffect(()=>{try{setFullLabels((localStorage.getItem('hoyo-genshin-detail-labels')??localStorage.getItem('genshin-detail-labels'))==='full')}catch{}},[]);
  function toggleLabels(){setFullLabels(previous=>{const next=!previous;try{localStorage.setItem('hoyo-genshin-detail-labels',next?'full':'compact')}catch{}return next})}
@@ -146,7 +146,7 @@ export default function Dashboard({initialCharacter='',gameControl}:{initialChar
 
       </section>
       <section className="summary-surface" aria-label="人物總體數值"><div className="stats-container">{stale&&<span className="stats-state" role="img" aria-label="配裝已變更，以下數值待更新" title="配裝已變更，以下數值待更新"><AlertTriangle size={15}/></span>}<div className="summary-stats" aria-label="角色屬性">{panel?.stats.filter(s=>s.key!=='stamina').map(s=><SummaryStat key={s.key} label={labels[s.key]||s.key} value={show(s)} {...panelStatAssessment(c.id,s.key)} effectiveLabel="培養有效屬性"/>)}</div></div></section>
-      <details className="talent-extra"><summary><ChevronDown size={14}/><span>有效屬性依據</span></summary><div className="field context-field">{statProfile?<><p>{statProfile.role}</p><p>{statProfile.summary}</p><p>標記依目前採用的配隊與用途判定，聖遺物上的有效標記保留遊戲紀錄。</p>{statProfile.unknown_reason&&<p>{statProfile.unknown_reason}</p>}{statProfile.conditional.map(condition=><p key={condition.key}>{labels[condition.key]||condition.key}：{condition.reason}</p>)}{statProfile.sources.map(source=><p key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.title}</a>{source.version?' · '+source.version:''}</p>)}</>:<p>尚未確認</p>}</div></details>
+      <details className="talent-extra"><summary><ChevronDown size={14}/><span>有效屬性依據</span></summary><div className="field context-field">{statProfile?<><p>{statProfile.role}</p><p>{statProfile.summary}</p><p>標記依目前用途判定。聖遺物分別標示遊戲觀測與角色規則。</p>{statProfile.assessment_note&&<p>{statProfile.assessment_note}</p>}{statProfile.unknown_reason&&<p>{statProfile.unknown_reason}</p>}{statProfile.conditional.map(condition=><p key={condition.key}>{labels[condition.key]||condition.key}：{condition.reason}</p>)}{statProfile.sources.map(source=><p key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.title}</a>{source.version?' · '+source.version:''}</p>)}</>:<p>尚未確認</p>}</div></details>
        <section className="talent-section" aria-label="天賦">
         <div className="talent-values">{(['normal','skill','burst'] as const).map((key,i)=><Numeric key={key} label={['普通攻擊','元素戰技','元素爆發'][i]} value={c.talents.displayed[key]}/>)}</div>
         <details className="talent-extra"><summary aria-label="展開基礎天賦與加成"><ChevronDown size={14}/>{fullLabels&&<span>基礎等級與加成</span>}</summary><div className="talent-values">{(['normal','skill','burst'] as const).map((key,i)=><Numeric key={key} label={['普通攻擊','元素戰技','元素爆發'][i]+'（基礎）'} value={c.talents.base[key]}/>)}</div><label className="field context-field"><span>加成來源</span><p>{c.talents.bonus_context||'尚未確認'}</p></label></details>

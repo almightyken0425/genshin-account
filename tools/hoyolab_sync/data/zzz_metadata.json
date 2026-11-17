@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "weapon_name_aliases": [
+    {
+      "template_id": 14139,
+      "canonical_name": "福虓爐爐",
+      "aliases": [
+        "福虎爐爐"
+      ],
+      "official_entry_id": 851,
+      "source_url": "https://wiki.hoyolab.com/pc/zzz/entry/851?lang=zh-tw",
+      "checked_at": "2026-11-16",
+      "source_sha256": "6f2bd968e12ed8f44c32559af42c4fb518b5b08103be673faf91fa1b4fa2a091",
+      "note": "Exact verified spelling alias for the same template. No general character substitution is permitted."
+    }
+  ]
+}

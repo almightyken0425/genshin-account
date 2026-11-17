@@ -1,4 +1,5 @@
-import type {DriveDisc} from './zzz_types';
+import type {DriveDisc,ZzzSubstat} from './zzz_types';
+export function discStatEffective(stat:ZzzSubstat|null|undefined,disc:DriveDisc|null|undefined):boolean|null;
 export function discSlots(discs:DriveDisc[]|null|undefined):{slot:number,disc:DriveDisc|null}[];
 export function effectiveDiscCount(disc:DriveDisc|null|undefined):number|null;
 export function effectiveDiscLoadout(discs:DriveDisc[]|null|undefined):number|null;

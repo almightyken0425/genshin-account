@@ -6,9 +6,10 @@ function fixture(name){
 }
 export function loadCurrentGenshin(){
  const raw=fixture('current_genshin_account.json');
- return {raw,account:JSON.parse(raw),metadata:JSON.parse(fixture('current_genshin_metadata.json')),manifests:JSON.parse(fixture('current_genshin_manifests.json'))};
+ return {raw,account:JSON.parse(raw),metadata:JSON.parse(fixture('current_genshin_metadata.json')),manifests:JSON.parse(fixture('current_genshin_manifests.json')),sources:JSON.parse(fixture('current_genshin_sources.json'))};
 }
 export function loadCurrentZzz(){
  const raw=fixture('current_zzz_account.json');
- return {raw,account:JSON.parse(raw),metadata:JSON.parse(fixture('current_zzz_metadata.json'))};
+ return {raw,account:JSON.parse(raw),metadata:JSON.parse(fixture('current_zzz_metadata.json')),sources:JSON.parse(fixture('current_zzz_sources.json'))};
 }
+export function loadAcceptedVideoAccount(game){return JSON.parse(fixture('accepted_video_'+game+'_account.json'));}

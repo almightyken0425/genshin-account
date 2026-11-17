@@ -15,7 +15,8 @@
     "test": "node --test tests/*.test.mjs",
     "assets:roster": "node scripts/build-roster-assets.mjs",
     "artwork:edit": "node tools/artwork_editor/server.mjs",
-    "prebuild": "node scripts/check-artwork-edits.mjs"
+    "prebuild": "node scripts/check-artwork-edits.mjs",
+    "postbuild": "node scripts/prune-deploy-assets.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

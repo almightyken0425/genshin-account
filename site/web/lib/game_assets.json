@@ -422,6 +422,332 @@
       "rarity": 5,
       "rosterSource": "/assets/characters/traveler_cryo_roster_source.png",
       "roster": "/assets/characters/traveler_cryo_roster.webp"
+    },
+    "hoyolab_character_10000006": {
+      "name": "麗莎",
+      "gameId": 10000006,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000006_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000006_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000006_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000006_roster.webp"
+    },
+    "hoyolab_character_10000016": {
+      "name": "迪盧克",
+      "gameId": 10000016,
+      "rarity": 5,
+      "icon": "/assets/characters/hoyolab_character_10000016_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000016_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000016_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000016_roster.webp"
+    },
+    "hoyolab_character_10000020": {
+      "name": "雷澤",
+      "gameId": 10000020,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000020_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000020_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000020_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000020_roster.webp"
+    },
+    "hoyolab_character_10000021": {
+      "name": "安柏",
+      "gameId": 10000021,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000021_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000021_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000021_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000021_roster.webp"
+    },
+    "hoyolab_character_10000024": {
+      "name": "北斗",
+      "gameId": 10000024,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000024_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000024_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000024_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000024_roster.webp"
+    },
+    "hoyolab_character_10000035": {
+      "name": "七七",
+      "gameId": 10000035,
+      "rarity": 5,
+      "icon": "/assets/characters/hoyolab_character_10000035_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000035_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000035_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000035_roster.webp"
+    },
+    "hoyolab_character_10000036": {
+      "name": "重雲",
+      "gameId": 10000036,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000036_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000036_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000036_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000036_roster.webp"
+    },
+    "hoyolab_character_10000044": {
+      "name": "辛焱",
+      "gameId": 10000044,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000044_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000044_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000044_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000044_roster.webp"
+    },
+    "hoyolab_character_10000045": {
+      "name": "蘿莎莉亞",
+      "gameId": 10000045,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000045_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000045_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000045_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000045_roster.webp"
+    },
+    "hoyolab_character_10000048": {
+      "name": "煙緋",
+      "gameId": 10000048,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000048_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000048_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000048_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000048_roster.webp"
+    },
+    "hoyolab_character_10000050": {
+      "name": "托馬",
+      "gameId": 10000050,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000050_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000050_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000050_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000050_roster.webp"
+    },
+    "hoyolab_character_10000053": {
+      "name": "早柚",
+      "gameId": 10000053,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000053_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000053_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000053_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000053_roster.webp"
+    },
+    "hoyolab_character_10000055": {
+      "name": "五郎",
+      "gameId": 10000055,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000055_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000055_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000055_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000055_roster.webp"
+    },
+    "hoyolab_character_10000056": {
+      "name": "九條裟羅",
+      "gameId": 10000056,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000056_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000056_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000056_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000056_roster.webp"
+    },
+    "hoyolab_character_10000059": {
+      "name": "鹿野院平藏",
+      "gameId": 10000059,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000059_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000059_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000059_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000059_roster.webp"
+    },
+    "hoyolab_character_10000061": {
+      "name": "綺良良",
+      "gameId": 10000061,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000061_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000061_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000061_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000061_roster.webp"
+    },
+    "hoyolab_character_10000064": {
+      "name": "雲堇",
+      "gameId": 10000064,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000064_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000064_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000064_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000064_roster.webp"
+    },
+    "hoyolab_character_10000068": {
+      "name": "多莉",
+      "gameId": 10000068,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000068_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000068_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000068_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000068_roster.webp"
+    },
+    "hoyolab_character_10000069": {
+      "name": "提納里",
+      "gameId": 10000069,
+      "rarity": 5,
+      "icon": "/assets/characters/hoyolab_character_10000069_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000069_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000069_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000069_roster.webp"
+    },
+    "hoyolab_character_10000072": {
+      "name": "坎蒂絲",
+      "gameId": 10000072,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000072_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000072_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000072_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000072_roster.webp"
+    },
+    "hoyolab_character_10000077": {
+      "name": "瑤瑤",
+      "gameId": 10000077,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000077_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000077_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000077_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000077_roster.webp"
+    },
+    "hoyolab_character_10000079": {
+      "name": "迪希雅",
+      "gameId": 10000079,
+      "rarity": 5,
+      "icon": "/assets/characters/hoyolab_character_10000079_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000079_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000079_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000079_roster.webp"
+    },
+    "hoyolab_character_10000080": {
+      "name": "米卡",
+      "gameId": 10000080,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000080_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000080_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000080_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000080_roster.webp"
+    },
+    "hoyolab_character_10000081": {
+      "name": "卡維",
+      "gameId": 10000081,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000081_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000081_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000081_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000081_roster.webp"
+    },
+    "hoyolab_character_10000083": {
+      "name": "琳妮特",
+      "gameId": 10000083,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000083_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000083_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000083_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000083_roster.webp"
+    },
+    "hoyolab_character_10000085": {
+      "name": "菲米尼",
+      "gameId": 10000085,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000085_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000085_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000085_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000085_roster.webp"
+    },
+    "hoyolab_character_10000092": {
+      "name": "嘉明",
+      "gameId": 10000092,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000092_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000092_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000092_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000092_roster.webp"
+    },
+    "hoyolab_character_10000097": {
+      "name": "賽索斯",
+      "gameId": 10000097,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000097_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000097_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000097_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000097_roster.webp"
+    },
+    "hoyolab_character_10000100": {
+      "name": "卡齊娜",
+      "gameId": 10000100,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000100_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000100_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000100_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000100_roster.webp"
+    },
+    "hoyolab_character_10000108": {
+      "name": "藍硯",
+      "gameId": 10000108,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000108_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000108_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000108_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000108_roster.webp"
+    },
+    "hoyolab_character_10000113": {
+      "name": "伊法",
+      "gameId": 10000113,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000113_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000113_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000113_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000113_roster.webp"
+    },
+    "hoyolab_character_10000115": {
+      "name": "塔利雅",
+      "gameId": 10000115,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000115_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000115_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000115_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000115_roster.webp"
+    },
+    "hoyolab_character_10000117": {
+      "name": "奇偶·男性",
+      "gameId": 10000117,
+      "rarity": 5,
+      "icon": "/assets/characters/hoyolab_character_10000117_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000117_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000117_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000117_roster.webp",
+      "originalSource": "/assets/characters/manekin_pair_illustration_source.png"
+    },
+    "hoyolab_character_10000118": {
+      "name": "奇偶·女性",
+      "gameId": 10000118,
+      "rarity": 5,
+      "icon": "/assets/characters/hoyolab_character_10000118_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000118_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000118_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000118_roster.webp",
+      "originalSource": "/assets/characters/manekin_pair_illustration_source.png"
+    },
+    "hoyolab_character_10000124": {
+      "name": "雅珂達",
+      "gameId": 10000124,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000124_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000124_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000124_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000124_roster.webp"
+    },
+    "hoyolab_character_10000137": {
+      "name": "瓦列里",
+      "gameId": 10000137,
+      "rarity": 4,
+      "icon": "/assets/characters/hoyolab_character_10000137_icon.png",
+      "splash": "/assets/characters/hoyolab_character_10000137_splash.png",
+      "rosterSource": "/assets/characters/hoyolab_character_10000137_splash.png",
+      "roster": "/assets/characters/hoyolab_character_10000137_roster.webp"
     }
   },
   "weapons": {
@@ -556,6 +882,70 @@
     "星鋒劍": {
       "gameId": 11521,
       "icon": "/assets/weapons/11521.png"
+    },
+    "萬國諸海圖譜": {
+      "gameId": 14407,
+      "icon": "/assets/weapons/hoyolab_weapon_14407.png"
+    },
+    "狼的末路": {
+      "gameId": 12502,
+      "icon": "/assets/weapons/hoyolab_weapon_12502.png"
+    },
+    "祭禮大劍": {
+      "gameId": 12403,
+      "icon": "/assets/weapons/hoyolab_weapon_12403.png"
+    },
+    "西風大劍": {
+      "gameId": 12401,
+      "icon": "/assets/weapons/hoyolab_weapon_12401.png"
+    },
+    "以理服人": {
+      "gameId": 12305,
+      "icon": "/assets/weapons/hoyolab_weapon_12305.png"
+    },
+    "流浪樂章": {
+      "gameId": 14402,
+      "icon": "/assets/weapons/hoyolab_weapon_14402.png"
+    },
+    "鎮山之釘": {
+      "gameId": 13430,
+      "icon": "/assets/weapons/hoyolab_weapon_13430.png"
+    },
+    "曚雲之月": {
+      "gameId": 15416,
+      "icon": "/assets/weapons/hoyolab_weapon_15416.png"
+    },
+    "弓藏": {
+      "gameId": 15405,
+      "icon": "/assets/weapons/hoyolab_weapon_15405.png"
+    },
+    "白辰之環": {
+      "gameId": 14414,
+      "icon": "/assets/weapons/hoyolab_weapon_14414.png"
+    },
+    "笛劍": {
+      "gameId": 11402,
+      "icon": "/assets/weapons/hoyolab_weapon_11402.png"
+    },
+    "聖祭者的輝杖": {
+      "gameId": 13434,
+      "icon": "/assets/weapons/hoyolab_weapon_13434.png"
+    },
+    "千岩古劍": {
+      "gameId": 12410,
+      "icon": "/assets/weapons/hoyolab_weapon_12410.png"
+    },
+    "烈陽之嗣": {
+      "gameId": 15424,
+      "icon": "/assets/weapons/hoyolab_weapon_15424.png"
+    },
+    "昭心": {
+      "gameId": 14409,
+      "icon": "/assets/weapons/hoyolab_weapon_14409.png"
+    },
+    "虹蛇的雨弦": {
+      "gameId": 15434,
+      "icon": "/assets/weapons/hoyolab_weapon_15434.png"
     }
   },
   "artifacts": {
@@ -574,7 +964,9 @@
       "slots": {
         "goblet": "/assets/artifacts/wanderer_s_troupe_goblet.png",
         "flower": "/assets/artifacts/15003_flower.png",
-        "circlet": "/assets/artifacts/15003_circlet.png"
+        "circlet": "/assets/artifacts/15003_circlet.png",
+        "plume": "/assets/artifacts/hoyowiki_15003_plume.png",
+        "sands": "/assets/artifacts/hoyowiki_15003_sands.png"
       }
     },
     "穹境示現之夜": {
@@ -603,7 +995,8 @@
         "flower": "/assets/artifacts/finale_of_the_deep_galleries_flower.png",
         "plume": "/assets/artifacts/finale_of_the_deep_galleries_plume.png",
         "sands": "/assets/artifacts/finale_of_the_deep_galleries_sands.png",
-        "circlet": "/assets/artifacts/finale_of_the_deep_galleries_circlet.png"
+        "circlet": "/assets/artifacts/finale_of_the_deep_galleries_circlet.png",
+        "goblet": "/assets/artifacts/hoyowiki_15040_goblet.png"
       }
     },
     "角鬥士的終幕禮": {
@@ -713,7 +1106,8 @@
         "flower": "/assets/artifacts/15020_flower.png",
         "plume": "/assets/artifacts/15020_plume.png",
         "sands": "/assets/artifacts/15020_sands.png",
-        "circlet": "/assets/artifacts/15020_circlet.png"
+        "circlet": "/assets/artifacts/15020_circlet.png",
+        "goblet": "/assets/artifacts/hoyowiki_15020_goblet.png"
       }
     },
     "蒼白之火": {
@@ -729,14 +1123,16 @@
         "flower": "/assets/artifacts/15005_flower.png",
         "plume": "/assets/artifacts/15005_plume.png",
         "sands": "/assets/artifacts/15005_sands.png",
-        "circlet": "/assets/artifacts/15005_circlet.png"
+        "circlet": "/assets/artifacts/15005_circlet.png",
+        "goblet": "/assets/artifacts/hoyowiki_15005_goblet.png"
       }
     },
     "風起之日": {
       "gameId": 15044,
       "slots": {
         "circlet": "/assets/artifacts/15044_circlet.png",
-        "flower": "/assets/artifacts/15044_flower.png"
+        "flower": "/assets/artifacts/15044_flower.png",
+        "goblet": "/assets/artifacts/hoyowiki_15044_goblet.png"
       }
     },
     "深林的記憶": {
@@ -755,7 +1151,8 @@
         "flower": "/assets/artifacts/15031_flower.png",
         "plume": "/assets/artifacts/15031_plume.png",
         "sands": "/assets/artifacts/15031_sands.png",
-        "circlet": "/assets/artifacts/15031_circlet.png"
+        "circlet": "/assets/artifacts/15031_circlet.png",
+        "goblet": "/assets/artifacts/hoyowiki_15031_goblet.png"
       }
     },
     "昔日宗室之儀": {
@@ -800,7 +1197,30 @@
       "gameId": 14004,
       "slots": {
         "goblet": "/assets/artifacts/14004_goblet.png",
-        "flower": "/assets/artifacts/14004_flower.png"
+        "flower": "/assets/artifacts/14004_flower.png",
+        "plume": "/assets/artifacts/hoyowiki_14004_plume.png",
+        "sands": "/assets/artifacts/hoyowiki_14004_sands.png",
+        "circlet": "/assets/artifacts/hoyowiki_14004_circlet.png"
+      }
+    },
+    "華館夢醒形骸記": {
+      "gameId": 15021,
+      "slots": {
+        "flower": "/assets/artifacts/husk_of_opulent_dreams_flower.png",
+        "sands": "/assets/artifacts/husk_of_opulent_dreams_sands.png",
+        "plume": "/assets/artifacts/husk_of_opulent_dreams_plume.png",
+        "circlet": "/assets/artifacts/husk_of_opulent_dreams_circlet.png",
+        "goblet": "/assets/artifacts/husk_of_opulent_dreams_goblet.png"
+      }
+    },
+    "逆飛的流星": {
+      "gameId": 15015,
+      "slots": {
+        "flower": "/assets/artifacts/retracing_bolide_flower.png",
+        "plume": "/assets/artifacts/retracing_bolide_plume.png",
+        "sands": "/assets/artifacts/retracing_bolide_sands.png",
+        "goblet": "/assets/artifacts/retracing_bolide_goblet.png",
+        "circlet": "/assets/artifacts/retracing_bolide_circlet.png"
       }
     }
   }

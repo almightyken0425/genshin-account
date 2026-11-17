@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "HOYO ZZZ video observations v1",
+  "title": "HOYO ZZZ observations v2",
   "type": "object",
   "required": [
     "schemaVersion",
@@ -10,7 +10,7 @@
   ],
   "properties": {
     "schemaVersion": {
-      "const": 1
+      "const": 2
     },
     "game": {
       "const": "zzz"
@@ -307,6 +307,19 @@
                         ],
                         "minimum": 0,
                         "maximum": 5
+                      },
+                      "assessedEffective": {
+                        "type": [
+                          "boolean",
+                          "null"
+                        ]
+                      },
+                      "enhancementSource": {
+                        "enum": [
+                          "derived_fixed_roll",
+                          "api",
+                          "game_observed"
+                        ]
                       }
                     },
                     "additionalProperties": false
@@ -324,40 +337,62 @@
                   "type": "array",
                   "minItems": 1,
                   "items": {
-                    "type": "object",
-                    "required": [
-                      "timestampSec",
-                      "framePath",
-                      "sha256"
-                    ],
-                    "properties": {
-                      "timestampSec": {
-                        "type": "number",
-                        "minimum": 0
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "required": [
+                          "timestampSec",
+                          "framePath",
+                          "sha256"
+                        ],
+                        "properties": {
+                          "timestampSec": {
+                            "type": "number",
+                            "minimum": 0
+                          },
+                          "framePath": {
+                            "type": "string",
+                            "pattern": "^evidence/zzz/(?!.*\\.\\.)[a-zA-Z0-9_./-]+\\.(png|jpe?g)$"
+                          },
+                          "sha256": {
+                            "type": "string",
+                            "pattern": "^[0-9a-f]{64}$"
+                          },
+                          "page": {
+                            "type": "string"
+                          },
+                          "timestampToleranceSec": {
+                            "type": "number",
+                            "minimum": 0
+                          },
+                          "fields": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "additionalProperties": false
                       },
-                      "framePath": {
-                        "type": "string",
-                        "pattern": "^evidence/zzz/(?!.*\\.\\.)[a-zA-Z0-9_./-]+\\.(png|jpe?g)$"
-                      },
-                      "sha256": {
-                        "type": "string",
-                        "pattern": "^[0-9a-f]{64}$"
-                      },
-                      "page": {
-                        "type": "string"
-                      },
-                      "timestampToleranceSec": {
-                        "type": "number",
-                        "minimum": 0
-                      },
-                      "fields": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
+                      {
+                        "type": "object",
+                        "required": [
+                          "sourceId",
+                          "record"
+                        ],
+                        "properties": {
+                          "sourceId": {
+                            "type": "string",
+                            "pattern": "^[a-z][a-z0-9_]*$"
+                          },
+                          "record": {
+                            "type": "string",
+                            "pattern": "^/zzz/characters/(0|[1-9][0-9]*)$"
+                          }
+                        },
+                        "additionalProperties": false
                       }
-                    },
-                    "additionalProperties": false
+                    ]
                   }
                 },
                 "uncertainties": {
@@ -368,6 +403,41 @@
                 },
                 "substatsComplete": {
                   "type": "boolean"
+                },
+                "effectiveKeys": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "生命值|flat",
+                      "生命值|percent",
+                      "攻擊力|flat",
+                      "攻擊力|percent",
+                      "防禦力|flat",
+                      "防禦力|percent",
+                      "暴擊率|percent",
+                      "暴擊傷害|percent",
+                      "異常精通|flat",
+                      "穿透值|flat"
+                    ]
+                  },
+                  "uniqueItems": true
+                },
+                "assessment": {
+                  "type": "object",
+                  "required": [
+                    "ruleId",
+                    "method"
+                  ],
+                  "properties": {
+                    "ruleId": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "method": {
+                      "const": "role_rule"
+                    }
+                  },
+                  "additionalProperties": false
                 }
               },
               "additionalProperties": false
@@ -377,40 +447,62 @@
             "type": "array",
             "minItems": 1,
             "items": {
-              "type": "object",
-              "required": [
-                "timestampSec",
-                "framePath",
-                "sha256"
-              ],
-              "properties": {
-                "timestampSec": {
-                  "type": "number",
-                  "minimum": 0
+              "oneOf": [
+                {
+                  "type": "object",
+                  "required": [
+                    "timestampSec",
+                    "framePath",
+                    "sha256"
+                  ],
+                  "properties": {
+                    "timestampSec": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "framePath": {
+                      "type": "string",
+                      "pattern": "^evidence/zzz/(?!.*\\.\\.)[a-zA-Z0-9_./-]+\\.(png|jpe?g)$"
+                    },
+                    "sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "page": {
+                      "type": "string"
+                    },
+                    "timestampToleranceSec": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "fields": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "additionalProperties": false
                 },
-                "framePath": {
-                  "type": "string",
-                  "pattern": "^evidence/zzz/(?!.*\\.\\.)[a-zA-Z0-9_./-]+\\.(png|jpe?g)$"
-                },
-                "sha256": {
-                  "type": "string",
-                  "pattern": "^[0-9a-f]{64}$"
-                },
-                "page": {
-                  "type": "string"
-                },
-                "timestampToleranceSec": {
-                  "type": "number",
-                  "minimum": 0
-                },
-                "fields": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                {
+                  "type": "object",
+                  "required": [
+                    "sourceId",
+                    "record"
+                  ],
+                  "properties": {
+                    "sourceId": {
+                      "type": "string",
+                      "pattern": "^[a-z][a-z0-9_]*$"
+                    },
+                    "record": {
+                      "type": "string",
+                      "pattern": "^/zzz/characters/(0|[1-9][0-9]*)$"
+                    }
+                  },
+                  "additionalProperties": false
                 }
-              },
-              "additionalProperties": false
+              ]
             }
           },
           "portraitPath": {
@@ -447,6 +539,573 @@
                 "null"
               ]
             }
+          },
+          "sync": {
+            "type": "object",
+            "required": [
+              "apiId",
+              "sourceId"
+            ],
+            "properties": {
+              "apiId": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "sourceId": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_]*$"
+              }
+            },
+            "additionalProperties": false
+          },
+          "skillsBase": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "普通攻擊": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 20
+              },
+              "閃避": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 20
+              },
+              "支援技": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 20
+              },
+              "特殊技": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 20
+              },
+              "連攜技": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 20
+              }
+            },
+            "additionalProperties": false
+          },
+          "skillContext": {
+            "type": "object",
+            "required": [
+              "provider",
+              "levelSemantics",
+              "coreRawLevel"
+            ],
+            "properties": {
+              "provider": {
+                "const": "hoyolab"
+              },
+              "levelSemantics": {
+                "const": "provider_displayed"
+              },
+              "coreRawLevel": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 7
+              }
+            },
+            "additionalProperties": false
+          },
+          "effectiveProfile": {
+            "type": "object",
+            "required": [
+              "ruleId",
+              "method",
+              "keys"
+            ],
+            "properties": {
+              "ruleId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "method": {
+                "const": "role_rule"
+              },
+              "keys": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "生命值|flat",
+                    "生命值|percent",
+                    "攻擊力|flat",
+                    "攻擊力|percent",
+                    "防禦力|flat",
+                    "防禦力|percent",
+                    "暴擊率|percent",
+                    "暴擊傷害|percent",
+                    "異常精通|flat",
+                    "穿透值|flat"
+                  ]
+                },
+                "uniqueItems": true
+              }
+            },
+            "additionalProperties": false
+          },
+          "legacyObservation": {
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "level",
+              "mindscape",
+              "stats",
+              "skills",
+              "wEngine",
+              "driveDiscs",
+              "evidence",
+              "uncertainties"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9_]+$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "level": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1,
+                "maximum": 60
+              },
+              "mindscape": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 6
+              },
+              "stats": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "additionalProperties": {
+                  "type": [
+                    "number",
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "skills": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "additionalProperties": {
+                  "anyOf": [
+                    {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 20
+                    },
+                    {
+                      "type": "string",
+                      "pattern": "^[A-F]$"
+                    }
+                  ]
+                }
+              },
+              "wEngine": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "properties": {
+                  "name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "rarity": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "level": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 0,
+                    "maximum": 60
+                  },
+                  "refinement": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 1,
+                    "maximum": 5
+                  },
+                  "stats": {
+                    "type": [
+                      "object",
+                      "null"
+                    ],
+                    "additionalProperties": {
+                      "type": [
+                        "number",
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "maxLevel": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 1,
+                    "maximum": 60
+                  }
+                },
+                "additionalProperties": true
+              },
+              "driveDiscs": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "maxItems": 6,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "slot",
+                    "setName",
+                    "rarity",
+                    "level",
+                    "mainStat",
+                    "substats",
+                    "effectiveRollCount",
+                    "evidence",
+                    "uncertainties",
+                    "substatsComplete"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9_]+$"
+                    },
+                    "slot": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 6
+                    },
+                    "setName": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "rarity": {
+                      "enum": [
+                        "S",
+                        "A",
+                        "B",
+                        null
+                      ]
+                    },
+                    "level": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 15
+                    },
+                    "mainStat": {
+                      "type": "object",
+                      "required": [
+                        "name",
+                        "value",
+                        "unit"
+                      ],
+                      "properties": {
+                        "name": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "value": {
+                          "type": [
+                            "number",
+                            "null"
+                          ]
+                        },
+                        "unit": {
+                          "enum": [
+                            "flat",
+                            "percent",
+                            null
+                          ]
+                        }
+                      },
+                      "additionalProperties": false
+                    },
+                    "substats": {
+                      "type": "array",
+                      "maxItems": 4,
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "name",
+                          "value",
+                          "unit",
+                          "isEffective",
+                          "enhancementCount"
+                        ],
+                        "properties": {
+                          "name": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "value": {
+                            "type": [
+                              "number",
+                              "null"
+                            ]
+                          },
+                          "unit": {
+                            "enum": [
+                              "flat",
+                              "percent",
+                              null
+                            ]
+                          },
+                          "isEffective": {
+                            "type": [
+                              "boolean",
+                              "null"
+                            ]
+                          },
+                          "enhancementCount": {
+                            "type": [
+                              "integer",
+                              "null"
+                            ],
+                            "minimum": 0,
+                            "maximum": 5
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    },
+                    "effectiveRollCount": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 9
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "timestampSec",
+                          "framePath",
+                          "sha256"
+                        ],
+                        "properties": {
+                          "timestampSec": {
+                            "type": "number",
+                            "minimum": 0
+                          },
+                          "framePath": {
+                            "type": "string",
+                            "pattern": "^evidence/zzz/(?!.*\\.\\.)[a-zA-Z0-9_./-]+\\.(png|jpe?g)$"
+                          },
+                          "sha256": {
+                            "type": "string",
+                            "pattern": "^[0-9a-f]{64}$"
+                          },
+                          "page": {
+                            "type": "string"
+                          },
+                          "timestampToleranceSec": {
+                            "type": "number",
+                            "minimum": 0
+                          },
+                          "fields": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    },
+                    "uncertainties": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "substatsComplete": {
+                      "type": "boolean"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "evidence": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "timestampSec",
+                    "framePath",
+                    "sha256"
+                  ],
+                  "properties": {
+                    "timestampSec": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "framePath": {
+                      "type": "string",
+                      "pattern": "^evidence/zzz/(?!.*\\.\\.)[a-zA-Z0-9_./-]+\\.(png|jpe?g)$"
+                    },
+                    "sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "page": {
+                      "type": "string"
+                    },
+                    "timestampToleranceSec": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "fields": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "portraitPath": {
+                "type": "string",
+                "pattern": "^evidence/zzz/(?!.*\\.\\.)[a-zA-Z0-9_./-]+\\.(png|jpe?g)$"
+              },
+              "uncertainties": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "portraitSha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "element": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "specialty": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "statsEffective": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "syncSources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "provider",
+          "retrievedAt",
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "provider": {
+            "const": "hoyolab"
+          },
+          "retrievedAt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^imports/hoyolab/[a-z][a-z0-9_]*\\.json$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
           }
         },
         "additionalProperties": false

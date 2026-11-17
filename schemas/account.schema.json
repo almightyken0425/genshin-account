@@ -2,7 +2,7 @@
   "type": "object",
   "properties": {
     "schema_version": {
-      "const": 2
+      "const": 3
     },
     "updated_at": {
       "type": "string",
@@ -190,7 +190,7 @@
   ],
   "additionalProperties": false,
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Genshin account version 2",
+  "title": "Genshin account version 3",
   "$defs": {
     "measurement": {
       "oneOf": [
@@ -290,7 +290,8 @@
           "enum": [
             "agent_reviewed",
             "user_reported",
-            "pending"
+            "pending",
+            "api_observed"
           ]
         },
         "notes": {
@@ -472,6 +473,10 @@
         },
         "provenance": {
           "$ref": "#/$defs/provenance"
+        },
+        "hoyolab_id": {
+          "type": "integer",
+          "minimum": 1
         }
       },
       "required": [
@@ -546,6 +551,10 @@
         },
         "provenance": {
           "$ref": "#/$defs/provenance"
+        },
+        "hoyolab_id": {
+          "type": "integer",
+          "minimum": 1
         }
       },
       "required": [
@@ -645,6 +654,12 @@
                       "boolean",
                       "null"
                     ]
+                  },
+                  "assessed_effective": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
                   }
                 },
                 "required": [
@@ -654,13 +669,47 @@
                 ],
                 "additionalProperties": false
               }
+            },
+            "rule_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "effective_keys": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "hp",
+                  "hp_pct",
+                  "atk",
+                  "atk_pct",
+                  "def",
+                  "def_pct",
+                  "em",
+                  "energy_recharge",
+                  "crit_rate",
+                  "crit_dmg"
+                ]
+              },
+              "uniqueItems": true
             }
           },
           "required": [
             "character_id",
             "values"
           ],
-          "additionalProperties": false
+          "additionalProperties": false,
+          "dependentRequired": {
+            "rule_id": [
+              "effective_keys"
+            ],
+            "effective_keys": [
+              "rule_id"
+            ]
+          }
+        },
+        "hoyolab_id": {
+          "type": "integer",
+          "minimum": 1
         }
       },
       "required": [

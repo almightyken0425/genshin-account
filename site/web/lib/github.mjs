@@ -20,8 +20,9 @@ export function githubClient(token,fetcher=fetch){
   return response.json();
  }
  async function file(path,ref){
-  const data=await api('/repos/'+REPO+'/contents/'+path+'?ref='+encodeURIComponent(ref));
-  if(data.type!=='file'||data.encoding!=='base64'||data.size>2500000||typeof data.content!=='string')throw new AppError('檔案格式或大小不受支援');
+  let data=await api('/repos/'+REPO+'/contents/'+path+'?ref='+encodeURIComponent(ref),{headers:{Accept:'application/vnd.github.object+json'}});
+  if(data.type==='file'&&data.encoding==='none'&&data.size<=16000000&&/^[a-f0-9]{40}$/.test(data.sha))data={...await api('/repos/'+REPO+'/git/blobs/'+data.sha),type:'file'};
+  if(data.type!=='file'||data.encoding!=='base64'||data.size>16000000||typeof data.content!=='string')throw new AppError('檔案格式或大小不受支援');
   return Buffer.from(data.content.replaceAll('\n',''),'base64');
  }
  async function read(){
@@ -29,8 +30,17 @@ export function githubClient(token,fetcher=fetch){
   if(!/^[a-f0-9]{40}$/.test(head.sha))throw new AppError('GitHub 版本格式錯誤');
   const account=JSON.parse((await file('data/account.json',head.sha)).toString('utf8'));
   const errors=validateAccount(account);if(errors.length)throw new AppError('正式資料未通過驗證：'+errors.slice(0,3).join('、'),422,'invalid_data');
-  if(account.source_ids.length>20)throw new AppError('來源數超過目前支援範圍');
+  if(account.source_ids.length>1000)throw new AppError('來源數超過目前支援範圍');
   const manifests=await Promise.all(account.source_ids.map(id=>file('evidence/'+id+'/manifest.json',head.sha).then(b=>JSON.parse(b.toString('utf8')))));
+  for(const manifest of manifests)if(manifest.schema_version===3){
+   const bytes=await file(manifest.extraction.path,head.sha);
+   if(hash(bytes)!==manifest.extraction.sha256)throw new AppError('HoYoLAB 來源完整性檢查失敗',422,'invalid_data');
+   const snapshot=JSON.parse(bytes.toString('utf8'));
+   for(const observation of manifest.observations||[]){
+    const match=/^\/genshin\/characters\/(\d+)$/.exec(observation.pointer);
+    if(!match||!snapshot.genshin?.characters?.[Number(match[1])])throw new AppError('HoYoLAB 來源記錄不存在',422,'invalid_data');
+   }
+  }
   const refs=validateEvidence(account,manifests);if(refs.length)throw new AppError(refs.join('、'),422,'invalid_data');
   return {account,manifests,revision:head.sha,commitMessage:head.commit.message,panels:panelStates(account),repository:REPO};
  }
@@ -94,9 +104,19 @@ export function githubClient(token,fetcher=fetch){
   if(!/^[a-f0-9]{40}$/.test(revision))throw new AppError('GitHub 版本格式錯誤',400);
   const cached=zzzAccountCache.get(revision);
   if(cached&&cached.expires>Date.now())return cached.promise;
-  const promise=file('data/zzz/account.json',revision).then(bytes=>{
+  const promise=file('data/zzz/account.json',revision).then(async bytes=>{
    const account=JSON.parse(bytes.toString('utf8'));
    const errors=validateZzz(account);if(errors.length)throw new AppError(errors.join('、'),422,'invalid_data');
+   for(const source of account.syncSources||[]){
+    const bytes=await file(source.path,revision);
+    if(hash(bytes)!==source.sha256)throw new AppError('絕區零同步來源完整性檢查失敗',422,'invalid_data');
+    const snapshot=JSON.parse(bytes.toString('utf8'));
+    for(const character of account.characters)for(const evidence of character.evidence||[]){
+     if(evidence.sourceId!==source.id)continue;
+     const match=/^\/zzz\/characters\/(\d+)$/.exec(evidence.record);
+     if(!match||!snapshot.zzz?.characters?.[Number(match[1])])throw new AppError('絕區零同步來源記錄不存在',422,'invalid_data');
+    }
+   }
    return account;
   });
   if(zzzAccountCache.size>=4)zzzAccountCache.delete(zzzAccountCache.keys().next().value);

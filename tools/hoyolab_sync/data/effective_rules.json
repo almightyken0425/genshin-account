@@ -1,0 +1,4886 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-16",
+  "based_on_commit": "c2b910c8d672e6d313ba67821c3af18775831cd9",
+  "policy": "既有遊戲標記與公開機制的配裝用途評估分開保存。未知屬性保持未知，各規則受角色與裝備情境限制；本檔只產生assessed_effective，不新增遊戲effective觀測。",
+  "genshin": {
+    "escoffier": {
+      "rule_id": "observed_role_escoffier_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "em",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "和璞鳶",
+      "constellation": 2,
+      "element": "cryo",
+      "evidence_refs": [
+        "video_001_escoffier_artifact_1_0084",
+        "video_001_escoffier_artifact_2_0094",
+        "video_001_escoffier_artifact_3_0104",
+        "video_001_escoffier_artifact_4_0124",
+        "video_001_escoffier_artifact_5_0134",
+        "video_5689_20261111_shot_001",
+        "video_5689_20261111_shot_002",
+        "video_5689_20261111_shot_003",
+        "video_5689_20261111_shot_004",
+        "video_5689_20261111_shot_005"
+      ],
+      "method": "prior_game_observation"
+    },
+    "furina": {
+      "rule_id": "observed_role_furina_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "em",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "西風劍",
+      "constellation": 2,
+      "element": "hydro",
+      "evidence_refs": [
+        "video_001_furina_artifact_1_0304",
+        "video_001_furina_artifact_2_0314",
+        "video_001_furina_artifact_3_0324",
+        "video_001_furina_artifact_4_0344",
+        "video_001_furina_artifact_5_0364",
+        "video_5689_20261111_shot_006",
+        "video_5689_20261111_shot_007",
+        "video_5689_20261111_shot_008",
+        "video_5689_20261111_shot_009",
+        "video_5689_20261111_shot_010"
+      ],
+      "method": "prior_game_observation"
+    },
+    "voyanitsa": {
+      "rule_id": "observed_role_voyanitsa_20261116",
+      "effective_keys": [
+        "energy_recharge",
+        "hp",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "crit_dmg",
+        "def",
+        "def_pct",
+        "em"
+      ],
+      "complete": false,
+      "weapon_name": "討龍英傑譚",
+      "constellation": 0,
+      "element": "hydro",
+      "evidence_refs": [
+        "video_001_voyanitsa_artifact_1_0554",
+        "video_001_voyanitsa_artifact_2_0564",
+        "video_001_voyanitsa_artifact_3_0584",
+        "video_001_voyanitsa_artifact_4_0604",
+        "video_001_voyanitsa_artifact_5_0614",
+        "video_5689_20261111_shot_011",
+        "video_5689_20261111_shot_012",
+        "video_5689_20261111_shot_013",
+        "video_5689_20261111_shot_014",
+        "video_5689_20261111_shot_015"
+      ],
+      "method": "prior_game_observation"
+    },
+    "skirk": {
+      "rule_id": "observed_role_skirk_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def_pct",
+        "em",
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "蒼耀",
+      "constellation": 2,
+      "element": "cryo",
+      "evidence_refs": [
+        "video_001_skirk_artifact_1_0784",
+        "video_001_skirk_artifact_2_0804",
+        "video_001_skirk_artifact_3_0824",
+        "video_001_skirk_artifact_4_0834",
+        "video_001_skirk_artifact_5_0854",
+        "video_5689_20261111_shot_016",
+        "video_5689_20261111_shot_017",
+        "video_5689_20261111_shot_018",
+        "video_5689_20261111_shot_019",
+        "video_5689_20261111_shot_020"
+      ],
+      "method": "prior_game_observation"
+    },
+    "chasca": {
+      "rule_id": "observed_role_chasca_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "星鷲赤羽",
+      "constellation": 2,
+      "element": "anemo",
+      "evidence_refs": [
+        "video_5680_20261111_shot_005",
+        "video_5680_20261111_shot_006",
+        "video_5680_20261111_shot_007",
+        "video_5680_20261111_shot_008",
+        "video_5680_20261111_shot_009"
+      ],
+      "method": "prior_game_observation"
+    },
+    "linnea": {
+      "rule_id": "observed_role_linnea_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "def_pct",
+        "em"
+      ],
+      "known_ineffective_keys": [
+        "def",
+        "energy_recharge",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "彈弓",
+      "constellation": 0,
+      "element": "geo",
+      "evidence_refs": [
+        "video_5680_20261111_shot_015",
+        "video_5680_20261111_shot_016",
+        "video_5680_20261111_shot_017",
+        "video_5680_20261111_shot_018",
+        "video_5680_20261111_shot_019"
+      ],
+      "method": "prior_game_observation"
+    },
+    "zibai": {
+      "rule_id": "observed_role_zibai_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "def_pct",
+        "em"
+      ],
+      "known_ineffective_keys": [
+        "def",
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "朏魄含光",
+      "constellation": 0,
+      "element": "geo",
+      "evidence_refs": [
+        "video_5680_20261111_shot_025",
+        "video_5680_20261111_shot_026",
+        "video_5680_20261111_shot_027",
+        "video_5680_20261111_shot_028",
+        "video_5680_20261111_shot_029"
+      ],
+      "method": "prior_game_observation"
+    },
+    "xilonen": {
+      "rule_id": "observed_role_xilonen_20261116",
+      "effective_keys": [
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "crit_dmg",
+        "def",
+        "em",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "西風劍",
+      "constellation": 0,
+      "element": "geo",
+      "evidence_refs": [
+        "video_5680_20261111_shot_035",
+        "video_5680_20261111_shot_036",
+        "video_5680_20261111_shot_037",
+        "video_5680_20261111_shot_038",
+        "video_5680_20261111_shot_039"
+      ],
+      "method": "prior_game_observation"
+    },
+    "zhongli": {
+      "rule_id": "observed_role_zhongli_20261116",
+      "effective_keys": [
+        "crit_rate",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "def",
+        "def_pct",
+        "em",
+        "energy_recharge",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "黑纓槍",
+      "constellation": 0,
+      "element": "geo",
+      "evidence_refs": [
+        "video_5680_20261111_shot_045",
+        "video_5680_20261111_shot_046",
+        "video_5680_20261111_shot_047",
+        "video_5680_20261111_shot_048",
+        "video_5680_20261111_shot_049"
+      ],
+      "method": "prior_game_observation"
+    },
+    "yumemizukimizuki": {
+      "rule_id": "observed_role_yumemizukimizuki_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "def",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "四風原典",
+      "constellation": 4,
+      "element": "anemo",
+      "evidence_refs": [
+        "video_5681_20261111_shot_005",
+        "video_5681_20261111_shot_006",
+        "video_5681_20261111_shot_007",
+        "video_5681_20261111_shot_008",
+        "video_5681_20261111_shot_009"
+      ],
+      "method": "prior_game_observation"
+    },
+    "kaedeharakazuha": {
+      "rule_id": "observed_role_kaedeharakazuha_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "鐵蜂刺",
+      "constellation": 0,
+      "element": "anemo",
+      "evidence_refs": [
+        "video_5681_20261111_shot_015",
+        "video_5681_20261111_shot_016",
+        "video_5681_20261111_shot_017",
+        "video_5681_20261111_shot_018",
+        "video_5681_20261111_shot_019"
+      ],
+      "method": "prior_game_observation"
+    },
+    "jean": {
+      "rule_id": "observed_role_jean_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "em",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "飛天御劍",
+      "constellation": 2,
+      "element": "anemo",
+      "evidence_refs": [
+        "video_5681_20261111_shot_025",
+        "video_5681_20261111_shot_026",
+        "video_5681_20261111_shot_027",
+        "video_5681_20261111_shot_028",
+        "video_5681_20261111_shot_029"
+      ],
+      "method": "prior_game_observation"
+    },
+    "odetta": {
+      "rule_id": "observed_role_odetta_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "西風劍",
+      "constellation": 0,
+      "element": "cryo",
+      "evidence_refs": [
+        "video_5681_20261111_shot_035",
+        "video_5681_20261111_shot_036",
+        "video_5681_20261111_shot_037",
+        "video_5681_20261111_shot_038",
+        "video_5681_20261111_shot_039"
+      ],
+      "method": "prior_game_observation"
+    },
+    "citlali": {
+      "rule_id": "observed_role_citlali_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "def",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "討龍英傑譚",
+      "constellation": 0,
+      "element": "cryo",
+      "evidence_refs": [
+        "video_5682_20261111_shot_005",
+        "video_5682_20261111_shot_006",
+        "video_5682_20261111_shot_007",
+        "video_5682_20261111_shot_008",
+        "video_5682_20261111_shot_009"
+      ],
+      "method": "prior_game_observation"
+    },
+    "varesa": {
+      "rule_id": "observed_role_varesa_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "em",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "溢彩心念",
+      "constellation": 1,
+      "element": "electro",
+      "evidence_refs": [
+        "video_5682_20261111_shot_015",
+        "video_5682_20261111_shot_016",
+        "video_5682_20261111_shot_017",
+        "video_5682_20261111_shot_018",
+        "video_5682_20261111_shot_019"
+      ],
+      "method": "prior_game_observation"
+    },
+    "raidenshogun": {
+      "rule_id": "observed_role_raidenshogun_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "「漁獲」",
+      "constellation": 0,
+      "element": "electro",
+      "evidence_refs": [
+        "video_5682_20261111_shot_025",
+        "video_5682_20261111_shot_026",
+        "video_5682_20261111_shot_027",
+        "video_5682_20261111_shot_028",
+        "video_5682_20261111_shot_029"
+      ],
+      "method": "prior_game_observation"
+    },
+    "keqing": {
+      "rule_id": "observed_role_keqing_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "em"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "energy_recharge",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "狼牙",
+      "constellation": 2,
+      "element": "electro",
+      "evidence_refs": [
+        "video_5682_20261111_shot_034",
+        "video_5682_20261111_shot_035",
+        "video_5682_20261111_shot_036",
+        "video_5682_20261111_shot_037",
+        "video_5682_20261111_shot_038"
+      ],
+      "method": "prior_game_observation"
+    },
+    "nefer": {
+      "rule_id": "observed_role_nefer_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "真語秘匣",
+      "constellation": 0,
+      "element": "dendro",
+      "evidence_refs": [
+        "video_5683_20261111_shot_006",
+        "video_5683_20261111_shot_007",
+        "video_5683_20261111_shot_008",
+        "video_5683_20261111_shot_009",
+        "video_5683_20261111_shot_010"
+      ],
+      "method": "prior_game_observation"
+    },
+    "lauma": {
+      "rule_id": "observed_role_lauma_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "天光的紡琴",
+      "constellation": 2,
+      "element": "dendro",
+      "evidence_refs": [
+        "video_5683_20261111_shot_016",
+        "video_5683_20261111_shot_017",
+        "video_5683_20261111_shot_018",
+        "video_5683_20261111_shot_019",
+        "video_5683_20261111_shot_020"
+      ],
+      "method": "prior_game_observation"
+    },
+    "nahida": {
+      "rule_id": "observed_role_nahida_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "def",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "祭禮殘章",
+      "constellation": 0,
+      "element": "dendro",
+      "evidence_refs": [
+        "video_5683_20261111_shot_026",
+        "video_5683_20261111_shot_027",
+        "video_5683_20261111_shot_028",
+        "video_5683_20261111_shot_029",
+        "video_5683_20261111_shot_030"
+      ],
+      "method": "prior_game_observation"
+    },
+    "columbina": {
+      "rule_id": "observed_role_columbina_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "em",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "帷間夜曲",
+      "constellation": 1,
+      "element": "hydro",
+      "evidence_refs": [
+        "video_5683_20261111_shot_036",
+        "video_5683_20261111_shot_037",
+        "video_5683_20261111_shot_038",
+        "video_5683_20261111_shot_039",
+        "video_5683_20261111_shot_040"
+      ],
+      "method": "prior_game_observation"
+    },
+    "neuvillette": {
+      "rule_id": "observed_role_neuvillette_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk_pct",
+        "def",
+        "def_pct",
+        "em",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "四風原典",
+      "constellation": 1,
+      "element": "hydro",
+      "evidence_refs": [
+        "video_5683_20261111_shot_046",
+        "video_5683_20261111_shot_047",
+        "video_5683_20261111_shot_048",
+        "video_5683_20261111_shot_049",
+        "video_5683_20261111_shot_050"
+      ],
+      "method": "prior_game_observation"
+    },
+    "yelan": {
+      "rule_id": "observed_role_yelan_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "def_pct",
+        "em",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "祭禮弓",
+      "constellation": 0,
+      "element": "hydro",
+      "evidence_refs": [
+        "video_5683_20261111_shot_056",
+        "video_5683_20261111_shot_057",
+        "video_5683_20261111_shot_058",
+        "video_5683_20261111_shot_059",
+        "video_5683_20261111_shot_060"
+      ],
+      "method": "prior_game_observation"
+    },
+    "mavuika": {
+      "rule_id": "observed_role_mavuika_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "em"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "energy_recharge",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "焚曜千陽",
+      "constellation": 2,
+      "element": "pyro",
+      "evidence_refs": [
+        "image_mavuika_plume_20261111_shot_001",
+        "mavuika_plume_equipped_review_20261113_shot_001",
+        "mavuika_plume_rolls_review_20261113_shot_001",
+        "video_5683_20261111_shot_066",
+        "video_5683_20261111_shot_068",
+        "video_5683_20261111_shot_069",
+        "video_5683_20261111_shot_070"
+      ],
+      "method": "prior_game_observation"
+    },
+    "illuga": {
+      "rule_id": "observed_role_illuga_20261116",
+      "effective_keys": [
+        "def_pct",
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "def",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "西風長槍",
+      "constellation": 6,
+      "element": "geo",
+      "evidence_refs": [
+        "video_5684_20261111_shot_006",
+        "video_5684_20261111_shot_007",
+        "video_5684_20261111_shot_008",
+        "video_5684_20261111_shot_009",
+        "video_5684_20261111_shot_010"
+      ],
+      "method": "prior_game_observation"
+    },
+    "charlotte": {
+      "rule_id": "observed_role_charlotte_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "em",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "西風秘典",
+      "constellation": 6,
+      "element": "cryo",
+      "evidence_refs": [
+        "video_5684_20261111_shot_016",
+        "video_5684_20261111_shot_017",
+        "video_5684_20261111_shot_018",
+        "video_5684_20261111_shot_019",
+        "video_5684_20261111_shot_020"
+      ],
+      "method": "prior_game_observation"
+    },
+    "arosha": {
+      "rule_id": "researched_role_arosha_20261116",
+      "role_label": "宗室攻擊治療兼後台雷傷",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "寒息",
+      "constellation": 4,
+      "element": "electro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "atk_pct"
+        },
+        {
+          "slot": "flower",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "atk_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "黃金劇團",
+          "main_stat_key": "energy_recharge"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000148_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 阿羅夏技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/11163?lang=zh-tw"
+        },
+        {
+          "title": "HoYoWiki 寒息",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/11217?lang=zh-tw"
+        }
+      ],
+      "confidence": "medium",
+      "notes": [
+        "四命寒息、四件宗室、充能沙與攻擊杯冠採治療兼後台雷傷；不是阿蕾奇諾，也不假定極星輝域已啟用。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。",
+        "四命新增治療仍取攻擊力，未新增生命或防禦倍率。200%充能後，固有傷害加成已達70%上限；是否再追加充能只看循環。"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "反應歸屬與極星狀態未由裝備確認，不能把星超導隊友增益當成自身精通倍率。",
+          "assessment": null
+        }
+      ],
+      "prior_observation_refs": [
+        "arosha_artifact_review_20261113_shot_001",
+        "video_5684_20261111_shot_026",
+        "video_5684_20261111_shot_027",
+        "video_5684_20261111_shot_028",
+        "video_5684_20261111_shot_029",
+        "video_5684_20261111_shot_030"
+      ]
+    },
+    "iansan": {
+      "rule_id": "observed_role_iansan_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "且住亭御咄",
+      "constellation": 6,
+      "element": "electro",
+      "evidence_refs": [
+        "video_5684_20261111_shot_036",
+        "video_5684_20261111_shot_037",
+        "video_5684_20261111_shot_038",
+        "video_5684_20261111_shot_039",
+        "video_5684_20261111_shot_040"
+      ],
+      "method": "prior_game_observation"
+    },
+    "ororon": {
+      "rule_id": "observed_role_ororon_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "西風獵弓",
+      "constellation": 6,
+      "element": "electro",
+      "evidence_refs": [
+        "video_5684_20261111_shot_046",
+        "video_5684_20261111_shot_047",
+        "video_5684_20261111_shot_048",
+        "video_5684_20261111_shot_049",
+        "video_5684_20261111_shot_050"
+      ],
+      "method": "prior_game_observation"
+    },
+    "kukishinobu": {
+      "rule_id": "observed_role_kukishinobu_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "em",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "def",
+        "def_pct",
+        "energy_recharge"
+      ],
+      "complete": false,
+      "weapon_name": "鐵蜂刺",
+      "constellation": 6,
+      "element": "electro",
+      "evidence_refs": [
+        "video_5685_20261111_shot_005",
+        "video_5685_20261111_shot_006",
+        "video_5685_20261111_shot_007",
+        "video_5685_20261111_shot_008",
+        "video_5685_20261111_shot_009"
+      ],
+      "method": "prior_game_observation"
+    },
+    "fischl": {
+      "rule_id": "observed_role_fischl_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "em"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "energy_recharge",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "絕弦",
+      "constellation": 6,
+      "element": "electro",
+      "evidence_refs": [
+        "video_5685_20261111_shot_016",
+        "video_5685_20261111_shot_017",
+        "video_5685_20261111_shot_018",
+        "video_5685_20261111_shot_019",
+        "video_5685_20261111_shot_020"
+      ],
+      "method": "prior_game_observation"
+    },
+    "aino": {
+      "rule_id": "observed_role_aino_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "拾慧鑄熔",
+      "constellation": 6,
+      "element": "hydro",
+      "evidence_refs": [
+        "video_5685_20261111_shot_026",
+        "video_5685_20261111_shot_027",
+        "video_5685_20261111_shot_028",
+        "video_5685_20261111_shot_029",
+        "video_5685_20261111_shot_030"
+      ],
+      "method": "prior_game_observation"
+    },
+    "xingqiu": {
+      "rule_id": "observed_role_xingqiu_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "em",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "祭禮劍",
+      "constellation": 6,
+      "element": "hydro",
+      "evidence_refs": [
+        "video_5685_20261111_shot_037",
+        "video_5685_20261111_shot_038",
+        "video_5685_20261111_shot_039",
+        "video_5685_20261111_shot_040",
+        "video_5685_20261111_shot_041"
+      ],
+      "method": "prior_game_observation"
+    },
+    "bennett": {
+      "rule_id": "observed_role_bennett_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "def",
+        "def_pct",
+        "em",
+        "hp"
+      ],
+      "complete": true,
+      "weapon_name": "西風劍",
+      "constellation": 6,
+      "element": "pyro",
+      "evidence_refs": [
+        "video_5686_20261111_shot_005",
+        "video_5686_20261111_shot_006",
+        "video_5686_20261111_shot_007",
+        "video_5686_20261111_shot_008",
+        "video_5686_20261111_shot_009"
+      ],
+      "method": "prior_game_observation"
+    },
+    "xiangling": {
+      "rule_id": "observed_role_xiangling_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "em",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "西風長槍",
+      "constellation": 6,
+      "element": "pyro",
+      "evidence_refs": [
+        "video_5686_20261111_shot_015",
+        "video_5686_20261111_shot_016",
+        "video_5686_20261111_shot_017",
+        "video_5686_20261111_shot_018",
+        "video_5686_20261111_shot_019"
+      ],
+      "method": "prior_game_observation"
+    },
+    "mona": {
+      "rule_id": "observed_role_mona_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "討龍英傑譚",
+      "constellation": 6,
+      "element": "hydro",
+      "evidence_refs": [
+        "video_5686_20261111_shot_025",
+        "video_5686_20261111_shot_026",
+        "video_5686_20261111_shot_027",
+        "video_5686_20261111_shot_028",
+        "video_5686_20261111_shot_029"
+      ],
+      "method": "prior_game_observation"
+    },
+    "noelle": {
+      "rule_id": "observed_role_noelle_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "def_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "em",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "螭骨劍",
+      "constellation": 6,
+      "element": "geo",
+      "evidence_refs": [
+        "video_5686_20261111_shot_035",
+        "video_5686_20261111_shot_036",
+        "video_5686_20261111_shot_037",
+        "video_5686_20261111_shot_038",
+        "video_5686_20261111_shot_039"
+      ],
+      "method": "prior_game_observation"
+    },
+    "ningguang": {
+      "rule_id": "observed_role_ningguang_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "em",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "西風秘典",
+      "constellation": 6,
+      "element": "geo",
+      "evidence_refs": [
+        "video_5686_20261111_shot_046",
+        "video_5686_20261111_shot_047",
+        "video_5686_20261111_shot_048",
+        "video_5686_20261111_shot_049",
+        "video_5686_20261111_shot_050"
+      ],
+      "method": "prior_game_observation"
+    },
+    "faruzan": {
+      "rule_id": "observed_role_faruzan_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "em",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "西風獵弓",
+      "constellation": 6,
+      "element": "anemo",
+      "evidence_refs": [
+        "video_5686_20261111_shot_057",
+        "video_5686_20261111_shot_058",
+        "video_5686_20261111_shot_059",
+        "video_5686_20261111_shot_060",
+        "video_5686_20261111_shot_061"
+      ],
+      "method": "prior_game_observation"
+    },
+    "sucrose": {
+      "rule_id": "observed_role_sucrose_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "def",
+        "def_pct",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "祭禮殘章",
+      "constellation": 5,
+      "element": "anemo",
+      "evidence_refs": [
+        "video_5687_20261111_shot_005",
+        "video_5687_20261111_shot_006",
+        "video_5687_20261111_shot_007",
+        "video_5687_20261111_shot_008",
+        "video_5687_20261111_shot_009"
+      ],
+      "method": "prior_game_observation"
+    },
+    "layla": {
+      "rule_id": "observed_role_layla_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "def",
+        "def_pct",
+        "energy_recharge",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "銀釭",
+      "constellation": 6,
+      "element": "cryo",
+      "evidence_refs": [
+        "video_5687_20261111_shot_015",
+        "video_5687_20261111_shot_016",
+        "video_5687_20261111_shot_017",
+        "video_5687_20261111_shot_018",
+        "video_5687_20261111_shot_019"
+      ],
+      "method": "prior_game_observation"
+    },
+    "diona": {
+      "rule_id": "observed_role_diona_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "def",
+        "def_pct",
+        "em",
+        "hp"
+      ],
+      "complete": true,
+      "weapon_name": "西風獵弓",
+      "constellation": 6,
+      "element": "cryo",
+      "evidence_refs": [
+        "video_5687_20261111_shot_025",
+        "video_5687_20261111_shot_026",
+        "video_5687_20261111_shot_027",
+        "video_5687_20261111_shot_028",
+        "video_5687_20261111_shot_029"
+      ],
+      "method": "prior_game_observation"
+    },
+    "kaeya": {
+      "rule_id": "observed_role_kaeya_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "em",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "靜水流湧之輝",
+      "constellation": 4,
+      "element": "cryo",
+      "evidence_refs": [
+        "video_5687_20261111_shot_036",
+        "video_5687_20261111_shot_037",
+        "video_5687_20261111_shot_038",
+        "video_5687_20261111_shot_039",
+        "video_5687_20261111_shot_040"
+      ],
+      "method": "prior_game_observation"
+    },
+    "collei": {
+      "rule_id": "observed_role_collei_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "祭禮弓",
+      "constellation": 6,
+      "element": "dendro",
+      "evidence_refs": [
+        "video_5687_20261111_shot_046",
+        "video_5687_20261111_shot_047",
+        "video_5687_20261111_shot_048",
+        "video_5687_20261111_shot_049",
+        "video_5687_20261111_shot_050"
+      ],
+      "method": "prior_game_observation"
+    },
+    "barbara": {
+      "rule_id": "observed_role_barbara_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "crit_rate",
+        "def_pct",
+        "em",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "蒼紋角杯",
+      "constellation": 6,
+      "element": "hydro",
+      "evidence_refs": [
+        "video_5687_20261111_shot_056",
+        "video_5687_20261111_shot_057",
+        "video_5687_20261111_shot_058",
+        "video_5687_20261111_shot_059",
+        "video_5687_20261111_shot_060",
+        "video_5690_20261111_barbara_artifact_circlet",
+        "video_5690_20261111_barbara_artifact_flower",
+        "video_5690_20261111_barbara_artifact_goblet",
+        "video_5690_20261111_barbara_artifact_plume",
+        "video_5690_20261111_barbara_artifact_sands"
+      ],
+      "method": "prior_game_observation"
+    },
+    "chevreuse": {
+      "rule_id": "observed_role_chevreuse_20261116",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "def",
+        "def_pct",
+        "em",
+        "hp"
+      ],
+      "complete": true,
+      "weapon_name": "黑纓槍",
+      "constellation": 6,
+      "element": "pyro",
+      "evidence_refs": [
+        "image_chevreuse_flower_20261111_shot_001",
+        "video_5687_20261111_shot_066",
+        "video_5687_20261111_shot_067",
+        "video_5687_20261111_shot_068",
+        "video_5687_20261111_shot_069",
+        "video_5687_20261111_shot_070"
+      ],
+      "method": "prior_game_observation"
+    },
+    "traveler_cryo": {
+      "rule_id": "observed_role_traveler_cryo_20261116",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "em"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "energy_recharge",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "星鋒劍",
+      "constellation": 5,
+      "element": "cryo",
+      "evidence_refs": [
+        "video_5682_20261111_shot_044",
+        "video_5682_20261111_shot_045",
+        "video_5682_20261111_shot_046",
+        "video_5682_20261111_shot_047",
+        "video_5682_20261111_shot_048"
+      ],
+      "method": "prior_game_observation"
+    },
+    "hoyolab_character_10000006": {
+      "rule_id": "researched_role_hoyolab_character_10000006_20261116",
+      "role_label": "絕緣爆發雷傷",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "萬國諸海圖譜",
+      "constellation": 0,
+      "element": "electro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "atk_pct"
+        },
+        {
+          "slot": "flower",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "electro_dmg_bonus"
+        },
+        {
+          "slot": "plume",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "atk_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000006_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 麗莎技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2?lang=zh-tw"
+        }
+      ],
+      "confidence": "medium",
+      "notes": [
+        "五件絕緣、攻擊沙與雷傷杯呈現爆發直傷；1級萬國不單獨作為超綻放或激化用途的證據。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "是否觸發超激化等反應無法由現有裝備確認。",
+          "assessment": null
+        }
+      ]
+    },
+    "hoyolab_character_10000016": {
+      "rule_id": "researched_role_hoyolab_character_10000016_20261116",
+      "role_label": "攻擊普攻與火傷直傷",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "狼的末路",
+      "constellation": 3,
+      "element": "pyro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "深林的記憶",
+          "main_stat_key": "crit_dmg"
+        },
+        {
+          "slot": "flower",
+          "set_name": "角鬥士的終幕禮",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "角鬥士的終幕禮",
+          "main_stat_key": "pyro_dmg_bonus"
+        },
+        {
+          "slot": "plume",
+          "set_name": "角鬥士的終幕禮",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "角鬥士的終幕禮",
+          "main_stat_key": "atk_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000016_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 迪盧克技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/43?lang=zh-tw"
+        }
+      ],
+      "confidence": "medium",
+      "notes": [
+        "四件角鬥士、攻擊沙、火傷杯與暴傷冠採攻擊直傷；沒有由裝備指定融化或蒸發隊伍。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "融化或蒸發時可提高反應傷害；目前沒有隊伍或反應觀測。",
+          "assessment": null
+        }
+      ]
+    },
+    "hoyolab_character_10000020": {
+      "rule_id": "researched_role_hoyolab_character_10000020_20261116",
+      "role_label": "角鬥士站場普攻與雷狼直傷",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "em",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "祭禮大劍",
+      "constellation": 1,
+      "element": "electro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "角鬥士的終幕禮",
+          "main_stat_key": "crit_rate"
+        },
+        {
+          "slot": "flower",
+          "set_name": "角鬥士的終幕禮",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "角鬥士的終幕禮",
+          "main_stat_key": "atk_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "角鬥士的終幕禮",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "穹境示現之夜",
+          "main_stat_key": "atk_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000020_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 雷澤技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/48?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "四件角鬥士與攻擊沙杯、暴率冠採站場普攻直傷；不將1級祭禮大劍推論為精通反應玩法。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000021": {
+      "rule_id": "researched_role_hoyolab_character_10000021_20261116",
+      "role_label": "樂團火傷蓄力射擊",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "祭禮弓",
+      "constellation": 1,
+      "element": "pyro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "流浪大地的樂團",
+          "main_stat_key": "crit_rate"
+        },
+        {
+          "slot": "flower",
+          "set_name": "流浪大地的樂團",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "黃金劇團",
+          "main_stat_key": "pyro_dmg_bonus"
+        },
+        {
+          "slot": "plume",
+          "set_name": "流浪大地的樂團",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "流浪大地的樂團",
+          "main_stat_key": "energy_recharge"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000021_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 安柏技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/14?lang=zh-tw"
+        }
+      ],
+      "confidence": "medium",
+      "notes": [
+        "四件樂團與火傷杯呈現蓄力射擊；充能沙保留箭雨用途，不假定每次都命中可暴擊弱點。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "蓄力射擊若觸發融化或蒸發則有效，現有裝備不能確認反應來源。",
+          "assessment": null
+        }
+      ]
+    },
+    "hoyolab_character_10000024": {
+      "rule_id": "researched_role_hoyolab_character_10000024_20261116",
+      "role_label": "絕緣後台爆發雷傷",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "祭禮大劍",
+      "constellation": 4,
+      "element": "electro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "角鬥士的終幕禮",
+          "main_stat_key": "crit_rate"
+        },
+        {
+          "slot": "flower",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "atk_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "energy_recharge"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000024_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 北斗技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/11?lang=zh-tw"
+        }
+      ],
+      "confidence": "medium",
+      "notes": [
+        "四件絕緣、充能沙與暴率冠採爆發輸出；不將護盾血量收益視為此用途的傷害培養重點。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "若實際處於激化或其他反應隊可有收益，未由裝備確認。",
+          "assessment": null
+        }
+      ]
+    },
+    "hoyolab_character_10000035": {
+      "rule_id": "researched_role_hoyolab_character_10000035_20261116",
+      "role_label": "攻擊治療與西風回能",
+      "effective_keys": [
+        "atk_pct",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "crit_dmg",
+        "def",
+        "def_pct",
+        "em",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "西風劍",
+      "constellation": 1,
+      "element": "cryo",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "被憐愛的少女",
+          "main_stat_key": "healing_bonus"
+        },
+        {
+          "slot": "flower",
+          "set_name": "海染硨磲",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "被憐愛的少女",
+          "main_stat_key": "atk_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "被憐愛的少女",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "被憐愛的少女",
+          "main_stat_key": "atk_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000035_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 七七技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/1?lang=zh-tw"
+        },
+        {
+          "title": "HoYoWiki 西風劍",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2017?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "少女四件、攻擊沙杯與治療冠採治療；暴率只為目前西風劍產球，暴傷不提高治療。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000036": {
+      "rule_id": "researched_role_hoyolab_character_10000036_20261116",
+      "role_label": "宗室冰傷爆發與西風回能",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "西風大劍",
+      "constellation": 3,
+      "element": "cryo",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "crit_rate"
+        },
+        {
+          "slot": "flower",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "深林的記憶",
+          "main_stat_key": "cryo_dmg_bonus"
+        },
+        {
+          "slot": "plume",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "atk_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000036_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 重雲技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/45?lang=zh-tw"
+        },
+        {
+          "title": "HoYoWiki 西風大劍",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2018?lang=zh-tw"
+        }
+      ],
+      "confidence": "medium",
+      "notes": [
+        "四件宗室、攻擊沙、冰傷杯與暴率冠呈現爆發副輸出；西風需求使暴率同時支援回能。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "只有實際觸發融化等反應時能增加反應傷害，未確認特定隊伍。",
+          "assessment": null
+        }
+      ]
+    },
+    "hoyolab_character_10000044": {
+      "rule_id": "researched_role_hoyolab_character_10000044_20261116",
+      "role_label": "角鬥士物理普攻直傷",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "em",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "以理服人",
+      "constellation": 1,
+      "element": "pyro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "千岩牢固",
+          "main_stat_key": "crit_dmg"
+        },
+        {
+          "slot": "flower",
+          "set_name": "角鬥士的終幕禮",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "角鬥士的終幕禮",
+          "main_stat_key": "atk_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "角鬥士的終幕禮",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "角鬥士的終幕禮",
+          "main_stat_key": "atk_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000044_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 辛焱技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/41?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "四件角鬥士、攻擊沙杯、暴傷冠與一命採物理普攻；不把尚未擁有的二命必暴或六命防禦轉攻套用。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000045": {
+      "rule_id": "researched_role_hoyolab_character_10000045_20261116",
+      "role_label": "宗室冰傷爆發與暴率支援",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "西風長槍",
+      "constellation": 2,
+      "element": "cryo",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "crit_rate"
+        },
+        {
+          "slot": "flower",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "cryo_dmg_bonus"
+        },
+        {
+          "slot": "plume",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "華館夢醒形骸記",
+          "main_stat_key": "atk_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000045_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 蘿莎莉亞技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/33?lang=zh-tw"
+        },
+        {
+          "title": "HoYoWiki 西風長槍",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2021?lang=zh-tw"
+        }
+      ],
+      "confidence": "medium",
+      "notes": [
+        "四件宗室、攻擊沙、冰傷杯、暴率冠與西風長槍採後台冰傷及暴率支援。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "反向融化時可提高傷害，但現有配裝本身不能確定融化。",
+          "assessment": null
+        }
+      ]
+    },
+    "hoyolab_character_10000048": {
+      "rule_id": "researched_role_hoyolab_character_10000048_20261116",
+      "role_label": "攻擊重擊火傷",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "流浪樂章",
+      "constellation": 1,
+      "element": "pyro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "逆飛的流星",
+          "main_stat_key": "crit_rate"
+        },
+        {
+          "slot": "flower",
+          "set_name": "流浪大地的樂團",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "流浪大地的樂團",
+          "main_stat_key": "atk_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "流浪大地的樂團",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "燼城勇者繪卷",
+          "main_stat_key": "atk_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000048_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 煙緋技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/24?lang=zh-tw"
+        }
+      ],
+      "confidence": "medium",
+      "notes": [
+        "攻擊沙杯與暴率冠採重擊直傷；目前一命，不套用四命護盾生命玩法。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "若實際觸發蒸發或融化則有效，未假定隊伍。",
+          "assessment": null
+        }
+      ]
+    },
+    "hoyolab_character_10000050": {
+      "rule_id": "researched_role_hoyolab_character_10000050_20261116",
+      "role_label": "生命護盾與爆發續盾",
+      "effective_keys": [
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "def",
+        "def_pct",
+        "em",
+        "hp"
+      ],
+      "complete": true,
+      "weapon_name": "鎮山之釘",
+      "constellation": 6,
+      "element": "pyro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "hp_pct"
+        },
+        {
+          "slot": "flower",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "hp_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "hp_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000050_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 托馬技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/16?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "三件生命主詞條與絕緣套採護盾及循環；沒有精通主詞條，不將此裝備改判為烈綻放。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000053": {
+      "rule_id": "researched_role_hoyolab_character_10000053_20261116",
+      "role_label": "翠綠攻擊治療兼擴散",
+      "effective_keys": [
+        "atk_pct",
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "crit_dmg",
+        "crit_rate",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "以理服人",
+      "constellation": 5,
+      "element": "anemo",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "翠綠之影",
+          "main_stat_key": "healing_bonus"
+        },
+        {
+          "slot": "flower",
+          "set_name": "翠綠之影",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "翠綠之影",
+          "main_stat_key": "atk_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "翠綠之影",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "翠綠之影",
+          "main_stat_key": "atk_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000053_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 早柚技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/21?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "攻擊沙杯與治療冠採攻擊治療，翠綠配裝兼擴散；目前五命，精通只依既有擴散與固有治療列入。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000055": {
+      "rule_id": "researched_role_hoyolab_character_10000055_20261116",
+      "role_label": "防禦治療與岩系支援",
+      "effective_keys": [
+        "def_pct",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "def",
+        "em",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "曚雲之月",
+      "constellation": 6,
+      "element": "geo",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "華館夢醒形骸記",
+          "main_stat_key": "crit_rate"
+        },
+        {
+          "slot": "flower",
+          "set_name": "華館夢醒形骸記",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "華館夢醒形骸記",
+          "main_stat_key": "def_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "華館夢醒形骸記",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "華館夢醒形骸記",
+          "main_stat_key": "def_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000055_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 五郎技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/5?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "華館配裝、兩件防禦主詞條與六命採防禦治療及輔助；曚雲之月沒有西風式暴擊產球條件。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000056": {
+      "rule_id": "researched_role_hoyolab_character_10000056_20261116",
+      "role_label": "絕緣增攻兼爆發雷傷",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "弓藏",
+      "constellation": 3,
+      "element": "electro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "crit_rate"
+        },
+        {
+          "slot": "flower",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "流浪大地的樂團",
+          "main_stat_key": "electro_dmg_bonus"
+        },
+        {
+          "slot": "plume",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "energy_recharge"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000056_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 九條裟羅技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/3?lang=zh-tw"
+        }
+      ],
+      "confidence": "medium",
+      "notes": [
+        "四件絕緣、充能沙、雷傷杯與暴率冠採增攻兼自身爆發；攻擊%列入是為自身雷傷。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "激化等反應收益取決於實際隊伍，未由裝備證明。",
+          "assessment": null
+        }
+      ]
+    },
+    "hoyolab_character_10000059": {
+      "rule_id": "researched_role_hoyolab_character_10000059_20261116",
+      "role_label": "翠綠風傷勠心拳兼擴散",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "白辰之環",
+      "constellation": 2,
+      "element": "anemo",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "翠綠之影",
+          "main_stat_key": "crit_rate"
+        },
+        {
+          "slot": "flower",
+          "set_name": "翠綠之影",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "翠綠之影",
+          "main_stat_key": "anemo_dmg_bonus"
+        },
+        {
+          "slot": "plume",
+          "set_name": "翠綠之影",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "翠綠之影",
+          "main_stat_key": "atk_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000059_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 鹿野院平藏技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2263?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "攻擊沙、風傷杯與暴率冠採勠心拳直傷，翠綠兼擴散；精通不會提高固定80點隊友精通。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000061": {
+      "rule_id": "researched_role_hoyolab_character_10000061_20261116",
+      "role_label": "深林生命護盾與掛草",
+      "effective_keys": [
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "def",
+        "def_pct",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "笛劍",
+      "constellation": 2,
+      "element": "dendro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "深林的記憶",
+          "main_stat_key": "hp_pct"
+        },
+        {
+          "slot": "flower",
+          "set_name": "深林的記憶",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "風起之日",
+          "main_stat_key": "hp_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "深林的記憶",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "深林的記憶",
+          "main_stat_key": "atk_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000061_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 綺良良技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/3719?lang=zh-tw"
+        }
+      ],
+      "confidence": "medium",
+      "notes": [
+        "生命杯冠與深林配裝採護盾及掛草；攻擊沙不代表整套改作激化主輸出。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "需要實際由綺良良觸發綻放或蔓激化才有相應收益，裝備不能確定歸屬。",
+          "assessment": null
+        }
+      ]
+    },
+    "hoyolab_character_10000064": {
+      "rule_id": "researched_role_hoyolab_character_10000064_20261116",
+      "role_label": "防禦普攻增益與爆發循環",
+      "effective_keys": [
+        "def_pct",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "def",
+        "em",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "聖祭者的輝杖",
+      "constellation": 2,
+      "element": "geo",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "def_pct"
+        },
+        {
+          "slot": "flower",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "黃金劇團",
+          "main_stat_key": "def_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "def_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000064_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 雲堇技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/4?lang=zh-tw"
+        },
+        {
+          "title": "HoYoWiki 聖祭者的輝杖",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/8989?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "三防禦主詞條採防禦增益；聖祭者的輝杖只有戰技命中條件，沒有暴擊產球條件。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000068": {
+      "rule_id": "researched_role_hoyolab_character_10000068_20261116",
+      "role_label": "生命治療與回能支援",
+      "effective_keys": [
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "def",
+        "def_pct",
+        "em",
+        "hp"
+      ],
+      "complete": true,
+      "weapon_name": "千岩古劍",
+      "constellation": 3,
+      "element": "electro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "healing_bonus"
+        },
+        {
+          "slot": "flower",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "hp_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "逐影獵人",
+          "main_stat_key": "energy_recharge"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000068_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 多莉技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2269?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "生命杯、治療冠、充能沙與宗室採治療回能，不將三命配裝推論為六命站場超綻放。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000069": {
+      "rule_id": "researched_role_hoyolab_character_10000069_20261116",
+      "role_label": "精通草傷蓄力射擊",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "烈陽之嗣",
+      "constellation": 2,
+      "element": "dendro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "黃金劇團",
+          "main_stat_key": "crit_dmg"
+        },
+        {
+          "slot": "flower",
+          "set_name": "流浪大地的樂團",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "流浪大地的樂團",
+          "main_stat_key": "dendro_dmg_bonus"
+        },
+        {
+          "slot": "plume",
+          "set_name": "流浪大地的樂團",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "流浪大地的樂團",
+          "main_stat_key": "em"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000069_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 提納里技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2265?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "四件樂團、精通沙、草傷杯與暴傷冠呈現精通草傷蓄力；不需要先假定特定雷隊友才承認固有精通收益。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000072": {
+      "rule_id": "researched_role_hoyolab_character_10000072_20261116",
+      "role_label": "生命水附魔與普攻增益",
+      "effective_keys": [
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "def",
+        "def_pct",
+        "em",
+        "hp"
+      ],
+      "complete": true,
+      "weapon_name": "鎮山之釘",
+      "constellation": 3,
+      "element": "hydro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "hp_pct"
+        },
+        {
+          "slot": "flower",
+          "set_name": "逐影獵人",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "hp_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "hp_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000072_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 坎蒂絲技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2815?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "三生命主詞條與絕緣採生命支援、爆發水附魔；目前三命，未套用六命額外協同水傷。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000077": {
+      "rule_id": "researched_role_hoyolab_character_10000077_20261116",
+      "role_label": "深林生命治療與掛草",
+      "effective_keys": [
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "def",
+        "def_pct",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "聖祭者的輝杖",
+      "constellation": 6,
+      "element": "dendro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "深林的記憶",
+          "main_stat_key": "healing_bonus"
+        },
+        {
+          "slot": "flower",
+          "set_name": "深林的記憶",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "逆飛的流星",
+          "main_stat_key": "hp_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "深林的記憶",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "深林的記憶",
+          "main_stat_key": "hp_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000077_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 瑤瑤技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/3335?lang=zh-tw"
+        },
+        {
+          "title": "HoYoWiki 聖祭者的輝杖",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/8989?lang=zh-tw"
+        }
+      ],
+      "confidence": "medium",
+      "notes": [
+        "生命沙杯與治療冠、四件深林採治療掛草；四命產生精通不等於直接提高治療。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "由瑤瑤觸發綻放等反應時才增加相應傷害，反應歸屬未確認。",
+          "assessment": null
+        }
+      ]
+    },
+    "hoyolab_character_10000079": {
+      "rule_id": "researched_role_hoyolab_character_10000079_20261116",
+      "role_label": "絕緣生命攻擊混合爆發",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp"
+      ],
+      "complete": false,
+      "weapon_name": "螭骨劍",
+      "constellation": 2,
+      "element": "pyro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "crit_rate"
+        },
+        {
+          "slot": "flower",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "千岩牢固",
+          "main_stat_key": "pyro_dmg_bonus"
+        },
+        {
+          "slot": "plume",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "hp_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000079_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 迪希雅技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/3463?lang=zh-tw"
+        }
+      ],
+      "confidence": "medium",
+      "notes": [
+        "四件絕緣、生命沙、火傷杯、暴率冠與螭骨劍採爆發直傷；保留攻擊與生命兩種傷害來源。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "蒸發或融化隊能有收益，但不從此裝備假定反應隊，更不改判全精通烈綻放。",
+          "assessment": null
+        }
+      ]
+    },
+    "hoyolab_character_10000080": {
+      "rule_id": "researched_role_hoyolab_character_10000080_20261116",
+      "role_label": "宗室生命治療與物理支援",
+      "effective_keys": [
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "def",
+        "def_pct",
+        "em",
+        "hp"
+      ],
+      "complete": true,
+      "weapon_name": "聖祭者的輝杖",
+      "constellation": 6,
+      "element": "cryo",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "healing_bonus"
+        },
+        {
+          "slot": "flower",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "穹境示現之夜",
+          "main_stat_key": "hp_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "hp_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000080_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 米卡技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/3462?lang=zh-tw"
+        },
+        {
+          "title": "HoYoWiki 聖祭者的輝杖",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/8989?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "生命沙杯、治療冠與宗室採治療物理支援；聖祭者的輝杖的暴率副屬性不代表治療需要雙暴。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000081": {
+      "rule_id": "researched_role_hoyolab_character_10000081_20261116",
+      "role_label": "精通綻放站場與自癒",
+      "effective_keys": [
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "祭禮大劍",
+      "constellation": 4,
+      "element": "dendro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "角鬥士的終幕禮",
+          "main_stat_key": "em"
+        },
+        {
+          "slot": "flower",
+          "set_name": "深林的記憶",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "深林的記憶",
+          "main_stat_key": "atk_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "深林的記憶",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "角鬥士的終幕禮",
+          "main_stat_key": "em"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000081_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 卡維技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/3608?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "精通沙冠、祭禮大劍與四命採綻放駕駛及精通自癒；攻擊杯保留為現有配件，不據此改判暴擊草傷流。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000083": {
+      "rule_id": "researched_role_hoyolab_character_10000083_20261116",
+      "role_label": "翠綠攻擊風傷兼擴散",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "笛劍",
+      "constellation": 6,
+      "element": "anemo",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "翠綠之影",
+          "main_stat_key": "atk_pct"
+        },
+        {
+          "slot": "flower",
+          "set_name": "翠綠之影",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "翠綠之影",
+          "main_stat_key": "atk_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "翠綠之影",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "翠綠之影",
+          "main_stat_key": "atk_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000083_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 琳妮特技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/3962?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "翠綠配裝與三攻主詞條採攻擊風傷兼擴散；六命不自動證明全精通站場反應流，也未假定站場時長。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000085": {
+      "rule_id": "researched_role_hoyolab_character_10000085_20261116",
+      "role_label": "物理高壓粉碎與爆發循環",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "西風大劍",
+      "constellation": 1,
+      "element": "cryo",
+      "artifact_context": [
+        {
+          "slot": "goblet",
+          "set_name": "黑曜秘典",
+          "main_stat_key": "physical_dmg_bonus"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000085_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 菲米尼技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/3964?lang=zh-tw"
+        },
+        {
+          "title": "HoYoWiki 西風大劍",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2018?lang=zh-tw"
+        }
+      ],
+      "confidence": "medium",
+      "notes": [
+        "目前只有物理傷害杯，先採物理粉碎；西風大劍使暴率同時支援回能，未猜補齊其餘裝備。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": [
+        {
+          "key": "em",
+          "reason": "若實際觸發碎冰能提高碎冰傷害，但物理杯無法證明已配置水附著來源。",
+          "assessment": null
+        }
+      ]
+    },
+    "hoyolab_character_10000092": {
+      "rule_id": "researched_role_hoyolab_character_10000092_20261116",
+      "role_label": "精通反應火傷下落",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "以理服人",
+      "constellation": 6,
+      "element": "pyro",
+      "artifact_context": [
+        {
+          "slot": "flower",
+          "set_name": "逐影獵人",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "角鬥士的終幕禮",
+          "main_stat_key": "pyro_dmg_bonus"
+        },
+        {
+          "slot": "plume",
+          "set_name": "逐影獵人",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "逐影獵人",
+          "main_stat_key": "em"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000092_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 嘉明技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/4775?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "已配精通沙、火傷杯及逐影配件，採反應型下落培養；不指定蒸發或融化隊友，精通收益以實際反應為前提。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000097": {
+      "rule_id": "researched_role_hoyolab_character_10000097_20261116",
+      "role_label": "精通蓄力與爆發重擊",
+      "effective_keys": [
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "祭禮弓",
+      "constellation": 6,
+      "element": "electro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "流浪大地的樂團",
+          "main_stat_key": "crit_dmg"
+        },
+        {
+          "slot": "flower",
+          "set_name": "流浪大地的樂團",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "黑曜秘典",
+          "main_stat_key": "electro_dmg_bonus"
+        },
+        {
+          "slot": "plume",
+          "set_name": "流浪大地的樂團",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "黑曜秘典",
+          "main_stat_key": "em"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000097_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 賽索斯技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/5598?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "精通沙、雷傷杯與暴傷冠採精通重擊；精通有直接技能倍率，不必由特定激化隊伍反推。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000100": {
+      "rule_id": "researched_role_hoyolab_character_10000100_20261116",
+      "role_label": "防禦岩傷戰技副輸出",
+      "effective_keys": [
+        "crit_dmg",
+        "crit_rate",
+        "def_pct",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "def",
+        "em",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "鎮山之釘",
+      "constellation": 3,
+      "element": "geo",
+      "artifact_context": [
+        {
+          "slot": "goblet",
+          "set_name": "晨星與月的曉歌",
+          "main_stat_key": "geo_dmg_bonus"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000100_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 卡齊娜技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/6318?lang=zh-tw"
+        }
+      ],
+      "confidence": "medium",
+      "notes": [
+        "目前只有岩傷杯，採已裝備顯示的岩傷副輸出共通屬性；不猜尚不存在的四件輔助套裝或站場隊伍。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000108": {
+      "rule_id": "researched_role_hoyolab_character_10000108_20261116",
+      "role_label": "翠綠攻擊護盾與聚怪",
+      "effective_keys": [
+        "atk_pct",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "crit_dmg",
+        "crit_rate",
+        "def",
+        "def_pct",
+        "em",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "祭禮殘章",
+      "constellation": 3,
+      "element": "anemo",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "絕緣之旗印",
+          "main_stat_key": "atk_pct"
+        },
+        {
+          "slot": "flower",
+          "set_name": "翠綠之影",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "翠綠之影",
+          "main_stat_key": "atk_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "翠綠之影",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "翠綠之影",
+          "main_stat_key": "atk_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000108_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 藍硯技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/7301?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "三攻主詞條、四件翠綠與祭禮殘章採護盾聚怪；不因武器精通副屬性就把護盾改判精通傷害流。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000113": {
+      "rule_id": "researched_role_hoyolab_character_10000113_20261116",
+      "role_label": "翠綠精通治療與擴散",
+      "effective_keys": [
+        "em",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "crit_dmg",
+        "crit_rate",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "昭心",
+      "constellation": 6,
+      "element": "anemo",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "翠綠之影",
+          "main_stat_key": "crit_dmg"
+        },
+        {
+          "slot": "flower",
+          "set_name": "翠綠之影",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "翠綠之影",
+          "main_stat_key": "em"
+        },
+        {
+          "slot": "plume",
+          "set_name": "翠綠之影",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "翠綠之影",
+          "main_stat_key": "em"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000113_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 伊法技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/7627?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "已強化精通杯及精通沙、翠綠配裝採精通治療擴散；暴傷冠與1級昭心不凌駕兩件精通主詞條。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000115": {
+      "rule_id": "researched_role_hoyolab_character_10000115_20261116",
+      "role_label": "宗室生命護盾與西風回能",
+      "effective_keys": [
+        "crit_rate",
+        "energy_recharge",
+        "hp_pct"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "atk_pct",
+        "crit_dmg",
+        "def",
+        "def_pct",
+        "em",
+        "hp"
+      ],
+      "complete": true,
+      "weapon_name": "西風劍",
+      "constellation": 6,
+      "element": "hydro",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "翠綠之影",
+          "main_stat_key": "hp_pct"
+        },
+        {
+          "slot": "flower",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "hp_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "昔日宗室之儀",
+          "main_stat_key": "hp_pct"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000115_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 塔利雅技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/7707?lang=zh-tw"
+        },
+        {
+          "title": "HoYoWiki 西風劍",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2017?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "三生命主詞條、宗室與西風劍採護盾及回能；不因六命復甦效果另算攻擊或暴傷培養。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000117": {
+      "rule_id": "researched_role_hoyolab_character_10000117_20261116",
+      "role_label": "未配裝：技能與培養用途尚未確認",
+      "effective_keys": [],
+      "known_ineffective_keys": [],
+      "complete": false,
+      "weapon_name": "笛劍",
+      "constellation": 0,
+      "element": "cryo",
+      "artifact_context": [],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000117_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 奇偶·男性技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/9020?lang=zh-tw"
+        }
+      ],
+      "confidence": "unknown",
+      "notes": [
+        "官方HoYoWiki技能及命座模組尚無內容；目前沒有聖遺物，1級笛劍不能確認培養用途。不從角色ID或旅行者類比補上規則。"
+      ],
+      "unknown_reason": "官方HoYoWiki技能及命座模組尚無內容；目前沒有聖遺物，1級笛劍不能確認培養用途。不從角色ID或旅行者類比補上規則。",
+      "conditional": []
+    },
+    "hoyolab_character_10000118": {
+      "rule_id": "researched_role_hoyolab_character_10000118_20261116",
+      "role_label": "未配裝：技能與培養用途尚未確認",
+      "effective_keys": [],
+      "known_ineffective_keys": [],
+      "complete": false,
+      "weapon_name": "笛劍",
+      "constellation": 0,
+      "element": "cryo",
+      "artifact_context": [],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000118_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 奇偶·女性技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/9021?lang=zh-tw"
+        }
+      ],
+      "confidence": "unknown",
+      "notes": [
+        "官方HoYoWiki技能及命座模組尚無內容；目前沒有聖遺物，1級笛劍不能確認培養用途。不從角色ID或旅行者類比補上規則。"
+      ],
+      "unknown_reason": "官方HoYoWiki技能及命座模組尚無內容；目前沒有聖遺物，1級笛劍不能確認培養用途。不從角色ID或旅行者類比補上規則。",
+      "conditional": []
+    },
+    "hoyolab_character_10000124": {
+      "rule_id": "researched_role_hoyolab_character_10000124_20261116",
+      "role_label": "後台攻擊治療與月兆支援",
+      "effective_keys": [
+        "atk_pct",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "crit_dmg",
+        "crit_rate",
+        "def",
+        "def_pct",
+        "em",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": true,
+      "weapon_name": "虹蛇的雨弦",
+      "constellation": 6,
+      "element": "anemo",
+      "artifact_context": [
+        {
+          "slot": "circlet",
+          "set_name": "紡月的夜歌",
+          "main_stat_key": "healing_bonus"
+        },
+        {
+          "slot": "flower",
+          "set_name": "紡月的夜歌",
+          "main_stat_key": "hp"
+        },
+        {
+          "slot": "goblet",
+          "set_name": "如雷的盛怒",
+          "main_stat_key": "atk_pct"
+        },
+        {
+          "slot": "plume",
+          "set_name": "紡月的夜歌",
+          "main_stat_key": "atk"
+        },
+        {
+          "slot": "sands",
+          "set_name": "紡月的夜歌",
+          "main_stat_key": "energy_recharge"
+        }
+      ],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000124_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 雅珂達技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/9018?lang=zh-tw"
+        },
+        {
+          "title": "HoYoWiki 虹蛇的雨弦",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/9046?lang=zh-tw"
+        }
+      ],
+      "confidence": "high",
+      "notes": [
+        "治療冠、攻擊杯、充能沙與紡月配裝採治療支援；虹蛇雨弦在後台命中可提高自身攻擊。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": []
+    },
+    "hoyolab_character_10000137": {
+      "rule_id": "researched_role_hoyolab_character_10000137_20261116",
+      "role_label": "未配裝：攻擊護盾與西風共通",
+      "effective_keys": [
+        "atk_pct",
+        "crit_rate",
+        "energy_recharge"
+      ],
+      "known_ineffective_keys": [
+        "atk",
+        "def",
+        "def_pct",
+        "hp",
+        "hp_pct"
+      ],
+      "complete": false,
+      "weapon_name": "西風劍",
+      "constellation": 0,
+      "element": "electro",
+      "artifact_context": [],
+      "method": "public_mechanics_equipment_assessment",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "source_record_id": "genshin_mechanics_10000137_20261116",
+      "sources": [
+        {
+          "title": "HoYoWiki 瓦列里技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/11828?lang=zh-tw"
+        },
+        {
+          "title": "HoYoWiki 西風劍",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2017?lang=zh-tw"
+        }
+      ],
+      "confidence": "medium",
+      "notes": [
+        "尚無聖遺物且西風劍為1級，只列護盾、輸出與西風共有的攻擊、充能與暴率；不指定站場或後台。",
+        "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+        "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+        "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+      ],
+      "conditional": [
+        {
+          "key": "crit_dmg",
+          "reason": "決定是否培養自身雷傷後才能確認其優先性，純盾增益不受暴傷影響。",
+          "assessment": null
+        },
+        {
+          "key": "em",
+          "reason": "是否負責星超導或其他反應尚未由裝備確認。",
+          "assessment": null
+        }
+      ]
+    }
+  },
+  "zzz": {
+    "jane": {
+      "rule_id": "observed_role_jane_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "異常精通|flat"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "暴擊率|percent",
+        "生命值|flat",
+        "生命值|percent",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "淬鋒鉗刺",
+      "mindscape": 2,
+      "element": "物理",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/jane_slot1_t007.25.jpg",
+        "evidence/zzz/discs_video_001/a/jane_slot2_t007.75.jpg",
+        "evidence/zzz/discs_video_001/a/jane_slot3_t008.75.jpg",
+        "evidence/zzz/discs_video_001/a/jane_slot4_t009.75.jpg",
+        "evidence/zzz/discs_video_001/a/jane_slot5_t010.75.jpg",
+        "evidence/zzz/discs_video_001/a/jane_slot6_t011.75.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "damielle": {
+      "rule_id": "observed_role_damielle_20261116",
+      "effective_keys": [
+        "攻擊力|flat",
+        "攻擊力|percent",
+        "異常精通|flat"
+      ],
+      "known_ineffective_keys": [
+        "暴擊傷害|percent",
+        "生命值|flat",
+        "生命值|percent",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "空羽復歸之詩",
+      "mindscape": 1,
+      "element": "流明",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/damielle_slot1_t019.75.jpg",
+        "evidence/zzz/discs_video_001/a/damielle_slot2_t019.25.jpg",
+        "evidence/zzz/discs_video_001/a/damielle_slot3_t018.25.jpg",
+        "evidence/zzz/discs_video_001/a/damielle_slot4_t017.25.jpg",
+        "evidence/zzz/discs_video_001/a/damielle_slot5_t016.25.jpg",
+        "evidence/zzz/discs_video_001/a/damielle_slot6_t015.75.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "velina": {
+      "rule_id": "observed_role_velina_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "異常精通|flat"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "生命值|flat",
+        "生命值|percent",
+        "穿透值|flat",
+        "防禦力|flat"
+      ],
+      "complete": false,
+      "weapon_name": "琳琅鎏心",
+      "mindscape": 0,
+      "element": "風屬性",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/velina_slot1_t034.75.jpg",
+        "evidence/zzz/discs_video_001/a/velina_slot2_t033.75.jpg",
+        "evidence/zzz/discs_video_001/a/velina_slot3_t032.75.jpg",
+        "evidence/zzz/discs_video_001/a/velina_slot4_t031.75.jpg",
+        "evidence/zzz/discs_video_001/a/velina_slot5_t030.75.jpg",
+        "evidence/zzz/discs_video_001/a/velina_slot6_t030.25.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "pyrois": {
+      "rule_id": "observed_role_pyrois_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat"
+      ],
+      "complete": false,
+      "weapon_name": "日冕遺蛻",
+      "mindscape": 4,
+      "element": "以太",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/pyrois_slot1_t038.25.jpg",
+        "evidence/zzz/discs_video_001/a/pyrois_slot2_t039.25.jpg",
+        "evidence/zzz/discs_video_001/a/pyrois_slot3_t039.75.jpg",
+        "evidence/zzz/discs_video_001/a/pyrois_slot4_t040.75.jpg",
+        "evidence/zzz/discs_video_001/a/pyrois_slot5_t041.75.jpg",
+        "evidence/zzz/discs_video_001/a/pyrois_slot6_t042.75.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "nangong_yu": {
+      "rule_id": "observed_role_nangong_yu_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "異常精通|flat"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "生命值|flat",
+        "生命值|percent",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": true,
+      "weapon_name": "霓虹妄想",
+      "mindscape": 0,
+      "element": "以太",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/nangong_yu_slot1_t052.25.jpg",
+        "evidence/zzz/discs_video_001/a/nangong_yu_slot2_t052.75.jpg",
+        "evidence/zzz/discs_video_001/a/nangong_yu_slot3_t053.75.jpg",
+        "evidence/zzz/discs_video_001/a/nangong_yu_slot4_t054.75.jpg",
+        "evidence/zzz/discs_video_001/a/nangong_yu_slot5_t055.75.jpg",
+        "evidence/zzz/discs_video_001/a/nangong_yu_slot6_t056.25.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "sunna": {
+      "rule_id": "observed_role_sunna_20261116",
+      "effective_keys": [
+        "攻擊力|flat",
+        "攻擊力|percent"
+      ],
+      "known_ineffective_keys": [
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "生命值|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": true,
+      "weapon_name": "好鬥的阿炮",
+      "mindscape": 0,
+      "element": "物理",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/sunna_slot1_t066.25.jpg",
+        "evidence/zzz/discs_video_001/a/sunna_slot2_t065.75.jpg",
+        "evidence/zzz/discs_video_001/a/sunna_slot3_t064.75.jpg",
+        "evidence/zzz/discs_video_001/a/sunna_slot4_t063.75.jpg",
+        "evidence/zzz/discs_video_001/a/sunna_slot5_t062.75.jpg",
+        "evidence/zzz/discs_video_001/a/sunna_slot6_t061.75.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "zhao": {
+      "rule_id": "observed_role_zhao_20261116",
+      "effective_keys": [
+        "生命值|flat",
+        "生命值|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "正版變身器",
+      "mindscape": 0,
+      "element": "冰屬性",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/zhao_slot1_t076.75.jpg",
+        "evidence/zzz/discs_video_001/a/zhao_slot2_t077.75.jpg",
+        "evidence/zzz/discs_video_001/a/zhao_slot3_t078.75.jpg",
+        "evidence/zzz/discs_video_001/a/zhao_slot4_t079.75.jpg",
+        "evidence/zzz/discs_video_001/a/zhao_slot5_t080.75.jpg",
+        "evidence/zzz/discs_video_001/a/zhao_slot6_t081.25.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "lucia": {
+      "rule_id": "observed_role_lucia_20261116",
+      "effective_keys": [
+        "生命值|flat",
+        "生命值|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat"
+      ],
+      "complete": false,
+      "weapon_name": "鑄夢爐歌",
+      "mindscape": 0,
+      "element": "以太",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/lucia_slot1_t086.25.jpg",
+        "evidence/zzz/discs_video_001/a/lucia_slot2_t087.25.jpg",
+        "evidence/zzz/discs_video_001/a/lucia_slot3_t087.75.jpg",
+        "evidence/zzz/discs_video_001/a/lucia_slot4_t088.75.jpg",
+        "evidence/zzz/discs_video_001/a/lucia_slot5_t089.25.jpg",
+        "evidence/zzz/discs_video_001/a/lucia_slot6_t090.25.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "yuzuha": {
+      "rule_id": "observed_role_yuzuha_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "異常精通|flat"
+      ],
+      "known_ineffective_keys": [
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "生命值|flat",
+        "生命值|percent",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "啜泣搖籃",
+      "mindscape": 0,
+      "element": "物理",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/yuzuha_slot1_t098.25.jpg",
+        "evidence/zzz/discs_video_001/a/yuzuha_slot2_t099.25.jpg",
+        "evidence/zzz/discs_video_001/a/yuzuha_slot3_t099.75.jpg",
+        "evidence/zzz/discs_video_001/a/yuzuha_slot4_t100.75.jpg",
+        "evidence/zzz/discs_video_001/a/yuzuha_slot5_t101.75.jpg",
+        "evidence/zzz/discs_video_001/a/yuzuha_slot6_t102.25.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "manato": {
+      "rule_id": "observed_role_manato_20261116",
+      "effective_keys": [
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "生命值|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "攻擊力|percent",
+        "生命值|flat",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat"
+      ],
+      "complete": false,
+      "weapon_name": "燔火朧夜",
+      "mindscape": 6,
+      "element": "火屬性",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/manato_slot1_t107.25.jpg",
+        "evidence/zzz/discs_video_001/a/manato_slot2_t107.75.jpg",
+        "evidence/zzz/discs_video_001/a/manato_slot3_t108.75.jpg",
+        "evidence/zzz/discs_video_001/a/manato_slot4_t109.75.jpg",
+        "evidence/zzz/discs_video_001/a/manato_slot5_t110.75.jpg",
+        "evidence/zzz/discs_video_001/a/manato_slot6_t111.25.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "ye_shunguang": {
+      "rule_id": "observed_role_ye_shunguang_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "生命值|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "防禦力|flat"
+      ],
+      "complete": false,
+      "weapon_name": "雲霓孤光",
+      "mindscape": 2,
+      "element": "凜刃",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/ye_shunguang_slot1_t125.25.jpg",
+        "evidence/zzz/discs_video_001/a/ye_shunguang_slot2_t124.25.jpg",
+        "evidence/zzz/discs_video_001/a/ye_shunguang_slot3_t123.75.jpg",
+        "evidence/zzz/discs_video_001/a/ye_shunguang_slot4_t122.75.jpg",
+        "evidence/zzz/discs_video_001/a/ye_shunguang_slot5_t121.75.jpg",
+        "evidence/zzz/discs_video_001/a/ye_shunguang_slot6_t121.25.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "ju_fufu": {
+      "rule_id": "observed_role_ju_fufu_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "生命值|flat",
+        "生命值|percent",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "福虎爐爐",
+      "mindscape": 0,
+      "element": "火屬性",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/ju_fufu_slot1_t127.75.jpg",
+        "evidence/zzz/discs_video_001/a/ju_fufu_slot2_t128.75.jpg",
+        "evidence/zzz/discs_video_001/a/ju_fufu_slot3_t129.75.jpg",
+        "evidence/zzz/discs_video_001/a/ju_fufu_slot4_t130.25.jpg",
+        "evidence/zzz/discs_video_001/a/ju_fufu_slot5_t131.25.jpg",
+        "evidence/zzz/discs_video_001/a/ju_fufu_slot6_t132.25.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "yixuan": {
+      "rule_id": "observed_role_yixuan_20261116",
+      "effective_keys": [
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "生命值|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "攻擊力|percent",
+        "生命值|flat",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "青溟籠舍",
+      "mindscape": 0,
+      "element": "玄墨",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/yixuan_slot1_t139.25.jpg",
+        "evidence/zzz/discs_video_001/a/yixuan_slot2_t140.25.jpg",
+        "evidence/zzz/discs_video_001/a/yixuan_slot3_t140.75.jpg",
+        "evidence/zzz/discs_video_001/a/yixuan_slot4_t141.75.jpg",
+        "evidence/zzz/discs_video_001/a/yixuan_slot5_t142.25.jpg",
+        "evidence/zzz/discs_video_001/a/yixuan_slot6_t143.25.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "pan_yinhu": {
+      "rule_id": "observed_role_pan_yinhu_20261116",
+      "effective_keys": [
+        "攻擊力|flat",
+        "攻擊力|percent"
+      ],
+      "known_ineffective_keys": [
+        "暴擊率|percent",
+        "生命值|flat",
+        "生命值|percent",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "震元奇樞",
+      "mindscape": 6,
+      "element": "物理",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/pan_yinhu_slot1_t154.25.jpg",
+        "evidence/zzz/discs_video_001/a/pan_yinhu_slot2_t153.25.jpg",
+        "evidence/zzz/discs_video_001/a/pan_yinhu_slot3_t152.25.jpg",
+        "evidence/zzz/discs_video_001/a/pan_yinhu_slot4_t151.75.jpg",
+        "evidence/zzz/discs_video_001/a/pan_yinhu_slot5_t150.75.jpg",
+        "evidence/zzz/discs_video_001/a/pan_yinhu_slot6_t149.75.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "vivian": {
+      "rule_id": "observed_role_vivian_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "異常精通|flat"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "生命值|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "飛鳥星夢",
+      "mindscape": 0,
+      "element": "以太",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/vivian_slot1_t160.75.jpg",
+        "evidence/zzz/discs_video_001/a/vivian_slot2_t161.75.jpg",
+        "evidence/zzz/discs_video_001/a/vivian_slot3_t162.75.jpg",
+        "evidence/zzz/discs_video_001/a/vivian_slot4_t163.25.jpg",
+        "evidence/zzz/discs_video_001/a/vivian_slot5_t164.25.jpg",
+        "evidence/zzz/discs_video_001/a/vivian_slot6_t164.75.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "astra": {
+      "rule_id": "observed_role_astra_20261116",
+      "effective_keys": [
+        "攻擊力|flat",
+        "攻擊力|percent"
+      ],
+      "known_ineffective_keys": [
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "生命值|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": true,
+      "weapon_name": "玲瓏妝匣",
+      "mindscape": 0,
+      "element": "以太",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/astra_slot1_t168.75.jpg",
+        "evidence/zzz/discs_video_001/a/astra_slot2_t169.25.jpg",
+        "evidence/zzz/discs_video_001/a/astra_slot3_t170.25.jpg",
+        "evidence/zzz/discs_video_001/a/astra_slot4_t171.25.jpg",
+        "evidence/zzz/discs_video_001/a/astra_slot5_t171.75.jpg",
+        "evidence/zzz/discs_video_001/a/astra_slot6_t172.75.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "qingyi": {
+      "rule_id": "observed_role_qingyi_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "暴擊率|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "暴擊傷害|percent",
+        "生命值|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": true,
+      "weapon_name": "拘縛者",
+      "mindscape": 0,
+      "element": "電屬性",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/qingyi_slot1_t180.25.jpg",
+        "evidence/zzz/discs_video_001/a/qingyi_slot2_t181.25.jpg",
+        "evidence/zzz/discs_video_001/a/qingyi_slot3_t182.25.jpg",
+        "evidence/zzz/discs_video_001/a/qingyi_slot4_t182.75.jpg",
+        "evidence/zzz/discs_video_001/a/qingyi_slot5_t183.75.jpg",
+        "evidence/zzz/discs_video_001/a/qingyi_slot6_t184.75.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "zhu_yuan": {
+      "rule_id": "observed_role_zhu_yuan_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent"
+      ],
+      "known_ineffective_keys": [
+        "生命值|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "硫磺石",
+      "mindscape": 0,
+      "element": "以太",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/zhu_yuan_slot1_t188.25.jpg",
+        "evidence/zzz/discs_video_001/a/zhu_yuan_slot2_t189.25.jpg",
+        "evidence/zzz/discs_video_001/a/zhu_yuan_slot3_t189.75.jpg",
+        "evidence/zzz/discs_video_001/a/zhu_yuan_slot4_t190.75.jpg",
+        "evidence/zzz/discs_video_001/a/zhu_yuan_slot5_t191.75.jpg",
+        "evidence/zzz/discs_video_001/a/zhu_yuan_slot6_t192.25.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "seth": {
+      "rule_id": "observed_role_seth_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "異常精通|flat"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "生命值|flat",
+        "生命值|percent",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": true,
+      "weapon_name": "維序者-特化型",
+      "mindscape": 6,
+      "element": "電屬性",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/a/seth_slot1_t203.25.jpg",
+        "evidence/zzz/discs_video_001/a/seth_slot2_t204.25.jpg",
+        "evidence/zzz/discs_video_001/a/seth_slot3_t205.25.jpg",
+        "evidence/zzz/discs_video_001/a/seth_slot4_t205.75.jpg",
+        "evidence/zzz/discs_video_001/a/seth_slot5_t206.75.jpg",
+        "evidence/zzz/discs_video_001/a/seth_slot6_t207.25.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "miyabi": {
+      "rule_id": "observed_role_miyabi_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "生命值|flat",
+        "生命值|percent",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "雙生泣星",
+      "mindscape": 0,
+      "element": "烈霜",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q011.jpg",
+        "evidence/zzz/discs_video_001/b/q013.jpg",
+        "evidence/zzz/discs_video_001/b/q014.jpg",
+        "evidence/zzz/discs_video_001/b/q015.jpg",
+        "evidence/zzz/discs_video_001/b/q017.jpg",
+        "evidence/zzz/discs_video_001/b/q019.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "yanagi": {
+      "rule_id": "observed_role_yanagi_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "異常精通|flat"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "生命值|flat",
+        "生命值|percent",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": true,
+      "weapon_name": "雙生泣星",
+      "mindscape": 0,
+      "element": "電屬性",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q029.jpg",
+        "evidence/zzz/discs_video_001/b/q030.jpg",
+        "evidence/zzz/discs_video_001/b/q031.jpg",
+        "evidence/zzz/discs_video_001/b/q033.jpg",
+        "evidence/zzz/discs_video_001/b/q035.jpg",
+        "evidence/zzz/discs_video_001/b/q037.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "soukaku": {
+      "rule_id": "observed_role_soukaku_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "異常精通|flat"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "生命值|flat",
+        "生命值|percent",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": true,
+      "weapon_name": "含羞惡面",
+      "mindscape": 6,
+      "element": "冰屬性",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q061.jpg",
+        "evidence/zzz/discs_video_001/b/q063.jpg",
+        "evidence/zzz/discs_video_001/b/q065.jpg",
+        "evidence/zzz/discs_video_001/b/q067.jpg",
+        "evidence/zzz/discs_video_001/b/q068.jpg",
+        "evidence/zzz/discs_video_001/b/q070.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "pulchra": {
+      "rule_id": "observed_role_pulchra_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "生命值|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": true,
+      "weapon_name": "裁紙刀",
+      "mindscape": 6,
+      "element": "物理",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q078.jpg",
+        "evidence/zzz/discs_video_001/b/q080.jpg",
+        "evidence/zzz/discs_video_001/b/q082.jpg",
+        "evidence/zzz/discs_video_001/b/q083.jpg",
+        "evidence/zzz/discs_video_001/b/q085.jpg",
+        "evidence/zzz/discs_video_001/b/q087.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "piper": {
+      "rule_id": "observed_role_piper_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "異常精通|flat"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "生命值|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "觸電唇彩",
+      "mindscape": 6,
+      "element": "物理",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q105.jpg",
+        "evidence/zzz/discs_video_001/b/q107.jpg",
+        "evidence/zzz/discs_video_001/b/q109.jpg",
+        "evidence/zzz/discs_video_001/b/q110.jpg",
+        "evidence/zzz/discs_video_001/b/q112.jpg",
+        "evidence/zzz/discs_video_001/b/q114.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "lucy": {
+      "rule_id": "observed_role_lucy_20261116",
+      "effective_keys": [
+        "攻擊力|flat",
+        "攻擊力|percent"
+      ],
+      "known_ineffective_keys": [
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "生命值|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": true,
+      "weapon_name": "好鬥的阿炮",
+      "mindscape": 6,
+      "element": "火",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q121.jpg",
+        "evidence/zzz/discs_video_001/b/q123.jpg",
+        "evidence/zzz/discs_video_001/b/q124.jpg",
+        "evidence/zzz/discs_video_001/b/q126.jpg",
+        "evidence/zzz/discs_video_001/b/q128.jpg",
+        "evidence/zzz/discs_video_001/b/q130.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "grace": {
+      "rule_id": "observed_role_grace_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "異常精通|flat"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "生命值|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "雙生泣星",
+      "mindscape": 2,
+      "element": "電",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q145.jpg",
+        "evidence/zzz/discs_video_001/b/q147.jpg",
+        "evidence/zzz/discs_video_001/b/q148.jpg",
+        "evidence/zzz/discs_video_001/b/q150.jpg",
+        "evidence/zzz/discs_video_001/b/q152.jpg",
+        "evidence/zzz/discs_video_001/b/q154.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "koleda": {
+      "rule_id": "observed_role_koleda_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": null,
+      "mindscape": 1,
+      "element": "火",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q161.jpg",
+        "evidence/zzz/discs_video_001/b/q163.jpg",
+        "evidence/zzz/discs_video_001/b/q164.jpg",
+        "evidence/zzz/discs_video_001/b/q166.jpg",
+        "evidence/zzz/discs_video_001/b/q168.jpg",
+        "evidence/zzz/discs_video_001/b/q169.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "anton": {
+      "rule_id": "observed_role_anton_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "生命值|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": true,
+      "weapon_name": "旋鑽機-赤軸",
+      "mindscape": 6,
+      "element": "電",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q186.jpg",
+        "evidence/zzz/discs_video_001/b/q188.jpg",
+        "evidence/zzz/discs_video_001/b/q190.jpg",
+        "evidence/zzz/discs_video_001/b/q192.jpg",
+        "evidence/zzz/discs_video_001/b/q193.jpg",
+        "evidence/zzz/discs_video_001/b/q195.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "ellen": {
+      "rule_id": "observed_role_ellen_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "生命值|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "硫磺石",
+      "mindscape": 0,
+      "element": "冰",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q202.jpg",
+        "evidence/zzz/discs_video_001/b/q204.jpg",
+        "evidence/zzz/discs_video_001/b/q206.jpg",
+        "evidence/zzz/discs_video_001/b/q208.jpg",
+        "evidence/zzz/discs_video_001/b/q210.jpg",
+        "evidence/zzz/discs_video_001/b/q211.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "rina": {
+      "rule_id": "observed_role_rina_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "異常精通|flat"
+      ],
+      "known_ineffective_keys": [
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "生命值|flat",
+        "生命值|percent",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "好鬥的阿炮",
+      "mindscape": 0,
+      "element": "電",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q226.jpg",
+        "evidence/zzz/discs_video_001/b/q228.jpg",
+        "evidence/zzz/discs_video_001/b/q230.jpg",
+        "evidence/zzz/discs_video_001/b/q231.jpg",
+        "evidence/zzz/discs_video_001/b/q234.jpg",
+        "evidence/zzz/discs_video_001/b/q235.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "lycaon": {
+      "rule_id": "observed_role_lycaon_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent"
+      ],
+      "known_ineffective_keys": [
+        "生命值|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "拘縛者",
+      "mindscape": 3,
+      "element": "冰",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q250.jpg",
+        "evidence/zzz/discs_video_001/b/q252.jpg",
+        "evidence/zzz/discs_video_001/b/q253.jpg",
+        "evidence/zzz/discs_video_001/b/q255.jpg",
+        "evidence/zzz/discs_video_001/b/q257.jpg",
+        "evidence/zzz/discs_video_001/b/q258.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "nekomata": {
+      "rule_id": "observed_role_nekomata_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "生命值|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": true,
+      "weapon_name": "鋼鐵肉墊",
+      "mindscape": 1,
+      "element": "物理",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q273.jpg",
+        "evidence/zzz/discs_video_001/b/q274.jpg",
+        "evidence/zzz/discs_video_001/b/q276.jpg",
+        "evidence/zzz/discs_video_001/b/q278.jpg",
+        "evidence/zzz/discs_video_001/b/q280.jpg",
+        "evidence/zzz/discs_video_001/b/q282.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "nicole": {
+      "rule_id": "observed_role_nicole_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "異常精通|flat"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "暴擊傷害|percent",
+        "暴擊率|percent",
+        "生命值|flat",
+        "生命值|percent",
+        "穿透值|flat",
+        "防禦力|flat"
+      ],
+      "complete": false,
+      "weapon_name": "聚寶箱",
+      "mindscape": 6,
+      "element": "以太",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q291.jpg",
+        "evidence/zzz/discs_video_001/b/q293.jpg",
+        "evidence/zzz/discs_video_001/b/q295.jpg",
+        "evidence/zzz/discs_video_001/b/q296.jpg",
+        "evidence/zzz/discs_video_001/b/q298.jpg",
+        "evidence/zzz/discs_video_001/b/q299.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "anby": {
+      "rule_id": "observed_role_anby_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent"
+      ],
+      "known_ineffective_keys": [
+        "生命值|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "德瑪拉電池Ⅱ型",
+      "mindscape": 6,
+      "element": "電",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q315.jpg",
+        "evidence/zzz/discs_video_001/b/q316.jpg",
+        "evidence/zzz/discs_video_001/b/q318.jpg",
+        "evidence/zzz/discs_video_001/b/q320.jpg",
+        "evidence/zzz/discs_video_001/b/q321.jpg",
+        "evidence/zzz/discs_video_001/b/q323.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "corin": {
+      "rule_id": "observed_role_corin_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent"
+      ],
+      "known_ineffective_keys": [
+        "生命值|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "居家服務員",
+      "mindscape": 6,
+      "element": "物理",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q333.jpg",
+        "evidence/zzz/discs_video_001/b/q334.jpg",
+        "evidence/zzz/discs_video_001/b/q336.jpg",
+        "evidence/zzz/discs_video_001/b/q338.jpg",
+        "evidence/zzz/discs_video_001/b/q340.jpg",
+        "evidence/zzz/discs_video_001/b/q341.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "ben": {
+      "rule_id": "observed_role_ben_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "防禦力|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "暴擊傷害|percent",
+        "生命值|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "穿透值|flat"
+      ],
+      "complete": false,
+      "weapon_name": "震元奇樞",
+      "mindscape": 6,
+      "element": "火",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q354.jpg",
+        "evidence/zzz/discs_video_001/b/q356.jpg",
+        "evidence/zzz/discs_video_001/b/q358.jpg",
+        "evidence/zzz/discs_video_001/b/q360.jpg",
+        "evidence/zzz/discs_video_001/b/q361.jpg",
+        "evidence/zzz/discs_video_001/b/q363.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "billy": {
+      "rule_id": "observed_role_billy_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "生命值|flat",
+        "生命值|percent",
+        "異常精通|flat",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": true,
+      "weapon_name": "仿製星徽引擎",
+      "mindscape": 6,
+      "element": "物理",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q378.jpg",
+        "evidence/zzz/discs_video_001/b/q380.jpg",
+        "evidence/zzz/discs_video_001/b/q382.jpg",
+        "evidence/zzz/discs_video_001/b/q383.jpg",
+        "evidence/zzz/discs_video_001/b/q385.jpg",
+        "evidence/zzz/discs_video_001/b/q386.jpg"
+      ],
+      "method": "prior_game_observation"
+    },
+    "soldier_11": {
+      "rule_id": "observed_role_soldier_11_20261116",
+      "effective_keys": [
+        "攻擊力|percent",
+        "暴擊傷害|percent",
+        "暴擊率|percent"
+      ],
+      "known_ineffective_keys": [
+        "攻擊力|flat",
+        "生命值|percent",
+        "穿透值|flat",
+        "防禦力|flat",
+        "防禦力|percent"
+      ],
+      "complete": false,
+      "weapon_name": "硫磺石",
+      "mindscape": 1,
+      "element": "火",
+      "evidence_refs": [
+        "evidence/zzz/discs_video_001/b/q396.jpg",
+        "evidence/zzz/discs_video_001/b/q397.jpg",
+        "evidence/zzz/discs_video_001/b/q399.jpg",
+        "evidence/zzz/discs_video_001/b/q401.jpg",
+        "evidence/zzz/discs_video_001/b/q402.jpg",
+        "evidence/zzz/discs_video_001/b/q404.jpg"
+      ],
+      "method": "prior_game_observation"
+    }
+  },
+  "research_policy": {
+    "selection": "current_equipment",
+    "source_record_file": "genshin_effective_sources.json",
+    "observed_boundary": "public_mechanics_equipment_assessment只提供assessed_effective，不能作為遊戲effective觀測。",
+    "flat_stat_policy": "不列固定值為本次培養優先屬性，不等同聲稱其直接收益為零。"
+  }
+}

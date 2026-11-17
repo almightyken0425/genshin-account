@@ -1,0 +1,949 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-16",
+  "based_on_commit": "c2b910c8d672e6d313ba67821c3af18775831cd9",
+  "scope": "保存草稿的36名新增角色與四命阿羅夏；只新增培養用途評估，不改正式帳號或遊戲觀測。",
+  "selection_policy": "依使用者選擇，採目前武器、主詞條與套裝所呈現的用途。配裝不足或跨用途不能確認的屬性保持未知。",
+  "effectiveness_policy": [
+    "這是目前裝備用途的培養優先屬性評估，不是HoYoLAB提供的遊戲有效標記，也不是傷害收益的完整聯集。",
+    "固定攻擊、生命及防禦通常仍有小量直接收益；本規則不將它們列為優先副詞條，不代表其收益為零。",
+    "充能先滿足實際循環，暴率及各類增益仍有上限；有效不表示應持續堆高。"
+  ],
+  "conditional_policy": "conditional中的assessment:null表示尚未確認，既不列有效也不列已確認非優先；因此complete:false。",
+  "source_policy": "僅保存自行撰寫的機制摘要、結構化數字與官方公開頁URL/ID/版本/hash，不複製天賦整頁原文。",
+  "rules": [
+    {
+      "id": "genshin_mechanics_10000006_20261116",
+      "api_id": 10000006,
+      "character_id": "hoyolab_character_10000006",
+      "name": "麗莎",
+      "role_label": "絕緣爆發雷傷",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 麗莎技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "2",
+          "revision": "1782880809",
+          "payload_sha256": "6d4fb01fccfd62eb58d7d71cb895f50916813c4e577a8c185ac780e7aaf5833f"
+        }
+      ],
+      "mechanics_summary": "技能與爆發以攻擊力造成雷傷，爆發需80點能量，另能降低敵人防禦。",
+      "build_inference": "五件絕緣、攻擊沙與雷傷杯呈現爆發直傷；1級萬國不單獨作為超綻放或激化用途的證據。",
+      "confidence": "medium"
+    },
+    {
+      "id": "genshin_mechanics_10000016_20261116",
+      "api_id": 10000016,
+      "character_id": "hoyolab_character_10000016",
+      "name": "迪盧克",
+      "role_label": "攻擊普攻與火傷直傷",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 迪盧克技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/43?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "43",
+          "revision": "1777816234",
+          "payload_sha256": "2acba5973e3d41815b5f978f67ca87f2106774fc522fb280853572024e5df657"
+        }
+      ],
+      "mechanics_summary": "戰技與爆發提供攻擊力倍率火傷，爆發另賦予火附魔。",
+      "build_inference": "四件角鬥士、攻擊沙、火傷杯與暴傷冠採攻擊直傷；沒有由裝備指定融化或蒸發隊伍。",
+      "confidence": "medium"
+    },
+    {
+      "id": "genshin_mechanics_10000020_20261116",
+      "api_id": 10000020,
+      "character_id": "hoyolab_character_10000020",
+      "name": "雷澤",
+      "role_label": "角鬥士站場普攻與雷狼直傷",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 雷澤技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/48?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "48",
+          "revision": "1791732231",
+          "payload_sha256": "f05af73ed4b039a38ce5ac4a675fa0cb4a8b53b4cc1e4fd7fef3e37c2ef42299"
+        }
+      ],
+      "mechanics_summary": "普攻與雷狼協同攻擊以攻擊力造成傷害，戰技雷印與固有天賦能協助回能。",
+      "build_inference": "四件角鬥士與攻擊沙杯、暴率冠採站場普攻直傷；不將1級祭禮大劍推論為精通反應玩法。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000021_20261116",
+      "api_id": 10000021,
+      "character_id": "hoyolab_character_10000021",
+      "name": "安柏",
+      "role_label": "樂團火傷蓄力射擊",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 安柏技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/14?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "14",
+          "revision": "1786549821",
+          "payload_sha256": "2ca27a4199c6c8005695d565649439f633a5d1e1010cbb68d113e9d3f8ac7b71"
+        }
+      ],
+      "mechanics_summary": "蓄力箭與兔兔伯爵、箭雨造成攻擊力倍率火傷；一命提供第二支蓄力箭，爆發需40點能量。",
+      "build_inference": "四件樂團與火傷杯呈現蓄力射擊；充能沙保留箭雨用途，不假定每次都命中可暴擊弱點。",
+      "confidence": "medium"
+    },
+    {
+      "id": "genshin_mechanics_10000024_20261116",
+      "api_id": 10000024,
+      "character_id": "hoyolab_character_10000024",
+      "name": "北斗",
+      "role_label": "絕緣後台爆發雷傷",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 北斗技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/11?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "11",
+          "revision": "1784041732",
+          "payload_sha256": "d9e2695286dcd30470cbde779facaf46effa275ffc1c57862736bdc2f420078d"
+        }
+      ],
+      "mechanics_summary": "爆發閃雷以攻擊力造成雷傷；生命值影響護盾，但不提高閃雷的主要倍率。",
+      "build_inference": "四件絕緣、充能沙與暴率冠採爆發輸出；不將護盾血量收益視為此用途的傷害培養重點。",
+      "confidence": "medium"
+    },
+    {
+      "id": "genshin_mechanics_10000035_20261116",
+      "api_id": 10000035,
+      "character_id": "hoyolab_character_10000035",
+      "name": "七七",
+      "role_label": "攻擊治療與西風回能",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 七七技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/1?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "1",
+          "revision": "1784042616",
+          "payload_sha256": "c8b125dad255a8bb141e818ae462df47bd01024efab653c9df7f39f0cf7aaf96"
+        },
+        {
+          "title": "HoYoWiki 西風劍",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2017?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "2017",
+          "revision": "1681241908",
+          "payload_sha256": "20c381df79a5eccced16ad7fb88879accc71670b10a3fc58e23a1962ceffed32"
+        }
+      ],
+      "mechanics_summary": "戰技與爆發治療量依攻擊力計算；爆發需80點能量，西風武器的產球以暴擊為條件。",
+      "build_inference": "少女四件、攻擊沙杯與治療冠採治療；暴率只為目前西風劍產球，暴傷不提高治療。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000036_20261116",
+      "api_id": 10000036,
+      "character_id": "hoyolab_character_10000036",
+      "name": "重雲",
+      "role_label": "宗室冰傷爆發與西風回能",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 重雲技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/45?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "45",
+          "revision": "1791732318",
+          "payload_sha256": "7488f61ba74e4a57dcbcefe8119018ab4f7fa5186b153157f2107e1cf63104f0"
+        },
+        {
+          "title": "HoYoWiki 西風大劍",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2018?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "2018",
+          "revision": "1673356002",
+          "payload_sha256": "467baea573efe5dfcbd8ee33ec0245cddad56cc953befd48a1e5ebf3ce50539f"
+        }
+      ],
+      "mechanics_summary": "戰技與爆發造成攻擊力倍率冰傷，爆發需40點能量；西風大劍以暴擊觸發產球。",
+      "build_inference": "四件宗室、攻擊沙、冰傷杯與暴率冠呈現爆發副輸出；西風需求使暴率同時支援回能。",
+      "confidence": "medium"
+    },
+    {
+      "id": "genshin_mechanics_10000044_20261116",
+      "api_id": 10000044,
+      "character_id": "hoyolab_character_10000044",
+      "name": "辛焱",
+      "role_label": "角鬥士物理普攻直傷",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 辛焱技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/41?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "41",
+          "revision": "1765970587",
+          "payload_sha256": "daa4fc433862416e7003f34c03dd144a1d76288b1221c8599f49cbadcfc9e45a"
+        }
+      ],
+      "mechanics_summary": "元素爆發包含攻擊力倍率物理傷害；護盾依防禦力，六命才有重擊防禦轉攻擊。",
+      "build_inference": "四件角鬥士、攻擊沙杯、暴傷冠與一命採物理普攻；不把尚未擁有的二命必暴或六命防禦轉攻套用。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000045_20261116",
+      "api_id": 10000045,
+      "character_id": "hoyolab_character_10000045",
+      "name": "蘿莎莉亞",
+      "role_label": "宗室冰傷爆發與暴率支援",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 蘿莎莉亞技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/33?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "33",
+          "revision": "1773509214",
+          "payload_sha256": "7d16f1bf77cf7f6cbebcbe3d59b43d3ff6dd6cfb52a276fd48ae681fcc69b130"
+        },
+        {
+          "title": "HoYoWiki 西風長槍",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2021?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "2021",
+          "revision": "1673356271",
+          "payload_sha256": "674dd26225da25d12640ac1834f5f7cda5c7d1ae16a965a8e51a46df04d238ac"
+        }
+      ],
+      "mechanics_summary": "爆發提供攻擊力倍率冰傷，固有天賦按自身暴率提供隊友暴率；西風長槍也需要暴擊。",
+      "build_inference": "四件宗室、攻擊沙、冰傷杯、暴率冠與西風長槍採後台冰傷及暴率支援。",
+      "confidence": "medium"
+    },
+    {
+      "id": "genshin_mechanics_10000048_20261116",
+      "api_id": 10000048,
+      "character_id": "hoyolab_character_10000048",
+      "name": "煙緋",
+      "role_label": "攻擊重擊火傷",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 煙緋技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/24?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "24",
+          "revision": "1786549282",
+          "payload_sha256": "cf20a57e432fca7aa84cfbf7a0cb7b28f415fab316506c54fdfa6348431645d1"
+        }
+      ],
+      "mechanics_summary": "重擊與額外火傷依攻擊力計算，重擊暴擊可觸發額外攻擊；護盾需四命才存在。",
+      "build_inference": "攻擊沙杯與暴率冠採重擊直傷；目前一命，不套用四命護盾生命玩法。",
+      "confidence": "medium"
+    },
+    {
+      "id": "genshin_mechanics_10000050_20261116",
+      "api_id": 10000050,
+      "character_id": "hoyolab_character_10000050",
+      "name": "托馬",
+      "role_label": "生命護盾與爆發續盾",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 托馬技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/16?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "16",
+          "revision": "1773505153",
+          "payload_sha256": "2f192267bfcffea8eff5acb354df7c04e35d8b22a0178129c458dad6bc41d6c0"
+        }
+      ],
+      "mechanics_summary": "戰技護盾及爆發續盾依生命值上限，四命返還部分能量，六命增益不依精通。",
+      "build_inference": "三件生命主詞條與絕緣套採護盾及循環；沒有精通主詞條，不將此裝備改判為烈綻放。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000053_20261116",
+      "api_id": 10000053,
+      "character_id": "hoyolab_character_10000053",
+      "name": "早柚",
+      "role_label": "翠綠攻擊治療兼擴散",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 早柚技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/21?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "21",
+          "revision": "1761498261",
+          "payload_sha256": "11e7590f90de70ac8a1925ca6d0b98655db8e40fc58f3c0db2eda43c9b4fc293"
+        }
+      ],
+      "mechanics_summary": "爆發治療依攻擊力，觸發擴散時的固有治療依精通；六命才將精通加到爆發治療。",
+      "build_inference": "攻擊沙杯與治療冠採攻擊治療，翠綠配裝兼擴散；目前五命，精通只依既有擴散與固有治療列入。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000055_20261116",
+      "api_id": 10000055,
+      "character_id": "hoyolab_character_10000055",
+      "name": "五郎",
+      "role_label": "防禦治療與岩系支援",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 五郎技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/5?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "5",
+          "revision": "1782882277",
+          "payload_sha256": "317a540e7401120a9d0f8134df9c9e4a50d1ff779250970b01c7496e68fc7aa7"
+        }
+      ],
+      "mechanics_summary": "四命治療依自身防禦力，爆發需80點能量；戰技提供的固定防禦增益依技能等級，不依自身防禦。",
+      "build_inference": "華館配裝、兩件防禦主詞條與六命採防禦治療及輔助；曚雲之月沒有西風式暴擊產球條件。",
+      "confidence": "high",
+      "structured_facts": {
+        "c4_healing_def_pct": 50,
+        "skill_def_buff_scaling": "talent_level_not_personal_def"
+      }
+    },
+    {
+      "id": "genshin_mechanics_10000056_20261116",
+      "api_id": 10000056,
+      "character_id": "hoyolab_character_10000056",
+      "name": "九條裟羅",
+      "role_label": "絕緣增攻兼爆發雷傷",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 九條裟羅技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/3?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "3",
+          "revision": "1786547974",
+          "payload_sha256": "56a303283289dbb4337fdd435db2951e2c2816a42ca408e055ed3d2e13bc35ad"
+        }
+      ],
+      "mechanics_summary": "隊友增攻只取基礎攻擊力，聖遺物攻擊不增加該增益；自身爆發傷害取總攻擊，固有回能受充能效率影響。",
+      "build_inference": "四件絕緣、充能沙、雷傷杯與暴率冠採增攻兼自身爆發；攻擊%列入是為自身雷傷。",
+      "confidence": "medium",
+      "structured_facts": {
+        "team_atk_buff_scaling": "base_atk",
+        "personal_damage_scaling": "total_atk"
+      }
+    },
+    {
+      "id": "genshin_mechanics_10000059_20261116",
+      "api_id": 10000059,
+      "character_id": "hoyolab_character_10000059",
+      "name": "鹿野院平藏",
+      "role_label": "翠綠風傷勠心拳兼擴散",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 鹿野院平藏技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2263?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "2263",
+          "revision": "1786549079",
+          "payload_sha256": "84e9698d56247423e574ef117176152840725b43ffaa4d34160729930e1ebba4"
+        }
+      ],
+      "mechanics_summary": "勠心拳與爆發以攻擊力造成風傷；擴散能取得變格，固有隊友精通增益是固定值。",
+      "build_inference": "攻擊沙、風傷杯與暴率冠採勠心拳直傷，翠綠兼擴散；精通不會提高固定80點隊友精通。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000061_20261116",
+      "api_id": 10000061,
+      "character_id": "hoyolab_character_10000061",
+      "name": "綺良良",
+      "role_label": "深林生命護盾與掛草",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 綺良良技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/3719?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "3719",
+          "revision": "1773508000",
+          "payload_sha256": "527b06c40eb450561d441646384429d44e6c78d700bcaa559be765fe856c3790"
+        }
+      ],
+      "mechanics_summary": "護盾依生命值上限，固有傷害加成也受生命影響；二命尚未提供四命協同攻擊。",
+      "build_inference": "生命杯冠與深林配裝採護盾及掛草；攻擊沙不代表整套改作激化主輸出。",
+      "confidence": "medium"
+    },
+    {
+      "id": "genshin_mechanics_10000064_20261116",
+      "api_id": 10000064,
+      "character_id": "hoyolab_character_10000064",
+      "name": "雲堇",
+      "role_label": "防禦普攻增益與爆發循環",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 雲堇技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/4?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "4",
+          "revision": "1782881852",
+          "payload_sha256": "411a002715ce07bc437d066ee89c14e1e124a2d0110fb180d837f59b24af0585"
+        },
+        {
+          "title": "HoYoWiki 聖祭者的輝杖",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/8989?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "8989",
+          "revision": "1761314100",
+          "payload_sha256": "f20cb6fd6ea2e2afbb76fa53d1e37fd11fbb51442f329afb221d111bd0d36b68"
+        }
+      ],
+      "mechanics_summary": "爆發提供的普攻傷害加值依雲堇目前防禦力，戰技傷害也依防禦力；生命僅影響短暫招架護盾。",
+      "build_inference": "三防禦主詞條採防禦增益；聖祭者的輝杖只有戰技命中條件，沒有暴擊產球條件。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000068_20261116",
+      "api_id": 10000068,
+      "character_id": "hoyolab_character_10000068",
+      "name": "多莉",
+      "role_label": "生命治療與回能支援",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 多莉技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2269?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "2269",
+          "revision": "1767958271",
+          "payload_sha256": "fddfe80649a9e250659fd030854bbc94ada281a9857e58844a11557c185c1928"
+        }
+      ],
+      "mechanics_summary": "爆發治療依生命值上限，固有返能依充能效率；六命雷附魔尚未擁有。",
+      "build_inference": "生命杯、治療冠、充能沙與宗室採治療回能，不將三命配裝推論為六命站場超綻放。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000069_20261116",
+      "api_id": 10000069,
+      "character_id": "hoyolab_character_10000069",
+      "name": "提納里",
+      "role_label": "精通草傷蓄力射擊",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 提納里技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2265?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "2265",
+          "revision": "1767773354",
+          "payload_sha256": "ce9ec0613f78b0c39a05c272bdd6f201edce1d08282965d42024454a3905ecf9"
+        }
+      ],
+      "mechanics_summary": "精通直接提高重擊與爆發傷害，增傷每點0.06%、上限60%；蓄力箭本體仍含攻擊力倍率。",
+      "build_inference": "四件樂團、精通沙、草傷杯與暴傷冠呈現精通草傷蓄力；不需要先假定特定雷隊友才承認固有精通收益。",
+      "confidence": "high",
+      "structured_facts": {
+        "damage_bonus_pct_per_em": 0.06,
+        "damage_bonus_cap_pct": 60
+      }
+    },
+    {
+      "id": "genshin_mechanics_10000072_20261116",
+      "api_id": 10000072,
+      "character_id": "hoyolab_character_10000072",
+      "name": "坎蒂絲",
+      "role_label": "生命水附魔與普攻增益",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 坎蒂絲技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2815?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "2815",
+          "revision": "1777912381",
+          "payload_sha256": "f9ce252fe3eefcf6324fba75b459ac97148e0ea95f831270083273b5b1259d50"
+        }
+      ],
+      "mechanics_summary": "技能與爆發水傷、招架護盾依生命值上限，固有天賦依生命值提高隊友元素普攻傷害。",
+      "build_inference": "三生命主詞條與絕緣採生命支援、爆發水附魔；目前三命，未套用六命額外協同水傷。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000077_20261116",
+      "api_id": 10000077,
+      "character_id": "hoyolab_character_10000077",
+      "name": "瑤瑤",
+      "role_label": "深林生命治療與掛草",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 瑤瑤技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/3335?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "3335",
+          "revision": "1773507218",
+          "payload_sha256": "80aa0c3ba5ef4e18502de60c408e0465f85f07cb2367a94013c791c99f7cd083"
+        },
+        {
+          "title": "HoYoWiki 聖祭者的輝杖",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/8989?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "8989",
+          "revision": "1761314100",
+          "payload_sha256": "f20cb6fd6ea2e2afbb76fa53d1e37fd11fbb51442f329afb221d111bd0d36b68"
+        }
+      ],
+      "mechanics_summary": "月桂治療、固有持續治療與六命大蘿蔔治療依生命值，四命可將生命轉成自身精通。",
+      "build_inference": "生命沙杯與治療冠、四件深林採治療掛草；四命產生精通不等於直接提高治療。",
+      "confidence": "medium"
+    },
+    {
+      "id": "genshin_mechanics_10000079_20261116",
+      "api_id": 10000079,
+      "character_id": "hoyolab_character_10000079",
+      "name": "迪希雅",
+      "role_label": "絕緣生命攻擊混合爆發",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 迪希雅技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/3463?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "3463",
+          "revision": "1777814974",
+          "payload_sha256": "c03609f351d6f3d072b468d492b9e05784251048c9a411f67f0868c4ff7ffbd0"
+        }
+      ],
+      "mechanics_summary": "戰技協同與爆發均有攻擊及生命雙倍率；一命額外按生命提高傷害，二命延長戰技領域。",
+      "build_inference": "四件絕緣、生命沙、火傷杯、暴率冠與螭骨劍採爆發直傷；保留攻擊與生命兩種傷害來源。",
+      "confidence": "medium"
+    },
+    {
+      "id": "genshin_mechanics_10000080_20261116",
+      "api_id": 10000080,
+      "character_id": "hoyolab_character_10000080",
+      "name": "米卡",
+      "role_label": "宗室生命治療與物理支援",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 米卡技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/3462?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "3462",
+          "revision": "1786550034",
+          "payload_sha256": "9bfc784036c53a9b05d8ce0e222c345c76124e552791aeadeddb536027d72067"
+        },
+        {
+          "title": "HoYoWiki 聖祭者的輝杖",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/8989?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "8989",
+          "revision": "1761314100",
+          "payload_sha256": "f20cb6fd6ea2e2afbb76fa53d1e37fd11fbb51442f329afb221d111bd0d36b68"
+        }
+      ],
+      "mechanics_summary": "爆發治療依生命值，四命治療可返能；攻速與六命物理暴傷增益不依米卡自身暴率或暴傷。",
+      "build_inference": "生命沙杯、治療冠與宗室採治療物理支援；聖祭者的輝杖的暴率副屬性不代表治療需要雙暴。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000081_20261116",
+      "api_id": 10000081,
+      "character_id": "hoyolab_character_10000081",
+      "name": "卡維",
+      "role_label": "精通綻放站場與自癒",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 卡維技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/3608?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "3608",
+          "revision": "1786547907",
+          "payload_sha256": "ea01c800eb434965421d0250423b5d25ceb27f2e45ca6d27ed30e7738050f417"
+        }
+      ],
+      "mechanics_summary": "精通提高承受草原核傷害後的自癒，爆發提供草附魔並提高草原核傷害，四命強化自身觸發的綻放。",
+      "build_inference": "精通沙冠、祭禮大劍與四命採綻放駕駛及精通自癒；攻擊杯保留為現有配件，不據此改判暴擊草傷流。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000083_20261116",
+      "api_id": 10000083,
+      "character_id": "hoyolab_character_10000083",
+      "name": "琳妮特",
+      "role_label": "翠綠攻擊風傷兼擴散",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 琳妮特技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/3962?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "3962",
+          "revision": "1773507832",
+          "payload_sha256": "65b90536afb1141c3a39a1a6c6928b28de1767a869563849275569b7007281bb"
+        }
+      ],
+      "mechanics_summary": "技能與爆發造成攻擊力倍率風傷；六命可提供短時間風附魔，生命僅影響自療與自耗。",
+      "build_inference": "翠綠配裝與三攻主詞條採攻擊風傷兼擴散；六命不自動證明全精通站場反應流，也未假定站場時長。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000085_20261116",
+      "api_id": 10000085,
+      "character_id": "hoyolab_character_10000085",
+      "name": "菲米尼",
+      "role_label": "物理高壓粉碎與爆發循環",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 菲米尼技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/3964?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "3964",
+          "revision": "1791738925",
+          "payload_sha256": "ac9f50840ad1c8b71fd69b4a124114e28d07bd5469036acab0191f0b00947ccb"
+        },
+        {
+          "title": "HoYoWiki 西風大劍",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2018?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "2018",
+          "revision": "1673356002",
+          "payload_sha256": "467baea573efe5dfcbd8ee33ec0245cddad56cc953befd48a1e5ebf3ce50539f"
+        }
+      ],
+      "mechanics_summary": "四階高壓粉碎造成攻擊力倍率物理傷害，爆發縮短戰技冷卻；固有天賦在碎冰後提高粉碎傷害。",
+      "build_inference": "目前只有物理傷害杯，先採物理粉碎；西風大劍使暴率同時支援回能，未猜補齊其餘裝備。",
+      "confidence": "medium"
+    },
+    {
+      "id": "genshin_mechanics_10000092_20261116",
+      "api_id": 10000092,
+      "character_id": "hoyolab_character_10000092",
+      "name": "嘉明",
+      "role_label": "精通反應火傷下落",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 嘉明技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/4775?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "4775",
+          "revision": "1767958291",
+          "payload_sha256": "ac3e29490a83cd12b6844d3fdbaf152d329254c57d15c8125c88d191e4260abd"
+        }
+      ],
+      "mechanics_summary": "特殊下落以攻擊力倍率造成火傷；六命提高該招暴率與暴傷，四命命中返能。",
+      "build_inference": "已配精通沙、火傷杯及逐影配件，採反應型下落培養；不指定蒸發或融化隊友，精通收益以實際反應為前提。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000097_20261116",
+      "api_id": 10000097,
+      "character_id": "hoyolab_character_10000097",
+      "name": "賽索斯",
+      "role_label": "精通蓄力與爆發重擊",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 賽索斯技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/5598?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "5598",
+          "revision": "1782887899",
+          "payload_sha256": "5676d0694aaa24be020ceb3d55727870b45a425c2ae1e8ad4c90dac7e74c2993"
+        }
+      ],
+      "mechanics_summary": "爆發箭矢有精通加值，固有天賦對貫影箭另給700%精通加值；能量可供爆發或加速蓄力消耗。",
+      "build_inference": "精通沙、雷傷杯與暴傷冠採精通重擊；精通有直接技能倍率，不必由特定激化隊伍反推。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000100_20261116",
+      "api_id": 10000100,
+      "character_id": "hoyolab_character_10000100",
+      "name": "卡齊娜",
+      "role_label": "防禦岩傷戰技副輸出",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 卡齊娜技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/6318?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "6318",
+          "revision": "1777816287",
+          "payload_sha256": "65ce27263567e0d340be1b04edefdfa57adc74ead4029aec42d880b50507a4ae"
+        }
+      ],
+      "mechanics_summary": "沖天轉轉與爆發依防禦力造成岩傷，固有天賦再按防禦追加傷害。",
+      "build_inference": "目前只有岩傷杯，採已裝備顯示的岩傷副輸出共通屬性；不猜尚不存在的四件輔助套裝或站場隊伍。",
+      "confidence": "medium"
+    },
+    {
+      "id": "genshin_mechanics_10000108_20261116",
+      "api_id": 10000108,
+      "character_id": "hoyolab_character_10000108",
+      "name": "藍硯",
+      "role_label": "翠綠攻擊護盾與聚怪",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 藍硯技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/7301?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "7301",
+          "revision": "1767773947",
+          "payload_sha256": "b9e32c57578a1cd77038ac733c019e5edc6a19b8a8d497c9e7a1e3863d9a712a"
+        }
+      ],
+      "mechanics_summary": "護盾吸收量依攻擊力，二命可按既有盾量恢復；精通固有加值提高技能傷害而不提高盾量。",
+      "build_inference": "三攻主詞條、四件翠綠與祭禮殘章採護盾聚怪；不因武器精通副屬性就把護盾改判精通傷害流。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000113_20261116",
+      "api_id": 10000113,
+      "character_id": "hoyolab_character_10000113",
+      "name": "伊法",
+      "role_label": "翠綠精通治療與擴散",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 伊法技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/7627?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "7627",
+          "revision": "1777815108",
+          "payload_sha256": "18a2a1b79bf38d915772c7abaaa36f7c0da24076bf8e1b49b2a2a0e84144f8fe"
+        }
+      ],
+      "mechanics_summary": "援護射擊治療依精通，固有天賦可提高擴散與感電反應傷害，六命另有少量攻擊力倍率額外彈。",
+      "build_inference": "已強化精通杯及精通沙、翠綠配裝採精通治療擴散；暴傷冠與1級昭心不凌駕兩件精通主詞條。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000115_20261116",
+      "api_id": 10000115,
+      "character_id": "hoyolab_character_10000115",
+      "name": "塔利雅",
+      "role_label": "宗室生命護盾與西風回能",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 塔利雅技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/7707?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "7707",
+          "revision": "1782881277",
+          "payload_sha256": "9c17bf09a038c9d097501914bf5f567b422aa210c880c07aa64bc2a71d30fad6"
+        },
+        {
+          "title": "HoYoWiki 西風劍",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2017?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "2017",
+          "revision": "1681241908",
+          "payload_sha256": "20c381df79a5eccced16ad7fb88879accc71670b10a3fc58e23a1962ceffed32"
+        }
+      ],
+      "mechanics_summary": "爆發盾依生命值，固有天賦按生命提高攻速；西風劍需要暴擊產球，暴傷不提高護盾或攻速。",
+      "build_inference": "三生命主詞條、宗室與西風劍採護盾及回能；不因六命復甦效果另算攻擊或暴傷培養。",
+      "confidence": "high",
+      "structured_facts": {
+        "shield_scaling": "max_hp",
+        "attack_speed_pct_per_1000_max_hp": 0.5,
+        "attack_speed_bonus_cap_pct": 20
+      }
+    },
+    {
+      "id": "genshin_mechanics_10000117_20261116",
+      "api_id": 10000117,
+      "character_id": "hoyolab_character_10000117",
+      "name": "奇偶·男性",
+      "role_label": "未配裝：技能與培養用途尚未確認",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 奇偶·男性技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/9020?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "9020",
+          "revision": "0",
+          "payload_sha256": "e195bf3e1cafa1595631d5f17f5a418c51f9873031c4ac709628d7afdc793560"
+        }
+      ],
+      "mechanics_summary": null,
+      "build_inference": null,
+      "confidence": "unknown",
+      "unknown_reason": "官方HoYoWiki技能及命座模組尚無內容；目前沒有聖遺物，1級笛劍不能確認培養用途。不從角色ID或旅行者類比補上規則。"
+    },
+    {
+      "id": "genshin_mechanics_10000118_20261116",
+      "api_id": 10000118,
+      "character_id": "hoyolab_character_10000118",
+      "name": "奇偶·女性",
+      "role_label": "未配裝：技能與培養用途尚未確認",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 奇偶·女性技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/9021?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "9021",
+          "revision": "0",
+          "payload_sha256": "616beef20b056ba3c04c290d166041ae8de2a1701798660c33cf8a54bd1741c6"
+        }
+      ],
+      "mechanics_summary": null,
+      "build_inference": null,
+      "confidence": "unknown",
+      "unknown_reason": "官方HoYoWiki技能及命座模組尚無內容；目前沒有聖遺物，1級笛劍不能確認培養用途。不從角色ID或旅行者類比補上規則。"
+    },
+    {
+      "id": "genshin_mechanics_10000124_20261116",
+      "api_id": 10000124,
+      "character_id": "hoyolab_character_10000124",
+      "name": "雅珂達",
+      "role_label": "後台攻擊治療與月兆支援",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 雅珂達技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/9018?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "9018",
+          "revision": "1767773869",
+          "payload_sha256": "2e60a5d331f50444ae899af4d2bb20e9ad15d9789805b5a5090e6a65d8b68fa1"
+        },
+        {
+          "title": "HoYoWiki 虹蛇的雨弦",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/9046?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "9046",
+          "revision": "1768319726",
+          "payload_sha256": "72ffb92b2cb6046b2081e8e94262391184034d5687c00c76effdd7469889ba76"
+        }
+      ],
+      "mechanics_summary": "爆發治療量依攻擊力，固有天賦的隊友精通為固定100點；六命月兆雙暴增益也是固定值。",
+      "build_inference": "治療冠、攻擊杯、充能沙與紡月配裝採治療支援；虹蛇雨弦在後台命中可提高自身攻擊。",
+      "confidence": "high"
+    },
+    {
+      "id": "genshin_mechanics_10000137_20261116",
+      "api_id": 10000137,
+      "character_id": "hoyolab_character_10000137",
+      "name": "瓦列里",
+      "role_label": "未配裝：攻擊護盾與西風共通",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 瓦列里技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/11828?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "11828",
+          "revision": "1794556531",
+          "payload_sha256": "1e841c693592eb70295a3db661902bd15a1e41cf7637908adb6af3ff7e6b20cb"
+        },
+        {
+          "title": "HoYoWiki 西風劍",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/2017?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "2017",
+          "revision": "1681241908",
+          "payload_sha256": "20c381df79a5eccced16ad7fb88879accc71670b10a3fc58e23a1962ceffed32"
+        }
+      ],
+      "mechanics_summary": "護盾依攻擊力，固有天賦的攻斥傷害增益也依攻擊；目前西風劍的回能需要暴擊。",
+      "build_inference": "尚無聖遺物且西風劍為1級，只列護盾、輸出與西風共有的攻擊、充能與暴率；不指定站場或後台。",
+      "confidence": "medium"
+    },
+    {
+      "id": "genshin_mechanics_10000148_20261116",
+      "api_id": 10000148,
+      "character_id": "arosha",
+      "name": "阿羅夏",
+      "role_label": "宗室攻擊治療兼後台雷傷",
+      "checked_at": "2026-11-16",
+      "applicable_version": "7.2 正式環境；2026-11-16官方現行頁",
+      "sources": [
+        {
+          "title": "HoYoWiki 阿羅夏技能與命座",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/11163?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "11163",
+          "revision": "1786545660",
+          "payload_sha256": "fab19db81bcac759315ec448618d6a9fbe4a36ed8dda2c170a2db6505bd07f54"
+        },
+        {
+          "title": "HoYoWiki 寒息",
+          "url": "https://wiki.hoyolab.com/pc/genshin/entry/11217?lang=zh-tw",
+          "kind": "official_hoyowiki",
+          "entry_id": "11217",
+          "revision": "1786502727",
+          "payload_sha256": "f50d7eaee698930d1373dc87b4e4408513bfd657c4df5885ade1379791024d0b"
+        }
+      ],
+      "mechanics_summary": "圖加林的固有治療依攻擊力，四命另加60%攻擊力的最低血量角色治療；充能固有天賦提高戰技與爆發傷害。",
+      "build_inference": "四命寒息、四件宗室、充能沙與攻擊杯冠採治療兼後台雷傷；不是阿蕾奇諾，也不假定極星輝域已啟用。",
+      "confidence": "medium",
+      "structured_facts": {
+        "public_api_id": 10000148,
+        "element": "electro",
+        "weapon_type": "polearm",
+        "constellation": 4,
+        "a1_healing_atk_pct": 120,
+        "c4_additional_healing_atk_pct": 60,
+        "a4_damage_bonus_pct_per_er_pct": 0.35,
+        "a4_damage_bonus_cap_pct": 70,
+        "a4_damage_bonus_cap_er_pct": 200,
+        "c2_burst_extension_seconds": 6
+      }
+    }
+  ]
+}

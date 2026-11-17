@@ -1,5 +1,5 @@
 {
-  "retrievedAt": "2026-11-13T04:22:12.997Z",
+  "retrievedAt": "2026-11-17T04:22:42.206Z",
   "artworkCopyright": "Game artwork © HoYoverse. Unofficial personal record tool.",
   "sourceProvider": "HoYoWiki",
   "catalogApi": "https://sg-act-public-api.hoyolab.com/hoyowiki/zzz/wapi/get_entry_page_list",
@@ -4066,7 +4066,7 @@
       "sourceLanguage": "zh-tw",
       "sourceField": "modules.drivedisc.icon_url",
       "category": "discs",
-      "name": "識羽之誓",
+      "name": "讖羽之誓",
       "canonicalName": "讖羽之誓",
       "artworkKind": "flat-drive-disc",
       "path": "/assets/zzz/discs/34100.png",
@@ -4081,7 +4081,13 @@
       "rawSourceFormat": "png",
       "transform": {
         "type": "none"
-      }
+      },
+      "aliases": [
+        "識羽之誓"
+      ],
+      "rawEntrySha256": "2175b3c2cb21ffe1c0970222df8e4cd6b9a42a22c925a982cc2afe7d4ce769aa",
+      "checkedAt": "2026-11-17",
+      "mapping": "official-localized-name-with-historical-observation-aliases"
     },
     {
       "url": "https://act-webstatic.hoyoverse.com/event-static-hoyowiki-admin/2026/03/23/f297b5a22e668097e73803ca848a939f_2641194636517362925.png",
@@ -4470,13 +4476,13 @@
     },
     {
       "category": "weapons",
-      "name": "福虎爐爐",
+      "name": "福虓爐爐",
       "canonicalName": "福虓爐爐",
       "id": "14139",
       "path": "/assets/zzz/weapons/14139.png",
       "url": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/07/20/186855736/b4bf9ffe069fed989265bcebf158415c_5738492228573468595.png",
       "source": "https://wiki.hoyolab.com/pc/zzz/entry/851",
-      "mapping": "verified-weapon-id-and-canonical-localized-name",
+      "mapping": "official-localized-name-with-historical-observation-aliases",
       "sha256": "ae3f10931dd0c0164db22cc87a1595d6ebda7d7bb618108ac720afb16fa0ad5c",
       "width": 400,
       "height": 400,
@@ -4498,7 +4504,12 @@
       },
       "notes": "既有顯示名稱保留，以既有音擎ID與Enka正式名稱對照官方Wiki同款圖片。",
       "rawSourceFormat": "webp",
-      "sourceProvider": "HoYoWiki"
+      "sourceProvider": "HoYoWiki",
+      "aliases": [
+        "福虎爐爐"
+      ],
+      "rawEntrySha256": "6f2bd968e12ed8f44c32559af42c4fb518b5b08103be673faf91fa1b4fa2a091",
+      "checkedAt": "2026-11-17"
     },
     {
       "category": "weapons",
@@ -7497,6 +7508,41 @@
         17,
         381,
         506
+      ],
+      "alphaThreshold": 0,
+      "transform": {
+        "type": "none"
+      }
+    },
+    {
+      "category": "weapons",
+      "name": "左輪轉子",
+      "canonicalName": "左輪轉子",
+      "id": "14003",
+      "path": "/assets/zzz/weapons/14003.png",
+      "url": "https://act-upload.hoyoverse.com/event-ugc-hoyowiki/2025/02/04/297246445/864547e11bff3e3c0a2eb77904e1a506_8956546701887204657.png",
+      "sourceProvider": "HoYoWiki",
+      "sourcePage": "https://wiki.hoyolab.com/pc/zzz/entry/79",
+      "officialEntryId": "79",
+      "sourceLanguage": "zh-tw",
+      "sourceField": "page.icon_url",
+      "checkedAt": "2026-11-17",
+      "sha256": "5859b40da65d5791a8fec8f4792e6e3372172b22b5f6456751bbbbf19045cff4",
+      "rawSourceSha256": "5859b40da65d5791a8fec8f4792e6e3372172b22b5f6456751bbbbf19045cff4",
+      "rawSourceWidth": 400,
+      "rawSourceHeight": 400,
+      "rawSourceFormat": "png",
+      "width": 400,
+      "height": 400,
+      "format": "png",
+      "bytes": 155266,
+      "rawEntrySha256": "b54f755e991dd0541c454bb627ceabeeaa291a39e25985f3c18409975fe41258",
+      "kind": "engine-icon",
+      "alphaBounds": [
+        17,
+        21,
+        384,
+        377
       ],
       "alphaThreshold": 0,
       "transform": {

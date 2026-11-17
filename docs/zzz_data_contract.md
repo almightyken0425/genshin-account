@@ -25,6 +25,18 @@ HOYO 將原神與絕區零分開保存。`data/zzz/account.json` 是絕區零正
 
 Sites 從同一 GitHub revision 讀取資料及圖片。圖片須經 owner-only API 提供，不把私人證據放進公開前端靜態目錄。尚未核對與缺少欄位必須在頁面保持可辨識，不展示推測值。
 
+## HoYoLAB 同步 v2
+
+v1 影片觀測保持可讀。同步候選採 schemaVersion 2，保留 source 與全部既有證據。首次同步前的角色紀錄存入 legacyObservation。新增 syncSources 保存 API JSON 的相對路徑、SHA 與讀取時間，API evidence 使用 sourceId 與 record 指向 JSON 角色記錄，不填假的影片時間或截圖。
+
+技能使用官方戰績頁顯示等級，不再重複加影畫。核心數字 1 對應未升階，2 至 7 對應 A 至 F。skillsBase 只在逐角色影畫規則與顯示等級語義均已核對時，扣除該角色已啟用的普通技能加成。核心技能不參與這項扣除。規則、影畫或等級未知，以及結果超出普通技能 1 至 12 級時，基礎值維持 null。skillContext 保留原始來源與顯示語義。
+
+逐角色規則與官方多語言來源保存在[技能加成對照](../tools/hoyolab_sync/data/zzz_talent_rules.json)。正規化來源另記規則檔 SHA，基礎等級是依已確認機制推導的值，不冒充 API 直接回傳的基礎欄位。
+
+isEffective 仍只代表遊戲觀測，assessedEffective 是獨立的角色規則判定，明確觀測優先。規則使用 effectiveProfile 或驅動盤 assessment 識別。無法套用或未涵蓋的項目維持 null。
+
+副詞條 enhancementCount 可在 v2 採用已核對的 S 級增量推導，enhancementSource 必須標示 derived_fixed_roll。推導只在單項整數與整盤預算均通過時採用，A、B 級不推導。原始 API 沒有回傳次數，不能把推導說成直接觀測。完整依據與邊界見 [同步判定](../tools/hoyolab_sync/README.md#資料判定)。
+
 ## 驅動盤逐項觀測
 
 `driveDiscs` 可為部分槽位的陣列；缺少槽位或 null 代表未核對，不代表未裝備。每盤 `slot` 為1到6，`id`識別該來源的盤面觀測，不根據同名同數值合併物品。主副詞條 value 為數字、unit 為 flat/percent；未看清保留 null。

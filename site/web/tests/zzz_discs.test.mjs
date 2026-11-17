@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {loadCurrentZzz} from './helpers/current_accounts.mjs';
-import {discSlots,effectiveDiscCount,effectiveDiscLoadout,maximumDiscCount,maximumDiscLoadout,discEffectiveKeys} from '../lib/zzz_discs.mjs';
+import {discSlots,effectiveDiscCount,effectiveDiscLoadout,maximumDiscCount,maximumDiscLoadout,discEffectiveKeys,discStatEffective} from '../lib/zzz_discs.mjs';
 const stat=(isEffective,enhancementCount)=>({name:'攻擊力',value:3,unit:'percent',isEffective,enhancementCount});
 const disc={slot:1,substatsComplete:true,substats:[stat(true,2),stat(false,null),stat(true,0)]};
 test('six ZZZ slots preserve incomplete equipment as unknown',()=>{assert.equal(discSlots(null).length,6);assert.equal(discSlots([disc])[0].disc,disc);assert.equal(discSlots([disc])[5].disc,null);assert.equal(effectiveDiscLoadout([disc]),null)});
@@ -66,4 +66,21 @@ test('real Sunna observations retain current seventeen and give slot-two six, lo
 });
 test('Genshin and ZZZ share actual substat and badge components, not roll tiers',()=>{const ui=readFileSync(new URL('../app/zzz_character_detail.tsx',import.meta.url),'utf8');assert.match(ui,/ArtifactSubstat/);assert.match(ui,/EffectiveBadge/);assert.match(ui,/MetricDisplayContext/);assert.match(ui,/artifact-details-grid/);assert.match(ui,/summary-stats/);assert.ok(!ui.includes('artifact_rolls'));assert.ok(!ui.includes('未裝備'));assert.match(ui,/尚未確認/)});
 test('unknown units remain visibly uncertain, not assumed flat',()=>{const ui=readFileSync(new URL('../components/equipment/artifact_substat.tsx',import.meta.url),'utf8');assert.match(ui,/stat.unit===null\?' 單位待核'/);const detail=readFileSync(new URL('../app/zzz_character_detail.tsx',import.meta.url),'utf8');assert.match(detail,/副詞條待核/);assert.match(detail,/disc.mainStat.unit===null\?' 單位待核'/)});
-test('panel effectiveness is observation-only and uses shared effective styling',()=>{const ui=readFileSync(new URL('../app/zzz_character_detail.tsx',import.meta.url),'utf8');assert.match(ui,/statsEffective\?\.\[label\]===true/);const css=readFileSync(new URL('../app/detail.css',import.meta.url),'utf8');assert.match(css,/\.substat-field\.is-effective,\.summary-stats>\.is-effective/)});
+test('observed panel flags take precedence and rule-derived substats remain separate',()=>{
+ const ui=readFileSync(new URL('../app/zzz_character_detail.tsx',import.meta.url),'utf8');
+ const expression=ui.match(/<SummaryStat\b[^\n]*?effective=\{([^}]+)\}/)?.[1];assert.ok(expression);
+ const panel=new Function('character','label','return ('+expression+')');
+ for(const [observed,rule,expected] of [[true,false,true],[false,true,false],[null,true,true],[undefined,true,true],[undefined,false,false]]){
+  const character={statsEffective:{'攻擊力':observed},effectiveProfile:{keys:rule?['攻擊力|percent']:[]}};
+  assert.equal(panel(character,'攻擊力'),expected);
+ }
+ const derived={...stat(null,2),assessedEffective:true,enhancementSource:'derived_fixed_roll'};
+ const assessed={...disc,substats:[derived],assessment:{method:'role_rule',ruleId:'test_v1'},effectiveKeys:['攻擊力|percent']};
+ assert.equal(discStatEffective(derived,assessed),true);assert.equal(effectiveDiscCount(assessed),3);
+ assert.equal(derived.isEffective,null);assert.equal(derived.enhancementSource,'derived_fixed_roll');
+ assert.equal(discStatEffective({...derived,isEffective:false},assessed),false);
+ assert.equal(discStatEffective(derived,{...assessed,assessment:undefined}),null);
+ const substat=readFileSync(new URL('../components/equipment/artifact_substat.tsx',import.meta.url),'utf8');
+ assert.match(substat,/roll\.enhancementSource==='derived_fixed_roll'/);assert.match(substat,/roll\.effectiveSource==='role_rule'/);assert.match(substat,/與遊戲畫面標記分開記錄/);
+ const css=readFileSync(new URL('../app/detail.css',import.meta.url),'utf8');assert.match(css,/\.substat-field\.is-effective,\.summary-stats>\.is-effective/);
+});

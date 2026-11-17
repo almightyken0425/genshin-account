@@ -1,0 +1,766 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 2
+    },
+    "updated_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_]*$"
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "properties": {
+        "roster": {
+          "enum": [
+            "partial",
+            "complete"
+          ]
+        },
+        "inventory": {
+          "enum": [
+            "equipped_items_only",
+            "partial",
+            "complete"
+          ]
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "roster",
+        "inventory",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/character"
+      }
+    },
+    "weapons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/weapon"
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/artifact"
+      }
+    },
+    "equipment": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_]*$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "weapon_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "artifacts": {
+            "type": "object",
+            "properties": {
+              "flower": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "plume": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sands": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "goblet": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "circlet": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "flower",
+              "plume",
+              "sands",
+              "goblet",
+              "circlet"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "weapon_id",
+          "artifacts"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "panel_snapshots": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/snapshot"
+      }
+    },
+    "teams": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "character_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9_]*$"
+            },
+            "uniqueItems": true,
+            "maxItems": 4
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "character_ids",
+          "notes"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "updated_at",
+    "source_ids",
+    "coverage",
+    "characters",
+    "weapons",
+    "artifacts",
+    "equipment",
+    "panel_snapshots",
+    "teams"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Genshin account version 2",
+  "$defs": {
+    "measurement": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "key": {
+              "enum": [
+                "hp",
+                "atk",
+                "def",
+                "em",
+                "stamina"
+              ]
+            },
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "unit": {
+              "const": "flat"
+            }
+          },
+          "required": [
+            "key",
+            "value",
+            "unit"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "key": {
+              "enum": [
+                "hp_pct",
+                "atk_pct",
+                "def_pct",
+                "crit_rate",
+                "crit_dmg",
+                "energy_recharge",
+                "healing_bonus",
+                "incoming_healing_bonus",
+                "cooldown_reduction",
+                "shield_strength",
+                "physical_dmg_bonus",
+                "pyro_dmg_bonus",
+                "hydro_dmg_bonus",
+                "dendro_dmg_bonus",
+                "electro_dmg_bonus",
+                "anemo_dmg_bonus",
+                "cryo_dmg_bonus",
+                "geo_dmg_bonus"
+              ]
+            },
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "unit": {
+              "const": "percent"
+            }
+          },
+          "required": [
+            "key",
+            "value",
+            "unit"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          }
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          }
+        },
+        "verification": {
+          "enum": [
+            "agent_reviewed",
+            "user_reported",
+            "pending"
+          ]
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "source_ids",
+        "evidence_refs",
+        "verification",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    "level": {
+      "type": "object",
+      "properties": {
+        "current": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "cap": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        }
+      },
+      "required": [
+        "current",
+        "cap"
+      ],
+      "additionalProperties": false
+    },
+    "character": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "element": {
+          "enum": [
+            "pyro",
+            "hydro",
+            "dendro",
+            "electro",
+            "anemo",
+            "cryo",
+            "geo"
+          ]
+        },
+        "weapon_type": {
+          "enum": [
+            "sword",
+            "claymore",
+            "polearm",
+            "bow",
+            "catalyst"
+          ]
+        },
+        "level": {
+          "$ref": "#/$defs/level"
+        },
+        "constellation": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 6
+        },
+        "friendship": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 10
+        },
+        "talents": {
+          "type": "object",
+          "properties": {
+            "base": {
+              "type": "object",
+              "properties": {
+                "normal": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 0
+                },
+                "skill": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 0
+                },
+                "burst": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "normal",
+                "skill",
+                "burst"
+              ],
+              "additionalProperties": false
+            },
+            "displayed": {
+              "type": "object",
+              "properties": {
+                "normal": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 0
+                },
+                "skill": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 0
+                },
+                "burst": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "normal",
+                "skill",
+                "burst"
+              ],
+              "additionalProperties": false
+            },
+            "bonus_context": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "base",
+            "displayed",
+            "bonus_context"
+          ],
+          "additionalProperties": false
+        },
+        "panel_snapshot_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "element",
+        "weapon_type",
+        "level",
+        "constellation",
+        "friendship",
+        "talents",
+        "panel_snapshot_id",
+        "provenance"
+      ],
+      "additionalProperties": false
+    },
+    "weapon": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "weapon_type": {
+          "enum": [
+            "sword",
+            "claymore",
+            "polearm",
+            "bow",
+            "catalyst"
+          ]
+        },
+        "rarity": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 5
+        },
+        "level": {
+          "$ref": "#/$defs/level"
+        },
+        "refinement": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 5
+        },
+        "base_atk": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "secondary_stat": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/measurement"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "weapon_type",
+        "rarity",
+        "level",
+        "refinement",
+        "base_atk",
+        "secondary_stat",
+        "provenance"
+      ],
+      "additionalProperties": false
+    },
+    "artifact": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "set_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "slot": {
+          "enum": [
+            "flower",
+            "plume",
+            "sands",
+            "goblet",
+            "circlet"
+          ]
+        },
+        "rarity": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 5
+        },
+        "level": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 20
+        },
+        "main_stat": {
+          "$ref": "#/$defs/measurement"
+        },
+        "substats": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/measurement"
+          },
+          "maxItems": 4
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        },
+        "substat_rolls": {
+          "type": "object",
+          "properties": {
+            "character_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "values": {
+              "type": "array",
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "properties": {
+                  "key": {
+                    "type": "string"
+                  },
+                  "enhancements": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 0,
+                    "maximum": 5
+                  },
+                  "effective": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "key",
+                  "enhancements",
+                  "effective"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "character_id",
+            "values"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "set_name",
+        "slot",
+        "rarity",
+        "level",
+        "main_stat",
+        "substats",
+        "provenance",
+        "substat_rolls"
+      ],
+      "additionalProperties": false
+    },
+    "snapshot": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "character_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "observed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "imported_at": {
+          "type": "string",
+          "minLength": 1
+        },
+        "build_fingerprint": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "stats": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/measurement"
+          }
+        },
+        "context": {
+          "type": "object",
+          "properties": {
+            "team_character_ids": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9_]*$"
+                  }
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "buffs": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "notes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "team_character_ids",
+            "buffs",
+            "notes"
+          ],
+          "additionalProperties": false
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        }
+      },
+      "required": [
+        "id",
+        "character_id",
+        "observed_at",
+        "imported_at",
+        "build_fingerprint",
+        "stats",
+        "context",
+        "provenance"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

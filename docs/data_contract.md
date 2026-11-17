@@ -5,7 +5,7 @@
 [data/account.json](../data/account.json) 保存現況，格式由 [account.schema.json](../schemas/account.schema.json) 定義。
 原始辨識留在 imports，截圖與校驗值留在 evidence。閱讀摘要從現況產生，分析另存 analysis。
 
-`schema_version` 目前為 2。驗證器保留對 v1 的支援，舊資料可用 `scripts/migrate_account.py <輸入> <新輸出>` 遷移。遷移新增未知的強化紀錄，保留 ID、舊面板及其 fingerprint，拒絕覆寫既有輸出。
+影片正式現況的 `schema_version` 為 2。HoYoLAB 同步候選採 v3，驗證器保留對 v1 與 v2 的支援。驗證器保留對 v1 的支援，舊資料可用 `scripts/migrate_account.py <輸入> <新輸出>` 遷移。遷移新增未知的強化紀錄，保留 ID、舊面板及其 fingerprint，拒絕覆寫既有輸出。
 
 `updated_at` 為資料更新時間，使用含時區的 ISO 8601 字串。
 `observed_at` 代表錄影或觀測時間，未知時為 `null`。`imported_at` 只代表匯入時間。
@@ -54,9 +54,19 @@
 
 `substat_rolls` 屬於註記，不參與配裝 fingerprint。更正強化次數或有效標示不代表遊戲配裝改變。實際等級、主副詞條數值及穿戴引用仍參與比較。
 
+## HoYoLAB 同步
+
+v3 保留既有角色、物品與面板結構，新增 `hoyolab_id` 作公開模板對照。它不是物品實體 ID，不參與配裝指紋。同步合併本身會將 v2 候選遷移至 v3，保留舊物品 ID 與面板，正式檔只在確認更新後替換。
+
+`api_observed` 表示 API 直接觀測。manifest v3 的 media.type 為 hoyolab，extraction 引用去除帳號識別的 JSON 及 SHA，observations 以 pointer 指向角色記錄。它沒有假影片或假截圖，讀取時間只保存為 imported_at。
+
+`substat_rolls.values` 的 effective 繼續只代表遊戲觀測。新的 assessed_effective 是具名角色規則判定，需搭配 rule_id 與 effective_keys。遊戲有效性已有明確布林值時優先採用，未涵蓋項目維持 null。原神 API 的 times 不含初始，可直接記入 enhancements。數學與來源依據見 [同步判定](../tools/hoyolab_sync/README.md#資料判定)。
+
 ## 天賦與面板
 
-天賦分為 `base` 與 `displayed`，各包含 `normal`、`skill`、`burst`。本次只知道顯示等級，基礎值與 `bonus_context` 均未知。
+天賦分為 `base` 與 `displayed`，各包含 `normal`、`skill`、`burst`。既有影片只知道顯示等級，基礎值與 `bonus_context` 保留未知。
+
+HoYoLAB 同步候選保留 API 顯示等級，依[逐角色天賦規則](../tools/hoyolab_sync/data/genshin_talent_rules.json)的技能 ID、元素與命座加成推導基礎值。戰績等級採永久投入加命座的語義，此為公開同步實作與帳號對照支持的推論，限制另記於規則來源。`bonus_context` 明記推導依據，正規化來源保存規則檔 SHA。不從遊戲畫面出現的隊伍被動猜扣額外等級。缺少規則、觀測或來源情境，以及不合理的投入等級均保留 null。
 
 `panel_snapshots` 保存觀測數值、證據、觀測時間與 `build_fingerprint`。角色透過 `panel_snapshot_id` 選定最近採用的面板。
 

@@ -1,0 +1,128 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HOYO 資料同步</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#121418;color:#f2f3f5}*{box-sizing:border-box}body{margin:0;padding:48px 20px 80px}main{max-width:900px;margin:auto}h1{font-size:32px;margin:8px 0 16px}h2{font-size:20px;margin:0 0 16px}h3{font-size:16px}p,li,summary{line-height:1.7;color:#b5bbc6}a{color:#b6d5fb}section{border:1px solid #343a44;background:#1b1e24;border-radius:20px;padding:26px;margin:24px 0}header p{max-width:720px}.eyebrow{font-size:12px;letter-spacing:.14em;color:#a2acba}.status{display:flex;align-items:center;gap:12px}.dot{width:10px;height:10px;background:#8fc0ed;border-radius:50%;flex:none}label{display:block;margin:16px 0;color:#c6cbd3;font-size:14px}input,select,button{font:inherit}input:not([type=checkbox]),select{display:block;width:100%;margin-top:8px;padding:13px 15px;border:1px solid #4b5563;border-radius:10px;background:#13161b;color:#fff}input:focus-visible,button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid #a9cffa;outline-offset:4px}button,.button{display:inline-block;border:1px solid #46505e;border-radius:10px;padding:12px 18px;background:#282e37;color:#f5f6f8;cursor:pointer;text-decoration:none;font-weight:600}button.primary{background:#d3e4f8;color:#172233;border-color:#d3e4f8}button:disabled{opacity:.45;cursor:default}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.small{font-size:13px}.muted{color:#959eab}.check{display:flex;align-items:flex-start;gap:10px}.check input{margin-top:5px;width:18px;height:18px;flex:none}.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{border:1px solid #3b4350;border-radius:14px;padding:20px}.count{font-size:30px;font-weight:600;color:#f2f3f5;margin:4px 0}.changes{max-height:420px;overflow:auto;padding-left:22px}.changes li{padding:6px 0}.error{color:#ffbdaf}.note{padding:16px;background:#242b36;border-radius:12px}.hidden,[hidden]{display:none!important}code{overflow-wrap:anywhere;color:#dceaff}details{margin:20px 0}summary{cursor:pointer}table{width:100%;border-collapse:collapse}td,th{text-align:left;border-bottom:1px solid #343d49;padding:12px 4px}@media(max-width:560px){body{padding-top:28px}section{padding:20px}.cards{grid-template-columns:1fr}.actions button{width:100%}h1{font-size:28px}}
+fieldset{min-width:0;border:1px solid #3b4350;border-radius:14px;padding:18px;margin:18px 0}legend{padding:0 8px;font-weight:600}.incoming{padding:14px 16px;background:#242b36;border-radius:10px;margin-bottom:16px}.incoming p{margin:4px 0 0;overflow-wrap:anywhere}.candidate{display:flex;gap:12px;padding:14px;border:1px solid #404957;border-radius:10px;cursor:pointer;overflow-wrap:anywhere}.candidate:has(input:checked){border-color:#a4c5ed;background:#273447}.candidate input{margin-top:5px;flex:none;width:18px;height:18px}.review-changes{margin-top:24px}.review-character{border:1px solid #3b4350;border-radius:12px;overflow:hidden}.review-character summary{padding:16px;color:#eef1f6;font-weight:600}.review-character table{table-layout:fixed;font-size:14px}.review-character th:first-child{width:36%}.review-character td,.review-character th{padding:12px;overflow-wrap:anywhere;vertical-align:top}.review-character th{font-size:12px;color:#aab5c5}.review-character td.before{color:#a7afbd}.review-character td.after{color:#e8f1ff}.review-character caption{text-align:left;padding:0 16px 12px;color:#aab5c5;font-size:13px}.save-note{color:#a7c9ad;font-size:13px}.review-character+.review-character{margin-top:12px}@media(max-width:560px){fieldset{padding:14px}.review-character td,.review-character th{padding:10px 8px}.review-character table{font-size:13px}}
+</style>
+<main><header><span class="eyebrow">HOYO · LOCAL SYNC</span><h1>更新兩款遊戲的紀錄</h1><p>從 HoYoLAB 讀取原神與絕區零，確認差異後更新網站。登入憑證只在這台電腦使用，網站與 GitHub 只接收遊戲紀錄。</p><a href="https://ken-genshin-archive.almightyken0425.chatgpt.site" target="_blank" rel="noreferrer">開啟網站 ↗</a></header>
+<section aria-live="polite"><div class="status"><span class="dot" aria-hidden="true"></span><p id="message">正在連線至本機工具…</p></div><p id="error" class="error" role="alert" hidden></p><p id="login-note" class="small"></p></section>
+<section id="login"><div id="draft" hidden><h2>上次讀取的本機預覽</h2><p>可以重新比較已讀取的資料，不必再次登入。資料日期會沿用原本的讀取時間。</p><button id="restore">還原上次預覽</button><hr></div><h2>HoYoLAB 登入</h2><div id="saved" hidden><p>這台電腦已儲存登入，可以直接讀取。</p><div class="actions"><button id="read-saved" class="primary">讀取兩款遊戲</button><button id="forget">移除本機儲存的登入</button></div></div>
+<details id="login-details" open><summary>使用 Apple 或其他方式登入</summary><ol><li>在 <a href="https://www.hoyolab.com/" target="_blank" rel="noreferrer">HoYoLAB 官方網站</a>完成登入，可以使用 Apple。</li><li>在該網頁開啟開發人員工具。Mac 按 <code>⌥⌘I</code>，Windows 按 <code>F12</code>。</li><li>選擇 <code>Application／應用程式 → Cookies → https://www.hoyolab.com</code>，複製下列項目的 <code>Value／值</code>到對應欄位。</li></ol>
+<form id="login-form" autocomplete="off"><label>ltuid_v2<input name="uid" type="password" required maxlength="20" autocomplete="off"></label><label>ltoken_v2<input name="token" type="password" required maxlength="8192" autocomplete="off"></label><label>ltmid_v2，有提供時請填入<input name="mid" type="password" maxlength="512" autocomplete="off"></label><label class="check"><input type="checkbox" name="remember"><span>儲存在這台電腦的系統安全儲存區，下次直接讀取。其他電腦需要重新登入。</span></label><button class="primary">讀取兩款遊戲</button></form><p class="small muted">這些欄位是登入憑證，只貼在此頁，不要貼到聊天或網站。未勾選儲存時，讀取結束後即清除本次登入。登入失效時需重新登入。</p></details></section>
+<section id="selection" hidden><h2>選擇伺服器帳號</h2><form id="selection-form"></form></section>
+<section id="resolve" hidden><h2>確認裝備對應</h2><p>HoYoLAB 不提供可用來辨識同一實體裝備的編號。請確認這是原來那件裝備，或是另一件裝備，避免重複記錄。</p><form id="resolve-form"></form></section>
+<section id="preview" hidden><h2>這次讀取的差異</h2><div class="cards"><div class="card"><h3>原神</h3><p class="count" id="genshin-count"></p><p id="genshin-summary" class="small"></p><p id="genshin-verification" class="small muted"></p></div><div class="card"><h3>絕區零</h3><p class="count" id="zzz-count"></p><p id="zzz-summary" class="small"></p><p id="zzz-verification" class="small muted"></p></div></div><div id="changes" class="review-changes"></div><details id="warnings-section" hidden><summary>需要留意的資料</summary><ul id="warnings"></ul></details><p class="note small">顯示等級保留戰績原值。基礎等級依已核對的命座或影畫加成推導。原神採帳號永久等級語義，這是公開同步工具與本次對照支持的推論。有效性優先採遊戲觀測，缺少時依目前裝備用途套用角色規則。無法確認的資料仍顯示未知。</p><p id="publish-description" class="small">按更新後，會保存到 <code>almightyken0425/genshin-account</code> 的 <code>main</code>，網站會讀取這份正式資料。舊證據與舊觀測會保留。</p><p id="preview-mode" class="small muted" hidden>本輪只確認裝備與差異，尚未開放正式寫入。</p><div class="actions"><button id="publish" class="primary">更新網站資料</button><button id="edit-equipment" hidden>調整裝備對應</button><button id="clear">清除本輪草稿</button></div><p id="revision" class="small muted"></p></section>
+<section id="uncertain" hidden><h2>確認更新結果</h2><p>請先確認上次請求是否已完成，避免建立重複更新。</p><button id="check" class="primary">確認更新結果</button></section>
+<section id="done" hidden><h2>網站資料已更新</h2><p>兩款遊戲的正式紀錄已保存，重新整理網站即可查看。</p><div class="actions"><a class="button" href="https://ken-genshin-archive.almightyken0425.chatgpt.site" target="_blank" rel="noreferrer">查看網站 ↗</a><button id="again">再讀取一次</button></div></section>
+<p class="small muted">請保留啟動工具的視窗。關閉該視窗會停止本機服務。未儲存的登入只存在記憶體。本輪整理後的遊戲資料會暫存在這台電腦，更新成功或取消後清除。</p></main>
+<script nonce="__SESSION__">
+const session='__SESSION__';
+let lastStage='',choiceSignature='',reviewSignature='',resolutions={};
+const el=id=>document.getElementById(id);
+const text=(id,value)=>el(id).textContent=value??'';
+async function post(path,body={}){
+ el('error').hidden=true;
+ try{
+  const response=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json','X-HOYO-Session':session},body:JSON.stringify(body)});
+  const data=await response.json();
+  if(!response.ok||data.error)throw new Error(data.error||'本機請求未完成，請稍後重試。');
+  await poll();return true;
+ }catch(error){text('error',error.message);el('error').hidden=false;return false;}
+}
+el('login-form').onsubmit=event=>{
+ event.preventDefault();const form=event.currentTarget;
+ const data=Object.fromEntries(new FormData(form));data.remember=form.elements.remember.checked;form.reset();post('/login',data);
+};
+el('restore').onclick=()=>post('/restore');
+el('read-saved').onclick=()=>post('/login',{saved:true});
+el('forget').onclick=()=>post('/forget');
+el('publish').onclick=()=>post('/publish',{confirm_destination:'almightyken0425/genshin-account:main'});
+el('edit-equipment').onclick=()=>post('/edit-equipment');el('clear').onclick=()=>post('/clear');el('again').onclick=()=>post('/clear');el('check').onclick=()=>post('/check');
+function list(id,rows){
+ el(id).replaceChildren(...rows.map(row=>{const li=document.createElement('li');li.textContent=typeof row==='string'?row:row.name+'：'+(row.detail||row.message||'資料變更');return li;}));
+}
+function display(value){return value==null?'未知':typeof value==='boolean'?(value?'是':'否'):String(value);}
+function renderChanges(s){
+ const host=el('changes');host.replaceChildren();
+ for(const game of ['genshin','zzz']){
+  const changes=s.summary[game]?.changes||[];
+  if(!changes.length)continue;
+  const heading=document.createElement('h3');heading.textContent=game==='genshin'?'原神的變動':'絕區零的變動';host.append(heading);
+  for(const change of changes){
+   const detail=document.createElement('details');detail.className='review-character';
+   const summary=document.createElement('summary');summary.textContent=change.name+' · '+(change.status==='added'?'新增角色':'資料變動')+' · '+(change.fields?.length||0)+' 項';detail.append(summary);
+   if(change.role_note){const note=document.createElement('p');note.className='note small';note.textContent=change.role_note;detail.append(note);}
+   if(change.pending_notes?.length){const pending=document.createElement('ul');pending.className='small';for(const message of change.pending_notes){const item=document.createElement('li');item.textContent=message;pending.append(item);}detail.append(pending);}
+   if(change.fields?.length){
+    const table=document.createElement('table');const caption=document.createElement('caption');caption.textContent=change.detail||'本輪讀取與正式網站紀錄比較';table.append(caption);
+    const head=document.createElement('thead');const tr=document.createElement('tr');
+    for(const label of ['項目','網站紀錄','本次讀取']){const th=document.createElement('th');th.scope='col';th.textContent=label;tr.append(th);}head.append(tr);table.append(head);
+    const body=document.createElement('tbody');
+    for(const field of change.fields){
+     const row=document.createElement('tr');const label=document.createElement('th');label.scope='row';label.textContent=field.label;row.append(label);
+     for(const key of ['before','after']){const cell=document.createElement('td');cell.className=key;cell.textContent=display(field[key]);row.append(cell);}body.append(row);
+    }
+    table.append(body);detail.append(table);
+   }else{const paragraph=document.createElement('p');paragraph.textContent=change.detail;detail.append(paragraph);}
+   host.append(detail);
+  }
+ }
+}
+function choices(s){
+ resolutions={...s.resolutions};const form=el('resolve-form');form.replaceChildren();
+ for(const choice of s.choices||[]){
+  if(!choice.requires_confirmation&&choice.options?.length===1&&choice.options[0].id==='new'){resolutions[choice.key]='new';continue;}
+  const fieldset=document.createElement('fieldset');const legend=document.createElement('legend');legend.textContent=choice.name;fieldset.append(legend);
+  if(choice.conflict_reason){const notice=document.createElement('p');notice.className='error';notice.textContent=choice.conflict_reason;fieldset.append(notice);}
+  const incoming=document.createElement('div');incoming.className='incoming';const tag=document.createElement('span');tag.className='small muted';tag.textContent='本次讀取';
+  const values=document.createElement('p');values.textContent=choice.incoming_label||'請比對本次裝備與既有紀錄。';incoming.append(tag,values);fieldset.append(incoming);
+  for(const option of choice.options||[]){
+   const label=document.createElement('label');label.className='candidate';const input=document.createElement('input');input.type='radio';input.name=choice.key;input.value=option.id;input.required=true;input.checked=resolutions[choice.key]===option.id;
+   const caption=document.createElement('span');caption.textContent=option.label;label.append(input,caption);fieldset.append(label);
+   input.onchange=async()=>{resolutions[choice.key]=option.id;const saved=await post('/selections',{resolutions:{[choice.key]:option.id}});note.textContent=saved?'這項選擇已暫存在本機。':'這項選擇尚未保存，請重試。';};
+  }
+  const note=document.createElement('p');note.className='save-note';note.textContent=resolutions[choice.key]?'已還原這項選擇。':'';fieldset.append(note);form.append(fieldset);
+ }
+ const button=document.createElement('button');button.textContent='確認對應，查看差異';button.className='primary';form.append(button);
+ form.onsubmit=event=>{event.preventDefault();Object.assign(resolutions,Object.fromEntries(new FormData(form)));post('/resolve',{resolutions});};
+}
+function selection(s){
+ const form=el('selection-form');form.replaceChildren();
+ for(const game of ['genshin','zzz']){
+  const label=document.createElement('label');label.textContent=game==='genshin'?'原神':'絕區零';const select=document.createElement('select');select.name=game;
+  for(const row of s.options.filter(option=>option.game===game)){const option=document.createElement('option');option.value=row.index;option.textContent=row.label;select.append(option);}label.append(select);form.append(label);
+ }
+ const button=document.createElement('button');button.textContent='讀取所選帳號';form.append(button);
+ form.onsubmit=event=>{event.preventDefault();post('/select',Object.fromEntries(new FormData(form)));};
+}
+async function poll(){
+ try{
+  const response=await fetch('/status',{headers:{'X-HOYO-Session':session}});if(!response.ok)throw new Error();const s=await response.json();
+  text('message',s.message);text('login-note',s.login_note||s.draft_note);
+  const busy=['authenticating','reading','publishing'].includes(s.stage);document.querySelectorAll('button').forEach(button=>button.disabled=busy);
+  for(const id of ['login','selection','resolve','preview','uncertain','done'])el(id).hidden=id==='login'?!['ready','failed'].includes(s.stage):id!==s.stage;
+  el('saved').hidden=!s.saved_login;el('draft').hidden=!s.saved_draft;
+  if(s.saved_login&&lastStage!==s.stage)el('login-details').open=false;
+  if(s.stage==='selection'&&lastStage!==s.stage)selection(s);
+  if(s.stage==='resolve'&&(JSON.stringify(s.choices)!==choiceSignature||lastStage!=='resolve')){choices(s);choiceSignature=JSON.stringify(s.choices);}
+  if(s.stage==='preview'){
+   const warnings=[...(s.warnings||[])];
+   for(const game of ['genshin','zzz']){
+    text(game+'-count',s.counts[game]+' 名');const summary=s.summary[game]||{};
+    text(game+'-summary','新增 '+(summary.added_characters||0)+' 名，數值變動 '+(summary.updated_characters||0)+' 名，首次建立同步對應 '+(summary.linked_characters||0)+' 名');warnings.push(...(summary.warnings||[]));
+    const verified=summary.verification;
+    if(verified){
+     const base=verified.base_levels,effective=verified.effective,enhancements=verified.enhancements;
+     text(game+'-verification','技能基礎等級 '+base.known+'/'+base.total+' 已確認。副詞條判定 '+(effective.observed+effective.assessed)+'/'+effective.total+' 已確認，其中 '+effective.assessed+' 項依角色規則。強化次數 '+enhancements.known+'/'+enhancements.total+' 已確認'+(enhancements.derived?'，其中 '+enhancements.derived+' 項依固定增量推導':'')+'。');
+    }else{text(game+'-verification','');}
+   }
+   const signature=JSON.stringify(s.summary);if(signature!==reviewSignature||lastStage!=='preview'){renderChanges(s);reviewSignature=signature;}
+   list('warnings',[...new Set(warnings)]);el('warnings-section').hidden=!warnings.length;
+   text('revision','讀取時間：'+new Date(s.retrieved_at).toLocaleString('zh-TW')+' · 比較版本：'+s.revision.slice(0,12));
+   el('edit-equipment').hidden=!s.has_equipment_choices;el('publish-description').hidden=s.publish_enabled===false;el('publish').hidden=s.publish_enabled===false;el('preview-mode').hidden=s.publish_enabled!==false;el('publish').disabled=!s.changed||s.publish_enabled===false;
+  }
+  if(s.stage==='ready'&&lastStage!=='ready'){resolutions={};choiceSignature='';reviewSignature='';}
+  lastStage=s.stage;
+ }catch{text('message','本機工具已停止，請重新開啟啟動程式。');}
+}
+poll();setInterval(poll,1600);
+</script></html>

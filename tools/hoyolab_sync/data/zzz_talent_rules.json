@@ -1,0 +1,5779 @@
+{
+  "schema_version": 1,
+  "rule_id": "zzz_skill_bases_verified_20261116",
+  "checked_at": "2026-11-16",
+  "based_on_commit": "c2b910c8d672e6d313ba67821c3af18775831cd9",
+  "general_skill_keys": [
+    "普通攻擊",
+    "閃避",
+    "支援技",
+    "特殊技",
+    "連攜技"
+  ],
+  "ordinary_base_level_range": [
+    1,
+    12
+  ],
+  "derive_core_base": false,
+  "core_skill_note": "影畫第三、五階明列的一般技能不含核心技。核心F與原始數字7維持原值，不納入skillsBase。",
+  "provider_level_semantics": {
+    "value": "provider_displayed",
+    "frontend_url": "https://act.hoyolab.com/app/zzz-game-record/pc_9524b22f.js",
+    "frontend_sha256": "64b096953b7db74238d94223d1e4822be59052b99ee22e489861bccf33b7d6dc",
+    "frontend_behavior": "官方角色詳情以skill_type找到該技能後直接顯示level。formatSkillLevel僅補前導零，前端沒有另加影畫增級。",
+    "sdk_commit": "d2b50dd2cf1e40cf150eabbea52dc7ef351ca9db",
+    "sdk_url": "https://github.com/seriaati/genshin.py/blob/d2b50dd2cf1e40cf150eabbea52dc7ef351ca9db/genshin/models/zzz/character.py",
+    "sdk_behavior": "AgentSkill.level直接接收整數，沒有技能等級換算。"
+  },
+  "review_scope": {
+    "characters": 38,
+    "official_localizations": 88,
+    "all_mindscape_positions_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "other_level_mentions_reviewed": "其餘出現等級的內容屬打斷等級或敘事，未作為五項一般技能增級。"
+  },
+  "characters": {
+    "1011": {
+      "rule_id": "zzz_skill_bases_20261116_1011",
+      "local_id": "anby",
+      "name": "安比·德瑪拉",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "2",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_2_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "2",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_2_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "2",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/2?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=2",
+          "raw_sha256": "a48ce25c1f13614c2addcbf098c63d4c751bebe8309e92f845aabf57877f0cb7",
+          "source_id": "hoyowiki_zzz_2_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "2",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/2?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=2",
+          "raw_sha256": "91ce078469ee499c9df580a3863e58e2d24a2d112718097fa2fbc27d7487f47b",
+          "source_id": "hoyowiki_zzz_2_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1021": {
+      "rule_id": "zzz_skill_bases_20261116_1021",
+      "local_id": "nekomata",
+      "name": "貓宮 又奈",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "21",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_21_zh_cn"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "21",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_21_zh_cn"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "21",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/21?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=21",
+          "raw_sha256": "e70f4d01700055674e027de29c789bf75c99de0d2a1b422bf606b34d76221a67",
+          "source_id": "hoyowiki_zzz_21_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "21",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/21?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=21",
+          "raw_sha256": "3379ac1cd64744ea54e17f15ab1ee564652c61a8a221dd065c1480d4f977dec7",
+          "source_id": "hoyowiki_zzz_21_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "21",
+          "language": "en-us",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/21?lang=en-us",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=21",
+          "raw_sha256": "2732aa4cee82fd05cfb8f60ed0b43615323eb371a8f34e716ce2f4bb8f66376e",
+          "source_id": "hoyowiki_zzz_21_en_us",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": [
+        {
+          "language": "zh-tw",
+          "mindscapes": [
+            3,
+            5
+          ],
+          "issue": "此語系文字未列支援技。採用另一官方語系明列的加成對象，未將省略解讀為沒有加成。"
+        }
+      ]
+    },
+    "1031": {
+      "rule_id": "zzz_skill_bases_20261116_1031",
+      "local_id": "nicole",
+      "name": "妮可·德瑪拉",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "20",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_20_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "20",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_20_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "20",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/20?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=20",
+          "raw_sha256": "d96ef4705327c26e103e4d1d3af371139670343890f430ac03759ebf2c12ceff",
+          "source_id": "hoyowiki_zzz_20_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "20",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/20?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=20",
+          "raw_sha256": "a1193cc461d1f2a3d92cf0ae55794eca23b90b0eccbf75af00f167dbee418636",
+          "source_id": "hoyowiki_zzz_20_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1041": {
+      "rule_id": "zzz_skill_bases_20261116_1041",
+      "local_id": "soldier_11",
+      "name": "「11號」",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "22",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_22_zh_cn"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "22",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_22_zh_cn"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "22",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/22?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=22",
+          "raw_sha256": "23a8bc69ac8de6c0a7cdb79acf257c88f6257fb0650aed10f6ef03ea2a010932",
+          "source_id": "hoyowiki_zzz_22_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "22",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/22?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=22",
+          "raw_sha256": "ad9043c53e200e7a91f295ed42f4fc49b9f351eb445b6be045b28f180cb3ea55",
+          "source_id": "hoyowiki_zzz_22_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "22",
+          "language": "en-us",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/22?lang=en-us",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=22",
+          "raw_sha256": "b44f8296439680d0b5d0129d4e37cd863587282a7ed8f194d8d043fd16ca6eca",
+          "source_id": "hoyowiki_zzz_22_en_us",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": [
+        {
+          "language": "zh-tw",
+          "mindscapes": [
+            3,
+            5
+          ],
+          "issue": "此語系文字未列支援技。採用另一官方語系明列的加成對象，未將省略解讀為沒有加成。"
+        }
+      ]
+    },
+    "1061": {
+      "rule_id": "zzz_skill_bases_20261116_1061",
+      "local_id": "corin",
+      "name": "可琳·威克斯",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "23",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_23_zh_cn"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "23",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_23_zh_cn"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "23",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/23?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=23",
+          "raw_sha256": "4b714bf74aa7126c30bcc876ee9d39c14e750ee4b53a5cfd0e8ec7a466749f0a",
+          "source_id": "hoyowiki_zzz_23_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "23",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/23?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=23",
+          "raw_sha256": "8fb61b60b2eb18edc8e81466cf17445bb9e44f46ae83061f39e85e4925d90cc7",
+          "source_id": "hoyowiki_zzz_23_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "23",
+          "language": "en-us",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/23?lang=en-us",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=23",
+          "raw_sha256": "aa6ee9c7506690572c34a55a9320af1f6fe577d39ee090ef39f949e7aee22b76",
+          "source_id": "hoyowiki_zzz_23_en_us",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": [
+        {
+          "language": "zh-tw",
+          "mindscapes": [
+            3,
+            5
+          ],
+          "issue": "此語系文字未列支援技。採用另一官方語系明列的加成對象，未將省略解讀為沒有加成。"
+        },
+        {
+          "language": "en-us",
+          "mindscapes": [
+            5
+          ],
+          "issue": "此語系文字未列支援技。採用另一官方語系明列的加成對象，未將省略解讀為沒有加成。"
+        }
+      ]
+    },
+    "1081": {
+      "rule_id": "zzz_skill_bases_20261116_1081",
+      "local_id": "billy",
+      "name": "比利·奇德",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "19",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_19_zh_cn"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "19",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_19_zh_cn"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "19",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/19?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=19",
+          "raw_sha256": "e98c73ea9e25959afcb86e1b2035c64662c8a17f3ddb1911dbe457659ced4a07",
+          "source_id": "hoyowiki_zzz_19_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "19",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/19?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=19",
+          "raw_sha256": "ee69b2d3fbb1a2f1af526c898fe4d67a9c6394853b388812c15bf5ba48ff83e5",
+          "source_id": "hoyowiki_zzz_19_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "19",
+          "language": "en-us",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/19?lang=en-us",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=19",
+          "raw_sha256": "7dbbf85b1520c3ffdf79bc9b90bab0ddaf4d0b0c57a309ab3e65b90b8cdd3175",
+          "source_id": "hoyowiki_zzz_19_en_us",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": [
+        {
+          "language": "zh-tw",
+          "mindscapes": [
+            3,
+            5
+          ],
+          "issue": "此語系文字未列支援技。採用另一官方語系明列的加成對象，未將省略解讀為沒有加成。"
+        }
+      ]
+    },
+    "1091": {
+      "rule_id": "zzz_skill_bases_20261116_1091",
+      "local_id": "miyabi",
+      "name": "星見雅",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "537",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_537_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "537",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_537_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "537",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/537?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=537",
+          "raw_sha256": "a9ee211a2d802eb96e7599c6e1c09790d35366ee5d27466b8e43044b8f2b2d8f",
+          "source_id": "hoyowiki_zzz_537_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "537",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/537?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=537",
+          "raw_sha256": "3c1e0d70d8dd83f9beab818a550993cf70413881403313a7231d4e4e777273e8",
+          "source_id": "hoyowiki_zzz_537_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1101": {
+      "rule_id": "zzz_skill_bases_20261116_1101",
+      "local_id": "koleda",
+      "name": "珂蕾妲·貝洛伯格",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "26",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_26_zh_cn"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "26",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_26_zh_cn"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "26",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/26?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=26",
+          "raw_sha256": "96d44d83f524326da565aa477d867de01e992a55a9e116e6a22b4e7c4426c9a4",
+          "source_id": "hoyowiki_zzz_26_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "26",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/26?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=26",
+          "raw_sha256": "5f6bb405a9eef930ffdb3a7e00bd1c98011c736cf45497d0bf0df2f0c9a8b46a",
+          "source_id": "hoyowiki_zzz_26_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "26",
+          "language": "en-us",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/26?lang=en-us",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=26",
+          "raw_sha256": "6fdca9440cd026533a18530a62ae701f68bf82d8cb1f8f141f031ca9032698f5",
+          "source_id": "hoyowiki_zzz_26_en_us",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": [
+        {
+          "language": "zh-tw",
+          "mindscapes": [
+            3,
+            5
+          ],
+          "issue": "此語系文字未列支援技。採用另一官方語系明列的加成對象，未將省略解讀為沒有加成。"
+        }
+      ]
+    },
+    "1111": {
+      "rule_id": "zzz_skill_bases_20261116_1111",
+      "local_id": "anton",
+      "name": "安東·伊萬諾夫",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "24",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_24_zh_cn"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "24",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_24_zh_cn"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "24",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/24?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=24",
+          "raw_sha256": "ba7a7d59e9d1ad51de052accad000d3fcc88d2be781b930410d02df592d01329",
+          "source_id": "hoyowiki_zzz_24_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "24",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/24?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=24",
+          "raw_sha256": "acee667b0a773873a7f03574e1c507c7310580bc5773d5fb6a2bec5a513ad55e",
+          "source_id": "hoyowiki_zzz_24_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "24",
+          "language": "en-us",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/24?lang=en-us",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=24",
+          "raw_sha256": "5fa4179068180cf907b1ede19a101b3a0dbe79edbadb61fbc9d73d56466d2f50",
+          "source_id": "hoyowiki_zzz_24_en_us",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": [
+        {
+          "language": "zh-tw",
+          "mindscapes": [
+            3,
+            5
+          ],
+          "issue": "此語系文字未列支援技。採用另一官方語系明列的加成對象，未將省略解讀為沒有加成。"
+        }
+      ]
+    },
+    "1121": {
+      "rule_id": "zzz_skill_bases_20261116_1121",
+      "local_id": "ben",
+      "name": "本·比格",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "en-us",
+          "source_entry_id": "25",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_25_en_us"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "en-us",
+          "source_entry_id": "25",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_25_en_us"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "25",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/25?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=25",
+          "raw_sha256": "99829b4ee33ddc0779ee2d56b206f576202979270d52422730bcd715dd0fd856",
+          "source_id": "hoyowiki_zzz_25_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "25",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/25?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=25",
+          "raw_sha256": "6650917c35dbbc1b9e9ff51bc1baabcdf4e10a29198ffac9bef2226bd713d29c",
+          "source_id": "hoyowiki_zzz_25_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "25",
+          "language": "en-us",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/25?lang=en-us",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=25",
+          "raw_sha256": "3a848db86a446a4f0c15143855a4403517e0ed21960f2415134a2578c7440410",
+          "source_id": "hoyowiki_zzz_25_en_us",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": [
+        {
+          "language": "zh-tw",
+          "mindscapes": [
+            3,
+            5
+          ],
+          "issue": "此語系文字未列支援技。採用另一官方語系明列的加成對象，未將省略解讀為沒有加成。"
+        },
+        {
+          "language": "zh-cn",
+          "mindscapes": [
+            3,
+            5
+          ],
+          "issue": "此語系文字未列支援技。採用另一官方語系明列的加成對象，未將省略解讀為沒有加成。"
+        }
+      ]
+    },
+    "1131": {
+      "rule_id": "zzz_skill_bases_20261116_1131",
+      "local_id": "soukaku",
+      "name": "蒼角",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "89",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_89_zh_cn"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "89",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_89_zh_cn"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "89",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/89?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=89",
+          "raw_sha256": "57f6248247654eb8858dc7589bfcf13053fab0325517968239dbbcdc2b5c24fe",
+          "source_id": "hoyowiki_zzz_89_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "89",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/89?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=89",
+          "raw_sha256": "cf4460ed290643917e2ac01a02a3fb99443f6d3fd6ce168fc779e4c9dcb308a8",
+          "source_id": "hoyowiki_zzz_89_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "89",
+          "language": "en-us",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/89?lang=en-us",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=89",
+          "raw_sha256": "a2e0ad4b6b44fc2fe0ebd0a9d6b46efe1b80315216fb508a1906f19d351d5b4e",
+          "source_id": "hoyowiki_zzz_89_en_us",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": [
+        {
+          "language": "zh-tw",
+          "mindscapes": [
+            3,
+            5
+          ],
+          "issue": "此語系文字未列支援技。採用另一官方語系明列的加成對象，未將省略解讀為沒有加成。"
+        }
+      ]
+    },
+    "1141": {
+      "rule_id": "zzz_skill_bases_20261116_1141",
+      "local_id": "lycaon",
+      "name": "馮·萊卡恩",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "28",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_28_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "28",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_28_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "28",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/28?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=28",
+          "raw_sha256": "c875b90579a9ccc9617773c821881a256e2fc761cf59d9d73390c6ce92885a09",
+          "source_id": "hoyowiki_zzz_28_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "28",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/28?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=28",
+          "raw_sha256": "7b6f32c6ac9da47f76ee251967256d9cf39cadedf36c0df9ab2a17b07bf57f67",
+          "source_id": "hoyowiki_zzz_28_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1151": {
+      "rule_id": "zzz_skill_bases_20261116_1151",
+      "local_id": "lucy",
+      "name": "露西亞娜·德·蒙特夫",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "125",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_125_zh_cn"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "125",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_125_zh_cn"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "125",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/125?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=125",
+          "raw_sha256": "d699aa2f3b8b4924fa13f770e924522c7a562a5f05baf1f616fb5fd580ea604f",
+          "source_id": "hoyowiki_zzz_125_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "125",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/125?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=125",
+          "raw_sha256": "2d747090bf9d222fb7617aa22784821a436415a04c18f28b9ecdccfa68b4e4bd",
+          "source_id": "hoyowiki_zzz_125_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "125",
+          "language": "en-us",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/125?lang=en-us",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=125",
+          "raw_sha256": "f73c17963760acf1acd0fc919c8966b8efbca1e42714645b2c0fb208c04dd062",
+          "source_id": "hoyowiki_zzz_125_en_us",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": [
+        {
+          "language": "zh-tw",
+          "mindscapes": [
+            3,
+            5
+          ],
+          "issue": "此語系文字未列支援技。採用另一官方語系明列的加成對象，未將省略解讀為沒有加成。"
+        }
+      ]
+    },
+    "1181": {
+      "rule_id": "zzz_skill_bases_20261116_1181",
+      "local_id": "grace",
+      "name": "格莉絲·霍華德",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "27",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_27_zh_cn"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "27",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_27_zh_cn"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "27",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/27?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=27",
+          "raw_sha256": "338b06b15c75f1b9b8bd5dd58db72b8538750ed75cff25761d339bb9af7e80a4",
+          "source_id": "hoyowiki_zzz_27_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "27",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/27?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=27",
+          "raw_sha256": "50a69644b36e8d9e867e0bea7ad94bff70060232efcbe1082901081a92172c10",
+          "source_id": "hoyowiki_zzz_27_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "27",
+          "language": "en-us",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/27?lang=en-us",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=27",
+          "raw_sha256": "a43f82aa846120560a3d46ac1b07bcd8cf7aeaf03e06bb3ae69f2cb0b9164f45",
+          "source_id": "hoyowiki_zzz_27_en_us",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": [
+        {
+          "language": "zh-tw",
+          "mindscapes": [
+            3,
+            5
+          ],
+          "issue": "此語系文字未列支援技。採用另一官方語系明列的加成對象，未將省略解讀為沒有加成。"
+        }
+      ]
+    },
+    "1191": {
+      "rule_id": "zzz_skill_bases_20261116_1191",
+      "local_id": "ellen",
+      "name": "艾蓮·喬",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "29",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_29_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "29",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_29_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "29",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/29?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=29",
+          "raw_sha256": "5c6dcb5f5a3f333dd8f5759723b7dda4944acce55a93345e2a5100daefa394de",
+          "source_id": "hoyowiki_zzz_29_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "29",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/29?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=29",
+          "raw_sha256": "bb3fff7164630f4643d76b0db53622003bf72fb6af0baf8378893660a427a092",
+          "source_id": "hoyowiki_zzz_29_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": [
+        {
+          "language": "zh-cn",
+          "mindscapes": [
+            3,
+            5
+          ],
+          "issue": "此語系文字未列支援技。採用另一官方語系明列的加成對象，未將省略解讀為沒有加成。"
+        }
+      ]
+    },
+    "1211": {
+      "rule_id": "zzz_skill_bases_20261116_1211",
+      "local_id": "rina",
+      "name": "亞歷山德麗娜·莎芭絲緹安",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "30",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_30_zh_cn"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "30",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_30_zh_cn"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "30",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/30?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=30",
+          "raw_sha256": "bd01e44049833d9908d46085c2d0ec33fca00118223ee92040af413d0face3b8",
+          "source_id": "hoyowiki_zzz_30_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "30",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/30?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=30",
+          "raw_sha256": "229598210781254fe0bafa1bfdf65b158ced4bb24c1697e1d7c713eb6fc0fdc0",
+          "source_id": "hoyowiki_zzz_30_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "30",
+          "language": "en-us",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/30?lang=en-us",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=30",
+          "raw_sha256": "4f880de2aaaa0d32be7b66edce78024900a361e7565015455b708881d293a35f",
+          "source_id": "hoyowiki_zzz_30_en_us",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": [
+        {
+          "language": "zh-tw",
+          "mindscapes": [
+            3,
+            5
+          ],
+          "issue": "此語系文字未列支援技。採用另一官方語系明列的加成對象，未將省略解讀為沒有加成。"
+        }
+      ]
+    },
+    "1221": {
+      "rule_id": "zzz_skill_bases_20261116_1221",
+      "local_id": "yanagi",
+      "name": "月城柳",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "529",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_529_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "529",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_529_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "529",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/529?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=529",
+          "raw_sha256": "a622f9171e0a9a3175d6327d2112c9b87e33ee9f35c41817cf3d5588f705655f",
+          "source_id": "hoyowiki_zzz_529_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "529",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/529?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=529",
+          "raw_sha256": "df9859b4304213b1c9858141fb858661cdca8b2a5fa89559b47a1b567ae6852b",
+          "source_id": "hoyowiki_zzz_529_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1241": {
+      "rule_id": "zzz_skill_bases_20261116_1241",
+      "local_id": "zhu_yuan",
+      "name": "朱鳶",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "31",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_31_zh_cn"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-cn",
+          "source_entry_id": "31",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_31_zh_cn"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "31",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/31?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=31",
+          "raw_sha256": "55a57b0030339129263ce0aff34116dcac1940686589df88e4a0222b29fae304",
+          "source_id": "hoyowiki_zzz_31_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "31",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/31?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=31",
+          "raw_sha256": "cd0d91022d79be591dfdb485e10980e8032d644e6b19209e1d3e4a1f3c3b83e1",
+          "source_id": "hoyowiki_zzz_31_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "31",
+          "language": "en-us",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/31?lang=en-us",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=31",
+          "raw_sha256": "982323015cef848cd194571f44bb24d7a3a574d38d00ac4e132c8e4503919b56",
+          "source_id": "hoyowiki_zzz_31_en_us",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": [
+        {
+          "language": "zh-tw",
+          "mindscapes": [
+            3,
+            5
+          ],
+          "issue": "此語系文字未列支援技。採用另一官方語系明列的加成對象，未將省略解讀為沒有加成。"
+        }
+      ]
+    },
+    "1251": {
+      "rule_id": "zzz_skill_bases_20261116_1251",
+      "local_id": "qingyi",
+      "name": "青衣",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "350",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_350_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "350",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_350_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "350",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/350?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=350",
+          "raw_sha256": "a65d40a9031269c77e4321bed8a3d4fea86181e04abac51ab5ef771ba998ecaf",
+          "source_id": "hoyowiki_zzz_350_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "350",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/350?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=350",
+          "raw_sha256": "e7d09222690c198d04bdc9d3906bf796d50ab430dfe494d41cba6178ffc1a4be",
+          "source_id": "hoyowiki_zzz_350_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1261": {
+      "rule_id": "zzz_skill_bases_20261116_1261",
+      "local_id": "jane",
+      "name": "簡·杜",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "368",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_368_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "368",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_368_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "368",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/368?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=368",
+          "raw_sha256": "c54d6742b42f029a50cc3145d20fe885edbc123e683aa3b2155870ca25530756",
+          "source_id": "hoyowiki_zzz_368_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "368",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/368?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=368",
+          "raw_sha256": "169f4524ac49af5ea4c57de44ca6f1df42fecf8ccd8ab5282f617e5b843ff9a1",
+          "source_id": "hoyowiki_zzz_368_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1271": {
+      "rule_id": "zzz_skill_bases_20261116_1271",
+      "local_id": "seth",
+      "name": "賽斯·洛威爾",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "369",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_369_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "369",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_369_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "369",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/369?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=369",
+          "raw_sha256": "faccf2fcd306898a0841947bc3cdb8dc3d2467acc9add93f4fa91c78a4a1d5ab",
+          "source_id": "hoyowiki_zzz_369_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "369",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/369?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=369",
+          "raw_sha256": "8247e823243c07743063be8484011ab07e9e978b166470909f7f45a3649a7dd1",
+          "source_id": "hoyowiki_zzz_369_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1281": {
+      "rule_id": "zzz_skill_bases_20261116_1281",
+      "local_id": "piper",
+      "name": "派派·韋爾",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "126",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_126_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "126",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_126_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "126",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/126?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=126",
+          "raw_sha256": "df255021bcd67715c1299e73118ed253ba208666a8c952212c25a02d0c3cbdae",
+          "source_id": "hoyowiki_zzz_126_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "126",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/126?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=126",
+          "raw_sha256": "4cab189610a23c6ab1cf7e3527bba1f3639fcd68f225c7ffff90be4b363aaffe",
+          "source_id": "hoyowiki_zzz_126_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1311": {
+      "rule_id": "zzz_skill_bases_20261116_1311",
+      "local_id": "astra",
+      "name": "耀嘉音",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "588",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_588_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "588",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_588_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "588",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/588?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=588",
+          "raw_sha256": "1b776bb38144aab36c0e017da346241e64d8f03f27f1a71f142316aa627018ce",
+          "source_id": "hoyowiki_zzz_588_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "588",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/588?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=588",
+          "raw_sha256": "7ef2e46b5be632931b8cf4ef47542cb778fd20c58147f955e9ec617d252aebc9",
+          "source_id": "hoyowiki_zzz_588_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1331": {
+      "rule_id": "zzz_skill_bases_20261116_1331",
+      "local_id": "vivian",
+      "name": "薇薇安·班希",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "626",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_626_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "626",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_626_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "626",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/626?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=626",
+          "raw_sha256": "e95e424241f8347a31f6f2739db7ddc11c084fe9c55b5d6c9913326495ee77c4",
+          "source_id": "hoyowiki_zzz_626_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "626",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/626?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=626",
+          "raw_sha256": "0ffda2f7bec8a5ce445906d9c1d478fdc776094b6cd45b66f01283216e3bb130",
+          "source_id": "hoyowiki_zzz_626_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1341": {
+      "rule_id": "zzz_skill_bases_20261116_1341",
+      "local_id": "zhao",
+      "name": "照",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "960",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_960_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "960",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_960_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "960",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/960?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=960",
+          "raw_sha256": "16ee9bcb65c5d6b50adaea1175474e0f0bcf5255b694a54ec59a1c0f8088851b",
+          "source_id": "hoyowiki_zzz_960_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "960",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/960?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=960",
+          "raw_sha256": "44788c9201ef805afefb16947044a55e2051a6eca8f8dfe3cca2b4f712689c5f",
+          "source_id": "hoyowiki_zzz_960_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1351": {
+      "rule_id": "zzz_skill_bases_20261116_1351",
+      "local_id": "pulchra",
+      "name": "波可娜·費雷尼",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "619",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_619_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "619",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_619_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "619",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/619?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=619",
+          "raw_sha256": "dbff97dc5b0381aaefa03773cbf42815fc0926c5db9f6b0c9aa0e44da98ce607",
+          "source_id": "hoyowiki_zzz_619_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "619",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/619?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=619",
+          "raw_sha256": "4907122a087b19f35f2680cef7676efaa78cad4ecdb493991d34346c8d4666d2",
+          "source_id": "hoyowiki_zzz_619_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1371": {
+      "rule_id": "zzz_skill_bases_20261116_1371",
+      "local_id": "yixuan",
+      "name": "儀玄",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "752",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_752_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "752",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_752_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "752",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/752?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=752",
+          "raw_sha256": "e411b7dd7f2aba8e8d3e153398e3cdeb06e7aae469709965dfdc2227bbd91fb5",
+          "source_id": "hoyowiki_zzz_752_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "752",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/752?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=752",
+          "raw_sha256": "617ac6a703fe67a9ce03d3e00b084bb46a62741101c1b9d125ed5526c39e31b3",
+          "source_id": "hoyowiki_zzz_752_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1391": {
+      "rule_id": "zzz_skill_bases_20261116_1391",
+      "local_id": "ju_fufu",
+      "name": "橘福福",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "750",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_750_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "750",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_750_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "750",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/750?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=750",
+          "raw_sha256": "9bbbb5bdebedd1fb524fc1efe5d767bcec7e4165c2dbf8f7d11c2d82f95c2ab0",
+          "source_id": "hoyowiki_zzz_750_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "750",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/750?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=750",
+          "raw_sha256": "9a22dfce9d35b0c5a2b16244faf8aa9b9955d48d9f8a47e3c70b1f022d168e67",
+          "source_id": "hoyowiki_zzz_750_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1411": {
+      "rule_id": "zzz_skill_bases_20261116_1411",
+      "local_id": "yuzuha",
+      "name": "浮波柚葉",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "837",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_837_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "837",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_837_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "837",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/837?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=837",
+          "raw_sha256": "7a4d141429505a1c7c8c02cd85b3042ce8b482782fbc4f7ee925cf577e740727",
+          "source_id": "hoyowiki_zzz_837_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "837",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/837?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=837",
+          "raw_sha256": "b7a7d066b83b9fef27f5938a3af02f4181092887ac471973913e89b7416e1ece",
+          "source_id": "hoyowiki_zzz_837_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1421": {
+      "rule_id": "zzz_skill_bases_20261116_1421",
+      "local_id": "pan_yinhu",
+      "name": "潘引壺",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "751",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_751_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "751",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_751_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "751",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/751?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=751",
+          "raw_sha256": "af7e9039a0f7e5e17a8c868eae40e0b300a2344e593b3b5f9cec71bf19df623d",
+          "source_id": "hoyowiki_zzz_751_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "751",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/751?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=751",
+          "raw_sha256": "b1e9c636eb2da41964fe9db394fe2a66af82b76ee60afa4217c50e5460b8095f",
+          "source_id": "hoyowiki_zzz_751_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1431": {
+      "rule_id": "zzz_skill_bases_20261116_1431",
+      "local_id": "ye_shunguang",
+      "name": "葉瞬光",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "961",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_961_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "961",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_961_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "961",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/961?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=961",
+          "raw_sha256": "677b4ee14d2c78f77776b27d0acb838b5441ff07175e06d164d92d6066a7772a",
+          "source_id": "hoyowiki_zzz_961_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "961",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/961?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=961",
+          "raw_sha256": "493a3db3d6865cebf5392507b99cbb73fc7b4e6d1a632d93caed1235497ea7ce",
+          "source_id": "hoyowiki_zzz_961_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1441": {
+      "rule_id": "zzz_skill_bases_20261116_1441",
+      "local_id": "manato",
+      "name": "狛野真斗",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "908",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_908_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "908",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_908_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "908",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/908?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=908",
+          "raw_sha256": "6fe6b677e5ec924c62148b0e3ded4746ce7a9abf187b18ed390189e1c1891e0e",
+          "source_id": "hoyowiki_zzz_908_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "908",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/908?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=908",
+          "raw_sha256": "1bf9fdb954216cc590d3f476c5d37201ad42b6c333844cc62cd496e6d5f3b61b",
+          "source_id": "hoyowiki_zzz_908_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1451": {
+      "rule_id": "zzz_skill_bases_20261116_1451",
+      "local_id": "lucia",
+      "name": "盧西婭·艾洛溫",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "907",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_907_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "907",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_907_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "907",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/907?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=907",
+          "raw_sha256": "97f74bf81d040c68b6d8fe1557180b8023a5ddc37c9afa20c67136058e291065",
+          "source_id": "hoyowiki_zzz_907_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "907",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/907?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=907",
+          "raw_sha256": "7eecfc2eb713aa502985d84b5bc4c9e838fd1ea329c5c864ce973e84c028b397",
+          "source_id": "hoyowiki_zzz_907_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1491": {
+      "rule_id": "zzz_skill_bases_20261116_1491",
+      "local_id": "sunna",
+      "name": "千夏",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "995",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_995_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "995",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_995_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "995",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/995?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=995",
+          "raw_sha256": "0ba7418e1ee56715eae235cf2cb49964eaedc73cca536f412e7625a8f3a9e73d",
+          "source_id": "hoyowiki_zzz_995_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "995",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/995?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=995",
+          "raw_sha256": "0167c92a87346b5299867ee6aeaef4b2c940a46147ae4a3c198799bba9119a9f",
+          "source_id": "hoyowiki_zzz_995_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1511": {
+      "rule_id": "zzz_skill_bases_20261116_1511",
+      "local_id": "nangong_yu",
+      "name": "南宮羽",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "1038",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_1038_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "1038",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_1038_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "1038",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/1038?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=1038",
+          "raw_sha256": "6afc223276672667fa46c1e9ed301ecf4b396a475a48313394829c83a4104a8d",
+          "source_id": "hoyowiki_zzz_1038_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "1038",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/1038?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=1038",
+          "raw_sha256": "1284ec45ba24ef8f377cced97bd5a49a5d07731bdb4fe84276cc10c1ecda02d9",
+          "source_id": "hoyowiki_zzz_1038_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1551": {
+      "rule_id": "zzz_skill_bases_20261116_1551",
+      "local_id": "pyrois",
+      "name": "佩洛伊斯",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "1082",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_1082_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "1082",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_1082_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "1082",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/1082?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=1082",
+          "raw_sha256": "d1d2c32e2cedf560fcfb1666d6bde7946d4c0bce39f5ff47227d60f83f982932",
+          "source_id": "hoyowiki_zzz_1082_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "1082",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/1082?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=1082",
+          "raw_sha256": "ab7d3fee83dcf07c561ee647af11a669e15c64358ded303ee9a9bb326e9225f4",
+          "source_id": "hoyowiki_zzz_1082_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1561": {
+      "rule_id": "zzz_skill_bases_20261116_1561",
+      "local_id": "velina",
+      "name": "維琳娜·艾嘉德",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "1084",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_1084_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "1084",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_1084_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "1084",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/1084?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=1084",
+          "raw_sha256": "6f65b6ef75130907f02d9a1034c3072fd4f31b0de29b2cfd3a6fa18697482ccc",
+          "source_id": "hoyowiki_zzz_1084_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "1084",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/1084?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=1084",
+          "raw_sha256": "5b922b701b9e3a96059221cd6c41b6aa9126f6a1f51bacef567b059b98767aab",
+          "source_id": "hoyowiki_zzz_1084_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    },
+    "1581": {
+      "rule_id": "zzz_skill_bases_20261116_1581",
+      "local_id": "damielle",
+      "name": "蕾米埃爾·丹",
+      "checked_at": "2026-11-16",
+      "all_mindscape_level_effects_accounted_for": true,
+      "mindscapes_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "boosts": [
+        {
+          "mindscape": 3,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "1112",
+          "source_component": "summaryList",
+          "source_list_index": 2,
+          "source_id": "hoyowiki_zzz_1112_zh_tw"
+        },
+        {
+          "mindscape": 5,
+          "amount": 2,
+          "targets": [
+            "普通攻擊",
+            "閃避",
+            "支援技",
+            "特殊技",
+            "連攜技"
+          ],
+          "source_language": "zh-tw",
+          "source_entry_id": "1112",
+          "source_component": "summaryList",
+          "source_list_index": 4,
+          "source_id": "hoyowiki_zzz_1112_zh_tw"
+        }
+      ],
+      "unboosted_skill_keys": [],
+      "sources": [
+        {
+          "entry_id": "1112",
+          "language": "zh-tw",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/1112?lang=zh-tw",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=1112",
+          "raw_sha256": "f2f9c3d94fbbd9169adaafacecbd5422b20feb2bee4e7c6c03b3571572384cb4",
+          "source_id": "hoyowiki_zzz_1112_zh_tw",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        },
+        {
+          "entry_id": "1112",
+          "language": "zh-cn",
+          "url": "https://wiki.hoyolab.com/pc/zzz/entry/1112?lang=zh-cn",
+          "api_url": "https://sg-wiki-api.hoyolab.com/hoyowiki/zzz/wapi/entry_page?entry_page_id=1112",
+          "raw_sha256": "59816c3e1970f34927249a2560de89b29ed1b885e20076f126bbe50ff688ac2c",
+          "source_id": "hoyowiki_zzz_1112_zh_cn",
+          "rank_effects": [
+            {
+              "mindscape": 3,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            },
+            {
+              "mindscape": 5,
+              "amount": 2,
+              "targets": [
+                "普通攻擊",
+                "閃避",
+                "支援技",
+                "特殊技",
+                "連攜技"
+              ]
+            }
+          ],
+          "reviewed_mindscapes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "review_summary": "逐階核對技能增級對象與數量。第三、五階的明列結果保存為結構化數值，其他階未發現五項一般技能增級。"
+        }
+      ],
+      "localization_notes": []
+    }
+  },
+  "derivation": {
+    "method": "verified_mindscape_offset",
+    "summary": "依逐角查證的加成對象與數量，從保留的顯示等級扣除已解鎖的增級。沒有已解鎖加成時，基礎等級等於顯示等級。",
+    "inputs": [
+      "provider_displayed",
+      "mindscape",
+      "per_agent_verified_boosts"
+    ],
+    "unknown_case": "未核對角色、未知且相關的影畫階數、或無法成立的等級保留null。",
+    "core_unchanged": true
+  }
+}

@@ -2,9 +2,10 @@
 import argparse
 from datetime import datetime
 from pathlib import Path
+import re
 import sys
 from jsonschema import Draft202012Validator
-from account_model import contained_path, file_sha256, read_json, snapshot_status
+from account_model import contained_path, file_sha256, read_json, snapshot_status, resolve_pointer
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -25,7 +26,7 @@ def timestamp_error(value, label):
     return []
 
 def validate_account(account):
-    schema = "account.v1.schema.json" if account.get("schema_version") == 1 else "account.schema.json"
+    schema = {1: "account.v1.schema.json", 2: "account.v2.schema.json"}.get(account.get("schema_version"), "account.schema.json")
     errors = schema_errors(account, schema)
     warnings = []
     if errors:
@@ -82,6 +83,10 @@ def validate_account(account):
                 errors.append(f"{artifact['id']}: substat rolls must match the active substats")
             if rolls["character_id"] is not None and rolls["character_id"] not in chars:
                 errors.append(f"{artifact['id']}: unknown roll observation character")
+            for row in rolls['values']:
+                assessed = row.get('assessed_effective')
+                if isinstance(assessed, bool) and (not rolls.get('rule_id') or not isinstance(rolls.get('effective_keys'), list) or assessed != (row['key'] in rolls['effective_keys'])):
+                    errors.append(f"{artifact['id']}: assessed effectiveness requires a consistent named role rule")
             known = [r["enhancements"] for r in rolls["values"]]
             if artifact["level"] is not None and sum(v for v in known if v is not None) > artifact["level"] // 4:
                 errors.append(f"{artifact['id']}: enhancement count exceeds artifact level")
@@ -118,14 +123,36 @@ def validate_account(account):
                 warnings.append(f"{character['name']}: recorded panel no longer matches the current build")
     return errors, warnings
 
-def validate_evidence(account, root):
+def validate_evidence(account, root, check_files=True):
     errors = []
     evidence = {}
     for source_id in account["source_ids"]:
         try:
             manifest = read_json(root / "evidence" / source_id / "manifest.json")
-            if manifest["id"] != source_id or manifest["schema_version"] not in (1, 2):
+            if manifest["id"] != source_id or manifest["schema_version"] not in (1, 2, 3):
                 raise ValueError("manifest identity/version mismatch")
+            if manifest['schema_version'] == 3:
+                if manifest.get('media') != {'type': 'hoyolab', 'recorded_at': None} or manifest.get('screenshots') != []:
+                    raise ValueError('Invalid HoYoLAB media declaration')
+                errors.extend(timestamp_error(manifest['imported_at'], source_id + '.imported_at'))
+                if not isinstance(manifest['imported_at'], str) or not isinstance(manifest.get('observations'), list):
+                    raise ValueError('Invalid HoYoLAB observation metadata')
+                extraction = manifest['extraction']
+                if extraction['path'] != f'imports/hoyolab/{source_id}.json' or not re.fullmatch('[0-9a-f]{64}', extraction['sha256']):
+                    raise ValueError('Invalid HoYoLAB extraction reference')
+                path = contained_path(root, extraction['path'])
+                if check_files and (not path.is_file() or file_sha256(path) != extraction['sha256']):
+                    raise ValueError('HoYoLAB extraction missing or checksum mismatch')
+                document = read_json(path) if check_files else None
+                for observation in manifest['observations']:
+                    if not re.fullmatch('[a-z][a-z0-9_]*', observation['id']) or observation['kind'] != 'hoyolab' or observation['character_id'] not in {c['id'] for c in account['characters']} or not re.fullmatch(r'/genshin/characters/(0|[1-9][0-9]*)', observation['pointer']):
+                        raise ValueError('Invalid HoYoLAB observation')
+                    if check_files and not isinstance(resolve_pointer(document, observation['pointer']), dict):
+                        raise ValueError('HoYoLAB observation must resolve to a character record')
+                    if observation['id'] in evidence:
+                        errors.append(f"Duplicate evidence ID: {observation['id']}")
+                    evidence[observation['id']] = source_id
+                continue
             media = manifest["video"] if manifest["schema_version"] == 1 else manifest["media"]
             media_type = "video" if manifest["schema_version"] == 1 else media["type"]
             if media_type not in ("video", "image"):
@@ -135,9 +162,11 @@ def validate_evidence(account, root):
             records = [manifest["extraction"]] + manifest["screenshots"]
             for record in records:
                 path = contained_path(root, record["path"])
-                if not path.is_file():
+                if not re.fullmatch('[0-9a-f]{64}', record['sha256']):
+                    errors.append(f"Invalid evidence checksum: {record['path']}")
+                if check_files and not path.is_file():
                     errors.append(f"Missing evidence file: {record['path']}")
-                elif file_sha256(path) != record["sha256"]:
+                elif check_files and file_sha256(path) != record["sha256"]:
                     errors.append(f"Evidence hash mismatch: {record['path']}")
             for shot in manifest["screenshots"]:
                 if shot["id"] in evidence:
@@ -147,7 +176,7 @@ def validate_evidence(account, root):
                 elif media_type == "video" and not (isinstance(shot["time_seconds"], (int, float)) and 0 <= shot["time_seconds"] <= media["duration_seconds"]):
                     errors.append(f"Invalid screenshot time: {shot['id']}")
                 evidence[shot["id"]] = source_id
-        except (ValueError, TypeError, KeyError, OSError) as error:
+        except (ValueError, TypeError, KeyError, IndexError, OSError) as error:
             errors.append(f"{source_id}: {error}")
     for kind in ("characters", "weapons", "artifacts", "panel_snapshots"):
         for record in account[kind]:

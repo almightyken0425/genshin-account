@@ -11,3 +11,6 @@ dist/
 *.MP4
 *.zip
 .DS_Store
+
+# Local normalized sync draft, never a second formal account.
+.hoyolab-sync/

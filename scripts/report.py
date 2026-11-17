@@ -2,7 +2,7 @@
 import argparse
 from pathlib import Path
 import sys
-from account_model import file_sha256, read_json, snapshot_status, effective_substat_count
+from account_model import file_sha256, read_json, snapshot_status, effective_substat_count, effective_roll
 from validate import validate_repository
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -31,9 +31,13 @@ def render(root):
     for source_id in account["source_ids"]:
         manifest = read_json(root / f"evidence/{source_id}/manifest.json")
         evidence.update({x["id"]: x for x in manifest["screenshots"]})
+        for observation in manifest.get('observations', []):
+            evidence[observation['id']] = {**observation, 'path': manifest['extraction']['path']}
     def links(record):
         def link(eid):
             shot = evidence[eid]
+            if shot.get('kind') == 'hoyolab':
+                return f"[HoYoLAB](../{shot['path']}#{shot['pointer']})"
             t = shot["time_seconds"]
             label = "補充圖" if t is None else f"{int(t) // 60:02d}:{t % 60:04.1f}"
             return f"[{label}](../{shot['path']})"
@@ -47,15 +51,19 @@ def render(root):
         for stat in artifact["substats"]:
             row = rows[stat["key"]]
             text = stat_text(stat) + " · 強化 " + number(row["enhancements"])
-            if observation["character_id"] == character_id and row["effective"] is True:
+            effective = effective_roll(row, observation) if observation['character_id'] == character_id else None
+            if row['effective'] is None and isinstance(effective, bool):
+                text += ' · 角色規則判定'
+            if effective is True:
                 text = "**" + text + "**"
-            elif observation["character_id"] != character_id or row["effective"] is None:
+            elif effective is None:
                 text += " · 有效性未知"
             result.append(text)
         return "、".join(result)
     lines = ["# 帳號資料摘要", "", "此檔由 `scripts/report.py` 產生，修改現況請更新 `data/account.json`。", "", f"資料 SHA-256：`{file_sha256(root / 'data/account.json')}`", "", f"已記錄 {len(account['characters'])} 名角色、{len(weapons)} 件武器、{len(artifacts)} 件聖遺物。", "", f"角色庫範圍：{account['coverage']['roster']}。裝備庫範圍：{account['coverage']['inventory']}。面板代表觀測值，非實戰傷害計算。", "", "天賦依序為普攻／戰技／爆發，表格使用記錄的顯示等級。基礎等級與觀測時間見正式資料，未知值保留為 null。", "", "| 角色 | 等級 | 命座 | 武器 | 精煉 | 天賦 | 面板與配裝 |", "| --- | --- | --- | --- | --- | --- | --- |"]
     if account["schema_version"] >= 2:
-        lines[12:12] = ["有效副詞條依遊戲畫面亮起的項目記錄，以粗體標示。有效總數包含每項的初始 1 次，未知時不估算。", ""]
+        explanation = "有效副詞條優先採遊戲觀測，缺少標記時採已記錄的角色規則並註明。有效總數包含每項的初始 1 次，未知時不估算。" if account['schema_version'] >= 3 else "有效副詞條依遊戲畫面亮起的項目記錄，以粗體標示。有效總數包含每項的初始 1 次，未知時不估算。"
+        lines[12:12] = [explanation, ""]
     for c in account["characters"]:
         eq = account["equipment"][c["id"]]
         w = weapons.get(eq["weapon_id"])

@@ -1,6 +1,8 @@
 export const ELEMENT_ORDER=['pyro','hydro','anemo','electro','dendro','cryo','geo'];
 const names=new Intl.Collator('zh-Hant',{numeric:true});
 
+export const defaultRosterSorts=()=>[{key:'ratio',direction:'desc'}];
+
 export function effectiveRatio(current,maximum){return Number.isFinite(current)&&current>=0&&Number.isFinite(maximum)&&maximum>0?current/maximum:null}
 
 /** Game adapters supply values; filtering and ordered comparison are shared. */
